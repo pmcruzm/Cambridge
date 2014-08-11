@@ -1,0 +1,295 @@
+/*
+Proyecto: Cambridge University  
+Autor: Pedro de la Cruz  
+Fecha: 5/8/2014
+*/
+
+/*****************************
+PROPIEDADES GENERALES
+*****************************/
+/*html {-webkit-font-smoothing: antialiased;}*/
+body{background:#f8f7f7;font-family:'latolight', Helvetica, sans-serif;}
+a,a:focus, 
+a:hover, 
+a:active {outline: none;}
+
+/*****************************
+PROPIEDADES CABECERA
+******************************/
+
+#header{height:252px;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;position:relative;}/*Pendiente gradientes*/
+#header .logo{margin:0;padding:0;display:block;background:url(../img/logo.png) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;}
+.header-home  h1{font-size:0;margin:0;}
+#top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
+#top-header ul{float:right;margin:0;padding:0;}
+#top-header ul li{list-style:none;display:inline-block;}
+#top-header ul li a{height:44px;line-height:44px;padding-left:18px;padding-right:18px;color:#20718c;display:inline-block;margin-left:-4px;}
+#top-header ul li a:hover{background:#ffffff;text-decoration:none;}
+#top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;}
+
+.other-menu li:first-child{display:none !important;}
+.other-menu li a{padding-left:9px !important;padding-right:9px !important;}
+
+#top-header ul li .desplegable-sub{position:absolute;background:white;z-index:9999;top:44px;left:0;width:100%;padding:27px 0px;display:none;}
+#top-header ul li .desplegable-sub.active{display:block;}
+.desplegable-sub ul{float:inherit !important;}
+.desplegable-sub ul li{display:block !important;}
+.desplegable-sub ul li a{height:auto !important;line-height:18px !important;padding-left:0 !important;padding-right:0 !important;margin-left:0px !important;margin-bottom:9px;}
+.desplegable-sub ul li a:hover{text-decoration:underline !important;}
+.desplegable-sub img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;max-width:100%;}
+
+.navbar-toggle .icon-bar {background-color: #22738e;}
+
+/*****************************
+PROPIEDADES CUERPO HOME
+******************************/
+#content-home{margin-top:-162px;}
+#slider{background:#fff;height:324px;margin-bottom:18px;overflow:hidden;}
+
+.cont_gall{width:100%;height:324px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+
+
+#destacado_sup{}
+#destacado_sup .thumbnails{background:#fff673;height:324px;margin-bottom:18px;overflow:hidden;}
+#destacado_sup .thumbnails h2{line-height:28px;font-size:22px;}
+#destacado_sup .thumbnails p{padding-top:0px;}
+#destacado_sup .thumbnails h2 a{color:#b5094a !important;}
+
+
+.cat_mid{height:90px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:18px; display:table;width:100%;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+.cat_mid a{text-decoration:none;display:table-cell;vertical-align:middle;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+.cat_mid a:hover{background:rgba(234,87,91,0.6)}
+.cat_mid a h2{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;}
+.cat_mid a p{color:#ffffff;margin:0;font-size:14px;}
+
+.block_cards .thumbnails{min-height:405px;background:#ffffff;}
+.thumbnail-style {padding:7px;margin-bottom:18px;}
+.thumbnail-style:hover { box-shadow: 0 0 8px #ddd; -webkit-transition: box-shadow 0.2s ease-in-out;-moz-transition: box-shadow 0.2s ease-in-out;-o-transition: box-shadow 0.2s ease-in-out;transition: box-shadow 0.2s ease-in-out;}
+.thumbnail-anim img {position: relative;/*-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;*/}
+.thumbnail-anim:hover img {/*-webkit-transform: scale(1.2) rotate(2deg);-moz-transform: scale(1.2) rotate(2deg) ;-o-transform: scale(1.2) rotate(2deg);-ms-transform: scale(1.2) rotate(2deg);transform: scale(1.2) rotate(2deg);*/}
+.thumbnail-anim h2{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
+.thumbnail-anim h2 a{color:#6cd9d7;}
+.thumbnail-anim p{padding:18px;}
+.thumbnail-anim p a{font-family:'latoregular', Helvetica, sans-serif;color:#000000;}
+.thumbnail-anim p a:hover{/*text-decoration:none;*/}
+.border-img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+
+/*****************************
+PROPIEDADES CUERPO SEARCH
+******************************/
+
+#migas{background:#ffffff;position:absolute;bottom:0;width:100%;height:36px;}
+#migas .breadcrumb:before{content:'';display:inline-block;width:19px;height:36px;background:url(../img/home_icon.png) center left no-repeat;margin-right:18px;float:left;}
+#migas .breadcrumb{background:none;margin-bottom:0;height:36px;padding-bottom:0;padding-top:0;}
+#migas .breadcrumb > li + li:before{content:'>';color:#fff673;}
+#migas .breadcrumb > li{height:36px;line-height:36px;}
+#migas .breadcrumb > li a{color:#c6c6c6;}
+
+#search_form{padding-top:54px;padding-bottom:54px;}
+#formulario-search{position:relative;}
+#formulario-search label[for=campo_busqueda]{display:none;}
+#formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;}
+#formulario-search .radio{padding-left:9px;}
+#formulario-search input[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
+
+#search_words{background:#ffffff;height:54px;}
+#search_words h2{margin:0;height:54;line-height:54px;font-size:20px;color:#bdb7bd;}
+#search_words h2 span{color:#20718c;margin-left:18px;}
+
+#search_list{padding-top:18px;}
+#search_list .row{border-bottom:1px solid #dadada;}
+.box-search{padding-left:18px;padding-top:36px;padding-bottom:36px;}
+.box-search > a{font-family:'latoregular', Helvetica, sans-serif;color:#20718c;font-size:16px;}
+.box-search > p{margin-bottom:18px;margin-top:6px;font-size:16px;}
+.box-search .breadcrumb{background:none;padding-left:0;}
+.box-search .breadcrumb > li + li:before{content:'>';color:#6cd9d7;}
+.box-search .breadcrumb > li a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:14px;}
+/*.box-search .breadcrumb > li a:hover{text-decoration:none;}*/
+
+/*****************************
+PROPIEDADES CUERPO CATALOGO
+******************************/
+.block-catalogo{background:#ffffff;}
+.block-catalogo img{max-width:100%;position:relative;z-index:10;}
+.top-catalogo{position:relative;}
+.top-catalogo h2{margin:0;z-index:20;position:absolute;bottom:7px;color:#6cd9d7;font-size:22px;background:rgba(0,38,62,0.9);padding:10px 15px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:94%;left:0;right:0;margin-left:auto;margin-right:auto;}
+.content-catalogo .container .row{margin-top:18px;}
+.caption-catalogo{min-height:155px;padding-top:18px;padding-bottom:18px;}
+.caption-catalogo ul{margin:0;padding:0;margin-right:20px;margin-left:20px;}
+.caption-catalogo ul li{list-style:none;position:relative;}
+.caption-catalogo ul li:before{content: '';display:inline-block;height:10px;width:10px;background:url(../img/circle_icon.png) top left no-repeat;position:absolute;top:6px;}
+.caption-catalogo ul li a{color:#373340;display:inline-block;padding-left:18px;}
+
+
+/*****************************
+PROPIEDADES CUERPO CATEGORIA
+******************************/
+.block-submenus{background:#ffffff;margin-top:18px;}
+.block-submenus>ul{margin:0;padding:0;}
+.block-submenus>ul>li{list-style:none;}
+.block-submenus>ul>li>a{color:#bbb5bb;font-size:18px;}
+.titul-catalogos{font-size:32px;color:#20718c;margin-top:18px;margin-bottom:52px;}
+.block-product{text-align:center;margin-bottom:40px;}
+.block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;}
+.block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
+.block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none;}
+.block-product h3 a:hover{text-decoration:underline;}
+.block-product p{color:#373340;font-size:14px;text-align:left;}
+.caption-product{background:#ffffff;min-height:325px;padding-left:20px;padding-right:20px;position:relative;}
+.new-tag{position:absolute;font-size:20px;font-family:'latoregular', Helvetica, sans-serif;color:#ea575b;background:#fff673;z-index:30;left:20px;top:64px;padding:7px 10px;}
+
+/*****************************
+PROPIEDADES FOOTER
+******************************/
+#footer{margin-top:90px;}
+#row_rrss{background:#fff568;height:63px;overflow:hidden;}
+#row_rrss .container{height:63px;position:relative;}
+
+.contact_link{position:absolute;left:0;top:50%;margin-top:-16px;height:36px;}
+.contact_link div{display:inline;margin-right:18px;}
+.contact_link div:last-child{margin-right:0;}
+.contact_link a{background:#ffe63c;display:inline-block;color:#ea575b;width:230px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:36px;line-height:36px;text-align:center;text-decoration:none;font-size:15px;font-family:'latobold', Helvetica, sans-serif;}
+
+.rrss_link{position:absolute;right:0;top:50%;margin-top:-16px;height:36px;}
+.rrss_link ul{margin:0;padding:0;}
+.rrss_link ul li{list-style:none;display:inline-block;}
+.rrss_link ul li a{line-height:36px;display:inline-block;margin-left:18px;color:#ea575b;background:#ffe63c;height:36px;width:36px;text-align:center;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;}
+.rrss_link ul li a:hover{text-decoration:none;}
+.rrss_link ul li:first-child a{margin-left:0;}
+
+#top_footer{background:#0f81a2;padding-top:36px;padding-bottom:117px;}
+#top_footer h3{color:#47b6c7;font-size:16px;line-height:18px;margin-bottom:18px;font-size:13px;font-family:'latoblack', Helvetica, sans-serif;}
+#top_footer ul{margin:0;padding:0;}
+#top_footer ul li{list-style:none;}
+#top_footer ul li a{color:#ffffff;font-size:12px;}
+#inf_footer{background:#007799;padding-top:18px;padding-bottom:18px;}
+#inf_footer>.container>div{overflow:hidden;}
+.logo_foot{float:left;}
+.copy_foot{float:right;color:#ffffff;font-size:12px;}
+.copy_foot a{color:#ffffff}
+.copy_foot a:before{content: "/";padding: 0 5px;}
+.copy_foot a:hover{color:#fffffff;text-decoration:none;}
+
+
+/*****************************
+PROPIEDADES ESPECIALES
+******************************/
+.overflow-hidden{overflow:hidden;}
+ul.bxslider {margin: 0;padding: 0;}
+.bx-wrapper .bx-viewport{-moz-box-shadow: 0;-webkit-box-shadow: 0;box-shadow: 0 0 0 0;border: 0;left: 0;background: #fff;}
+.bx-wrapper .bx-controls-direction a{z-index:9998 !important;}
+.vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
+.vrow{margin-bottom:32px;display:table-row !important;height:100%;}
+
+/**********************************
+PROPIEDADES DE CUSTOM RADIO BUTTON
+**********************************/
+#foo:checked::before,
+input[type="radio"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}
+
+#foo:checked,
+input[type="radio"] + label::before {
+   /* content: url(../img/radio_empty.png);*/
+    content:'';
+	cursor:pointer;
+	position:relative;
+	top:3px;
+	vertical-align:top;
+	padding-right:17px;
+	display:inline-block;
+	overflow:hidden;
+	width:10px;
+	height:10px;
+	background:url(../img/radio_opt.png) no-repeat;
+	background-position:0px 0px;
+}
+
+input[type="radio"]:checked + label::before {
+    /*content: url(../img/radio_check.png);*/
+	content:'';
+	cursor:pointer;
+	position:relative;
+	top:3px;
+	vertical-align:top;
+	padding-right:17px;
+	display:inline-block;
+	overflow:hidden;
+	width:10px;
+	height:10px;
+	background:url(../img/radio_opt.png) no-repeat;
+	background-position:0px -10px;
+}
+
+/*****************************
+MEDIA QUERIES
+******************************/
+@media (min-width: 1200px) {
+.container {width: 986px;}
+}
+
+@media (min-width: 992px) {
+	.container {width: 986px;}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	#destacado_sup{
+		height:auto;
+	}
+	.cat_mid a{
+		padding-left:20px;
+		padding-right:20px;
+	}
+	/*.block_cards{margin-top:-324px;}*/
+	.mini-cards{}
+	.cat_mid{height:110px;}
+	.block_cards{position:relative;margin-top:-340px;}
+	#top-header ul li a{padding-left:9px;padding-right:9px;}
+}
+
+
+@media (max-width: 767px) {
+	#destacado_sup{height:auto;}
+	/*#header-home .navbar-brand{padding-left:9px;}*/
+	#row_rrss{height:auto;padding-top:18px;padding-bottom:18px;}
+	#row_rrss .container {height:auto;position: relative;}
+	.contact_link{width:100%;position:inherit;top:auto;margin-top:0;text-align:center;}
+	/*.contact_link div{margin-right:0;display:block;}*/
+	.contact_link div:last-child{margin-top:18px;}
+	.rrss_link{width:100%;position:inherit;top:auto;margin-top:18px;text-align:center;}
+	.logo_foot{float:inherit;text-align:center;}
+	.copy_foot{float:inherit;text-align:center;}
+	#top_footer{text-align:center;padding-top:18px;}
+	.colum-2-link{display:none;}
+	.colum-3-link{display:none;}
+	#inf_footer{padding-top:36px;}
+	.logo_foot{margin-bottom:36px;}
+	.copy_foot span{display:block;margin-top:18px;}
+	.copy_foot a:before{;content: "";padding: 0px;}
+	.rrss_link{margin-top:9px;margin-bottom:21px;}
+	.contact_link a{width:216px;}
+	.block_cards{position:relative;margin-top:-340px;}
+	#top-header ul li a{padding-left:9px;padding-right:9px;}
+	.main-menu{display:none;}
+	.other-menu li:first-child{display:inline-block !important;}
+	
+}
+
+@media (max-width: 480px) {
+	.colum-dest{float:left !important;}	
+	.block_cards{margin-top:0px;}
+	.colum-mini-cat{position:relative;margin-top:-340px;}
+	.cat_mid a{padding-left:10px;padding-right:10px;}
+}
+
+
+/* Landscape phones and down */
+@media (min-width: 320px) and (max-width: 479px) {
+	.contact_link{height:auto;}
+	.contact_link div{display:block;margin-right:0;}
+	.block_cards{margin-top:0px;}
+}
