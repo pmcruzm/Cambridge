@@ -19,7 +19,7 @@ PROPIEDADES CABECERA
 
 #header{height:252px;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;position:relative;}/*Pendiente gradientes*/
 #header .logo{margin:0;padding:0;display:block;background:url(../img/logo.png) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;}
-.header-home  h1{font-size:0;margin:0;}
+.header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
 #top-header ul{float:right;margin:0;padding:0;}
 #top-header ul li{list-style:none;display:inline-block;}
@@ -44,10 +44,26 @@ PROPIEDADES CABECERA
 PROPIEDADES CUERPO HOME
 ******************************/
 #content-home{margin-top:-162px;}
-#slider{background:#fff;height:324px;margin-bottom:18px;overflow:hidden;}
 
+#slider{background:#fff;height:324px;margin-bottom:18px;overflow:hidden;position:relative;}
 .cont_gall{width:100%;height:324px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-
+#cont-slider{position:absolute;background:rgba(0,38,62,0.9);top:0;left:0;width:218px;height:312px;z-index:9998;top:6px; left:6px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+#body-slider{overflow:hidden;height:265px;padding-top:18px;}
+.scroll-slider{height:265px;}
+.inside-slider{height:265px;width:218px;float:left;padding-left:18px;padding-right:18px;}
+.inside-slider h3{color:#71e3dd;font-size:30px;margin:0 0 18px;}
+.inside-slider p{color:#ffffff;font-size:16px;line-height:20px;}
+#nav-slider{height:47px;text-align:center;}
+#nav-slider ul{margin:16px 0 0;padding:0;}
+#nav-slider ul li{display:inline-block;height:15px;}
+#nav-slider ul li a{display:block;margin-right:3px;position:relative;height:15px;width:10px;}
+#nav-slider ul li a span{display:inline-block;height:10px;width:10px;background-image:url(../img/opc_gall.png);background-position:0 0;background-repeat:no-repeat;text-indent:-99999px;position:absolute;top:50%;margin-top:-5px;}
+#nav-slider ul li a:hover span{background-position:0 -10px;}
+#nav-slider ul li a.active span{background-position:0 -10px;}
+#nav-slider ul li a.arrow-prev{margin-right:18px;position:relative;/*top:-2px;*/visibility:hidden;}
+#nav-slider ul li a.arrow-prev span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 0;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;}
+#nav-slider ul li a.arrow-next{margin-left:14px;position:relative;/*top:-2px;*/}
+#nav-slider ul li a.arrow-next span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 -15px;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;}
 
 #destacado_sup{}
 #destacado_sup .thumbnails{background:#fff673;height:324px;margin-bottom:18px;overflow:hidden;}
@@ -115,20 +131,27 @@ PROPIEDADES CUERPO CATALOGO
 .top-catalogo h2{margin:0;z-index:20;position:absolute;bottom:7px;color:#6cd9d7;font-size:22px;background:rgba(0,38,62,0.9);padding:10px 15px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:94%;left:0;right:0;margin-left:auto;margin-right:auto;}
 .content-catalogo .container .row{margin-top:18px;}
 .caption-catalogo{min-height:155px;padding-top:18px;padding-bottom:18px;}
-.caption-catalogo ul{margin:0;padding:0;margin-right:20px;margin-left:20px;}
-.caption-catalogo ul li{list-style:none;position:relative;}
-.caption-catalogo ul li:before{content: '';display:inline-block;height:10px;width:10px;background:url(../img/circle_icon.png) top left no-repeat;position:absolute;top:6px;}
-.caption-catalogo ul li a{color:#373340;display:inline-block;padding-left:18px;}
+.caption-catalogo ul{ margin: 0 15px;padding: 0 0 0 22px;}
+.caption-catalogo ul li{list-style:none;position:relative;list-style-image:url(../img/circle_icon.png);}
+/*.caption-catalogo ul li:before{content: '';display:inline-block;height:10px;width:10px;background:url(../img/circle_icon.png) top left no-repeat;position:absolute;top:6px;}*/
+.caption-catalogo ul li a{color:#373340;/*display:inline-block;padding-left:18px;*/}
 
 
 /*****************************
 PROPIEDADES CUERPO CATEGORIA
 ******************************/
-.block-submenus{background:#ffffff;margin-top:18px;}
+.block-submenus{background:#ffffff;margin-top:18px;padding-top:18px;padding-bottom:18px;}
 .block-submenus>ul{margin:0;padding:0;}
-.block-submenus>ul>li{list-style:none;}
+.block-submenus>ul>li{list-style:none;margin-left:18px;margin-right:18px;}
 .block-submenus>ul>li>a{color:#bbb5bb;font-size:18px;}
-.titul-catalogos{font-size:32px;color:#20718c;margin-top:18px;margin-bottom:52px;}
+.block-submenus>ul>li.active{background:#f8f7f7;margin-left:9px;margin-right:9px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding-top:11px;padding-bottom:18px;margin-bottom:12px;}
+.block-submenus>ul>li.active>a{font-size:22px;margin-left:9px;}
+.block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;}
+.block-submenus>ul>li.active ul li{list-style-image:url(../img/circle_icon_g.png);}
+.block-submenus>ul>li.active ul li a{color:#bbb5bb;}
+
+.titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;margin-bottom:52px;}
+.supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:40px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;}
 .block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
@@ -137,6 +160,32 @@ PROPIEDADES CUERPO CATEGORIA
 .block-product p{color:#373340;font-size:14px;text-align:left;}
 .caption-product{background:#ffffff;min-height:325px;padding-left:20px;padding-right:20px;position:relative;}
 .new-tag{position:absolute;font-size:20px;font-family:'latoregular', Helvetica, sans-serif;color:#ea575b;background:#fff673;z-index:30;left:20px;top:64px;padding:7px 10px;}
+
+/*****************************
+PROPIEDADES CUERPO RECURSOS
+******************************/
+.intro-recurso{color:#373340;font-size:20px;text-align:center;margin-top:54px;margin-bottom:32px;}
+.intro-recurso a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;}
+.comp-recurso{position:relative;}
+.comp-recurso img{z-index:20;}
+.comp-recurso p{z-index:30;position:absolute;bottom:20px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
+.comp-recurso+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;}
+
+.block-recursos{padding-bottom:150px;}
+.block-recursos h2{color:#20718c;font-size:32px;}
+.how-secc-r{text-align:center;margin-top:90px;padding-bottom:52px;}
+.how-secc-r p{color:#373340;font-size:16px;padding-left:40px;padding-right:40px;margin-bottom:32px;}
+.how-secc-r img{max-width:100%;}
+
+.browse-secc{background:#ffffff;text-align:center;}
+.browse-secc h2{margin-top:32px;margin-bottom:-10px;}
+.browse-secc img{max-width:100%;}
+.browse-secc p{margin-top:32px;margin-bottom:52px;}
+
+.prop-recursos{padding-left:20px;padding-right:20px;margin-top:90px;}
+.prop-recursos img{max-width:100%;}
+.prop-recursos{font-size:16px;color:#373340;line-height:20px;}
+
 
 /*****************************
 PROPIEDADES FOOTER
@@ -177,7 +226,8 @@ PROPIEDADES ESPECIALES
 .overflow-hidden{overflow:hidden;}
 ul.bxslider {margin: 0;padding: 0;}
 .bx-wrapper .bx-viewport{-moz-box-shadow: 0;-webkit-box-shadow: 0;box-shadow: 0 0 0 0;border: 0;left: 0;background: #fff;}
-.bx-wrapper .bx-controls-direction a{z-index:9998 !important;}
+.bx-wrapper .bx-controls-direction a{z-index:9997 !important;}
+.bx-controls{display:none !important;}
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
 
