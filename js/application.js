@@ -51,14 +51,8 @@ jQuery(document).ready(function(){
 		
 		//Galería de la Home
 		var slider=jQuery('.bxslider').bxSlider({
-						  /*mode: 'horizontal',
-						  infiniteLoop: true,
-						  easing: 'easeInOutExpo',
-						  auto: true,
-						  autoHover: true,
-						  autoControls: false,
-						  useCSS: false,*/
-						  pager: false,
+						  touchEnabled:false,
+						  pager: false
 						});
 										
 	}

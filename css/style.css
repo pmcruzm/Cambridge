@@ -128,9 +128,10 @@ PROPIEDADES CUERPO CATALOGO
 .block-catalogo{background:#ffffff;}
 .block-catalogo img{max-width:100%;position:relative;z-index:10;}
 .top-catalogo{position:relative;}
-.top-catalogo h2{margin:0;z-index:20;position:absolute;bottom:7px;color:#6cd9d7;font-size:22px;background:rgba(0,38,62,0.9);padding:10px 15px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:94%;left:0;right:0;margin-left:auto;margin-right:auto;}
+.top-catalogo h2{margin-bottom:0 !important;}
 .content-catalogo .container .row{margin-top:18px;}
-.caption-catalogo{min-height:155px;padding-top:18px;padding-bottom:18px;}
+.top-catalogo h2 a{margin:0;z-index:20;position:absolute;bottom:7px;text-decoration:none;color:#6cd9d7;color:#6cd9d7;font-size:22px;background:rgba(0,38,62,0.9);padding:10px 15px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:94%;left:0;right:0;margin-left:auto;margin-right:auto;display:block;}
+.caption-catalogo{min-height:145px;padding-bottom:18px;}
 .caption-catalogo ul{ margin: 0 15px;padding: 0 0 0 22px;}
 .caption-catalogo ul li{list-style:none;position:relative;list-style-image:url(../img/circle_icon.png);}
 /*.caption-catalogo ul li:before{content: '';display:inline-block;height:10px;width:10px;background:url(../img/circle_icon.png) top left no-repeat;position:absolute;top:6px;}*/
@@ -186,6 +187,98 @@ PROPIEDADES CUERPO RECURSOS
 .prop-recursos img{max-width:100%;}
 .prop-recursos{font-size:16px;color:#373340;line-height:20px;}
 
+/********************************
+PROPIEDADES TEACHER DEVELOPMENT
+*********************************/
+.teacher-dev{padding-bottom:150px;}
+
+.link-teacher ul{background:#ffffff;padding:18px;margin:0;margin-top:18px;}
+.link-teacher ul li{list-style:none;margin-bottom:9px;}
+.link-teacher ul li a{color:#bbb5bb;font-size:18px;line-height:21px;}
+.link-teacher ul li a.active{font-family:'latoregular', Helvetica, sans-serif;}
+
+.intro-teacher{padding-left:18px;}
+.intro-teacher p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
+.intro-teacher p:last-child{color:#373340;font-size:16px;}
+
+.center-teacher{width:100%;height:305px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_teacher.jpg);margin-top:72px;}
+
+.block-teacher{background:#ffffff;margin-top:-18px;padding:44px;}
+.block-teacher>div{text-align:center;height:130px;}
+.block-teacher.teach1 div img{margin-top:18px;}
+.block-teacher img{max-width:100%;}
+.block-teacher p{color:#373340;font-size:16px;text-align:center;line-height:21px;}
+.block-teacher p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+.block-teacher+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;}
+
+/********************************
+PROPIEDADES CAMBRIDGE LABS
+*********************************/
+
+.camb-labs{padding-bottom:90px;}
+
+.titul-labs{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_labs.jpg);height:235px;display:table;width:100%;}
+.inside-titul{display:table-cell;vertical-align:middle;text-align:center;}
+.inside-titul h2{display:block;background:url(../img/logo_labs.png) top left no-repeat;width:169px;height:69px;text-indent:-99999px;margin:0 auto 22px;}
+.inside-titul p{color:#ffffff;font-size:24px;}
+
+.secc-labs ul{margin-top:-18px !important;}
+.top-intro-labs{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
+.titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;font-size:20px;width:300px;margin:42px auto;text-align:center;}
+
+.block-labs{text-align:center;margin-bottom:42px;}
+.block-labs>div{height:128px;vertical-align:middle;}
+.block-labs h2{color:#629ec7;font-size:32px;}
+.block-labs img{max-width:100%;}
+.block-labs p{color:#373340;font-size:16px;padding-left:20px;padding-right:20px;line-height:21px;}
+.block-labs p strong{font-weight:normal;font-family:'latoregular', Helvetica, sans-serif;}
+.block-labs p a{color:#639ec8;font-family:'latoregular', Helvetica, sans-serif;}
+
+.logo-lab-center{text-align:center;margin-top:42px;margin-bottom:42px;}
+.form-lab{padding-left:18px;}
+.form-lab h3{color:#629ec7;font-size:32px;margin-bottom:32px;}
+
+#register-form{margin-bottom:90px;}
+
+.teacher-d > div{position:relative;}
+.teacher-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+.teacher-d .help-block{color:#ea575b;font-size:12px;position:absolute;right:0;top:0;}
+.teacher-d input{border:none;color:#629ec7;}
+.teacher-d label{display:none;}
+
+.centre-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+.centre-d input{border:none;color:#629ec7;}
+.centre-d select{border:none;/*-webkit-appearance: none;*/}
+.centre-d label{display:none;}
+
+.centre-d-c{margin-top:32px;}
+.centre-d-c h4{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+.centre-d-c .checkbox{color:#629ec7;margin-bottom:15px;}
+
+.teacher-p h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-top:36px;}
+.teacher-p h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;}
+.teacher-p textarea{border:none;}
+.teacher-p label[for=others_level]{display:none;}
+.teacher-p .checkbox{color:#629ec7;margin-bottom:15px;}
+.first-col-tp{padding-left:18px;}
+
+.course-book h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;margin-top:54px;}
+.course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;}
+.course-book label{display:none;}
+.course-book input{border:none;}
+.course-book select{border:none;}
+.reduce-input{padding-right:40px;}
+
+.privacy-checkbox{margin-top:32px;padding-left:18px;margin-bottom:52px;}
+.privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}
+.privacy-checkbox .checkbox label{position:relative;z-index:20;}
+.privacy-checkbox .checkbox span{display:block;margin-left:42px;position:absolute;top:0;z-index:10;}
+.privacy-checkbox .checkbox a{color:#629ec7;}
+
+#register-form input[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+
+.info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
+
 
 /*****************************
 PROPIEDADES FOOTER
@@ -230,9 +323,10 @@ ul.bxslider {margin: 0;padding: 0;}
 .bx-controls{display:none !important;}
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
+.helper {display: inline-block;height: 100%;vertical-align: middle;}
 
 /**********************************
-PROPIEDADES DE CUSTOM RADIO BUTTON
+PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
 **********************************/
 #foo:checked::before,
 input[type="radio"] {
@@ -272,6 +366,48 @@ input[type="radio"]:checked + label::before {
 	height:10px;
 	background:url(../img/radio_opt.png) no-repeat;
 	background-position:0px -10px;
+}
+
+#foo:checked::before,
+input[type="checkbox"] {
+    position:absolute;
+    clip: rect(0,0,0,0);
+    clip: rect(0 0 0 0);
+}
+
+#foo:checked,
+input[type="checkbox"] + label::before {
+   /* content: url(../img/radio_empty.png);*/
+    content:'';
+	cursor:pointer;
+	position:relative;
+	/*top:3px;*/
+	vertical-align:top;
+	padding-right:37px;
+	display:inline-block;
+	overflow:hidden;
+	width:20px;
+	height:20px;
+	background:url(../img/check_state.png) no-repeat;
+	background-position:0px 0px;
+	margin-left:-20px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    /*content: url(../img/radio_check.png);*/
+	content:'';
+	cursor:pointer;
+	position:relative;
+	/*top:3px;*/
+	vertical-align:top;
+	padding-right:37px;
+	display:inline-block;
+	overflow:hidden;
+	width:20px;
+	height:20px;
+	background:url(../img/check_state.png) no-repeat;
+	background-position:0px -20px;
+	margin-left:-20px;
 }
 
 /*****************************
