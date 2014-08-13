@@ -23,21 +23,58 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Menú principal y submenús
-	jQuery(document).on("mouseenter",".main-menu > li", function(e) {	
+	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li", function(e) {	
 		jQuery('.main-menu li').removeClass('active');
+		jQuery('.other-menu li').removeClass('active');
+		jQuery('.desplegable-sub').removeClass('active');
 		jQuery( this ).addClass('active');
 		jQuery( this ).find('.desplegable-sub').addClass('active');
-	}).on("mouseleave",".main-menu > li", function(e) {
-		//jQuery( this ).removeClass('active');
+	}).on("mouseleave",".main-menu > li,.other-menu > li", function(e) {
+		jQuery( this ).removeClass('active');
 		jQuery( this ).find('.desplegable-sub').removeClass('active');
 	});	
 	
-	jQuery(document).on("mouseenter",".desplegable-sub", function(e) {	
-		jQuery( this ).parent().addClass('active');
-	}).on("mouseleave",".main-menu li", function(e) {
+	//Menú multilanguage
+	jQuery(document).on("mouseenter",".select-lang", function(e) {	
+		jQuery('.main-menu li').removeClass('active');
+		jQuery('.other-menu li').removeClass('active');
+		jQuery('.desplegable-sub').removeClass('active');
+		jQuery( this ).addClass('active');
+		jQuery( this ).find('.desplegable-lang').addClass('active');
+	}).on("mouseleave",".select-lang", function(e) {
 		jQuery( this ).removeClass('active');
-		jQuery( this ).parent().removeClass('active');
+		jQuery( this ).find('.desplegable-lang').removeClass('active');
 	});	
+	
+	//Menú mobile
+	jQuery(document).on("mouseenter",".menu-mob", function(e) {	
+		jQuery('.main-menu li').removeClass('active');
+		jQuery('.other-menu li').removeClass('active');
+		jQuery('.desplegable-sub').removeClass('active');
+		jQuery( this ).addClass('active');
+		jQuery( this ).find('.mobile-menus').addClass('active');
+	}).on("mouseleave",".menu-mob", function(e) {
+		jQuery( this ).removeClass('active');
+		jQuery( this ).find('.mobile-menus').removeClass('active');
+	});	
+	
+	//Desplegar menús enlaces mobile
+	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
+		e.preventDefault();
+		console.log('click');
+		var enlace=jQuery(this).attr('href');
+		if(enlace=='#'){
+			var submenus=jQuery(this).parent().find('ul');
+			if (jQuery(submenus).is(":visible") ) {
+				jQuery(submenus).hide();
+			} else { 
+				jQuery(submenus).show();
+			}
+		}else{
+			top.location.href=enlace;
+		}
+	});
+	
 	
 	//Comprobar que solo se carga en la home
 	if ( jQuery("#slider").is(":visible") ) {
@@ -134,6 +171,25 @@ jQuery(document).ready(function(){
 				}
 				pag_slider=pag;
 			}
+	});
+	
+	//Evento para capturar el resize de la ventana 
+	jQuery( window ).resize(function() {
+		
+		//Obtenemos altura y anchura del navegador
+			var h_win=window.innerHeight;
+			var w_win=window.innerWidth;
+		//Si se es menor que 992px cerrar todos submenus y limpiar botones
+		/*if(w_win<992){
+			jQuery('.main-menu li').removeClass('active');
+			jQuery('.mobile-menus').removeClass('active');
+		}
+		//Cerramos desplegables mobile 
+		if(w_win>991){
+		
+		}*/
+		 
+		
 	});
 	
 	
