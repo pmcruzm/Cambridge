@@ -173,6 +173,11 @@ jQuery(document).ready(function(){
 			}
 	});
 	
+	//Resize videos youtube con Fitvids
+	if ( jQuery(".video-youtube").is(":visible") ) {
+		jQuery(".video-youtube").fitVids();
+	}
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		

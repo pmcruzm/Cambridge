@@ -17,7 +17,12 @@ a:active {outline: none;}
 PROPIEDADES CABECERA
 ******************************/
 
-#header{height:252px;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;position:relative;background-size:cover;}/*Pendiente gradientes*/
+#header{height:252px;position:relative;/*background-size:2502px 1251px;background-position:-513px -798px;background-image: -moz-radial-gradient( 0% 0%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-attachment:fixed;*/background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+
+/*
+background-size:2502px 1251px;background-position:-513px -798px;
+*/
+
 #header .logo{margin:0;padding:0;display:block;background:url(../img/logo.png) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;}
 .header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
@@ -76,71 +81,15 @@ PROPIEDADES CABECERA
 .cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:45px;top:10px;}
 
 /*Cuadros cabecera*/
-.primero {
-	  background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  opacity: 0.8;
-	  position: absolute;
-	  left: 184px;
-	  top: 74px;
-	  width: 250px;
-	  height: 66px;
-	  z-index: 906;
-	}
+.primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;/*left: 184px;*/left:18.96%;top: 74px;/*width: 250px;*/width:25.77%;height: 66px;z-index: 906;}
 	
-	.segundo {
-	  background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  opacity: 0.8;
-	  position: absolute;
-	  left: 23px;
-	  top: 18px;
-	  width: 714px;
-	  height: 135px;
-	  z-index: 905;
-	}
+.segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 23px;*/left: 2.37%;top: 18px;/*width: 714px;*/width:73.60%;height: 135px;z-index: 905;}
 	
-	.tercero {
-	  background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  position: absolute;
-	  left: 16px;
-	  top: 114px;
-	  width: 837px;
-	  height: 49px;
-	  z-index: 904;
-	}
+.tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;/*left: 16px;*/left: 1.64%;top: 114px;/*width: 837px;*/width:86.28%;height: 49px;z-index: 904;}
 	
+.cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 271px;*/left: 27.93%;top: 58px;/*width: 697px;*/width:71.85%;height: 112px;z-index: 903;}
 	
-	.cuarto {
-	  background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);
-	  opacity: 0.8;
-	  position: absolute;
-	  left: 271px;
-	  top: 58px;
-	  width: 697px;
-	  height: 112px;
-	  z-index: 903;
-	}
-	
-	
-	.quinto {
-	  background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);
-	  opacity: 0.8;
-	  position: absolute;
-	  left: 0px;
-	  top: 83px;
-	  width: 368px;
-	  height: 87px;
-	  z-index: 902;
-	}
+.quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;/*width: 368px;*/width:37.93%;height: 87px;z-index: 902;}
 
 /*****************************
 PROPIEDADES CUERPO HOME
@@ -382,7 +331,7 @@ PROPIEDADES CAMBRIDGE LABS
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
 /*****************************
-PROPIEDADES CUERPO EVENTS
+PROPIEDADES CUERPO EVENTS (PENDIENTE)
 ******************************/
 
 .upcoming-events{padding-left:18px;}
@@ -409,6 +358,39 @@ PROPIEDADES CUERPO EVENTS
 .descrip-act.details a{background:#c3c3c3;}
 .image-event{text-align:center;height: 128px;vertical-align: middle;}
 .image-event img{max-width:100%;}
+
+/*****************************
+PROPIEDADES CUERPO NOSOTROS
+******************************/
+
+.cab-nosotros{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
+
+.cont-nosotros{padding:24px 18px 150px;}
+.cont-nosotros h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:24px;}
+.cont-nosotros h3{color:#373340;font-size:20px;line-height:28px;}
+.cont-nosotros p{font-size:16px;color:#373340;line-height:21px;}
+.cont-nosotros p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
+.video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;}
+
+/*****************************
+PROPIEDADES CUERPO TEAM
+******************************/
+
+.cab-team{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
+
+.cont-team{padding:24px 18px 150px;}
+.cont-team h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:24px;}
+.cont-team h3{color:#373340;font-size:20px;line-height:28px;}
+.cont-team p{font-size:16px;color:#373340;line-height:21px;}
+.cont-team p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
+.cont-team h2.titul-perso{margin-top:80px;margin-bottom:32px;}
+
+.ficha-perso{text-align:center;}
+.ficha-perso p{margin:0 !important;}
+.ficha-perso img{margin-bottom:18px;}
+.ficha-perso p.name-perso{}
+.ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
+
 
 /*****************************
 PROPIEDADES FOOTER
@@ -454,6 +436,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
 .helper {display: inline-block;height: 100%;vertical-align: middle;}
+.txt-center{text-align:center;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
