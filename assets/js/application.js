@@ -178,6 +178,13 @@ jQuery(document).ready(function(){
 		jQuery(".video-youtube").fitVids();
 	}
 	
+	//Menú sidebar lateral
+	jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
+		e.preventDefault();
+		jQuery('.block-submenus>ul>li').removeClass('active');
+		jQuery(this).parent().addClass('active');
+	});
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		

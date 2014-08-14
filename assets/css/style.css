@@ -195,10 +195,11 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus{background:#ffffff;margin-top:18px;padding-top:18px;padding-bottom:18px;}
 .block-submenus>ul{margin:0;padding:0;}
 .block-submenus>ul>li{list-style:none;margin-left:18px;margin-right:18px;}
-.block-submenus>ul>li>a{color:#bbb5bb;font-size:18px;}
+.block-submenus>ul>li>a{color:#bbb5bb;font-size:18px;display:block;}
 .block-submenus>ul>li.active{background:#f8f7f7;margin-left:9px;margin-right:9px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding-top:11px;padding-bottom:18px;margin-bottom:12px;}
 .block-submenus>ul>li.active>a{font-size:22px;margin-left:9px;}
-.block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;}
+.block-submenus>ul>li ul{display:none;}
+.block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;display:block;}
 .block-submenus>ul>li.active ul li{list-style-image:url(../img/circle_icon_g.png);}
 .block-submenus>ul>li.active ul li a{color:#bbb5bb;}
 
@@ -390,6 +391,10 @@ PROPIEDADES CUERPO TEAM
 .ficha-perso img{margin-bottom:18px;}
 .ficha-perso p.name-perso{}
 .ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
+
+/********************************
+PROPIEDADES CUERPO HOME PRODUCT
+*********************************/
 
 
 /*****************************
