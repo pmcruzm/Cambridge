@@ -22,6 +22,10 @@ jQuery(window).load(function(){});
 
 jQuery(document).ready(function(){
 	
+	//Reiniciar Scroll a 0
+	jQuery('body').scrollTo( "0px", 0);
+	jQuery(window).scroll(control_scroll);
+	
 	//Menú principal y submenús
 	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li", function(e) {	
 		jQuery('.main-menu li').removeClass('active');
@@ -185,6 +189,29 @@ jQuery(document).ready(function(){
 		jQuery(this).parent().addClass('active');
 	});
 	
+	//Cambiar Alumno-Profesor componente producto
+	jQuery(document).on("click",".select-comp a", function(e) {
+		e.preventDefault();
+		 if(!jQuery(this).hasClass('active')) {
+		 	if(jQuery(this).hasClass('alumno')){
+				jQuery(this).addClass('active');
+				jQuery(this).parents('.select-comp').find('.profesor').removeClass('active')
+				//Mostramos Bloque
+				jQuery('.block-prof').stop().clearQueue().fadeOut(800,function(){
+					jQuery('.block-alum').stop().clearQueue().fadeIn(800);
+				});
+				
+			}else{
+				jQuery(this).addClass('active');
+				jQuery(this).parents('.select-comp').find('.alumno').removeClass('active')
+				//Mostramos Bloque
+				jQuery('.block-alum').stop().clearQueue().fadeOut(800,function(){
+					jQuery('.block-prof').stop().clearQueue().fadeIn(800);
+				});
+			}	
+		 }
+	});
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		
@@ -206,3 +233,13 @@ jQuery(document).ready(function(){
 	
 	
 });
+
+
+/*************************
+FUNCIONES JAVASCRIPT
+**************************/
+//Función para capturar eventos scroll
+function control_scroll(e){
+  //Variable de scroll	
+  scrollAmount = jQuery(window).scrollTop();
+}

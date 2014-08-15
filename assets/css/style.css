@@ -202,6 +202,8 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;display:block;}
 .block-submenus>ul>li.active ul li{list-style-image:url(../img/circle_icon_g.png);}
 .block-submenus>ul>li.active ul li a{color:#bbb5bb;}
+.block-submenus>ul>li.active ul li.active{list-style-image:url(../img/circle_orange.png);}
+.block-submenus>ul>li.active ul li.active a{color:#f17922;}
 
 .titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;margin-bottom:52px;}
 .supplementary{margin-top:54px !important;}
@@ -331,6 +333,9 @@ PROPIEDADES CAMBRIDGE LABS
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
+.custom-select{height:34px;width:100;overflow:hidden;background: url(../img/icon_select.png) no-repeat 98% center #ffffff;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;}
+	
 /*****************************
 PROPIEDADES CUERPO EVENTS (PENDIENTE)
 ******************************/
@@ -396,11 +401,90 @@ PROPIEDADES CUERPO TEAM
 PROPIEDADES CUERPO HOME PRODUCT
 *********************************/
 
+.top-product{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_product.png);height:235px;}
+.menu-sec-product{padding-left:18px;padding-top:42px;}
+.menu-sec-product ul{margin:0;padding:0;}
+.menu-sec-product ul li{list-style:none;}
+.menu-sec-product ul li a{color:#ffffff;font-size:22px;line-height:28px;}
+.menu-sec-product ul li a.active{font-family:'latobold', Helvetica, sans-serif;}
+.menu-product{margin-top:-18px !important;}
 
+.inside-img-product{height:235px;position:relative;text-align:center;}
+.inside-img-product img{max-width:100%;}
+
+.cont-product{padding:90px 18px 0;}
+.intro-product{font-size:20px;color:#373340;}
+.cont-product h2{color:#f17922;font-size:32px;font-weight:normal;}
+.cont-product p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+
+.clasf-product{padding-left:18px;margin-top:36px;margin-bottom:44px;}
+.clasf-product div{/*overflow:hidden;*/margin-bottom:18px;}
+.clasf-product p{color:#373340;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;line-height:16px;}
+.clasf-product p span{color:#f17922;font-size:18px;font-family:'latolight', Helvetica, sans-serif;}
+.clasf-product p a{color:#f17922;}
+
+.product-aut:before{content:"";display:inline-block;width:46px;height:46px;background:url(../img/ico_autor.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;position:relative;top:-7px;}
+.product-nlevel:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_n_level.png) top left no-repeat;padding-right:20px;vertical-align: middle;float:left;margin-right:18px;position:relative;top:-7px;}
+.product-level:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_level.png) top left no-repeat;padding-right:20px;vertical-align: middle;float:left;margin-right:18px;position:relative;top:-7px;}
+.product-ess:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_ess.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;}
+.product-informed:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_cambridge_ojo.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;position:relative;top:-7px;}
+
+.key-features ul{margin: 32px 0 54px;padding: 0 0 0 18px;}
+.key-features ul li{list-style-image:url(../img/circle_orange.png);color:#373340;font-size:16px;}
+
+.english-f-spanish{margin-bottom:56px;}
+.english-f-spanish p{color:#373340;font-size:20px;margin-top:18px;margin-bottom:18px;}
+.english-f-spanish ul{padding: 0 0 0 18px;}
+.english-f-spanish ul li{list-style-image:url(../img/circle_orange.png);color:#373340;font-size:16px;margin-bottom:22px;}
+.english-f-spanish ul li strong{font-weight:normal;color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
+.english-f-spanish a{background:#f17922;display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;}
+
+.component-product{background:#ffffff;padding-top:36px;padding-bottom:72px;}
+.inside-component{padding-left:18px;padding-right:18px;}
+.component-product h2{color:#f17922;font-size:32px;}
+.component-product h3{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-bottom:5px;}
+.component-product ul{padding:0;margin:0;padding-left:18px;}
+.component-product ul li{list-style-image:url(../img/circle_orange.png);margin-bottom:4px;}
+.component-product ul li a{color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
+.block-ver-mas{text-align:center;padding-top:23px;}
+.block-ver-mas a{background:#f17922;display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+
+.digital-product{padding-top:36px;padding-bottom:100px;}
+.inside-component{padding-left:18px;padding-right:18px;}
+.digital-product h2{color:#f17922;font-size:32px;}
+.digital-product ul{padding:0;margin:0;padding-left:18px;margin-top:24px;}
+.digital-product ul li{list-style-image:url(../img/circle_orange.png);margin-bottom:4px;}
+.digital-product ul li a{color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
+
+.esample-product{padding-top:36px;padding-bottom:100px;background:#ffffff;}
+.inside-component{padding-left:18px;padding-right:18px;}
+.esample-product h2{color:#f17922;font-size:32px;}
+.esample-product p{color:#373340;font-size:16px;margin-top:24px;}
+.esample{padding-left:30px !important;padding-right:30px !important;}
+
+
+/************************************
+PROPIEDADES CUERPO COMPONENT PRODUCT
+*************************************/
+
+.cont-component {padding: 90px 18px 0;}
+.cont-component h2{color:#f17922;font-size:32px;}
+.select-comp{text-align:center;margin-top:32px;margin-bottom:18px;}
+.select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
+.select-comp a.active{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
+.select-comp a:hover{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
+
+.box-compt{padding-bottom:32px;}
+.inside-box-compt{background:#ffffff;padding:18px;position:relative;}
+.inside-box-compt h3{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
+.inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
+.inside-box-compt+a{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
+.inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;}
+	
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
-#footer{margin-top:90px;}
+#footer{/*margin-top:90px;*/}
 #row_rrss{background:#fff568;height:63px;overflow:hidden;}
 #row_rrss .container{height:63px;position:relative;}
 
@@ -442,6 +526,9 @@ ul.bxslider {margin: 0;padding: 0;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
 .helper {display: inline-block;height: 100%;vertical-align: middle;}
 .txt-center{text-align:center;}
+.clear{clear:both;}
+select:-moz-focusring {color: transparent;text-shadow: 0 0 0 #000;}
+.form-control:focus{-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
