@@ -480,6 +480,38 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
 .inside-box-compt+a{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
 .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;}
+
+/************************************
+PROPIEDADES CUERPO DIGITAL PRODUCT
+*************************************/
+
+.intro-digital{color:#373340;font-size:20px;line-height:30px;}
+.list-digt{margin-top:22px;}
+.btn-buy{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-top:18px;margin-bottom:32px;}
+.btn-buy:hover{text-decoration:none;color:#ffffff;}
+
+.box-devices-so{overflow:hidden;text-align:left;}
+.box-devices-so h4{font-size:14px;color:#373340;font-family:'latoregular', Helvetica, sans-serif;margin-bottom:18px;}
+
+.block-compatible{display:inline-block;text-align:center;min-width:30%;}
+.block-compatible div p{margin-right:7px;}
+.block-compatible div p:last-child{margin-right:0px;}
+.block-available{display:inline-block;text-align:center;min-width:28%;}
+.block-available div p{margin-right:7px;}
+.block-available div p:last-child{margin-right:0px;}
+.block-platform{display:inline-block;text-align:center;min-width:28%;}
+.block-platform div p{margin-right:7px;}
+.block-platform div p:last-child{margin-right:0px;}
+
+.computer{text-indent:-99999px;display:inline-block;background:url(../img/ico_computer.png) top left no-repeat;width:54px;height:47px;}
+.tablet{text-indent:-99999px;display:inline-block;background:url(../img/ico_tablet.png) top left no-repeat;width:33px;height:46px;}
+.interactive{text-indent:-99999px;display:inline-block;background:url(../img/ico_interactive.png) top left no-repeat;width:64px;height:61px;}
+
+.on-line{text-indent:-99999px;display:inline-block;background:url(../img/ico_online.png) top left no-repeat;width:41px;height:44px;}
+.off-line{text-indent:-99999px;display:inline-block;background:url(../img/ico_online.png) top left no-repeat;width:41px;height:44px;}
+
+.mac{text-indent:-99999px;display:inline-block;background:url(../img/ico_mac.png) center center no-repeat;width:28px;height:28px;}
+.windows{text-indent:-99999px;display:inline-block;background:url(../img/ico_windows.png) center bottom no-repeat;width:28px;height:28px;}
 	
 /*****************************
 PROPIEDADES FOOTER

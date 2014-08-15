@@ -23,7 +23,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Menú principal y submenús
