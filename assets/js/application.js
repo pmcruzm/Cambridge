@@ -65,7 +65,6 @@ jQuery(document).ready(function(){
 	//Desplegar menús enlaces mobile
 	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
 		e.preventDefault();
-		console.log('click');
 		var enlace=jQuery(this).attr('href');
 		if(enlace=='#'){
 			var submenus=jQuery(this).parent().find('ul');
@@ -118,7 +117,6 @@ jQuery(document).ready(function(){
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 		//Habilitamos anterior
-		console.log(pag_slider);
 		jQuery('.arrow-prev').css({visibility:'visible'});	
 	});	
 		
@@ -140,7 +138,6 @@ jQuery(document).ready(function(){
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 			//Habilitamos siguiente
-			console.log(pag_slider);
 			jQuery('.arrow-next').css({visibility:'visible'});
 	});
 	
