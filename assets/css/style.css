@@ -512,7 +512,38 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 
 .mac{text-indent:-99999px;display:inline-block;background:url(../img/ico_mac.png) center center no-repeat;width:28px;height:28px;}
 .windows{text-indent:-99999px;display:inline-block;background:url(../img/ico_windows.png) center bottom no-repeat;width:28px;height:28px;}
-	
+
+/************************************
+PROPIEDADES CUERPO RECURSOS PRODUCT
+*************************************/
+
+.cont-recurso-p {padding: 90px 18px 150px;}
+.cont-recurso-p h2{color:#f17922;font-size:32px;}
+.inside-recurso{display:table;width:100%;height:100%;background:#ffffff;padding:18px;}
+.inside-recurso h3{margin:0;font-size:16px;color:#373340;font-family:'latobold', Helvetica, sans-serif;margin-bottom:6px;}
+.inside-recurso p{color:#373340;font-size:16px;line-height:21px;}
+.inside-recurso + a{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin:0 auto;margin-top:-13px;}/**/
+.pill-w{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;display:block;text-align:center;margin-bottom:1px;}
+.pill-w span{color:#373340;font-size:14px;height:35px; line-height:35px;}
+.pill-w a{color:#f17922;font-size:14px;height:35px; line-height:35px;font-family:'latoregular', Helvetica, sans-serif;}
+.pill-w span strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+.table-r{padding-bottom:32px !important;}
+
+#block_unit{margin-top:198px;}
+#block_unit h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;padding-left:18px;padding-right:18px;}
+#block_unit p{color:#373340;font-size:16px;line-height:21px;padding-left:18px;padding-right:18px;margin-bottom:18px;}	
+
+#block_clil{margin-top:198px;}
+#block_clil h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
+#block_clil p{color:#373340;font-size:16px;line-height:21px;margin-bottom:18px;}	
+
+#block_yle{margin-top:198px;}
+#block_yle h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
+#block_yle p{color:#373340;font-size:16px;line-height:21px;}	
+#block_yle h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;text-align:center;}
+.block-starters{margin-top:32px;margin-bottom:32px;}
+.block-movers{margin-bottom:32px;}
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -545,6 +576,11 @@ PROPIEDADES FOOTER
 .copy_foot a:before{content: "/";padding: 0 5px;}
 .copy_foot a:hover{color:#fffffff;text-decoration:none;}
 
+/***********************
+PROPIEDADES UP-WINDOW
+************************/
+.up-window{text-indent:-99999px;background:url(../img/flecha-up.png) top left no-repeat;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
+
 
 /*****************************
 PROPIEDADES ESPECIALES
@@ -555,12 +591,15 @@ ul.bxslider {margin: 0;padding: 0;}
 .bx-wrapper .bx-controls-direction a{z-index:9997 !important;}
 .bx-controls{display:none !important;}
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
+.vcenter-1{display:table-cell!important;vertical-align:top;float: none;height:100%;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
 .helper {display: inline-block;height: 100%;vertical-align: middle;}
 .txt-center{text-align:center;}
 .clear{clear:both;}
 select:-moz-focusring {color: transparent;text-shadow: 0 0 0 #000;}
 .form-control:focus{-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.top-margin{margin-top:18px;}
+.marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON

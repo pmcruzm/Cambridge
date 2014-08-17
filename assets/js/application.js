@@ -23,7 +23,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Menú principal y submenús
@@ -209,6 +209,13 @@ jQuery(document).ready(function(){
 		 }
 	});
 	
+	//Subir al top de la ventana 
+	jQuery(document).on("click",".up-window", function(e) {
+		e.preventDefault();
+		jQuery("html, body").stop().clearQueue().animate({scrollTop:0}, '800', 'easeInOutExpo');
+		
+	});
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		
@@ -238,5 +245,31 @@ FUNCIONES JAVASCRIPT
 //Función para capturar eventos scroll
 function control_scroll(e){
   //Variable de scroll	
-  scrollAmount = jQuery(window).scrollTop();
+  var scrollAmount = jQuery(window).scrollTop();
+  var h_foot=jQuery('#footer').height();
+  
+  //Aparece flecha top
+  if(scrollAmount>500){
+		if (!jQuery('.up-window').is(":visible") ) {
+			jQuery('.up-window').stop().clearQueue().fadeIn(400);
+			if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(document).height() - h_foot + 20) {
+			var despl=jQuery(window).scrollTop() + jQuery(window).height() - (jQuery(document).height() - h_foot)
+			//console.log(despl);
+				jQuery('.up-window').css({bottom:(20+despl)});
+		   }else{
+				jQuery('.up-window').css({bottom:20});
+		   }  
+		}else{
+			if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(document).height() - h_foot) {
+			var despl=jQuery(window).scrollTop() + jQuery(window).height() - (jQuery(document).height() - h_foot)
+			//console.log(despl);
+				jQuery('.up-window').css({bottom:(20+despl)});
+		   }else{
+				jQuery('.up-window').css({bottom:20});
+		   } 
+		}
+   }else{
+   		jQuery('.up-window').stop().clearQueue().fadeOut(400);
+   }
+   //jQuery('.marcador').html(scrollAmount);
 }
