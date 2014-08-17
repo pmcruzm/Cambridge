@@ -40,8 +40,47 @@
             <div id="top-header">
             	<div class="container">
             	<a href="#" title="" class="logo">Cambridge University Press</a>
-                	<!--Search&Mobile&Languages-->
+                	<!--Search & Languages-->
                     <ul class="other-menu">
+                        <li><a href="#" class="glyphicon glyphicon-search"></a>
+                        	 <div class="desplegable-sub">
+                                    <div class="container">
+                                        <div class="row">
+                                             <div class="col-xs-3 col-sm-3 col-md-3 titul-search">
+                                                <p>Search</p>
+                                             </div>
+                                             <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
+                                             	<form role="form" id="formulario-search">
+                                                    <div class="form-group">
+                                                        <label for="campo_busqueda">Campo Búsqueda</label>
+                                                        <input type="text" class="form-control" id="campo_busqueda" value="Ej. exams, sample">
+                                                    </div>
+                                                    <div class="radio">
+                                                        
+                                                        <input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog
+                                                        <input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events
+                                                        <input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us
+                                                        <input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere
+                                                        
+                                                     </div>
+                                                  <input type="submit" class="btn" value="Search">
+                                                </form> 
+                                             </div>
+                                        </div>     
+                                    </div>
+                              </div>
+                        </li>
+                        <li class="select-lang"><a href="#" class="glyphicon glyphicon-flag"></a>
+                        	<div class="desplegable-lang">
+                            	<ul>
+                                	<li><a href="#" title="" class="active">EN</a></li>
+                                    <li><a href="#" title="">ES</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul> 
+                    <!--Mobile-->
+                    <ul class="mobile-tab">
                     	<li class="menu-mob"><a href="#" class="fa fa-bars"></a>
                         <!--Implementación de menús-->
                         	<div class="mobile-menus">
@@ -89,43 +128,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li><a href="#" class="glyphicon glyphicon-search"></a>
-                        	 <div class="desplegable-sub">
-                                    <div class="container">
-                                        <div class="row">
-                                             <div class="col-xs-3 col-sm-3 col-md-3 titul-search">
-                                                <p>Search</p>
-                                             </div>
-                                             <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
-                                             	<form role="form" id="formulario-search">
-                                                    <div class="form-group">
-                                                        <label for="campo_busqueda">Campo Búsqueda</label>
-                                                        <input type="text" class="form-control" id="campo_busqueda" value="Ej. exams, sample">
-                                                    </div>
-                                                    <div class="radio">
-                                                        
-                                                        <input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog
-                                                        <input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events
-                                                        <input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us
-                                                        <input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere
-                                                        
-                                                     </div>
-                                                  <input type="submit" class="btn" value="Search">
-                                                </form> 
-                                             </div>
-                                        </div>     
-                                    </div>
-                              </div>
-                        </li>
-                        <li class="select-lang"><a href="#" class="glyphicon glyphicon-flag"></a>
-                        	<div class="desplegable-lang">
-                            	<ul>
-                                	<li><a href="#" title="" class="active">EN</a></li>
-                                    <li><a href="#" title="">ES</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>     
+                    </ul>      
                     <!--Menú principal-->
                     <ul class="main-menu">
                     	<li><a href="#">Nosotros</a>
