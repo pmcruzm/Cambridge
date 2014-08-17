@@ -11,6 +11,7 @@ VARIABLES
 **********************/
 var pag_slider=1;
 var total_slider=0,width_scroll=0;
+var w_container=0;
 
 
 
@@ -23,8 +24,12 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
+	
+	//Obtenemos ancho clase container y ajustamos flecha up
+	w_container=jQuery('.container').width();
+	jQuery('.up-window').css({marginLeft:(w_container-50)});
 	
 	//Menú principal y submenús
 	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li", function(e) {	
@@ -216,22 +221,38 @@ jQuery(document).ready(function(){
 		
 	});
 	
+	//Menú Filtros
+	jQuery(document).on("mouseenter",".filter-exams", function(e) {	
+		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
+	}).on("mouseleave",".filter-exams", function(e) {
+		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
+	});
+	
+	//Opción select filtro exams
+	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
+		e.preventDefault();
+		if(jQuery(this).is(':checked')){
+			console.log('true');
+			
+			jQuery(this).attr('rel');
+			jQuery(this).parent().find('span').addClass('active');
+		}else{
+			console.log('false');
+			jQuery(this).removeAttr('rel');
+			jQuery(this).parent().find('span').removeClass('active');
+		}
+	});	*/
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		
 		//Obtenemos altura y anchura del navegador
-			var h_win=window.innerHeight;
-			var w_win=window.innerWidth;
-		//Si se es menor que 992px cerrar todos submenus y limpiar botones
-		/*if(w_win<992){
-			jQuery('.main-menu li').removeClass('active');
-			jQuery('.mobile-menus').removeClass('active');
-		}
-		//Cerramos desplegables mobile 
-		if(w_win>991){
+		var h_win=window.innerHeight;
+		var w_win=window.innerWidth;
 		
-		}*/
-		 
+		//Obtenemos ancho clase container y ajustamos flecha up
+		w_container=jQuery('.container').width();
+		jQuery('.up-window').css({marginLeft:(w_container-50)});
 		
 	});
 	
