@@ -13,6 +13,19 @@ var pag_slider=1;
 var total_slider=0,width_scroll=0;
 var w_container=0;
 
+// Player Youtube Asíncrono
+var tag = document.createElement('script');
+tag.src = "http://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+//Eventos para dispositivos móviles
+var ua = navigator.userAgent,
+event = (ua.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)) ? "touchstart" : "click";
+var device='none';
+if(ua.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)){
+	device='yes';
+}
 
 
 
@@ -24,7 +37,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -32,13 +45,13 @@ jQuery(document).ready(function(){
 	jQuery('.up-window').css({marginLeft:(w_container-50)});
 	
 	//Menú principal y submenús
-	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li", function(e) {	
+	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li,.mobile-tab > li", function(e) {	
 		jQuery('.main-menu li').removeClass('active');
 		jQuery('.other-menu li').removeClass('active');
 		jQuery('.desplegable-sub').removeClass('active');
 		jQuery( this ).addClass('active');
 		jQuery( this ).find('.desplegable-sub').addClass('active');
-	}).on("mouseleave",".main-menu > li,.other-menu > li", function(e) {
+	}).on("mouseleave",".main-menu > li,.other-menu > li,.mobile-tab > li", function(e) {
 		jQuery( this ).removeClass('active');
 		jQuery( this ).find('.desplegable-sub').removeClass('active');
 	});	
@@ -228,6 +241,20 @@ jQuery(document).ready(function(){
 		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
 	});
 	
+	//Cuando pulsas sobre uno de los bullets del slider de la home
+	jQuery(document).on("click",".poster-frame a", function(e) {
+		e.preventDefault();
+		jQuery( this ).parent().fadeOut(400,function(){
+			var player;
+			  player = new YT.Player('player', {
+				events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+					  }
+			  });	
+		});
+	});
+	
 	//Opción select filtro exams
 	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
 		e.preventDefault();
@@ -263,6 +290,7 @@ jQuery(document).ready(function(){
 /*************************
 FUNCIONES JAVASCRIPT
 **************************/
+
 //Función para capturar eventos scroll
 function control_scroll(e){
   //Variable de scroll	
@@ -294,3 +322,19 @@ function control_scroll(e){
    }
    //jQuery('.marcador').html(scrollAmount);
 }
+
+  // autoplay video Youtube
+    function onPlayerReady(event) {
+		if(device!='yes'){
+			console.log('Play');
+        	event.target.playVideo();
+		}
+    }
+
+    // when video ends Youtube
+    function onPlayerStateChange(event) {        
+        if(event.data === 0) {            
+           //Cuando acaba el video
+        }
+    }
+

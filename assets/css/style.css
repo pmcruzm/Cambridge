@@ -32,7 +32,10 @@ background-size:2502px 1251px;background-position:-513px -798px;
 #top-header ul li a:hover{background:#ffffff;text-decoration:none;}
 #top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;}
 
-.menu-mob{display:none !important;}
+.mobile-tab{display:none;}
+.mobile-tab li a{padding-left:9px !important;padding-right:9px !important;}
+.mobile-tab li.active a{background:#ffffff;text-decoration:none;}
+
 .other-menu{margin-top:-1px;}
 .other-menu li a{padding-left:9px !important;padding-right:9px !important;}
 .other-menu li.active a{background:#ffffff;text-decoration:none;}
@@ -249,7 +252,7 @@ PROPIEDADES TEACHER DEVELOPMENT
 .link-teacher ul{background:#ffffff;padding:18px;margin:0;margin-top:18px;}
 .link-teacher ul li{list-style:none;margin-bottom:9px;}
 .link-teacher ul li a{color:#bbb5bb;font-size:18px;line-height:21px;}
-.link-teacher ul li a.active{font-family:'latoregular', Helvetica, sans-serif;}
+.link-teacher ul li.active a{font-family:'latoregular', Helvetica, sans-serif;}
 
 .intro-teacher{padding-left:18px;}
 .intro-teacher p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
@@ -373,12 +376,21 @@ PROPIEDADES CUERPO NOSOTROS
 
 .cab-nosotros{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
 
-.cont-nosotros{padding:24px 18px 150px;}
+.cont-nosotros{padding:24px 18px 36px;}
 .cont-nosotros h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:24px;}
 .cont-nosotros h3{color:#373340;font-size:20px;line-height:28px;}
 .cont-nosotros p{font-size:16px;color:#373340;line-height:21px;}
 .cont-nosotros p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
-.video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;}
+.video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.poster-frame{position:absolute;width:100%;height:100%;background:red;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.poster-frame a{display:block;background:url(../img/btn_play.png) top left no-repeat;width:75px;height:75px;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);text-indent:-99999px;top:50%;left:50%;margin-top:-38px;position:absolute;margin-left:-38px;}
+
+.video-nosotros{background:#ffffff;}
+.video-nosotros h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:32px;text-align:center;}
+
+.nosotros-bottom img{max-width:100%;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.marco-img{background:#ffffff;padding:5px;}
+.sub-cat-nosotros{margin-top:54px;}
 
 /*****************************
 PROPIEDADES CUERPO TEAM
@@ -387,17 +399,21 @@ PROPIEDADES CUERPO TEAM
 .cab-team{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
 
 .cont-team{padding:24px 18px 150px;}
+.cont-team >div {padding-left:18px;padding-right:18px;}
 .cont-team h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:24px;}
 .cont-team h3{color:#373340;font-size:20px;line-height:28px;}
 .cont-team p{font-size:16px;color:#373340;line-height:21px;}
 .cont-team p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
-.cont-team h2.titul-perso{margin-top:80px;margin-bottom:32px;}
+.cont-team h2.titul-perso{margin-top:10px;}
 
 .ficha-perso{text-align:center;}
 .ficha-perso p{margin:0 !important;}
 .ficha-perso img{margin-bottom:18px;}
 .ficha-perso p.name-perso{}
 .ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
+
+.block-team{background:#ffffff;padding:18px;margin-bottom:18px;}
+.block-team.top-team{margin-top:54px;}
 
 /********************************
 PROPIEDADES CUERPO HOME PRODUCT
@@ -408,11 +424,11 @@ PROPIEDADES CUERPO HOME PRODUCT
 .menu-sec-product ul{margin:0;padding:0;}
 .menu-sec-product ul li{list-style:none;}
 .menu-sec-product ul li a{color:#ffffff;font-size:22px;line-height:28px;}
-.menu-sec-product ul li a.active{font-family:'latobold', Helvetica, sans-serif;}
+.menu-sec-product ul li.active a{font-family:'latobold', Helvetica, sans-serif;}
 .menu-product{margin-top:-18px !important;}
 
 .inside-img-product{height:235px;position:relative;text-align:center;}
-.inside-img-product img{max-width:100%;}
+.inside-img-product img{max-width:100%;background-blend-mode: multiply;-webkit-background-blend-mode:multiply;}
 
 .cont-product{padding:90px 18px 0;}
 .intro-product{font-size:20px;color:#373340;}
@@ -530,7 +546,8 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w span{color:#373340;font-size:14px;height:35px; line-height:35px;}
 .pill-w a{color:#f17922;font-size:14px;height:35px; line-height:35px;font-family:'latoregular', Helvetica, sans-serif;}
 .pill-w span strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
-.table-r{padding-bottom:32px !important;}
+
+.table-r{padding-bottom:32px !important;height:100%;}
 
 #block_unit{margin-top:198px;}
 #block_unit h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;padding-left:18px;padding-right:18px;}
@@ -561,6 +578,47 @@ PROPIEDADES HOME EXAMS
 
 .opc-filter input[type="checkbox"] + label::before {width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px 0px;padding-right:17px;margin-left:0;top:5px;}
 .opc-filter input[type="checkbox"]:checked + label::before{width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px -10px;padding-right:17px;margin-left:0;top:5px;}
+
+/******************************
+PROPIEDADES CUERPO SERIE EXAMS
+*******************************/
+
+.content-exam-serie{}
+.content-exam-serie .clasf-product p span{color:#1eaba5;}
+.content-exam-serie .clasf-product p a{color:#1eaba5;}
+.content-exam-serie .cont-product h2{color:#1eaba5;}
+.content-exam-serie .product-aut:before{background-image:url(../img/ico_autor_g.png);}
+.content-exam-serie .product-nlevel:before{background-image:url(../img/ico_n_level_g.png);}
+.content-exam-serie .product-level:before{background-image:url(../img/ico_level_g.png);}
+.content-exam-serie .key-features ul li{list-style-image:url(../img/circle_green.png);}
+.list-official .caption-product{min-height:235px;}
+.list-official{margin-top:72px;}
+.list-official h2{margin-bottom:52px;}
+
+.block-img-exam{position:relative;}
+.inside-img-exam-serie{height:235px;position:relative;text-align:right;width:100%;}
+.inside-img-exam-serie img{max-width:100%;bottom:-70px;position:absolute;right:25px;vertical-align:bottom;}
+
+/*************************************
+PROPIEDADES CUERPO SERIE EXAMS CURSO
+*************************************/
+.content-exam-serie-c{padding-bottom:250px;}
+.content-exam-serie-c .cont-product{padding:36px 18px 0;}
+.content-exam-serie-c .clasf-product p span{color:#cd0025;}
+.content-exam-serie-c .clasf-product p a{color:#cd0025;}
+.content-exam-serie-c .cont-product h2{color:#cd0025;}
+.content-exam-serie-c .product-aut:before{background-image:url(../img/ico_autor_r.png);}
+.content-exam-serie-c .product-level:before{background-image:url(../img/ico_level_r.png);}
+.content-exam-serie-c .key-features ul li{list-style-image:url(../img/circle_red.png);}
+
+.content-exam-serie-c .component-product h2{color:#cd0025;}
+.content-exam-serie-c .component-product ul li{list-style-image:url(../img/circle_red.png);}
+.content-exam-serie-c .component-product ul li a{color:#cd0025;}
+.content-exam-serie-c .block-ver-mas a{background:#cd0025;}
+
+.block-img-exam-c{position:relative;}
+.inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
+.inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;}
 
 /*****************************
 PROPIEDADES FOOTER
@@ -752,7 +810,7 @@ MEDIA QUERIES
 	.block_cards{position:relative;margin-top:-340px;}
 	#top-header ul li a{padding-left:9px;padding-right:9px;}
 	.main-menu{display:none;}
-	.menu-mob{display:inline-block !important;}
+	.mobile-tab{display:block;}
 	
 }
 
