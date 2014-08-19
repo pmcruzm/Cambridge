@@ -15,9 +15,10 @@ var w_container=0;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
-tag.src = "http://www.youtube.com/player_api";
+tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
 
 //Eventos para dispositivos móviles
 var ua = navigator.userAgent,
@@ -37,7 +38,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -245,7 +246,7 @@ jQuery(document).ready(function(){
 	jQuery(document).on("click",".poster-frame a", function(e) {
 		e.preventDefault();
 		jQuery( this ).parent().fadeOut(400,function(){
-			var player;
+		jQuery( this ).parent().find('#player').show();	
 			  player = new YT.Player('player', {
 				events: {
 						'onReady': onPlayerReady,

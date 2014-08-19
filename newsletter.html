@@ -12,7 +12,7 @@
 	<meta property="og:image" content=""/>
 	<meta property="og:site_name" content=""/>
 	<meta property="og:description" content=""/>
-    <title>Cambridge University | Nosostros</title>
+    <title>Cambridge University | Newsletter</title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -203,14 +203,13 @@
             	<div class="container">
                 	<ol class="breadcrumb">
                       <li><a href="#">Home</a></li>
-                      <li><a href="#">Nosotros</a></li>
-                      <li><a href="#">Cambridge</a></li>
+                      <li><a href="#">Newsletter</a></li>
                     </ol>
                 </div>
             </div> 
             <div class="cab-page">
             	<div class="container">
-                	<h1>Cambridge</h1>
+                	<h1>Newsletter</h1>
                     <div class="primero"></div>
                     <div class="segundo"></div>
                     <div class="tercero"></div>
@@ -221,62 +220,97 @@
          </div>
         <!--Fin cabecera-->
         <!--Contenido-->
-        <div id="content" class="content-nosotros">
- 			
-            <div class="cab-nosotros" style="background-image:url(assets/upload/bg_nosotros.jpg);"></div>
-            <div class="container">	
+        <div id="content" class="content-newsletter">
+ 			<div class="container">	
             	<a href="#" title="Subir" class="up-window">Subir</a>
-            	<div class="row">
-                	<div class="col-md-3 link-teacher secc-labs ">
-                    	<ul>
-                            <li class="active"><a href="#" title="">Cambridge</a></li>   
-                            <li><a href="#" title="">Cambridge Corpus</a></li>   
-                            <li><a href="#" title="">Team</a></li>   
-                            <li><a href="#" title="">Contact</a></li>  	
-                        </ul>
+                <div class="row">
+                	<div class="col-md-9 block-intro-news">
+                        <h2>Complete the form to receive our monthly newsletter</h2>
+                        <p>We never send spam sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                     </div>
-                    <div class="col-md-9 cont-nosotros">
-                    	<h2>La editorial más antígua</h2>
-                        <h3>Somos Cambridge University Press, la editorial más antigua del mundo, la editorial de la Universidad de Cambridge.</h3>
-                        <p>De hecho, somos un departamento de la propia universidad, y nuestra misión es destilar y dar forma a todo el conocimiento que allí se genera: Ciencias, Humanidades, Lingüística, etc Llevamos quinientos años en esto de la enseñanza, y en el último siglo nos hemos especializado en métodos para enseñar inglés. En este vídeo puedes ver algunas de las cosas interesantes que hemos hecho en Cambridge en los últimos siglos (vídeo historia de Cambridge, embed de youtube).</p>	
-                   </div>
                 </div>
-            </div>
-            <div class="video-nosotros">
-            	<div class="container">  
-                	<div class="row">          
-                        <div class="col-md-9 col-md-offset-3">	
-                        	<h2>La historia en hechos de Cambridge</h2>
-                            <div class="video-youtube">
-                            	<div class="poster-frame" style="background-image:url(assets/upload/poster.jpg);"><a href="#" class="play-btn">Play</a></div>
-                                <iframe id="player" width="670" height="375" src="//www.youtube.com/embed/EoHs690qJYI?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            	<div class="row">
+                	<div class="col-md-6">
+                           <form id="newsletter-form" role="form">
+                                  <div>
+                                     <h3>Personal details</h3>
+                                     <p class="help-block">* Required fields</p>
+                                  </div>   
+                                  <div class="form-group required">
+                                     <label for="nombre_n">Name</label>
+                                     <input type="text" class="form-control" id="nombre_n" placeholder="Name">
+                                  </div>
+                                  <div class="form-group required">
+                                      <label for="apellidos_n">Surname</label>
+                                      <input type="text" class="form-control" id="apellidos_n" placeholder="Surname">
+                                  </div>
+                                  <div class="form-group required">
+                                      <label for="email_n">Email</label>
+                                     <input type="email" class="form-control" id="email_n"  placeholder="Email">
+                                  </div>
+                                  <h3 class="centre-news">Centre Details</h3>
+                                  <div class="form-group required">
+                                     <label for="nombre_center_n">Name of centre</label>
+                                     <input type="text" class="form-control" id="nombre_center_n" placeholder="Name of centre">
+                                  </div>
+                                  <div class="form-group required">
+                                      <label for="street_n">Street</label>
+                                      <input type="text" class="form-control" id="street_n" placeholder="Street">
+                                  </div>
+                                  <div class="form-group required">
+                                      <label for="postcode_n">Post Code</label>
+                                     <input type="text" class="form-control" id="postcode_n"  placeholder="Post Code">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="city_n">City</label>
+                                     <input type="text" class="form-control" id="city_n"  placeholder="City">
+                                  </div>
+                                  <div class="form-group custom-select">
+                                        <label for="tipo_centre">Surname</label>
+                                        <select id="tipo_centre" class="form-control">
+                                             <option>Province</option>
+                                             <option>Province 1</option>
+                                             <option>Province 2</option>
+                                             <option>Province 3</option>
+                                             <option>Province 4</option>
+                                         </select>
+                                  </div>
+                                  <div class="checkbox"><input id="c_privacy_n" type="checkbox"><label for="c_privacy_n"></label> I have read, understand and accept the <a href="#" title="Privacy Policy">Privacy Policy</a>.</div>
+                                  <input type="submit" class="btn" value="Send">  
+                             </form>
+                    </div>
+                	<div class="col-md-5 col-md-offset-1">
+                    	<div class="block-news">
+                        	<h3>Past editions</h3>
+                            <div>
+                            	<a href="#" title="">New catalogue available!</a>
+                                <p>January 2014</p>
+                            </div>
+                            <div>
+                            	<a href="#" title="">Survey on digital resources for an iPad mini</a>
+                                <p>January 2014</p>
+                            </div>
+                            <div>
+                            	<a href="#" title="">Would you like a two-week course in Cambridge?</a>
+                                <p>January 2014</p>
+                            </div>
+                            <div>
+                            	<a href="#" title="">New catalogue available!</a>
+                                <p>January 2014</p>
+                            </div>
+                            <div>
+                            	<a href="#" title="">Survey on digital resources for an iPad mini</a>
+                                <p>January 2014</p>
+                            </div>
+                            <div>
+                            	<a href="#" title="">Would you like a two-week course in Cambridge?!</a>
+                                <p>January 2014</p>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
-            </div>
-            <div class="container">
-            	<div class="row">    
-                	<div class="col-md-9 col-md-offset-3 cont-nosotros nosotros-bottom">	    
-                        <h2>Mucho más que exámenes</h2>
-                        <p>Junto <a href="#" title="">Cambridge English Language Assessment</a>, la sección especialista en exámenes de la universidad, diseñamos los métodos de preparación para dichos exámenes. Seguramente te sonarán algunos de ellos: First Certificate, Proficiency, Advanced, etc. Pero además, diseñamos <a href="#" title="">métodos de inglés</a> para todo tipo de necesidades y de estudiantes. </p>
-                        <h2>Especialistas en inglés para españoles</h2>
-                        <p>Conocemos el inglés de los españoles mejor que nadie. Lo estudiamos para comprender las áreas de dificultad específicas de los hispanohablantes. Nuestra arma secreta se llama Cambridge Corpus, y se basa fundamentalmente en el análisis de los más de 200.000 exámenes de Cambridge que se realizan cada año en España: los errores que se cometen, las áreas de dificultad…información que nos sirve para desarrollar los métodos más completos y mejor adaptados posibles.</p>
-                        <div class="row sub-cat-nosotros">
-                        	<div class="col-md-6">
-                            	<div class="marco-img"><img src="assets/upload/test1.jpg" alt=""></div>
-                                <h2>Cambridge en España</h2>
-                                <p>En Cambridge University Press España somos 103 empleados. Tenemos presencia comercial en todo el <a href="#" title="">territorio nacional</a>. Elaboramos métodos específicos <a href="#" title="">para españoles</a>, para todo tipo de estudiantes, desde Infantil hasta métodos de autoaprendizaje.</p>
-                        	</div>
-                            <div class="col-md-6">
-                            	<div class="marco-img"><img src="assets/upload/test1.jpg" alt=""></div>
-                                <h2>Somos fundación</h2>
-                                <p>Somos un departamento de la Universidad de Cambridge, y somos fundación. Todo que beneficio que genera nuestra actividad comercial se reinvierte en proyectos de investigación y educación. Puedes descargarte aquí (link a pdf dossier) nuestro dossier de prensa, en el que resumimos quiénes somos y qué hacemos. </p>
-                        	</div>
-                        </div>
-                   </div>     
-                </div>
-            </div>
+            </div>    
+                	
         </div>
         <!--Fin contenido-->
         <div id="footer">

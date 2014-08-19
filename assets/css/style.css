@@ -211,7 +211,7 @@ PROPIEDADES CUERPO CATEGORIA
 .titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;margin-bottom:52px;}
 .supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:40px;}
-.block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;}
+.block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:160px;}
 .block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
 .block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none;}
 .block-product h3 a:hover{text-decoration:underline;}
@@ -384,6 +384,7 @@ PROPIEDADES CUERPO NOSOTROS
 .video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame{position:absolute;width:100%;height:100%;background:red;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame a{display:block;background:url(../img/btn_play.png) top left no-repeat;width:75px;height:75px;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);text-indent:-99999px;top:50%;left:50%;margin-top:-38px;position:absolute;margin-left:-38px;}
+#player{display:none;}
 
 .video-nosotros{background:#ffffff;}
 .video-nosotros h2{color:#20718c;font-size:32px;margin-bottom:24px;margin-top:32px;text-align:center;}
@@ -427,8 +428,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 .menu-sec-product ul li.active a{font-family:'latobold', Helvetica, sans-serif;}
 .menu-product{margin-top:-18px !important;}
 
-.inside-img-product{height:235px;position:relative;text-align:center;}
-.inside-img-product img{max-width:100%;background-blend-mode: multiply;-webkit-background-blend-mode:multiply;}
+.inside-img-product{height:235px;position:relative;text-align:center;width:100%;}
+.inside-img-product img{max-width:100%;position:absolute;bottom:-107px;vertical-align:bottom;right:0;left:0;margin-left:auto;margin-right:auto;}
 
 .cont-product{padding:90px 18px 0;}
 .intro-product{font-size:20px;color:#373340;}
@@ -619,6 +620,38 @@ PROPIEDADES CUERPO SERIE EXAMS CURSO
 .block-img-exam-c{position:relative;}
 .inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
 .inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;}
+
+/*****************************
+PROPIEDADES CUERPO NEWSLETTER
+******************************/
+
+.content-newsletter{padding-bottom:90px;}
+
+.block-intro-news{margin-bottom:90px;}
+.block-intro-news h2{color:#20718c;font-size:30px;margin-bottom:24px;margin-top:52px;}
+.block-intro-news p{color:#373340;font-size:16px;line-height:21px;}
+
+#newsletter-form{padding-right:18px;}
+#newsletter-form > div{position:relative;}
+#newsletter-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+#newsletter-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
+#newsletter-form label{display:none;}
+#newsletter-form input{border:none;color:#629ec7;}
+#newsletter-form select{border:none;/*-webkit-appearance: none;*/}
+#newsletter-form .form-group{position:relative;}
+#newsletter-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+.centre-news{margin-top:52px;}
+
+#newsletter-form .checkbox label{display:inline-block;}
+#newsletter-form .checkbox{padding-left:18px;margin-bottom:36px;margin-top:42px;}
+#newsletter-form .checkbox a{color:#ea575b;}
+#newsletter-form input[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+
+.block-news{background:#ffffff;padding:5px;}
+.block-news h3{background:#fff673;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding-left:18px;color:#20718c;font-size:22px;height:40px;line-height:40px;margin:0;margin-bottom:22px;}
+.block-news div{padding-right:22px;padding-left:22px;margin-bottom:18px;}
+.block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
+.block-news div p{color:#373340;font-size:14px;}
 
 /*****************************
 PROPIEDADES FOOTER
