@@ -39,7 +39,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -321,8 +321,15 @@ jQuery(document).ready(function(){
 	//Menú sidebar lateral
 	jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
 		e.preventDefault();
-		jQuery('.block-submenus>ul>li').removeClass('active');
-		jQuery(this).parent().addClass('active');
+		var actual=jQuery(this);
+		if(!jQuery(this).parent().hasClass('active')) {
+			//Cerramos bloque abierto
+			jQuery('.block-submenus>ul>li.active>ul').stop().clearQueue().slideToggle(600,function(){
+				console.log('cerrado');
+				jQuery('.block-submenus>ul>li').removeClass('active');
+				jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).stop().clearQueue().slideDown(600);
+			});
+		}
 	});
 	
 	//Cambiar Alumno-Profesor componente producto
