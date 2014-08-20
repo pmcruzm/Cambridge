@@ -86,8 +86,7 @@ background-size:2502px 1251px;background-position:-513px -798px;
 .mobile-menus .banner-cat a img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;max-width:100%;display: block;height: auto;}
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
-.cab-page .container{position:relative;height:170px;}
-.cab-page .container > div{height:170px;overflow:hidden;width:100%;position:absolute;}
+.cab-page .container{position:relative;height:170px;overflow:hidden;}
 .cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:44px;top:54px;margin:0;}
 
 /*Cuadros cabecera*/
