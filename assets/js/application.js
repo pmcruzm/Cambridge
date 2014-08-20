@@ -12,6 +12,7 @@ VARIABLES
 var pag_slider=1;
 var total_slider=0,width_scroll=0;
 var w_container=0;
+var touch_gall=0;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
@@ -69,7 +70,23 @@ jQuery(document).ready(function(){
 		jQuery( this ).find('.desplegable-sub').removeClass('active');
 	});
 	
-	//Menú mobile
+	//Menú multilanguage eventos táctiles
+	jQuery(document).on('touchstart',".other-menu li > a", function(e) {	
+		e.preventDefault();
+		if(!jQuery(this).parent().hasClass('active')){
+			jQuery('.other-menu li').removeClass('active');
+			jQuery('.desplegable-sub').removeClass('active');
+			jQuery('.mobile-tab li').removeClass('active');
+			jQuery('.mobile-menus').removeClass('active');
+			jQuery( this ).parent().addClass('active');
+			jQuery( this ).parent().find('.desplegable-sub').addClass('active');	
+		}else{
+			jQuery( this ).parent().removeClass('active');
+			jQuery( this ).parent().find('.desplegable-sub').removeClass('active');
+		}
+	});
+	
+	//Menú mobile responsive
 	jQuery(document).on("mouseenter",".menu-mob", function(e) {	
 		jQuery('.main-menu li').removeClass('active');
 		jQuery('.other-menu li').removeClass('active');
@@ -80,6 +97,20 @@ jQuery(document).ready(function(){
 		jQuery( this ).removeClass('active');
 		jQuery( this ).find('.mobile-menus').removeClass('active');
 	});	
+	
+	//Menú mobile eventos táctiles
+	jQuery(document).on('touchstart',".menu-mob > a", function(e) {	
+		e.preventDefault();
+		if(!jQuery(this).parent().hasClass('active')){
+			jQuery('.other-menu li').removeClass('active');
+			jQuery('.desplegable-sub').removeClass('active');
+			jQuery( this ).parent().addClass('active');
+			jQuery( this ).parent().find('.mobile-menus').addClass('active');	
+		}else{
+			jQuery( this ).parent().removeClass('active');
+			jQuery( this ).parent().find('.mobile-menus').removeClass('active');
+		}
+	});
 	
 	//Desplegar menús enlaces mobile
 	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
@@ -130,8 +161,74 @@ jQuery(document).ready(function(){
 		
 		//Galería de la Home
 		var slider=jQuery('.bxslider').bxSlider({
-						  touchEnabled:false,
-						  pager: false
+						  pager: false,
+						  infiniteLoop: false,
+						  useCSS: false,
+						  onSlideNext: function(slideElement, oldIndex, newIndex){
+							  //alert('OnSlidenext-'+touch_gall); 
+							  if(device=='yes' && (touch_gall!=1)){
+									if(newIndex!=(pag_slider+1)){
+										pag_slider=parseInt(newIndex+1);
+										if(pag_slider==1){
+											//slider.goToSlide(pag_slider-1);
+											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+											jQuery('.arrow-prev').css({visibility:'hidden'});
+											jQuery('.arrow-next').css({visibility:'visible'});
+										}else{
+											//Comprobamos si es la última
+											if(total_slider==pag_slider){
+												//slider.goToSlide(pag_slider-1);
+												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+												jQuery('.arrow-prev').css({visibility:'visible'});
+												jQuery('.arrow-next').css({visibility:'hidden'});
+											}else{
+												//slider.goToSlide(pag_slider-1);
+												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+												jQuery('.arrow-prev').css({visibility:'visible'});
+												jQuery('.arrow-next').css({visibility:'visible'});
+											}
+										}
+										//pintamos el bullet correspondiente
+										jQuery('#nav-slider ul li a').removeClass('active');
+										jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
+									}
+							  }
+							  touch_gall=0;
+						 	
+						  },
+						  onSlidePrev: function(slideElement, oldIndex, newIndex){
+							 //alert('onSlidePrev-'+touch_gall); 
+							 if(device=='yes' && (touch_gall!=1)){
+								if(pag_slider!=(newIndex)){
+									pag_slider=parseInt(newIndex+1);
+									
+									if(pag_slider==1){
+										//slider.goToSlide(pag_slider-1);
+										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+										jQuery('.arrow-prev').css({visibility:'hidden'});
+										jQuery('.arrow-next').css({visibility:'visible'});
+									}else{
+										//Comprobamos si es la última
+										if(total_slider==pag_slider){
+											//slider.goToSlide(pag_slider-1);
+											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+											jQuery('.arrow-prev').css({visibility:'visible'});
+											jQuery('.arrow-next').css({visibility:'hidden'});
+										}else{
+											//slider.goToSlide(pag_slider-1);
+											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+											jQuery('.arrow-prev').css({visibility:'visible'});
+											jQuery('.arrow-next').css({visibility:'visible'});
+										}
+									}
+								
+									//pintamos el bullet correspondiente
+									jQuery('#nav-slider ul li a').removeClass('active');
+									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
+								}
+							}
+							touch_gall=0;
+						  },
 						});
 										
 	}
@@ -139,6 +236,7 @@ jQuery(document).ready(function(){
 	//Avanzar a la siguiente pantalla slider
 	jQuery(document).on("click",".arrow-next", function(e) {
 		e.preventDefault();
+		touch_gall=1;
 		slider.goToNextSlide();
 		if(total_slider==pag_slider+1){
 			pag_slider=pag_slider+1; 
@@ -162,6 +260,7 @@ jQuery(document).ready(function(){
 	//Retroceder a la siguiente pantalla del slider 
 	jQuery(document).on("click",".arrow-prev", function(e) {
 		e.preventDefault();
+			touch_gall=1;
 			slider.goToPrevSlide();
 			if(pag_slider-1==1){
 				pag_slider=pag_slider-1;
@@ -189,6 +288,7 @@ jQuery(document).ready(function(){
 				jQuery('#nav-slider ul li a').removeClass('active');
 				jQuery(this).addClass('active');
 				pag=parseInt(pag);
+				touch_gall=1;
 				//Comprobamos si es la primera página
 				if(pag==1){
 					slider.goToSlide(pag-1);

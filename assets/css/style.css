@@ -29,7 +29,7 @@ background-size:2502px 1251px;background-position:-513px -798px;
 #top-header ul{float:right;margin:0;padding:0;}
 #top-header ul li{list-style:none;display:inline-block;}
 #top-header ul li a{height:44px;line-height:44px;padding-left:18px;padding-right:18px;color:#20718c;display:inline-block;margin-left:-4px;}
-#top-header ul li a:hover{background:#ffffff;text-decoration:none;}
+#top-header ul li a:hover{/*background:#ffffff;*/text-decoration:none;}
 #top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;}
 
 .main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;}
@@ -87,18 +87,19 @@ background-size:2502px 1251px;background-position:-513px -798px;
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
 .cab-page .container{position:relative;height:170px;}
-.cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:45px;top:10px;}
+.cab-page .container > div{height:170px;overflow:hidden;width:100%;position:absolute;}
+.cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:44px;top:54px;margin:0;}
 
 /*Cuadros cabecera*/
-.primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;/*left: 184px;*/left:18.96%;top: 74px;/*width: 250px;*/width:25.77%;height: 66px;z-index: 906;}
+.primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;/*left: 184px;*/left:18.96%;top: 102px;/*width: 250px;*/width:25.77%;height: 66px;z-index: 906;}
 	
-.segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 23px;*/left: 2.37%;top: 18px;/*width: 714px;*/width:73.60%;height: 135px;z-index: 905;}
+.segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 23px;*/left: 2.37%;top: 46px;/*width: 714px;*/width:73.60%;height: 135px;z-index: 905;}
 	
-.tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;/*left: 16px;*/left: 1.64%;top: 114px;/*width: 837px;*/width:86.28%;height: 49px;z-index: 904;}
+.tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;/*left: 16px;*/left: 1.64%;top: 142px;/*width: 837px;*/width:86.28%;height: 49px;z-index: 904;}
 	
-.cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 271px;*/left: 27.93%;top: 58px;/*width: 697px;*/width:71.85%;height: 112px;z-index: 903;}
+.cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;/*left: 271px;*/left: 27.93%;top: 82px;/*width: 697px;*/width:71.85%;height: 112px;z-index: 903;}
 	
-.quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;/*width: 368px;*/width:37.93%;height: 87px;z-index: 902;}
+.quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;/*width: 368px;*/width:37.93%;height: 115px;z-index: 902;}
 
 /*****************************
 PROPIEDADES CUERPO HOME
@@ -186,11 +187,12 @@ PROPIEDADES CUERPO SEARCH
 /*****************************
 PROPIEDADES CUERPO CATALOGO
 ******************************/
-.block-catalogo{background:#ffffff;}
+.content-catalogo{padding-top:18px;padding-bottom:90px;}
+.block-catalogo{background:#ffffff;margin-bottom:18px;}
 .block-catalogo img{max-width:100%;position:relative;z-index:10;}
 .top-catalogo{position:relative;}
 .top-catalogo h2{margin-bottom:0 !important;}
-.content-catalogo .container .row{margin-top:18px;}
+/*.content-catalogo .container .row{margin-top:18px;}*/
 .top-catalogo h2 a{margin:0;z-index:20;position:absolute;bottom:7px;text-decoration:none;color:#6cd9d7;color:#6cd9d7;font-size:22px;background:rgba(0,38,62,0.9);padding:10px 15px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:94%;left:0;right:0;margin-left:auto;margin-right:auto;display:block;}
 .caption-catalogo{min-height:145px;padding-bottom:18px;}
 .caption-catalogo ul{ margin: 0 15px;padding: 0 0 0 22px;}
@@ -414,9 +416,9 @@ PROPIEDADES CUERPO TEAM
 .cont-team p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
 .cont-team h2.titul-perso{margin-top:10px;}
 
-.ficha-perso{text-align:center;}
+.ficha-perso{text-align:center;margin-bottom:18px;}
 .ficha-perso p{margin:0 !important;}
-.ficha-perso img{margin-bottom:18px;}
+.ficha-perso img{margin-bottom:18px;max-width:100%;}
 .ficha-perso p.name-perso{}
 .ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
 
@@ -695,7 +697,7 @@ PROPIEDADES FOOTER
 /***********************
 PROPIEDADES UP-WINDOW
 ************************/
-.up-window{text-indent:-99999px;background-image:url(../img/flecha-up.png);background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
+.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
 
 
 /*****************************
@@ -869,7 +871,7 @@ MEDIA QUERIES
 }
 
 @media (max-width: 480px) {
-	
+	#migas .breadcrumb{display:none;}	
 }
 
 
