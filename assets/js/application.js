@@ -38,7 +38,7 @@ jQuery(window).load(function(){});
 jQuery(document).ready(function(){
 	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -63,11 +63,11 @@ jQuery(document).ready(function(){
 		jQuery('.other-menu li').removeClass('active');
 		jQuery('.desplegable-sub').removeClass('active');
 		jQuery( this ).addClass('active');
-		jQuery( this ).find('.desplegable-lang').addClass('active');
+		jQuery( this ).find('.desplegable-sub').addClass('active');
 	}).on("mouseleave",".select-lang", function(e) {
 		jQuery( this ).removeClass('active');
-		jQuery( this ).find('.desplegable-lang').removeClass('active');
-	});	
+		jQuery( this ).find('.desplegable-sub').removeClass('active');
+	});
 	
 	//Menú mobile
 	jQuery(document).on("mouseenter",".menu-mob", function(e) {	
@@ -84,13 +84,33 @@ jQuery(document).ready(function(){
 	//Desplegar menús enlaces mobile
 	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
 		e.preventDefault();
+		var tipo = jQuery(this).attr('rel');
 		var enlace=jQuery(this).attr('href');
 		if(enlace=='#'){
 			var submenus=jQuery(this).parent().find('ul');
 			if (jQuery(submenus).is(":visible") ) {
 				jQuery(submenus).hide();
 			} else { 
+				jQuery('.list-menu-mob ul li ul').hide();
 				jQuery(submenus).show();
+				//Cambiamos banners según contenido 
+				switch (tipo){
+					case "Nosotros":
+						jQuery('.banner-nosotros').show();
+						jQuery('.banner-catalogo').hide();
+						jQuery('.banner-teacher').hide();
+					break;
+					case 'Catalogo':
+						jQuery('.banner-nosotros').hide();
+						jQuery('.banner-catalogo').show();
+						jQuery('.banner-teacher').hide();
+					break;
+					case 'Teacher':
+						jQuery('.banner-nosotros').hide();
+						jQuery('.banner-catalogo').hide();
+						jQuery('.banner-teacher').show();
+					break;
+				}
 			}
 		}else{
 			top.location.href=enlace;
