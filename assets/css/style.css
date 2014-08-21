@@ -839,6 +839,7 @@ MEDIA QUERIES
 	.reduce-input .form-group{padding-right:5px;padding-left:5px;}
 	.content-digital .inside-box-compt img{margin-left:0px;position:relative;width:200px;}
 	.inside-img-product img{bottom:-80px;}
+	.cont-component .inside-box-compt img{margin-left:15px;position:relative;width:137px;}
 	
 }
 
@@ -889,6 +890,9 @@ MEDIA QUERIES
 	.menu-product{margin-top:52px !important;}
 	.cont-component{padding:18px 18px 0;}
 	.inside-img-product img{bottom:-40%;}
+	
+	.cont-component .inside-box-compt img{margin:0 auto;display:block;margin-bottom:18px;}
+	.inside-box-compt + a{margin:-13px auto 0;}
 	
 }
 
