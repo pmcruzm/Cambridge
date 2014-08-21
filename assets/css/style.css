@@ -209,7 +209,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li>a{color:#bbb5bb;font-size:18px;display:block;}
 .block-submenus>ul>li.active{margin-left:9px;margin-right:9px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;/*padding-top:11px;padding-bottom:18px;*/margin-bottom:6px;}
 .block-submenus>ul>li>a:hover{text-decoration:none;}
-.block-submenus>ul>li.active>a{font-size:18px;margin-left:9px;text-decoration:none;}
+.block-submenus>ul>li.active>a{font-size:18px;margin-left:9px;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
 .block-submenus>ul>li ul{display:none;}
 .block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;display:block;background:#f8f7f7;}
 .block-submenus>ul>li.active ul li{list-style-image:url(../img/circle_icon_g.png);}
@@ -678,6 +678,51 @@ PROPIEDADES CUERPO NEWSLETTER
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
 .block-news div p{color:#373340;font-size:14px;}
 
+/*************************
+PROPIEDADES CUERPO CORPUS
+**************************/
+
+.cab-corpus{background-repeat:no-repeat;background-position:center bottom;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:234px;width:100%;}
+.cab-corpus>div{display:table;width:100%;height:100%;}
+.cab-corpus>div>div{display:table-cell;width:100%;vertical-align:middle;text-align:center;}
+.cab-corpus>div>div img{}
+
+.content-corpus h2{color:#fcdc4f;font-family:'latoregular', Helvetica, sans-serif;font-size:32px;}
+.content-corpus h3{color:#373340;font-size:20px;line-height:28px;margin-top:32px;margin-bottom:18px;}
+.content-corpus p{color:#373340;font-size:16px;line-height:21px;}
+
+.top-corpus{padding-left:31px;padding-top:36px;}
+
+.bg-work-corpus{-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;background:#fddd3f url(../img/bg_how_work.png) top center no-repeat;text-align:center;padding-top:20px;padding-left:18px;padding-right:18px;}
+.bg-work-corpus p{font-family:'latoregular', Helvetica, sans-serif;color:#373340;font-size:14px;margin-bottom:18px;}
+.bg-work-corpus h3{display:block;background:url(../img/h3_how_work.png) top center no-repeat;width:174px;height:49px;margin:0 auto;text-indent:-99999px;margin-bottom:18px;}
+.bg-work-corpus img{max-width:100%;}
+
+
+.graficas-corpus{background:#fddd3f;margin-top:70px;text-align:center;padding-top:50px;padding-bottom:50px;}
+.graficas-corpus h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-top:36px;}
+.graficas-corpus h3{color:#373340;font-size:20px;}
+.graficas-corpus p{color:#373340;font-size:16px;}
+.graficas-corpus img{height:152px;}
+.graficas-corpus-inside{padding-left:36px;padding-right:36px;}
+
+.cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;}
+.bottom-corpus{padding-bottom:150px;padding-left:36px;padding-right:18px;}
+.bottom-corpus>a{background:#000000;color:#ffffff;height:26px;line-height:26px;-webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius: 13px;width:350px;display:block;margin:-13px auto 0;position:relative;text-align:center;}
+.bottom-corpus>a:hover{text-decoration:none;}
+.bottom-corpus h2{margin-top:72px;}
+.slider-corpus{margin-top:36px;padding-left:25px;padding-right:25px;position:relative;}
+
+.prev_corpus{position:absolute;left:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px 0px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;}
+.next_corpus{position:absolute;right:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px -31px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;}
+
+/**************************************
+PROPIEDADES CUERPO ENGLISH FOR SCHOOL
+**************************************/
+
+
+
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -894,6 +939,10 @@ MEDIA QUERIES
 	.cont-component .inside-box-compt img{margin:0 auto;display:block;margin-bottom:18px;}
 	.inside-box-compt + a{margin:-13px auto 0;}
 	
+	.top-corpus{padding-left:9px;}
+	.bottom-corpus{padding-left:9px;padding-right:9px;}
+	.graficas-corpus img{height:132px;}
+	
 }
 
 @media (max-width: 640px) {
@@ -904,7 +953,14 @@ MEDIA QUERIES
 @media (max-width: 480px) {
 	#header{height:216px;}
 	.cab-page{bottom:0;}
-	#migas {display:none;}	
+	#migas {display:none;}
+	.graficas-corpus img{height:auto;max-width:100%;}	
+	.bottom-corpus{position:relative;}
+	.bottom-corpus > a{font-size:12px;width:auto;padding-left:18px;padding-right:18px;}
+	.bottom-corpus{text-align:center;}
+	.bottom-corpus h2{text-align:left;}
+	.bottom-corpus h3{text-align:left;}
+	.slider-corpus{text-align:left;}
 }
 
 

@@ -115,7 +115,7 @@ jQuery(document).ready(function(){
 	//Desplegar menús enlaces mobile
 	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
 		e.preventDefault();
-		var tipo = jQuery(this).attr('rel');
+		var tipo = jQuery(this).parent().index();
 		var enlace=jQuery(this).attr('href');
 		if(enlace=='#'){
 			var submenus=jQuery(this).parent().find('ul');
@@ -126,17 +126,17 @@ jQuery(document).ready(function(){
 				jQuery(submenus).show();
 				//Cambiamos banners según contenido 
 				switch (tipo){
-					case "Nosotros":
+					case 0:
 						jQuery('.banner-nosotros').show();
 						jQuery('.banner-catalogo').hide();
 						jQuery('.banner-teacher').hide();
 					break;
-					case 'Catalogo':
+					case 1:
 						jQuery('.banner-nosotros').hide();
 						jQuery('.banner-catalogo').show();
 						jQuery('.banner-teacher').hide();
 					break;
-					case 'Teacher':
+					case 2:
 						jQuery('.banner-nosotros').hide();
 						jQuery('.banner-catalogo').hide();
 						jQuery('.banner-teacher').show();
@@ -323,12 +323,10 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		var actual=jQuery(this);
 		if(!jQuery(this).parent().hasClass('active')) {
+			var cerrar=jQuery('.block-submenus>ul>li.active>ul');
+			jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
 			//Cerramos bloque abierto
-			jQuery('.block-submenus>ul>li.active>ul').stop().clearQueue().slideToggle(600,function(){
-				console.log('cerrado');
-				jQuery('.block-submenus>ul>li').removeClass('active');
-				jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).stop().clearQueue().slideDown(600);
-			});
+			jQuery(cerrar).stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active');});
 		}
 	});
 	
@@ -381,6 +379,28 @@ jQuery(document).ready(function(){
 					  }
 			  });	
 		});
+	});
+	
+	//Comprobar que solo se carga en la home
+	if ( jQuery(".content-corpus").is(":visible") ) {
+		var slider_corpus=jQuery('.bxslider_corpus').bxSlider({
+						  pager: false,
+						  infiniteLoop: true,
+						  useCSS: false,
+						  adaptiveHeight:true,
+						  });
+	}
+	
+	//Anterior galería Corpus
+	jQuery(document).on("click",".prev_corpus", function(e) {
+		e.preventDefault();
+		slider_corpus.goToPrevSlide();
+	});
+	
+	//Siguiente galería Corpus
+	jQuery(document).on("click",".next_corpus", function(e) {
+		e.preventDefault();
+		slider_corpus.goToNextSlide();	
 	});
 	
 	//Opción select filtro exams
@@ -454,7 +474,6 @@ function control_scroll(e){
   // autoplay video Youtube
     function onPlayerReady(event) {
 		if(device!='yes'){
-			console.log('Play');
         	event.target.playVideo();
 		}
     }
