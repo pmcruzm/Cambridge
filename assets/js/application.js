@@ -115,7 +115,7 @@ jQuery(document).ready(function(){
 	//Desplegar menús enlaces mobile
 	jQuery(document).on("click",".list-menu-mob ul li a", function(e) {
 		e.preventDefault();
-		var tipo = jQuery(this).attr('rel');
+		var tipo = jQuery(this).parent().index();
 		var enlace=jQuery(this).attr('href');
 		if(enlace=='#'){
 			var submenus=jQuery(this).parent().find('ul');
@@ -126,17 +126,17 @@ jQuery(document).ready(function(){
 				jQuery(submenus).show();
 				//Cambiamos banners según contenido 
 				switch (tipo){
-					case "Nosotros":
+					case 0:
 						jQuery('.banner-nosotros').show();
 						jQuery('.banner-catalogo').hide();
 						jQuery('.banner-teacher').hide();
 					break;
-					case 'Catalogo':
+					case 1:
 						jQuery('.banner-nosotros').hide();
 						jQuery('.banner-catalogo').show();
 						jQuery('.banner-teacher').hide();
 					break;
-					case 'Teacher':
+					case 2:
 						jQuery('.banner-nosotros').hide();
 						jQuery('.banner-catalogo').hide();
 						jQuery('.banner-teacher').show();
