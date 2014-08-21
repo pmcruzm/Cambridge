@@ -261,26 +261,29 @@ PROPIEDADES TEACHER DEVELOPMENT
 *********************************/
 .teacher-dev{padding-bottom:150px;}
 
+.link-teacher{position:relative;z-index:100;margin-bottom:-18px;}
 .link-teacher ul{background:#ffffff;padding:18px;margin:0;margin-top:18px;}
 .link-teacher ul li{list-style:none;margin-bottom:9px;}
 .link-teacher ul li a{color:#bbb5bb;font-size:18px;line-height:21px;}
 .link-teacher ul li.active a{font-family:'latoregular', Helvetica, sans-serif;}
 
-.intro-teacher{padding-left:18px;}
+.intro-teacher{padding-left:18px;margin-bottom:18px;}
 .intro-teacher p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
 .intro-teacher p:last-child{color:#373340;font-size:16px;}
 
-.center-teacher{width:100%;height:305px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);margin-top:72px;display:table;position:relative;text-align:center;margin-bottom:36px;}
-.center-teacher .inside-center-teacher{display:table-cell;vertical-align:middle;}
-.center-teacher h2{background:#ea575b;color:#fff673;display:inline-block;padding:9px 18px;}
+.center-teacher{width:100%;height:305px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);display:table;position:relative;text-align:center;margin-bottom:36px;}
+.center-teacher .inside-center-teacher{display:block;height:305px;position:relative;}
+.center-teacher .inside-center-teacher>div{display:table;height:305px;width:100%;}
+.center-teacher .inside-center-teacher>div>div{vertical-align:bottom;display:table-cell;width:100%;}
+.center-teacher h2{/*background:#ea575b;color:#fff673;display:block;height:60px;line-height:60px;position:absolute;bottom:0;width:100%;margin:0;margin-bottom:-30px;*/background:#ea575b;color:#fff673;height:60px;line-height:60px;margin:0;display:block;margin-bottom:-30px;}
 
-.block-teacher{background:#ffffff;/*margin-top:-18px;*/padding:24px;margin-top:32px;}
-.block-teacher>div{text-align:center;height:130px;}
-.block-teacher.teach1 div img{margin-top:18px;}
+.block-teacher{background:#fff673;/*margin-top:-18px;*/padding:24px;margin-top:32px;}
+.block-teacher>div{text-align:center;height:130px;background:#ffffff;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;padding:6px;}
+.block-teacher.teach1>div>img{max-width:100%;}
 .block-teacher img{max-width:100%;}
 .block-teacher p{color:#373340;font-size:16px;text-align:left;line-height:21px;padding-top:18px;padding-bottom:16px;padding-left:18px;}
 .block-teacher p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
-.block-teacher+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin-top:-13px;z-index:40;position:relative;float:right;margin-right:24px;}
+.block-teacher+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#ea575b;-webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius: 13px;z-index:40;position:relative;margin:-13px auto 0;}
 
 /********************************
 PROPIEDADES CAMBRIDGE LABS
@@ -335,17 +338,23 @@ PROPIEDADES CAMBRIDGE LABS
 .first-col-tp{padding-left:18px;}
 
 .course-book h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;margin-top:54px;}
-.course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;}
+.titul-course{position:relative;height:50px;}
+.course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;position:absolute;}
 .course-book label{display:none;}
 .course-book input{border:none;}
 .course-book select{border:none;}
-.reduce-input{padding-right:40px;}
+.reduce-input{/*padding-right:40px;*/}
+.reduce-input h6{text-align:center;width:100%;}
+.reduce-input .form-group{padding-right:10px;padding-left:10px;}
 
-.privacy-checkbox{margin-top:32px;padding-left:18px;margin-bottom:52px;}
+
+.privacy-checkbox{margin-top:32px;padding-left:18px;/*margin-bottom:52px;*/}
 .privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}
 .privacy-checkbox .checkbox label{position:relative;z-index:20;}
 .privacy-checkbox .checkbox span{display:block;margin-left:42px;position:absolute;top:0;z-index:10;}
 .privacy-checkbox .checkbox a{color:#629ec7;}
+
+.btn-form-submit{margin-top:52px;}
 
 #register-form input[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
 
@@ -505,14 +514,15 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .select-comp h3{margin:0;}
 .select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
 .select-comp h3 a.active{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
-.select-comp  h3 a:hover{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
+.select-comp  h3 a:hover{color:#666;}
+.select-comp h3 a.active:hover{color:#f17922;}
 
 .box-compt{padding-bottom:32px;}
 .inside-box-compt{background:#ffffff;padding:18px;position:relative;}
 .inside-box-compt h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
 .inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
 .inside-box-compt+a{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
-.inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;}
+.cont-component .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:157px;}
 
 /************************************
 PROPIEDADES CUERPO DIGITAL PRODUCT
@@ -545,6 +555,8 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 
 .mac{text-indent:-99999px;display:inline-block;background:url(../img/ico_mac.png) center center no-repeat;width:28px;height:28px;}
 .windows{text-indent:-99999px;display:inline-block;background:url(../img/ico_windows.png) center bottom no-repeat;width:28px;height:28px;}
+
+.content-digital .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:230px;}
 
 /************************************
 PROPIEDADES CUERPO RECURSOS PRODUCT
@@ -817,18 +829,16 @@ MEDIA QUERIES
 
 
 @media (min-width: 768px) and (max-width: 991px) {
-	#destacado_sup{
-		height:auto;
-	}
-	.cat_mid a{
-		padding-left:20px;
-		padding-right:20px;
-	}
+	#destacado_sup{height:auto;}
+	.cat_mid a{padding-left:20px;padding-right:20px;}
 	/*.block_cards{margin-top:-324px;}*/
 	.mini-cards{}
 	.cat_mid{height:110px;}
 	.block_cards{position:relative;margin-top:-340px;}
 	#top-header ul li a{padding-left:9px;padding-right:9px;}
+	.reduce-input .form-group{padding-right:5px;padding-left:5px;}
+	.content-digital .inside-box-compt img{margin-left:0px;position:relative;width:200px;}
+	.inside-img-product img{bottom:-80px;}
 	
 }
 
@@ -869,6 +879,16 @@ MEDIA QUERIES
 	.teacher-p h5{margin-left:9px;}
 	.first-col-tp {padding-left: 9px;}
 	.course-book h5{margin-left:9px;}
+	.reduce-input .form-group{padding-left:0;padding-right:0;}
+	.course-book h6{margin:0;line-height:50px;}
+	.reduce-input h6{text-align:left;}
+	
+	.content-digital .inside-box-compt img{margin:0 auto;display:block;}
+	.menu-sec-product{height:235px;z-index:200;}
+	.block-img-product{height:235px;z-index:100;position:relative;margin-top:-235px;}
+	.menu-product{margin-top:52px !important;}
+	.cont-component{padding:18px 18px 0;}
+	.inside-img-product img{bottom:-40%;}
 	
 }
 
@@ -884,6 +904,11 @@ MEDIA QUERIES
 }
 
 
+@media (max-width: 370px){
+	.privacy-checkbox .checkbox{margin-top:36px;}
+	.btn-form-submit {margin-top: 82px;}
+}
+
 /* Landscape phones and down */
 @media (min-width: 320px) and (max-width: 479px) {
 	.contact_link{height:auto;}
@@ -891,4 +916,5 @@ MEDIA QUERIES
 	.block_cards{margin-top:0px;}
 	.colum-mini-cat{margin-top:0;}
 	#destacado_sup .thumbnails{height:auto;}
+	.btn-form-submit{margin-top:52px;}
 }
