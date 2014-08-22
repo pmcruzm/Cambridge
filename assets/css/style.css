@@ -210,6 +210,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active{margin-left:9px;margin-right:9px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;/*padding-top:11px;padding-bottom:18px;*/margin-bottom:6px;}
 .block-submenus>ul>li>a:hover{text-decoration:none;}
 .block-submenus>ul>li.active>a{font-size:18px;margin-left:9px;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
+.block-submenus>ul>li.type-light>a{font-family:'latolight', Helvetica, sans-serif !important;}
 .block-submenus>ul>li ul{display:none;}
 .block-submenus>ul>li.active ul{margin:0;padding:0 18px 0 28px;display:block;background:#f8f7f7;}
 .block-submenus>ul>li.active ul li{list-style-image:url(../img/circle_icon_g.png);}
@@ -222,14 +223,14 @@ PROPIEDADES CUERPO CATEGORIA
 .supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:40px;position:;}
 .inside-product-c{}
-.block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;max-width:100%}
+.block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:157px;}
 
 .block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
 .block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none;}
 .block-product h3 a:hover{text-decoration:underline;}
 .block-product p{color:#373340;font-size:14px;text-align:left;}
 .caption-product{background:#ffffff;min-height:325px;padding-left:20px;padding-right:20px;position:relative;}
-.new-tag{position:absolute;font-size:20px;font-family:'latoregular', Helvetica, sans-serif;color:#ea575b;background:#fff673;z-index:30;left:20px;top:64px;padding:7px 10px;}
+.new-tag{position:absolute;font-size:20px;font-family:'latoregular', Helvetica, sans-serif;color:#ea575b;background:#fff673;z-index:30;left:50%;top:64px;padding:7px 10px;margin-left:-100px;}
 
 /*****************************
 PROPIEDADES CUERPO RECURSOS
@@ -672,7 +673,7 @@ PROPIEDADES CUERPO NEWSLETTER
 #newsletter-form .checkbox a{color:#ea575b;}
 #newsletter-form input[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
 
-.block-news{background:#ffffff;padding:5px;margin-bottom:36px;}
+.block-news{background:#ffffff;padding:5px;margin-top:56px;}
 .block-news h3{background:#fff673;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding-left:18px;color:#20718c;font-size:22px;height:40px;line-height:40px;margin:0;margin-bottom:22px;}
 .block-news div{padding-right:22px;padding-left:22px;margin-bottom:18px;}
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
@@ -703,7 +704,7 @@ PROPIEDADES CUERPO CORPUS
 .graficas-corpus h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-top:36px;}
 .graficas-corpus h3{color:#373340;font-size:20px;}
 .graficas-corpus p{color:#373340;font-size:16px;}
-.graficas-corpus img{height:152px;}
+.graficas-corpus img{/*height:152px;*/max-width:100%;}
 .graficas-corpus-inside{padding-left:36px;padding-right:36px;}
 
 .cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;}
@@ -837,7 +838,7 @@ PROPIEDADES FOOTER
 /***********************
 PROPIEDADES UP-WINDOW
 ************************/
-.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;box-shadow: 0px 8px 12px 0px rgb( 0, 0, 0 );}
+.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
 
 
 /*****************************
@@ -858,6 +859,8 @@ select:-moz-focusring {color: transparent;text-shadow: 0 0 0 #000;}
 .form-control:focus{-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
 .top-margin{margin-top:18px;}
 .marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
+.type-light{font-family:'latolight', Helvetica, sans-serif !important;}
+.type-regular{font-family:'latoregular', Helvetica, sans-serif !important;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
@@ -983,8 +986,8 @@ MEDIA QUERIES
 	.logo_foot{float:inherit;text-align:center;}
 	.copy_foot{float:inherit;text-align:center;}
 	#top_footer{text-align:center;padding-top:18px;}
-	.colum-2-link{display:none;}
-	.colum-3-link{display:none;}
+	/*.colum-2-link{display:none;}
+	.colum-3-link{display:none;}*/
 	#inf_footer{padding-top:36px;}
 	.logo_foot{margin-bottom:36px;}
 	.copy_foot span{display:block;margin-top:18px;}
@@ -1023,7 +1026,7 @@ MEDIA QUERIES
 	
 	.top-corpus{padding-left:9px;}
 	.bottom-corpus{padding-left:9px;padding-right:9px;}
-	.graficas-corpus img{height:132px;}
+	.graficas-corpus img{/*height:132px;*/}
 	
 	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
 	.row-height .colum-cefs:first-child{margin-bottom:32px;}
@@ -1039,7 +1042,7 @@ MEDIA QUERIES
 	#header{height:216px;}
 	.cab-page{bottom:0;}
 	#migas {display:none;}
-	.graficas-corpus img{height:auto;max-width:100%;}	
+	/*.graficas-corpus img{height:auto;max-width:100%;}	*/
 	.bottom-corpus{position:relative;}
 	.bottom-corpus > a{font-size:12px;width:auto;padding-left:18px;padding-right:18px;}
 	.bottom-corpus{text-align:center;}
@@ -1062,4 +1065,6 @@ MEDIA QUERIES
 	.colum-mini-cat{margin-top:0;}
 	#destacado_sup .thumbnails{height:auto;}
 	.btn-form-submit{margin-top:52px;}
+	#formulario-search .radio div{display:block;}
+	#formulario-search .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 }

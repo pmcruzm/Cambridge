@@ -326,7 +326,7 @@ jQuery(document).ready(function(){
 			var cerrar=jQuery('.block-submenus>ul>li.active>ul');
 			jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
 			//Cerramos bloque abierto
-			jQuery(cerrar).stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active');});
+			jQuery(cerrar).parent().addClass('type-light').find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active').removeClass('type-light');});
 		}
 	});
 	
@@ -367,7 +367,7 @@ jQuery(document).ready(function(){
 		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
 	});
 	
-	//Cuando pulsas sobre uno de los bullets del slider de la home
+	//Cuando pulsas sobre poster frame de un video
 	jQuery(document).on("click",".poster-frame a", function(e) {
 		e.preventDefault();
 		jQuery( this ).parent().fadeOut(400,function(){
