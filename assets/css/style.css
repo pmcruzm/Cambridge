@@ -720,6 +720,42 @@ PROPIEDADES CUERPO CORPUS
 PROPIEDADES CUERPO ENGLISH FOR SCHOOL
 **************************************/
 
+.content-engl-f-school{}
+.content-engl-f-school h2{font-size:32px;color:#20718c;margin-top:36px;margin-bottom:32px;}
+.content-engl-f-school h2+p{margin-bottom:36px;}
+.content-engl-f-school p{font-size:16px;color:#373340;}
+.content-engl-f-school li{font-size:16px;color:#373340;}
+.content-engl-f-school .big-text{font-size:20px;}
+
+.colum-cefs .contenido-cefs{background:#ffffff;padding-left:18px;padding-right:18px;padding-bottom:50px;}
+.colum-cefs .img-cefs{background-repeat:no-repeat;background-position:center center;height:155px;width:100%;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+.colum-cefs h3{font-size:26px;color:#20718c;max-width:312px;background:rgba(255,246,115,0.9);height:60px;line-height:60px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-top:-30px;position:relative;text-align:center;margin:0 auto;top:-30px;margin-bottom:-9px;}
+.colum-cefs p{margin-bottom:30px;}
+.colum-cefs ul{margin:0;padding:0;padding-left:18px;}
+.colum-cefs li{margin-bottom:30px;list-style-image:url(../img/circle_icon.png);}
+.colum-cefs li strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+.colum-cefs li a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+.colum-cefs  a.link-pill{color:#20718c;font-size:14px;font-family:'latobold', Helvetica, sans-serif;display:block;text-align:center;background:#59bdcc;margin-bottom:1px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;height:40px;line-height:40px;}
+.colum-cefs  a.link-pill:hover{text-decoration:none;}
+
+.single-block-cefs{margin-top:42px;}
+.single-block-cefs+p{text-align:center;width:70%;margin:42px auto 0;}
+.single-block-cefs+p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+
+.row-height{display:table;height:100%;}
+.row-height .colum-cefs{float: none;display: table-cell;vertical-align: top;height:100%;}
+.contenedor-cefs{background:#ffffff;;width:100%;height:100%;display:table;}
+
+
+/**************************************
+PROPIEDADES CUERPO CONTACT
+**************************************/
+
+.content-contact{}
+
+.head-office{height:160px;margin-top:18px;}
+.sales-office{height:160px;margin-top:9px;}
+.cover-office{background:#ffffff;padding-left:0;padding-right:0;margin-left:9px;margin-right:9px;}
 
 
 
@@ -885,6 +921,9 @@ MEDIA QUERIES
 	.content-digital .inside-box-compt img{margin-left:0px;position:relative;width:200px;}
 	.inside-img-product img{bottom:-80px;}
 	.cont-component .inside-box-compt img{margin-left:15px;position:relative;width:137px;}
+	.row-height{display:block;}
+	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
+	.row-height .colum-cefs:first-child{margin-bottom:32px;}
 	
 }
 
@@ -942,6 +981,9 @@ MEDIA QUERIES
 	.top-corpus{padding-left:9px;}
 	.bottom-corpus{padding-left:9px;padding-right:9px;}
 	.graficas-corpus img{height:132px;}
+	
+	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
+	.row-height .colum-cefs:first-child{margin-bottom:32px;}
 	
 }
 
