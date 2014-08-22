@@ -1060,5 +1060,7 @@ MEDIA QUERIES
 	#destacado_sup .thumbnails{height:auto;}
 	.btn-form-submit{margin-top:52px;}
 	#formulario-search .radio div{display:block;}
+	#formulario-search-pag .radio div{display:block;}
 	#formulario-search .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
+	#formulario-search-pag .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 }
