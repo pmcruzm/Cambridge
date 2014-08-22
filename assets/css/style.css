@@ -754,9 +754,52 @@ PROPIEDADES CUERPO CONTACT
 .content-contact{}
 
 .head-office{height:160px;margin-top:18px;}
+.head-office [class*="col-"]{height:160px;}
 .sales-office{height:160px;margin-top:9px;}
-.cover-office{background:#ffffff;padding-left:0;padding-right:0;margin-left:9px;margin-right:9px;}
+.sales-office [class*="col-"]{height:160px;}
+.cover-office{background:#ffffff;padding:6px;margin-left:9px;margin-right:9px;}
 
+.titul-office{background:#fff673;display:table; height:147px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:100%;}
+.titul-office > div{display:table-cell;vertical-align:middle;width:100%;height:100%;text-align:center;}
+.titul-office h3{margin:0;color:#20718c;font-size:22px;}
+.titul-office p{font-size:14px;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;line-height:14px;width:90%;margin:0 auto;margin-top:10px;}
+
+.info-office{display:table; height:147px;}
+.info-office > div{display:table-cell;vertical-align:middle;width:100%;height:100%;padding-left:18px;}
+.info-office p{margin-bottom:0;color:#373340;font-size:16px;margin-top:3px;}
+.info-office h4{margin:0;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:16px;}
+
+
+.form-contact{margi}
+#contact-form{padding-right:18px;}
+#contact-form > div{position:relative;}
+#contact-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+#contact-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
+#contact-form label{display:none;}
+#contact-form input{border:none;color:#629ec7;}
+#contact-form textarea{border:none;color:#629ec7;}
+#contact-form select{border:none;}
+#contact-form .form-group{position:relative;}
+#contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+
+
+/*
+#newsletter-form{padding-right:18px;}
+#newsletter-form > div{position:relative;}
+#newsletter-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+#newsletter-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
+#newsletter-form label{display:none;}
+#newsletter-form input{border:none;color:#629ec7;}
+#newsletter-form select{border:none;}
+#newsletter-form .form-group{position:relative;}
+#newsletter-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+.centre-news{margin-top:52px;}
+
+#newsletter-form .checkbox label{display:inline-block;}
+#newsletter-form .checkbox{padding-left:18px;margin-bottom:36px;margin-top:42px;}
+#newsletter-form .checkbox a{color:#ea575b;}
+#newsletter-form input[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+*/
 
 
 /*****************************
@@ -794,7 +837,7 @@ PROPIEDADES FOOTER
 /***********************
 PROPIEDADES UP-WINDOW
 ************************/
-.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
+.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;box-shadow: 0px 8px 12px 0px rgb( 0, 0, 0 );}
 
 
 /*****************************
