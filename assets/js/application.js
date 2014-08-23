@@ -149,6 +149,49 @@ jQuery(document).ready(function(){
 	});
 	
 	
+	//Menú sales office swaplegable
+	jQuery(document).on("mouseenter",".opc-offices ", function(e) {	
+		jQuery( this ).addClass('active');
+		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
+	}).on("mouseleave",".opc-offices", function(e) {
+		jQuery( this ).removeClass('active');
+		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
+	});
+	
+	//Menú multilanguage eventos táctiles
+	jQuery(document).on('touchstart',".opc-offices a", function(e) {	
+		e.preventDefault();
+		if(!jQuery(this).parent().hasClass('active')){
+			jQuery( this ).parent().addClass('active');
+			jQuery( this ).parent().find('.desplg_cities').stop().clearQueue().slideToggle(400);
+		}else{
+			jQuery( this ).parent().removeClass('active');
+			jQuery( this ).parent().find('.desplg_cities').stop().clearQueue().slideToggle(400);
+		}
+	});
+	
+	//Cuando se pulsa sobre una ciudad de sales office
+	jQuery(document).on("click",".desplg_cities li", function(e) {	
+		e.preventDefault();
+		var ciudad=jQuery(this).html();
+		var indice=jQuery(this).index();
+		jQuery('.opc-offices a span').html(ciudad);
+		//Cargamos los datos del JSON via AJAX
+		jQuery.getJSON( "offices.json", function( json ) {
+			for(var i=0;i<json.offices.length;i++){
+				if(i==indice){
+					jQuery('.name-sale').html(json.offices[i].Nombre);
+					jQuery('.street-sale').html(json.offices[i].Calle);	
+					jQuery('.phone-sale strong').html(json.offices[i].Telefono);	
+					jQuery('.fax-sale strong').html(json.offices[i].Fax);	
+					jQuery('.mail-sale a').attr('href','mailto:'+json.offices[i].Email);	
+					jQuery('.mail-sale a').html(json.offices[i].Email);
+				}
+			}
+		});
+	});
+	
+	
 	//Comprobar que solo se carga en la home
 	if ( jQuery("#slider").is(":visible") ) {
 		
@@ -402,6 +445,44 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		slider_corpus.goToNextSlide();	
 	});
+	
+	//Ajustar altura bloques categoria
+	if (jQuery('.content-categoria').is(":visible") ) {
+		
+		//Listado cursos
+		var heights = jQuery(".listado-courses div.block-product").map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		console.log(maxHeight);
+		//Recorremos todos los cuadros 
+		 jQuery(".listado-courses div.block-product").each(function(n) {
+		 	var altura=jQuery(this).height();
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).css('padding-top',total);
+			}
+		 });
+		 
+		 //Listado Supplementary
+		var heights = jQuery(".listado-supplementary div.block-product").map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		console.log(maxHeight);
+		//Recorremos todos los cuadros 
+		 jQuery(".listado-supplementary div.block-product").each(function(n) {
+		 	var altura=jQuery(this).height();
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).css('padding-top',total);
+			}
+		 });
+	}
 	
 	//Opción select filtro exams
 	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
