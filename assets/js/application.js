@@ -484,6 +484,22 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
+	//Seleccionar los radio buttom al hacer click en el texto
+	jQuery(document).on("click",".radio span", function(e) {
+		e.preventDefault();
+		jQuery(this).parent().find('input[type=radio]').prop( "checked", true );
+	});
+	
+	//Seleccionar los checkbox buttom al hacer click en el texto
+	jQuery(document).on("click",".checkbox span", function(e) {
+		e.preventDefault();
+		if (jQuery(this).parent().find('input[type=checkbox]').prop("checked")){
+			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", false );
+		}else{
+			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", true );
+		}
+	});
+	
 	//Opción select filtro exams
 	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
 		e.preventDefault();
