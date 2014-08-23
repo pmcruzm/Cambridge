@@ -192,16 +192,7 @@ jQuery(document).ready(function(){
 	});
 	
 	
-	//Menú sales office swaplegable
-	/*jQuery(document).on("mouseenter",".opc-offices ", function(e) {	
-		jQuery( this ).addClass('active');
-		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
-	}).on("mouseleave",".opc-offices", function(e) {
-		jQuery( this ).removeClass('active');
-		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
-	});*/
-	
-	//Menú multilanguage eventos táctiles
+	//Menú Offices Contact
 	jQuery(document).on('click',".opc-offices a", function(e) {	
 		e.preventDefault();
 		if(!jQuery(this).parent().hasClass('active')){
@@ -219,20 +210,9 @@ jQuery(document).ready(function(){
 		var ciudad=jQuery(this).html();
 		var indice=jQuery(this).index();
 		jQuery('.opc-offices a span').html(ciudad);
-		//Cargamos los datos del JSON via AJAX
-		jQuery.getJSON( "offices.json", function( json ) {
-			for(var i=0;i<json.offices.length;i++){
-				if(i==indice){
-					jQuery('.name-sale').html(json.offices[i].Nombre);
-					jQuery('.street-sale').html(json.offices[i].Calle);	
-					jQuery('.phone-sale strong').html(json.offices[i].Telefono);	
-					jQuery('.fax-sale strong').html(json.offices[i].Fax);	
-					jQuery('.mail-sale a').attr('href','mailto:'+json.offices[i].Email);	
-					jQuery('.mail-sale a').html(json.offices[i].Email);
-					jQuery('.desplg_cities').stop().clearQueue().slideToggle(400);
-				}
-			}
-		});
+		jQuery('.info-city-office').removeClass('active');
+		jQuery('#office_'+indice).addClass('active');
+		
 	});
 	
 	
