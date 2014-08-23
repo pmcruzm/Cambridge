@@ -212,6 +212,9 @@ jQuery(document).ready(function(){
 		jQuery('.opc-offices a span').html(ciudad);
 		jQuery('.info-city-office').removeClass('active');
 		jQuery('#office_'+indice).addClass('active');
+		jQuery('.opc-offices').find('.desplg_cities').stop().clearQueue().slideToggle(400,function(){
+			jQuery('.opc-offices').removeClass('actives')
+		});
 		
 	});
 	
