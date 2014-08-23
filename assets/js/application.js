@@ -459,7 +459,7 @@ jQuery(document).ready(function(){
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		//console.log(maxHeight);
+		console.log(maxHeight);
 		//Recorremos todos los cuadros 
 		 jQuery('.listado-courses div.block-product').each(function() {
 			jQuery(this).attr('rel',altura);
