@@ -792,8 +792,8 @@ PROPIEDADES CUERPO CONTACT
 .info-office p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 .info-office h4{margin:0;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:16px;}
 
-.info-city-office{display:none;}
-.info-city-office.active{display:block;}
+.info-office [id*="office_"]{display:none;}
+.info-office [id*="office_"].active{display:block;}
 
 
 .form-contact{margi}
