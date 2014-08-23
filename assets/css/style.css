@@ -192,6 +192,10 @@ PROPIEDADES CUERPO SEARCH
 .box-search .breadcrumb > li a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:14px;}
 /*.box-search .breadcrumb > li a:hover{text-decoration:none;}*/
 
+.pagination-bottom{text-align:center;margin-top:18px;margin-bottom:18px;}
+.pagination > li > a, .pagination > li > span{background:none !important;color:#47b6c7;font-family:'latobold', Helvetica, sans-serif;border:1px solid #eaeaea;}
+.pagination > li > a:hover, .pagination > li > span:hover{color:#20718c;}
+
 /*****************************
 PROPIEDADES CUERPO CATALOGO
 ******************************/
@@ -714,7 +718,7 @@ PROPIEDADES CUERPO CORPUS
 .graficas-corpus h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-top:36px;}
 .graficas-corpus h3{color:#373340;font-size:20px;}
 .graficas-corpus p{color:#373340;font-size:16px;}
-.graficas-corpus img{/*height:152px;*/max-width:100%;}
+.graficas-corpus img{/*height:152px;*/max-width:100%;fill:red;}
 .graficas-corpus-inside{padding-left:36px;padding-right:36px;}
 
 .cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;}

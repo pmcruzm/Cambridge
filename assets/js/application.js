@@ -500,6 +500,13 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Comprobar que solo se carga en la home
+	if ( jQuery("#content-corpus").is(":visible") ) {
+		 var mySVGsToInject = document.querySelectorAll('img.img-svg');
+		  // Do the injection
+		  SVGInjector(mySVGsToInject);
+	}
+	
 	//Opción select filtro exams
 	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
 		e.preventDefault();
@@ -568,17 +575,22 @@ function control_scroll(e){
    //jQuery('.marcador').html(scrollAmount);
 }
 
-  // autoplay video Youtube
-    function onPlayerReady(event) {
-		if(device!='yes'){
-        	event.target.playVideo();
-		}
-    }
+function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+} 
 
-    // when video ends Youtube
-    function onPlayerStateChange(event) {        
-        if(event.data === 0) {            
+// autoplay video Youtube
+function onPlayerReady(event) {
+	if(device!='yes'){
+        event.target.playVideo();
+	}
+}
+
+// when video ends Youtube
+function onPlayerStateChange(event) {        
+   if(event.data === 0) {            
            //Cuando acaba el video
-        }
     }
+}
 
