@@ -483,7 +483,7 @@ jQuery(document).ready(function(){
 	//Seleccionar los checkbox buttom al hacer click en el texto
 	jQuery(document).on("click",".checkbox span", function(e) {
 		e.preventDefault();
-		jQuery(this).removeClass('error');	
+		jQuery(this).parents('.checkbox').find('input[type=checkbox]').removeClass('error');	
 		if (jQuery(this).parent().find('input[type=checkbox]').prop("checked")){
 			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", false );
 		}else{
@@ -546,7 +546,7 @@ jQuery(document).ready(function(){
 	});
 	
 	//Eliminar marco de error cuando se hace click sobre un input con error
-	jQuery(document).on('focus','#contact-form input,#contact-form textarea',function(event){
+	jQuery(document).on('focus','#contact-form input,#contact-form textarea,#contact-form input[type=checkbox]',function(event){
 		event.preventDefault();
 		if(jQuery(this).attr('type')!='submit'){
 			if(jQuery(this).hasClass('error')){	
@@ -561,6 +561,8 @@ jQuery(document).ready(function(){
 		  // Do the injection
 		  SVGInjector(mySVGsToInject);
 	}
+	
+	
 	
 	//Opción select filtro exams
 	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
