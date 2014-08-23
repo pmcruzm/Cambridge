@@ -793,7 +793,9 @@ PROPIEDADES CUERPO CONTACT
 #contact-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
 #contact-form label{display:none;}
 #contact-form input{border:none;color:#629ec7;}
+#contact-form input.error{border:1px solid #ea575b;}
 #contact-form textarea{border:none;color:#629ec7;}
+#contact-form textarea.error{border:1px solid #ea575b;}
 #contact-form select{border:none;}
 #contact-form .form-group{position:relative;}
 #contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
@@ -804,6 +806,7 @@ PROPIEDADES CUERPO CONTACT
 
 .select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:148px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;}
 .select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;}
+.select_cities:focus{text-decoration:none;color:#ffffff;}
 .opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;}
 .desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:148px;display:none;}
 .desplg_cities ul{margin:0;padding:0;}

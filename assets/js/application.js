@@ -13,6 +13,7 @@ var pag_slider=1;
 var total_slider=0,width_scroll=0;
 var w_container=0;
 var touch_gall=0;
+var send_form=0;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
@@ -192,16 +193,16 @@ jQuery(document).ready(function(){
 	
 	
 	//Menú sales office swaplegable
-	jQuery(document).on("mouseenter",".opc-offices ", function(e) {	
+	/*jQuery(document).on("mouseenter",".opc-offices ", function(e) {	
 		jQuery( this ).addClass('active');
 		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
 	}).on("mouseleave",".opc-offices", function(e) {
 		jQuery( this ).removeClass('active');
 		jQuery( this ).find('.desplg_cities').stop().clearQueue().slideToggle(400);
-	});
+	});*/
 	
 	//Menú multilanguage eventos táctiles
-	jQuery(document).on('touchstart',".opc-offices a", function(e) {	
+	jQuery(document).on('click',".opc-offices a", function(e) {	
 		e.preventDefault();
 		if(!jQuery(this).parent().hasClass('active')){
 			jQuery( this ).parent().addClass('active');
@@ -228,6 +229,7 @@ jQuery(document).ready(function(){
 					jQuery('.fax-sale strong').html(json.offices[i].Fax);	
 					jQuery('.mail-sale a').attr('href','mailto:'+json.offices[i].Email);	
 					jQuery('.mail-sale a').html(json.offices[i].Email);
+					jQuery('.desplg_cities').stop().clearQueue().slideToggle(400);
 				}
 			}
 		});
@@ -505,7 +507,60 @@ jQuery(document).ready(function(){
 		}
 	});
 	
-	//Comprobar que solo se carga en la home
+	//Envío de formulario de contacto
+	jQuery(document).on("submit","#contact-form", function(event) {
+		event.preventDefault();
+		if(send_form==0){
+			send_reg=1;
+			var f_subject_c = jQuery("#subject_c").val();
+			var f_message_c = document.getElementById('message_c').value;
+			var f_name_c = jQuery("#name_c").val();
+			var f_lastname_c = jQuery("#lastname_c").val();
+			var f_email_c = jQuery("#email_c").val();
+			var f_name_c_c = jQuery("#name_c_c").val();	
+			var f_street_c = jQuery("#street_c").val();	
+			var f_post_code_c = jQuery("#post_code_c").val();	
+			
+			
+			if(f_subject_c!="" && f_message_c!="" && f_name_c!="" && f_lastname_c!="" && (f_email_c!="" && validateEmail(f_email_c)) && f_name_c_c!="" &&  f_street_c!="" &&   (f_post_code_c!="" && isNumber(f_post_code_c)) ){			
+				//Si todo esté OK lanzamos ruta AJAX
+				send_reg=0;
+				console.log('q='+ Math.random()+'&subject='+f_subject_c+'&message='+f_message_c+'&name_c='+f_name_c+'&lastname_c='+f_lastname_c+'&email_c='+f_email_c+'&f_name_c_c='+f_name_c_c+'&f_street_c='+f_street_c+'&f_post_code_c='+f_post_code_c);		
+				/*jQuery.ajax({
+						url: ajaxurl,
+						type: 'POST',
+						async: true,
+						data: 'action=f_register&'+data_var1,
+						dataType: 'html',
+						success: function(msg1){
+								
+								}
+				});*/
+			}else{
+				if(f_subject_c==""){errores_form('#subject_c','text');}	
+				if(f_message_c==""){errores_form('#message_c','textarea');}	
+				if(f_name_c==""){errores_form('#name_c','text');}	
+				if(f_lastname_c==""){errores_form('#lastname_c','text');}	
+				if((f_email_c=="") || (f_email_c!="" && validateEmail(f_email_c)==false)){errores_form('#email_c','text');}	
+				if(f_name_c_c==""){errores_form('#name_c_c','text');}	
+				if(f_street_c==""){errores_form('#street_c','text');}	
+				if((f_post_code_c=="") || (f_post_code_c!="" && isNumber(f_post_code_c)==false)){errores_form('#post_code_c','text');}	
+				send_reg=0;
+			}
+		}
+	});
+	
+	//Eliminar marco de error cuando se hace click sobre un input con error
+	jQuery(document).on('focus','#contact-form input,#contact-form textarea',function(event){
+		event.preventDefault();
+		if(jQuery(this).attr('type')!='submit'){
+			if(jQuery(this).hasClass('error')){	
+				jQuery(this).removeClass('error');	
+			}
+		}
+	});
+	
+	//Comprobar que solo se carga en corpus
 	if ( jQuery("#content-corpus").is(":visible") ) {
 		 var mySVGsToInject = document.querySelectorAll('img.img-svg');
 		  // Do the injection
@@ -585,6 +640,10 @@ function validateEmail(email) {
     return re.test(email);
 } 
 
+function isNumber(n) {
+  return !isNaN(parseFloat(n)) && isFinite(n);
+}
+
 // autoplay video Youtube
 function onPlayerReady(event) {
 	if(device!='yes'){
@@ -597,5 +656,15 @@ function onPlayerStateChange(event) {
    if(event.data === 0) {            
            //Cuando acaba el video
     }
+}
+
+//Marcar errores de formulario
+function errores_form(id,tipo){
+	if(tipo=='text'){
+		jQuery(id).val('').addClass('error');
+	}else{
+		jQuery(id).addClass('error');
+		document.getElementById(id.substring(1)).value='';
+	}
 }
 
