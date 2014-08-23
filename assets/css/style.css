@@ -848,6 +848,10 @@ PROPIEDADES UP-WINDOW
 ************************/
 .up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
 
+/******************************
+PROPIEDADES CUSTOM THEMES
+*******************************/
+
 
 /*****************************
 PROPIEDADES ESPECIALES

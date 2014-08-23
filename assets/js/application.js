@@ -34,7 +34,10 @@ if(ua.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)){
 jQuery.noConflict();
 
 
-jQuery(window).load(function(){});
+jQuery(window).load(function(){
+
+	
+});
 
 jQuery(document).ready(function(){
 	
@@ -450,32 +453,34 @@ jQuery(document).ready(function(){
 	if (jQuery('.content-categoria').is(":visible") ) {
 		
 		//Listado cursos
-		var heights = jQuery(".listado-courses div.block-product").map(function ()
+		var heights = jQuery('.listado-courses div.block-product').map(function ()
 		{
 			return jQuery(this).height();
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		console.log(maxHeight);
+		//console.log(maxHeight);
 		//Recorremos todos los cuadros 
-		 jQuery(".listado-courses div.block-product").each(function(n) {
+		 jQuery('.listado-courses div.block-product').each(function() {
+			jQuery(this).attr('rel',altura);
 		 	var altura=jQuery(this).height();
+			jQuery(this).attr('rel',altura);
 			if(altura<maxHeight){
 				var total=maxHeight-altura;
-				jQuery(this).css('padding-top',total);
+				jQuery(this).attr('rel',altura);
+				jQuery(this).css('paddingTop',total);
 			}
 		 });
 		 
 		 //Listado Supplementary
-		var heights = jQuery(".listado-supplementary div.block-product").map(function ()
+		var heights = jQuery('.listado-supplementary div.block-product').map(function ()
 		{
 			return jQuery(this).height();
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		console.log(maxHeight);
 		//Recorremos todos los cuadros 
-		 jQuery(".listado-supplementary div.block-product").each(function(n) {
+		 jQuery('.listado-supplementary div.block-product').each(function() {
 		 	var altura=jQuery(this).height();
 			if(altura<maxHeight){
 				var total=maxHeight-altura;
