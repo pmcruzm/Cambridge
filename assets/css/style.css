@@ -1098,4 +1098,7 @@ MEDIA QUERIES
 	#formulario-search-pag .radio div{display:block;}
 	#formulario-search .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 	#formulario-search-pag .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
+	
+	#formulario-search input[type=submit]{top:65px;}
+	#formulario-search-pag input[type=submit]{top:65px;}
 }
