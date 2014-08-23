@@ -35,7 +35,46 @@ jQuery.noConflict();
 
 
 jQuery(window).load(function(){
-
+	
+	//Ajustar altura bloques categoria
+	if (jQuery('.content-categoria').is(":visible") ) {
+		
+		//Listado cursos
+		var heights = jQuery('.listado-courses div.block-product').map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		console.log(maxHeight);
+		//Recorremos todos los cuadros 
+		 jQuery('.listado-courses div.block-product').each(function() {
+			jQuery(this).attr('rel',altura);
+		 	var altura=jQuery(this).height();
+			jQuery(this).attr('rel',altura);
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).attr('rel',altura);
+				jQuery(this).css('paddingTop',total);
+			}
+		 });
+		 
+		 //Listado Supplementary
+		var heights = jQuery('.listado-supplementary div.block-product').map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		//Recorremos todos los cuadros 
+		 jQuery('.listado-supplementary div.block-product').each(function() {
+		 	var altura=jQuery(this).height();
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).css('padding-top',total);
+			}
+		 });
+	}
 	
 });
 
@@ -449,45 +488,6 @@ jQuery(document).ready(function(){
 		slider_corpus.goToNextSlide();	
 	});
 	
-	//Ajustar altura bloques categoria
-	if (jQuery('.content-categoria').is(":visible") ) {
-		
-		//Listado cursos
-		var heights = jQuery('.listado-courses div.block-product').map(function ()
-		{
-			return jQuery(this).height();
-		}).get(),
-		//Obtenemos tamaño max de los cuadros 
-		maxHeight = Math.max.apply(null, heights);
-		console.log(maxHeight);
-		//Recorremos todos los cuadros 
-		 jQuery('.listado-courses div.block-product').each(function() {
-			jQuery(this).attr('rel',altura);
-		 	var altura=jQuery(this).height();
-			jQuery(this).attr('rel',altura);
-			if(altura<maxHeight){
-				var total=maxHeight-altura;
-				jQuery(this).attr('rel',altura);
-				jQuery(this).css('paddingTop',total);
-			}
-		 });
-		 
-		 //Listado Supplementary
-		var heights = jQuery('.listado-supplementary div.block-product').map(function ()
-		{
-			return jQuery(this).height();
-		}).get(),
-		//Obtenemos tamaño max de los cuadros 
-		maxHeight = Math.max.apply(null, heights);
-		//Recorremos todos los cuadros 
-		 jQuery('.listado-supplementary div.block-product').each(function() {
-		 	var altura=jQuery(this).height();
-			if(altura<maxHeight){
-				var total=maxHeight-altura;
-				jQuery(this).css('padding-top',total);
-			}
-		 });
-	}
 	
 	//Seleccionar los radio buttom al hacer click en el texto
 	jQuery(document).on("click",".radio span", function(e) {
