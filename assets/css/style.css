@@ -826,6 +826,8 @@ PROPIEDADES CUERPO CONTACT
 .opc-offices{position:absolute;width:148px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
 
+.errores-contact p{color:#ea575b;font-size:14px;margin-bottom:0px;}
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -954,6 +956,22 @@ input[type="checkbox"] + label::before {
 	margin-left:-20px;
 }
 
+#foo:checked,
+input[type="checkbox"].error + label::before {
+    content:'';
+	cursor:pointer;
+	position:relative;
+	vertical-align:top;
+	padding-right:37px;
+	display:inline-block;
+	overflow:hidden;
+	width:20px;
+	height:20px;
+	background:url(../img/check_state.png) no-repeat;
+	background-position:0px -40px;
+	margin-left:-20px;
+}
+
 input[type="checkbox"]:checked + label::before {
 	content:'';
 	cursor:pointer;
@@ -1060,6 +1078,7 @@ MEDIA QUERIES
 	#contact-form .checkbox{margin-top:18px;}
 	
 	.prop-recursos{text-align:center;}
+	.errores-contact{margin-bottom:32px;}
 	
 }
 

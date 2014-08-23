@@ -483,6 +483,7 @@ jQuery(document).ready(function(){
 	//Seleccionar los checkbox buttom al hacer click en el texto
 	jQuery(document).on("click",".checkbox span", function(e) {
 		e.preventDefault();
+		jQuery(this).removeClass('error');	
 		if (jQuery(this).parent().find('input[type=checkbox]').prop("checked")){
 			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", false );
 		}else{
@@ -495,6 +496,8 @@ jQuery(document).ready(function(){
 		event.preventDefault();
 		if(send_form==0){
 			send_reg=1;
+			//Limpiamos errores si no es la primera vez
+			jQuery(".errores-contact").html("");
 			var f_subject_c = jQuery("#subject_c").val();
 			var f_message_c = document.getElementById('message_c').value;
 			var f_name_c = jQuery("#name_c").val();
@@ -503,9 +506,12 @@ jQuery(document).ready(function(){
 			var f_name_c_c = jQuery("#name_c_c").val();	
 			var f_street_c = jQuery("#street_c").val();	
 			var f_post_code_c = jQuery("#post_code_c").val();	
+			//Seleccionado checkbox
+			var c_privacy="";
+			if(jQuery('input[id=c_privacy_c]').is(':checked')){c_privacy='SI';}else{c_privacy='NO';}	
 			
 			
-			if(f_subject_c!="" && f_message_c!="" && f_name_c!="" && f_lastname_c!="" && (f_email_c!="" && validateEmail(f_email_c)) && f_name_c_c!="" &&  f_street_c!="" &&   (f_post_code_c!="" && isNumber(f_post_code_c)) ){			
+			if(f_subject_c!="" && f_message_c!="" && f_name_c!="" && f_lastname_c!="" && (f_email_c!="" && validateEmail(f_email_c)) && f_name_c_c!="" &&  f_street_c!="" &&   (f_post_code_c!="" && isNumber(f_post_code_c)) && c_privacy=="SI"){			
 				//Si todo esté OK lanzamos ruta AJAX
 				send_reg=0;
 				console.log('q='+ Math.random()+'&subject='+f_subject_c+'&message='+f_message_c+'&name_c='+f_name_c+'&lastname_c='+f_lastname_c+'&email_c='+f_email_c+'&f_name_c_c='+f_name_c_c+'&f_street_c='+f_street_c+'&f_post_code_c='+f_post_code_c);		
@@ -520,14 +526,20 @@ jQuery(document).ready(function(){
 								}
 				});*/
 			}else{
+				//Mensaje de error genérico
+				if(f_subject_c=="" || f_message_c=="" || f_name_c=="" || f_lastname_c=="" || f_name_c_c=="" || f_street_c=="" || c_privacy=="NO"){	
+					jQuery(".errores-contact").append( "<p>Ha habido un error, por favor revisa los campos resaltados</p>");
+				}
 				if(f_subject_c==""){errores_form('#subject_c','text');}	
 				if(f_message_c==""){errores_form('#message_c','textarea');}	
 				if(f_name_c==""){errores_form('#name_c','text');}	
 				if(f_lastname_c==""){errores_form('#lastname_c','text');}	
-				if((f_email_c=="") || (f_email_c!="" && validateEmail(f_email_c)==false)){errores_form('#email_c','text');}	
+				if((f_email_c=="") || (f_email_c!="" && validateEmail(f_email_c)==false)){errores_form('#email_c','text');jQuery(".errores-contact").append( "<p>La dirección de correo electrónico no es valida.</p>");}	
 				if(f_name_c_c==""){errores_form('#name_c_c','text');}	
 				if(f_street_c==""){errores_form('#street_c','text');}	
-				if((f_post_code_c=="") || (f_post_code_c!="" && isNumber(f_post_code_c)==false)){errores_form('#post_code_c','text');}	
+				if(c_privacy=="NO"){jQuery('input[id=c_privacy_c]').addClass('error')}	
+				if((f_post_code_c=="") || (f_post_code_c!="" && isNumber(f_post_code_c)==false)){errores_form('#post_code_c','text');jQuery(".errores-contact").append( "<p>El código postal no es valido.</p>");}	
+				
 				send_reg=0;
 			}
 		}
