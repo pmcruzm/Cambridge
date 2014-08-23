@@ -258,16 +258,18 @@ PROPIEDADES CUERPO RECURSOS
 ******************************/
 .intro-recurso{color:#373340;font-size:20px;text-align:center;margin-top:54px;margin-bottom:32px;}
 .intro-recurso a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;}
-.comp-recurso{position:relative;}
-.comp-recurso img{z-index:20;}
+.comp-recurso{position:relative;text-align:center;}
+.comp-recurso img{z-index:20;max-width:100%;}
 .comp-recurso p{z-index:30;position:absolute;bottom:20px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
-.comp-recurso+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;}
+.comp-recurso+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;margin-bottom:18px;}
 
 .block-recursos{padding-bottom:150px;}
 .block-recursos h2{color:#20718c;font-size:32px;}
 .how-secc-r{text-align:center;margin-top:90px;padding-bottom:52px;}
 .how-secc-r p{color:#373340;font-size:16px;padding-left:40px;padding-right:40px;margin-bottom:32px;}
 .how-secc-r img{max-width:100%;}
+
+.how-secc-r .video-youtube{margin-left:40px;margin-right:40px;}
 
 .browse-secc{background:#ffffff;text-align:center;}
 .browse-secc h2{margin-top:32px;margin-bottom:-10px;}
@@ -1056,6 +1058,8 @@ MEDIA QUERIES
 	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
 	.row-height .colum-cefs:first-child{margin-bottom:32px;}
 	#contact-form .checkbox{margin-top:18px;}
+	
+	.prop-recursos{text-align:center;}
 	
 }
 
