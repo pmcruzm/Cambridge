@@ -37,8 +37,8 @@ jQuery.noConflict();
 
 jQuery(window).load(function(){
 	
-	//Ajustar altura bloques categoria
-	if (jQuery('.content-categoria').is(":visible") ) {
+	//Ajustar altura bloques categoria listado-courses 
+	if (jQuery('.listado-courses').is(":visible") ) {
 		
 		//Listado cursos
 		var heights = jQuery('.listado-courses div.block-product').map(function ()
@@ -59,7 +59,10 @@ jQuery(window).load(function(){
 				jQuery(this).css('paddingTop',total);
 			}
 		 });
-		 
+	}
+	
+	//Ajustar altura bloques categoria listado-supplementary 
+	if (jQuery('.listado-supplementary').is(":visible") ) {	 
 		 //Listado Supplementary
 		var heights = jQuery('.listado-supplementary div.block-product').map(function ()
 		{

@@ -828,6 +828,30 @@ PROPIEDADES CUERPO CONTACT
 
 .errores-contact p{color:#ea575b;font-size:14px;margin-bottom:0px;}
 
+/**************************************
+PROPIEDADES CUERPO CATALOGUE
+**************************************/
+
+.content-catalogues{padding-bottom:150px;}
+.img-catalogues{text-align:center;}
+.img-catalogues{}
+.img-catalogues img{max-width:100%;margin-top:-173px;}
+.cont-catalogues{padding-top:22px;}
+.cont-catalogues h2{color:#20718c;font-size:32px;line-height:40px;margin-bottom:36px;}
+.cont-catalogues p{font-size:20px;color:#373340;}
+.cont-catalogues p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+
+/**************************************
+PROPIEDADES CUERPO CATALOGUE DIGITAL
+**************************************/
+.content-cat-digital{padding-bottom:150px;}
+.block-cat-digital>div{padding-left:18px;padding-right:18px;padding-top:42px;}
+.block-cat-digital>div>p{color:#373340;font-size:20px;}
+.block-cat-digital>div>h2{font-size:32px;color:#20718c;margin-top:52px;margin-bottom:32px;}
+
+.content-cat-digital .listado-courses{padding-top:0;}
+
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
