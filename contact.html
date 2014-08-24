@@ -464,48 +464,48 @@
                         <div class="row form-contact">
                         	<div class="col-md-12">	
                             	<h2>Contact Form</h2>
-                                <form id="contact-form" role="form">
+                                <form id="contact-form" action="Get_User_Information.php" method="post" role="form" data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
                                   <div>
                                      <h3>Personal details</h3>
                                      <p class="help-block">* Required fields</p>
                                   </div>   
                                   <div class="form-group required">
                                      <label for="subject_c">Subject</label>
-                                     <input type="text" class="form-control" id="subject_c" placeholder="Subject">
+                                     <input type="text" class="form-control validation-rule-empty" id="subject_c" placeholder="Subject">
                                   </div>
                                   <div class="form-group required">
                                       <label for="message_c">Others</label>
-                                      <textarea class="form-control" id="message_c" rows="6" placeholder="Message"></textarea>
+                                      <textarea class="form-control validation-rule-empty" id="message_c" rows="6" placeholder="Message"></textarea>
                                   </div>
                                   <div class="row">
                                         <div class="col-xs-12 col-ms-12 col-sm-6 col-md-6">
                                         	<h3>Personal details</h3>
                                             <div class="form-group required">
                                                  <label for="name_c">Name</label>
-                                                 <input type="text" class="form-control" id="name_c" placeholder="Name">
+                                                 <input type="text" class="form-control validation-rule-empty" id="name_c" placeholder="Name">
                                               </div>
                                               <div class="form-group required">
                                                  <label for="lastname_c">Last Name</label>
-                                                 <input type="text" class="form-control" id="lastname_c" placeholder="Last Name">
+                                                 <input type="text" class="form-control validation-rule-empty" id="lastname_c" placeholder="Last Name">
                                               </div>
                                               <div class="form-group required">
                                                  <label for="email_c">Email</label>
-                                                 <input type="email" class="form-control" id="email_c" placeholder="Email">
+                                                 <input type="email" class="form-control validation-rule-mail" id="email_c" placeholder="Email" data-error-msg="El email no es válido">
                                               </div>
                                         </div>
                                         <div class="col-xs-12 col-ms-12 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
                                         	<h3>Centre Details</h3>
                                             <div class="form-group required">
                                                  <label for="name_c_c">Name of centre</label>
-                                                 <input type="text" class="form-control" id="name_c_c" placeholder="Name of centre">
+                                                 <input type="text" class="form-control validation-rule-empty" id="name_c_c" placeholder="Name of centre">
                                               </div>
                                               <div class="form-group required">
                                                  <label for="street_c">Street</label>
-                                                 <input type="text" class="form-control" id="street_c" placeholder="Street">
+                                                 <input type="text" class="form-control validation-rule-empty" id="street_c" placeholder="Street">
                                               </div>
                                               <div class="form-group required">
                                                  <label for="post_code_c">Post Code</label>
-                                                 <input type="text" class="form-control" id="post_code_c" placeholder="Post Code">
+                                                 <input type="text" class="form-control validation-rule-postcode" id="post_code_c" placeholder="Post Code" data-error-msg="El código postal no es valido.">
                                               </div>
                                                <div class="form-group">
                                                  <label for="city_c">City</label>
@@ -525,7 +525,7 @@
                                   </div>
                                   <div class="row">
                                   	<div class="col-xs-12 col-ms-12 col-sm-6 col-md-6">
-                                  		<div class="checkbox"><input id="c_privacy_c" type="checkbox"><label for="c_privacy_c"></label><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</div>
+                                  		<div class="checkbox"><input id="c_privacy_c" class="validation-rule-checkbox" type="checkbox"><label for="c_privacy_c"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
                                   	</div>
                                   </div>
                                   <div class="row">

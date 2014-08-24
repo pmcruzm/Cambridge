@@ -485,62 +485,24 @@ jQuery(document).ready(function(){
 	jQuery(document).on("click",".checkbox span", function(e) {
 		e.preventDefault();
 		jQuery(this).parents('.checkbox').find('input[type=checkbox]').removeClass('error');	
-		if (jQuery(this).parent().find('input[type=checkbox]').prop("checked")){
-			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", false );
+		if (jQuery(this).parents('.checkbox').find('input[type=checkbox]').prop("checked")){
+			jQuery(this).parents('.checkbox').find('input[type=checkbox]').prop( "checked", false );
 		}else{
-			jQuery(this).parent().find('input[type=checkbox]').prop( "checked", true );
+			jQuery(this).parents('.checkbox').find('input[type=checkbox]').prop( "checked", true );
 		}
 	});
 	
 	//Envío de formulario de contacto
 	jQuery(document).on("submit","#contact-form", function(event) {
-		event.preventDefault();
 		if(send_form==0){
 			send_reg=1;
 			//Limpiamos errores si no es la primera vez
 			jQuery(".errores-contact").html("");
-			var f_subject_c = jQuery("#subject_c").val();
-			var f_message_c = document.getElementById('message_c').value;
-			var f_name_c = jQuery("#name_c").val();
-			var f_lastname_c = jQuery("#lastname_c").val();
-			var f_email_c = jQuery("#email_c").val();
-			var f_name_c_c = jQuery("#name_c_c").val();	
-			var f_street_c = jQuery("#street_c").val();	
-			var f_post_code_c = jQuery("#post_code_c").val();	
-			//Seleccionado checkbox
-			var c_privacy="";
-			if(jQuery('input[id=c_privacy_c]').is(':checked')){c_privacy='SI';}else{c_privacy='NO';}	
 			
-			
-			if(f_subject_c!="" && f_message_c!="" && f_name_c!="" && f_lastname_c!="" && (f_email_c!="" && validateEmail(f_email_c)) && f_name_c_c!="" &&  f_street_c!="" &&   (f_post_code_c!="" && isNumber(f_post_code_c)) && c_privacy=="SI"){			
-				//Si todo esté OK lanzamos ruta AJAX
-				send_reg=0;
-				console.log('q='+ Math.random()+'&subject='+f_subject_c+'&message='+f_message_c+'&name_c='+f_name_c+'&lastname_c='+f_lastname_c+'&email_c='+f_email_c+'&f_name_c_c='+f_name_c_c+'&f_street_c='+f_street_c+'&f_post_code_c='+f_post_code_c);		
-				/*jQuery.ajax({
-						url: ajaxurl,
-						type: 'POST',
-						async: true,
-						data: 'action=f_register&'+data_var1,
-						dataType: 'html',
-						success: function(msg1){
-								
-								}
-				});*/
-			}else{
-				//Mensaje de error genérico
-				if(f_subject_c=="" || f_message_c=="" || f_name_c=="" || f_lastname_c=="" || f_name_c_c=="" || f_street_c=="" || c_privacy=="NO"){	
-					jQuery(".errores-contact").append( "<p>Ha habido un error, por favor revisa los campos resaltados</p>");
-				}
-				if(f_subject_c==""){errores_form('#subject_c','text');}	
-				if(f_message_c==""){errores_form('#message_c','textarea');}	
-				if(f_name_c==""){errores_form('#name_c','text');}	
-				if(f_lastname_c==""){errores_form('#lastname_c','text');}	
-				if((f_email_c=="") || (f_email_c!="" && validateEmail(f_email_c)==false)){errores_form('#email_c','text');jQuery(".errores-contact").append( "<p>La dirección de correo electrónico no es valida.</p>");}	
-				if(f_name_c_c==""){errores_form('#name_c_c','text');}	
-				if(f_street_c==""){errores_form('#street_c','text');}	
-				if(c_privacy=="NO"){jQuery('input[id=c_privacy_c]').addClass('error')}	
-				if((f_post_code_c=="") || (f_post_code_c!="" && isNumber(f_post_code_c)==false)){errores_form('#post_code_c','text');jQuery(".errores-contact").append( "<p>El código postal no es valido.</p>");}	
-				
+			//Llamamos a la función de validar (id formulario y contenedor errores) 
+			var result=validate_form('#contact-form','.errores-contact');
+			if(result==1){
+				event.preventDefault();
 				send_reg=0;
 			}
 		}
@@ -548,33 +510,39 @@ jQuery(document).ready(function(){
 	
 	//Envío de formulario de LABS
 	jQuery(document).on("submit","#register-form", function(event) {
-		event.preventDefault();
 		if(send_form==0){
 			send_reg=1;
 			//Limpiamos errores si no es la primera vez
 			jQuery(".errores-register").html("");
 			
-			//Obtenemos los datos de los campos 
-			/*var f_nombre_t = jQuery("#nombre_t").val();
-			var f_apellidos_t = jQuery("#apellidos_t").val();
-			var f_email_t = jQuery("#email_t").val();
-			var f_telefono_t= jQuery("#telefono_t").val();
-			var nombre_centre = jQuery("#nombre_centre").val();
-			var f_tipo_centre = jQuery("#tipo_centre").val();
-			var f_message_c = document.getElementById('message_c').value;
-			
-			//Seleccionado checkbox
-			var c_privacy="";
-			if(jQuery('input[id=c_privacy_c]').is(':checked')){c_privacy='SI';}else{c_privacy='NO';}	*/
-			send_reg=0;
-			console.log('Formulario Lab');
-			
+			//Llamamos a la función de validar (id formulario y contenedor errores) 
+			var result=validate_form('#register-form','.errores-register');
+			if(result==1){
+				event.preventDefault();
+				send_reg=0;
+			}
 			
 		}
 	});
 	
+	//Envío de formulario de Newsletter
+	jQuery(document).on("submit","#newsletter-form", function(event) {
+		if(send_form==0){
+			send_reg=1;
+			//Limpiamos errores si no es la primera vez
+			jQuery(".errores-newsletter").html("");
+			
+			//Llamamos a la función de validar (id formulario y contenedor errores) 
+			var result=validate_form('#newsletter-form','.errores-newsletter');
+			if(result==1){
+				event.preventDefault();
+				send_reg=0;
+			}
+		}
+	});
+	
 	//Eliminar marco de error cuando se hace click sobre un input con error
-	jQuery(document).on('focus','#contact-form input,#contact-form textarea,#contact-form input[type=checkbox],#register-form input,#register-form textarea,#register-form input[type=checkbox]',function(event){
+	jQuery(document).on('focus','form input,form textarea,form input[type=checkbox]',function(event){
 		event.preventDefault();
 		if(jQuery(this).attr('type')!='submit'){
 			if(jQuery(this).hasClass('error')){	
@@ -697,5 +665,85 @@ function errores_form(id,tipo){
 		jQuery(id).addClass('error');
 		document.getElementById(id.substring(1)).value='';
 	}
+}
+
+//Funcion para validar genéricamnete un formulario
+function validate_form(id,contenedor){
+		//Busca todos los campos requeridos de texto
+			if(jQuery(id).find('.validation-rule-empty').length > 0){
+				var error_empty=0;
+				var txt_empty="";
+				jQuery(id).find('.validation-rule-empty').each(function() {
+					var res_campo=jQuery(this).val();
+					if(res_campo==""){
+						error_empty=1;
+						jQuery(this).addClass('error').val('');
+					}
+					
+				});
+			}
+			
+			//Busca todos los campos requeridos de mail
+			if(jQuery(id).find('.validation-rule-mail').length > 0){
+				var error_mail=0;
+				var txt_mail="";
+				jQuery(id).find('.validation-rule-mail').each(function() {
+					var res_campo=jQuery(this).val();
+					if((res_campo=="") || (res_campo!="" && validateEmail(res_campo)==false) ){
+						error_mail=1;
+						jQuery(this).addClass('error').val('');
+					}
+					
+				});
+			} 
+			
+			//Busca todos los campos requeridos de codigo postal
+			if(jQuery(id).find('.validation-rule-postcode').length > 0){
+				var error_postcode=0;
+				var txt_postcode="";
+				jQuery(id).find('.validation-rule-postcode').each(function() {
+					var res_campo=jQuery(this).val();
+					if((res_campo=="") || (res_campo!="" && isNumber(res_campo)==false) ){
+						error_postcode=1;
+						jQuery(this).addClass('error').val('');
+					}
+					
+				});
+			} 
+			
+			//Busca todos los campos requeridos checkbox
+			if(jQuery(id).find('.validation-rule-checkbox').length > 0){
+				var error_checkbox=0;
+				var txt_checkbox="";
+				jQuery(id).find('.validation-rule-checkbox').each(function() {
+					if(!jQuery(this).prop("checked")){
+						error_checkbox=1;
+						jQuery(this).addClass('error');
+					}
+					
+				});
+			} 
+			
+			//Error general campos vacíos
+			if(error_empty==1 || error_checkbox==1){
+				var message=jQuery(id).attr('data-error-msg');
+				jQuery(contenedor).append('<p>'+message+'</p>');
+			}
+			if(error_postcode==1){
+				var message=jQuery(id).find('.validation-rule-postcode').attr('data-error-msg');
+				jQuery(contenedor).append('<p>'+message+'</p>');
+			}
+			
+			if(error_mail==1){
+				var message=jQuery(id).find('.validation-rule-mail').attr('data-error-msg');
+				jQuery(contenedor).append('<p>'+message+'</p>');
+			}
+			
+			//Salida
+			if(error_empty==1 || error_checkbox==1 || error_postcode==1 ||error_mail){
+				return 1;
+			}else{
+				return 0;
+			}
 }
 

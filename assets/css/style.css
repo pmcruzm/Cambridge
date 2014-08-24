@@ -704,22 +704,26 @@ PROPIEDADES CUERPO NEWSLETTER
 #newsletter-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
 #newsletter-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
 #newsletter-form label{display:none;}
-#newsletter-form input{border:none;color:#629ec7;}
+#newsletter-form input{border:none;color:#629ec7;border:1px solid #ffffff;}
+#newsletter-form input.error{border:1px solid #ea575b;}
 #newsletter-form select{border:none;/*-webkit-appearance: none;*/}
 #newsletter-form .form-group{position:relative;}
 #newsletter-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
 .centre-news{margin-top:52px;}
 
 #newsletter-form .checkbox label{display:inline-block;}
-#newsletter-form .checkbox{padding-left:18px;margin-bottom:36px;margin-top:42px;}
+#newsletter-form .checkbox{padding-left:30px;margin-bottom:36px;margin-top:42px;}
+#newsletter-form .checkbox p{margin-top:-25px;}
 #newsletter-form .checkbox a{color:#ea575b;}
-#newsletter-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#newsletter-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
 
 .block-news{background:#ffffff;padding:5px;margin-top:56px;}
 .block-news h3{background:#fff673;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding-left:18px;color:#20718c;font-size:22px;height:40px;line-height:40px;margin:0;margin-bottom:22px;}
 .block-news div{padding-right:22px;padding-left:22px;margin-bottom:18px;}
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
 .block-news div p{color:#373340;font-size:14px;}
+
+.errores-newsletter p{color:#ea575b;font-size:14px;margin-bottom:0px;}
 
 /*************************
 PROPIEDADES CUERPO CORPUS
@@ -823,16 +827,17 @@ PROPIEDADES CUERPO CONTACT
 #contact-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
 #contact-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
 #contact-form label{display:none;}
-#contact-form input{border:none;color:#629ec7;}
+#contact-form input{border:none;color:#629ec7;border:1px solid #ffffff;}
 #contact-form input.error{border:1px solid #ea575b;}
-#contact-form textarea{border:none;color:#629ec7;}
+#contact-form textarea{border:none;color:#629ec7;border:1px solid #ffffff;}
 #contact-form textarea.error{border:1px solid #ea575b;}
 #contact-form select{border:none;}
 #contact-form .form-group{position:relative;}
 #contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
-#contact-form input[type=submit],#contact-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#contact-form input[type=submit],#contact-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
 #contact-form .checkbox label{display:inline-block;}
-#contact-form .checkbox{padding-left:0px;margin-bottom:36px;margin-top:-36px;font-size:13px;}
+#contact-form  .checkbox{padding-left:30px;margin-bottom:36px;margin-top:-36px;}
+#contact-form  .checkbox p{margin-top:-25px;font-size:14px;}
 #contact-form .checkbox a{color:#ea575b;}
 
 .select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:148px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;}
@@ -1006,49 +1011,35 @@ input[type="checkbox"] {
 input[type="checkbox"] + label::before {
     content:'';
 	cursor:pointer;
-	position:relative;
-	/*top:3px;*/
-	vertical-align:top;
-	padding-right:37px;
 	display:inline-block;
-	overflow:hidden;
 	width:20px;
 	height:20px;
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px 0px;
-	margin-left:-20px;
+	margin-left:-50px;
 }
 
 #foo:checked,
 input[type="checkbox"].error + label::before {
     content:'';
 	cursor:pointer;
-	position:relative;
-	vertical-align:top;
-	padding-right:37px;
 	display:inline-block;
-	overflow:hidden;
 	width:20px;
 	height:20px;
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px -40px;
-	margin-left:-20px;
+	margin-left:-50px;
 }
 
 input[type="checkbox"]:checked + label::before {
 	content:'';
 	cursor:pointer;
-	position:relative;
-	/*top:3px;*/
-	vertical-align:top;
-	padding-right:37px;
 	display:inline-block;
-	overflow:hidden;
 	width:20px;
 	height:20px;
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px -20px;
-	margin-left:-20px;
+	margin-left:-50px;
 }
 
 /*****************************
@@ -1145,6 +1136,7 @@ MEDIA QUERIES
 	
 	.prop-recursos{text-align:center;}
 	.errores-contact{margin-bottom:32px;}
+	.errores-newsletter{margin-bottom:32px;}
 	
 	.pill-cat{margin:0 auto;margin-top:18px;}
 	.block-cat-digital>div>p{width:100%;}

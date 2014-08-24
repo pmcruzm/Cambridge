@@ -296,35 +296,35 @@
                 </div>
             	<div class="row">
                 	<div class="col-sx-12 col-ms-12 col-xs-6 col-sm-6 col-md-6 ">
-                           <form id="newsletter-form" role="form">
+                           <form id="newsletter-form" action="Get_User_Information.php" method="post" role="form" data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
                                   <div>
                                      <h3>Personal details</h3>
                                      <p class="help-block">* Required fields</p>
                                   </div>   
                                   <div class="form-group required">
                                      <label for="nombre_n">Name</label>
-                                     <input type="text" class="form-control" id="nombre_n" placeholder="Name">
+                                     <input type="text" class="form-control validation-rule-empty" id="nombre_n" placeholder="Name">
                                   </div>
                                   <div class="form-group required">
                                       <label for="apellidos_n">Surname</label>
-                                      <input type="text" class="form-control" id="apellidos_n" placeholder="Surname">
+                                      <input type="text" class="form-control validation-rule-empty" id="apellidos_n" placeholder="Surname">
                                   </div>
                                   <div class="form-group required">
                                       <label for="email_n">Email</label>
-                                     <input type="email" class="form-control" id="email_n"  placeholder="Email">
+                                     <input type="email" class="form-control validation-rule-mail" id="email_n"  placeholder="Email" data-error-msg="El email no es válido">
                                   </div>
                                   <h3 class="centre-news">Centre Details</h3>
                                   <div class="form-group required">
                                      <label for="nombre_center_n">Name of centre</label>
-                                     <input type="text" class="form-control" id="nombre_center_n" placeholder="Name of centre">
+                                     <input type="text" class="form-control validation-rule-empty" id="nombre_center_n" placeholder="Name of centre">
                                   </div>
                                   <div class="form-group required">
                                       <label for="street_n">Street</label>
-                                      <input type="text" class="form-control" id="street_n" placeholder="Street">
+                                      <input type="text" class="form-control validation-rule-empty" id="street_n" placeholder="Street">
                                   </div>
                                   <div class="form-group required">
                                       <label for="postcode_n">Post Code</label>
-                                     <input type="text" class="form-control" id="postcode_n"  placeholder="Post Code">
+                                     <input type="text" class="form-control validation-rule-postcode" id="postcode_n"  placeholder="Post Code" data-error-msg="El código postal no es valido.">
                                   </div>
                                   <div class="form-group">
                                       <label for="city_n">City</label>
@@ -340,8 +340,15 @@
                                              <option>Province 4</option>
                                          </select>
                                   </div>
-                                  <div class="checkbox"><input id="c_privacy_n" type="checkbox"><label for="c_privacy_n"></label> I have read, understand and accept the <a href="#" title="Privacy Policy">Privacy Policy</a>.</div>
-                                  <input type="submit" class="btn" value="Send">  
+                                  <div class="checkbox"><input id="c_privacy_n" class="validation-rule-checkbox" type="checkbox"><label for="c_privacy_n"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
+                                  <div class="row">
+                                        <div class="col-sm-8 col-sm-push-4 col-md-8 col-md-push-4 errores-newsletter">	
+                                            
+                                        </div>
+                                        <div class="col-sm-4 col-sm-pull-9 col-md-4 col-md-pull-8">	
+                                            <input type="submit" class="btn" value="Send">  
+                                        </div>
+                                  </div>  
                              </form>
                     </div>
                     <div class="col-sx-12 col-ms-12 col-xs-5 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
