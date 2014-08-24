@@ -1161,4 +1161,8 @@ MEDIA QUERIES
 	
 	#formulario-search input[type=submit],#formulario-search button[type=submit]{top:65px;}
 	#formulario-search-pag input[type=submit],#formulario-search-pag button[type=submit]{top:65px;}
+	
+	.img-catalogues img{max-width:70%;display:block;margin:0 auto;margin-top:-173px;}
+	.content-catalogues .cab-nosotros{height:282px;}
+	.pill-cat{width:75%;}
 }

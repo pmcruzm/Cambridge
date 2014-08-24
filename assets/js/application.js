@@ -548,8 +548,63 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Envío de formulario de LABS
+	jQuery(document).on("submit","#register-form", function(event) {
+		event.preventDefault();
+		if(send_form==0){
+			send_reg=1;
+			//Limpiamos errores si no es la primera vez
+			jQuery(".errores-register").html("");
+			//Obtenemos los datos de los campos 
+			var f_subject_c = jQuery("#subject_c").val();
+			var f_message_c = document.getElementById('message_c').value;
+			var f_name_c = jQuery("#name_c").val();
+			var f_lastname_c = jQuery("#lastname_c").val();
+			var f_email_c = jQuery("#email_c").val();
+			var f_name_c_c = jQuery("#name_c_c").val();	
+			var f_street_c = jQuery("#street_c").val();	
+			var f_post_code_c = jQuery("#post_code_c").val();	
+			//Seleccionado checkbox
+			var c_privacy="";
+			if(jQuery('input[id=c_privacy_c]').is(':checked')){c_privacy='SI';}else{c_privacy='NO';}	
+			
+			
+			if(f_subject_c!="" && f_message_c!="" && f_name_c!="" && f_lastname_c!="" && (f_email_c!="" && validateEmail(f_email_c)) && f_name_c_c!="" &&  f_street_c!="" &&   (f_post_code_c!="" && isNumber(f_post_code_c)) && c_privacy=="SI"){			
+				//Si todo esté OK lanzamos ruta AJAX
+				send_reg=0;
+				console.log('q='+ Math.random()+'&subject='+f_subject_c+'&message='+f_message_c+'&name_c='+f_name_c+'&lastname_c='+f_lastname_c+'&email_c='+f_email_c+'&f_name_c_c='+f_name_c_c+'&f_street_c='+f_street_c+'&f_post_code_c='+f_post_code_c);		
+				/*jQuery.ajax({
+						url: ajaxurl,
+						type: 'POST',
+						async: true,
+						data: 'action=f_register&'+data_var1,
+						dataType: 'html',
+						success: function(msg1){
+								
+								}
+				});*/
+			}else{
+				//Mensaje de error genérico
+				if(f_subject_c=="" || f_message_c=="" || f_name_c=="" || f_lastname_c=="" || f_name_c_c=="" || f_street_c=="" || c_privacy=="NO"){	
+					jQuery(".errores-contact").append( "<p>Ha habido un error, por favor revisa los campos resaltados</p>");
+				}
+				if(f_subject_c==""){errores_form('#subject_c','text');}	
+				if(f_message_c==""){errores_form('#message_c','textarea');}	
+				if(f_name_c==""){errores_form('#name_c','text');}	
+				if(f_lastname_c==""){errores_form('#lastname_c','text');}	
+				if((f_email_c=="") || (f_email_c!="" && validateEmail(f_email_c)==false)){errores_form('#email_c','text');jQuery(".errores-contact").append( "<p>La dirección de correo electrónico no es valida.</p>");}	
+				if(f_name_c_c==""){errores_form('#name_c_c','text');}	
+				if(f_street_c==""){errores_form('#street_c','text');}	
+				if(c_privacy=="NO"){jQuery('input[id=c_privacy_c]').addClass('error')}	
+				if((f_post_code_c=="") || (f_post_code_c!="" && isNumber(f_post_code_c)==false)){errores_form('#post_code_c','text');jQuery(".errores-contact").append( "<p>El código postal no es valido.</p>");}	
+				
+				send_reg=0;
+			}
+		}
+	});
+	
 	//Eliminar marco de error cuando se hace click sobre un input con error
-	jQuery(document).on('focus','#contact-form input,#contact-form textarea,#contact-form input[type=checkbox]',function(event){
+	jQuery(document).on('focus','#contact-form input,#contact-form textarea,#contact-form input[type=checkbox],#register-form input,#register-form textarea,#register-form input[type=checkbox]',function(event){
 		event.preventDefault();
 		if(jQuery(this).attr('type')!='submit'){
 			if(jQuery(this).hasClass('error')){	
