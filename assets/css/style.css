@@ -841,6 +841,9 @@ PROPIEDADES CUERPO CATALOGUE
 .cont-catalogues p{font-size:20px;color:#373340;}
 .cont-catalogues p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 
+.pill-cat{display:block;color:#ffffff;background:#47b6c7;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;width:200px;height:30px;line-height:30px;font-size:13px;margin-top:18px;text-align:center;}
+.pill-cat:hover{text-decoration:none;color:#ffffff;}
+
 /**************************************
 PROPIEDADES CUERPO CATALOGUE DIGITAL
 **************************************/
@@ -1103,6 +1106,8 @@ MEDIA QUERIES
 	
 	.prop-recursos{text-align:center;}
 	.errores-contact{margin-bottom:32px;}
+	
+	.pill-cat{margin:0 auto;margin-top:18px;}
 	
 }
 
