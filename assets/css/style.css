@@ -328,12 +328,14 @@ PROPIEDADES CAMBRIDGE LABS
 .block-labs>div{height:128px;vertical-align:middle;}
 .block-labs h2{color:#629ec7;font-size:32px;}
 .block-labs img{max-width:100%;}
+.block-labs img.logo-lab{height:91px;}
 .block-labs p{color:#373340;font-size:16px;padding-left:20px;padding-right:20px;line-height:21px;}
 .block-labs p strong{font-weight:normal;font-family:'latoregular', Helvetica, sans-serif;}
 .block-labs p a{color:#639ec8;font-family:'latoregular', Helvetica, sans-serif;}
 
 .row-logo-lab{background:#ffffff;margin-bottom: 42px;margin-top: 42px;display:block;height:50px;}
 .logo-lab-center{text-align:center;position:relative;margin-top:-18px;}
+.logo-lab-center img{height:50px;}
 .form-lab{padding-left:18px;}
 .form-lab h3{color:#629ec7;font-size:32px;margin-bottom:32px;}
 
@@ -375,8 +377,8 @@ PROPIEDADES CAMBRIDGE LABS
 .privacy-checkbox{margin-top:32px;padding-left:18px;/*margin-bottom:52px;*/}
 .privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}
 .privacy-checkbox .checkbox label{position:relative;z-index:20;}
-.privacy-checkbox .checkbox span{display:block;margin-left:42px;position:absolute;top:0;z-index:10;}
-.privacy-checkbox .checkbox a{color:#629ec7;}
+.privacy-checkbox .checkbox span{/*display:inline-block;position:relative;left:37px;top:-20px;*/}
+.privacy-checkbox .checkbox span + a{color:#629ec7;}
 
 .btn-form-submit{margin-top:52px;}
 
@@ -384,8 +386,9 @@ PROPIEDADES CAMBRIDGE LABS
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
-.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/icon_select.png) no-repeat 98% center #ffffff;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
-.custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;}
+.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;}
+.custom-select select:focus{color:#ffffff;}
 	
 /*****************************
 PROPIEDADES CUERPO EVENTS (PENDIENTE)
@@ -849,7 +852,7 @@ PROPIEDADES CUERPO CATALOGUE DIGITAL
 **************************************/
 .content-cat-digital{padding-bottom:150px;}
 .block-cat-digital>div{padding-left:18px;padding-right:18px;padding-top:42px;}
-.block-cat-digital>div>p{color:#373340;font-size:20px;width:80%;}
+.block-cat-digital>div>p{color:#373340;font-size:20px;}
 .block-cat-digital>div>h2{font-size:32px;color:#20718c;margin-top:52px;margin-bottom:32px;}
 
 .content-cat-digital .listado-courses{padding-top:0;}
