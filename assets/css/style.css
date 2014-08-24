@@ -354,13 +354,17 @@ PROPIEDADES CAMBRIDGE LABS
 
 .centre-d-c{margin-top:32px;}
 .centre-d-c h4{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
-.centre-d-c .checkbox{color:#629ec7;margin-bottom:15px;}
+/*.centre-d-c .checkbox{color:#629ec7;margin-bottom:15px;}*/
+.centre-d-c  .checkbox{padding-left:30px;}
+.centre-d-c  .checkbox p{margin-top:-25px;color:#629ec7;}
 
 .teacher-p h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-top:36px;}
 .teacher-p h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;}
 .teacher-p textarea{border:none;}
 .teacher-p label[for=others_level]{display:none;}
-.teacher-p .checkbox{color:#629ec7;margin-bottom:15px;}
+/*.teacher-p .checkbox{color:#629ec7;margin-bottom:15px;}*/
+.teacher-p  .checkbox{padding-left:30px;}
+.teacher-p   .checkbox p{margin-top:-25px;color:#629ec7;}
 .first-col-tp{padding-left:18px;}
 
 .course-book h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;margin-top:54px;}
@@ -375,8 +379,9 @@ PROPIEDADES CAMBRIDGE LABS
 
 
 .privacy-checkbox{margin-top:32px;padding-left:18px;/*margin-bottom:52px;*/}
-.privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}
-.privacy-checkbox .checkbox label{position:relative;z-index:20;}
+/*.privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}*/
+.privacy-checkbox  .checkbox{padding-left:30px;margin-bottom:18px;}
+.privacy-checkbox  .checkbox p{margin-top:-25px;color:#373340;}
 .privacy-checkbox .checkbox span{/*display:inline-block;position:relative;left:37px;top:-20px;*/}
 .privacy-checkbox .checkbox span + a{color:#629ec7;}
 
