@@ -46,10 +46,10 @@
                         	 <div class="desplegable-sub">
                                     <div class="container">
                                         <div class="row">
-                                             <div class="col-xs-3 col-sm-3 col-md-3 titul-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 titul-search">
                                                 <p>Search</p>
                                              </div>
-                                             <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
                                              	<form role="form" id="formulario-search">
                                                     <div class="form-group">
                                                         <label for="campo_busqueda">Campo Búsqueda</label>
@@ -57,10 +57,10 @@
                                                     </div>
                                                     <div class="radio">
                                                         
-                                                        <input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog
-                                                        <input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events
-                                                        <input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us
-                                                        <input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere
+                                                        <div><input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere</div>
                                                         
                                                      </div>
                                                   <input type="submit" class="btn" value="Search">
@@ -71,14 +71,21 @@
                               </div>
                         </li>
                         <li class="select-lang"><a href="#" class="glyphicon glyphicon-flag"></a>
-                        	<div class="desplegable-lang">
-                            	<ul>
-                                	<li><a href="#" title="" class="active">EN</a></li>
-                                    <li><a href="#" title="">ES</a></li>
-                                </ul>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                                    <div class="row">
+                                    	<div class="col-sx-12 col-ms-12 col-md-7 col-md-offset-5 box-lang">
+                                            <p>Choose language</p>
+                                            <ul>
+                                                <li class="active-lang"><a href="#" title="">English</a></li>
+                                                <li><a href="#" title="">Español</a></li>
+                                            </ul>
+                                        </div>
+                                	</div>
+                                </div>    
                             </div>
                         </li>
-                    </ul> 
+                    </ul>  
                     <!--Mobile-->
                     <ul class="mobile-tab">
                     	<li class="menu-mob"><a href="#" class="fa fa-bars"></a>
@@ -86,16 +93,18 @@
                         	<div class="mobile-menus">
                             	<div class="container">
                                 	<div class="row">
-                                    	<div class="col-xs-4 list-menu-mob">
+                                    	<!--<div class="col-sx-12 col-xs-4 list-menu-mob">-->
+                                        <div class="col-sx-12 col-ms-4 col-sm-4 list-menu-mob">
                                          	<ul>
-                                            	<li><a href="#" title="">Nosotros  <span class="caret"></span></a>
+                                            	<li><a href="#" title="" rel="Nosotros">Nosotros  <span class="caret"></span></a>
                                                 	<ul>
+                                                    	<li><a title="" href="nosotros.html">Quienes somos</a></li>
                                                         <li><a title="" href="#">Cambridge Corpus</a></li>
-                                                        <li><a title="" href="#">Team</a></li>
+                                                        <li><a title="" href="team.html">Team</a></li>
                                                         <li><a title="" href="#">Contact</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" title="">Catálogo  <span class="caret"></span></a>
+                                                <li><a href="#" title="" rel="Catalogo">Catálogo  <span class="caret"></span></a>
                                                 	<ul>
                                                         <li><a title="" href="#">Infantil</a></li>
                                                         <li><a title="" href="#">Primaria</a></li>
@@ -104,44 +113,89 @@
                                                         <li><a title="" href="#">Adultos</a></li>
                                                         <li><a title="" href="#">Digital</a></li>
                                                     </ul>
+                                                    <ul>
+                                                        <li><a href="#" title="">Exámenes</a></li>
+                                                        <li><a href="#" title="">Profesional English</a></li>
+                                                        <li><a href="#" title="">Gramática, vocabulario y pronunciación</a></li>
+                                                        <li><a href="#" title="">Books for teachers</a></li>
+                                                    </ul>
                                                 </li>
-                                                <li><a title="" href="#">Teacher Development  <span class="caret"></span></a>
+                                                <li><a title="" href="#" rel="Teacher">Teacher Development  <span class="caret"></span></a>
                                                 	<ul>
-                                                        <li><a title="" href="#">Teacher Development</a></li>
-                                                        <li><a title="" href="#">Cambridge LABS</a></li>
+                                                        <li><a title="" href="teacher.html">Teacher Development</a></li>
+                                                        <li><a title="" href="labs.html">Cambridge LABS</a></li>
                                                         <li><a title="" href="#">Cambridge English for Schools</a></li>
                                                         <li><a title="" href="#">English for Spanish Speakers</a></li>
                                                         <li><a title="" href="#">Events</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a title="" href="#">Recursos</a></li>
-                                                <li><a title="" href="#">Exámenes</a></li>
+                                                <li><a title="" href="teacher.html">Recursos</a></li>
+                                                <li><a title="" href="exams.html">Exámenes</a></li>
                                             </ul>
                                          </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
-                                         </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
-                                         </div>
+
+                                         	<div class="col-sx-12 col-ms-8 col-sm-8">
+                                            	<div class="row">
+                                                	<div class="block-banners">
+                                                    	<!--Banners Nosotros-->
+                                                    	<div class="banner-nosotros" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                         </div>
+                                                        <!--Banners Catálogo-->
+                                                    	<div class="banner-catalogo">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                         <!--Banners Teacher-->
+                                                    	<div class="banner-teacher" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                    </div>     
+                                                 </div>
+                                             </div>
                                     </div>	
                                 </div>
                             </div>
                         </li>
-                    </ul>   
+                    </ul>  
                     <!--Menú principal-->
                     <ul class="main-menu">
                     	<li><a href="#">Nosotros</a>
                         	<div class="desplegable-sub">
                             	<div class="container">
-                            		<div class="row">
-                 						 <div class="col-md-2">
+                                	<div class="row">
+                 						 <div class="col-sm-3 col-md-3">
                                          	<ul>
-                                            	<li><a href="#" title="">Quienes somos</a></li>
-                                                <li><a href="#" title="">Infografía Corpus</a></li>
+                                            	<li><a href="nosotros.html" title="">Quienes Somos</a></li>
+                                            	<li><a href="#" title="">Cambridge Corpus</a></li>
+                                                <li><a href="team.html" title="">Team</a></li>
+                                                <li><a href="#" title="">Contact</a></li>
                                             </ul>
                                          </div>
-                                    </div>     
+                                         <div class="col-sm-3 col-md-3">
+                                         	<!--Espacio vacio para más menús-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                    </div>  
                                 </div>
                             </div>
                         </li>
@@ -180,25 +234,36 @@
                         <li><a href="#" title="">Teacher Development</a>
                                 <div class="desplegable-sub">
                                     <div class="container">
-                                        <div class="row">
-                                             <div class="col-md-2">
+                                    	<div class="row">
+                                             <div class="col-sm-3 col-md-3">
                                                 <ul>
-                                                    <li><a href="#" title="">Teacher Development</a></li>
-                                                    <li><a href="#" title="">Cambridge LABS</a></li>
+                                                    <li><a href="teacher.html" title="">Teacher Development</a></li>
+                                                    <li><a href="labs.html" title="">Cambridge LABS</a></li>
                                                     <li><a href="#" title="">Cambridge English for Schools</a></li>
-                                                    <li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                <ul>
+                                                	<li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                     <li><a href="#" title="">Cambridge English Teacher</a></li>
                                                     <li><a href="#" title="">Events</a></li>
                                                 </ul>
                                              </div>
-                                        </div>     
+                                             <div class="col-sm-3  col-md-3 ">
+                                                    <!--Espacio vacio para 1 banner-->
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                    <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                             </div>
+                                        </div> 
                                     </div>
                                 </div>
                         </li>
-                        <li><a href="#" title="">Recursos</a></li>
-                        <li><a href="#" title="">Exámenes</a></li>
+                        <li><a href="recursos.html" title="">Recursos</a></li>
+                        <li><a href="exams.html" title="">Exámenes</a></li>
                     </ul>
                 </div>
-             </div>   
+             </div>  
             <div id="migas">
             	<div class="container">
                 	<ol class="breadcrumb">
@@ -228,16 +293,16 @@
             	<div class="container">
                 	<a href="#" title="Subir" class="up-window">Subir</a>
                 	<div class="row">
-                        <div class="col-sm-3 col-md-3 menu-sec-product">
+                        <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 menu-sec-product">
                         	<ul>
                             	<li><a href="#" title="">Overview</a></li>
                                 <li><a href="#" title="">Componentes</a></li>
                                 <li><a href="#" title="">Programación</a></li>
-                                <li class="active"><a href="#" title="" >Recursos</a></li>
-                                <li><a href="#" title="">Digital</a></li>
+                                <li class="active"><a href="#" title="">Recursos</a></li>
+                                <li><a href="#" title="" >Digital</a></li>
                             </ul>  
                         </div>
-                        <div class="col-sm-9 col-md-9 block-img-product">
+                        <div class="col-sx-12 col-ms-12 col-sm-9 col-md-9 block-img-product">
                         	<div class="inside-img-product">
                         		<img src="assets/upload/show_product.png" alt="">
                             </div>
@@ -247,7 +312,7 @@
             </div>
             <div class="container">
             	<div class="row">
-   					<div class="col-md-3">
+   					<div class="col-sx-12 col-ms-12 col-sm-3 col-md-3">
                     	<!--Menú lateral-->
                         <div class="block-submenus menu-product">
                             <ul>
@@ -362,93 +427,109 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-9 cont-recurso-p">
-                    	<h2>Recursos</h2>
+                    <div class="col-sx-12 col-ms-12 col-sm-9 col-md-9 cont-recurso-p">
+                    	<h2 class="theme-color-1">Recursos</h2>
                         <p class="intro-digital">Use these free resources to accompany Kid's Box for Spanish Speakers.</p>
                         <div class="box-recursos">
-                        	<div class="row vrow">
-                            	<div class="col-md-4 vcenter table-r">
-                                	<div class="inside-recurso ">
-                                    	<h3>Unit Tests</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box. </p>
-                                    </div>
-                                    <a href="#" title="" class="btn-more">More</a>
-                                </div>
-                                <div class="col-md-4 vcenter table-r">
+                        	<div class="row">
+                            	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Bonus Young Learners tests</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                    	<div>
+                                            <h3>Unit Tests</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box. </p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
-                                <div class="col-md-4 vcenter table-r">
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Placement test</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                    	<div>
+                                            <h3>Bonus Young Learners tests</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
+                                </div>
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
+                                	<div class="inside-recurso">
+                                    	<div>
+                                            <h3>Placement test</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                         </div>   
+                                    </div>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
+                                </div>
+                            	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
+                                	<div class="inside-recurso">
+                                    	<div>
+                                            <h3>Poster teaching tips</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box. </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
+                                </div>
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
+                                	<div class="inside-recurso">
+                                    	<div>
+                                            <h3>Printable board games</h3>
+                                            <p>Revise and reinforce key vocabulary from levels 1 and 2.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
+                                </div>
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
+                                	<div class="inside-recurso">
+                                    	<div>
+                                            <h3>CLIL lesson plans</h3>
+                                            <p>Help your pupils connect with the world outside the classroom with these extra CLIL lesson plans for levels 1 to 4.</p>
+                                         </div>
+                                    </div>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>	
-                            </div><!--Fin row-->
-                            <div class="row vrow">
-                            	<div class="col-md-4 vcenter-1 table-r">
+                            	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Poster teaching tips</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box. </p>
+                                    	<div>
+                                            <h3>Language portfolios</h3>
+                                            <p>Tips and information on how to encourage learner autonomy with the language portfolios included with the Activity Book. </p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
-                                <div class="col-md-4 vcenter-1 table-r">
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Printable board games</h3>
-                                        <p>Revise and reinforce key vocabulary from levels 1 and 2.</p>
+                                    	<div>
+                                            <h3>Characters’ masks</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
-                                <div class="col-md-4 vcenter-1 table-r">
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>CLIL lesson plans</h3>
-                                        <p>Help your pupils connect with the world outside the classroom with these extra CLIL lesson plans for levels 1 to 4.</p>
+                                    	<div>
+                                            <h3>Letters to parents</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
-                                </div>	
-                            </div><!--Fin row-->
-                            <div class="row vrow">
-                            	<div class="col-md-4 vcenter-1 table-r">
-                                	<div class="inside-recurso">
-                                    	<h3>Language portfolios</h3>
-                                        <p>Tips and information on how to encourage learner autonomy with the language portfolios included with the Activity Book. </p>
-                                    </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
-                                <div class="col-md-4 vcenter-1 table-r">
+                            	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Characters’ masks</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                    	<div>
+                                            <h3>Festivals</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box. </p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
-                                <div class="col-md-4 vcenter-1 table-r">
+                                <div class="col-sx-12 col-ms-6 col-sm-6 col-md-4">
                                 	<div class="inside-recurso">
-                                    	<h3>Letters to parents</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box.</p>
+                                    	<div>
+                                            <h3>Course diplomas</h3>
+                                            <p>Now available, unit tests for every level of Kid’s Box. </p>
+                                        </div>
                                     </div>
-                                    <a href="#" title="" class="btn-more">More</a>
-                                </div>
-                            </div><!--Fin row-->
-                            <div class="row vrow">
-                            	<div class="col-md-4 vcenter-1 table-r">
-                                	<div class="inside-recurso">
-                                    	<h3>Festivals</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box. </p>
-                                    </div>
-                                    <a href="#" title="" class="btn-more">More</a>
-                                </div>
-                                <div class="col-md-4 vcenter-1 table-r">
-                                	<div class="inside-recurso">
-                                    	<h3>Course diplomas</h3>
-                                        <p>Now available, unit tests for every level of Kid’s Box. </p>
-                                    </div>
-                                    <a href="#" title="" class="btn-more">More</a>
+                                    <a href="#" title="" class="btn-more theme-color-bg-1">More</a>
                                 </div>
                             </div><!--Fin row-->
                             <!--Bloque Unit Test-->
@@ -457,58 +538,58 @@
                                 <p>Download from here tests per unit for each level of Kid's Box and their corresponding audio files. The Tests are in pdf format and contain answer keys and recording scripts</p>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 1</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 1</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 2</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 2</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 3</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 3</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 4</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 4</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 5</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 5</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 6</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 6</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 7</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 7</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level 8</span></div>
-                                        <div class="col-md-6"><a href="#" title="">Tests, answer key and audio scripts</a></div>
-                                        <div class="col-md-3"><a href="#" title="">Audio files</a></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level 8</span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><a href="#" title="" class="theme-color-1">Tests, answer key and audio scripts</a></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><a href="#" title="" class="theme-color-1">Audio files</a></div>
                                     </div>
                                 </div>
                                 
@@ -520,17 +601,17 @@
                                 <p>These lessons are recommended for children aged 6–8 (levels 1 & 2 of Kid's Box):</p>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-4"><a href="#" title="">Art</a></div>
-                                        <div class="col-md-4"><a href="#" title="">Maths</a></div>
-                                        <div class="col-md-4"><a href="#" title="">Science</a></div>
+                                    	<div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Art</a></div>
+                                        <div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Maths</a></div>
+                                        <div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Science</a></div>
                                     </div>
                                 </div>
                                 <p class="top-margin">These lessons are recommended for children aged 6–8 (levels 1 & 2 of Kid's Box):</p>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-4"><a href="#" title="">Food technology</a></div>
-                                        <div class="col-md-4"><a href="#" title="">Science</a></div>
-                                        <div class="col-md-4"><a href="#" title="">Environment and geography</a></div>
+                                    	<div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Food technology</a></div>
+                                        <div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Science</a></div>
+                                        <div class="col-sx-4 col-ms-4 col-sm-4 col-md-4"><a href="#" title="" class="theme-color-1">Environment and geography</a></div>
                                     </div>
                                 </div>
                             </div>
@@ -540,43 +621,43 @@
                                 <p>If you're preparing your pupils for the Cambridge Young Learners English tests (YLE), you’ll be happy to know that Kid's Box fully covers the syllabus requirements for Starters, Movers and Flyers.</p>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level <strong>1 & 2</strong></span></div>
-                                        <div class="col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Starters</strong></span></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level <strong>1 & 2</strong></span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Starters</strong></span></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level <strong>3 & 4</strong></span></div>
-                                        <div class="col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Movers</strong></span></div>
-                                        <div class="col-md-3"><span>CEF level <strong>A1</strong></span></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level <strong>3 & 4</strong></span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Movers</strong></span></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>CEF level <strong>A1</strong></span></div>
                                     </div>
                                 </div>
                                 <div class="pill-w">
                                 	<div class="row">
-                                    	<div class="col-md-3"><span>Level <strong>5 & 6</strong></span></div>
-                                        <div class="col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Flyers</strong></span></div>
-                                        <div class="col-md-3"><span>CEF level <strong>A2</strong></span></div>
+                                    	<div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>Level <strong>5 & 6</strong></span></div>
+                                        <div class="col-sx-6 col-ms-6 col-sm-6 col-md-6"><span>Cambridge Young Learners English tests (YLE) <strong>Flyers</strong></span></div>
+                                        <div class="col-sx-3 col-ms-3 col-sm-3 col-md-3"><span>CEF level <strong>A2</strong></span></div>
                                     </div>
                                 </div>
                                 
                                 <p class="top-margin">You'll find practice YLE-type tests in Levels 2, 4 and 6, but you can also download bonus practice tests below.</p>
                                 <div class="block-starters">
                                 	<h4>Starters</h4>
-                                    <div class="pill-w"><a href="#">YLE Starters practice test</a> <span>(PDF file)</span></div>
-                                    <div class="pill-w"><a href="#">Test audio</a> <span>(mp3 files)</span></div>
-                                    <div class="pill-w"><a href="#">Teacher's notes</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">YLE Starters practice test</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Test audio</a> <span>(mp3 files)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Teacher's notes</a> <span>(PDF file)</span></div>
                                  </div>
                                 <div class="block-movers">
                                 	<h4>Movers</h4>
-                                    <div class="pill-w"><a href="#">YLE Starters practice test</a> <span>(PDF file)</span></div>
-                                    <div class="pill-w"><a href="#">Test audio</a> <span>(mp3 files)</span></div>
-                                    <div class="pill-w"><a href="#">Teacher's notes</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">YLE Starters practice test</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Test audio</a> <span>(mp3 files)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Teacher's notes</a> <span>(PDF file)</span></div>
                                 </div>
                                 <div class="block-flyers">
                                 	<h4>Flyers</h4>
-                                    <div class="pill-w"><a href="#">YLE Starters practice test</a> <span>(PDF file)</span></div>
-                                    <div class="pill-w"><a href="#">Test audio</a> <span>(mp3 files)</span></div>
-                                    <div class="pill-w"><a href="#">Teacher's notes</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">YLE Starters practice test</a> <span>(PDF file)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Test audio</a> <span>(mp3 files)</span></div>
+                                    <div class="pill-w"><a href="#" title="" class="theme-color-1">Teacher's notes</a> <span>(PDF file)</span></div>
                                 </div>
                             </div>
                         </div>

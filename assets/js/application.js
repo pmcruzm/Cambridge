@@ -50,9 +50,7 @@ jQuery(window).load(function(){
 		//console.log(maxHeight);
 		//Recorremos todos los cuadros 
 		 jQuery('.listado-courses div.block-product').each(function() {
-			jQuery(this).attr('rel',altura);
 		 	var altura=jQuery(this).height();
-			jQuery(this).attr('rel',altura);
 			if(altura<maxHeight){
 				var total=maxHeight-altura;
 				jQuery(this).attr('rel',altura);
@@ -592,22 +590,28 @@ jQuery(document).ready(function(){
 		  SVGInjector(mySVGsToInject);
 	}
 	
-	
-	
-	//Opción select filtro exams
-	/*jQuery(document).on("click",".opc-filter input[type=checkbox]", function(e) {
-		e.preventDefault();
-		if(jQuery(this).is(':checked')){
-			console.log('true');
-			
-			jQuery(this).attr('rel');
-			jQuery(this).parent().find('span').addClass('active');
-		}else{
-			console.log('false');
-			jQuery(this).removeAttr('rel');
-			jQuery(this).parent().find('span').removeClass('active');
-		}
-	});	*/
+	//Ajustar altura bloques recursos productos 
+	if (jQuery('.box-recursos').is(":visible") ) {
+		
+		//Listado cursos
+		var heights = jQuery('.box-recursos div.inside-recurso').map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		console.log(maxHeight);
+		//Recorremos todos los cuadros 
+		 jQuery('.box-recursos div.inside-recurso').each(function() {
+		 	var altura=jQuery(this).height();
+			jQuery(this).attr('rel',altura);
+			if(altura<maxHeight){
+				jQuery(this).css({height:maxHeight});
+			}else{
+				jQuery(this).css({height:maxHeight});
+			}
+		 });
+	}
 	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
