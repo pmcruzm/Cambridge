@@ -169,7 +169,7 @@ PROPIEDADES CUERPO SEARCH
 #formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;}
 #formulario-search .radio{padding-left:9px;}
 #formulario-search .radio div{display:inline-block;}
-#formulario-search input[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
+#formulario-search input[type=submit],#formulario-search button[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
 #formulario-search .radio span{cursor:pointer;}
 
 #formulario-search-pag{position:relative;}
@@ -177,7 +177,7 @@ PROPIEDADES CUERPO SEARCH
 #formulario-search-pag input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;}
 #formulario-search-pag .radio{padding-left:9px;}
 #formulario-search-pag .radio div{display:inline-block;}
-#formulario-search-pag input[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
+#formulario-search-pag input[type=submit],#formulario-search-pag button[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
 #formulario-search-pag .radio span{cursor:pointer;}
 
 #search_words{background:#ffffff;height:54px;}
@@ -382,7 +382,7 @@ PROPIEDADES CAMBRIDGE LABS
 
 .btn-form-submit{margin-top:52px;}
 
-#register-form input[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#register-form input[type=submit],#register-form button[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
@@ -697,7 +697,7 @@ PROPIEDADES CUERPO NEWSLETTER
 #newsletter-form .checkbox label{display:inline-block;}
 #newsletter-form .checkbox{padding-left:18px;margin-bottom:36px;margin-top:42px;}
 #newsletter-form .checkbox a{color:#ea575b;}
-#newsletter-form input[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#newsletter-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
 
 .block-news{background:#ffffff;padding:5px;margin-top:56px;}
 .block-news h3{background:#fff673;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding-left:18px;color:#20718c;font-size:22px;height:40px;line-height:40px;margin:0;margin-bottom:22px;}
@@ -814,7 +814,7 @@ PROPIEDADES CUERPO CONTACT
 #contact-form select{border:none;}
 #contact-form .form-group{position:relative;}
 #contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
-#contact-form input[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#contact-form input[type=submit],#contact-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
 #contact-form .checkbox label{display:inline-block;}
 #contact-form .checkbox{padding-left:0px;margin-bottom:36px;margin-top:-36px;font-size:13px;}
 #contact-form .checkbox a{color:#ea575b;}
@@ -914,7 +914,6 @@ ul.bxslider {margin: 0;padding: 0;}
 .helper {display: inline-block;height: 100%;vertical-align: middle;}
 .txt-center{text-align:center;}
 .clear{clear:both;}
-select:-moz-focusring {color: transparent;text-shadow: 0 0 0 #000;}
 .form-control:focus{-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
 .top-margin{margin-top:18px;}
 .marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
@@ -1160,6 +1159,6 @@ MEDIA QUERIES
 	#formulario-search .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 	#formulario-search-pag .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 	
-	#formulario-search input[type=submit]{top:65px;}
-	#formulario-search-pag input[type=submit]{top:65px;}
+	#formulario-search input[type=submit],#formulario-search button[type=submit]{top:65px;}
+	#formulario-search-pag input[type=submit],#formulario-search-pag button[type=submit]{top:65px;}
 }
