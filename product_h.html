@@ -46,10 +46,10 @@
                         	 <div class="desplegable-sub">
                                     <div class="container">
                                         <div class="row">
-                                             <div class="col-xs-3 col-sm-3 col-md-3 titul-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 titul-search">
                                                 <p>Search</p>
                                              </div>
-                                             <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
                                              	<form role="form" id="formulario-search">
                                                     <div class="form-group">
                                                         <label for="campo_busqueda">Campo Búsqueda</label>
@@ -57,10 +57,10 @@
                                                     </div>
                                                     <div class="radio">
                                                         
-                                                        <input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog
-                                                        <input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events
-                                                        <input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us
-                                                        <input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere
+                                                        <div><input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us</div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere</div>
                                                         
                                                      </div>
                                                   <input type="submit" class="btn" value="Search">
@@ -71,14 +71,21 @@
                               </div>
                         </li>
                         <li class="select-lang"><a href="#" class="glyphicon glyphicon-flag"></a>
-                        	<div class="desplegable-lang">
-                            	<ul>
-                                	<li><a href="#" title="" class="active">EN</a></li>
-                                    <li><a href="#" title="">ES</a></li>
-                                </ul>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                                    <div class="row">
+                                    	<div class="col-sx-12 col-ms-12 col-md-7 col-md-offset-5 box-lang">
+                                            <p>Choose language</p>
+                                            <ul>
+                                                <li class="active-lang"><a href="#" title="">English</a></li>
+                                                <li><a href="#" title="">Español</a></li>
+                                            </ul>
+                                        </div>
+                                	</div>
+                                </div>    
                             </div>
                         </li>
-                    </ul> 
+                    </ul>  
                     <!--Mobile-->
                     <ul class="mobile-tab">
                     	<li class="menu-mob"><a href="#" class="fa fa-bars"></a>
@@ -86,16 +93,18 @@
                         	<div class="mobile-menus">
                             	<div class="container">
                                 	<div class="row">
-                                    	<div class="col-xs-4 list-menu-mob">
+                                    	<!--<div class="col-sx-12 col-xs-4 list-menu-mob">-->
+                                        <div class="col-sx-12 col-ms-4 col-sm-4 list-menu-mob">
                                          	<ul>
-                                            	<li><a href="#" title="">Nosotros  <span class="caret"></span></a>
+                                            	<li><a href="#" title="" rel="Nosotros">Nosotros  <span class="caret"></span></a>
                                                 	<ul>
+                                                    	<li><a title="" href="nosotros.html">Quienes somos</a></li>
                                                         <li><a title="" href="#">Cambridge Corpus</a></li>
-                                                        <li><a title="" href="#">Team</a></li>
+                                                        <li><a title="" href="team.html">Team</a></li>
                                                         <li><a title="" href="#">Contact</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" title="">Catálogo  <span class="caret"></span></a>
+                                                <li><a href="#" title="" rel="Catalogo">Catálogo  <span class="caret"></span></a>
                                                 	<ul>
                                                         <li><a title="" href="#">Infantil</a></li>
                                                         <li><a title="" href="#">Primaria</a></li>
@@ -104,44 +113,89 @@
                                                         <li><a title="" href="#">Adultos</a></li>
                                                         <li><a title="" href="#">Digital</a></li>
                                                     </ul>
+                                                    <ul>
+                                                        <li><a href="#" title="">Exámenes</a></li>
+                                                        <li><a href="#" title="">Profesional English</a></li>
+                                                        <li><a href="#" title="">Gramática, vocabulario y pronunciación</a></li>
+                                                        <li><a href="#" title="">Books for teachers</a></li>
+                                                    </ul>
                                                 </li>
-                                                <li><a title="" href="#">Teacher Development  <span class="caret"></span></a>
+                                                <li><a title="" href="#" rel="Teacher">Teacher Development  <span class="caret"></span></a>
                                                 	<ul>
-                                                        <li><a title="" href="#">Teacher Development</a></li>
-                                                        <li><a title="" href="#">Cambridge LABS</a></li>
+                                                        <li><a title="" href="teacher.html">Teacher Development</a></li>
+                                                        <li><a title="" href="labs.html">Cambridge LABS</a></li>
                                                         <li><a title="" href="#">Cambridge English for Schools</a></li>
                                                         <li><a title="" href="#">English for Spanish Speakers</a></li>
                                                         <li><a title="" href="#">Events</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a title="" href="#">Recursos</a></li>
-                                                <li><a title="" href="#">Exámenes</a></li>
+                                                <li><a title="" href="teacher.html">Recursos</a></li>
+                                                <li><a title="" href="exams.html">Exámenes</a></li>
                                             </ul>
                                          </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
-                                         </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
-                                         </div>
+
+                                         	<div class="col-sx-12 col-ms-8 col-sm-8">
+                                            	<div class="row">
+                                                	<div class="block-banners">
+                                                    	<!--Banners Nosotros-->
+                                                    	<div class="banner-nosotros" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                         </div>
+                                                        <!--Banners Catálogo-->
+                                                    	<div class="banner-catalogo">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                         <!--Banners Teacher-->
+                                                    	<div class="banner-teacher" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                    </div>     
+                                                 </div>
+                                             </div>
                                     </div>	
                                 </div>
                             </div>
                         </li>
-                    </ul>   
+                    </ul>  
                     <!--Menú principal-->
                     <ul class="main-menu">
                     	<li><a href="#">Nosotros</a>
                         	<div class="desplegable-sub">
                             	<div class="container">
-                            		<div class="row">
-                 						 <div class="col-md-2">
+                                	<div class="row">
+                 						 <div class="col-sm-3 col-md-3">
                                          	<ul>
-                                            	<li><a href="#" title="">Quienes somos</a></li>
-                                                <li><a href="#" title="">Infografía Corpus</a></li>
+                                            	<li><a href="nosotros.html" title="">Quienes Somos</a></li>
+                                            	<li><a href="#" title="">Cambridge Corpus</a></li>
+                                                <li><a href="team.html" title="">Team</a></li>
+                                                <li><a href="#" title="">Contact</a></li>
                                             </ul>
                                          </div>
-                                    </div>     
+                                         <div class="col-sm-3 col-md-3">
+                                         	<!--Espacio vacio para más menús-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                    </div>  
                                 </div>
                             </div>
                         </li>
@@ -180,22 +234,33 @@
                         <li><a href="#" title="">Teacher Development</a>
                                 <div class="desplegable-sub">
                                     <div class="container">
-                                        <div class="row">
-                                             <div class="col-md-2">
+                                    	<div class="row">
+                                             <div class="col-sm-3 col-md-3">
                                                 <ul>
-                                                    <li><a href="#" title="">Teacher Development</a></li>
-                                                    <li><a href="#" title="">Cambridge LABS</a></li>
+                                                    <li><a href="teacher.html" title="">Teacher Development</a></li>
+                                                    <li><a href="labs.html" title="">Cambridge LABS</a></li>
                                                     <li><a href="#" title="">Cambridge English for Schools</a></li>
-                                                    <li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                <ul>
+                                                	<li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                     <li><a href="#" title="">Cambridge English Teacher</a></li>
                                                     <li><a href="#" title="">Events</a></li>
                                                 </ul>
                                              </div>
-                                        </div>     
+                                             <div class="col-sm-3  col-md-3 ">
+                                                    <!--Espacio vacio para 1 banner-->
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                    <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                             </div>
+                                        </div> 
                                     </div>
                                 </div>
                         </li>
-                        <li><a href="#" title="">Recursos</a></li>
-                        <li><a href="#" title="">Exámenes</a></li>
+                        <li><a href="recursos.html" title="">Recursos</a></li>
+                        <li><a href="exams.html" title="">Exámenes</a></li>
                     </ul>
                 </div>
              </div>   
@@ -227,16 +292,16 @@
             	<div class="container">
                 	<a href="#" title="Subir" class="up-window">Subir</a>
                 	<div class="row">
-                        <div class="col-md-3 menu-sec-product">
+                        <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 menu-sec-product">
                         	<ul>
-                            	<li class="active"><a href="#" title="" >Overview</a></li>
-                                <li><a href="#" title="">Componentes</a></li>
+                            	<li><a href="#" title="">Overview</a></li>
+                                <li class="active"><a href="#" title="">Componentes</a></li>
                                 <li><a href="#" title="">Programación</a></li>
                                 <li><a href="#" title="">Recursos</a></li>
-                                <li><a href="#" title="">Digital</a></li>
+                                <li><a href="#" title="" >Digital</a></li>
                             </ul>  
                         </div>
-                        <div class="col-md-9 block-img-product">
+                        <div class="col-sx-12 col-ms-12 col-sm-9 col-md-9 block-img-product">
                         	<div class="inside-img-product">
                         		<img src="assets/upload/show_product.png" alt="">
                             </div>
@@ -246,7 +311,7 @@
             </div>
             <div class="container">
             	<div class="row">
-   					<div class="col-md-3">
+   					<div class="col-sx-12 col-ms-12 col-sm-3 col-md-3">
                     	<!--Menú lateral-->
                         <div class="block-submenus menu-product">
                             <ul>
@@ -361,60 +426,56 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-9 cont-product">
+                    <div class="col-sx-12 col-ms-12 col-sm-9 col-md-9 cont-product">
                     	<p class="intro-product">This six-level course gives children a confident start to learning English, and makes lessons a joy for teachers. Perfect for general use, it also fully covers the Cambridge English: Young Learners (YLE) tests syllabus, preparing students better than ever for success at Starters, Movers and Flyers.</p>
                         <div class="row clasf-product">
-                        	<div class="col-md-6">
-                            	<p class="product-aut"><span>Autores</span><br/>Caroline Nixon, Michael Tomlinson</p>
-                                <br class="clear"/>
-                                <p class="product-nlevel"><span>Nº de Niveles</span><br/>6</p>
-                                <br class="clear"/>
-                                <p class="product-level"><span>Level</span><br/>A1-A2 (Complete Beginner to Elementary)</p>
-                                <br class="clear"/>
+                        	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-6">
+                            	<div class="product-aut theme-color-1" ><p><span class="theme-color-1">Autores</span><br/>Caroline Nixon, Michael Tomlinson</p></div>
+                                <div class="product-nlevel theme-color-1"><p><span class="theme-color-1">Nº de Niveles</span><br/>6</p></div>
+                                <div class="product-level theme-color-1"><p><span class="theme-color-1">Level</span><br/>A1-A2 (Complete Beginner to Elementary)</p></div>
                             </div>
-                            <div class="col-md-5 col-md-offset-1">
-                            	<p class="product-ess"><span>English for Spanish Speakers</span><br/><a href="#" title="">Learn More</a></p>
-                                <br class="clear"/>
-                                <p class="product-informed"><span>Informed by the Cambridge English Corpus</span><br/><a href="#" title="">Learn More</a></p>
+                            <div class="col-sx-12 col-ms-6 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
+                            	<div class="product-ess theme-color-1"><p><span class="theme-color-1">English for Spanish Speakers</span><br/><a href="#" title="" class="theme-color-1">Learn More</a></p></div>
+                                <div class="product-informed"><p><span class="theme-color-1">Informed by the Cambridge English Corpus</span><br/><a href="#" title="" class="theme-color-1">Learn More</a></p></div>
                             </div>
                         </div>
                         <div class="key-features">
-                        	<h2>Key Features</h2>
+                        	<h2 class="theme-color-1">Key Features</h2>
                             <ul>
-                                <li><p>The new <strong>'My Home Booklet'</strong> revises vocabulary and grammar and helps self-assess basic competences development at home with parents.</p></li>
-                                <li><p><strong>Phonics</strong> sections help improve pronunciation, spelling and reading skills, while the 'Say it with me' sections focus on common pronunciation problems for Spanish speakers.</p></li>
-                                <li><p>An <strong>improved focus on grammar</strong>, with Grammar boxes and a Grammar reference in the Pupil's Book, plus a Grammar practice in the Activity Book.</p></li>
-                                <li><p>New resources to <strong>exploit stories</strong> in the classroom: character masks, story summaries, and playscripts.</p></li>
-                                <li><p><strong>Exam-type tests</strong> in levels 2, 4 and 6 help to assess the children's progress, and familiarise them with the format of the Cambridge English: Young Learners exam. </p></li>
+                                <li class="theme-color-1"><p>The new <strong>'My Home Booklet'</strong> revises vocabulary and grammar and helps self-assess basic competences development at home with parents.</p></li>
+                                <li class="theme-color-1"><p><strong>Phonics</strong> sections help improve pronunciation, spelling and reading skills, while the 'Say it with me' sections focus on common pronunciation problems for Spanish speakers.</p></li>
+                                <li class="theme-color-1"><p>An <strong>improved focus on grammar</strong>, with Grammar boxes and a Grammar reference in the Pupil's Book, plus a Grammar practice in the Activity Book.</p></li>
+                                <li class="theme-color-1"><p>New resources to <strong>exploit stories</strong> in the classroom: character masks, story summaries, and playscripts.</p></li>
+                                <li class="theme-color-1"><p><strong>Exam-type tests</strong> in levels 2, 4 and 6 help to assess the children's progress, and familiarise them with the format of the Cambridge English: Young Learners exam. </p></li>
                             </ul>
                         </div>
                         
                         <div class="english-f-spanish">
-                            <h2>English for Spanish Speakers</h2>
+                            <h2 class="theme-color-1">English for Spanish Speakers</h2>
                             <p>All levels of Kid’s Box include extra content specifically designed for Spanish speakers:</p>
                             <div class="row">
-                            	<div class="col-md-4">
+                            	<div class="col-sx-12 col-ms-6 col-sm-4 col-md-4">
                                 	 <ul>
-                                        <li>Spanish handwriting <strong>font</strong> for levels 1 and 2.</li>
-                                        <li>The new ‘My Home Booklet’ helps <strong>involve parents in their children’s learning</strong> and provides a review of the contents covered and the Basic Competences developed.</li>
-                                        <li>Pronunciation and phonics activities <strong>focus on the most problematic individual</strong> sounds for Spanish speakers.</li>
+                                        <li class="theme-color-1"><p>Spanish handwriting <strong class="theme-color-1">font</strong> for levels 1 and 2.</p></li>
+                                        <li class="theme-color-1"><p>The new ‘My Home Booklet’ helps <strong class="theme-color-1">involve parents in their children’s learning</strong> and provides a review of the contents covered and the Basic Competences developed.</p></li>
+                                        <li class="theme-color-1"><p>Pronunciation and phonics activities <strong class="theme-color-1">focus on the most problematic individual</strong> sounds for Spanish speakers.</p></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sx-12 col-ms-6 col-sm-4 col-md-4">
                                 	 <ul>
-                                        <li>Pages dedicated to CLIL and Social awareness topics <strong>connect children to the world</strong> outside the English classroom.</li>
-                                        <li>From level 3, Tests for every unit will <strong>help teachers assess their pupils’</strong> progress.</li>
-                                        <li>From level 3, Spelling sections <strong>introduce spelling patterns</strong> to help pupils write correctly in English.</li>
+                                        <li class="theme-color-1"><p>Pages dedicated to CLIL and Social awareness topics <strong class="theme-color-1">connect children to the world</strong> outside the English classroom.</p></li>
+                                        <li class="theme-color-1"><p>From level 3, Tests for every unit will <strong class="theme-color-1">help teachers assess their pupils’</strong> progress.</p></li>
+                                        <li class="theme-color-1"><p>From level 3, Spelling sections <strong class="theme-color-1">introduce spelling patterns</strong> to help pupils write correctly in English.</p></li>
                                     </ul>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-sx-12 col-ms-6 col-sm-4 col-md-4">
                                 	 <ul>
-                                         <li>Levels 5 and 6 include a ‘Get it right!’ section on <strong>common errors made by Spanish speakers</strong>, in order to help them avoid typical grammar, vocabulary and spelling mistakes. This section is informed by the Cambridge Learner Corpus.</li>
+                                         <li class="theme-color-1"><p>Levels 5 and 6 include a ‘Get it right!’ section on <strong class="theme-color-1">common errors made by Spanish speakers</strong>, in order to help them avoid typical grammar, vocabulary and spelling mistakes. This section is informed by the Cambridge Learner Corpus.</p></li>
                                     </ul>
                                 </div>
                            
                             </div>
-                            <a href="" title="">Más información</a>
+                            <a href="" title="" class="theme-color-bg-1">Más información</a>
                           </div>  
                         
                         <div class="video-youtube">
@@ -428,34 +489,34 @@
             <div class="component-product">
             	<div class="container">
                 	<div class="row">
-                    	<div class="col-md-6 col-md-offset-3 inside-component">
-                        <h2>Components</h2>
+                    	<div class="col-sx-12 col-ms-9 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 inside-component">
+                        <h2 class="theme-color-1">Components</h2>
                         <div class="row">
-                        	<div class="col-md-6">
+                        	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-6">
                             	<h3>For Pupil’s</h3>
                                 <ul>
-                                	<li><a href="#" title="">Pupil’s Book</a></li>
-                                    <li><a href="#" title="">Activity Book CD-ROM</a></li>
-                                    <li><a href="#" title="">Language Portfolio</a></li>
-                                    <li><a href="#" title="">My Home Booklet</a></li>
+                                	<li class="theme-color-1"><a href="#" title="" class="theme-color-1">Pupil’s Book</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Activity Book CD-ROM</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Language Portfolio</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">My Home Booklet</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-sx-12 col-ms-6 col-sm-6 col-md-6">
                             	<h3>For Teachers</h3>
                                 <ul>
-                                	<li><a href="#" title="">Teacher’s Book</a></li>
-                                    <li><a href="#" title="">Teacher's Resource Book with Audio CD</a></li>
-                                    <li><a href="#" title="">Posters</a></li>
-                                    <li><a href="#" title="">Flashcards</a></li>
-                                    <li><a href="#" title="">Wordcards</a></li>
-                                    <li><a href="#" title="">Class Audio CDs</a></li>
+                                	<li class="theme-color-1"><a href="#" title="" class="theme-color-1">Teacher’s Book</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Teacher's Resource Book with Audio CD</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Posters</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Flashcards</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Wordcards</a></li>
+                                    <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Class Audio CDs</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3 block-ver-mas">
+                    <div class="col-sx-12 col-ms-3 col-sm-3 col-md-3 block-ver-mas">
                         <img src="assets/img/img_component.png" alt>
-                        <a href="#" title="" class="btn-mas">Ver todos</a>
+                        <a href="#" title="" class="btn-mas theme-color-bg-1">Ver todos</a>
                     </div>
                 </div>
               </div>
@@ -464,17 +525,17 @@
             <div class="digital-product">
             	<div class="container">
                 	<div class="row">
-                    	<div class="col-md-6 col-md-offset-3 inside-component">
-                            <h2>Digital</h2>
+                    	<div class="col-sx-12 col-ms-9 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 inside-component">
+                            <h2 class="theme-color-1">Digital</h2>
                             <ul>
-                              <li><a href="#" title="">Digital Pupil's Book and Digital Activity Book</a></li>
-                              <li><a href="#" title="">Digital Box</a></li>
-                              <li><a href="#" title="">Tests CD-ROM / Audio CDs</a></li>
+                              <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Digital Pupil's Book and Digital Activity Book</a></li>
+                              <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Digital Box</a></li>
+                              <li class="theme-color-1"><a href="#" title="" class="theme-color-1">Tests CD-ROM / Audio CDs</a></li>
                           </ul>
                     	</div>
-                        <div class="col-md-3 block-ver-mas">
+                        <div class="col-sx-12 col-ms-3 col-sm-3 col-md-3 block-ver-mas">
                             <img src="assets/img/img_digital.png" alt>
-                            <a href="#" title="" class="btn-mas">Ver todos</a>
+                            <a href="#" title="" class="btn-mas theme-color-bg-1">Ver todos</a>
                          </div>
                 	</div>
               	</div>
@@ -483,12 +544,12 @@
             <div class="esample-product">
             	<div class="container">
                 	<div class="row">
-                    	<div class="col-md-6 col-md-offset-3 inside-component">
-                            <h2>eSample</h2>
+                    	<div class="col-sx-12 col-ms-9 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 inside-component">
+                            <h2 class="theme-color-1">eSample</h2>
                             <p>Get an eSample to view the entire product on your desktop.</p>
                     	</div>
-                        <div class="col-md-3 block-ver-mas">
-                            <a href="#" title="" class="btn-mas esample">eSample</a>
+                        <div class="col-sx-12 col-ms-3 col-sm-3 col-md-3 block-ver-mas">
+                            <a href="#" title="" class="btn-mas esample theme-color-bg-1">eSample</a>
                          </div>
                 	</div>
               	</div>

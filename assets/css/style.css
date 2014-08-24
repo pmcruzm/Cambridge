@@ -482,51 +482,65 @@ PROPIEDADES CUERPO HOME PRODUCT
 
 .cont-product{padding:90px 18px 0;}
 .intro-product{font-size:20px;color:#373340;}
-.cont-product h2{color:#f17922;font-size:32px;font-weight:normal;}
+.cont-product h2{font-size:32px;font-weight:normal;}
 .cont-product p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 
 .clasf-product{padding-left:18px;margin-top:36px;margin-bottom:44px;}
 .clasf-product div{/*overflow:hidden;*/margin-bottom:18px;}
-.clasf-product p{color:#373340;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;line-height:16px;}
-.clasf-product p span{color:#f17922;font-size:18px;font-family:'latolight', Helvetica, sans-serif;}
-.clasf-product p a{color:#f17922;}
+.clasf-product p{color:#373340;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;line-height:16px;margin-top:-38px;padding-left:18px;}
+.clasf-product p span{font-size:18px;font-family:'latolight', Helvetica, sans-serif;line-height:21px;}
 
-.product-aut:before{content:"";display:inline-block;width:46px;height:46px;background:url(../img/ico_autor.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;position:relative;top:-7px;}
-.product-nlevel:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_n_level.png) top left no-repeat;padding-right:20px;vertical-align: middle;float:left;margin-right:18px;position:relative;top:-7px;}
-.product-level:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_level.png) top left no-repeat;padding-right:20px;vertical-align: middle;float:left;margin-right:18px;position:relative;top:-7px;}
-.product-ess:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_ess.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;}
-.product-informed:before{content:"";display:block;width:46px;height:46px;background:url(../img/ico_cambridge_ojo.png) top left no-repeat;padding-right:20px;float:left;margin-right:18px;position:relative;top:-7px;}
+.product-aut{padding-left:46px;}
+.product-aut:before{content: "\75";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-nlevel{padding-left:46px;}
+.product-nlevel:before{content: "\76";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-level{padding-left:46px;}
+.product-level:before{content: "\67";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-ess{padding-left:46px;}
+.product-ess:before{content: "\65";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-informed{padding-left:46px;}
+.product-informed:before{content:"";background:url(../img/ico_cambridge_ojo.png) top left no-repeat;display:inline-block;width:46px;height:46px;line-height:46px;margin-left:-46px;}
 
-.key-features ul{margin: 32px 0 54px;padding: 0 0 0 18px;}
-.key-features ul li{list-style-image:url(../img/circle_orange.png);color:#373340;font-size:16px;}
+.key-features ul{margin: 32px 0 54px;padding:0px;margin-left:-10px;}
+.key-features ul li{font-size:16px;padding-left:40px;list-style:none;}
+.key-features ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-35px;width: 30px;font-size:34px;height:30px;line-height:30px;}
+.key-features ul li p{margin-top:-33px;color:#373340;}
 
 .english-f-spanish{margin-bottom:56px;}
-.english-f-spanish p{color:#373340;font-size:20px;margin-top:18px;margin-bottom:18px;}
-.english-f-spanish ul{padding: 0 0 0 18px;}
-.english-f-spanish ul li{list-style-image:url(../img/circle_orange.png);color:#373340;font-size:16px;margin-bottom:22px;}
-.english-f-spanish ul li strong{font-weight:normal;color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
-.english-f-spanish a{background:#f17922;display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;}
+.english-f-spanish>p{color:#373340;font-size:20px;margin-top:18px;margin-bottom:18px;}
+.english-f-spanish ul{padding: 0px;margin-left:-15px;}
+.english-f-spanish ul li{list-style:none;color:#373340;font-size:16px;margin-bottom:22px;padding-left:40px;}
+.english-f-spanish ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-35px;width: 30px;font-size:34px;height:30px;line-height:30px;}
+.english-f-spanish ul li p{margin-top:-33px;color:#373340;}
+.english-f-spanish ul li strong{font-weight:normal;font-family:'latoregular', Helvetica, sans-serif;}
+.english-f-spanish a{display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;}
 
 .component-product{background:#ffffff;padding-top:36px;padding-bottom:72px;}
 .inside-component{padding-left:18px;padding-right:18px;}
-.component-product h2{color:#f17922;font-size:32px;}
+.component-product h2{font-size:32px;}
 .component-product h3{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-bottom:5px;}
-.component-product ul{padding:0;margin:0;padding-left:18px;}
-.component-product ul li{list-style-image:url(../img/circle_orange.png);margin-bottom:4px;}
-.component-product ul li a{color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
+.component-product ul{padding: 0px;margin-left:-15px;}
+.component-product ul li{list-style:none;padding-left:40px;}
+.component-product ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-35px;width: 30px;font-size:34px;height:30px;line-height:30px;}
+.component-product ul li a{font-family:'latoregular', Helvetica, sans-serif;margin-top:-30px;display:block;font-size:16px;}
 .block-ver-mas{text-align:center;padding-top:23px;}
-.block-ver-mas a{background:#f17922;display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+.block-ver-mas img{max-width:100%;}
+.component-product ul li a:hover{color:inherit;}
+.block-ver-mas a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+.block-ver-mas a:hover{color:#ffffff; text-decoration:none;}
 
 .digital-product{padding-top:36px;padding-bottom:100px;}
 .inside-component{padding-left:18px;padding-right:18px;}
-.digital-product h2{color:#f17922;font-size:32px;}
-.digital-product ul{padding:0;margin:0;padding-left:18px;margin-top:24px;}
-.digital-product ul li{list-style-image:url(../img/circle_orange.png);margin-bottom:4px;}
-.digital-product ul li a{color:#f17922;font-family:'latoregular', Helvetica, sans-serif;}
+.digital-product h2{font-size:32px;}
+.digital-product ul{padding: 0px;margin-left:-15px;margin-top:24px;}
+.digital-product ul li{list-style:none;padding-left:40px;}
+.digital-product ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-35px;width: 30px;font-size:34px;height:30px;line-height:30px;}
+.digital-product ul li a{font-family:'latoregular', Helvetica, sans-serif;margin-top:-30px;display:block;font-size:16px;}
+.digital-product ul li a:hover{color:inherit;}
 
 .esample-product{padding-top:36px;padding-bottom:100px;background:#ffffff;}
 .inside-component{padding-left:18px;padding-right:18px;}
-.esample-product h2{color:#f17922;font-size:32px;}
+.esample-product h2{font-size:32px;}
 .esample-product p{color:#373340;font-size:16px;margin-top:24px;}
 .esample{padding-left:30px !important;padding-right:30px !important;}
 
@@ -536,7 +550,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 *************************************/
 
 .cont-component {padding: 90px 18px 0;}
-.cont-component h2{color:#f17922;font-size:32px;}
+.cont-component h2{font-size:32px;}
 .select-comp{text-align:center;margin-top:32px;margin-bottom:18px;}
 .select-comp h3{margin:0;}
 .select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
@@ -546,9 +560,9 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 
 .box-compt{padding-bottom:32px;}
 .inside-box-compt{background:#ffffff;padding:18px;position:relative;}
-.inside-box-compt h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
+.inside-box-compt h4{font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
 .inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
-.inside-box-compt+a{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
+.inside-box-compt+a{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
 .cont-component .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:157px;}
 
 /************************************
@@ -557,7 +571,7 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 
 .intro-digital{color:#373340;font-size:20px;line-height:30px;}
 .list-digt{margin-top:22px;}
-.btn-buy{background:#f17922;display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-top:18px;margin-bottom:32px;}
+.btn-buy{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-top:18px;margin-bottom:32px;}
 .btn-buy:hover{text-decoration:none;color:#ffffff;}
 
 .box-devices-so{overflow:hidden;text-align:left;}
@@ -640,7 +654,7 @@ PROPIEDADES CUERPO SERIE EXAMS
 .content-exam-serie .clasf-product p span{color:#1eaba5;}
 .content-exam-serie .clasf-product p a{color:#1eaba5;}
 .content-exam-serie .cont-product h2{color:#1eaba5;}
-.content-exam-serie .product-aut:before{background-image:url(../img/ico_autor_g.png);}
+.content-exam-serie .product-aut:before{content: "\75";}
 .content-exam-serie .product-nlevel:before{background-image:url(../img/ico_n_level_g.png);}
 .content-exam-serie .product-level:before{background-image:url(../img/ico_level_g.png);}
 .content-exam-serie .key-features ul li{list-style-image:url(../img/circle_green.png);}
@@ -899,6 +913,23 @@ PROPIEDADES UP-WINDOW
 PROPIEDADES CUSTOM THEMES
 *******************************/
 
+/**********NARANJA*************/
+.theme-color-1 {color:#f17922;}
+.theme-color-bg-1 { background-color:#f17922; }
+.product-aut.theme-color-1:before{color:#f17922;}
+.product-nlevel.theme-color-1:before{color:#f17922;}
+.product-level.theme-color-1:before{color:#f17922;}
+.product-ess.theme-color-1:before{color:#f17922;}
+.key-features ul li.theme-color-1:before{color:#f17922;}
+.english-f-spanish ul li.theme-color-1:before{color:#f17922;}
+.component-product ul li.theme-color-1:before{color:#f17922;}
+.digital-product ul li.theme-color-1:before{color:#f17922;}
+a.theme-color-1:hover,a.theme-color-1:focus {color:#f17922;}
+
+/**********VERDE*************/
+
+/**********ROJO*************/
+
 
 /*****************************
 PROPIEDADES ESPECIALES
@@ -919,6 +950,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
 .type-light{font-family:'latolight', Helvetica, sans-serif !important;}
 .type-regular{font-family:'latoregular', Helvetica, sans-serif !important;}
+a:hover,a:focus {color:inherit;text-decoration: underline;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
@@ -1093,7 +1125,10 @@ MEDIA QUERIES
 	.block-img-product{height:235px;z-index:100;position:relative;margin-top:-235px;}
 	.menu-product{margin-top:52px !important;}
 	.cont-component{padding:18px 18px 0;}
-	.inside-img-product img{bottom:-40%;}
+	.inside-img-product img{bottom:-125px;display:block;max-width:none;right:0;left:auto;width:580px;}
+	.top-product{height:275px;}
+	.menu-sec-product{padding-top:18px;}
+	.menu-sec-product ul li a{font-size:18px;line-height:24px;}
 	
 	.cont-component .inside-box-compt img{margin:0 auto;display:block;margin-bottom:18px;}
 	.inside-box-compt + a{margin:-13px auto 0;}
@@ -1120,6 +1155,9 @@ MEDIA QUERIES
 	.select_cities{width:130px;}
 	.desplg_cities{width:130px;}
 	.opc-offices{width:130px;}
+	
+	.inside-img-product img{bottom:-70px;width:460px;}
+	.top-product{height:235px;}
 }
 
 @media (max-width: 480px) {
@@ -1137,13 +1175,17 @@ MEDIA QUERIES
 	.sales-office [class*="col-"]{height:auto;}
 	.head-office{height:auto;}
 	.sales-office{height:auto;}
-
+	
+	.inside-img-product img{bottom:-56px;width:360px;}
+	.block-ver-mas{text-align:center;}
+	.block-ver-mas a{display:block;width:75%;margin:0 auto;margin-top:18px;}
 }
 
 
 @media (max-width: 370px){
 	.privacy-checkbox .checkbox{margin-top:36px;}
 	.btn-form-submit {margin-top: 82px;}
+	.inside-img-product img{bottom:-44px;width:300px;}
 }
 
 /* Landscape phones and down */
