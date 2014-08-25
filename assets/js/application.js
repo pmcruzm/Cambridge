@@ -474,7 +474,7 @@ jQuery(document).ready(function(){
 			jQuery(".errores-contact").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
-			var result=validate_form('#contact-form','.errores-contact');
+			var result=validate_form('#contact-form');
 			if(result==1){
 				event.preventDefault();
 				send_reg=0;
@@ -490,7 +490,7 @@ jQuery(document).ready(function(){
 			jQuery(".errores-register").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
-			var result=validate_form('#register-form','.errores-register');
+			var result=validate_form('#register-form');
 			if(result==1){
 				event.preventDefault();
 				send_reg=0;
@@ -513,7 +513,7 @@ jQuery(document).ready(function(){
 			jQuery(".errores-newsletter").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
-			var result=validate_form('#newsletter-form','.errores-newsletter');
+			var result=validate_form('#newsletter-form');
 			if(result==1){
 				event.preventDefault();
 				send_reg=0;
@@ -678,7 +678,7 @@ function align_top_box(id){
 }
 
 //Funcion para validar genéricamnete un formulario
-function validate_form(id,contenedor){
+function validate_form(id){
 		//Busca todos los campos requeridos de texto
 			if(jQuery(id).find('.validation-rule-empty').length > 0){
 				var error_empty=0;
@@ -751,21 +751,21 @@ function validate_form(id,contenedor){
 			//Error general campos vacíos
 			if(error_empty==1 || error_checkbox==1){
 				var message=jQuery(id).attr('data-error-msg');
-				jQuery(contenedor).append('<p>'+message+'</p>');
+				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 			if(error_postcode==1){
 				var message=jQuery(id).find('.validation-rule-postcode').attr('data-error-msg');
-				jQuery(contenedor).append('<p>'+message+'</p>');
+				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 			
 			if(error_mail==1){
 				var message=jQuery(id).find('.validation-rule-mail').attr('data-error-msg');
-				jQuery(contenedor).append('<p>'+message+'</p>');
+				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 			
 			if(error_select==1){
 				var message=jQuery(id).find('.validation-rule-select').attr('data-error-msg');
-				jQuery(contenedor).append('<p>'+message+'</p>');
+				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 			
 			//Salida

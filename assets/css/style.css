@@ -404,7 +404,7 @@ background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 1
 .custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;}
 .custom-select select:focus{color:#ffffff;}
 
-.errores-register p {color: #ea575b;font-size:14px;margin-bottom: 0;}
+.errores p {color: #ea575b !important;font-size:14px !important;margin-bottom: 0;}
 	
 /*****************************
 PROPIEDADES CUERPO EVENTS (PENDIENTE)
@@ -753,7 +753,6 @@ PROPIEDADES CUERPO NEWSLETTER
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
 .block-news div p{color:#373340;font-size:14px;}
 
-.errores-newsletter p{color:#ea575b;font-size:14px;margin-bottom:0px;}
 
 /*************************
 PROPIEDADES CUERPO CORPUS
@@ -880,7 +879,6 @@ PROPIEDADES CUERPO CONTACT
 .opc-offices{position:absolute;width:148px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
 
-.errores-contact p{color:#ea575b;font-size:14px;margin-bottom:0px;}
 
 /**************************************
 PROPIEDADES CUERPO CATALOGUE
@@ -1166,8 +1164,8 @@ MEDIA QUERIES
 	#contact-form .checkbox{margin-top:18px;}
 	
 	.prop-recursos{text-align:center;}
-	.errores-contact{margin-bottom:32px;}
-	.errores-newsletter{margin-bottom:32px;}
+	#contact-form .errores{margin-bottom:32px;}
+	#newsletter-form .errores{margin-bottom:32px;}
 	
 	.pill-cat{margin:0 auto;margin-top:18px;}
 	.block-cat-digital>div>p{width:100%;}
@@ -1188,8 +1186,8 @@ MEDIA QUERIES
 
 @media (max-width: 480px) {
 	#header{height:216px;}
-	.cab-page{bottom:0;}
-	#migas {display:none;}
+	/*.cab-page{bottom:0;}
+	#migas {display:none;}*/
 	/*.graficas-corpus img{height:auto;max-width:100%;}	*/
 	.bottom-corpus{position:relative;}
 	.bottom-corpus > a{font-size:12px;width:auto;padding-left:18px;padding-right:18px;}
