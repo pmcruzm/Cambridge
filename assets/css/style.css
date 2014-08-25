@@ -1156,8 +1156,9 @@ MEDIA QUERIES
 	.desplg_cities{width:130px;}
 	.opc-offices{width:130px;}
 	
-	.inside-img-product img{bottom:-70px;width:460px;}
-	.top-product{height:235px;}
+	.inside-img-product img{bottom:-108px;width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
+	.top-product{height:275px;}
+	.menu-sec-product ul li{text-align:center;}
 }
 
 @media (max-width: 480px) {
@@ -1176,16 +1177,20 @@ MEDIA QUERIES
 	.head-office{height:auto;}
 	.sales-office{height:auto;}
 	
-	.inside-img-product img{bottom:-56px;width:360px;}
+	.inside-img-product img{bottom:-95px;width:360px;}
+	
+	.block-ver-mas img {display:none;}
+	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
+	
 	.block-ver-mas{text-align:center;}
-	.block-ver-mas a{display:block;width:75%;margin:0 auto;margin-top:18px;}
 }
 
 
 @media (max-width: 370px){
 	.privacy-checkbox .checkbox{margin-top:36px;}
 	.btn-form-submit {margin-top: 82px;}
-	.inside-img-product img{bottom:-44px;width:300px;}
+	.inside-img-product img{bottom:-54px;width:300px;}
+	.top-product{height:245px;}
 }
 
 /* Landscape phones and down */
