@@ -525,6 +525,16 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Eliminar marco de error select
+	jQuery(document).on('focus','form select',function(event){
+		event.preventDefault();
+		//Caso del select
+		if(jQuery(this).parents('.custom-select').hasClass('error')){
+			jQuery(this).parents('.custom-select').removeClass('error');	
+		}
+	
+	});
+	
 	//Comprobar que solo se carga en corpus
 	if ( jQuery("#content-corpus").is(":visible") ) {
 		 var mySVGsToInject = document.querySelectorAll('img.img-svg');
@@ -718,6 +728,20 @@ function validate_form(id,contenedor){
 				});
 			} 
 			
+			//Busca todos los campos requeridos de codigo postal
+			if(jQuery(id).find('.validation-rule-select').length > 0){
+				var error_select=0;
+				var txt_select="";
+				jQuery(id).find('.validation-rule-select').each(function() {
+					var res_campo=jQuery(this).val();
+					if((res_campo=="")){
+						error_select=1;
+						jQuery(this).parents('.custom-select').addClass('error');
+					}
+					
+				});
+			} 
+			
 			//Error general campos vacíos
 			if(error_empty==1 || error_checkbox==1){
 				var message=jQuery(id).attr('data-error-msg');
@@ -733,8 +757,13 @@ function validate_form(id,contenedor){
 				jQuery(contenedor).append('<p>'+message+'</p>');
 			}
 			
+			if(error_select==1){
+				var message=jQuery(id).find('.validation-rule-select').attr('data-error-msg');
+				jQuery(contenedor).append('<p>'+message+'</p>');
+			}
+			
 			//Salida
-			if(error_empty==1 || error_checkbox==1 || error_postcode==1 ||error_mail){
+			if(error_empty==1 || error_checkbox==1 || error_postcode==1 ||error_mail || error_select==1){
 				return 1;
 			}else{
 				return 0;

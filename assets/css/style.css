@@ -262,6 +262,7 @@ PROPIEDADES CUERPO RECURSOS
 .comp-recurso img{z-index:20;max-width:100%;}
 .comp-recurso p{z-index:30;position:absolute;bottom:20px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
 .comp-recurso+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;margin-bottom:18px;}
+.comp-recurso+a:hover{color:#ffffff;text-decoration:none;}
 
 .block-recursos{padding-bottom:150px;}
 .block-recursos h2{color:#20718c;font-size:32px;}
@@ -391,7 +392,8 @@ PROPIEDADES CAMBRIDGE LABS
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
-.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);border:1px solid #629ec7;}
+.custom-select.error{border:1px solid #ea575b;}
 .custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;}
 .custom-select select:focus{color:#ffffff;}
 	
@@ -504,7 +506,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .product-ess{padding-left:46px;}
 .product-ess:before{content: "\65";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
 .product-informed{padding-left:46px;}
-.product-informed:before{content:"";background:url(../img/ico_cambridge_ojo.png) top left no-repeat;display:inline-block;width:46px;height:46px;line-height:46px;margin-left:-46px;}
+.product-informed:before{content:"";background:#ffffff url(../svg/icon_corpus.svg) center center no-repeat;display:inline-block;width:46px;height:46px;line-height:46px;margin-left:-46px;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;background-size:30px 30px;}
 
 .key-features ul{margin: 32px 0 54px;padding:0px;margin-left:-10px;}
 .key-features ul li{font-size:16px;padding-left:40px;list-style:none;}
@@ -559,6 +561,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .select-comp{text-align:center;margin-top:32px;margin-bottom:18px;}
 .select-comp h3{margin:0;}
 .select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
+.select-comp a:hover{text-decoration:none;}
 .select-comp h3 a.active{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
 .select-comp  h3 a:hover{color:#666;}
 .select-comp h3 a.active:hover{color:#f17922;}
@@ -568,6 +571,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .inside-box-compt h4{font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
 .inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
 .inside-box-compt+a{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
+.inside-box-compt+a:hover{text-decoration:none;color:#ffffff;}
 .cont-component .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:157px;}
 
 /************************************
@@ -582,10 +586,10 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 .box-devices-so{overflow:hidden;text-align:left;}
 .box-devices-so h4{font-size:14px;color:#373340;font-family:'latoregular', Helvetica, sans-serif;margin-bottom:18px;}
 
-.block-compatible{display:block;text-align:center;float:left;margin-right:10%;}
-.block-compatible div p{margin-right:7px;vertical-align:top;}
+.block-compatible{display:block;text-align:center;float:left;margin-right:15px;width:170px;}
+.block-compatible div p{margin-right:7px;vertical-align:top;font-family:'latoregular', Helvetica, sans-serif;}
 .block-compatible div p:last-child{margin-right:0px;}
-.block-available{display:block;text-align:center;float:left;}
+.block-available{display:block;text-align:center;float:left;width:170px;}
 .block-available div p{margin-right:7px;}
 .block-available div p:last-child{margin-right:0px;}
 
@@ -975,6 +979,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .type-light{font-family:'latolight', Helvetica, sans-serif !important;}
 .type-regular{font-family:'latoregular', Helvetica, sans-serif !important;}
 a:hover,a:focus {color:inherit;text-decoration: underline;}
+.form-control{box-shadow:none;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
