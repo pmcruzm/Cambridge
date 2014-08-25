@@ -945,7 +945,15 @@ PROPIEDADES CUERPO CATALOGUE DIGITAL
 
 .content-cat-digital .listado-courses{padding-top:0;}
 
-
+/******************************
+PROPIEDADES 404
+*******************************/
+.content_404{padding-bottom:150px;}
+.error_404{bottom:0px !important;}
+.message-404{background:#ffffff;padding-top:52px;padding-bottom:52px;text-align:center;margin-bottom:36px;}
+.message-404 h2{color:#ea575b;font-size:32px;}
+.message-404 p{color:#373340;font-size:16px;}
+	
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -998,7 +1006,7 @@ PROPIEDADES CUSTOM THEMES
 .english-f-spanish ul li.theme-color:before{color:#f17922;}
 .component-product ul li.theme-color:before{color:#f17922;}
 .digital-product ul li.theme-color:before{color:#f17922;}
-a.theme-color-1:hover,a.theme-color:focus {color:#f17922;}
+a.theme-color:hover,a.theme-color:focus {color:#f17922;}
 
 
 /*****************************
