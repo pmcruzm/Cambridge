@@ -812,7 +812,7 @@ PROPIEDADES CUERPO CORPUS
 .graficas-corpus img{/*height:152px;*/max-width:100%;fill:red;}
 .graficas-corpus-inside{padding-left:36px;padding-right:36px;}
 
-.cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;}
+.cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;background:#ffe745;box-shadow: 0 3px 0 #ffce00;padding:10px;}
 .bottom-corpus{padding-bottom:150px;padding-left:36px;padding-right:18px;}
 .bottom-corpus>a{background:#000000;color:#ffffff;height:26px;line-height:26px;-webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius: 13px;width:350px;display:block;margin:-13px auto 0;position:relative;text-align:center;}
 .bottom-corpus>a:hover{text-decoration:none;}
@@ -821,6 +821,11 @@ PROPIEDADES CUERPO CORPUS
 
 .prev_corpus{position:absolute;left:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px 0px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;}
 .next_corpus{position:absolute;right:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px -31px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;}
+
+.img-slider-corpus img{max-width:100%;}
+.content-slider-corpus>div{padding-left:10px;}
+.content-slider-corpus h3{margin:0;margin-top:10px;margin-bottom:10px;font-family:'latoregular', Helvetica, sans-serif;}
+.content-slider-corpus p{font-size:14px !important;line-height:18px !important;}
 
 /**************************************
 PROPIEDADES CUERPO ENGLISH FOR SCHOOL
@@ -1257,6 +1262,7 @@ MEDIA QUERIES
 	.top-product{height:295px;}
 	
 	#submenus-mob-prodct ul li a{font-size:20px;}
+	.img-slider-corpus img{margin:0 auto;}
 	
 	
 }
