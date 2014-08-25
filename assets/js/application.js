@@ -14,6 +14,7 @@ var total_slider=0,width_scroll=0;
 var w_container=0;
 var touch_gall=0;
 var send_form=0;
+var n_course_b=1;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
@@ -541,12 +542,39 @@ jQuery(document).ready(function(){
 	
 	});
 	
-	//Comprobar que solo se carga en corpus
-	if ( jQuery("#content-corpus").is(":visible") ) {
-		 var mySVGsToInject = document.querySelectorAll('img.img-svg');
-		  // Do the injection
-		  SVGInjector(mySVGsToInject);
-	}
+	//Eliminar marco de error centre details
+	jQuery(document).on('focus','.centre-d-c input[type=checkbox]',function(event){
+		event.preventDefault();
+			if(jQuery(this).parents('.centre-d-c').find('h4').hasClass('error')){	
+				jQuery(this).parents('.centre-d-c').find('h4').removeClass('error');	
+			}
+	});
+	
+	//Eliminar marco de error teacher details
+	jQuery(document).on('focus','.teacher-p input[type=checkbox]',function(event){
+		event.preventDefault();
+			if(jQuery(this).parents('.teacher-p').find('h5').hasClass('error')){	
+				jQuery(this).parents('.teacher-p').find('h5').removeClass('error');	
+			}
+	});
+	
+	//Eliminar marco de error Course Books
+	jQuery(document).on('focus','#coursebook_1',function(event){
+		event.preventDefault();
+			if(jQuery(this).parents('.course-book').find('h5').hasClass('error')){	
+				jQuery(this).parents('.course-book').find('h5').removeClass('error');	
+			}
+	});
+	
+	//Mostrar más libros en Course Boooks
+	jQuery(document).on('click','.btn-mobile-course-book a',function(event){
+		event.preventDefault();
+		n_course_b++;
+		jQuery('.book_'+n_course_b).addClass('active').show();
+		if(n_course_b==4){
+			jQuery('.btn-mobile-course-book').hide();
+		}
+	});
 	
 	//Ajustar altura bloques recursos productos 
 	if (jQuery('.box-recursos').is(":visible") ) {
@@ -682,7 +710,6 @@ function validate_form(id){
 		//Busca todos los campos requeridos de texto
 			if(jQuery(id).find('.validation-rule-empty').length > 0){
 				var error_empty=0;
-				var txt_empty="";
 				jQuery(id).find('.validation-rule-empty').each(function() {
 					var res_campo=jQuery(this).val();
 					if(res_campo==""){
@@ -696,7 +723,6 @@ function validate_form(id){
 			//Busca todos los campos requeridos de mail
 			if(jQuery(id).find('.validation-rule-mail').length > 0){
 				var error_mail=0;
-				var txt_mail="";
 				jQuery(id).find('.validation-rule-mail').each(function() {
 					var res_campo=jQuery(this).val();
 					if((res_campo=="") || (res_campo!="" && validateEmail(res_campo)==false) ){
@@ -710,7 +736,6 @@ function validate_form(id){
 			//Busca todos los campos requeridos de codigo postal
 			if(jQuery(id).find('.validation-rule-postcode').length > 0){
 				var error_postcode=0;
-				var txt_postcode="";
 				jQuery(id).find('.validation-rule-postcode').each(function() {
 					var res_campo=jQuery(this).val();
 					if((res_campo=="") || (res_campo!="" && isNumber(res_campo)==false) ){
@@ -724,7 +749,6 @@ function validate_form(id){
 			//Busca todos los campos requeridos checkbox
 			if(jQuery(id).find('.validation-rule-checkbox').length > 0){
 				var error_checkbox=0;
-				var txt_checkbox="";
 				jQuery(id).find('.validation-rule-checkbox').each(function() {
 					if(!jQuery(this).prop("checked")){
 						error_checkbox=1;
@@ -737,7 +761,6 @@ function validate_form(id){
 			//Busca todos los campos requeridos de codigo postal
 			if(jQuery(id).find('.validation-rule-select').length > 0){
 				var error_select=0;
-				var txt_select="";
 				jQuery(id).find('.validation-rule-select').each(function() {
 					var res_campo=jQuery(this).val();
 					if((res_campo=="")){
@@ -748,8 +771,52 @@ function validate_form(id){
 				});
 			} 
 			
+			//Validación checkboxes "Course Offered" en "Centre Details"
+			if (jQuery('.centre-d-c').is(":visible") ) {
+				var error_checkbox_centre=1;
+				jQuery(id).find('.centre-d-c input[type=checkbox]').each(function() {
+					if(jQuery(this).prop("checked")){
+						error_checkbox_centre=0;
+					}
+					
+				});	
+				if(error_checkbox_centre==1){
+					jQuery(id).find('.centre-d-c h4').addClass('error');
+				}
+			}
+			
+			//Validación checkboxes "Course Offered" en "Centre Details"
+			if (jQuery('.teacher-p').is(":visible") ) {
+				var error_checkbox_teacher=1;
+				jQuery(id).find('.teacher-p input[type=checkbox]').each(function() {
+					if(jQuery(this).prop("checked")){
+						error_checkbox_teacher=0;
+					}
+					
+				});	
+				if(error_checkbox_teacher==1){
+					jQuery(id).find('.teacher-p h5').addClass('error');
+				}
+			}
+			
+			//Validación campos en "Course Book" 
+			if (jQuery('.course-book').is(":visible") ) {
+				var error_course_book=1;
+				jQuery(id).find('#coursebook_1').each(function() {
+					var res_campo=jQuery(this).val();
+					if((res_campo=="")){
+						error_course_book=1;
+					}
+					
+				});	
+				if(error_course_book==1){
+					jQuery(id).find('.course-book h5').addClass('error');
+				}
+			}
+			
+			
 			//Error general campos vacíos
-			if(error_empty==1 || error_checkbox==1){
+			if(error_empty==1 || error_checkbox==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1){
 				var message=jQuery(id).attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}

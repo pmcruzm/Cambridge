@@ -357,13 +357,15 @@ PROPIEDADES CAMBRIDGE LABS
 
 .centre-d-c{margin-top:32px;}
 .centre-d-c h4{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+.centre-d-c h4.error:after{content:'!';font-size:22px;font-family:'latobold', Helvetica, sans-serif;color:#ea575b;margin-left:18px;}
 /*.centre-d-c .checkbox{color:#629ec7;margin-bottom:15px;}*/
 .centre-d-c  .checkbox{padding-left:30px;}
 .centre-d-c  .checkbox p{margin-top:-25px;color:#629ec7;}
 
 .teacher-p h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-top:36px;}
 .teacher-p h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;}
-.teacher-p textarea{border:none;}
+.teacher-p h5.error:after{content:'!';font-size:22px;font-family:'latobold', Helvetica, sans-serif;color:#ea575b;margin-left:18px;}
+.teacher-p textarea{border:none;color: #629ec7;}
 .teacher-p label[for=others_level]{display:none;}
 /*.teacher-p .checkbox{color:#629ec7;margin-bottom:15px;}*/
 .teacher-p  .checkbox{padding-left:30px;}
@@ -371,10 +373,11 @@ PROPIEDADES CAMBRIDGE LABS
 .first-col-tp{padding-left:18px;}
 
 .course-book h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;margin-top:54px;}
+.course-book h5.error:after{content:'!';font-size:22px;font-family:'latobold', Helvetica, sans-serif;color:#ea575b;margin-left:18px;}
 .titul-course{position:relative;height:50px;}
-.course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;position:absolute;}
+.course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;}
 .course-book label{display:none;}
-.course-book input{border:none;}
+.course-book input{border:none; color: #629ec7;}
 .course-book select{border:none;}
 .reduce-input{/*padding-right:40px;*/}
 .reduce-input h6{text-align:center;width:100%;}
@@ -405,6 +408,18 @@ background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 1
 .custom-select select:focus{color:#ffffff;}
 
 .errores p {color: #ea575b !important;font-size:14px !important;margin-bottom: 0;}
+
+.course-book .form-group{margin-bottom:0;}
+.book_1,.book_2,.book_3,.book_4{margin-bottom:15px;}
+.book_1 h6,.book_2 h6,.book_3 h6,.book_4 h6{position:absolute;height:40px;}
+.book_1 h6 + .form-group{margin-top:40px;}
+.book_2.active h6 + .form-group{margin-top:40px;}
+.book_3.active h6 + .form-group{margin-top:40px;}
+.book_4.active h6 + .form-group{margin-top:40px;}
+.book_2 h6{display:none;}
+.book_3 h6{display:none;}
+.book_4 h6{display:none;}
+.btn-mobile-course-book{display:none;text-align:right;}
 	
 /*****************************
 PROPIEDADES CUERPO EVENTS (PENDIENTE)
@@ -1139,7 +1154,7 @@ MEDIA QUERIES
 	.first-col-tp {padding-left: 9px;}
 	.course-book h5{margin-left:9px;}
 	.reduce-input .form-group{padding-left:0;padding-right:0;}
-	.course-book h6{margin:0;line-height:50px;}
+
 	.reduce-input h6{text-align:left;}
 	
 	.content-digital .inside-box-compt img{margin:0 auto;display:block;}
@@ -1166,9 +1181,16 @@ MEDIA QUERIES
 	.prop-recursos{text-align:center;}
 	#contact-form .errores{margin-bottom:32px;}
 	#newsletter-form .errores{margin-bottom:32px;}
+	#register-form .errores{margin-bottom:32px;}
 	
 	.pill-cat{margin:0 auto;margin-top:18px;}
 	.block-cat-digital>div>p{width:100%;}
+	
+	.book_2,.book_3,.book_4{display:none;}
+	.book_2 h6{display:block;}
+	.book_3 h6{display:block;}
+	.book_4 h6{display:block;}
+	.btn-mobile-course-book{display:block;}
 	
 }
 
@@ -1182,6 +1204,7 @@ MEDIA QUERIES
 	.inside-img-product img{bottom:-108px;width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
 	.top-product{height:275px;}
 	.menu-sec-product ul li{text-align:center;}
+	.custom-select select{width:120%;}
 }
 
 @media (max-width: 480px) {
@@ -1206,6 +1229,8 @@ MEDIA QUERIES
 	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
 	
 	.block-ver-mas{text-align:center;}
+	
+	
 }
 
 
