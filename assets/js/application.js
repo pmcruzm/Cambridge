@@ -813,10 +813,16 @@ function validate_form(id){
 			
 			
 			//Error general campos vacíos
-			if(error_empty==1 || error_checkbox==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1){
+			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1){
 				var message=jQuery(id).attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
+			
+			if(error_checkbox==1){
+				var message=jQuery(id).find('.validation-rule-checkbox').attr('data-error-msg');
+				jQuery('.errores').append('<p>'+message+'</p>');
+			}
+			
 			if(error_postcode==1){
 				var message=jQuery(id).find('.validation-rule-postcode').attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
