@@ -243,7 +243,7 @@ PROPIEDADES CUERPO CATEGORIA
 
 .titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;/*margin-bottom:32px;*/}
 .supplementary{margin-top:54px !important;}
-.block-product{text-align:center;margin-top:36px;}
+.block-product{text-align:center;margin-bottom:36px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:157px;}
 
 .block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
@@ -642,10 +642,11 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 /**********************
 PROPIEDADES HOME EXAMS
 ***********************/
+.content-exams{padding-bottom:90px;}
 .filter-exams{position:absolute;top:32px;right:18px;}
 .filter-exams p{color:#6cd9d7;font-size:14px;text-align:right;}
 .filter-exams p>span{background:url(../img/arrow_down.png) center right no-repeat;display:blocK;padding-right:41px;cursor:pointer;}
-.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;}
+.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:block;}
 .opc-filter .radio{margin-bottom:0 !important;margin-top:0 !important;margin-left:-18px;}
 .opc-filter div span{color:#bbb5bb;}
 .opc-filter div span.active{color:#6cd9d7;}
@@ -653,6 +654,14 @@ PROPIEDADES HOME EXAMS
 
 .opc-filter input[type="checkbox"] + label::before {width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px 0px;padding-right:17px;margin-left:0;top:5px;}
 .opc-filter input[type="checkbox"]:checked + label::before{width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px -10px;padding-right:17px;margin-left:0;top:5px;}
+
+.opc-filter-breads{margin-top:32px;margin-bottom:32px;}
+.opc-filter-breads p{color:#bbb5bb;font-size:18px;margin-left:18px;}
+.opc-filter-breads p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+
+.content-exams h2{margin-left:18px;}
+.content-exams h2.supplementary{margin-top:0px !important;margin-bottom:54px;}
+
 
 /******************************
 PROPIEDADES CUERPO SERIE EXAMS

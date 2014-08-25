@@ -39,43 +39,17 @@ jQuery(window).load(function(){
 	
 	//Ajustar altura bloques categoria listado-courses 
 	if (jQuery('.listado-courses').is(":visible") ) {
-		
-		//Listado cursos
-		var heights = jQuery('.listado-courses div.block-product').map(function ()
-		{
-			return jQuery(this).height();
-		}).get(),
-		//Obtenemos tamaño max de los cuadros 
-		maxHeight = Math.max.apply(null, heights);
-		//console.log(maxHeight);
-		//Recorremos todos los cuadros 
-		 jQuery('.listado-courses div.block-product').each(function() {
-		 	var altura=jQuery(this).height();
-			if(altura<maxHeight){
-				var total=maxHeight-altura;
-				jQuery(this).attr('rel',altura);
-				jQuery(this).css('paddingTop',total);
-			}
-		 });
+		align_top_box('.listado-courses div.block-product');
 	}
 	
 	//Ajustar altura bloques categoria listado-supplementary 
 	if (jQuery('.listado-supplementary').is(":visible") ) {	 
-		 //Listado Supplementary
-		var heights = jQuery('.listado-supplementary div.block-product').map(function ()
-		{
-			return jQuery(this).height();
-		}).get(),
-		//Obtenemos tamaño max de los cuadros 
-		maxHeight = Math.max.apply(null, heights);
-		//Recorremos todos los cuadros 
-		 jQuery('.listado-supplementary div.block-product').each(function() {
-		 	var altura=jQuery(this).height();
-			if(altura<maxHeight){
-				var total=maxHeight-altura;
-				jQuery(this).css('padding-top',total);
-			}
-		 });
+		align_top_box('.listado-supplementary div.block-product');
+	}
+	
+	//Ajustar altura bloques categoria listado-supplementary 
+	if (jQuery('.listado-test').is(":visible") ) {	 
+		align_top_box('.listado-test div.block-product');
 	}
 	
 });
@@ -432,9 +406,9 @@ jQuery(document).ready(function(){
 	});
 	
 	//Menú Filtros
-	jQuery(document).on("mouseenter",".filter-exams", function(e) {	
-		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
-	}).on("mouseleave",".filter-exams", function(e) {
+	jQuery(document).on("click",".filter-exams>p>span", function(e) {	
+		e.preventDefault();
+	console.log('dentro');
 		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
 	});
 	
@@ -665,6 +639,26 @@ function errores_form(id,tipo){
 		jQuery(id).addClass('error');
 		document.getElementById(id.substring(1)).value='';
 	}
+}
+
+//Función para alinear top los cuadros
+function align_top_box(id){
+		//Listado cursos
+		var heights = jQuery(id).map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		//console.log(maxHeight);
+		//Recorremos todos los cuadros 
+		 jQuery(id).each(function() {
+		 	var altura=jQuery(this).height();
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).css('paddingTop',total);
+			}
+		 });
 }
 
 //Funcion para validar genéricamnete un formulario
