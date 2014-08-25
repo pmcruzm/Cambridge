@@ -801,17 +801,14 @@ function validate_form(id){
 			
 			//Validación campos en "Course Book" 
 			if (jQuery('.course-book').is(":visible") ) {
-				var error_course_book=1;
-				jQuery(id).find('#coursebook_1').each(function() {
-					var res_campo=jQuery(this).val();
+				var error_course_book=0;
+					var res_campo=jQuery(id).find('#coursebook_1').val();
 					if((res_campo=="")){
 						error_course_book=1;
 					}
-					
-				});	
-				if(error_course_book==1){
-					jQuery(id).find('.course-book h5').addClass('error');
-				}
+					if(error_course_book==1){
+						jQuery(id).find('.course-book h5').addClass('error');
+					}
 			}
 			
 			
