@@ -409,7 +409,7 @@ jQuery(document).ready(function(){
 	jQuery(document).on("click",".filter-exams>p>span", function(e) {	
 		e.preventDefault();
 	console.log('dentro');
-		jQuery( this ).find('.opc-filter').stop().clearQueue().slideToggle(600);
+		jQuery('.opc-filter').stop().clearQueue().slideToggle(600);
 	});
 	
 	//Cuando pulsas sobre poster frame de un video
