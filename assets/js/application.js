@@ -599,6 +599,19 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
+	//Mostrar menú lateral mobile
+	jQuery(document).on('click','#submenus-mob-prodct > a',function(event){
+		event.preventDefault();
+		if(!jQuery(this).parent().hasClass('active')){
+			jQuery(this).parent().addClass('active');
+			jQuery(this).parent().find('ul').stop().clearQueue().slideToggle(400);
+		}else{
+			var padre=jQuery(this).parent();
+			jQuery(this).parent().find('ul').stop().clearQueue().slideToggle(400,function(){jQuery(padre).removeClass('active');});
+		}
+	
+	});
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		

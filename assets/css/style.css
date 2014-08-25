@@ -219,6 +219,20 @@ PROPIEDADES CUERPO CATALOGO
 /*.caption-catalogo ul li:before{content: '';display:inline-block;height:10px;width:10px;background:url(../img/circle_icon.png) top left no-repeat;position:absolute;top:6px;}*/
 .caption-catalogo ul li a{color:#373340;/*display:inline-block;padding-left:18px;*/}
 
+/********************************
+PROPIEDADES MENÚ LATERAL PRODUCTOS
+*********************************/
+#submenus-mob-prodct{display:none;position:absolute;top:216px;z-index:950;width:100%;background:#ffffff;}
+#submenus-mob-prodct > a{display:inline-block;height:80px;line-height:80px;padding-left:20px;color:#47b6c7;font-size:30px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
+#submenus-mob-prodct.active > a{color:#bbb5bb !important;}
+#submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:38px;display:inline-block;width:50px;height:60px;line-height:60px;vertical-align:middle;}
+#submenus-mob-prodct.active > a:before{color:#bbb5bb !important;}
+#submenus-mob-prodct > a:hover{color:#47b6c7;text-decoration:none;}
+#submenus-mob-prodct ul{padding:0;background:#ffffff;display:none;width:100%;padding-bottom:40px;}
+#submenus-mob-prodct ul li{list-style:none;padding-left:20px;padding-right:20px;}
+#submenus-mob-prodct ul li a{display:block;width:100%;text-align:center;height:85px;line-height:85px;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:30px;background:#f8f7f7;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:2px;}
+#submenus-mob-prodct ul li a:hover{text-decoration:none;}
+
 
 /*****************************
 PROPIEDADES CUERPO CATEGORIA
@@ -1162,9 +1176,9 @@ MEDIA QUERIES
 	.block-img-product{height:235px;z-index:100;position:relative;margin-top:-235px;}
 	.menu-product{margin-top:52px !important;}
 	.cont-component{padding:18px 18px 0;}
-	.inside-img-product img{bottom:-125px;display:block;max-width:none;right:0;left:auto;width:580px;}
-	.top-product{height:275px;}
-	.menu-sec-product{padding-top:18px;}
+	.inside-img-product img{bottom:-157px;display:block;max-width:none;right:0;left:auto;width:580px;}
+	.top-product{height:305px;}
+	.menu-sec-product{padding-top:60px;}
 	.menu-sec-product ul li a{font-size:18px;line-height:24px;}
 	
 	.cont-component .inside-box-compt img{margin:0 auto;display:block;margin-bottom:18px;}
@@ -1192,6 +1206,10 @@ MEDIA QUERIES
 	.book_4 h6{display:block;}
 	.btn-mobile-course-book{display:block;}
 	
+	#submenus-mob-prodct{display:block;}
+	.block-submenus{display:none;}
+	#migas .breadcrumb{display:none;}
+	
 }
 
 @media (max-width: 640px) {
@@ -1201,10 +1219,14 @@ MEDIA QUERIES
 	.desplg_cities{width:130px;}
 	.opc-offices{width:130px;}
 	
-	.inside-img-product img{bottom:-108px;width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
-	.top-product{height:275px;}
+	.inside-img-product img{bottom:-168px;width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
+	.top-product{height:335px;}
 	.menu-sec-product ul li{text-align:center;}
 	.custom-select select{width:120%;}
+}
+
+@media (min-width: 481px) and (max-width: 639px) {
+	#submenus-mob-prodct ul li a{font-size:24px;}
 }
 
 @media (max-width: 480px) {
@@ -1223,12 +1245,17 @@ MEDIA QUERIES
 	.head-office{height:auto;}
 	.sales-office{height:auto;}
 	
-	.inside-img-product img{bottom:-95px;width:360px;}
+	.inside-img-product img{bottom:-115px;width:360px;}
 	
 	.block-ver-mas img {display:none;}
 	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
 	
 	.block-ver-mas{text-align:center;}
+	.menu-sec-product { padding-top: 40px;}
+	#submenus-mob-prodct{top:166px;}
+	.top-product{height:295px;}
+	
+	#submenus-mob-prodct ul li a{font-size:20px;}
 	
 	
 }
@@ -1262,4 +1289,5 @@ MEDIA QUERIES
 	.pill-cat{width:75%;}
 	
 	.inside-recurso{height:auto !important;}
+	#submenus-mob-prodct ul li a{font-size:18px;}
 }
