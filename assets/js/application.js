@@ -499,6 +499,12 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Botón redirige a formulario en LABS
+	jQuery(document).on("click",".camb-labs .titul-round", function(event) {
+		event.preventDefault();	
+		jQuery('body').stop().clearQueue().scrollTo(jQuery('.titul-form-reg'),600,{axis:'y',easing:'easeInOutExpo'});
+	});
+	
 	//Envío de formulario de Newsletter
 	jQuery(document).on("submit","#newsletter-form", function(event) {
 		if(send_form==0){

@@ -357,7 +357,7 @@
                         <div class="row">
                         	<div class="col-md-12 form-lab">
                                 <h3 class="titul-form-reg">Completa el formulario para registrarte</h3>
-                                <form id="register-form" role="form">
+                                <form id="register-form" role="form" data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
                                 	<div class="row">
                                        	<div class="col-md-7 teacher-d"> 
                                             <div>
@@ -366,19 +366,19 @@
                                              </div>   
                                             <div class="form-group">
                                                 <label for="nombre_t">Name</label>
-                                                <input type="text" class="form-control" id="nombre_t" placeholder="Name">
+                                                <input type="text" class="form-control validation-rule-empty" id="nombre_t" placeholder="Name">
                                               </div>
                                               <div class="form-group">
                                                 <label for="apellidos_t">Surname</label>
-                                                <input type="text" class="form-control" id="apellidos_t" placeholder="Surname">
+                                                <input type="text" class="form-control validation-rule-empty" id="apellidos_t" placeholder="Surname">
                                               </div>
                                               <div class="form-group">
                                                 <label for="email_t">Email</label>
-                                                <input type="email" class="form-control" id="email_t"  placeholder="Email">
+                                                <input type="email" class="form-control validation-rule-mail" id="email_t"  placeholder="Email" data-error-msg="El email no es válido">
                                               </div>
                                               <div class="form-group">
                                                 <label for="telefono_t">Telephone</label>
-                                                <input type="tel" class="form-control" id="telefono_t" placeholder="Telephone">
+                                                <input type="tel" class="form-control validation-rule-empty" id="telefono_t" placeholder="Telephone">
                                               </div>
                                           </div>
                                       </div>
@@ -388,12 +388,12 @@
                                             <h4>Centre Details</h4>  
                                             <div class="form-group">
                                                 <label for="nombre_centre">Name</label>
-                                                <input type="text" class="form-control" id="nombre_centre" placeholder="Name">
+                                                <input type="text" class="form-control validation-rule-empty" id="nombre_centre" placeholder="Name">
                                               </div>
                                               <div class="form-group custom-select">
-                                                <label for="tipo_centre">Surname</label>
-                                                <select id="tipo_centre" class="form-control">
-                                                  <option value="default">Tipo de centro</option>
+                                                <label for="tipo_centre">Tipo de Centre</label>
+                                                <select id="tipo_centre" class="form-control validation-rule-select" data-error-msg="Debe de seleccionar una opción.">
+                                                  <option value="">Tipo de centro</option>
                                                   <option value="Centro 1">Centro 1</option>
                                                   <option value="Centro 2">Centro 2</option>
                                                   <option value="Centro 3">Centro 3</option>
@@ -402,19 +402,19 @@
                                               </div>
                                               <div class="form-group">
                                                 <label for="direccion_centre">Address</label>
-                                                <input type="email" class="form-control" id="direccion_centre"  placeholder="Address">
+                                                <input type="email" class="form-control validation-rule-empty" id="direccion_centre"  placeholder="Address">
                                               </div>
                                               <div class="form-group">
                                                 <label for="ciudad_centre">City</label>
-                                                <input type="text" class="form-control" id="ciudad_centre"  placeholder="City">
+                                                <input type="text" class="form-control validation-rule-empty" id="ciudad_centre"  placeholder="City">
                                               </div>
                                               <div class="form-group">
                                                 <label for="provincia_centre">Province</label>
-                                                <input type="text" class="form-control" id="provincia_centre"  placeholder="Province">
+                                                <input type="text" class="form-control validation-rule-empty" id="provincia_centre"  placeholder="Province">
                                               </div>
                                               <div class="form-group">
                                                 <label for="telefono_centre">Telephone</label>
-                                                <input type="tel" class="form-control" id="telefono_centre" placeholder="Telephone">
+                                                <input type="tel" class="form-control validation-rule-empty" id="telefono_centre" placeholder="Telephone">
                                               </div>
                                           </div>
                                           <div class="col-sx-12 col-ms-5 col-ms-offset-1 col-xs-4 col-sm-4 col-sm-offset-1 col-md-3 col-md-offset-1 centre-d-c"> 
@@ -450,7 +450,7 @@
                                                     <div class="col-sx-12 col-ms-4 col-xs-4 col-sm-4 col-md-4">
                                                     	<div class="form-group">
                                                         <label for="others_level">Others</label>
-                                                        <textarea class="form-control" id="others_level" rows="5" placeholder="Others"></textarea>
+                                                        <textarea class="form-control validation-rule-empty" id="others_level" rows="5" placeholder="Others"></textarea>
                                                       </div>
                                                     </div>
                                                 </div>
@@ -576,7 +576,7 @@
                                        </div>
                                         <div class="row">
                                        		<div class="col-md-12 privacy-checkbox"> 
-                                            	<div class="checkbox"><input id="c_privacy" type="checkbox"><label for="c_privacy"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
+                                            	<div class="checkbox"><input id="c_privacy" class="validation-rule-checkbox" type="checkbox"><label for="c_privacy"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
                                                 <div class="checkbox"><input id="c_information" type="checkbox"><label for="c_information"></label><p><span>I do not wish to receive information regarding paid focus groups, be invited to events or receive information via email regarding new products, services or discounts.s</span></p></div>
                                             </div>
                                         </div>
@@ -588,10 +588,6 @@
                                                 <input type="submit" class="btn" value="Send">  
                                             </div>
                                          </div>
-                                        
-                                        <!-- <div class="form-group btn-form-submit">
-                                        	<input type="submit" class="btn" value="Send">  
-                                        </div>-->
                                 
                                 </form>
                                 

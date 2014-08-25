@@ -318,12 +318,12 @@ PROPIEDADES CAMBRIDGE LABS
 
 .titul-labs{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_labs.jpg);height:235px;display:table;width:100%;}
 .inside-titul{display:table-cell;vertical-align:middle;text-align:center;}
-.inside-titul h2{display:block;background:url(../img/logo_labs.png) top left no-repeat;width:169px;height:69px;text-indent:-99999px;margin:0 auto 22px;}
+.inside-titul h2{display:block;background:url(../img/logo_labs_cab.png) top left no-repeat;width:170px;height:69px;text-indent:-99999px;margin:0 auto 22px;background-size:170px 69px;}
 .inside-titul p{color:#ffffff;font-size:24px;}
 
 .secc-labs ul{margin-top:-18px !important;}
 .top-intro-labs{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
-.titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;font-size:20px;width:300px;margin:42px auto;text-align:center;}
+.titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;font-size:20px;width:300px;margin:42px auto;text-align:center;cursor:pointer;}
 
 .block-labs{text-align:center;margin-bottom:42px;}
 .block-labs>div{height:128px;vertical-align:middle;}
@@ -341,6 +341,8 @@ PROPIEDADES CAMBRIDGE LABS
 .form-lab h3{color:#629ec7;font-size:32px;margin-bottom:32px;}
 
 #register-form{margin-bottom:90px;}
+#register-form input.error{border:1px solid #ea575b;}
+#register-form textarea.error{border:1px solid #ea575b;}
 
 .teacher-d > div{position:relative;}
 .teacher-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
@@ -379,16 +381,21 @@ PROPIEDADES CAMBRIDGE LABS
 .reduce-input .form-group{padding-right:10px;padding-left:10px;}
 
 
-.privacy-checkbox{margin-top:32px;padding-left:18px;/*margin-bottom:52px;*/}
+.privacy-checkbox{margin-top:32px;padding-left:18px;margin-bottom:52px;}
 /*.privacy-checkbox .checkbox{color:#373340;font-size:13px;margin-bottom:18px;position:relative;}*/
 .privacy-checkbox  .checkbox{padding-left:30px;margin-bottom:18px;}
 .privacy-checkbox  .checkbox p{margin-top:-25px;color:#373340;}
 .privacy-checkbox .checkbox span{/*display:inline-block;position:relative;left:37px;top:-20px;*/}
 .privacy-checkbox .checkbox span + a{color:#629ec7;}
 
-.btn-form-submit{margin-top:52px;}
+.btn-form-submit{/*margin-top:52px;*/}
 
-#register-form input[type=submit],#register-form button[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;}
+#register-form input[type=submit],#register-form button[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
+/*
+background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;
+
+background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;
+*/
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
@@ -396,6 +403,8 @@ PROPIEDADES CAMBRIDGE LABS
 .custom-select.error{border:1px solid #ea575b;}
 .custom-select select{background:transparent;width: 110%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;}
 .custom-select select:focus{color:#ffffff;}
+
+.errores-register p {color: #ea575b;font-size:14px;margin-bottom: 0;}
 	
 /*****************************
 PROPIEDADES CUERPO EVENTS (PENDIENTE)
