@@ -472,7 +472,7 @@ jQuery(document).ready(function(){
 		if(send_form==0){
 			send_reg=1;
 			//Limpiamos errores si no es la primera vez
-			jQuery(".errores-contact").html("");
+			jQuery(".errores").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
 			var result=validate_form('#contact-form');
@@ -488,7 +488,7 @@ jQuery(document).ready(function(){
 		if(send_form==0){
 			send_reg=1;
 			//Limpiamos errores si no es la primera vez
-			jQuery(".errores-register").html("");
+			jQuery(".errores").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
 			var result=validate_form('#register-form');
@@ -511,7 +511,7 @@ jQuery(document).ready(function(){
 		if(send_form==0){
 			send_reg=1;
 			//Limpiamos errores si no es la primera vez
-			jQuery(".errores-newsletter").html("");
+			jQuery(".errores").html("");
 			
 			//Llamamos a la función de validar (id formulario y contenedor errores) 
 			var result=validate_form('#newsletter-form');
