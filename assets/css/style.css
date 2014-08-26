@@ -1035,6 +1035,7 @@ PROPIEDADES CUSTOM THEMES
 .component-product ul li.theme-color:before{color:#f17922;}
 .digital-product ul li.theme-color:before{color:#f17922;}
 a.theme-color:hover,a.theme-color:focus {color:#f17922;}
+.pill-w-table.theme-color tr td p a{color:#f17922;}}
 
 
 /*****************************
