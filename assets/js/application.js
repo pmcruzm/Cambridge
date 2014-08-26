@@ -703,17 +703,34 @@ function align_top_box(id){
 		//Listado cursos
 		var heights = jQuery(id).map(function ()
 		{
-			return jQuery(this).height();
+			return jQuery(this).outerHeight();
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		//console.log(maxHeight);
+		//Obtener el tamaño de los caption 
+		var heights_cap = jQuery(id).map(function ()
+		{
+			return jQuery(this).find('.caption-product').outerHeight();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight_cap = Math.max.apply(null, heights_cap);
+	
 		//Recorremos todos los cuadros 
 		 jQuery(id).each(function() {
-		 	var altura=jQuery(this).height();
+		 	var altura=jQuery(this).outerHeight();
+			var altura_cap=jQuery(this).find('.caption-product').outerHeight();
 			if(altura<maxHeight){
-				var total=maxHeight-altura;
-				jQuery(this).css('paddingTop',total);
+				if(altura_cap==maxHeight_cap){
+					var total=maxHeight-altura;
+					jQuery(this).css('paddingTop',total);
+				}else{
+					jQuery(this).find('.caption-product').css('height',maxHeight_cap);
+					if(jQuery(this).outerHeight()!=maxHeight){
+						var aux=jQuery(this).outerHeight();
+						var total=maxHeight-aux;
+						jQuery(this).css('paddingTop',total);	
+					}
+				}
 			}
 		 });
 }
