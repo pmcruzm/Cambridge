@@ -713,13 +713,13 @@ PROPIEDADES CUERPO SERIE EXAMS
 *******************************/
 
 .content-exam-serie{}
-.content-exam-serie .clasf-product p span{color:#1eaba5;}
+/*.content-exam-serie .clasf-product p span{color:#1eaba5;}
 .content-exam-serie .clasf-product p a{color:#1eaba5;}
 .content-exam-serie .cont-product h2{color:#1eaba5;}
 .content-exam-serie .product-aut:before{content: "\75";}
 .content-exam-serie .product-nlevel:before{background-image:url(../img/ico_n_level_g.png);}
 .content-exam-serie .product-level:before{background-image:url(../img/ico_level_g.png);}
-.content-exam-serie .key-features ul li{list-style-image:url(../img/circle_green.png);}
+.content-exam-serie .key-features ul li{list-style-image:url(../img/circle_green.png);}*/
 .list-official .caption-product{min-height:235px;}
 .list-official{margin-top:72px;}
 .list-official h2{margin-bottom:52px;}
@@ -1015,7 +1015,6 @@ PROPIEDADES UP-WINDOW
 PROPIEDADES CUSTOM THEMES
 *******************************/
 
-/**********NARANJA*************/
 .theme-color {color:#f17922;}
 .theme-color-bg { background-color:#f17922; }
 .product-aut.theme-color:before{color:#f17922;}
@@ -1252,6 +1251,8 @@ MEDIA QUERIES
 	.content-exam-serie-c .top-product{height:275px !important;}
 	.inside-img-exam-serie-c img{bottom:-100px;}
 	
+	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:auto;display:block;width:420px;}
+	
 
 	
 }
@@ -1267,6 +1268,7 @@ MEDIA QUERIES
 	.top-product{height:335px;}
 	.menu-sec-product ul li{text-align:center;}
 	.custom-select select{width:120%;}
+	.inside-img-exam-serie img{bottom:-150px;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -1305,6 +1307,7 @@ MEDIA QUERIES
 	.block-product{padding-top:0px !important;}
 	
 	.inside-img-exam-serie-c img{left:0;right:0;margin-left:auto;margin-right:auto;}
+	.inside-img-exam-serie img{bottom:-100px;width:370px;}
 	
 	
 }
@@ -1316,6 +1319,7 @@ MEDIA QUERIES
 	.inside-img-product img{bottom:-54px;width:300px;}
 	.top-product{height:245px;}
 	.block-ideas h3{width:305px;}
+	.inside-img-exam-serie img{bottom:-50px;width:300px;}
 }
 
 /* Landscape phones and down */
