@@ -1221,7 +1221,7 @@ MEDIA QUERIES
 	.row-height{display:block;}
 	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
 	.row-height .colum-cefs:first-child{margin-bottom:32px;}
-	.content-copy .inside-img-exam-serie img{left:0 !important;right:0 !important;margin-left:auto !important;margin-right:auto !important;}
+	.content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	
 }
 
