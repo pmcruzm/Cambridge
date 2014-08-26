@@ -1004,6 +1004,28 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH
 .block_cards_eng p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
 .block_cards_eng .thumbnail-style:hover {transition:none;box-shadow:none; }
 
+/*************************************
+PROPIEDADES CUERPO HOME EXAMS
+**************************************/
+.content-home-exam{padding-bottom:90px;}
+.cab-home-exams{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:335px;width:100%;position:relative;}
+.cab-home-exams [class*="col-"]{height:335px;position:relative;}
+.cab-home-exams h2{color:#6cd9d7;font-size:32px;background:rgba(162,142,83,0.95);padding:20px;position:absolute;bottom:0;margin:0;width:100%;}
+
+.intro-h-exam{color:#373340;font-size:20px;line-height:21px;margin-top:50px;margin-bottom:32px;line-height:26px;padding-left:20px;padding-right:20px;}
+.intro-h-exam a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+
+/*****************************************
+PROPIEDADES CUERPO SERIE COPY COLLECTION
+*****************************************/
+
+/*****************************************
+PROPIEDADES CUERPO CURSO SUPPLEMENTARY
+*****************************************/
+
+
+
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -1286,6 +1308,8 @@ MEDIA QUERIES
 	
 	.img-catalogues{width:50% !important;float:left;}
 	.cont-catalogues{width:50% !important;float:left;}
+	
+	.cab-home-exams [class*="col-"]{padding:0;}
 	
 
 	
