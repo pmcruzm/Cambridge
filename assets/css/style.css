@@ -1284,6 +1284,9 @@ MEDIA QUERIES
 	
 	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:auto;display:block;width:420px;}
 	
+	.img-catalogues{width:50% !important;float:left;}
+	.cont-catalogues{width:50% !important;float:left;}
+	
 
 	
 }
@@ -1300,6 +1303,9 @@ MEDIA QUERIES
 	.menu-sec-product ul li{text-align:center;}
 	.custom-select select{width:120%;}
 	.inside-img-exam-serie img{bottom:-150px;}
+	
+	.img-catalogues{width:100% !important;float:left;}
+	.cont-catalogues{width:100% !important;float:left;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
