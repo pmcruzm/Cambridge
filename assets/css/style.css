@@ -829,8 +829,6 @@ PROPIEDADES CUERPO CORPUS
 
 .slider-corpus{box-shadow: 0 3px 0 #ffce00;}
 
-/*box-shadow: 0 3px 0 #ffce00;*/
-
 /**************************************
 PROPIEDADES CUERPO ENGLISH FOR SCHOOL
 **************************************/
@@ -953,6 +951,28 @@ PROPIEDADES 404
 .message-404{background:#ffffff;padding-top:52px;padding-bottom:52px;text-align:center;margin-bottom:36px;}
 .message-404 h2{color:#ea575b;font-size:32px;}
 .message-404 p{color:#373340;font-size:16px;}
+
+/*****************************
+PROPIEDADES CUERPO CONTEST
+******************************/
+.content-contest{padding-bottom:90px;}
+
+.cont-contest div:first-child{padding-left:20px;padding-right:20px;padding-top:32px;padding-bottom:42px;}
+.cont-contest h2{color:#20718c;font-size:32px;margin-top:0px;margin-bottom:32px;}
+.cont-contest p.big-text{font-size:20px;}
+.cont-contest p{color:#373340;font-size:16px;margin-bottom:0;line-height:24px;}
+
+.block-ideas{background:#ffffff;padding-bottom:52px;}
+.block-ideas h3{color:#20718c;font-size:26px;background:rgba(255,246,115,0.9);height:60px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;line-height:60px;text-align:center;width:315px;margin:0 auto;margin-top:-30px;position:relative;margin-bottom:32px;}
+.block-ideas p.big-text{margin-bottom:36px !important;}
+.block-ideas div{padding-left:20px;padding-right:20px;}
+.img-ideas{background-position:center center;background-repeat:no-repeat;background-size:cover;height:177px;-ms-behavior: url(/backgroundsize.min.htc);}
+
+.info-contest{padding-top:32px;}
+.info-contest div{background:#fff673;text-align:center;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding:20px;}
+.info-contest div h4{color:#ea575b;font-size:16px;font-family:'latobold', Helvetica, sans-serif;}
+.info-contest div p{color:#373340; font-size:14px;}
+.info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
 	
 /*****************************
 PROPIEDADES FOOTER
@@ -1285,6 +1305,7 @@ MEDIA QUERIES
 	.btn-form-submit {margin-top: 82px;}
 	.inside-img-product img{bottom:-54px;width:300px;}
 	.top-product{height:245px;}
+	.block-ideas h3{width:305px;}
 }
 
 /* Landscape phones and down */
