@@ -982,7 +982,26 @@ PROPIEDADES CUERPO CONTEST
 .info-contest div h4{color:#ea575b;font-size:16px;font-family:'latobold', Helvetica, sans-serif;}
 .info-contest div p{color:#373340; font-size:14px;}
 .info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
-	
+
+/*************************************
+PROPIEDADES CUERPO CAMBRIDGE ENGLISH
+**************************************/
+.content-cambridge-eng{padding-bottom:90px;}
+
+.cont-camb-en{padding-left:20px;padding-right:20px;padding-top:42px;}
+.cont-camb-en div{margin-bottom:42px;}
+.cont-camb-en h2{color:#20718c;font-size:32px;margin-top:0;margin-bottom:20px;}
+.cont-camb-en p{color:#373340;font-size:16px;line-height:21px;}
+.cont-camb-en h3{font-size:20px;color:#373340;line-height:28px;margin-top:0;}
+.cont-camb-en p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}	
+
+.block_cards_eng .thumbnails{min-height:360px;background:#ffffff;}
+.block_cards_eng img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;}
+.block_cards_eng h2{line-height:26px;margin-bottom:0;margin-top:25px;}
+.block_cards_eng p{}
+.block_cards_eng p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+.block_cards_eng .thumbnail-style:hover {transition:none;box-shadow:none; }
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
