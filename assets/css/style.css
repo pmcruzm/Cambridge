@@ -682,6 +682,14 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .block-starters{margin-top:32px;margin-bottom:32px;}
 .block-movers{margin-bottom:32px;}
 
+.pill-w-table{text-align:center;}
+.pill-w-table tr{border-bottom:1px solid #f8f7f7;}
+.pill-w-table tr td{vertical-align:middle !important;height:35px;background:#ffffff;}
+.pill-w-table tr td:first-child{-webkit-border-radius: 15px 0px 0px 15px;-moz-border-radius: 15px 0px 0px 15px;border-radius:15px 0px 0px 15px;}
+.pill-w-table tr td:last-child{-webkit-border-radius: 0px 15px 15px 0px;-moz-border-radius: 0px 15px 15px 0px;border-radius:0px 15px 15px 0px;}
+.pill-w-table tr td p{margin:0 !important;font-size:14px !important;line-height:21px !important;}
+.pill-w-table tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
+
 /**********************
 PROPIEDADES HOME EXAMS
 ***********************/
