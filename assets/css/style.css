@@ -732,18 +732,16 @@ PROPIEDADES CUERPO SERIE EXAMS
 PROPIEDADES CUERPO SERIE EXAMS CURSO
 *************************************/
 .content-exam-serie-c{padding-bottom:250px;}
-.content-exam-serie-c .cont-product{padding:36px 18px 0;}
+.cont-exam-serie-c{padding:36px 18px 0;}
+/*.content-exam-serie-c .cont-product{padding:36px 18px 0;}
 .content-exam-serie-c .clasf-product p span{color:#cd0025;}
 .content-exam-serie-c .clasf-product p a{color:#cd0025;}
 .content-exam-serie-c .cont-product h2{color:#cd0025;}
-.content-exam-serie-c .product-aut:before{background-image:url(../img/ico_autor_r.png);}
-.content-exam-serie-c .product-level:before{background-image:url(../img/ico_level_r.png);}
-.content-exam-serie-c .key-features ul li{list-style-image:url(../img/circle_red.png);}
+
 
 .content-exam-serie-c .component-product h2{color:#cd0025;}
-.content-exam-serie-c .component-product ul li{list-style-image:url(../img/circle_red.png);}
 .content-exam-serie-c .component-product ul li a{color:#cd0025;}
-.content-exam-serie-c .block-ver-mas a{background:#cd0025;}
+.content-exam-serie-c .block-ver-mas a{background:#cd0025;}*/
 
 .block-img-exam-c{position:relative;}
 .inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
@@ -1251,6 +1249,8 @@ MEDIA QUERIES
 	.content-exams{padding-top:40px;}
 	#migas{display:none;}
 	.cab-page{bottom:0;}
+	.content-exam-serie-c .top-product{height:275px !important;}
+	.inside-img-exam-serie-c img{bottom:-100px;}
 	
 
 	
@@ -1303,6 +1303,8 @@ MEDIA QUERIES
 	.img-slider-corpus img{margin:0 auto;}
 	
 	.block-product{padding-top:0px !important;}
+	
+	.inside-img-exam-serie-c img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	
 	
 }
