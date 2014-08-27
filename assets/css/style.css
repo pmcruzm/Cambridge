@@ -1030,7 +1030,24 @@ PROPIEDADES CUERPO SERIE COPY COLLECTION
 /*****************************************
 PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 *****************************************/
+.content-course-sup{padding-bottom:90px;}
 
+.menu-sec-course{padding-left:18px;padding-top:72px;}
+.menu-sec-course ul{margin:0;padding:0;}
+.menu-sec-course ul li{list-style:none;}
+.menu-sec-course ul li a{color:#ffffff;font-size:22px;line-height:28px;}
+.menu-sec-course ul li.active a{font-family:'latobold', Helvetica, sans-serif;}
+
+.cont-course-sup{padding: 110px 18px 0;}
+.content-course-sup h2{color:#bdd630;font-size:32px;margin-bottom:32px;}
+.content-course-sup h3{color:#20718c;font-size:32px;margin-bottom:42px;}
+
+.list-courses-sup .caption-product{min-height:405px;}
+.list-courses-sup .block-product h4 {font-size: 22px; margin: 0 0 18px;padding-top: 168px;text-align: left;}
+.list-courses-sup .caption-product h4 a{color: #bdd630;font-size: 22px;text-decoration: none;}
+.list-courses-sup .caption-product p{}
+
+.list-courses-sup{margin-bottom:36px;}
 
 
 
@@ -1320,6 +1337,8 @@ MEDIA QUERIES
 	.cont-catalogues{width:50% !important;float:left;}
 	
 	.cab-home-exams [class*="col-"]{padding:0;}
+	.menu-sec-course ul li a{font-size:18px;line-height:24px;}
+	.content-course-sup .inside-img-product img {bottom: -217px;display: block;left: auto;max-width: none;right: 0;width: 400px;}
 	
 
 	
@@ -1340,6 +1359,9 @@ MEDIA QUERIES
 	
 	.img-catalogues{width:100% !important;float:left;}
 	.cont-catalogues{width:100% !important;float:left;}
+	
+	.menu-sec-course ul li{text-align:center;}
+	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -1380,6 +1402,9 @@ MEDIA QUERIES
 	.inside-img-exam-serie-c img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.inside-img-exam-serie img{bottom:-100px;width:370px;}
 	
+	.content-course-sup .inside-img-product img {bottom: -198px;width: 290px;}
+	.menu-sec-course{padding-top:62px;}
+	
 	
 }
 
@@ -1391,6 +1416,7 @@ MEDIA QUERIES
 	.top-product{height:245px;}
 	.block-ideas h3{width:305px;}
 	.inside-img-exam-serie img{bottom:-50px;width:300px;}
+	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px;}
 }
 
 /* Landscape phones and down */

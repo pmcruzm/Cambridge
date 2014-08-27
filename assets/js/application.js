@@ -53,6 +53,13 @@ jQuery(window).load(function(){
 		align_top_box('.listado-test div.block-product');
 	}
 	
+	//Ajustar altura bloques de course supplementary 
+	if (jQuery('.content-course-sup').is(":visible") ) {
+		jQuery('.content-course-sup .list-courses-sup').each(function() {	 
+			align_top_box(jQuery(this).find('div.block-product'));
+		});
+	}
+	
 });
 
 jQuery(document).ready(function(){
