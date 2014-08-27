@@ -612,6 +612,22 @@ jQuery(document).ready(function(){
 	
 	});
 	
+	//Añadir etiquetas p dentro de li key-features
+	if (jQuery('.key-features').is(":visible") ) {
+		 jQuery('.key-features li').each(function() {
+		 	var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
+	//Añadir etiquetas p dentro de li key-features
+	if (jQuery('.english-f-spanish').is(":visible") ) {
+		 jQuery('.english-f-spanish li').each(function() {
+		 	var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		
