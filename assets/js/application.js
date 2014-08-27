@@ -434,7 +434,7 @@ jQuery(document).ready(function(){
 		});
 	});
 	
-	//Comprobar que solo se carga en la home
+	//Comprobar que solo se carga en corpus
 	if ( jQuery(".content-corpus").is(":visible") ) {
 		var slider_corpus=jQuery('.bxslider_corpus').bxSlider({
 						  pager: false,
@@ -442,6 +442,23 @@ jQuery(document).ready(function(){
 						  useCSS: false,
 						  adaptiveHeight:true,
 						  });
+	}
+	
+	//Comprobar que solo se carga en app y cargar todas las galerias 
+	if ( jQuery(".content-apps").is(":visible") ) {
+		//slider-app
+		jQuery('.list-apps .slider-app').each(function() {
+			var id_gall=jQuery(this).find('ul').attr('class');
+			//console.log(id_gall);
+			jQuery('.'+id_gall).bxSlider({ 
+								pager: true,
+								infiniteLoop: false,
+								useCSS: false,
+								adaptiveHeight:true,
+								hideControlOnEnd:true,
+								speed:400
+			});
+		});
 	}
 	
 	//Anterior galería Corpus
