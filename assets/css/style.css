@@ -23,7 +23,7 @@ PROPIEDADES CABECERA
 background-size:2502px 1251px;background-position:-513px -798px;
 */
 
-#header .logo{margin:0;padding:0;display:block;background:url(../img/logo.png) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;}
+#header .logo{margin:0;padding:0;display:block;background:url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
 .header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
 #top-header ul{float:right;margin:0;padding:0;}
