@@ -135,11 +135,12 @@ PROPIEDADES CUERPO HOME
 
 
 .cat_mid{height:90px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:18px; display:table;width:100%;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-.cat_mid > div{text-decoration:none;display:table-cell;vertical-align:top;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+.cat_mid > div{text-decoration:none;display:table-cell;vertical-align:middle;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
 .cat_mid >div:hover{background:rgba(234,87,91,0.6);}
-.cat_mid h2{margin:0;}
+.cat_mid h2{margin:0;margin-top:-10px;}
 .cat_mid h2 a{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;margin:0;}
 .cat_mid p{color:#ffffff;margin:0;font-size:14px;}
+.cat_mid p a{font-family:'latoregular', Helvetica, sans-serif;color:#ffffff;}
 
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
@@ -1197,7 +1198,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
 .type-light{font-family:'latolight', Helvetica, sans-serif !important;}
 .type-regular{font-family:'latoregular', Helvetica, sans-serif !important;}
-a:hover,a:focus {color:inherit;text-decoration: underline;}
+a:hover,a:focus {color:inherit;text-decoration:none;}
 .form-control{box-shadow:none;}
 
 /**********************************
