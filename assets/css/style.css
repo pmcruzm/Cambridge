@@ -493,6 +493,44 @@ PROPIEDADES CUERPO EVENTS
 .calendario.november{background:url(../svg/icon_noviembre.svg) top left no-repeat;}
 .calendario.december{background:url(../svg/icon_diciembre.svg) top left no-repeat;}
 
+/**********************************
+PROPIEDADES CUERPO SINGLE EVENTS
+**********************************/
+
+.content-events-single{padding-bottom:90px;}
+
+.single-events{padding-left:18px;}
+.single-events h2{font-size:32px;color:#20718c;margin-top:36px;margin-bottom:36px;}
+.single-events h2 + p{font-size:20px;color:#373340;line-height:28px;}
+
+.img-event-s{background:#ffffff;text-align:center;height:240px;margin-bottom:25px;margin-top:15px;}
+.img-event-s img{max-width:100%;}
+
+.info-event-sing{border:2px solid #c6c6c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding:20px;text-align:center;}
+.info-event-sing .calendario + p{color:#47b6c7;font-size:24px;font-family:'latoregular', Helvetica, sans-serif;width:60%;margin:0 auto;line-height:28px;}
+.info-event-sing h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:30px;margin-bottom:5px;}
+.info-event-sing p{color:#373340;font-size:14px;line-height:18px;}
+.info-event-sing a{color:#373340;font-size:14px;line-height:18px;font-family:'latoregular', Helvetica, sans-serif;}
+.info-event-sing a.material-event{color:#47b6c7;}
+
+
+#event-form{padding-right:32px;padding-left:32px;}
+#event-form > div{position:relative;}
+#event-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
+#event-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:0px;top:0;}
+#event-form label{display:none;}
+#event-form input{border:none;color:#629ec7;border:1px solid #ffffff;}
+#event-form input.error{border:1px solid #ea575b;}
+#event-form select{border:none;}
+#event-form .form-group{position:relative;}
+#event-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+#event-form .checkbox label{display:inline-block;}
+#event-form .checkbox{padding-left:30px;margin-bottom:36px;margin-top:42px;}
+#event-form .checkbox p{margin-top:-25px;}
+#event-form .checkbox a{color:#ea575b;}
+#event-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;border:none;}
+
+
 /*****************************
 PROPIEDADES CUERPO NOSOTROS
 ******************************/
@@ -1322,6 +1360,8 @@ MEDIA QUERIES
 	.slider-app{left:-10px;}
 	.list-available a{margin-right:10px;}
 	.inside-img-exam-serie img{margin-left:auto;margin-right:auto;left:0;right:0;}
+	#event-form input[type="submit"], #newsletter-form button[type="submit"]{margin-top:18px;}
+	#event-form .checkbox{margin-bottom:0px;}
 	
 }
 
@@ -1434,6 +1474,10 @@ MEDIA QUERIES
 	.block-calen{padding-bottom:25px;}
 	.info-event{text-align:center;}
 	
+	.single-events{margin-top:40px;}
+	.img-event-s{margin-top:0;}
+	.single-events {padding-left: 9px;}
+	
 	
 
 	
@@ -1499,6 +1543,9 @@ MEDIA QUERIES
 	
 	.content-course-sup .inside-img-product img {bottom: -198px;width: 290px !important;}
 	.menu-sec-course{padding-top:62px;}
+	
+	#event-form input[type="submit"], #newsletter-form button[type="submit"]{margin-top:18px;}
+	#event-form .checkbox{margin-bottom:18px;}
 	
 	
 }

@@ -524,6 +524,22 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Envío de formulario de contacto
+	jQuery(document).on("submit","#event-form", function(event) {
+		if(send_form==0){
+			send_reg=1;
+			//Limpiamos errores si no es la primera vez
+			jQuery(".errores").html("");
+			
+			//Llamamos a la función de validar (id formulario y contenedor errores) 
+			var result=validate_form('#event-form');
+			if(result==1){
+				event.preventDefault();
+				send_reg=0;
+			}
+		}
+	});
+	
 	//Botón redirige a formulario en LABS
 	jQuery(document).on("click",".camb-labs .titul-round", function(event) {
 		event.preventDefault();	
