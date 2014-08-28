@@ -141,6 +141,7 @@ PROPIEDADES CUERPO HOME
 .cat_mid h2 a{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;margin:0;}
 .cat_mid p{color:#ffffff;margin:0;font-size:14px;}
 .cat_mid p a{font-family:'latoregular', Helvetica, sans-serif;color:#ffffff;}
+.cat_mid >div>div{height:90px;overflow:hidden;}
 
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
