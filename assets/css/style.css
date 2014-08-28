@@ -1008,9 +1008,10 @@ PROPIEDADES CUERPO CONTEST
 .block-ideas{background:#ffffff;padding-bottom:52px;}
 .block-ideas h3{color:#20718c;font-size:26px;background:rgba(255,246,115,0.9);height:60px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;line-height:60px;text-align:center;width:315px;margin:0 auto;margin-top:-30px;position:relative;margin-bottom:32px;}
 .block-ideas p.big-text{margin-bottom:36px !important;}
-.block-ideas div{padding-left:20px;padding-right:20px;}
+.block-ideas>div{padding-left:20px;padding-right:20px;}
 .img-ideas{background-position:center center;background-repeat:no-repeat;background-size:cover;height:177px;-ms-behavior: url(/backgroundsize.min.htc);}
-.block-ideas  div.big-text{padding:0 !important;margin-bottom:20px;}
+.block-ideas div.big-text {padding:0 !important;margin-bottom:20px;}
+.block-ideas div.big-text p{font-size:20px;}
 
 .info-contest{padding-top:32px;}
 .info-contest div{background:#fff673;text-align:center;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding:20px;}
