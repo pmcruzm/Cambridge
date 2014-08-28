@@ -135,10 +135,11 @@ PROPIEDADES CUERPO HOME
 
 
 .cat_mid{height:90px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:18px; display:table;width:100%;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-.cat_mid a{text-decoration:none;display:table-cell;vertical-align:middle;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
-.cat_mid a:hover{background:rgba(234,87,91,0.6)}
-.cat_mid a h2{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;}
-.cat_mid a p{color:#ffffff;margin:0;font-size:14px;}
+.cat_mid > div{text-decoration:none;display:table-cell;vertical-align:top;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+.cat_mid >div:hover{background:rgba(234,87,91,0.6);}
+.cat_mid h2{margin:0;}
+.cat_mid h2 a{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;margin:0;}
+.cat_mid p{color:#ffffff;margin:0;font-size:14px;}
 
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
