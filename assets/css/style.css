@@ -550,7 +550,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .menu-product{margin-top:-18px !important;}
 
 .inside-img-product{height:235px;position:relative;text-align:center;width:100%;}
-.inside-img-product img{max-width:100%;position:absolute;bottom:-107px;vertical-align:bottom;right:0;left:0;margin-left:auto;margin-right:auto;}
+.inside-img-product img{max-width:100%;position:absolute;bottom:-107px;vertical-align:bottom;right:0;left:0;margin-left:auto;margin-right:auto;width:721px;}
 
 .cont-product{padding:90px 18px 0;}
 .intro-product{font-size:20px;color:#373340;}
@@ -768,7 +768,7 @@ PROPIEDADES CUERPO SERIE EXAMS
 
 .block-img-exam{position:relative;}
 .inside-img-exam-serie{height:235px;position:relative;text-align:right;width:100%;}
-.inside-img-exam-serie img{max-width:100%;bottom:-70px;position:absolute;right:25px;vertical-align:bottom;}
+.inside-img-exam-serie img{max-width:100%;bottom:-70px;position:absolute;right:25px;vertical-align:bottom;width:512px;}
 
 /*************************************
 PROPIEDADES CUERPO SERIE EXAMS CURSO
@@ -1058,7 +1058,7 @@ PROPIEDADES CUERPO SERIE COPY COLLECTION
 .content-copy .list-official .caption-product h4{color:#373340;font-family:'latoitalic', Helvetica, sans-serif !important;font-size:14px;margin-top:5px;margin-bottom:24px;}
 .content-copy .list-official .caption-product p{font-size:14px;color:#373340;padding-bottom:20px;}
 
-.content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;}
+.content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;width:406px;}
 
 /*****************************************
 PROPIEDADES CUERPO CURSO SUPPLEMENTARY
@@ -1074,6 +1074,7 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .cont-course-sup{padding: 110px 18px 0;}
 .content-course-sup h2{color:#bdd630;font-size:32px;margin-bottom:32px;}
 .content-course-sup h3{color:#20718c;font-size:32px;margin-bottom:42px;}
+.content-course-sup .inside-img-product img{left:0;right:0;margin-left:auto;margin-right:auto;width:461px !important;}
 
 .list-courses-sup .caption-product{min-height:405px;}
 .list-courses-sup .block-product h4 {font-size: 22px; margin: 0 0 18px;padding-top: 168px;text-align: left;}
@@ -1081,6 +1082,8 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .list-courses-sup .caption-product p{}
 
 .list-courses-sup{margin-bottom:36px;}
+
+
 
 /***********************
 PROPIEDADES CUERPO APPS
@@ -1315,6 +1318,7 @@ MEDIA QUERIES
 	.content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.slider-app{left:-10px;}
 	.list-available a{margin-right:10px;}
+	.inside-img-exam-serie img{margin-left:auto;margin-right:auto;left:0;right:0;}
 	
 }
 
@@ -1413,7 +1417,7 @@ MEDIA QUERIES
 	
 	.cab-home-exams [class*="col-"]{padding:0;}
 	.menu-sec-course ul li a{font-size:18px;line-height:24px;}
-	.content-course-sup .inside-img-product img {bottom: -217px;display: block;left: auto;max-width: none;right: 0;width: 400px;}
+	.content-course-sup .inside-img-product img {bottom: -217px;display: block;left: auto;max-width: none;right: 0;width: 400px !important;}
 	.img-app{margin-bottom:36px;}
 	.slider-app{width:189px;margin:0 auto;margin-top:36px;}
 	.list-available{text-align:center;margin-bottom:-18px;}
@@ -1426,6 +1430,7 @@ MEDIA QUERIES
 	.block-act{padding-left:0;}
 	.block-calen{padding-bottom:25px;}
 	.info-event{text-align:center;}
+	
 	
 
 	
@@ -1448,7 +1453,7 @@ MEDIA QUERIES
 	.cont-catalogues{width:100% !important;float:left;}
 	
 	.menu-sec-course ul li{text-align:center;}
-	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px;}
+	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px !important;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -1489,7 +1494,7 @@ MEDIA QUERIES
 	.inside-img-exam-serie-c img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.inside-img-exam-serie img{bottom:-100px;width:370px;}
 	
-	.content-course-sup .inside-img-product img {bottom: -198px;width: 290px;}
+	.content-course-sup .inside-img-product img {bottom: -198px;width: 290px !important;}
 	.menu-sec-course{padding-top:62px;}
 	
 	
@@ -1503,7 +1508,7 @@ MEDIA QUERIES
 	.top-product{height:245px;}
 	.block-ideas h3{width:305px;}
 	.inside-img-exam-serie img{bottom:-50px;width:300px;}
-	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px;}
+	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px !important;}
 }
 
 
