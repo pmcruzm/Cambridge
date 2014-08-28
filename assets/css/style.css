@@ -115,6 +115,7 @@ PROPIEDADES CUERPO HOME
 .inside-slider h3{margin:0 0 18px;}
 .inside-slider h3 a{color:#71e3dd;font-size:30px;text-decoration:none;}
 .inside-slider p a{color:#ffffff;font-size:16px;line-height:20px;text-decoration:none;}
+.inside-slider a div p{color:#ffffff;font-size:16px;line-height:20px;text-decoration:none;}
 #nav-slider{height:47px;text-align:center;}
 #nav-slider ul{margin:16px 0 0 -10px;padding:0;}
 #nav-slider ul li{display:inline-block;height:15px;}
