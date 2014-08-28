@@ -971,6 +971,7 @@ PROPIEDADES CUERPO CONTEST
 .cont-contest div:first-child{padding-left:20px;padding-right:20px;padding-top:32px;padding-bottom:42px;}
 .cont-contest h2{color:#20718c;font-size:32px;margin-top:0px;margin-bottom:32px;}
 .cont-contest p.big-text{font-size:20px;}
+.cont-contest div.big-text{font-size:20px;}
 .cont-contest p{color:#373340;font-size:16px;margin-bottom:0;line-height:24px;}
 
 .block-ideas{background:#ffffff;padding-bottom:52px;}
@@ -978,6 +979,7 @@ PROPIEDADES CUERPO CONTEST
 .block-ideas p.big-text{margin-bottom:36px !important;}
 .block-ideas div{padding-left:20px;padding-right:20px;}
 .img-ideas{background-position:center center;background-repeat:no-repeat;background-size:cover;height:177px;-ms-behavior: url(/backgroundsize.min.htc);}
+.block-ideas  div.big-text{padding:0 !important;margin-bottom:20px;}
 
 .info-contest{padding-top:32px;}
 .info-contest div{background:#fff673;text-align:center;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding:20px;}
