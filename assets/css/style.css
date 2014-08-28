@@ -1064,29 +1064,30 @@ PROPIEDADES CUERPO APPS
 .img-app{text-align:center;}
 .img-app img{max-width:100%;}
 .body-app {padding:20px 20px 30px;background:#ffffff;}
+.body-app .info-app{padding-right:30px;}
 .body-app .info-app h3{margin-top:0;font-size:16px;color:#373340;font-family:'latobold', Helvetica, sans-serif;}
 .body-app .info-app p{color:#373340;font-size:16px;}
 
 .list-available{margin-top:36px;}
 .list-available a{display:inline-block;margin-right:20px;text-indent:-99999px;}
-.list-available a:last-child{margin-left:0;}
-.list-available a.app-store{background:url(../img/ico_store.png) top left no-repeat; width:139px;height:44px;}
-.list-available a.google-play{background:url(../img/ico_android.png) top left no-repeat; width:139px;height:44px;}
+.list-available a:last-child{margin-right:0;}
+.list-available a.app-store{background:url(../svg/icon_appstore.svg) top left no-repeat; width:139px;height:44px;background-size:139px 44px;}
+.list-available a.google-play{background:url(../svg/icon_googleplay.svg) top left no-repeat; width:139px;height:44px;background-size:139px 44px;}
 
 .site-app{background:#47b6c7;padding-left:20px;padding-right:20px;color:#ffffff;height:30px;line-height:30px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;display:inline-block;margin-top:24px;}
 .site-app:hover{text-decoration:none;color:#ffffff;}
 
-.slider-app{margin-top:-40px;margin-bottom:-40px;box-shadow:0 11px 11px #ddd;}
+.slider-app{margin-top:-40px;margin-bottom:-40px;box-shadow:0 11px 11px #ddd;left:-20px;position:relative;}
 .slider-app #nav-slider{height:auto;}
 .slider-app .bx-wrapper .bx-pager.bx-default-pager a{background:url(../img/bullet_app.png);background-position:0px 0px;background-repeat:no-repeat;}
 .slider-app .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px -10px;}
 
 .content-apps .bx-controls {display: block !important;}
-.content-apps .bx-controls-direction {bottom: -10px;position: absolute;width: 100%;}
+/*.content-apps .bx-controls-direction {bottom: -10px;position: absolute;width: 100%;}*/
 
 .slider-app .bx-wrapper .bx-controls-direction a {height: 15px;text-indent: -9999px;bottom: 0;width: 9px;margin-top:0px;}
-.slider-app .bx-wrapper .bx-prev {background: url(../img/arrow_app.png) no-repeat 0 0px;left: 15px;}
-.slider-app .bx-wrapper .bx-next {background: url(../img/arrow_app.png) no-repeat  0 -15px;right: 15px;}
+.slider-app .bx-wrapper .bx-prev {background: url(../img/arrow_app.png) no-repeat 0 0px;left: -20px;}
+.slider-app .bx-wrapper .bx-next {background: url(../img/arrow_app.png) no-repeat  0 -15px;right: -20px;}
 
 
 
@@ -1281,6 +1282,8 @@ MEDIA QUERIES
 	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
 	.row-height .colum-cefs:first-child{margin-bottom:32px;}
 	.content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;}
+	.slider-app{left:-10px;}
+	.list-available a{margin-right:10px;}
 	
 }
 
@@ -1384,6 +1387,9 @@ MEDIA QUERIES
 	.slider-app{width:189px;margin:0 auto;margin-top:36px;}
 	.list-available{text-align:center;margin-bottom:-18px;}
 	.list-available a{margin-bottom:18px;}
+	.body-app .info-app{padding-right:0;}
+	.list-available a{margin-right:10px !important;margin-left:10px !important;}
+	.slider-app{left:0;}
 	
 
 	
@@ -1463,6 +1469,7 @@ MEDIA QUERIES
 	.inside-img-exam-serie img{bottom:-50px;width:300px;}
 	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px;}
 }
+
 
 /* Landscape phones and down */
 @media (min-width: 320px) and (max-width: 479px) {
