@@ -439,32 +439,54 @@ background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 1
 PROPIEDADES CUERPO EVENTS
 ******************************/
 
+.content-events{padding-bottom:90px;}
+
 .upcoming-events{padding-left:18px;}
 .upcoming-events h2{font-size:32px;color:#20718c;margin-top:36px;margin-bottom:36px;}
 .upcoming-events h2 + p{font-size:20px;color:#373340;line-height:28px;}
 .select-events{text-align:right;margin-bottom:22px;}
-.select-events span{color:#bbb5bb;font-size:14px;margin-right:-10px;}
+.select-events span{color:#bbb5bb;font-size:14px;margin-left:5px;cursor:pointer;}
 .select-events span.active{color:#6cd9d7;}
 .select-events .radio > div{display:inline-block;}
 .select-events label:before{padding-right:0 !important;}
 .select-events input[type="radio"] + label::before {width:14px !important;height:14px !important;background:url(../img/radio_event.png) no-repeat !important;background-position:0px 0px !important;}
 .select-events input[type="radio"]:checked + label::before {width:14px !important;height:14px !important;background:url(../img/radio_event.png) no-repeat !important;background-position:0px -14px !important;}
+.select-events input[type="radio"]:checked + label + span{color:#6cd9d7;}
 
-.block-calen{background:red;}
-.block-act{}
-.inside-descrip{background:#ffffff;padding:18px;}
-.descrip-act.sing-up h3{margin:0;color:#6cd9d7;}
-.descrip-act.details h3{margin:0;color:#c3c3c3;}
-.descrip-act{margin-bottom:36px;}
+
+.row-calendario{background:#ffffff;margin-bottom:36px;}
+.block-calen{text-align:center;padding-top:35px;}
+.block-calen p{color:#47b6c7;font-size:24px;font-family:'latoregular', Helvetica, sans-serif;}
+.block-act{padding-right:0;}
+.block-act .descrip-act{border-top:2px solid #f8f7f7;}
+.block-act .descrip-act:first-child{border-top:none;}
+.inside-descrip{padding:18px;}
+.descrip-act.active h3 a{margin:0;color:#6cd9d7;}
+.descrip-act h3{margin:0;}
+.descrip-act h3 a{color:#c3c3c3;text-decoration:none;}
+.descrip-act h3 a:hover{text-decoration:none;color:#6cd9d7;}
+.descrip-act{}
 .inside-descrip p{margin:0;}
 .date-event{margin-bottom:18px !important;font-size:14px;}
 .place-event{font-size:14px;}
 .city-event{font-family:'latoregular', Helvetica, sans-serif;font-size:14px;margin-bottom:18px !important;}
-.descrip-act a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin-top:-13px;z-index:40;position:relative;float:right;margin-right:18px;}
-.descrip-act.sing-up a{background:#6cd9d7;}
-.descrip-act.details a{background:#c3c3c3;}
+
 .image-event{text-align:center;height: 128px;vertical-align: middle;}
 .image-event img{max-width:100%;}
+
+.calendario{display:inline-block;width:62px;height:62px;background-size:62px 62px;}
+.calendario.january{background:url(../svg/icon_enero.svg) top left no-repeat;}
+.calendario.february{background:url(../svg/icon_febrero.svg) top left no-repeat;}
+.calendario.march{background:url(../svg/icon_marzo.svg) top left no-repeat;}
+.calendario.april{background:url(../svg/icon_abril.svg) top left no-repeat;}
+.calendario.may{background:url(../svg/icon_mayo.svg) top left no-repeat;}
+.calendario.june{background:url(../svg/icon_junio.svg) top left no-repeat;}
+.calendario.july{background:url(../svg/icon_julio.svg) top left no-repeat;}
+.calendario.august{background:url(../svg/icon_agosto.svg) top left no-repeat;}
+.calendario.september{background:url(../svg/icon_septiembre.svg) top left no-repeat;}
+.calendario.october{background:url(../svg/icon_octubre.svg) top left no-repeat;}
+.calendario.november{background:url(../svg/icon_noviembre.svg) top left no-repeat;}
+.calendario.december{background:url(../svg/icon_diciembre.svg) top left no-repeat;}
 
 /*****************************
 PROPIEDADES CUERPO NOSOTROS
@@ -1392,6 +1414,11 @@ MEDIA QUERIES
 	.body-app .info-app{padding-right:0;}
 	.list-available a{margin-right:10px !important;margin-left:10px !important;}
 	.slider-app{left:0;}
+	
+	.block-act .descrip-act:first-child{border-top:2px solid #f8f7f7;}
+	.block-act{padding-left:0;}
+	.block-calen{padding-bottom:25px;}
+	.info-event{text-align:center;}
 	
 
 	
