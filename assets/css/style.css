@@ -713,7 +713,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w-table tr td:last-child{-webkit-border-radius: 0px 15px 15px 0px;-moz-border-radius: 0px 15px 15px 0px;border-radius:0px 15px 15px 0px;}
 .pill-w-table tr td p{margin:0 !important;font-size:14px !important;line-height:21px !important;color:#373340;}
 .pill-w-table tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
-.pill-w-table tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:800;}
+.pill-w-table tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 .resource-module{margin-top:190px;}
 .pill-w-table p{color:#373340;} 
 
@@ -742,6 +742,10 @@ PROPIEDADES HOME EXAMS
 .content-exams h2{margin-left:18px;}
 .content-exams h2.supplementary{margin-top:0px !important;margin-bottom:54px;}
 
+.foot-exams{margin-top:42px;}
+.foot-exams p{font-size:22px; color:#20718c;line-height:32px;text-align:center;width:90%;margin:0 auto;}
+.foot-exams p a{color:#47b6c7;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
+.foot-exams p a:hover{color:#47b6c7;}
 
 /******************************
 PROPIEDADES CUERPO SERIE EXAMS
