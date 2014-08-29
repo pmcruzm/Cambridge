@@ -118,6 +118,9 @@ jQuery(document).ready(function(){
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.desplegable-sub').addClass('active');	
 		}else{
+			var clase_final=jQuery( this ).attr('rel');
+			jQuery( this ).removeClass().addClass(clase_final).removeAttr(clase_final);
+			//Cambiar iconos de otras opciones 
 			jQuery( this ).parent().removeClass('active');
 			jQuery( this ).parent().find('.desplegable-sub').removeClass('active');
 		}
