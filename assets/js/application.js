@@ -104,6 +104,17 @@ jQuery(document).ready(function(){
 			jQuery('.desplegable-sub').removeClass('active');
 			jQuery('.mobile-tab li').removeClass('active');
 			jQuery('.mobile-menus').removeClass('active');
+			//Añadimos el icono de cerrar
+			var clase_act=jQuery( this ).attr('class');
+			jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act);
+			//Cambiar iconos de otras opciones 
+			jQuery('.menu-mob > a').each(function(){
+				var attr = jQuery(this).attr('rel');
+				if (typeof attr !== typeof undefined && attr !== false) {
+					var clase_act_o=jQuery( this ).attr('class');
+					jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act_o);
+				}
+			});
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.desplegable-sub').addClass('active');	
 		}else{
@@ -133,11 +144,21 @@ jQuery(document).ready(function(){
 			//Añadimos el icono de cerrar
 			var clase_act=jQuery( this ).attr('class');
 			jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act);
+			//Cambiar iconos de otras opciones 
+			jQuery('.other-menu >li > a').each(function(){
+				var attr = jQuery(this).attr('rel');
+				if (typeof attr !== typeof undefined && attr !== false) {
+					var clase_act_o=jQuery( this ).attr('class');
+					jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act_o);
+				}
+			});
+			
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.mobile-menus').addClass('active');	
 		}else{
 			var clase_final=jQuery( this ).attr('rel');
 			jQuery( this ).removeClass().addClass(clase_final).removeAttr(clase_final);
+			//Cambiar iconos de otras opciones 
 			jQuery( this ).parent().removeClass('active');
 			jQuery( this ).parent().find('.mobile-menus').removeClass('active');
 		}
