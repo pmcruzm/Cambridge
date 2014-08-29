@@ -131,11 +131,13 @@ jQuery(document).ready(function(){
 			jQuery('.other-menu li').removeClass('active');
 			jQuery('.desplegable-sub').removeClass('active');
 			//Añadimos el icono de cerrar
-			jQuery( this ).removeClass('fa fa-bars').addClass('fa fa-times');
+			var clase_act=jQuery( this ).attr('class');
+			jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act);
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.mobile-menus').addClass('active');	
 		}else{
-			jQuery( this ).removeClass('fa fa-times').addClass('fa fa-bars');
+			var clase_final=jQuery( this ).attr('rel');
+			jQuery( this ).removeClass().addClass(clase_final).removeAttr(clase_final);
 			jQuery( this ).parent().removeClass('active');
 			jQuery( this ).parent().find('.mobile-menus').removeClass('active');
 		}
