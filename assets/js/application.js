@@ -111,7 +111,7 @@ jQuery(document).ready(function(){
 			jQuery('.menu-mob > a').each(function(){
 				var attr = jQuery(this).attr('rel');
 				if (typeof attr !== typeof undefined && attr !== false) {
-					var clase_act_o=jQuery( this ).attr('class');
+					var clase_act_o=jQuery( this ).attr('rel');
 					jQuery( this ).removeClass().addClass(clase_act_o).removeAttr('rel');
 				}
 			});
@@ -151,7 +151,7 @@ jQuery(document).ready(function(){
 			jQuery('.other-menu >li > a').each(function(){
 				var attr = jQuery(this).attr('rel');
 				if (typeof attr !== typeof undefined && attr !== false) {
-					var clase_act_o=jQuery( this ).attr('class');
+					var clase_act_o=jQuery( this ).attr('rel');
 					jQuery( this ).removeClass().addClass(clase_act_o).removeAttr('rel');
 				}
 			});
