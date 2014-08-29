@@ -151,6 +151,7 @@ jQuery(document).ready(function(){
 			jQuery('.other-menu >li > a').each(function(){
 				var attr = jQuery(this).attr('rel');
 				if (typeof attr !== typeof undefined && attr !== false) {
+					alert('si');
 					var clase_act_o=jQuery( this ).attr('class');
 					jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act_o);
 				}
