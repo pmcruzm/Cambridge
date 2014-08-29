@@ -1547,6 +1547,18 @@ MEDIA QUERIES
 	#event-form input[type="submit"], #newsletter-form button[type="submit"]{margin-top:18px;}
 	#event-form .checkbox{margin-bottom:18px;}
 	
+	.list-menu-mob{padding-top:10px;padding-bottom:10px;}
+	.mobile-menus{padding-top:0;}
+	.mobile-menus .container{padding-left:9px;}
+	.mobile-menus ul li{text-align:center;}
+	.mobile-menus ul li a{height:50px !important;line-height:50px !important;padding-left:0 !important;padding-right:0 !important;margin-left:0px !important;margin-bottom:0px;display:block !important;color:#20718c;font-size:19px;}
+	.mobile-menus ul li a:hover{text-decoration:none !important;}
+	.list-menu-mob ul li ul{margin-left:0px !important;}
+	.list-menu-mob ul li ul li a{background:#f8f7f7 !important;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color:#20718c;font-size:17px;font-family:'latoregular', Helvetica, sans-serif;height:40px !important;line-height:40px !important;}
+	.list-menu-mob ul li ul li{margin-bottom:1px;}
+	/*.list-menu-mob ul li ul li:first-child{margin-top:0;}*/
+	
+	
 	
 }
 

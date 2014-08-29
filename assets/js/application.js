@@ -130,9 +130,12 @@ jQuery(document).ready(function(){
 		if(!jQuery(this).parent().hasClass('active')){
 			jQuery('.other-menu li').removeClass('active');
 			jQuery('.desplegable-sub').removeClass('active');
+			//Añadimos el icono de cerrar
+			jQuery( this ).removeClass('fa fa-bars').addClass('fa fa-times');
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.mobile-menus').addClass('active');	
 		}else{
+			jQuery( this ).removeClass('fa fa-times').addClass('fa fa-bars');
 			jQuery( this ).parent().removeClass('active');
 			jQuery( this ).parent().find('.mobile-menus').removeClass('active');
 		}
@@ -144,12 +147,18 @@ jQuery(document).ready(function(){
 		var tipo = jQuery(this).parent().index();
 		var enlace=jQuery(this).attr('href');
 		if(enlace=='#'){
+			
 			var submenus=jQuery(this).parent().find('ul');
 			if (jQuery(submenus).is(":visible") ) {
-				jQuery(submenus).hide();
+				jQuery(submenus).stop().clearQueue().slideToggle(600);
+				jQuery(this).parent().removeClass('active');
 			} else { 
-				jQuery('.list-menu-mob ul li ul').hide();
-				jQuery(submenus).show();
+				//jQuery(this).parent().addClass('active');
+				//Buscamos el cuadro que esté abierto y lo cerramos 
+				var cerrar=jQuery('.list-menu-mob ul li.active');
+				//jQuery('.list-menu-mob ul li ul').hide();
+				jQuery(submenus).css({display:'none'}).slideDown(600,function(){jQuery(this).parent().addClass('active');});
+				jQuery(cerrar).find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');});
 				//Cambiamos banners según contenido 
 				switch (tipo){
 					case 0:
