@@ -38,8 +38,8 @@ background-size:2502px 1251px;background-position:-513px -798px;
 .mobile-tab li a{padding-left:9px !important;padding-right:9px !important;}
 .mobile-tab li.active a{background:#ffffff;text-decoration:none;}
 
-.other-menu{top:-1px;}
-.other-menu li a{padding-left:9px !important;padding-right:9px !important;}
+.other-menu{}
+.other-menu li a{padding-left:9px !important;padding-right:9px !important;margin-top:-1px;}
 .other-menu li.active a{background:#ffffff;text-decoration:none;}
 
 #top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
