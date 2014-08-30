@@ -1246,7 +1246,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .helper {display: inline-block;height: 100%;vertical-align: middle;}
 .txt-center{text-align:center;}
 .clear{clear:both;}
-.form-control:focus{-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);}
+.form-control:focus{-webkit-box-shadow:none;box-shadow:none;}
 .top-margin{margin-top:18px;}
 .marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
 .type-light{font-family:'latolight', Helvetica, sans-serif !important;}
