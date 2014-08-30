@@ -987,7 +987,7 @@ PROPIEDADES CUERPO CONTACT
 #contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
 #contact-form input[type=submit],#contact-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
 #contact-form .checkbox label{display:inline-block;}
-#contact-form  .checkbox{padding-left:30px;margin-bottom:36px;margin-top:-36px;}
+#contact-form  .checkbox{padding-left:30px;margin-bottom:18px;}
 #contact-form  .checkbox p{margin-top:-25px;font-size:14px;}
 #contact-form .checkbox a{color:#ea575b;}
 
@@ -1000,6 +1000,9 @@ PROPIEDADES CUERPO CONTACT
 .desplg_cities ul li{list-style:none;color:#bbb5bb !important;height:36px;line-height:36px;cursor:pointer;}
 .opc-offices{position:absolute;width:148px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
+
+#contact-form  .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;}
+#contact-form  .custom-select.error{border:1px solid #ea575b;}
 
 
 /**************************************

@@ -466,7 +466,7 @@
                             	<h2>Contact Form</h2>
                                 <form id="contact-form" action="Get_User_Information.php" method="post" role="form" data-error-msg="Ha habido un error, por favor revisa los campos resaltados">
                                   <div>
-                                     <h3>Personal details</h3>
+                                     <h3>Your enquiry</h3>
                                      <p class="help-block">* Required fields</p>
                                   </div>   
                                   <div class="form-group required">
@@ -499,33 +499,36 @@
                                                  <label for="name_c_c">Name of centre</label>
                                                  <input type="text" class="form-control validation-rule-empty" id="name_c_c" placeholder="Name of centre">
                                               </div>
-                                              <div class="form-group required">
+                                              <div class="form-group">
                                                  <label for="street_c">Street</label>
-                                                 <input type="text" class="form-control validation-rule-empty" id="street_c" placeholder="Street">
+                                                 <input type="text" class="form-control" id="street_c" placeholder="Street">
                                               </div>
                                               <div class="form-group required">
                                                  <label for="post_code_c">Post Code</label>
                                                  <input type="text" class="form-control validation-rule-postcode" id="post_code_c" placeholder="Post Code" data-error-msg="El código postal no es valido.">
                                               </div>
-                                               <div class="form-group">
+                                               <div class="form-group required">
                                                  <label for="city_c">City</label>
-                                                 <input type="text" class="form-control" id="city_c" placeholder="City">
+                                                 <input type="text" class="form-control validation-rule-empty" id="city_c" placeholder="City">
                                               </div>
-                                              <div class="form-group custom-select">
-                                                    <label for="province_c">Provincia</label>
-                                                    <select id="province_c" class="form-control" data-error-msg="Debe de seleccionar una opción.">
-                                                         <option value="">Province</option>
-                                                         <option value="Province 1">Province 1</option>
-                                                         <option value="Province 2">Province 2</option>
-                                                         <option value="Province 3">Province 3</option>
-                                                         <option value="Province 4">Province 4</option>
-                                                     </select>
+                                              <div class="form-group required">
+                                                    <div class="custom-select">
+                                                        <label class="required" for="province_c">Province</label>
+                                                        <select id="province_c" class="form-control validation-rule-select" data-error-msg="Selecciona provincia">
+                                                             <option value="">Province</option>
+                                                             <option value="Province 1">Province 1</option>
+                                                             <option value="Province 2">Province 2</option>
+                                                             <option value="Province 3">Province 3</option>
+                                                             <option value="Province 4">Province 4</option>
+                                                         </select>
+                                                     </div>    
                                               </div>
                                         </div>
                                   </div>
                                   <div class="row">
-                                  	<div class="col-xs-12 col-ms-12 col-sm-6 col-md-6">
+                                  	<div class="col-xs-12 col-ms-12 col-sm-12 col-md-12">
                                   		<div class="checkbox"><input id="c_privacy_c" class="validation-rule-checkbox" data-error-msg="Debe aceptar política de privacidad." type="checkbox"><label for="c_privacy_c"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
+                                        <div class="checkbox"><input id="c_privacy_c" type="checkbox"><label for="c_privacy_c"></label><p><span>I do not wish to receive information regarding paid focus groups, be invited to events or receive information via email regarding new products, services or discounts.</span></p></div>
                                   	</div>
                                   </div>
                                   <div class="row">
