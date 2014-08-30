@@ -892,7 +892,6 @@ function validate_form(id){
 			
 			//Busca todos los campos requeridos de codigo postal
 			if(jQuery(id).find('.validation-rule-select').length > 0){
-				console.log('select required');
 				var error_select=0;
 				jQuery(id).find('.validation-rule-select').each(function() {
 					var res_campo=jQuery(this).val();
