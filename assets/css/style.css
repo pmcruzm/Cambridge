@@ -1314,6 +1314,7 @@ input[type="checkbox"] + label::before {
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px 0px;
 	margin-left:-50px;
+	background-size:20px;
 }
 
 #foo:checked,
@@ -1326,6 +1327,7 @@ input[type="checkbox"].error + label::before {
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px -40px;
 	margin-left:-50px;
+	background-size:20px;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -1337,6 +1339,7 @@ input[type="checkbox"]:checked + label::before {
 	background:url(../img/check_state.png) no-repeat;
 	background-position:0px -20px;
 	margin-left:-50px;
+	background-size:20px;
 }
 
 /*****************************
