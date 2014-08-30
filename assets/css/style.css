@@ -887,7 +887,7 @@ PROPIEDADES CUERPO CORPUS
 .bg-work-corpus{-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;background:#fddd3f url(../img/bg_how_work.png) top center no-repeat;text-align:center;padding-top:20px;padding-left:18px;padding-right:18px;}
 .bg-work-corpus p{font-family:'latoregular', Helvetica, sans-serif;color:#373340;font-size:14px;margin-bottom:18px;}
 .bg-work-corpus h3{display:block;width:174px;height:49px;margin:0 auto;margin-bottom:18px;font-family:'latobold_italic', Helvetica, sans-serif;color:#1a171b;font-size:17px;border-radius: 4px;background-color: rgb( 255, 255, 255 );box-shadow: 3px 5.196px 0px 0px rgb( 255, 206, 0 );line-height:49px;}
-.bg-work-corpus img{max-width:100%;}
+.bg-work-corpus img{max-width:100%;width:194px;}
 
 
 .graficas-corpus{background:#fddd3f;margin-top:70px;text-align:center;padding-top:50px;padding-bottom:50px;}
