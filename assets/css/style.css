@@ -1175,8 +1175,11 @@ PROPIEDADES CUERPO APPS
 .slider-app .bx-wrapper .bx-next {background: url(../img/arrow_app.png) no-repeat  0 -15px;right: -20px;}
 
 
+/************************************
+PROPIEDADES CUERPO PRODUCTO GENÉRICO
+*************************************/
 
-
+.content-prodt-gen{padding-bottom:250px;}
 
 /*****************************
 PROPIEDADES FOOTER
