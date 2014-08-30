@@ -1254,7 +1254,7 @@ ul.bxslider {margin: 0;padding: 0;}
 a:hover,a:focus {color:inherit;text-decoration:none;}
 .form-control{box-shadow:none;}
 .glyphicon{top:0px !important;}
-strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+strong,b{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
