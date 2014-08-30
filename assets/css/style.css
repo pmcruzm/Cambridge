@@ -528,7 +528,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 #event-form .checkbox{padding-left:30px;margin-bottom:36px;margin-top:42px;}
 #event-form .checkbox p{margin-top:-25px;}
 #event-form .checkbox a{color:#ea575b;}
-#event-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;border:none;}
+#event-form input[type=submit],#event-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;border:none;}
 
 #event-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border: 1px solid #47b6c7;}
 
@@ -837,7 +837,7 @@ PROPIEDADES CUERPO NEWSLETTER
 
 .content-newsletter{padding-bottom:90px;}
 
-.block-intro-news{margin-bottom:90px;}
+.block-intro-news{margin-bottom:45px;}
 .block-intro-news h2{color:#20718c;font-size:30px;margin-bottom:24px;margin-top:52px;}
 .block-intro-news p{color:#373340;font-size:16px;line-height:21px;}
 
@@ -864,6 +864,9 @@ PROPIEDADES CUERPO NEWSLETTER
 .block-news div{padding-right:22px;padding-left:22px;margin-bottom:18px;}
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
 .block-news div p{color:#373340;font-size:14px;}
+
+#newsletter-form .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;}
+#newsletter-form .custom-select.error{border:1px solid #ea575b;}
 
 
 /*************************

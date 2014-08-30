@@ -291,7 +291,7 @@
                 <div class="row">
                 	<div class="col-md-9 block-intro-news">
                         <h2>Complete the form to receive our monthly newsletter</h2>
-                        <p>We never send spam sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                        <p>Register for our e-newsletter for teachers and language centres and get access to in-depth information on all our new titles, training events, exclusive promotions and much more!</p>
                     </div>
                 </div>
             	<div class="row">
@@ -318,27 +318,29 @@
                                      <label for="nombre_center_n">Name of centre</label>
                                      <input type="text" class="form-control validation-rule-empty" id="nombre_center_n" placeholder="Name of centre">
                                   </div>
-                                  <div class="form-group required">
+                                  <div class="form-group">
                                       <label for="street_n">Street</label>
-                                      <input type="text" class="form-control validation-rule-empty" id="street_n" placeholder="Street">
+                                      <input type="text" class="form-control" id="street_n" placeholder="Street">
                                   </div>
                                   <div class="form-group required">
                                       <label for="postcode_n">Post Code</label>
                                      <input type="text" class="form-control validation-rule-postcode" id="postcode_n"  placeholder="Post Code" data-error-msg="El código postal no es valido.">
                                   </div>
-                                  <div class="form-group">
+                                  <div class="form-group required">
                                       <label for="city_n">City</label>
-                                     <input type="text" class="form-control" id="city_n"  placeholder="City">
+                                     <input type="text" class="form-control validation-rule-empty" id="city_n"  placeholder="City">
                                   </div>
-                                  <div class="form-group custom-select">
-                                        <label for="tipo_centre">Surname</label>
-                                        <select id="tipo_centre" class="form-control">
-                                             <option value="">Province</option>
-                                             <option value="Province 1">Province 1</option>
-                                             <option value="Province 2">Province 2</option>
-                                             <option value="Province 3">Province 3</option>
-                                             <option value="Province 4">Province 4</option>
-                                         </select>
+                                  <div class="form-group required">
+                                        <div class="custom-select">
+                                            <label class="required" for="tipo_centre">Province</label>
+                                            <select id="tipo_centre" class="form-control validation-rule-select" data-error-msg="Selecciona provincia">
+                                                 <option value="">Province</option>
+                                                 <option value="Province 1">Province 1</option>
+                                                 <option value="Province 2">Province 2</option>
+                                                 <option value="Province 3">Province 3</option>
+                                                 <option value="Province 4">Province 4</option>
+                                             </select>
+                                         </div>    
                                   </div>
                                   <div class="checkbox"><input id="c_privacy_n" class="validation-rule-checkbox" data-error-msg="Debe aceptar política de privacidad." type="checkbox"><label for="c_privacy_n"></label><p><span>I have read, understand and accept the</span> <a href="#" title="Privacy Policy">Privacy Policy</a>.</p></div>
                                   <div class="row">
