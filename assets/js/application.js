@@ -731,7 +731,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Aceptar cookies en el cuadro
-	jQuery(document).on('click','.btn-accept,.close_c',function(event){
+	jQuery(document).on('click','.btn-accept',function(event){
 		event.preventDefault();
 		jQuery('.block-cookies').fadeOut(600,function(){
 			//Creamos la cookie de aceptación
@@ -745,6 +745,12 @@ jQuery(document).ready(function(){
 			ga('create', 'UA-37797634-2', 'auto');
 			ga('send', 'pageview');
 		});
+	});
+	
+	//Cerrar cuadro info cookies
+	jQuery(document).on('click','.close_c',function(event){
+		event.preventDefault();
+		jQuery('.block-cookies').fadeOut(600);
 	});
 	
 	//Evento para capturar el resize de la ventana 
