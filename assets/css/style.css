@@ -1179,7 +1179,15 @@ PROPIEDADES CUERPO APPS
 PROPIEDADES CUERPO PRODUCTO GENÉRICO
 *************************************/
 
-.content-prodt-gen{padding-bottom:250px;}
+.content-prodt-gen{padding-bottom:250px;color:#20718c;}
+.cont-prodt-gen{padding:56px 18px 0;}
+.content-prodt-gen{}
+
+
+
+.block-img-generico{position:relative;}
+.inside-img-generico{height:235px;position:relative;text-align:right;width:100%;}
+.inside-img-generico img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;}
 
 /*****************************
 PROPIEDADES FOOTER
@@ -1228,6 +1236,7 @@ PROPIEDADES CUSTOM THEMES
 .product-nlevel.theme-color:before{color:#f17922;}
 .product-level.theme-color:before{color:#f17922;}
 .product-ess.theme-color:before{color:#f17922;}
+.product-especialism.theme-color:before{color:#f17922;}
 .key-features.theme-color ul li:before{color:#f17922;}
 .english-f-spanish.theme-color ul li:before{color:#f17922;}
 .english-f-spanish.theme-color ul li p strong{color:#f17922;}
@@ -1498,6 +1507,8 @@ MEDIA QUERIES
 	
 	.image-event{height:auto;}
 	
+	.inside-img-generico img{bottom:-10px;}
+	
 	
 
 	
@@ -1521,6 +1532,7 @@ MEDIA QUERIES
 	
 	.menu-sec-course ul li{text-align:center;}
 	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px !important;}
+	.inside-img-generico img{bottom:-40px;margin-left:auto;margin-right:auto;left:0;right:0;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -1578,6 +1590,8 @@ MEDIA QUERIES
 	.list-menu-mob ul li ul li{margin-bottom:1px;}
 	/*.list-menu-mob ul li ul li:first-child{margin-top:0;}*/
 	
+	.inside-img-generico img{bottom:0px;width:162px;}
+	
 	
 	
 }
@@ -1591,6 +1605,7 @@ MEDIA QUERIES
 	.block-ideas h3{width:305px;}
 	.inside-img-exam-serie img{bottom:-50px;width:300px;}
 	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px !important;}
+	.inside-img-generico img{bottom:40px;width:142px;}
 }
 
 
