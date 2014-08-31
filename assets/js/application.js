@@ -76,6 +76,8 @@ jQuery(document).ready(function(){
 				
 		ga('create', 'UA-37797634-2', 'auto');
 		ga('send', 'pageview');
+	}else{
+		jQuery('.block-cookies').show();
 	}
 	
 	//Reiniciar Scroll a 0
