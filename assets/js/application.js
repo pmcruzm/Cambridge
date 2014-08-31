@@ -64,8 +64,22 @@ jQuery(window).load(function(){
 
 jQuery(document).ready(function(){
 	
+	//Miramos si la cookie de aceptación está creada
+	if(jQuery.cookie('cambridge') == 'acepta'){
+		//Ocultamos info cookies 
+		jQuery('.block-cookies').hide();
+		//Añadimos GA
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				
+		ga('create', 'UA-37797634-2', 'auto');
+		ga('send', 'pageview');
+	}
+	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -714,6 +728,23 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
+	//Aceptar cookies en el cuadro
+	jQuery(document).on('click','.btn-accept,.close_c',function(event){
+		event.preventDefault();
+		jQuery('.block-cookies').fadeOut(600,function(){
+			//Creamos la cookie de aceptación
+			jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
+			//Añadimos GA
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				
+			ga('create', 'UA-37797634-2', 'auto');
+			ga('send', 'pageview');
+		});
+	});
+	
 	//Evento para capturar el resize de la ventana 
 	jQuery( window ).resize(function() {
 		
@@ -740,6 +771,24 @@ function control_scroll(e){
   //Variable de scroll	
   var scrollAmount = jQuery(window).scrollTop();
   var h_foot=jQuery('#footer').height();
+  
+  //Añadir Cookie si se hace scroll a +100px
+  if(scrollAmount>100){
+ 		if(jQuery.cookie('cambridge') != 'acepta'){
+			jQuery('.block-cookies').fadeOut(600,function(){
+				//Creamos la cookie de aceptación
+				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
+				//Añadimos GA
+				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+				
+				ga('create', 'UA-37797634-2', 'auto');
+				ga('send', 'pageview');
+			});
+		}
+  }
   
   //Aparece flecha top
   if(scrollAmount>500){
@@ -977,4 +1026,5 @@ function validate_form(id){
 				return 0;
 			}
 }
+
 
