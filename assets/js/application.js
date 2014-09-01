@@ -140,7 +140,7 @@ jQuery(document).ready(function(){
 			
 			//Añadimos el icono de cerrar
 			var clase_act=jQuery( this ).attr('class');
-			jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act);
+			jQuery( this ).removeClass().addClass('glyphicon custom-close').attr('rel',clase_act);
 			
 			jQuery( this ).parent().addClass('active');
 			jQuery( this ).parent().find('.desplegable-sub').addClass('active');	
@@ -173,7 +173,7 @@ jQuery(document).ready(function(){
 			jQuery('.desplegable-sub').removeClass('active');
 			//Añadimos el icono de cerrar
 			var clase_act=jQuery( this ).attr('class');
-			jQuery( this ).removeClass().addClass('fa fa-times').attr('rel',clase_act);
+			jQuery( this ).removeClass().addClass('glyphicon custom-close').attr('rel',clase_act);
 			//Cambiar iconos de otras opciones 
 			jQuery('.other-menu >li > a').each(function(){
 				var attr = jQuery(this).attr('rel');

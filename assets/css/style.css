@@ -1259,6 +1259,32 @@ PROPIEDADES CUSTOM THEMES
 a.theme-color:hover,a.theme-color:focus {color:#f17922;}
 .pill-w-table.theme-color tr td p a{color:#f17922;}
 
+/******************************
+ICONOS FUENTE 
+*******************************/
+.custom-search:before {
+    content:'s';
+	font-family:'icomoon', Helvetica, sans-serif;
+	font-size:24px;
+}
+
+.custom-close:before {
+    content:'c';
+	font-family:'icomoon', Helvetica, sans-serif;
+	font-size:24px;
+}
+
+.custom-menu:before {
+    content:'h';
+	font-family:'icomoon', Helvetica, sans-serif;
+	font-size:24px;
+}
+
+.custom-flag:before {
+    content:'f';
+	font-family:'icomoon', Helvetica, sans-serif;
+	font-size:24px;
+}
 
 /*****************************
 PROPIEDADES ESPECIALES
