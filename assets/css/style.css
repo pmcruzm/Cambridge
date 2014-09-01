@@ -629,7 +629,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 .english-f-spanish ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-35px;width: 30px;font-size:34px;height:30px;line-height:30px;}
 .english-f-spanish ul li p{margin-top:-33px;color:#373340;font-size:16px;}
 .english-f-spanish ul li strong{font-weight:normal;font-family:'latoregular', Helvetica, sans-serif;}
-.english-f-spanish a{display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;}
+.english-f-spanish a.more{display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;}
+.english-f-spanish ul li p a{font-family:'latoregular', Helvetica, sans-serif;}
 .english-f-spanish a:hover{text-decoration:none;color:#ffffff;}
 
 .component-product{background:#ffffff;padding-top:36px;padding-bottom:72px;}
@@ -1255,7 +1256,7 @@ PROPIEDADES CUSTOM THEMES
 .especialism.theme-color:before{color:#f17922;}
 .key-features.theme-color ul li:before{color:#f17922;}
 .english-f-spanish.theme-color ul li:before{color:#f17922;}
-.english-f-spanish.theme-color ul li p strong{color:#f17922;}
+.english-f-spanish ul li p a{color:#f17922 !important;}
 .component-product ul li.theme-color:before{color:#f17922;}
 .digital-product ul li.theme-color:before{color:#f17922;}
 a.theme-color:hover,a.theme-color:focus {color:#f17922;}
