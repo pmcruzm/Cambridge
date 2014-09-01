@@ -730,6 +730,14 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
+	//Añadir etiquetas p dentro de li contenido-cefs
+	if (jQuery('.contenido-cefs').is(":visible") ) {
+		 jQuery('.contenido-cefs li').each(function() {
+		 	var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
 	//Aceptar cookies en el cuadro
 	jQuery(document).on('click','.btn-accept',function(event){
 		event.preventDefault();

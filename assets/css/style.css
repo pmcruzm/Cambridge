@@ -162,7 +162,7 @@ PROPIEDADES CUERPO SEARCH
 ******************************/
 
 #migas{background:#ffffff;position:absolute;bottom:0;width:100%;height:36px;}
-#migas .breadcrumb:before{content:'';display:inline-block;width:19px;height:36px;background:url(../img/home_icon.png) center left no-repeat;margin-right:18px;float:left;}
+#migas .breadcrumb:before{content:'j';display:inline-block;width:19px;height:36px;margin-right:18px;float:left;line-height:36px;font-family:'icomoon',Helvetica,sans-serif;color:#c6c6c6;font-size:26px;}
 #migas .breadcrumb{background:none;margin-bottom:0;height:36px;padding-bottom:0;padding-top:0;}
 #migas .breadcrumb > li + li:before{content:'>';color:#fff673;}
 #migas .breadcrumb > li{height:36px;line-height:36px;}
@@ -931,8 +931,10 @@ PROPIEDADES CUERPO ENGLISH FOR SCHOOL
 .colum-cefs .img-cefs{background-repeat:no-repeat;background-position:center center;height:155px;width:100%;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 .colum-cefs h3{font-size:26px;color:#20718c;max-width:312px;background:rgba(255,246,115,0.9);height:60px;line-height:60px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-top:-30px;position:relative;text-align:center;margin:0 auto;top:-30px;margin-bottom:-9px;}
 .colum-cefs p{margin-bottom:30px;}
-.colum-cefs ul{margin:0;padding:0;padding-left:18px;}
-.colum-cefs li{margin-bottom:30px;list-style-image:url(../img/circle_icon.png);}
+.colum-cefs ul{margin:0;padding:0;margin-left:-15px;}
+.colum-cefs li{margin-bottom:30px;padding-left: 40px;list-style:none;}
+.colum-cefs ul li:before {content: "b";display: inline-block;font-family: 'icomoon',Helvetica,sans-serif;font-size: 34px;height: 30px;line-height: 30px;margin-left: -35px;width: 30px;color:#47b6c7;}
+.colum-cefs ul li p{color: #373340;margin-top:-33px !important;margin-bottom:0 !important;}
 .colum-cefs li strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 .colum-cefs li a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
 .colum-cefs  a.link-pill{color:#20718c;font-size:14px;font-family:'latobold', Helvetica, sans-serif;display:block;text-align:center;background:#59bdcc;margin-bottom:1px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;height:40px;line-height:40px;}
