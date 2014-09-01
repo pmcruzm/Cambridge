@@ -572,7 +572,7 @@ PROPIEDADES CUERPO TEAM
 
 .ficha-perso{text-align:center;margin-bottom:18px;}
 .ficha-perso p{margin:0 !important;}
-.ficha-perso img{margin-bottom:18px;max-width:100%;}
+.ficha-perso img{margin-bottom:18px;max-width:100%;-webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
 .ficha-perso p.name-perso{}
 .ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
 
