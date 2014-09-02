@@ -547,7 +547,8 @@ PROPIEDADES CUERPO NOSOTROS
 .cont-nosotros p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
 .video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame{position:absolute;width:100%;height:100%;background:red;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
-.poster-frame a{display:block;background:url(../img/btn_play.png) top left no-repeat;width:75px;height:75px;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);text-indent:-99999px;top:50%;left:50%;margin-top:-38px;position:absolute;margin-left:-38px;}
+.poster-frame a{display:block;height:75px;width:75px;position:absolute;-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;background:#ffffff;line-height:75px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-38px;margin-top:-38px;}
+.poster-frame a span:before{content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7 !important;margin-right:-8px;}
 #player{display:none;}
 
 .video-nosotros{background:#ffffff;}
