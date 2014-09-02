@@ -738,6 +738,14 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
+	//Añadir etiquetas p dentro de li caption-catalogo
+	if (jQuery('.caption-catalogo').is(":visible") ) {
+		 jQuery('.caption-catalogo li').each(function() {
+		 	var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
 	//Aceptar cookies en el cuadro
 	jQuery(document).on('click','.btn-accept',function(event){
 		event.preventDefault();
