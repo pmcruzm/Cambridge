@@ -612,12 +612,12 @@ PROPIEDADES CUERPO HOME PRODUCT
 .nlevel:before{content: "\76";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
 .level{padding-left:46px;}
 .level:before{content: "\67";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
-.ess{padding-left:46px;}
-.ess:before{content: "\65";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
-.informed{padding-left:46px;}
-.informed:before{content:"";background:#ffffff url(../svg/icon_corpus.svg) center center no-repeat;display:inline-block;width:46px;height:46px;line-height:46px;margin-left:-46px;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;background-size:30px 30px;}
-.specialism{padding-left:46px;}
-.specialism:before{content: "\78";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-ess{padding-left:46px;}
+.product-ess:before{content: "\65";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
+.product-informed{padding-left:46px;}
+.product-informed:before{content:"";background:#ffffff url(../svg/icon_corpus.svg) center center no-repeat;display:inline-block;width:46px;height:46px;line-height:46px;margin-left:-46px;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;background-size:30px 30px;}
+.product-specialism{padding-left:46px;}
+.product-specialism:before{content: "\78";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:46px;height:46px;line-height:46px;background:#ffffff;text-align:center;-webkit-border-radius: 23px;-moz-border-radius: 23px;border-radius: 23px;margin-left:-46px;}
 
 .key-features ul{margin: 32px 0 54px;padding:0px;margin-left:-10px;}
 .key-features ul li{font-size:16px;padding-left:40px;list-style:none;}
@@ -1254,8 +1254,8 @@ PROPIEDADES CUSTOM THEMES
 .authors.theme-color:before{color:#f17922;}
 .nlevel.theme-color:before{color:#f17922;}
 .level.theme-color:before{color:#f17922;}
-.ess.theme-color:before{color:#f17922;}
-.specialism.theme-color:before{color:#f17922;}
+.product-ess.theme-color:before{color:#f17922;}
+.product-specialism.theme-color:before{color:#f17922;}
 .key-features.theme-color ul li:before{color:#f17922;}
 .english-f-spanish.theme-color ul li:before{color:#f17922;}
 .english-f-spanish ul li p a{color:#f17922 !important;}
