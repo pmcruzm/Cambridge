@@ -259,7 +259,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active ul li a{color:#bbb5bb;font-family:'latoregular', Helvetica, sans-serif;}
 .block-submenus>ul>li.active ul li a:hover{text-decoration:none;}
 .block-submenus>ul>li.active ul li.active{list-style-image:url(../img/circle_green.png);}
-.block-submenus>ul>li.active ul li.active a{color:#1eaba5;}
+.block-submenus>ul>li.active ul li.active a{color:#47b6c7;}
 
 .titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;/*margin-bottom:32px;*/}
 .supplementary{margin-top:54px !important;}
@@ -733,7 +733,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .inside-recurso h3{margin:0;font-size:16px;color:#373340;font-family:'latobold', Helvetica, sans-serif;margin-bottom:6px;}
 .inside-recurso p{color:#373340;font-size:16px;line-height:21px;}
 .inside-recurso + a{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin:0 auto;margin-top:-13px;}
-.inside-recurso + a:hover{color:#ffffff;text-decoration:none;}
+.inside-recurso + a:hover,.inside-recurso + a:focus{color:#ffffff;text-decoration:none;}
 .pill-w{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;display:block;text-align:center;margin-bottom:1px;}
 .pill-w span{color:#373340;font-size:14px;height:35px; line-height:35px;}
 .pill-w a{font-size:14px;height:35px; line-height:35px;font-family:'latoregular', Helvetica, sans-serif;}
@@ -741,15 +741,15 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 
 .table-r{padding-bottom:32px !important;height:100%;}
 
-#block_unit{margin-top:198px;}
+#block_unit{margin-top:100px;}
 #block_unit h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;padding-left:18px;padding-right:18px;}
 #block_unit p{color:#373340;font-size:16px;line-height:21px;padding-left:18px;padding-right:18px;margin-bottom:18px;}	
 
-#block_clil{margin-top:198px;}
+#block_clil{margin-top:100px;}
 #block_clil h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
 #block_clil p{color:#373340;font-size:16px;line-height:21px;margin-bottom:18px;}	
 
-#block_yle{margin-top:198px;}
+#block_yle{margin-top:100px;}
 #block_yle h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
 #block_yle p{color:#373340;font-size:16px;line-height:21px;}	
 #block_yle h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;text-align:center;}
@@ -1111,7 +1111,7 @@ PROPIEDADES CUERPO SERIE COPY COLLECTION
 .content-copy{padding-bottom:90px;}
 .content-copy .list-official .caption-product{min-height:535px;text-align:left;}
 .content-copy .list-official .caption-product h3{font-size:22px !important;margin-bottom:0;line-height:30px;}
-.content-copy .list-official .caption-product h4{color:#373340;font-family:'latoitalic', Helvetica, sans-serif !important;font-size:14px;margin-top:5px;margin-bottom:24px;}
+.list-official .caption-product h4{color:#373340;font-family:'latoitalic', Helvetica, sans-serif !important;font-size:14px;margin-top:5px;margin-bottom:24px;}
 .content-copy .list-official .caption-product p{font-size:14px;color:#373340;padding-bottom:20px;}
 
 .content-copy .inside-img-exam-serie img{left:0;right:0;margin-left:auto;margin-right:auto;width:406px;}
@@ -1184,9 +1184,11 @@ PROPIEDADES CUERPO APPS
 PROPIEDADES CUERPO PRODUCTO GENÉRICO
 *************************************/
 
-.content-prodt-gen{padding-bottom:250px;color:#47b6c7;}
+.content-prodt-gen{padding-bottom:250px;}
 .cont-prodt-gen{padding:56px 18px 0;}
-.content-prodt-gen h2{color:#20718c;}
+.cont-prodt-gen p{font-size: 16px;color:#373340;}
+
+/*.content-prodt-gen h2{color:#20718c;}
 .content-prodt-gen .authors span{color:#47b6c7;}
 .content-prodt-gen .nlevel span{color:#47b6c7;}
 .content-prodt-gen .level span{color:#47b6c7;}
@@ -1200,7 +1202,7 @@ PROPIEDADES CUERPO PRODUCTO GENÉRICO
 
 .content-prodt-gen .component-product ul li a{color:#47b6c7;}
 .content-prodt-gen .component-product ul li a:hover{color:#47b6c7;}
-.content-prodt-gen .block-ver-mas a{background:#47b6c7;}
+.content-prodt-gen .block-ver-mas a{background:#47b6c7;}*/
 
 
 
@@ -1265,20 +1267,25 @@ PROPIEDADES COOKIES
 /******************************
 PROPIEDADES CUSTOM THEMES
 *******************************/
-/*
-.theme-color {color:#f17922 !important;}
-.theme-color-bg { background-color:#f17922 !important; }
-.authors.theme-color:before{color:#f17922 !important;}
-.nlevel.theme-color:before{color:#f17922 !important;}
-.level.theme-color:before{color:#f17922 !important;}
-.product-ess.theme-color:before{color:#f17922 !important;}
-.product-specialism.theme-color:before{color:#f17922 !important;}
-.key-features.theme-color ul li:before{color:#f17922 !important;}
-.english-f-spanish.theme-color ul li:before{color:#f17922 !important;}
-.english-f-spanish ul li p a{color:#f17922 !important;}
-.component-product ul li.theme-color:before{color:#f17922 !important;}
-.digital-product ul li.theme-color:before{color:#f17922 !important;}
-.pill-w-table.theme-color tr td p a{color:#f17922 !important;}*/
+
+.theme-color {color:#47b6c7 !important;}
+.theme-color-bg { background-color:#47b6c7 !important; }
+.authors.theme-color:before{color:#47b6c7 !important;}
+.nlevel.theme-color:before{color:#47b6c7 !important;}
+.level.theme-color:before{color:#47b6c7 !important;}
+.product-ess.theme-color:before{color:#47b6c7 !important;}
+.product-specialism.theme-color:before{color:#47b6c7 !important;}
+.key-features.theme-color ul li:before{color:#47b6c7 !important;}
+.key-features.theme-color h2{color:#20718c !important;}
+.english-f-spanish.theme-color ul li:before{color:#47b6c7 !important;}
+.english-f-spanish ul li p a{color:#47b6c7 !important;}
+.english-f-spanish.theme-color h2{color:#20718c !important;}
+.component-product ul li.theme-color:before{color:#47b6c7 !important;}
+.component-product.theme-color  h2{color:#20718c !important;}
+.digital-product ul li.theme-color:before{color:#47b6c7 !important;}
+.digital-product.theme-color  h2{color:#20718c !important;}
+.pill-w-table.theme-color tr td p a{color:#47b6c7 !important;}
+
 
 /******************************
 ICONOS FUENTE 

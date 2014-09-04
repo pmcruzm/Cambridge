@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -761,6 +761,14 @@ jQuery(document).ready(function(){
 			ga('create', 'UA-37797634-2', 'auto');
 			ga('send', 'pageview');
 		});
+	});
+	
+	//Cuando pulsamos sobre un enlace de recursos 
+	jQuery(document).on("click",".inside-recurso + a", function(e) {
+		e.preventDefault();
+		var enlace=jQuery(this).attr('href');
+		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(enlace),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
+		
 	});
 	
 	//Cerrar cuadro info cookies
