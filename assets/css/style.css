@@ -1184,13 +1184,30 @@ PROPIEDADES CUERPO APPS
 PROPIEDADES CUERPO PRODUCTO GENÉRICO
 *************************************/
 
-.content-prodt-gen{padding-bottom:250px;color:#20718c;}
+.content-prodt-gen{padding-bottom:250px;color:#47b6c7;}
 .cont-prodt-gen{padding:56px 18px 0;}
-.content-prodt-gen{}
+.content-prodt-gen h2{color:#20718c;}
+.content-prodt-gen .authors span{color:#47b6c7;}
+.content-prodt-gen .nlevel span{color:#47b6c7;}
+.content-prodt-gen .level span{color:#47b6c7;}
+.content-prodt-gen .product-specialism span{color:#47b6c7;}
+.content-prodt-gen .product-informed span{color:#47b6c7;}
+.content-prodt-gen .product-informed a{color:#47b6c7;}
+.content-prodt-gen .product-informed a:hover{color:#47b6c7;}
+
+.content-prodt-gen .key-features.theme-color ul li:before{color:#47b6c7;}
+.content-prodt-gen .component-product ul li.theme-color:before{color:#47b6c7;}
+
+.content-prodt-gen .component-product ul li a{color:#47b6c7;}
+.content-prodt-gen .component-product ul li a:hover{color:#47b6c7;}
+.content-prodt-gen .block-ver-mas a{background:#47b6c7;}
+
+
 
 .block-img-generico{position:relative;}
 .inside-img-generico{height:235px;position:relative;text-align:right;width:100%;}
 .inside-img-generico img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;}
+.top-product.cover-gen{background-image:url(../upload/bg_generico.jpg);}
 
 /*****************************
 PROPIEDADES FOOTER
@@ -1251,18 +1268,18 @@ PROPIEDADES CUSTOM THEMES
 
 .theme-color {color:#f17922 !important;}
 .theme-color-bg { background-color:#f17922 !important; }
-.authors.theme-color:before{color:#f17922;}
-.nlevel.theme-color:before{color:#f17922;}
-.level.theme-color:before{color:#f17922;}
-.product-ess.theme-color:before{color:#f17922;}
-.product-specialism.theme-color:before{color:#f17922;}
-.key-features.theme-color ul li:before{color:#f17922;}
-.english-f-spanish.theme-color ul li:before{color:#f17922;}
+.authors.theme-color:before{color:#f17922 !important;}
+.nlevel.theme-color:before{color:#f17922 !important;}
+.level.theme-color:before{color:#f17922 !important;}
+.product-ess.theme-color:before{color:#f17922 !important;}
+.product-specialism.theme-color:before{color:#f17922 !important;}
+.key-features.theme-color ul li:before{color:#f17922 !important;}
+.english-f-spanish.theme-color ul li:before{color:#f17922 !important;}
 .english-f-spanish ul li p a{color:#f17922 !important;}
-.component-product ul li.theme-color:before{color:#f17922;}
-.digital-product ul li.theme-color:before{color:#f17922;}
-a.theme-color:hover,a.theme-color:focus {color:#f17922;}
-.pill-w-table.theme-color tr td p a{color:#f17922;}
+.component-product ul li.theme-color:before{color:#f17922 !important;}
+.digital-product ul li.theme-color:before{color:#f17922 !important;}
+/*a.theme-color:hover,a.theme-color:focus {color:#f17922 !important;}*/
+.pill-w-table.theme-color tr td p a{color:#f17922 !important;}
 
 /******************************
 ICONOS FUENTE 
