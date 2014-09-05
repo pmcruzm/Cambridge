@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -768,6 +768,24 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		var enlace=jQuery(this).attr('href');
 		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(enlace),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
+		
+	});
+	
+	//Cambiar bloques en cursos suplementary
+	jQuery(document).on("click",".opc_levels a", function(e) {
+		e.preventDefault();
+		var opcion = jQuery(this).index();
+		opcion++;//Equipararlo con numeración bloques
+		//Obtenemos index del bloque abierto
+		var block_open = jQuery('.opc_levels a.active').index();
+		block_open++;
+		//Eliminamos active 
+		jQuery('.opc_levels a').removeClass('active');
+		jQuery(this).addClass('active');
+		//Cerramos un bloque y mostramos el siguiente 
+		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
+			jQuery('.level_'+opcion).stop().clearQueue().fadeIn(800);
+		});
 		
 	});
 	
