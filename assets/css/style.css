@@ -764,7 +764,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w-table tr td p{margin:0 !important;font-size:14px !important;line-height:21px !important;color:#373340;}
 .pill-w-table tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
 .pill-w-table tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
-.resource-module{margin-top:190px;}
+.resource-module{margin-top:100px;}
 .pill-w-table p{color:#373340;} 
 
 /**********************
@@ -1186,7 +1186,8 @@ PROPIEDADES CUERPO PRODUCTO GENÉRICO
 
 .content-prodt-gen{padding-bottom:250px;}
 .cont-prodt-gen{padding:56px 18px 0;}
-.cont-prodt-gen p{font-size: 16px;color:#373340;}
+.content-prodt-gen p{font-size: 16px;color:#373340;}
+.content-prodt-gen .intro-product p{font-size:20px !important;}
 
 /*.content-prodt-gen h2{color:#20718c;}
 .content-prodt-gen .authors span{color:#47b6c7;}
