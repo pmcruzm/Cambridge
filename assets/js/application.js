@@ -722,7 +722,7 @@ jQuery(document).ready(function(){
 		 });
 	}
 	
-	//Añadir etiquetas p dentro de li key-features
+	//Añadir etiquetas p dentro de li english-f-spanish
 	if (jQuery('.english-f-spanish').is(":visible") ) {
 		 jQuery('.english-f-spanish li').each(function() {
 		 	var txt=jQuery(this).html();
@@ -742,6 +742,14 @@ jQuery(document).ready(function(){
 	if (jQuery('.caption-catalogo').is(":visible") ) {
 		 jQuery('.caption-catalogo li').each(function() {
 		 	var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
+	//Añadir etiquetas p dentro de li block-submenus
+	if (jQuery('.block-submenus').is(":visible") ) {
+		 jQuery('.block-submenus>ul>li>ul>li').each(function() {
+			var txt=jQuery(this).html();
 			jQuery(this).html('<p>'+txt+'</p>');
 		 });
 	}
