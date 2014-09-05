@@ -700,15 +700,49 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 .btn-buy:hover{text-decoration:none;color:#ffffff;}
 
 .box-devices-so{overflow:hidden;text-align:left;}
-.box-devices-so h4{font-size:14px;color:#373340;font-family:'latoregular', Helvetica, sans-serif;margin-bottom:18px;}
+.box-devices-so h4{font-size:14px;color:#373340;font-family:'latoregular', Helvetica, sans-serif;margin-bottom:10px;}
 
-.block-compatible{display:block;text-align:center;float:left;margin-right:15px;width:190px;}
+.block-compatible{display:block;text-align:center;float:left;width:45%;margin-right:5%;}
 .block-compatible div p{margin-right:7px;vertical-align:top;font-family:'latoregular', Helvetica, sans-serif;}
 .block-compatible div p:last-child{margin-right:0px;}
-.block-available{display:block;text-align:center;float:left;width:190px;}
+.block-available{display:block;text-align:center;float:left;width:45%;}
 .block-available div p{margin-right:7px;}
 .block-available div p:last-child{margin-right:0px;}
 
+.list-compatible-icon{border:1px solid #f1f1f1;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;}
+.list-compatible-icon div{border-top:1px solid #f1f1f1;}
+.list-compatible-icon div:first-child{border-top:0;}
+.list-available-icon{border:1px solid #f1f1f1;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;}
+.list-available-icon div{border-top:1px solid #f1f1f1;}
+.list-available-icon div:first-child{border-top:0;}
+
+.computer{overflow:hidden;padding-left:10px;padding-right:10px;}
+.computer p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+.computer p span:before{margin-left:5px;}
+.tablet{overflow:hidden;padding-left:10px;padding-right:10px;}
+.tablet p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+.tablet p span:before{margin-left:5px;}
+.smartphone{overflow:hidden;padding-left:10px;padding-right:10px;}
+.smartphone p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+.smartphone p span:before{margin-left:5px;}
+.whiteboard{overflow:hidden;padding-left:10px;padding-right:10px;}
+.whiteboard p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+
+.icon_windows:before{content:'';display:inline-block;width:17px;height:16px;margin:0 auto;background:url(../img/ico_windows.png) top left no-repeat;float:right;top:50%;position:relative;margin-top:-8px;}
+.icon_apple:before{content:'';display:inline-block;width:13px;height:16px;margin:0 auto;background:url(../img/ico_mac.png) top left no-repeat;float:right;top:50%;position:relative;margin-top:-8px;}
+.icon_linux:before{content:'';display:inline-block;width:18px;height:20px;margin:0 auto;background:url(../img/ico_linux.png) left no-repeat;float:right;top:50%;position:relative;margin-top:-10px;}
+.icon_android:before{content:'';display:inline-block;width:14px;height:16px;margin:0 auto;background:url(../img/ico_andr.png) left no-repeat;float:right;top:50%;position:relative;margin-top:-8px;}
+
+
+.on-line{overflow:hidden;padding-left:10px;padding-right:10px;}
+.on-line p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+.off-line{overflow:hidden;padding-left:10px;padding-right:10px;}
+.off-line p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
+
+.icon-offline:before{content:'';display:inline-block;width:26px;height:20px;margin:0 auto;background:url(../svg/icon_offline.svg) top left no-repeat;background-size:26px 20px;float:right;top:50%;position:relative;margin-top:-10px;}
+.icon-online:before{content:'';display:inline-block;width:26px;height:20px;margin:0 auto;background:url(../svg/icon_online.svg) top left no-repeat;background-size:26px 20px;float:right;top:50%;position:relative;margin-top:-10px;}
+
+/*
 .computer{display:inline-block;text-align:center;color:#bbb5bb !important;font-size:12px !important;}
 .computer:before{content:'';display:block;width:36px;height:33px;margin:0 auto;background:url(../svg/icon_pc.svg) top left no-repeat;}
 .tablet{display:inline-block;text-align:center;color:#bbb5bb !important;font-size:12px !important;}
@@ -723,7 +757,7 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 
 .computer.mac:before{content:'';display:block;width:36px;height:33px;margin:0 auto;background:url(../svg/icon_mac.svg) top left no-repeat;}
 
-.content-digital .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:230px;}
+.content-digital .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:230px;}*/
 
 /************************************
 PROPIEDADES CUERPO RECURSOS PRODUCT
@@ -1689,6 +1723,8 @@ MEDIA QUERIES
 	/*.list-menu-mob ul li ul li:first-child{margin-top:0;}*/
 	
 	.inside-img-generico img{bottom:0px;width:162px;}
+	.block-compatible{width:100%;margin-right:0%;margin-bottom:18px;}
+	.block-available{width:100%;}
 	
 	
 	
