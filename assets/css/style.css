@@ -790,7 +790,7 @@ PROPIEDADES HOME EXAMS
 .block-h-exam a{color:#47b6c7;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:inline-block;line-height:18px;margin-bottom:10px;}
 .block-h-exam a:hover{color:#47b6c7;}
 
-/*.filter-exams{position:absolute;top:32px;right:18px;}
+.filter-exams{position:absolute;top:32px;right:18px;}
 .filter-exams p{color:#6cd9d7;font-size:14px;text-align:right;}
 .filter-exams p>span{background:url(../img/arrow_down.png) center right no-repeat;display:blocK;padding-right:41px;cursor:pointer;}
 .opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;}
@@ -808,13 +808,14 @@ PROPIEDADES HOME EXAMS
 .opc-filter-breads p{color:#bbb5bb;font-size:18px;margin-left:18px;}
 .opc-filter-breads p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 
+
 .content-exams h2{margin-left:18px;}
 .content-exams h2.supplementary{margin-top:0px !important;margin-bottom:54px;}
 
 .foot-exams{margin-top:42px;}
 .foot-exams p{font-size:22px; color:#20718c;line-height:32px;text-align:center;width:90%;margin:0 auto;}
 .foot-exams p a{color:#47b6c7;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
-.foot-exams p a:hover{color:#47b6c7;}*/
+.foot-exams p a:hover{color:#47b6c7;}
 
 
 /******************************
