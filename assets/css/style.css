@@ -256,7 +256,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li ul{display:none;}
 .block-submenus>ul>li.active ul{margin:0;padding:10px 18px 10px 12px;display:block;background:#f8f7f7;}
 .block-submenus>ul>li.active ul li{list-style:none;padding-left:20px;}
-.block-submenus>ul>li.active ul li:before{content: "b";display: inline-block;font-family: "icomoon",Helvetica,sans-serif;font-size: 34px;height:20px;line-height:20px;margin-left:-30px;width:20px;color:#bbb5bb;}
+.block-submenus>ul>li.active ul li:before{content: "b";display: inline-block;font-family: "icomoon",Helvetica,sans-serif;font-size: 34px;height:30px;line-height:30px;margin-left:-30px;width:20px;color:#bbb5bb;}
 .block-submenus>ul>li.active ul li p{margin-top:-30px;margin-bottom:5px;}
 .block-submenus>ul>li.active ul li a{color:#bbb5bb;font-family:'latoregular', Helvetica, sans-serif;}
 .block-submenus>ul>li.active ul li a:hover{text-decoration:none;}
