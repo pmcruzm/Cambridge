@@ -774,7 +774,23 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 PROPIEDADES HOME EXAMS
 ***********************/
 .content-exams{padding-bottom:90px;}
-.filter-exams{position:absolute;top:32px;right:18px;}
+.block-home-exam{padding-bottom:90px;}
+.block-home-exam h2{color:#20718c;margin-top:42px;margin-bottom:24px;}
+.block-home-exam p{font-size:20px;color:#373340;line-height:26px;margin-bottom:24px;}
+.block-home-exam p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
+.block-home-exam p.small-txt-exam{font-size:16px;}
+
+
+.list-home-exams{margin-top:75px;}
+
+.block-h-exam{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;padding:20px;min-height:415px;margin-bottom:18px;}
+.block-h-exam img{width:191px;display:block;margin:0 auto;}
+.block-h-exam h3{color:#a28e53;font-size:22px;margin-bottom:3px;}
+.block-h-exam p{color:#373340;font-size:16px;line-height:24px;margin-bottom:10px;}
+.block-h-exam a{color:#47b6c7;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:inline-block;line-height:18px;margin-bottom:10px;}
+.block-h-exam a:hover{color:#47b6c7;}
+
+/*.filter-exams{position:absolute;top:32px;right:18px;}
 .filter-exams p{color:#6cd9d7;font-size:14px;text-align:right;}
 .filter-exams p>span{background:url(../img/arrow_down.png) center right no-repeat;display:blocK;padding-right:41px;cursor:pointer;}
 .opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;}
@@ -798,7 +814,8 @@ PROPIEDADES HOME EXAMS
 .foot-exams{margin-top:42px;}
 .foot-exams p{font-size:22px; color:#20718c;line-height:32px;text-align:center;width:90%;margin:0 auto;}
 .foot-exams p a{color:#47b6c7;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
-.foot-exams p a:hover{color:#47b6c7;}
+.foot-exams p a:hover{color:#47b6c7;}*/
+
 
 /******************************
 PROPIEDADES CUERPO SERIE EXAMS
