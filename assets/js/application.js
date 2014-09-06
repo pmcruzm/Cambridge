@@ -909,13 +909,7 @@ function errores_form(id,tipo){
 
 //Función para alinear top los cuadros
 function align_top_box(id){
-		//Listado cursos
-		var heights = jQuery(id).map(function ()
-		{
-			return jQuery(this).outerHeight();
-		}).get(),
-		//Obtenemos tamaño max de los cuadros 
-		maxHeight = Math.max.apply(null, heights);
+		
 		//Obtener el tamaño de los caption 
 		var heights_cap = jQuery(id).map(function ()
 		{
@@ -923,11 +917,35 @@ function align_top_box(id){
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight_cap = Math.max.apply(null, heights_cap);
-	
-		//Recorremos todos los cuadros 
+		//Recorremos todos los cuadros e igualamos los caption  
 		 jQuery(id).each(function() {
-		 	var altura=jQuery(this).outerHeight();
 			var altura_cap=jQuery(this).find('.caption-product').outerHeight();
+			if(altura_cap < maxHeight_cap){
+				jQuery(this).find('.caption-product').css('height',maxHeight_cap);	
+			}
+		 });
+		 
+		 //Listado cursos
+		var heights = jQuery(id).map(function ()
+		{
+			return jQuery(this).outerHeight();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		 //Recorremos nuevamente por si no se han equiparado
+		 //con el cambio de caption
+		  jQuery(id).each(function() {
+		  	var altura=jQuery(this).outerHeight();
+			if(altura<maxHeight){
+				var total=maxHeight-altura;
+				jQuery(this).css('paddingTop',total);	
+			}
+		  });
+}
+
+/*
+		var altura=jQuery(this).outerHeight();
+		var altura_cap=jQuery(this).find('.caption-product').outerHeight();
 			if(altura<maxHeight){
 				if(altura_cap==maxHeight_cap){
 					var total=maxHeight-altura;
@@ -940,9 +958,7 @@ function align_top_box(id){
 						jQuery(this).css('paddingTop',total);	
 					}
 				}
-			}
-		 });
-}
+			}*/
 
 //Funcion para validar genéricamnete un formulario
 function validate_form(id){

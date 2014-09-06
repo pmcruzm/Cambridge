@@ -272,7 +272,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
 .block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none;}
 .block-product h3 a:hover{text-decoration:underline;}
-.block-product p{color:#373340;font-size:14px;text-align:left;}
+.block-product p{color:#373340;font-size:14px;text-align:left;padding-bottom:20px;}
 .caption-product{background:#ffffff;min-height:325px;padding-left:20px;padding-right:20px;position:relative;}
 .new-tag{position:absolute;font-size:20px;font-family:'latoregular', Helvetica, sans-serif;color:#ea575b;background:#fff673;z-index:30;left:50%;top:64px;padding:7px 10px;margin-left:-100px;}
 
