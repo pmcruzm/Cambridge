@@ -508,7 +508,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 .single-events h2 + p{font-size:20px;color:#373340;line-height:28px;}
 
 .img-event-s{background:#ffffff;text-align:center;height:240px;margin-bottom:25px;margin-top:15px;}
-.img-event-s img{max-width:100%;}
+.img-event-s img{max-width:100%;width:130px;}
 
 .info-event-sing{border:2px solid #c6c6c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding:20px;text-align:center;}
 .info-event-sing .calendario + p{color:#47b6c7;font-size:24px;font-family:'latoregular', Helvetica, sans-serif;width:60%;margin:0 auto;line-height:28px;}
@@ -798,6 +798,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w-table tr td{vertical-align:middle !important;height:35px;background:#ffffff;}
 .pill-w-table tr td:first-child{-webkit-border-radius: 15px 0px 0px 15px;-moz-border-radius: 15px 0px 0px 15px;border-radius:15px 0px 0px 15px;}
 .pill-w-table tr td:last-child{-webkit-border-radius: 0px 15px 15px 0px;-moz-border-radius: 0px 15px 15px 0px;border-radius:0px 15px 15px 0px;}
+.pill-w-table tr td:only-child{-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;}
 .pill-w-table tr td p{margin:0 !important;font-size:14px !important;line-height:21px !important;color:#373340;}
 .pill-w-table tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
 .pill-w-table tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
