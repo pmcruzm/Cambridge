@@ -939,6 +939,7 @@ function align_top_box(id){
 			if(altura<maxHeight){
 				var total=maxHeight-altura;
 				jQuery(this).css('paddingTop',total);	
+				jQuery(this).css('height',maxHeight);	
 			}
 		  });
 }
