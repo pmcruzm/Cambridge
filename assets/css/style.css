@@ -481,7 +481,7 @@ PROPIEDADES CUERPO EVENTS
 .city-event{font-family:'latoregular', Helvetica, sans-serif;font-size:14px;margin-bottom:18px !important;}
 
 .image-event{text-align:center;height:128px;vertical-align: middle;}
-.image-event img{max-width:100%;}
+.image-event img{max-width:100%;width:100px;}
 
 .calendario{display:inline-block;width:62px;height:62px;background-size:62px 62px;}
 .calendario.january{background:url(../svg/icon_enero.svg) top left no-repeat;}
