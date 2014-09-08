@@ -678,7 +678,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .select-comp h3{margin:0;}
 .select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
 .select-comp a:hover{text-decoration:none;}
-.select-comp h3 a.active{background:url(../img/line_down.png) bottom center no-repeat;color:#f17922;padding-bottom:17px;}
+.select-comp h3 a.active{background:url(../img/line_down.png) bottom center no-repeat;padding-bottom:17px;}
 .select-comp  h3 a:hover{color:#666;}
 .select-comp h3 a.active:hover{color:#f17922;}
 
@@ -1358,6 +1358,7 @@ PROPIEDADES CUSTOM THEMES
 .digital-product ul li.theme-color:before{color:#47b6c7 !important;}
 .digital-product.theme-color  h2{color:#20718c !important;}
 .pill-w-table.theme-color tr td p a{color:#47b6c7 !important;}
+.select-comp h3 a.active{color:#47b6c7 !important;}
 
 
 /******************************

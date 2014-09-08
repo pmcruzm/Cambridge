@@ -80,8 +80,23 @@ jQuery(document).ready(function(){
 		jQuery('.block-cookies').show();
 	}
 	
+	//Prueba SVG inject
+	if (jQuery('#test-svg').is(":visible") ) {
+		// Elements to inject
+		var mySVGsToInject = document.querySelectorAll('img.inject-me');
+		// Do the injection
+		SVGInjector(mySVGsToInject);
+		
+		//Prueba 2 svg 
+		var color=jQuery('#content').attr('data-color');
+		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.279px" height="74.41px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
+		var encoded = window.btoa(image);
+		jQuery('.line_up_1').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+	}
+	
+	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
