@@ -425,9 +425,9 @@ background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 1
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
-.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border-radius: 4px;border:1px solid #47b6c7;box-shadow:none;}
+.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border-radius: 4px;border:1px solid #47b6c7;box-shadow:none;}
 .custom-select.error{border:1px solid #ea575b;}
-.custom-select select{width: 115%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;background:none;}
+.custom-select select{width: 115%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;background:url(../img/arrow_down_select.png) no-repeat 85% 50% #47b6c7;}
 .custom-select select:focus{color:#ffffff;}
 
 .errores p {color: #ea575b !important;font-size:14px !important;margin-bottom: 0;}
