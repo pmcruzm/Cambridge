@@ -1118,7 +1118,7 @@ PROPIEDADES CUERPO CONTEST
 .cont-contest div.big-text{font-size:20px;}
 .cont-contest p{color:#373340;font-size:16px;margin-bottom:0;line-height:24px;}
 
-.block-ideas{background:#ffffff;padding-bottom:52px;}
+.block-ideas{background:#ffffff;padding-bottom:52px;position:relative;margin-bottom:42px;}
 .block-ideas h3{color:#20718c;font-size:26px;background:rgba(255,246,115,0.9);height:60px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;line-height:60px;text-align:center;width:315px;margin:0 auto;margin-top:-30px;position:relative;margin-bottom:32px;}
 .block-ideas p.big-text{margin-bottom:36px !important;}
 .block-ideas>div{padding-left:20px;padding-right:20px;}
@@ -1132,7 +1132,7 @@ PROPIEDADES CUERPO CONTEST
 .info-contest div p{color:#373340; font-size:14px;}
 .info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
 
-.link_contest{color:#20718c;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:block;height:30px;width:140px;background:#fff673;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;line-height:30px;text-align:center;margin-top:-15px;margin-left:40px;}
+.link_contest{color:#20718c;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:block;height:30px;width:140px;background:#fff673;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;line-height:30px;text-align:center;bottom:-15px;left:40px;position:absolute;}
 .link_contest:hover{color:#20718c;}
 
 /*************************************
@@ -1650,7 +1650,7 @@ MEDIA QUERIES
 	
 	.inside-img-generico img{bottom:-10px;}
 	
-	.link_contest{margin:0 auto; margin-top:-15px;}
+	.link_contest{left:0;right:0;margin-left:auto;margin-right:auto;}
 	
 	
 
