@@ -789,10 +789,22 @@ jQuery(document).ready(function(){
 		block_open++;
 		//Eliminamos active 
 		jQuery('.opc_levels a').removeClass('active');
+		jQuery('.opc_levels a span.indicador').remove();
 		jQuery(this).addClass('active');
+		jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
 		//Cerramos un bloque y mostramos el siguiente 
 		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
-			jQuery('.level_'+opcion).stop().clearQueue().fadeIn(800);
+			//Eliminamos el height residual 
+			jQuery('.level_'+opcion).find('div.block-product').each(function() {
+				jQuery(this).removeAttr('style');	
+			});
+			jQuery('.level_'+opcion).css('opacity',0).show();
+			align_top_box(jQuery('.level_'+opcion).find('div.block-product'));
+			jQuery('.level_'+opcion).animate({opacity: 1},800);
+			
+			/*jQuery('.level_'+opcion).stop().clearQueue().fadeIn(800,function(){
+				align_top_box(jQuery(this).find('div.block-product'));
+			});*/
 		});
 		
 	});
@@ -943,23 +955,6 @@ function align_top_box(id){
 		  });
 		  jQuery(id).css('height',maxHeight);	
 }
-
-/*
-		var altura=jQuery(this).outerHeight();
-		var altura_cap=jQuery(this).find('.caption-product').outerHeight();
-			if(altura<maxHeight){
-				if(altura_cap==maxHeight_cap){
-					var total=maxHeight-altura;
-					jQuery(this).css('paddingTop',total);
-				}else{
-					jQuery(this).find('.caption-product').css('height',maxHeight_cap);
-					if(jQuery(this).outerHeight()!=maxHeight){
-						var aux=jQuery(this).outerHeight();
-						var total=maxHeight-aux;
-						jQuery(this).css('paddingTop',total);	
-					}
-				}
-			}*/
 
 //Funcion para validar genéricamnete un formulario
 function validate_form(id){
