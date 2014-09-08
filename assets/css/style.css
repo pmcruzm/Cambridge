@@ -1132,6 +1132,9 @@ PROPIEDADES CUERPO CONTEST
 .info-contest div p{color:#373340; font-size:14px;}
 .info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
 
+.link_contest{color:#20718c;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:block;height:30px;width:140px;background:#fff673;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;line-height:30px;text-align:center;margin-top:-15px;margin-left:40px;}
+.link_contest:hover{color:#20718c;}
+
 /*************************************
 PROPIEDADES CUERPO CAMBRIDGE ENGLISH
 **************************************/
@@ -1289,6 +1292,7 @@ PROPIEDADES FOOTER
 .contact_link div{display:inline;margin-right:18px;}
 .contact_link div:last-child{margin-right:0;}
 .contact_link a{background:#ffe63c;display:inline-block;color:#ea575b;width:230px;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;height:36px;line-height:36px;text-align:center;text-decoration:none;font-size:15px;font-family:'latobold', Helvetica, sans-serif;}
+.contact_link a:hover{color:#ea575b;}
 
 .rrss_link{position:absolute;right:0;top:50%;margin-top:-16px;height:36px;}
 .rrss_link ul{margin:0;padding:0;}
@@ -1643,6 +1647,8 @@ MEDIA QUERIES
 	.image-event{height:auto;}
 	
 	.inside-img-generico img{bottom:-10px;}
+	
+	.link_contest{margin:0 auto; margin-top:-15px;}
 	
 	
 
