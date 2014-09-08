@@ -1007,7 +1007,7 @@ PROPIEDADES CUERPO ENGLISH FOR SCHOOL
 .row-height .colum-cefs{float: none;display: table-cell;vertical-align: top;height:100%;}
 .contenedor-cefs{background:#ffffff;;width:100%;height:100%;display:table;}
 
-div.link-pill p {margin:0;}
+div.link-pill p {margin:0 !important;}
 
 
 /**************************************
