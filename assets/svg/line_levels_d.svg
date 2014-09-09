@@ -9,7 +9,8 @@
 <g id="Page-1" sketch:type="MSPage">
 	<g id="Artboard" sketch:type="MSArtboardGroup">
 		<g id="line_levels" sketch:type="MSLayerGroup">
-			<path id="Shape" sketch:type="MSShapeGroup" d="M0,0h29.002L36,6l6.998-6H72v2.002H44.003L36,9l-8.002-6.998H0V0z"/>
+			<path id="Shape" sketch:type="MSShapeGroup" d="M72,8.997H42.998l-6.998-6l-6.998,6H0V6.995h27.997L36-0.003l8.002,6.999H72
+				V8.997z"/>
 		</g>
 	</g>
 </g>
