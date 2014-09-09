@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Prueba SVG inject
-	/*if (jQuery('#test-svg').is(":visible") ) {
+	if (jQuery('#test-svg').is(":visible") ) {
 		// Elements to inject
 		var mySVGsToInject = document.querySelectorAll('img.inject-me');
 		// Do the injection
@@ -92,7 +92,7 @@ jQuery(document).ready(function(){
 		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
 		var encoded = window.btoa(image);
 		jQuery('.line_up_1').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-	}*/
+	}/**/
 	
 	//Flechas custom curso_sup.html
 	if (jQuery('.content-course-sup').is(":visible") ) {
@@ -114,7 +114,7 @@ jQuery(document).ready(function(){
 	//Flechas custom componentes.html
 	if (jQuery('.select-comp').is(":visible") ) {
 		//Pintamos la flecha up por defecto
-		var image_up=up_svg('#bfb9b9');
+		var image_up=up_svg_large('#bfb9b9');
 		var encoded = window.btoa(image_up);
 		jQuery('.select-comp a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		
@@ -122,7 +122,7 @@ jQuery(document).ready(function(){
 		//Obtenemos el color
 		var color=jQuery('#custom-color').attr('data-color');
 		if(color==""){color='#47b6c7';}
-		var image_down=down_svg(color);
+		var image_down=down_svg_large(color);
 		var encoded = window.btoa(image_down);
 		jQuery('.select-comp h3 a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		
@@ -500,14 +500,14 @@ jQuery(document).ready(function(){
 		 if(!jQuery(this).hasClass('active')) {
 		 	if(jQuery(this).hasClass('alumno')){
 				//Pintamos la flecha up por defecto
-				var image_up=up_svg('#bfb9b9');
+				var image_up=up_svg_large('#bfb9b9');
 				var encoded = window.btoa(image_up);
 				jQuery('.profesor').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
 				//Pintamos la flecha down
 				var color=jQuery('#custom-color').attr('data-color');
 				if(color==""){color='#47b6c7';}
-				var image_down=down_svg(color);
+				var image_down=down_svg_large(color);
 				var encoded = window.btoa(image_down);
 				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).parents('.select-comp').find('.profesor').removeClass('active');
@@ -518,14 +518,14 @@ jQuery(document).ready(function(){
 				
 			}else{
 				//Pintamos la flecha up por defecto
-				var image_up=up_svg('#bfb9b9');
+				var image_up=up_svg_large('#bfb9b9');
 				var encoded = window.btoa(image_up);
 				jQuery('.alumno').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
 				//Pintamos la flecha down
 				var color=jQuery('#custom-color').attr('data-color');
 				if(color==""){color='#47b6c7';}
-				var image_down=down_svg(color);
+				var image_down=down_svg_large(color);
 				var encoded = window.btoa(image_down);
 				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).parents('.select-comp').find('.alumno').removeClass('active');
@@ -1196,9 +1196,14 @@ function down_svg(color){
 	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="72px" height="9px" viewBox="0 0 595.279 74.41" enable-background="new 0 0 595.279 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="0,0 239.765,0 297.639,49.607 355.513,0 595.28,0 595.28,16.536 363.782,16.536 297.639,74.41 231.498,16.536 0,16.536"/></g></g></svg>';
 }
 
-/****** IMG SVG CUSTOM *******/
-/*var image_up='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve"><g><g><polygon fill="#bfb9b9" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
-var image_down='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="72px" height="9px" viewBox="0 0 595.279 74.41" enable-background="new 0 0 595.279 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="0,0 239.765,0 297.639,49.607 355.513,0 595.28,0 595.28,16.536 363.782,16.536 297.639,74.41 231.498,16.536 0,16.536"/></g></g></svg>';*/
-/****************************/
+//Funcion para pintar svg up
+function up_svg_large(color){
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1524.223 0 3674.363 74.41" enable-background="new -1524.223 0 3674.363 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2150.139,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1524.223,74.41 -1524.223,57.874 231.498,57.874 297.64,0 363.782,57.874 2150.139,57.874"/></g></g></svg>';
+}
+
+//Funcion para pintar svg up
+function down_svg_large(color){
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="0 0 595.28 74.41" enable-background="new 0 0 595.28 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1524.224,0.001 270.401,0.001 328.275,49.608 386.149,0.001 2150.139,0.001 2150.139,16.538 394.418,16.538 328.275,74.411 262.134,16.538 -1524.224,16.537"/></g></g></svg>';
+}
 
 
