@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Prueba SVG inject
-	if (jQuery('#test-svg').is(":visible") ) {
+	/*if (jQuery('#test-svg').is(":visible") ) {
 		// Elements to inject
 		var mySVGsToInject = document.querySelectorAll('img.inject-me');
 		// Do the injection
@@ -89,14 +89,31 @@ jQuery(document).ready(function(){
 		
 		//Prueba 2 svg 
 		var color=jQuery('#content').attr('data-color');
-		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.279px" height="74.41px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
+		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
 		var encoded = window.btoa(image);
 		jQuery('.line_up_1').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+	}*/
+	
+	//Flechas custom curso_sup.html
+	if (jQuery('.content-course-sup').is(":visible") ) {
+		//Pintamos la flecha up por defecto
+		var image_up=up_svg('#bfb9b9');
+		var encoded = window.btoa(image_up);
+		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		
+		//Pintamos la flecha down
+		//Obtenemos el color
+		var color=jQuery('#custom-color').attr('data-color');
+		if(color==""){color='#47b6c7';}
+		var image_down=down_svg(color);
+		var encoded = window.btoa(image_down);
+		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		
 	}
 	
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	//jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -805,7 +822,15 @@ jQuery(document).ready(function(){
 		//Eliminamos active 
 		jQuery('.opc_levels a').removeClass('active');
 		jQuery('.opc_levels a span.indicador').remove();
+		var image_up=up_svg('#bfb9b9');
+		var encoded = window.btoa(image_up);
+		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery(this).addClass('active');
+		var color=jQuery('#custom-color').attr('data-color');
+		if(color==""){color='#47b6c7';}
+		var image_down=down_svg(color);
+		var encoded = window.btoa(image_down);
+		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
 		//Cerramos un bloque y mostramos el siguiente 
 		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
@@ -816,10 +841,6 @@ jQuery(document).ready(function(){
 			jQuery('.level_'+opcion).css('opacity',0).show();
 			align_top_box(jQuery('.level_'+opcion).find('div.block-product'));
 			jQuery('.level_'+opcion).animate({opacity: 1},800);
-			
-			/*jQuery('.level_'+opcion).stop().clearQueue().fadeIn(800,function(){
-				align_top_box(jQuery(this).find('div.block-product'));
-			});*/
 		});
 		
 	});
@@ -1111,5 +1132,20 @@ function validate_form(id){
 				return 0;
 			}
 }
+
+//Funcion para pintar svg up
+function up_svg(color){
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
+}
+
+//Funcion para pintar svg up
+function down_svg(color){
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="72px" height="9px" viewBox="0 0 595.279 74.41" enable-background="new 0 0 595.279 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="0,0 239.765,0 297.639,49.607 355.513,0 595.28,0 595.28,16.536 363.782,16.536 297.639,74.41 231.498,16.536 0,16.536"/></g></g></svg>';
+}
+
+/****** IMG SVG CUSTOM *******/
+/*var image_up='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve"><g><g><polygon fill="#bfb9b9" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
+var image_down='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  width="72px" height="9px" viewBox="0 0 595.279 74.41" enable-background="new 0 0 595.279 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="0,0 239.765,0 297.639,49.607 355.513,0 595.28,0 595.28,16.536 363.782,16.536 297.639,74.41 231.498,16.536 0,16.536"/></g></g></svg>';*/
+/****************************/
 
 

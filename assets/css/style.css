@@ -1204,11 +1204,11 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 
 .opc_levels{margin-bottom:32px;display:table;width:100%;height:100%;}
 .opc_levels a{text-align:center;display:table-cell;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:22px;width:12.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
-.opc_levels a span{background:url(../img/line_up_sup.png) center 80% no-repeat;display:block;width:95%;margin:0 auto;padding-bottom:20px;}
+.opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;width:95%;margin:0 auto;padding-bottom:20px;background-position:center 80%;background-repeat:no-repeat;}
 /*.opc_levels a:first-child span{background-position:center 89%;}*/
 .opc_levels a:hover{color:#666666;}
 .opc_levels a.active{color:#bdd630;}
-.opc_levels a.active span{background:url(../img/line_down_sup.png)center bottom no-repeat;padding-bottom:20px;}
+.opc_levels a.active span{/*background:url(../img/line_down_sup.png)center bottom no-repeat;*/padding-bottom:20px;background-position:center bottom;background-repeat:no-repeat;}
 
 .indicador{background:none !important;padding:0 !important;}
 
