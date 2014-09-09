@@ -676,9 +676,9 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .cont-component h2{font-size:32px;}
 .select-comp{text-align:center;margin-top:32px;margin-bottom:18px;}
 .select-comp h3{margin:0;}
-.select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;background:url(../img/line_up.png) bottom center no-repeat;display:block;padding-bottom:9px;text-decoration:none;}
+.select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;/*background:url(../img/line_up.png) bottom center no-repeat;*/display:block;padding-bottom:9px;text-decoration:none;background-position:bottom center;background-repeat:no-repeat;}
 .select-comp a:hover{text-decoration:none;}
-.select-comp h3 a.active{background:url(../img/line_down.png) bottom center no-repeat;padding-bottom:17px;}
+.select-comp h3 a.active{/*background:url(../img/line_down.png) bottom center no-repeat;*/padding-bottom:17px;background-position:bottom center;background-repeat:no-repeat;}
 .select-comp  h3 a:hover{color:#666;}
 .select-comp h3 a.active:hover{color:#f17922;}
 

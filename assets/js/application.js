@@ -111,6 +111,23 @@ jQuery(document).ready(function(){
 		
 	}
 	
+	//Flechas custom componentes.html
+	if (jQuery('.select-comp').is(":visible") ) {
+		//Pintamos la flecha up por defecto
+		var image_up=up_svg('#bfb9b9');
+		var encoded = window.btoa(image_up);
+		jQuery('.select-comp a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		
+		//Pintamos la flecha down
+		//Obtenemos el color
+		var color=jQuery('#custom-color').attr('data-color');
+		if(color==""){color='#47b6c7';}
+		var image_down=down_svg(color);
+		var encoded = window.btoa(image_down);
+		jQuery('.select-comp h3 a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		
+	}
+	
 	
 	//Reiniciar Scroll a 0
 	//jQuery('body').scrollTo( "0px", 0);
@@ -482,16 +499,36 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		 if(!jQuery(this).hasClass('active')) {
 		 	if(jQuery(this).hasClass('alumno')){
+				//Pintamos la flecha up por defecto
+				var image_up=up_svg('#bfb9b9');
+				var encoded = window.btoa(image_up);
+				jQuery('.profesor').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
-				jQuery(this).parents('.select-comp').find('.profesor').removeClass('active')
+				//Pintamos la flecha down
+				var color=jQuery('#custom-color').attr('data-color');
+				if(color==""){color='#47b6c7';}
+				var image_down=down_svg(color);
+				var encoded = window.btoa(image_down);
+				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+				jQuery(this).parents('.select-comp').find('.profesor').removeClass('active');
 				//Mostramos Bloque
 				jQuery('.block-prof').stop().clearQueue().fadeOut(800,function(){
 					jQuery('.block-alum').stop().clearQueue().fadeIn(800);
 				});
 				
 			}else{
+				//Pintamos la flecha up por defecto
+				var image_up=up_svg('#bfb9b9');
+				var encoded = window.btoa(image_up);
+				jQuery('.alumno').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
-				jQuery(this).parents('.select-comp').find('.alumno').removeClass('active')
+				//Pintamos la flecha down
+				var color=jQuery('#custom-color').attr('data-color');
+				if(color==""){color='#47b6c7';}
+				var image_down=down_svg(color);
+				var encoded = window.btoa(image_down);
+				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+				jQuery(this).parents('.select-comp').find('.alumno').removeClass('active');
 				//Mostramos Bloque
 				jQuery('.block-alum').stop().clearQueue().fadeOut(800,function(){
 					jQuery('.block-prof').stop().clearQueue().fadeIn(800);
@@ -499,6 +536,22 @@ jQuery(document).ready(function(){
 			}	
 		 }
 	});
+	
+	/*
+	//Pintamos la flecha down
+		//Pintamos la flecha up por defecto
+		var image_up=up_svg('#bfb9b9');
+		var encoded = window.btoa(image_up);
+		jQuery('.select-comp a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		
+		//Pintamos la flecha down
+		//Obtenemos el color
+		var color=jQuery('#custom-color').attr('data-color');
+		if(color==""){color='#47b6c7';}
+		var image_down=down_svg(color);
+		var encoded = window.btoa(image_down);
+		jQuery('.select-comp h3 a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+	*/
 	
 	//Subir al top de la ventana 
 	jQuery(document).on("click",".up-window", function(e) {
