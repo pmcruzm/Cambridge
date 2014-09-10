@@ -95,7 +95,7 @@ jQuery(document).ready(function(){
 	}/**/
 	
 	//Flechas custom curso_sup.html
-	if (jQuery('.content-course-sup').is(":visible") ) {
+	if (jQuery('.opc_levels').is(":visible") ) {
 		//Pintamos la flecha up por defecto
 		var image_up=up_svg('#bfb9b9');
 		var encoded = window.btoa(image_up);
