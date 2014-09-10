@@ -7,8 +7,18 @@ Fecha: 5/8/2014
 /*****************************
 PROPIEDADES GENERALES
 *****************************/
-/*html {-webkit-font-smoothing: antialiased;}*/
-body{background:#f8f7f7;font-family:'latolight', Helvetica, sans-serif;}
+body{
+	background:#f8f7f7;
+	font-family:'latolight', Helvetica, sans-serif;
+	/*
+	-moz-font-feature-settings:"swsh" off; 
+	-moz-font-feature-settings:"swsh" off; 
+	-ms-font-feature-settings:"swsh" off; 
+	-o-font-feature-settings:"swsh" off; 
+	-webkit-font-feature-settings:"swsh" off; 
+	font-feature-settings:"swsh" off; */
+	
+}
 a,a:focus, 
 a:hover, 
 a:active {outline: none;}
@@ -17,12 +27,7 @@ a:active {outline: none;}
 PROPIEDADES CABECERA
 ******************************/
 
-#header{height:252px;position:relative;/*background-size:2502px 1251px;background-position:-513px -798px;background-image: -moz-radial-gradient( 0% 0%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-image: -webkit-radial-gradient( 50% 50%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-image: -ms-radial-gradient( 50% 50%, circle closest-side, rgb(114,229,222) 0%, rgb(80,179,197) 100%);background-attachment:fixed;*/background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-
-/*
-background-size:2502px 1251px;background-position:-513px -798px;
-*/
-
+#header{height:252px;position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 #header .logo{margin:0;padding:0;display:block;background:url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
 .header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
@@ -1342,6 +1347,18 @@ PROPIEDADES COOKIES
 .btn-accept{background:#ea575b;color:#ffffff;height:30px;display:block;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;width:140px;margin:0 auto;line-height:30px;text-align:center;margin-top:20px;}
 .btn-accept:hover{color:#ffffff;}
 
+/******************************
+PROPIEDADES TABLES
+*******************************/
+table.default {text-align:center;}
+table.default tr{border-bottom:1px solid #f8f7f7;}
+table.default tr td{vertical-align:middle !important;height:35px;background:#ffffff;}
+table.default tr td:first-child{-webkit-border-radius: 15px 0px 0px 15px;-moz-border-radius: 15px 0px 0px 15px;border-radius:15px 0px 0px 15px;}
+table.default tr td:last-child{-webkit-border-radius: 0px 15px 15px 0px;-moz-border-radius: 0px 15px 15px 0px;border-radius:0px 15px 15px 0px;}
+table.default tr td:only-child{-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;}
+table.default tr td p{margin:0 !important;font-size:14px !important;line-height:21px !important;color:#373340;}
+table.default tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
+table.default tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 
 /******************************
 PROPIEDADES CUSTOM THEMES

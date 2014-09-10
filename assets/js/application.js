@@ -130,7 +130,7 @@ jQuery(document).ready(function(){
 	
 	
 	//Reiniciar Scroll a 0
-	//jQuery('body').scrollTo( "0px", 0);
+	jQuery('body').scrollTo( "0px", 0);
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -874,7 +874,7 @@ jQuery(document).ready(function(){
 		block_open++;
 		//Eliminamos active 
 		jQuery('.opc_levels a').removeClass('active');
-		jQuery('.opc_levels a span.indicador').remove();
+		//jQuery('.opc_levels a span.indicador').remove();
 		var image_up=up_svg('#bfb9b9');
 		var encoded = window.btoa(image_up);
 		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
@@ -884,7 +884,7 @@ jQuery(document).ready(function(){
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
 		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-		jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
+		//jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
 		//Cerramos un bloque y mostramos el siguiente 
 		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
 			//Eliminamos el height residual 
