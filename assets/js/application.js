@@ -1199,13 +1199,13 @@ function down_svg(color){
 //Funcion para pintar svg up
 function up_svg_large(color){
 	//return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1524.223 0 3674.363 74.41" enable-background="new -1524.223 0 3674.363 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2150.139,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1524.223,74.41 -1524.223,57.874 231.498,57.874 297.64,0 363.782,57.874 2150.139,57.874"/></g></g></svg>';
-	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1568.974 0 3733.228 74.41" enable-background="new -1568.974 0 3733.228 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2164.254,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1568.974,74.41 -1568.974,57.874 231.498,57.874     297.64,0 363.782,57.874 2164.254,57.874"/></g></g></svg>'
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1568.974 0 3733.228 74.41" enable-background="new -1568.974 0 3733.228 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2164.254,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1568.974,74.41 -1568.974,57.874 231.498,57.874 297.64,0 363.782,57.874 2164.254,57.874"/></g></g></svg>'
 }
 
 //Funcion para pintar svg up
 function down_svg_large(color){
 	//return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="0 0 595.28 74.41" enable-background="new 0 0 595.28 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1524.224,0.001 270.401,0.001 328.275,49.608 386.149,0.001 2150.139,0.001 2150.139,16.538 394.418,16.538 328.275,74.411 262.134,16.538 -1524.224,16.537"/></g></g></svg>';
-	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1544.88 0 3685.039 74.41" enable-background="new -1544.88 0 3685.039 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1544.88,0 239.765,0 297.639,49.607 355.513,0 2140.159,0 2140.159,16.536 363.782,16.536 297.639,74.41     231.498,16.536 -1544.88,16.536"/></g></g></svg>';
+	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1544.88 0 3685.039 74.41" enable-background="new -1544.88 0 3685.039 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1544.88,0 239.765,0 297.639,49.607 355.513,0 2140.159,0 2140.159,16.536 363.782,16.536 297.639,74.41 231.498,16.536 -1544.88,16.536"/></g></g></svg>';
 }
 
 
