@@ -346,6 +346,7 @@ PROPIEDADES CAMBRIDGE LABS
 
 .secc-labs ul{margin-top:-18px !important;}
 .top-intro-labs{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
+.camb-labs .intro-p p{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
 .titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;font-size:20px;width:300px;margin:42px auto;text-align:center;cursor:pointer;}
 
 .block-labs{text-align:center;margin-bottom:42px;}
@@ -366,6 +367,13 @@ PROPIEDADES CAMBRIDGE LABS
 #register-form{margin-bottom:90px;}
 #register-form input.error{border:1px solid #ea575b;}
 #register-form textarea.error{border:1px solid #ea575b;}
+
+#register-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border:1px solid #629ec7;}
+#register-form .custom-select select{background:url(../img/arrow_down_select.png) no-repeat 85% 50% #629ec7;}
+#register-form .custom-select.error{border:1px solid #ea575b;}
+
+#register-form .form-group{position:relative;}
+#register-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
 
 .teacher-d > div{position:relative;}
 .teacher-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
@@ -417,11 +425,7 @@ PROPIEDADES CAMBRIDGE LABS
 .btn-form-submit{/*margin-top:52px;*/}
 
 #register-form input[type=submit],#register-form button[type=submit]{background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
-/*
-background:#629ec7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;
 
-background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;
-*/
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
@@ -1413,6 +1417,10 @@ a:hover,a:focus {color:inherit;text-decoration:none;}
 .form-control{box-shadow:none;}
 .glyphicon{top:0px !important;}
 strong,b{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
+input[type="submit"],button[type="submit"]{outline: none;}
+*:focus{outline: none;} 
+*{outline: none;} 
+
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
