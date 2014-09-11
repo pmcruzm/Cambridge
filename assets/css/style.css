@@ -900,7 +900,7 @@ PROPIEDADES CUERPO SERIE EXAMS CURSO
 
 .block-img-exam-c{position:relative;}
 .inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
-.inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;box-shadow:0 11px 11px #ddd;}
+.inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;box-shadow:0 11px 11px rgba(0,0,0,0.1);}
 
 /*****************************
 PROPIEDADES CUERPO NEWSLETTER
@@ -1211,7 +1211,7 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .list-courses-sup{margin-bottom:36px;}
 
 .opc_levels{margin-bottom:32px;display:block;width:100%;height:100%;text-align:center;}
-.opc_levels a{text-align:center;display:inline-block;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:22px;width:12.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
+.opc_levels a{text-align:center;display:inline-block;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:22px;width:11.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
 .opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;width:95%;margin:0 auto;padding-bottom:20px;background-position:center 82%;background-repeat:no-repeat;}
 /*.opc_levels a:first-child span{background-position:center 89%;}*/
 .opc_levels a:hover{color:#666666;}

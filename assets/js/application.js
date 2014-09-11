@@ -54,8 +54,8 @@ jQuery(window).load(function(){
 	}
 	
 	//Ajustar altura bloques de course supplementary 
-	if (jQuery('.content-course-sup').is(":visible") ) {
-		jQuery('.content-course-sup .list-courses-sup').each(function() {	 
+	if (jQuery('.cont-course-sup').is(":visible") ) {
+		jQuery('.cont-course-sup .list-courses-sup').each(function() {	 
 			align_top_box(jQuery(this).find('div.block-product'));
 		});
 	}
@@ -486,11 +486,28 @@ jQuery(document).ready(function(){
 	jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
 		e.preventDefault();
 		var actual=jQuery(this);
+		var enlace =jQuery(this).attr('href');
 		if(!jQuery(this).parent().hasClass('active')) {
-			var cerrar=jQuery('.block-submenus>ul>li.active>ul');
-			jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
-			//Cerramos bloque abierto
-			jQuery(cerrar).parent().addClass('type-light').find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active').removeClass('type-light');});
+			//Comprobamos que tiene ul a continuación
+			if (jQuery(this).parent().find('ul').length > 0) {
+				//Comprobamos si el que está activo tienen ul
+				if (jQuery('.block-submenus>ul>li.active').find('ul').length > 0) {
+					var cerrar=jQuery('.block-submenus>ul>li.active>ul');
+					jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
+					//Cerramos bloque abierto
+					jQuery(cerrar).parent().addClass('type-light').find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active').removeClass('type-light');});
+				}else{
+					jQuery('.block-submenus>ul>li').removeClass('active');	
+					jQuery(this).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
+				}
+			}else{
+				top.location.href=enlace;	
+			}
+		}else{
+			//Si está activo el enlace y no tiene ul
+			if (jQuery(this).parent().find('ul').length == 0) {
+				top.location.href=enlace;	
+			}
 		}
 	});
 	
