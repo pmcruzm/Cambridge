@@ -81,7 +81,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Prueba SVG inject
-	if (jQuery('#test-svg').is(":visible") ) {
+	/*if (jQuery('#test-svg').is(":visible") ) {
 		// Elements to inject
 		var mySVGsToInject = document.querySelectorAll('img.inject-me');
 		// Do the injection
@@ -92,7 +92,7 @@ jQuery(document).ready(function(){
 		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
 		var encoded = window.btoa(image);
 		jQuery('.line_up_1').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-	}/**/
+	}*/
 	
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
@@ -103,8 +103,13 @@ jQuery(document).ready(function(){
 		
 		//Pintamos la flecha down
 		//Obtenemos el color
-		var color=jQuery('#custom-color').attr('data-color');
-		if(color==""){color='#47b6c7';}
+		var color;
+		if(jQuery('#custom-color').length>0){
+			color=jQuery('#custom-color').attr('data-color');
+			if(color==""){color='#47b6c7';}
+		}else{
+			color='#47b6c7';
+		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
 		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
@@ -120,8 +125,13 @@ jQuery(document).ready(function(){
 		
 		//Pintamos la flecha down
 		//Obtenemos el color
-		var color=jQuery('#custom-color').attr('data-color');
-		if(color==""){color='#47b6c7';}
+		var color;
+		if(jQuery('#custom-color').length>0){
+			color=jQuery('#custom-color').attr('data-color');
+			if(color==""){color='#47b6c7';}
+		}else{
+			color='#47b6c7';
+		}
 		var image_down=down_svg_large(color);
 		var encoded = window.btoa(image_down);
 		jQuery('.select-comp h3 a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
@@ -522,8 +532,13 @@ jQuery(document).ready(function(){
 				jQuery('.profesor').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
 				//Pintamos la flecha down
-				var color=jQuery('#custom-color').attr('data-color');
-				if(color==""){color='#47b6c7';}
+				var color;
+				if(jQuery('#custom-color').length>0){
+					color=jQuery('#custom-color').attr('data-color');
+					if(color==""){color='#47b6c7';}
+				}else{
+					color='#47b6c7';
+				}
 				var image_down=down_svg_large(color);
 				var encoded = window.btoa(image_down);
 				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
@@ -540,8 +555,13 @@ jQuery(document).ready(function(){
 				jQuery('.alumno').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 				jQuery(this).addClass('active');
 				//Pintamos la flecha down
-				var color=jQuery('#custom-color').attr('data-color');
-				if(color==""){color='#47b6c7';}
+				var color;
+				if(jQuery('#custom-color').length>0){
+					color=jQuery('#custom-color').attr('data-color');
+					if(color==""){color='#47b6c7';}
+				}else{
+					color='#47b6c7';
+				}
 				var image_down=down_svg_large(color);
 				var encoded = window.btoa(image_down);
 				jQuery(this).css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
@@ -896,8 +916,13 @@ jQuery(document).ready(function(){
 		var encoded = window.btoa(image_up);
 		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery(this).addClass('active');
-		var color=jQuery('#custom-color').attr('data-color');
-		if(color==""){color='#47b6c7';}
+		var color;
+		if(jQuery('#custom-color').length>0){
+			color=jQuery('#custom-color').attr('data-color');
+			if(color==""){color='#47b6c7';}
+		}else{
+			color='#47b6c7';
+		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
 		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');

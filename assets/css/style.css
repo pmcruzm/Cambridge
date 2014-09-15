@@ -273,7 +273,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-product{text-align:center;margin-bottom:24px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:157px;}
 
-.block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;margin-bottom:18px;}
+.block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;padding-bottom:18px;}
 .block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none;}
 .block-product h3 a:hover{text-decoration:underline;}
 .block-product p{color:#373340;font-size:14px;text-align:left;padding-bottom:20px;}
@@ -377,7 +377,7 @@ PROPIEDADES CAMBRIDGE LABS
 #register-form .custom-select.error{border:1px solid #ea575b;}
 
 #register-form .form-group{position:relative;}
-#register-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+#register-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right: -14px;top: 10px;font-size: 20px;}
 
 .teacher-d > div{position:relative;}
 .teacher-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
@@ -439,6 +439,7 @@ PROPIEDADES CAMBRIDGE LABS
 .custom-select select:focus{color:#ffffff;}
 
 .errores p {color: #ea575b !important;font-size:14px !important;margin-bottom: 0;}
+.txt_req{color:#ea575b;font-size: 20px;display:inline-block;vertical-align:middle;margin-left:5px;position:relative;top:4px;}
 
 .course-book .form-group{margin-bottom:0;}
 .book_1,.book_2,.book_3,.book_4{margin-bottom:15px;}
@@ -535,7 +536,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 #event-form input.error{border:1px solid #ea575b;}
 #event-form select{border:none;}
 #event-form .form-group{position:relative;}
-#event-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+#event-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right: -14px;top: 10px;font-size: 20px;}
 #event-form .checkbox label{display:inline-block;}
 #event-form .checkbox{padding-left:30px;margin-bottom:36px;margin-top:42px;}
 #event-form .checkbox p{margin-top:-25px;}
@@ -597,7 +598,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 *********************************/
 
 .top-product{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_product.png);height:235px;}
-.menu-sec-product{padding-left:18px;padding-top:42px;}
+.menu-sec-product{padding-left:18px;display:table;height:217px;/*padding-top:42px;*/}
+#course-menu{display:table-cell;vertical-align:middle;}
 .menu-sec-product ul{margin:0;padding:0;}
 .menu-sec-product ul li{list-style:none;}
 .menu-sec-product ul li a{color:#ffffff;font-size:22px;line-height:28px;}
@@ -675,6 +677,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 .esample-product p{color:#373340;font-size:16px;margin-top:24px;}
 .esample{padding-left:30px !important;padding-right:30px !important;}
 
+.content-product{padding-bottom:90px;}
+
 
 /************************************
 PROPIEDADES CUERPO COMPONENT PRODUCT
@@ -701,7 +705,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 /************************************
 PROPIEDADES CUERPO DIGITAL PRODUCT
 *************************************/
-
+.content-digital{padding-bottom:90px;}
 .intro-digital{color:#373340;font-size:20px;line-height:30px;}
 .list-digt{margin-top:22px;}
 .btn-buy{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-top:18px;margin-bottom:32px;}
@@ -779,7 +783,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .inside-recurso p{color:#373340;font-size:16px;line-height:21px;}
 .inside-recurso + a{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin:0 auto;margin-top:-13px;}
 .inside-recurso + a:hover,.inside-recurso + a:focus{color:#ffffff;text-decoration:none;}
-.pill-w{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;display:block;text-align:center;margin-bottom:1px;}
+.pill-w{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;display:block;text-align:center;margin-bottom:1px;color:#373340;}
 .pill-w span{color:#373340;font-size:14px;height:35px; line-height:35px;}
 .pill-w a{font-size:14px;height:35px; line-height:35px;font-family:'latoregular', Helvetica, sans-serif;}
 .pill-w span strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
@@ -801,7 +805,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .block-starters{margin-top:32px;margin-bottom:32px;}
 .block-movers{margin-bottom:32px;}
 
-.pill-w-table{text-align:center;}
+.pill-w-table{text-align:center;color:#373340;}
 .pill-w-table tr{border-bottom:1px solid #f8f7f7;}
 .pill-w-table tr td{vertical-align:middle !important;height:35px;background:#ffffff;}
 .pill-w-table tr td:first-child{-webkit-border-radius: 15px 0px 0px 15px;-moz-border-radius: 15px 0px 0px 15px;border-radius:15px 0px 0px 15px;}
@@ -814,6 +818,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w-table p{color:#373340;} 
 
 .resource-module .theme-color h4 {color:#373340 !important;}
+.candado{display:inline-block;font-family: 'icomoon',Helvetica,sans-serif;vertical-align:middle;color:#bbb5bb;font-size:35px;}
 
 /**********************
 PROPIEDADES HOME EXAMS
@@ -921,7 +926,7 @@ PROPIEDADES CUERPO NEWSLETTER
 #newsletter-form input.error{border:1px solid #ea575b;}
 #newsletter-form select{border:none;/*-webkit-appearance: none;*/}
 #newsletter-form .form-group{position:relative;}
-#newsletter-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+#newsletter-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right: -14px;top: 10px;font-size: 20px;}
 .centre-news{margin-top:52px;}
 
 #newsletter-form .checkbox label{display:inline-block;}
@@ -1059,7 +1064,7 @@ PROPIEDADES CUERPO CONTACT
 #contact-form textarea.error{border:1px solid #ea575b;}
 #contact-form select{border:none;}
 #contact-form .form-group{position:relative;}
-#contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right:-18px;top:10px;}
+#contact-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right: -14px;top: 10px;font-size: 20px;}
 #contact-form input[type=submit],#contact-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
 #contact-form .checkbox label{display:inline-block;}
 #contact-form  .checkbox{padding-left:30px;margin-bottom:18px;}
@@ -1203,8 +1208,9 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .content-course-sup h3{color:#20718c;font-size:32px;margin-bottom:42px;}
 .content-course-sup .inside-img-product img{left:0;right:0;margin-left:auto;margin-right:auto;width:461px !important;}
 
-.list-courses-sup .caption-product{min-height:405px;}
+.list-courses-sup .caption-product{min-height:255px;}
 .list-courses-sup .block-product h4 {font-size: 22px; margin: 0 0 18px;padding-top: 168px;text-align: left;}
+.list-courses-sup .block-product h4.author{padding-top:0px;color:#373340;font-family:'latoitalic', Helvetica, sans-serif !important;font-size:14px;margin-top:5px;margin-bottom:24px;}
 .list-courses-sup .caption-product h4 a{color: #bdd630;font-size: 22px;text-decoration: none;}
 .list-courses-sup .caption-product p{}
 
@@ -1215,7 +1221,7 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;width:95%;margin:0 auto;padding-bottom:20px;background-position:center 82%;background-repeat:no-repeat;}
 /*.opc_levels a:first-child span{background-position:center 89%;}*/
 .opc_levels a:hover{color:#666666;}
-.opc_levels a.active{color:#bdd630;}
+.opc_levels a.active{}
 .opc_levels a.active span{/*background:url(../img/line_down_sup.png)center bottom no-repeat;*/padding-bottom:20px;background-position:center bottom;background-repeat:no-repeat;}
 
 .indicador{background:none !important;padding:0 !important;}
@@ -1269,6 +1275,7 @@ PROPIEDADES CUERPO PRODUCTO GENÉRICO
 .cont-prodt-gen{padding:56px 18px 0;}
 .content-prodt-gen p{font-size: 16px;color:#373340;}
 .content-prodt-gen .intro-product p{font-size:20px !important;}
+.content-prodt-gen h2{color:#47b6c7}
 
 /*.content-prodt-gen h2{color:#20718c;}
 .content-prodt-gen .authors span{color:#47b6c7;}
@@ -1381,6 +1388,8 @@ PROPIEDADES CUSTOM THEMES
 .digital-product.theme-color  h2{color:#20718c !important;}
 .pill-w-table.theme-color tr td p a{color:#47b6c7 !important;}
 .select-comp h3 a.active{color:#47b6c7 !important;}
+.links a{background-color:#47b6c7 !important;}
+.opc_levels a.active{color:#47b6c7 !important;}
 
 
 /******************************
@@ -1436,6 +1445,7 @@ strong,b{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 input[type="submit"],button[type="submit"]{outline: none;}
 *:focus{outline: none;} 
 *{outline: none;} 
+.links a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
 
 
 /**********************************
@@ -1602,11 +1612,12 @@ MEDIA QUERIES
 	.reduce-input h6{text-align:left;}
 	
 	.content-digital .inside-box-compt img{margin:0 auto;display:block;}
-	.menu-sec-product{height:235px;z-index:200;}
-	.block-img-product{height:235px;z-index:100;position:relative;margin-top:-235px;}
+	.menu-sec-product{/*height:235px;*/z-index:200;}
+	.block-img-product{/*height:235px;*/z-index:100;position:relative;/*margin-top:-235px;*/}
 	.menu-product{margin-top:52px !important;}
 	.cont-component{padding:18px 18px 0;}
-	.inside-img-product img{bottom:-157px;display:block;max-width:none;right:0;left:auto;width:580px;}
+	.inside-img-product{margin-top:-235px;}
+	.inside-img-product img{bottom:-177px;display:block;max-width:none;right:0;left:auto;width:580px;}
 	.top-product{height:305px;}
 	.menu-sec-product{padding-top:60px;}
 	.menu-sec-product ul li a{font-size:18px;line-height:24px;}
@@ -1646,7 +1657,8 @@ MEDIA QUERIES
 	#migas{display:none;}
 	.cab-page{bottom:0;}
 	.content-exam-serie-c .top-product{height:275px !important;}
-	.inside-img-exam-serie-c img{bottom:-100px;}
+	.inside-img-exam-serie-c{margin-top:-235px;}
+	.inside-img-exam-serie-c img{bottom:-110px;}
 	
 	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:auto;display:block;width:420px;}
 	
@@ -1691,7 +1703,8 @@ MEDIA QUERIES
 	.desplg_cities{width:130px;}
 	.opc-offices{width:130px;}
 	
-	.inside-img-product img{bottom:-168px;width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
+	.inside-img-product{height:auto;}
+	.inside-img-product img{/*bottom:-198px;*/width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
 	.top-product{height:335px;}
 	.menu-sec-product ul li{text-align:center;}
 	.custom-select select{width:120%;}
@@ -1703,6 +1716,15 @@ MEDIA QUERIES
 	.menu-sec-course ul li{text-align:center;}
 	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px !important;}
 	.inside-img-generico img{bottom:-40px;margin-left:auto;margin-right:auto;left:0;right:0;}
+	.top-product{height:auto;}
+	.inside-img-product{margin-top:0px;}
+	.inside-img-product img{position:relative;bottom:0px;margin-bottom:-70px;}
+	.inside-img-generico{height:auto;text-align:center;}
+	.inside-img-generico img{position:relative;bottom:0px;margin-bottom:-50px;margin-top:25px;}
+	.menu-sec-product{height:auto;}
+	
+	.inside-img-exam-serie-c img{position:relative;bottom:0px;margin-bottom:-30px;margin-top:25px;right:0px;}
+	.inside-img-exam-serie-c{height:auto;text-align:center;margin-top:0px;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -1725,7 +1747,7 @@ MEDIA QUERIES
 	.head-office{height:auto;}
 	.sales-office{height:auto;}
 	
-	.inside-img-product img{bottom:-115px;width:360px;}
+	.inside-img-product img{/*bottom:-145px;*/width:360px;}
 	
 	.block-ver-mas img {display:none;}
 	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
@@ -1733,7 +1755,7 @@ MEDIA QUERIES
 	.block-ver-mas{text-align:center;}
 	.menu-sec-product { padding-top: 40px;}
 	#submenus-mob-prodct{top:166px;}
-	.top-product{height:295px;}
+	/*.top-product{height:295px;}*/
 	
 	#submenus-mob-prodct ul li a{font-size:20px;}
 	.img-slider-corpus img{margin:0 auto;}
@@ -1764,6 +1786,8 @@ MEDIA QUERIES
 	.block-compatible{width:100%;margin-right:0%;margin-bottom:18px;}
 	.block-available{width:100%;}
 	
+	.inside-img-product img{margin-bottom:-50px;}
+	
 	
 	
 }
@@ -1772,12 +1796,13 @@ MEDIA QUERIES
 @media (max-width: 370px){
 	.privacy-checkbox .checkbox{margin-top:36px;}
 	.btn-form-submit {margin-top: 82px;}
-	.inside-img-product img{bottom:-54px;width:300px;}
-	.top-product{height:245px;}
+	.inside-img-product img{/*bottom:-54px;*/width:300px;}
+	.top-product{/*height:245px;*/}
 	.block-ideas h3{width:305px;}
 	.inside-img-exam-serie img{bottom:-50px;width:300px;}
 	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px !important;}
 	.inside-img-generico img{bottom:40px;width:142px;}
+	.inside-img-generico img{bottom:0px;}
 }
 
 
