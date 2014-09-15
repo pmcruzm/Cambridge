@@ -526,13 +526,14 @@ PROPIEDADES CUERPO SINGLE EVENTS
 .info-event-sing a{color:#373340;font-size:14px;line-height:18px;font-family:'latoregular', Helvetica, sans-serif;}
 .info-event-sing a.material-event{color:#47b6c7;}
 
+.cont-event-s p a{color:#47b6c7;}
 
 #event-form{padding-right:32px;padding-left:32px;}
 #event-form > div{position:relative;}
 #event-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
 #event-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:0px;top:0;}
 #event-form label{display:none;}
-#event-form input{border:none;color:#629ec7;border:1px solid #ffffff;}
+#event-form input{border:none;color:#47b6c7;border:1px solid #ffffff;}
 #event-form input.error{border:1px solid #ea575b;}
 #event-form select{border:none;}
 #event-form .form-group{position:relative;}
@@ -1299,6 +1300,19 @@ PROPIEDADES CUERPO PRODUCTO GENÉRICO
 .inside-img-generico{height:235px;position:relative;text-align:right;width:100%;}
 .inside-img-generico img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;}
 .top-product.cover-gen{background-image:url(../upload/bg_generico.jpg);}
+
+/*****************************
+PROPIEDADES CUERPO ESS
+******************************/
+.content-ess{padding-bottom:36px;}
+.listado_ess{margin-top:90px;}
+
+.graf_ess{background:#ffffff;padding:5px;height:110px;}
+.inside_graf_ess{background:#fddd3f url(../img/bg_ess.png) center right no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;overflow:hidden;position:relative;height:100px;}
+.inside_graf_ess img{width:95px;height:77px;position:absolute;top:50%;margin-top:-38px;left:20px;}
+.inside_graf_ess p{margin-bottom:0;display:inline-block;text-align:center;position:absolute;left:150px;top:30px;}
+
+
 
 /*****************************
 PROPIEDADES FOOTER

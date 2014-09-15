@@ -31,8 +31,6 @@ if(ua.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)){
 	device='yes';
 }
 
-
-
 jQuery.noConflict();
 
 
@@ -80,20 +78,6 @@ jQuery(document).ready(function(){
 		jQuery('.block-cookies').show();
 	}
 	
-	//Prueba SVG inject
-	/*if (jQuery('#test-svg').is(":visible") ) {
-		// Elements to inject
-		var mySVGsToInject = document.querySelectorAll('img.inject-me');
-		// Do the injection
-		SVGInjector(mySVGsToInject);
-		
-		//Prueba 2 svg 
-		var color=jQuery('#content').attr('data-color');
-		var image='<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="72px" height="9px" viewBox="0 383.74 595.279 74.41" enable-background="new 0 383.74 595.279 74.41" xml:space="preserve" class="normal-svg"><g><g><polygon fill="'+color+'" points="595.28,458.15 355.514,458.15 297.64,408.543 239.766,458.15 0,458.15 0,441.614 231.498,441.614 297.64,383.74 363.782,441.614 595.28,441.614"/></g></g></svg>';
-		var encoded = window.btoa(image);
-		jQuery('.line_up_1').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-	}*/
-	
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
 		//Pintamos la flecha up por defecto
@@ -138,9 +122,30 @@ jQuery(document).ready(function(){
 		
 	}
 	
+	//Buscar caracter % y reemplazarlo por candado 
+	if(jQuery('.pill-w-table').is(":visible") ){
+		jQuery('.pill-w-table td p').each(function() {
+			var texto=jQuery(this).html();
+			var salida="";
+			for(var i=0;i<texto.length;i++){
+				if(texto[i]=='%'){
+					salida=salida+'<span class="candado">k</span>';
+				}else{
+					salida=salida+texto[i];
+				}
+			}
+			jQuery(this).html(salida);
+		});
+	}
 	
 	//Reiniciar Scroll a 0
-	jQuery('body').scrollTo( "0px", 0);
+	/*jQuery('body').scrollTo( "0px", 0,function(){
+		//Pillar anclas de la url si las hay 
+		var hash = window.location.hash.substring(1);
+		if(hash!=""){
+			jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo'});
+		}
+	});*/
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
@@ -573,22 +578,6 @@ jQuery(document).ready(function(){
 			}	
 		 }
 	});
-	
-	/*
-	//Pintamos la flecha down
-		//Pintamos la flecha up por defecto
-		var image_up=up_svg('#bfb9b9');
-		var encoded = window.btoa(image_up);
-		jQuery('.select-comp a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-		
-		//Pintamos la flecha down
-		//Obtenemos el color
-		var color=jQuery('#custom-color').attr('data-color');
-		if(color==""){color='#47b6c7';}
-		var image_down=down_svg(color);
-		var encoded = window.btoa(image_down);
-		jQuery('.select-comp h3 a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-	*/
 	
 	//Subir al top de la ventana 
 	jQuery(document).on("click",".up-window", function(e) {
