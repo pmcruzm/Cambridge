@@ -139,13 +139,13 @@ jQuery(document).ready(function(){
 	}
 	
 	//Reiniciar Scroll a 0
-	/*jQuery('body').scrollTo( "0px", 0,function(){
+	jQuery('body').scrollTo( "0px", 0,function(){
 		//Pillar anclas de la url si las hay 
 		var hash = window.location.hash.substring(1);
 		if(hash!=""){
 			jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo'});
 		}
-	});*/
+	});
 	jQuery(window).scroll(control_scroll);
 	
 	//Obtenemos ancho clase container y ajustamos flecha up
