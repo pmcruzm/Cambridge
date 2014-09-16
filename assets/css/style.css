@@ -284,7 +284,7 @@ PROPIEDADES CUERPO CATEGORIA
 PROPIEDADES CUERPO RECURSOS
 ******************************/
 .intro-recurso{color:#373340;font-size:20px;margin-top:54px;margin-bottom:46px;text-align:left;padding-left:20px;padding-right:20px;}
-.intro-recurso a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;}
+.intro-recurso a{color:#47b6c7 !important;font-family:'latoregular', Helvetica, sans-serif;}
 .comp-recurso{position:relative;text-align:center;}
 .comp-recurso img{z-index:20;max-width:100%;}
 .comp-recurso p{z-index:30;position:absolute;bottom:20px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
