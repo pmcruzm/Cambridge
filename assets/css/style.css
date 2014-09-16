@@ -283,7 +283,7 @@ PROPIEDADES CUERPO CATEGORIA
 /*****************************
 PROPIEDADES CUERPO RECURSOS
 ******************************/
-.intro-recurso{color:#373340;font-size:20px;text-align:center;margin-top:54px;margin-bottom:32px;}
+.intro-recurso{color:#373340;font-size:20px;margin-top:54px;margin-bottom:46px;text-align:left;padding-left:20px;padding-right:20px;}
 .intro-recurso a{color:#20718c;font-family:'latoregular', Helvetica, sans-serif;}
 .comp-recurso{position:relative;text-align:center;}
 .comp-recurso img{z-index:20;max-width:100%;}
@@ -293,11 +293,11 @@ PROPIEDADES CUERPO RECURSOS
 
 .block-recursos{padding-bottom:150px;}
 .block-recursos h2{color:#20718c;font-size:32px;}
-.how-secc-r{text-align:center;margin-top:90px;padding-bottom:52px;}
-.how-secc-r p{color:#373340;font-size:16px;padding-left:40px;padding-right:40px;margin-bottom:32px;}
+.how-secc-r{text-align:center;margin-top:52px;padding-left:20px;padding-right:20px;}
+.how-secc-r p{color:#373340;font-size:16px;margin-bottom:32px;}
 .how-secc-r img{max-width:100%;}
 
-.how-secc-r .video-youtube{margin-left:40px;margin-right:40px;}
+.how-secc-r .video-youtube{}
 
 .browse-secc{background:#ffffff;text-align:center;}
 .browse-secc h2{margin-top:32px;margin-bottom:-10px;}
@@ -307,6 +307,9 @@ PROPIEDADES CUERPO RECURSOS
 .prop-recursos{padding-left:20px;padding-right:20px;margin-top:90px;}
 .prop-recursos img{max-width:100%;}
 .prop-recursos{font-size:16px;color:#373340;line-height:20px;}
+
+.how-secc-r .poster-frame a span:before{color:#ff975d;}
+
 
 /********************************
 PROPIEDADES TEACHER DEVELOPMENT
@@ -523,7 +526,8 @@ PROPIEDADES CUERPO SINGLE EVENTS
 .info-event-sing .calendario + p{color:#47b6c7;font-size:24px;font-family:'latoregular', Helvetica, sans-serif;width:60%;margin:0 auto;line-height:28px;}
 .info-event-sing h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:30px;margin-bottom:5px;}
 .info-event-sing p{color:#373340;font-size:14px;line-height:18px;}
-.info-event-sing a{color:#373340;font-size:14px;line-height:18px;font-family:'latoregular', Helvetica, sans-serif;}
+.info-event-sing a{color:#47b6c7;font-size:14px;line-height:18px;font-family:'latoregular', Helvetica, sans-serif;}
+.info-event-sing a:hover{color:#47b6c7;}
 .info-event-sing a.material-event{color:#47b6c7;}
 
 .cont-event-s p a{color:#47b6c7;}
@@ -561,7 +565,7 @@ PROPIEDADES CUERPO NOSOTROS
 .video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame{position:absolute;width:100%;height:100%;background:red;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame a{display:block;height:75px;width:75px;position:absolute;-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;background:#ffffff;line-height:75px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-38px;margin-top:-38px;}
-.poster-frame a span:before{content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7 !important;margin-right:-8px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;-webkit-font-smoothing:antialiased;}
+.poster-frame a span:before{content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7;margin-right:-8px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;-webkit-font-smoothing:antialiased;position:relative;top:13px;}
 #player{display:none;}
 
 .video-nosotros{background:#ffffff;}
@@ -1147,6 +1151,7 @@ PROPIEDADES CUERPO CONTEST
 .info-contest div h4{color:#ea575b;font-size:16px;font-family:'latobold', Helvetica, sans-serif;}
 .info-contest div p{color:#373340; font-size:14px;}
 .info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
+.info-contest div p + a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}
 
 .link_contest{color:#20718c;font-size:13px;font-family:'latoregular', Helvetica, sans-serif;display:block;height:30px;width:140px;background:#fff673;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;line-height:30px;text-align:center;bottom:-15px;left:40px;position:absolute;}
 .link_contest:hover{color:#20718c;}
@@ -1460,6 +1465,7 @@ input[type="submit"],button[type="submit"]{outline: none;}
 *:focus{outline: none;} 
 *{outline: none;} 
 .links a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+.small-h1{font-size:45px;}
 
 
 /**********************************
