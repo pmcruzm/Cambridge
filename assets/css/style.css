@@ -175,7 +175,8 @@ PROPIEDADES CUERPO SEARCH
 #search_form{padding-top:54px;padding-bottom:54px;}
 #formulario-search{position:relative;}
 #formulario-search label[for=campo_busqueda]{display:none;}
-#formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;}
+#formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #f8f7f7;}
+#formulario-search input[type=text].error{border:1px solid #ea575b;}
 #formulario-search .radio{padding-left:9px;}
 #formulario-search .radio div{display:inline-block;}
 #formulario-search input[type=submit],#formulario-search button[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}
@@ -183,7 +184,8 @@ PROPIEDADES CUERPO SEARCH
 
 #formulario-search-pag{position:relative;}
 #formulario-search-pag label[for=campo_busqueda]{display:none;}
-#formulario-search-pag input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;}
+#formulario-search-pag input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #ffffff;}
+#formulario-search-pag input[type=text].error{border:1px solid #ea575b;}
 #formulario-search-pag .radio{padding-left:9px;}
 #formulario-search-pag .radio div{display:inline-block;}
 #formulario-search-pag input[type=submit],#formulario-search-pag button[type=submit]{background:#6cd9d7;width:120px;position:absolute;top:30px;right:25px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;}

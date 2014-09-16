@@ -713,6 +713,34 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Envío de formulario de página de búsqueda
+	jQuery(document).on("submit","#formulario-search-pag", function(event) {
+		if(send_form==0){
+			send_reg=1;
+			//Comprobar al menos 3 caracteres
+			var txt_s=jQuery('#formulario-search-pag').find('#campo_busqueda').val();
+			if(txt_s.length<3){
+				jQuery('#formulario-search-pag').find('#campo_busqueda').addClass('error');
+				event.preventDefault();
+				send_reg=0;
+			}
+		}
+	});
+	
+	//Envío de formulario de búsqueda cabecera
+	jQuery(document).on("submit","#formulario-search", function(event) {
+		if(send_form==0){
+			send_reg=1;
+			//Comprobar al menos 3 caracteres
+			var txt_s=jQuery('#formulario-search').find('#campo_busqueda').val();
+			if(txt_s.length<3){
+				jQuery('#formulario-search').find('#campo_busqueda').addClass('error');
+				event.preventDefault();
+				send_reg=0;
+			}
+		}
+	});
+	
 	//Botón redirige a formulario en LABS
 	jQuery(document).on("click",".camb-labs .titul-round", function(event) {
 		event.preventDefault();	
