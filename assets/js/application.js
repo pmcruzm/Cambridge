@@ -498,11 +498,11 @@ jQuery(document).ready(function(){
 	}
 	
 	//Menú sidebar lateral
-	jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
+	/*jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
 		e.preventDefault();
 		var actual=jQuery(this);
 		var enlace =jQuery(this).attr('href');
-		/*if(!jQuery(this).parent().hasClass('active')) {
+		if(!jQuery(this).parent().hasClass('active')) {
 			//Comprobamos que tiene ul a continuación
 			if (jQuery(this).parent().find('ul').length > 0) {
 				//Comprobamos si el que está activo tienen ul
@@ -523,9 +523,9 @@ jQuery(document).ready(function(){
 			if (jQuery(this).parent().find('ul').length == 0) {
 				top.location.href=enlace;	
 			}
-		}*/
+		}
 		top.location.href=enlace;
-	});
+	});*/
 	
 	//Cambiar Alumno-Profesor componente producto
 	jQuery(document).on("click",".select-comp a", function(e) {
@@ -590,7 +590,7 @@ jQuery(document).ready(function(){
 	//Menú Filtros
 	jQuery(document).on("click",".filter-exams>p>span", function(e) {	
 		e.preventDefault();
-	console.log('dentro');
+		//console.log('dentro');
 		jQuery('.opc-filter').stop().clearQueue().slideToggle(600);
 	});
 	
@@ -742,6 +742,7 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	
 	//Botón redirige a formulario en LABS
 	jQuery(document).on("click",".camb-labs .titul-round", function(event) {
 		event.preventDefault();	
@@ -828,7 +829,7 @@ jQuery(document).ready(function(){
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		console.log(maxHeight);
+		//console.log(maxHeight);
 		//Recorremos todos los cuadros 
 		 jQuery('.box-recursos div.inside-recurso').each(function() {
 		 	var altura=jQuery(this).height();
@@ -890,6 +891,14 @@ jQuery(document).ready(function(){
 	if (jQuery('.block-submenus').is(":visible") ) {
 		 jQuery('.block-submenus>ul>li>ul>li').each(function() {
 			var txt=jQuery(this).html();
+			jQuery(this).html('<p>'+txt+'</p>');
+		 });
+	}
+	
+	//Añadir etiquetas p dentro de li cont-camb-en-teach
+	if (jQuery('.cont-camb-en-teach').is(":visible") ) {
+		 jQuery('.cont-camb-en-teach li').each(function() {
+		 	var txt=jQuery(this).html();
 			jQuery(this).html('<p>'+txt+'</p>');
 		 });
 	}
@@ -975,6 +984,26 @@ jQuery(document).ready(function(){
 		w_container=jQuery('.container').width();
 		jQuery('.up-window').css({marginLeft:(w_container-50)});
 		
+	});
+	
+	//Seleccionar los checkbox buttom al hacer click en el texto (Filter exams)
+	jQuery(document).on("click","#form-filter .checkbox span", function(e) {
+		e.preventDefault();		
+		if (jQuery(this).parents('.checkbox').find('input[type=checkbox]').prop("checked")){
+		 	jQuery('#form-filter .checkbox span').not(this).parents('.checkbox').find('input[type=checkbox]').prop('checked', false); 
+		}else{
+			jQuery('#form-filter .checkbox span').not(this).parents('.checkbox').find('input[type=checkbox]').prop('checked', false); 
+		}
+	});
+	
+	//Seleccionar los checkbox buttom (Filter exams)
+	jQuery(document).on("change","#form-filter input[type=checkbox]", function(e) {
+		e.preventDefault();	
+		if (jQuery(this).prop("checked")){
+		 	jQuery('#form-filter input[type=checkbox]').not(this).prop('checked', false); 
+		}else{
+			jQuery('#form-filter input[type=checkbox]').not(this).prop('checked', false); 
+		}
 	});
 	
 	

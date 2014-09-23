@@ -270,7 +270,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active ul li.active a{color:#47b6c7;}
 .block-submenus>ul>li.active ul li.active:before{color:#47b6c7}
 
-.titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;/*margin-bottom:32px;*/}
+.titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;}
 .supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:24px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:157px;}
@@ -1320,6 +1320,26 @@ PROPIEDADES CUERPO ESS
 .inside_graf_ess img{width:95px;height:77px;position:absolute;top:50%;margin-top:-38px;left:20px;}
 .inside_graf_ess p{margin-bottom:0;display:inline-block;text-align:center;position:absolute;left:150px;top:30px;}
 
+/*********************************************
+PROPIEDADES CUERPO CAMBRIDGE ENGLISH TEACHER
+********************************************/
+.content-cambridge-eng-teach{padding-bottom:90px;}
+
+.cont-camb-en-teach{padding-left:20px;padding-right:20px;padding-top:42px;}
+.cont-camb-en-teach div{margin-bottom:42px;}
+.cont-camb-en-teach h2{color:#20718c;font-size:32px;margin-top:0;margin-bottom:40px;}
+.cont-camb-en-teach p{color:#373340;font-size:16px;line-height:21px;}
+.cont-camb-en-teach p.big-text{font-size:20px;line-height:28px;margin-bottom:25px;}
+.cont-camb-en-teach ul{padding:0;margin:0;}
+
+.cont-camb-en-teach  ul{margin:0;padding:0;margin-left:-15px;}
+.cont-camb-en-teach  li{margin-bottom:20px;padding-left: 40px;list-style:none;}
+.cont-camb-en-teach  li:before {content: "b";display: inline-block;font-family: 'icomoon',Helvetica,sans-serif;font-size: 34px;height: 30px;line-height: 30px;margin-left: -35px;width: 30px;color:#47b6c7;}
+.cont-camb-en-teach ul li p{color: #373340;margin-top:-32px !important;margin-bottom:0 !important;}
+
+.more-cont-camb-en-teach{text-align:center;margin-top:70px;}
+.more-cont-camb-en-teach a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
+.more-cont-camb-en-teach a:hover{color:#47b6c7;}
 
 
 /*****************************
