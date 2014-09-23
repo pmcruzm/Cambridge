@@ -374,12 +374,12 @@ PROPIEDADES CAMBRIDGE LABS
 .form-lab h3{color:#629ec7;font-size:32px;margin-bottom:32px;}
 
 #register-form{margin-bottom:90px;}
-#register-form input.error{border:1px solid #ea575b;}
-#register-form textarea.error{border:1px solid #ea575b;}
+#register-form input.error{border:2px solid #ea575b;}
+#register-form textarea.error{border:2px solid #ea575b;}
 
-#register-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border:1px solid #629ec7;}
+#register-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border:2px solid #629ec7;}
 #register-form .custom-select select{background:url(../img/arrow_down_select.png) no-repeat 85% 50% #629ec7;}
-#register-form .custom-select.error{border:1px solid #ea575b;}
+#register-form .custom-select.error{border:2px solid #ea575b;}
 
 #register-form .form-group{position:relative;}
 #register-form .form-group.required:after{content:"*";color:#ea575b;position:absolute;right: -14px;top: 10px;font-size: 20px;}
@@ -387,11 +387,11 @@ PROPIEDADES CAMBRIDGE LABS
 .teacher-d > div{position:relative;}
 .teacher-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
 .teacher-d .help-block{color:#ea575b;font-size:12px;position:absolute;right:0;top:0;}
-.teacher-d input{border:none;color:#629ec7;}
+.teacher-d input{border:2px solid #9ec3df;color:#629ec7;}
 .teacher-d label{display:none;}
 
 .centre-d h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
-.centre-d input{border:none;color:#629ec7;}
+.centre-d input{border:2px solid #9ec3df;color:#629ec7;}
 .centre-d select{border:none;/*-webkit-appearance: none;*/}
 .centre-d label{display:none;}
 
@@ -405,7 +405,7 @@ PROPIEDADES CAMBRIDGE LABS
 .teacher-p h4{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-top:36px;}
 .teacher-p h5{color:#629ec7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;margin-left:18px;}
 .teacher-p h5.error:after{content:'!';font-size:22px;font-family:'latobold', Helvetica, sans-serif;color:#ea575b;margin-left:18px;}
-.teacher-p textarea{border:none;color: #629ec7;}
+.teacher-p textarea{border:2px solid #9ec3df;color: #629ec7;}
 .teacher-p label[for=others_level]{display:none;}
 /*.teacher-p .checkbox{color:#629ec7;margin-bottom:15px;}*/
 .teacher-p  .checkbox{padding-left:30px;}
@@ -417,7 +417,7 @@ PROPIEDADES CAMBRIDGE LABS
 .titul-course{position:relative;height:50px;}
 .course-book h6{color:#629ec7;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;}
 .course-book label{display:none;}
-.course-book input{border:none; color: #629ec7;}
+.course-book input{border:2px solid #9ec3df;color: #629ec7;}
 .course-book select{border:none;}
 .reduce-input{/*padding-right:40px;*/}
 .reduce-input h6{text-align:center;width:100%;}
@@ -457,6 +457,10 @@ PROPIEDADES CAMBRIDGE LABS
 .book_3 h6{display:none;}
 .book_4 h6{display:none;}
 .btn-mobile-course-book{display:none;text-align:right;}
+
+#register-form input[type="checkbox"] + label::before {background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px 0px;}
+#register-form input[type="checkbox"]:checked + label::before{background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px -20px;}
+#register-form input[type="checkbox"].error + label::before{background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px -40px;}
 	
 /*****************************
 PROPIEDADES CUERPO EVENTS
