@@ -594,6 +594,7 @@ PROPIEDADES CUERPO TEAM
 .ficha-perso{text-align:center;margin-bottom:18px;}
 .ficha-perso p{margin:0 !important;}
 .ficha-perso img{margin-bottom:18px;max-width:100%;-webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
+.ficha-perso .img-team{-webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;width:160px;height:160px;margin:0 auto;margin-bottom:18px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 .ficha-perso p.name-perso{}
 .ficha-perso p.cat-perso{font-family:'latoregular', Helvetica, sans-serif;margin-top:9px !important;}
 
@@ -1149,7 +1150,7 @@ PROPIEDADES CUERPO CONTEST
 .block-ideas div.big-text p{font-size:20px;}
 
 .info-contest{padding-top:32px;}
-.info-contest div{background:#fff673;text-align:center;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding:20px;}
+.info-contest div.info-contest-cont{background:#fff673;text-align:center;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;padding:20px;}
 .info-contest div h4{color:#ea575b;font-size:16px;font-family:'latobold', Helvetica, sans-serif;}
 .info-contest div p{color:#373340; font-size:14px;}
 .info-contest div p a{color:#ea575b;font-family:'latoregular', Helvetica, sans-serif;}

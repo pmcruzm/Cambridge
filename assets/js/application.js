@@ -72,7 +72,7 @@ jQuery(document).ready(function(){
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 				
-		ga('create', 'UA-37797634-2', 'auto');
+		ga('create', 'UA-31155962-13', 'auto');
 		ga('send', 'pageview');
 	}else{
 		jQuery('.block-cookies').show();
@@ -502,7 +502,7 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		var actual=jQuery(this);
 		var enlace =jQuery(this).attr('href');
-		if(!jQuery(this).parent().hasClass('active')) {
+		/*if(!jQuery(this).parent().hasClass('active')) {
 			//Comprobamos que tiene ul a continuación
 			if (jQuery(this).parent().find('ul').length > 0) {
 				//Comprobamos si el que está activo tienen ul
@@ -523,7 +523,8 @@ jQuery(document).ready(function(){
 			if (jQuery(this).parent().find('ul').length == 0) {
 				top.location.href=enlace;	
 			}
-		}
+		}*/
+		top.location.href=enlace;
 	});
 	
 	//Cambiar Alumno-Profesor componente producto
@@ -905,7 +906,7 @@ jQuery(document).ready(function(){
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 				
-			ga('create', 'UA-37797634-2', 'auto');
+			ga('create', 'UA-31155962-13', 'auto');
 			ga('send', 'pageview');
 		});
 	});
@@ -1002,7 +1003,7 @@ function control_scroll(e){
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 				
-				ga('create', 'UA-37797634-2', 'auto');
+				ga('create', 'UA-31155962-13', 'auto');
 				ga('send', 'pageview');
 			});
 		}
