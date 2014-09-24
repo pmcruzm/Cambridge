@@ -270,7 +270,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active ul li.active a{color:#47b6c7;}
 .block-submenus>ul>li.active ul li.active:before{color:#47b6c7}
 
-.titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;}
+.titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;max-width:50%;}
 .supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:24px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 11px 11px #ddd;z-index:20;width:157px;}
@@ -974,7 +974,8 @@ PROPIEDADES CUERPO CORPUS
 
 .bg-work-corpus{-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;background:#fddd3f url(../img/bg_how_work.png) top center no-repeat;text-align:center;padding-top:20px;padding-left:18px;padding-right:18px;background-size:211px 105px;}
 .bg-work-corpus p{font-family:'latoregular', Helvetica, sans-serif;color:#373340;font-size:14px;margin-bottom:18px;}
-.bg-work-corpus h3{display:block;width:174px;height:49px;margin:0 auto;margin-bottom:18px;font-family:'latobold_italic', Helvetica, sans-serif;color:#1a171b;font-size:17px;border-radius: 4px;background-color: rgb( 255, 255, 255 );box-shadow: 0px 3px 0px 0px rgb( 255, 206, 0 );line-height:49px;}
+/*.bg-work-corpus h3{display:block;width:174px;height:49px;margin:0 auto;margin-bottom:18px;font-family:'latobold_italic', Helvetica, sans-serif;color:#1a171b;font-size:17px;border-radius: 4px;background-color: rgb( 255, 255, 255 );box-shadow: 0px 3px 0px 0px rgb( 255, 206, 0 );line-height:49px;}*/
+.bg-work-corpus a.corpus-button{display:block;width:174px;height:49px;margin:0 auto;margin-bottom:18px;font-family:'latobold_italic', Helvetica, sans-serif;color:#1a171b;font-size:17px;border-radius: 4px;background-color: rgb( 255, 255, 255 );box-shadow: 0px 3px 0px 0px rgb( 255, 206, 0 );line-height:49px;}
 .bg-work-corpus img{max-width:100%;width:194px;}
 
 
@@ -1330,20 +1331,20 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH TEACHER
 .content-cambridge-eng-teach{padding-bottom:90px;}
 
 .cont-camb-en-teach{padding-left:20px;padding-right:20px;padding-top:42px;}
-.cont-camb-en-teach div{margin-bottom:42px;}
-.cont-camb-en-teach h2{color:#20718c;font-size:32px;margin-top:0;margin-bottom:40px;}
+.logo_cet{display:block;width:260px;margin:0 auto;margin-top:-172px;margin-bottom:20px;}
+.cont-camb-en-teach h2{color:#988b56;font-size:32px;margin-top:0;margin-bottom:40px;text-align:center;}
 .cont-camb-en-teach p{color:#373340;font-size:16px;line-height:21px;}
-.cont-camb-en-teach p.big-text{font-size:20px;line-height:28px;margin-bottom:25px;}
+.cont-camb-en-teach div.big-text p{font-size:20px;line-height:28px;margin-bottom:25px;}
 .cont-camb-en-teach ul{padding:0;margin:0;}
 
 .cont-camb-en-teach  ul{margin:0;padding:0;margin-left:-15px;}
 .cont-camb-en-teach  li{margin-bottom:20px;padding-left: 40px;list-style:none;}
-.cont-camb-en-teach  li:before {content: "b";display: inline-block;font-family: 'icomoon',Helvetica,sans-serif;font-size: 34px;height: 30px;line-height: 30px;margin-left: -35px;width: 30px;color:#47b6c7;}
+.cont-camb-en-teach  li:before {content: "b";display: inline-block;font-family: 'icomoon',Helvetica,sans-serif;font-size: 34px;height: 30px;line-height: 30px;margin-left: -35px;width: 30px;color:#988b56;}
 .cont-camb-en-teach ul li p{color: #373340;margin-top:-32px !important;margin-bottom:0 !important;}
 
 .more-cont-camb-en-teach{text-align:center;margin-top:70px;}
-.more-cont-camb-en-teach a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
-.more-cont-camb-en-teach a:hover{color:#47b6c7;}
+.more-cont-camb-en-teach a{color:#988b56;font-family:'latoregular', Helvetica, sans-serif;}
+.more-cont-camb-en-teach a:hover{color:#988b56;}
 
 
 /*****************************
@@ -1738,6 +1739,7 @@ MEDIA QUERIES
 	.inside-img-generico img{bottom:-10px;}
 	
 	.link_contest{left:0;right:0;margin-left:auto;margin-right:auto;}
+	.logo_cet{margin-top:0;}
 	
 	
 
