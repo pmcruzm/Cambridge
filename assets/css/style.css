@@ -27,14 +27,16 @@ PROPIEDADES CABECERA
 ******************************/
 
 #header{height:252px;position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-#header .logo{margin:0;padding:0;display:block;background:url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
+#header .logo{margin:0;padding:0;display:block;background:#00213c url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
 .header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;/*width:100%;max-width:970px;margin:0 auto 0 auto;*/}
 #top-header ul{float:right;margin:0;padding:0;}
 #top-header ul li{list-style:none;display:inline-block;}
 #top-header ul li a{height:44px;line-height:44px;padding-left:18px;padding-right:18px;color:#20718c;display:inline-block;margin-left:-4px;}
 #top-header ul li a:hover{/*background:#ffffff;*/text-decoration:none;}
-#top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;}
+#top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7;}
+#top-header ul.main-menu li:nth-child(4).active a{background:none;text-decoration:none;color:#d1fffe;}
+#top-header ul.main-menu li:nth-child(5).active a{background:none;text-decoration:none;color:#d1fffe;}
 
 .main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;}
 
@@ -44,15 +46,15 @@ PROPIEDADES CABECERA
 
 .other-menu{}
 .other-menu li a{padding-left:9px !important;padding-right:9px !important;margin-top:-1px;}
-.other-menu li.active a{background:#ffffff;text-decoration:none;}
+.other-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
 
-#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:43px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
+#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:43px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
 #top-header ul li .desplegable-sub .container{padding-left:27px;}
 #top-header ul li .desplegable-sub.active{display:block;}
 .desplegable-sub ul{float:inherit !important;}
 .desplegable-sub ul li{display:block !important;}
-.desplegable-sub ul li a{height:auto !important;line-height:18px !important;padding-left:0 !important;padding-right:0 !important;margin-left:0px !important;margin-bottom:9px;}
-.desplegable-sub ul li a:hover{text-decoration:underline !important;}
+.desplegable-sub ul li a{height:auto !important;line-height:18px !important;padding-left:0 !important;padding-right:0 !important;margin-left:0px !important;margin-bottom:9px;color:#20718c !important;}
+.desplegable-sub ul li a:hover{text-decoration:none !important;}
 .desplegable-sub .banner-cat{display:block;height:100%;width:100%;}
 .desplegable-sub .banner-cat a{height:auto !important;line-height:auto !important;padding-left:0px !important;padding-right:0px !important;display:block !important;margin-left:0px !important;}
 .desplegable-sub img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;max-width:100%;display: block;height: auto;}
@@ -71,7 +73,7 @@ PROPIEDADES CABECERA
 .select-lang .desplegable-sub ul li{display:inline-block !important;margin-right:10px;margin-top:10px;}
 .select-lang .desplegable-sub ul li a{color: #ffffff !important;display: inline-block;height: 26px !important;line-height: 26px !important;margin-left: 0px !important;padding-left: 0px !important;padding-right: 0px !important;width:120px;background:#bbb5bb;-webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius:13px;text-align:center;text-decoration:none;}
 .select-lang .desplegable-sub ul li a:hover{background:#6cd9d7 !important;text-decoration:none !important;}
-.select-lang .desplegable-sub ul li.active-lang a{background:#6cd9d7 !important;}
+.select-lang .desplegable-sub ul li.active-lang a{background:#6cd9d7 !important;cursor:default;}
 .box-lang{text-align:right;position:relative;overflow:hidden;}
 
 
@@ -134,21 +136,23 @@ PROPIEDADES CUERPO HOME
 
 #destacado_sup{}
 #destacado_sup .thumbnails{background:#fff673;height:324px;margin-bottom:18px;overflow:hidden;}
+#destacado_sup .thumbnails:hover{box-shadow:none;background:#fff673; -webkit-transition: background 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: background 0.2s ease-in-out;transition: background 0.2s ease-in-out;}
 #destacado_sup .thumbnails h2{line-height:28px;font-size:22px;}
 #destacado_sup .thumbnails p{padding-top:0px;}
 #destacado_sup .thumbnails h2 a{color:#b5094a !important;}
 
 
-.cat_mid{height:90px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:18px; display:table;width:100%;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-.cat_mid > div{text-decoration:none;display:table-cell;vertical-align:middle;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:40px;padding-right:40px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+.cat_mid{height:90px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:18px; display:table;width:100%;overflow:hidden;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background:#b31f32;display:block;}
+.cat_mid > div{text-decoration:none;display:table-cell;vertical-align:middle;text-align:center; width:100%;height:90px;background:rgba(234,87,91,0.9);padding-left:20px;padding-right:20px;-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-ms-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
 .cat_mid >div:hover{background:rgba(234,87,91,0.6);}
-.cat_mid h2{margin:0;margin-top:-10px;}
-.cat_mid h2 a{color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;margin:0;}
+.cat_mid h2{margin:0 0 0px;line-height:16px;color:#fff799;font-size:16px;margin:0;font-family:'latoregular', Helvetica, sans-serif;margin:0;}
+/*.cat_mid h2 a{}*/
 .cat_mid p{color:#ffffff;margin:0;font-size:14px;}
 .cat_mid p a{font-family:'latoregular', Helvetica, sans-serif;color:#ffffff;}
 .cat_mid >div>div{height:90px;overflow:hidden;}
 .cat_mid  h2 + div{height:auto;}
 
+.block_cards{padding-bottom:36px;}
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
 .thumbnail-style:hover { box-shadow: 0 0 8px #ddd; -webkit-transition: box-shadow 0.2s ease-in-out;-moz-transition: box-shadow 0.2s ease-in-out;-o-transition: box-shadow 0.2s ease-in-out;transition: box-shadow 0.2s ease-in-out;}
@@ -168,9 +172,12 @@ PROPIEDADES CUERPO SEARCH
 #migas{background:#ffffff;position:absolute;bottom:0;width:100%;height:36px;}
 #migas .breadcrumb:before{content:'j';display:inline-block;width:19px;height:36px;margin-right:18px;float:left;line-height:36px;font-family:'icomoon',Helvetica,sans-serif;color:#c6c6c6;font-size:26px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;text-transform: none;-webkit-font-smoothing:antialiased;}
 #migas .breadcrumb{background:none;margin-bottom:0;height:36px;padding-bottom:0;padding-top:0;}
-#migas .breadcrumb > li + li:before{content:'>';color:#fff673;}
+#migas .breadcrumb > li + li:before{content: "r";font-family:'icomoon', Helvetica, sans-serif;font-size:11px;color:#fff673;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height:36px;text-transform: none;-webkit-font-smoothing:antialiased;}
 #migas .breadcrumb > li{height:36px;line-height:36px;}
 #migas .breadcrumb > li a{color:#c6c6c6;}
+#migas .breadcrumb > li{font-size:12px;color:#47b6c7;}
+
+/*content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7;margin-right:-8px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;-webkit-font-smoothing:antialiased;position:relative;top:13px;*/
 
 #search_form{padding-top:54px;padding-bottom:54px;}
 #formulario-search{position:relative;}
@@ -560,7 +567,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 /*****************************
 PROPIEDADES CUERPO NOSOTROS
 ******************************/
-
+.content-nosotros{padding-bottom:30px;}
 .cab-nosotros{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
 
 .cont-nosotros{padding:24px 18px 36px;}
@@ -569,7 +576,7 @@ PROPIEDADES CUERPO NOSOTROS
 .cont-nosotros p{font-size:16px;color:#373340;line-height:21px;}
 .cont-nosotros p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
 .video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
-.poster-frame{position:absolute;width:100%;height:100%;background:red;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.poster-frame{position:absolute;width:100%;height:100%;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame a{display:block;height:75px;width:75px;position:absolute;-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;background:#ffffff;line-height:75px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-38px;margin-top:-38px;}
 .poster-frame a span:before{content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7;margin-right:-8px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;-webkit-font-smoothing:antialiased;position:relative;top:13px;}
 #player{display:none;}
@@ -879,6 +886,8 @@ PROPIEDADES HOME EXAMS
 .foot-exams p a{color:#47b6c7;text-decoration:none;font-family:'latoregular', Helvetica, sans-serif;}
 .foot-exams p a:hover{color:#47b6c7;}
 
+.sub-titul-catalogos{color:#47b6c7 !important;}
+
 
 /******************************
 PROPIEDADES CUERPO SERIE EXAMS
@@ -917,7 +926,7 @@ PROPIEDADES CUERPO SERIE EXAMS CURSO
 
 .block-img-exam-c{position:relative;}
 .inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
-.inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;box-shadow:0 11px 11px rgba(0,0,0,0.1);}
+.inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
 
 /*****************************
 PROPIEDADES CUERPO NEWSLETTER
@@ -979,7 +988,7 @@ PROPIEDADES CUERPO CORPUS
 .bg-work-corpus img{max-width:100%;width:194px;}
 
 
-.graficas-corpus{background:#fddd3f;margin-top:70px;text-align:center;padding-top:50px;padding-bottom:50px;}
+.graficas-corpus{background:#fddd3f;margin-top:40px;text-align:center;padding-top:50px;padding-bottom:50px;}
 .graficas-corpus h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-top:36px;}
 .graficas-corpus h3{color:#373340;font-size:20px;}
 .graficas-corpus p{color:#373340;font-size:16px;}
@@ -1169,9 +1178,9 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH
 **************************************/
 .content-cambridge-eng{padding-bottom:90px;}
 
-.cont-camb-en{padding-left:20px;padding-right:20px;padding-top:42px;}
+.cont-camb-en{padding-left:20px;padding-right:20px;}
 .cont-camb-en div{margin-bottom:42px;}
-.cont-camb-en h2{color:#20718c;font-size:32px;margin-top:0;margin-bottom:20px;}
+.cont-camb-en h2{color:#20718c;font-size:32px;margin-top:42px;margin-bottom:20px;}
 .cont-camb-en p{color:#373340;font-size:16px;line-height:21px;}
 .cont-camb-en h3{font-size:20px;color:#373340;line-height:28px;margin-top:0;}
 .cont-camb-en p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}	
@@ -1181,7 +1190,7 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH
 .block_cards_eng h2{line-height:26px;margin-bottom:0;margin-top:25px;}
 .block_cards_eng p{}
 .block_cards_eng p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
-.block_cards_eng .thumbnail-style:hover {transition:none;box-shadow:none; }
+.block_cards_eng .thumbnail-style:hover {}
 
 /*************************************
 PROPIEDADES CUERPO HOME EXAMS
@@ -1231,7 +1240,7 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 .list-courses-sup{margin-bottom:36px;}
 
 .opc_levels{margin-bottom:32px;display:block;width:100%;height:100%;text-align:center;}
-.opc_levels a{text-align:center;display:inline-block;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:22px;width:11.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
+.opc_levels a{text-align:center;display:inline-block;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:18px;width:11.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
 .opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;width:95%;margin:0 auto;padding-bottom:20px;background-position:center 82%;background-repeat:no-repeat;}
 /*.opc_levels a:first-child span{background-position:center 89%;}*/
 .opc_levels a:hover{color:#666666;}
@@ -1318,7 +1327,7 @@ PROPIEDADES CUERPO PRODUCTO GENÉRICO
 PROPIEDADES CUERPO ESS
 ******************************/
 .content-ess{padding-bottom:36px;}
-.listado_ess{margin-top:90px;}
+.listado_ess{margin-top:40px;}
 
 .graf_ess{background:#ffffff;padding:5px;height:110px;display:block;margin-bottom:42px;}
 .inside_graf_ess{background:#fddd3f url(../img/bg_ess.png) center right no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;overflow:hidden;position:relative;height:100px;}
@@ -1359,28 +1368,30 @@ PROPIEDADES FOOTER
 .contact_link{position:absolute;left:0;top:50%;margin-top:-16px;height:36px;}
 .contact_link div{display:inline;margin-right:18px;}
 .contact_link div:last-child{margin-right:0;}
-.contact_link a{background:#ffe63c;display:inline-block;color:#ea575b;width:230px;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;height:36px;line-height:36px;text-align:center;text-decoration:none;font-size:15px;font-family:'latobold', Helvetica, sans-serif;}
-.contact_link a:hover{color:#ea575b;}
+.contact_link a{background:#ffe63c;display:inline-block;color:#ea575b;width:230px;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;height:36px;line-height:36px;text-align:center;text-decoration:none;font-size:15px;font-family:'latobold', Helvetica, sans-serif;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.contact_link a:hover{color:#ea575b;background:#ffd53d;}
 
 .rrss_link{position:absolute;right:0;top:50%;margin-top:-16px;height:36px;}
 .rrss_link ul{margin:0;padding:0;}
 .rrss_link ul li{list-style:none;display:inline-block;}
-.rrss_link ul li a{line-height:36px;display:inline-block;margin-left:18px;color:#ea575b;background:#ffe63c;height:36px;width:36px;text-align:center;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;font-size:18px;}
-.rrss_link ul li a:hover{text-decoration:none;}
+.rrss_link ul li a{line-height:36px;display:inline-block;margin-left:18px;color:#ea575b;background:#ffe63c;height:36px;width:36px;text-align:center;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;font-size:18px;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.rrss_link ul li a:hover{text-decoration:none;background:#ffd53d;}
 .rrss_link ul li:first-child a{margin-left:0;}
 
 #top_footer{background:#0f81a2;padding-top:36px;padding-bottom:117px;}
 #top_footer h3{color:#47b6c7;font-size:16px;line-height:18px;margin-bottom:18px;font-size:13px;font-family:'latoblack', Helvetica, sans-serif;}
 #top_footer ul{margin:0;padding:0;}
-#top_footer ul li{list-style:none;}
-#top_footer ul li a{color:#ffffff;font-size:12px;}
+#top_footer ul li{list-style:none;line-height:14px;margin-bottom:8px;}
+#top_footer ul li a{color:#ffffff;font-size:12px;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+#top_footer ul li a:hover{color:#acebf7;}
 #inf_footer{background:#007799;padding-top:18px;padding-bottom:18px;}
 #inf_footer>.container>div{overflow:hidden;}
 .logo_foot{float:left;}
 .copy_foot{float:right;color:#ffffff;font-size:12px;}
-.copy_foot a{color:#ffffff}
-.copy_foot a:before{content: "/";padding: 0 5px;}
-.copy_foot a:hover{color:#fffffff;text-decoration:none;}
+.copy_foot a{color:#ffffff;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.copy_foot a:hover{color:#acebf7;}
+.copy_foot a:before{content: "/";padding: 0 5px;color:#ffffff !important;}
+.copy_foot a:hover{color:#fffffff !important;text-decoration:none;}
 
 /***********************
 PROPIEDADES UP-WINDOW

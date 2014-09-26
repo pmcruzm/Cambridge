@@ -127,12 +127,17 @@ jQuery(document).ready(function(){
 		jQuery('.pill-w-table td p').each(function() {
 			var texto=jQuery(this).html();
 			var salida="";
-			for(var i=0;i<texto.length;i++){
-				if(texto[i]=='%'){
-					salida=salida+'<span class="candado">k</span>';
-				}else{
-					salida=salida+texto[i];
-				}
+			if(texto.indexOf('(@)')){
+				salida = texto.replace('(@)','<span class="candado">k</span>');
+				/*for(var i=0;i<texto.length;i++){
+					if(texto[i]=='%'){
+						salida=salida+'<span class="candado">k</span>';
+					}else{
+						salida=salida+texto[i];
+					}
+				}*/
+			}else{
+				salida=texto;	
 			}
 			jQuery(this).html(salida);
 		});
