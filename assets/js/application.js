@@ -365,32 +365,41 @@ jQuery(document).ready(function(){
 							  if(device=='yes' && (touch_gall!=1)){
 									if(newIndex!=(pag_slider+1)){
 										pag_slider=parseInt(newIndex+1);
-										if(pag_slider==1){
+										/*if(pag_slider==1){
 											//slider.goToSlide(pag_slider-1);
 											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											jQuery('.arrow-prev').css({visibility:'hidden'});
-											jQuery('.arrow-next').css({visibility:'visible'});
+											//jQuery('.arrow-prev').css({visibility:'hidden'});
+											//jQuery('.arrow-next').css({visibility:'visible'});
 										}else{
 											//Comprobamos si es la última
 											if(total_slider==pag_slider){
 												//slider.goToSlide(pag_slider-1);
 												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-												jQuery('.arrow-prev').css({visibility:'visible'});
-												jQuery('.arrow-next').css({visibility:'hidden'});
+												//jQuery('.arrow-prev').css({visibility:'visible'});
+												//jQuery('.arrow-next').css({visibility:'hidden'});
 											}else{
 												//slider.goToSlide(pag_slider-1);
 												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-												jQuery('.arrow-prev').css({visibility:'visible'});
-												jQuery('.arrow-next').css({visibility:'visible'});
+												//jQuery('.arrow-prev').css({visibility:'visible'});
+												//jQuery('.arrow-next').css({visibility:'visible'});
 											}
-										}
+										}*/
+										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 										//pintamos el bullet correspondiente
 										jQuery('#nav-slider ul li a').removeClass('active');
 										jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 									}
+									
+							  }else{
+							  	//Versión escritorio
+								if(newIndex!=(pag_slider+1)){
+									pag_slider=parseInt(newIndex+1);
+									//pintamos el bullet correspondiente
+									jQuery('#nav-slider ul li a').removeClass('active');
+									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');	
+								}
 							  }
-							  touch_gall=0;
-						 	
+							  touch_gall=0; 	
 						  },
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
 							 //alert('onSlidePrev-'+touch_gall); 
@@ -398,30 +407,40 @@ jQuery(document).ready(function(){
 								if(pag_slider!=(newIndex)){
 									pag_slider=parseInt(newIndex+1);
 									
-									if(pag_slider==1){
+									/*if(pag_slider==1){
 										//slider.goToSlide(pag_slider-1);
 										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-										jQuery('.arrow-prev').css({visibility:'hidden'});
-										jQuery('.arrow-next').css({visibility:'visible'});
+										//jQuery('.arrow-prev').css({visibility:'hidden'});
+										//jQuery('.arrow-next').css({visibility:'visible'});
 									}else{
 										//Comprobamos si es la última
 										if(total_slider==pag_slider){
 											//slider.goToSlide(pag_slider-1);
 											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											jQuery('.arrow-prev').css({visibility:'visible'});
-											jQuery('.arrow-next').css({visibility:'hidden'});
+											//jQuery('.arrow-prev').css({visibility:'visible'});
+											//jQuery('.arrow-next').css({visibility:'hidden'});
 										}else{
 											//slider.goToSlide(pag_slider-1);
 											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											jQuery('.arrow-prev').css({visibility:'visible'});
-											jQuery('.arrow-next').css({visibility:'visible'});
+											//jQuery('.arrow-prev').css({visibility:'visible'});
+											//jQuery('.arrow-next').css({visibility:'visible'});
 										}
-									}
-								
+									}*/
+									
+									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 									//pintamos el bullet correspondiente
 									jQuery('#nav-slider ul li a').removeClass('active');
 									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 								}
+							}else{
+							//Version escritorio
+								if(pag_slider!=(newIndex)){
+									pag_slider=parseInt(newIndex+1);
+									//pintamos el bullet correspondiente
+									jQuery('#nav-slider ul li a').removeClass('active');
+									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');	
+								}
+							
 							}
 							touch_gall=0;
 						  },
@@ -434,23 +453,27 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		touch_gall=1;
 		slider.goToNextSlide();
-		if(total_slider==pag_slider+1){
+		var current = slider.getCurrentSlide();
+		/*if(total_slider==pag_slider+1){
 			pag_slider=pag_slider+1; 
 			//Movemos contenidos
 			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 			//Deshabilitamos siguiente
-			jQuery('.arrow-next').css({visibility:'hidden'});
+			//jQuery('.arrow-next').css({visibility:'hidden'});
 		}else{
 			pag_slider=pag_slider+1;
 			//Movemos contenidos
 			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 			//pintamos el bullet correspondiente
-		}
+		}*/
+		pag_slider=parseInt(current+1);
+		//Movemos contenidos
+		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 		//pintamos el bullet correspondiente
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 		//Habilitamos anterior
-		jQuery('.arrow-prev').css({visibility:'visible'});	
+		//jQuery('.arrow-prev').css({visibility:'visible'});	
 	});	
 		
 	//Retroceder a la siguiente pantalla del slider 
@@ -458,21 +481,24 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 			touch_gall=1;
 			slider.goToPrevSlide();
-			if(pag_slider-1==1){
+			var current = slider.getCurrentSlide();
+			/*if(pag_slider-1==1){
 				pag_slider=pag_slider-1;
 				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 				//Deshabilitamos siguiente
-				jQuery('.arrow-prev').css({visibility:'hidden'});			
+				//jQuery('.arrow-prev').css({visibility:'hidden'});			
 			}else{
 				pag_slider=pag_slider-1;
 				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 				//pintamos el bullet correspondiente
-			}
+			}*/
+			pag_slider=parseInt(current+1);
+			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
 			//Habilitamos siguiente
-			jQuery('.arrow-next').css({visibility:'visible'});
+			//jQuery('.arrow-next').css({visibility:'visible'});
 	});
 	
 	//Cuando pulsas sobre uno de los bullets del slider de la home
@@ -486,25 +512,27 @@ jQuery(document).ready(function(){
 				pag=parseInt(pag);
 				touch_gall=1;
 				//Comprobamos si es la primera página
-				if(pag==1){
+				/*if(pag==1){
 					slider.goToSlide(pag-1);
 					jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-					jQuery('.arrow-prev').css({visibility:'hidden'});
-					jQuery('.arrow-next').css({visibility:'visible'});
+					//jQuery('.arrow-prev').css({visibility:'hidden'});
+					//jQuery('.arrow-next').css({visibility:'visible'});
 				}else{
 					//Comprobamos si es la última
 					if(total_slider==pag){
 						slider.goToSlide(pag-1);
 						jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-						jQuery('.arrow-prev').css({visibility:'visible'});
-						jQuery('.arrow-next').css({visibility:'hidden'});
+						//jQuery('.arrow-prev').css({visibility:'visible'});
+						//jQuery('.arrow-next').css({visibility:'hidden'});
 					}else{
 						slider.goToSlide(pag-1);
 						jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-						jQuery('.arrow-prev').css({visibility:'visible'});
-						jQuery('.arrow-next').css({visibility:'visible'});
+						//jQuery('.arrow-prev').css({visibility:'visible'});
+						//jQuery('.arrow-next').css({visibility:'visible'});
 					}
-				}
+				}*/
+				slider.goToSlide(pag-1);
+				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
 				pag_slider=pag;
 			}
 	});
