@@ -394,6 +394,7 @@ jQuery(document).ready(function(){
 							  	//Versión escritorio
 								if(newIndex!=(pag_slider+1)){
 									pag_slider=parseInt(newIndex+1);
+									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 									//pintamos el bullet correspondiente
 									jQuery('#nav-slider ul li a').removeClass('active');
 									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');	
@@ -436,6 +437,7 @@ jQuery(document).ready(function(){
 							//Version escritorio
 								if(pag_slider!=(newIndex)){
 									pag_slider=parseInt(newIndex+1);
+									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 									//pintamos el bullet correspondiente
 									jQuery('#nav-slider ul li a').removeClass('active');
 									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');	
