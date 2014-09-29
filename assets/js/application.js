@@ -38,17 +38,26 @@ jQuery(window).load(function(){
 	
 	//Ajustar altura bloques categoria listado-courses 
 	if (jQuery('.listado-courses').is(":visible") ) {
-		align_top_box('.listado-courses div.block-product');
+		//align_top_box('.listado-courses div.block-product');
+		jQuery('.listado-courses').each(function() {	 
+			align_top_box(jQuery(this).find('div.block-product'));
+		});
 	}
 	
 	//Ajustar altura bloques categoria listado-supplementary 
 	if (jQuery('.listado-supplementary').is(":visible") ) {	 
-		align_top_box('.listado-supplementary div.block-product');
+		//align_top_box('.listado-supplementary div.block-product');
+		jQuery('.listado-supplementary').each(function() {	 
+			align_top_box(jQuery(this).find('div.block-product'));
+		});
 	}
 	
 	//Ajustar altura bloques categoria listado-supplementary 
 	if (jQuery('.listado-test').is(":visible") ) {	 
-		align_top_box('.listado-test div.block-product');
+		//align_top_box('.listado-test div.block-product');
+		jQuery('.listado-test').each(function() {	 
+			align_top_box(jQuery(this).find('div.block-product'));
+		});
 	}
 	
 	//Ajustar altura bloques de course supplementary 
@@ -327,7 +336,7 @@ jQuery(document).ready(function(){
 		jQuery('.info-city-office').removeClass('active');
 		jQuery('#office_'+indice).addClass('active');
 		jQuery('.opc-offices').find('.desplg_cities').stop().clearQueue().slideToggle(400,function(){
-			jQuery('.opc-offices').removeClass('actives')
+			jQuery('.opc-offices').removeClass('active');
 		});
 		
 	});
@@ -346,8 +355,11 @@ jQuery(document).ready(function(){
 		//Galería de la Home
 		var slider=jQuery('.bxslider').bxSlider({
 						  pager: false,
-						  infiniteLoop: false,
+						  infiniteLoop: true,
 						  useCSS: false,
+						  auto: true,
+					  	  autoHover: true,
+						  pause: 5000,
 						  onSlideNext: function(slideElement, oldIndex, newIndex){
 							  //alert('OnSlidenext-'+touch_gall); 
 							  if(device=='yes' && (touch_gall!=1)){
@@ -890,6 +902,8 @@ jQuery(document).ready(function(){
 		 	var txt=jQuery(this).html();
 			jQuery(this).html('<p>'+txt+'</p>');
 		 });
+		 //Añadimos elemento para degradado final del bloque
+		 jQuery( "<div class='degradado'></div>" ).insertAfter( ".caption-catalogo ul" );
 	}
 	
 	//Añadir etiquetas p dentro de li block-submenus
@@ -1011,6 +1025,24 @@ jQuery(document).ready(function(){
 		}
 	});
 	
+	//Mover pie examenes(exam_bottom)
+	jQuery(document).on("click",".exam_bottom", function(e) {
+		e.preventDefault();		
+		var enlace=jQuery(this).attr('href');
+		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(enlace),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
+	});
+	
+	//Previene link de idioma actual 
+	jQuery(document).on("click",".active-lang a", function(e) {
+		e.preventDefault();	
+	});
+	
+	//Enlaces laterales
+	jQuery(document).on("mouseenter",".block-submenus>ul>li.active ul li a", function(e) {	
+		jQuery( this ).parents('li').css({color:'#9f999f'});
+	}).on("mouseleave",".block-submenus>ul>li.active ul li a", function(e) {
+		jQuery( this ).parents('li').css({color:'#bbb5bb'});
+	});	
 	
 });
 
