@@ -1033,6 +1033,16 @@ jQuery(document).ready(function(){
 		w_container=jQuery('.container').width();
 		jQuery('.up-window').css({marginLeft:(w_container-50)});
 		
+		//Fix version mobile slider home
+		if ( jQuery("#slider").is(":visible") ) {
+			//Ajustamos los bloques contenidos slider 
+			total_slider=jQuery(".scroll-slider div[id^='slider_']").length;
+			var width_slider=jQuery("#body-slider").width();
+			var aux=total_slider*width_slider;
+			jQuery(".scroll-slider").css('width',(total_slider*width_slider));
+			jQuery(".inside-slider").css('width',(width_slider));
+		}
+		
 	});
 	
 	//Seleccionar los checkbox buttom al hacer click en el texto (Filter exams)
