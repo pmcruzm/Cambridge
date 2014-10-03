@@ -65,7 +65,7 @@ PROPIEDADES CABECERA
 .titul-search p{text-align:right;font-size:70px;color:#7be6e4;}
 
 .form-despl-search{padding-right:52px;padding-top:47px;}
-.form-despl-search input[type=text]{background:#f8f7f7 !important;}
+.form-despl-search input[type=text]{background:#f8f7f7 !important;-webkit-appearance:none;}
 
 .select-lang .desplegable-sub{min-height:95px !important;}
 .select-lang .desplegable-sub p{display:inline-block;color:#7be6e4;font-size:30px;margin: 0 40px 0 0;}
@@ -78,7 +78,7 @@ PROPIEDADES CABECERA
 
 
 
-.mobile-menus{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;box-shadow:0px 30px 10px rgba(0, 0, 0, 0.4);}
+.mobile-menus{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
 .mobile-menus .container{padding-left:27px;}
 .menu-mob .mobile-menus.active{display:block;}
 .mobile-menus ul{float:inherit !important;}
@@ -93,7 +93,7 @@ PROPIEDADES CABECERA
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
 .cab-page .container{position:relative;height:170px;overflow:hidden;}
-.cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:44px;top:54px;margin:0;}
+.cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:44px;margin:0;top:50%;}
 
 /*Cuadros cabecera*/
 .primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;/*left: 184px;*/left:18.96%;top: 102px;/*width: 250px;*/width:25.77%;height: 66px;z-index: 906;}
@@ -127,13 +127,13 @@ PROPIEDADES CUERPO HOME
 #nav-slider ul{margin:16px 0 0 -10px;padding:0;}
 #nav-slider ul li{display:inline-block;height:15px;}
 #nav-slider ul li a{display:block;margin-right:3px;position:relative;height:15px;width:10px;}
-#nav-slider ul li a span{display:inline-block;height:10px;width:10px;background-image:url(../img/opc_gall.png);background-position:0 0;background-repeat:no-repeat;text-indent:-99999px;position:absolute;top:50%;margin-top:-5px;}
+#nav-slider ul li a span{display:inline-block;height:10px;width:10px;background-image:url(../img/opc_gall.png);background-position:0 0;background-repeat:no-repeat;text-indent:-99999px;position:absolute;top:50%;margin-top:-5px;background-size:10px;}
 #nav-slider ul li a:hover span{background-position:0 -10px;}
 #nav-slider ul li a.active span{background-position:0 -10px;}
 #nav-slider ul li a.arrow-prev{margin-right:14px;position:relative;/*top:-2px;visibility:hidden;*/}
-#nav-slider ul li a.arrow-prev span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 0;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;}
+#nav-slider ul li a.arrow-prev span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 0;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;background-size:9px;}
 #nav-slider ul li a.arrow-next{margin-left:14px;position:relative;/*top:-2px;*/}
-#nav-slider ul li a.arrow-next span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 -15px;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;}
+#nav-slider ul li a.arrow-next span{height:15px;width:9px;background-image:url(../img/arrow_gall.png);background-position:0 -15px;background-repeat:no-repeat;top:0 !important;margin-top:0 !important;background-size:9px;}
 
 #destacado_sup{}
 #destacado_sup .thumbnails{background:#fff673;height:324px;margin-bottom:18px;overflow:hidden;}
@@ -184,7 +184,7 @@ PROPIEDADES CUERPO SEARCH
 #search_form{padding-top:54px;padding-bottom:54px;}
 #formulario-search{position:relative;}
 #formulario-search label[for=campo_busqueda]{display:none;}
-#formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #f8f7f7;}
+#formulario-search input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #f8f7f7;-webkit-appearance:none;}
 #formulario-search input[type=text].error{border:1px solid #ea575b;}
 #formulario-search .radio{padding-left:9px;}
 #formulario-search .radio div{display:inline-block;}
@@ -193,7 +193,7 @@ PROPIEDADES CUERPO SEARCH
 
 #formulario-search-pag{position:relative;}
 #formulario-search-pag label[for=campo_busqueda]{display:none;}
-#formulario-search-pag input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #ffffff;}
+#formulario-search-pag input[type=text]{border:none;color:#20718c;font-size:20px;height:43px;line-height:43px;border:1px solid #ffffff;-webkit-appearance:none;}
 #formulario-search-pag input[type=text].error{border:1px solid #ea575b;}
 #formulario-search-pag .radio{padding-left:9px;}
 #formulario-search-pag .radio div{display:inline-block;}
@@ -244,16 +244,17 @@ PROPIEDADES CUERPO CATALOGO
 /********************************
 PROPIEDADES MENÚ LATERAL PRODUCTOS
 *********************************/
-#submenus-mob-prodct{display:none;position:absolute;top:216px;z-index:950;width:100%;background:#ffffff;}
-#submenus-mob-prodct > a{display:inline-block;height:80px;line-height:80px;padding-left:20px;color:#47b6c7;font-size:30px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
+#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:950;width:100%;background:#ffffff;}
+#submenus-mob-prodct > a{display:inline-block;height:50px;line-height:50px;padding-left:20px;color:#47b6c7;font-size:25px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
 #submenus-mob-prodct.active > a{color:#bbb5bb !important;}
-#submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:38px;display:inline-block;width:50px;height:60px;line-height:60px;vertical-align:middle;}
+#submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:35px;height:60px;line-height:57px;vertical-align:middle;}
 #submenus-mob-prodct.active > a:before{color:#bbb5bb !important;}
 #submenus-mob-prodct > a:hover{color:#47b6c7;text-decoration:none;}
-#submenus-mob-prodct ul{padding:0;background:#ffffff;display:none;width:100%;padding-bottom:40px;}
-#submenus-mob-prodct ul li{list-style:none;padding-left:20px;padding-right:20px;}
-#submenus-mob-prodct ul li a{display:block;width:100%;text-align:center;height:85px;line-height:85px;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:30px;background:#f8f7f7;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:2px;}
+#submenus-mob-prodct ul{padding:0;background:#ffffff;display:none;width:100%;padding-bottom:40px;box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3);}
+#submenus-mob-prodct ul li{list-style:none;padding-left:9px;padding-right:9px;}
+#submenus-mob-prodct ul li a{display:block;width:100%;text-align:center;height:50px;line-height:50px;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;font-size:25px;background:#f8f7f7;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-bottom:2px;}
 #submenus-mob-prodct ul li a:hover{text-decoration:none;}
+
 
 
 /*****************************
@@ -285,7 +286,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-product{text-align:center;margin-bottom:24px;}
 .block-product img{display:inline-block;position:relative;margin-bottom:-128px;box-shadow:0 10px 20px rgba(0,0,0,0.2);z-index:20;width:157px;}
 
-.block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;padding-bottom:18px;}
+.block-product h3{font-size:22px;color:#6cd9d7;margin:0;padding-top:168px;text-align:left;padding-bottom:18px;margin-bottom:0 !important;}
 .block-product h3 a{font-size:22px;color:#6cd9d7;text-decoration:none !important;}
 .block-product h3 a:hover{}
 .block-product p{color:#373340;font-size:14px;text-align:left;padding-bottom:20px;}
@@ -300,7 +301,7 @@ PROPIEDADES CUERPO RECURSOS
 .intro-recurso a{color:#47b6c7 !important;font-family:'latoregular', Helvetica, sans-serif;}
 .comp-recurso{position:relative;text-align:center;}
 .comp-recurso img{z-index:20;max-width:100%;}
-.comp-recurso p{z-index:30;position:absolute;bottom:20px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
+.comp-recurso p{z-index:30;position:absolute;bottom:30px;text-align:center;left:0;right:0;margin-left:auto;margin-right:auto;font-size:16px;color:#373340;margin:0;}
 .comp-recurso+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#20718c;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;margin:-13px auto 0;z-index:40;position:relative;margin-bottom:18px;}
 .comp-recurso+a:hover{color:#ffffff;text-decoration:none;}
 
@@ -350,7 +351,7 @@ PROPIEDADES TEACHER DEVELOPMENT
 .block-teacher>div{text-align:center;height:130px;background:#ffffff;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;padding:6px;}
 .block-teacher.teach1>div>img{max-width:100%;}
 .block-teacher img{max-width:100%;}
-.block-teacher p{color:#373340;font-size:16px;text-align:left;line-height:21px;padding-top:18px;padding-bottom:16px;padding-left:18px;}
+.block-teacher p{color:#373340;font-size:16px;text-align:left;line-height:21px;padding-top:18px;padding-bottom:16px;}
 .block-teacher p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
 .block-teacher+a{color:#ffffff;height:26px;line-height:26px;text-align:center;display:block;width:120px;background:#ea575b;-webkit-border-radius: 13px;-moz-border-radius: 13px;border-radius: 13px;z-index:40;position:relative;margin:-13px auto 0;}
 
@@ -371,7 +372,7 @@ PROPIEDADES CAMBRIDGE LABS
 .titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;font-size:20px;width:300px;margin:42px auto;text-align:center;cursor:pointer;}
 
 .block-labs{text-align:center;margin-bottom:42px;}
-.block-labs>div{height:128px;vertical-align:middle;}
+.block-labs>div{min-height:128px;vertical-align:middle;}
 .block-labs h2{color:#629ec7;font-size:32px;}
 .block-labs img{max-width:100%;}
 .block-labs img.logo-lab{height:91px;}
@@ -390,7 +391,7 @@ PROPIEDADES CAMBRIDGE LABS
 #register-form textarea.error{border:2px solid #ea575b;}
 
 #register-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #629ec7;border:2px solid #629ec7;}
-#register-form .custom-select select{background:url(../img/arrow_down_select.png) no-repeat 85% 50% #629ec7;}
+#register-form .custom-select select{background:url(../img/arrow_down_select.png) no-repeat 85% 50% #629ec7;background-size:28px;}
 #register-form .custom-select.error{border:2px solid #ea575b;}
 
 #register-form .form-group{position:relative;}
@@ -450,9 +451,9 @@ PROPIEDADES CAMBRIDGE LABS
 
 .info-foot-lab{color:#bbb5bb;font-size:13px;text-align:center;padding-left:18px;padding-right:18px;margin-bottom:32px;}
 
-.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border-radius: 4px;border:1px solid #47b6c7;box-shadow:none;}
+.custom-select{height:34px;width:100%;overflow:hidden;background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border-radius: 4px;border:1px solid #47b6c7;box-shadow:none;background-size:28px;}
 .custom-select.error{border:1px solid #ea575b;}
-.custom-select select{width: 115%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;background:url(../img/arrow_down_select.png) no-repeat 85% 50% #47b6c7;}
+.custom-select select{width: 115%;height:34px;-webkit-appearance:none;color:#777;-webkit-box-shadow:none;box-shadow:none;color:#ffffff;background:url(../img/arrow_down_select.png) no-repeat 85% 50% #47b6c7;background-size:28px;}
 .custom-select select:focus{color:#ffffff;}
 
 .errores p {color: #ea575b !important;font-size:14px !important;margin-bottom: 0;}
@@ -483,6 +484,7 @@ PROPIEDADES CUERPO EVENTS
 .upcoming-events{padding-left:18px;}
 .upcoming-events h2{font-size:32px;color:#20718c;margin-top:36px;margin-bottom:36px;}
 .upcoming-events h2 + p{font-size:20px;color:#373340;line-height:28px;}
+.upcoming-events h4{margin-bottom:24px;}
 .select-events{text-align:right;margin-bottom:22px;}
 .select-events span{color:#bbb5bb;font-size:14px;margin-left:5px;cursor:pointer;}
 .select-events span.active{color:#6cd9d7;}
@@ -566,7 +568,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 #event-form .checkbox a{color:#ea575b;}
 #event-form input[type=submit],#event-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;border:none;}
 
-#event-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border: 1px solid #47b6c7;}
+#event-form .custom-select{background: url(../img/arrow_down_select.png) no-repeat right center #47b6c7;border: 1px solid #47b6c7;background-size:28px;}
 
 
 /*****************************
@@ -627,7 +629,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .menu-sec-product ul{margin:0;padding:0;}
 .menu-sec-product ul li{list-style:none;}
 .menu-sec-product ul li a{color:#ffffff;font-size:22px;line-height:28px;}
-.menu-sec-product ul li a:hover{opacity:0.9; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.menu-sec-product ul li a:hover{opacity:0.8; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 .menu-sec-product ul li.active a{font-family:'latobold', Helvetica, sans-serif;}
 .menu-product{margin-top:-18px !important;}
 
@@ -720,7 +722,7 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .cont-component h2{font-size:32px;}
 .select-comp{text-align:center;margin-top:32px;margin-bottom:18px;}
 .select-comp h3{margin:0;}
-.select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:22px;/*background:url(../img/line_up.png) bottom center no-repeat;*/display:block;padding-bottom:9px;text-decoration:none;background-position:bottom center;background-repeat:no-repeat;}
+.select-comp a{font-family:'latoitalic', Helvetica, sans-serif;color:#bbbbbb;font-size:21px;/*background:url(../img/line_up.png) bottom center no-repeat;*/display:block;padding-bottom:9px;text-decoration:none;background-position:bottom center;background-repeat:no-repeat;}
 .select-comp a:hover{text-decoration:none;}
 .select-comp h3 a.active{/*background:url(../img/line_down.png) bottom center no-repeat;*/padding-bottom:16px;background-position:bottom center;background-repeat:no-repeat;}
 .select-comp  h3 a:hover{color:#666;}
@@ -865,7 +867,7 @@ PROPIEDADES HOME EXAMS
 
 .list-home-exams{margin-top:75px;}
 
-.block-h-exam{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;padding:20px;min-height:395px;margin-bottom:18px;}
+.block-h-exam{background:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;padding:20px;/*min-height:395px;*/margin-bottom:18px;}
 .block-h-exam img{width:191px;display:block;margin:0 auto;}
 .block-h-exam h3{color:#a28e53;font-size:22px;margin-bottom:3px;}
 .block-h-exam p{color:#373340;font-size:16px;line-height:24px;margin-bottom:10px;}
@@ -875,14 +877,14 @@ PROPIEDADES HOME EXAMS
 .filter-exams{position:absolute;top:32px;right:18px;padding-top:0px !important;}
 .filter-exams p{color:#6cd9d7 !important;font-size:14px !important;text-align:right;}
 .filter-exams p>span{background:url(../img/arrow_down.png) center right no-repeat;display:blocK;padding-right:41px;cursor:pointer;}
-.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;}
+.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;box-shadow: 0px 10px 20px 0px rgb( 0, 0, 0 );}
 .opc-filter .radio{margin-bottom:0 !important;margin-top:0 !important;margin-left:-18px;}
 .opc-filter div {margin-left:-10px;}
 .opc-filter div span{color:#bbb5bb;cursor:pointer;}
 .opc-filter input[type="checkbox"]:checked + label + span{color:#6cd9d7;}
 
-.opc-filter input[type="checkbox"] + label::before {width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px 0px;padding-right:17px;margin-left:0;top:5px;}
-.opc-filter input[type="checkbox"]:checked + label::before{width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px -10px;padding-right:17px;margin-left:0;top:5px;}
+.opc-filter input[type="checkbox"] + label::before {width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px 0px;padding-right:17px;margin-left:0;top:5px;background-size:10px;}
+.opc-filter input[type="checkbox"]:checked + label::before{width:10px !important;height:10px !important;background:url(../img/radio_opt.png) no-repeat;background-position:0px -10px;padding-right:17px;margin-left:0;top:5px;background-size:10px;}
 
 .opc-filter input[type="submit"],.opc-filter button[type="checkbox"]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;border:none;margin-top:9px;}
 
@@ -975,7 +977,7 @@ PROPIEDADES CUERPO NEWSLETTER
 .block-news div a{color:#47b6c7;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;line-height:21px;}
 .block-news div p{color:#373340;font-size:14px;}
 
-#newsletter-form .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;}
+#newsletter-form .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;background-size:28px;}
 #newsletter-form .custom-select.error{border:1px solid #ea575b;}
 
 
@@ -1006,7 +1008,7 @@ PROPIEDADES CUERPO CORPUS
 .graficas-corpus h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-top:36px;}
 .graficas-corpus h3{color:#373340;font-size:20px;}
 .graficas-corpus p{color:#373340;font-size:16px;}
-.graficas-corpus img{/*height:152px;*/max-width:100%;fill:red;}
+.graficas-corpus img{/*height:152px;*/max-width:100%;}
 .graficas-corpus-inside{padding-left:36px;padding-right:36px;}
 
 .cont_gall_corpus{width:100%;min-height:157px;background-repeat:no-repeat;background:#ffe745;padding:10px;text-align:left;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;box-shadow: 0 3px 0 #ffce00;margin-bottom:3px;}
@@ -1016,8 +1018,8 @@ PROPIEDADES CUERPO CORPUS
 .bottom-corpus h2{margin-top:72px;}
 .slider-corpus{margin-top:36px;margin-left:25px;margin-right:25px;position:relative;}
 .slider-corpus .bx-wrapper .bx-viewport{background:#f8f7f7;}
-.prev_corpus{position:absolute;left:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px 0px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;left:-25px;}
-.next_corpus{position:absolute;right:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px -31px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;right:-25px;}
+.prev_corpus{position:absolute;left:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px 0px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;left:-25px;background-size:17px;}
+.next_corpus{position:absolute;right:0;top:50%;margin-top:-15px;display:block;background-image:url(../img/arrow_corpus.png);background-position:0px -31px;background-repeat:no-repeat;text-indent:-99999px;width:17px;height:31px;right:-25px;background-size:17px;}
 
 .img-slider-corpus img{max-width:100%;}
 .content-slider-corpus>div{padding-left:10px;}
@@ -1094,9 +1096,9 @@ PROPIEDADES CUERPO CONTACT
 #contact-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
 #contact-form .help-block{color:#ea575b;font-size:12px;position:absolute;right:-18px;top:0;}
 #contact-form label{display:none;}
-#contact-form input{border:none;color:#47b6c7;border:1px solid #ffffff;}
+#contact-form input{border:none;color:#47b6c7;border:1px solid #ffffff;-webkit-appearance:none;}
 #contact-form input.error{border:1px solid #ea575b;}
-#contact-form textarea{border:none;border:1px solid #ffffff;color:#47b6c7;}
+#contact-form textarea{border:none;border:1px solid #ffffff;color:#47b6c7;-webkit-appearance:none;}
 #contact-form textarea.error{border:1px solid #ea575b;}
 #contact-form select{border:none;}
 #contact-form .form-group{position:relative;}
@@ -1108,17 +1110,17 @@ PROPIEDADES CUERPO CONTACT
 #contact-form  .checkbox p{margin-top:-25px;font-size:14px;}
 #contact-form .checkbox a{color:#ea575b;}
 
-.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:148px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;}
-.select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;}
+.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:148px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;background-size:18px;}
+.select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
 .select_cities:focus{text-decoration:none;color:#ffffff;}
-.opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;}
+.opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
 .desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:148px;display:none;}
 .desplg_cities ul{margin:0;padding:0;}
 .desplg_cities ul li{list-style:none;color:#bbb5bb !important;height:36px;line-height:36px;cursor:pointer;}
 .opc-offices{position:absolute;width:148px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
 
-#contact-form  .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;}
+#contact-form  .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;background-size:28px;background-size:28px;}
 #contact-form  .custom-select.error{border:1px solid #ea575b;}
 
 
@@ -1255,13 +1257,13 @@ PROPIEDADES CUERPO CURSO SUPPLEMENTARY
 
 .list-courses-sup{margin-bottom:36px;}
 
-.opc_levels{margin-bottom:32px;display:block;width:100%;height:100%;text-align:center;}
-.opc_levels a{text-align:center;display:inline-block;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:18px;width:11.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:80px;}
-.opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;width:95%;margin:0 auto;padding-bottom:20px;background-position:center 82%;background-repeat:no-repeat;}
+.opc_levels{margin-bottom:32px;display:table;width:100%;height:100%;text-align:center;}
+.opc_levels a{text-align:center;display:table-cell;color:#bbbbbb;font-family:'latoitalic', Helvetica, sans-serif;font-size:18px;width:11.5%;vertical-align:bottom;margin-left:0.25%;margin-right:0.25%;height:70px;vertical-align:bottom;background-position:center 54px;background-repeat:no-repeat;}
+.opc_levels a span{/*background:url(../img/line_up_sup.png) center 80% no-repeat;*/display:block;margin:0 auto;padding-bottom:20px;}
 /*.opc_levels a:first-child span{background-position:center 89%;}*/
 .opc_levels a:hover{color:#666666;}
-.opc_levels a.active{}
-.opc_levels a.active span{/*background:url(../img/line_down_sup.png)center bottom no-repeat;*/padding-bottom:20px;background-position:center bottom;background-repeat:no-repeat;}
+.opc_levels a.active{background-position:center 61px;background-repeat:no-repeat;}
+.opc_levels a.active span{/*background:url(../img/line_down_sup.png)center bottom no-repeat;*/padding-bottom:20px;}
 
 .indicador{background:none !important;padding:0 !important;}
 
@@ -1295,13 +1297,13 @@ PROPIEDADES CUERPO APPS
 
 .slider-app{margin-top:-40px;margin-bottom:-40px;box-shadow:0 11px 11px #ddd;left:-20px;position:relative;}
 .slider-app #nav-slider{height:auto;}
-.slider-app .bx-wrapper .bx-pager.bx-default-pager a{background:url(../img/bullet_app.png);background-position:0px 0px;background-repeat:no-repeat;}
+.slider-app .bx-wrapper .bx-pager.bx-default-pager a{background:url(../img/bullet_app.png);background-position:0px 0px;background-repeat:no-repeat;background-size:10px;}
 .slider-app .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px -10px;}
 
 .content-apps .bx-controls {display: block !important;}
 /*.content-apps .bx-controls-direction {bottom: -10px;position: absolute;width: 100%;}*/
 
-.slider-app .bx-wrapper .bx-controls-direction a {height: 15px;text-indent: -9999px;bottom: 0;width: 9px;margin-top:0px;}
+.slider-app .bx-wrapper .bx-controls-direction a {height: 15px;text-indent: -9999px;bottom: 0;width: 9px;margin-top:0px;background-size:9px;}
 .slider-app .bx-wrapper .bx-prev {background: url(../img/arrow_app.png) no-repeat 0 0px;left: -20px;}
 .slider-app .bx-wrapper .bx-next {background: url(../img/arrow_app.png) no-repeat  0 -15px;right: -20px;}
 
@@ -1532,6 +1534,9 @@ input[type="submit"],button[type="submit"],input[type="submit"]:focus,button[typ
 .links a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
 .small-h1{font-size:45px;}
 select, select:focus{outline:none !important;}
+input[type=text]{-webkit-appearance:none;}
+input[type=email]{-webkit-appearance:none;}
+textarea{-webkit-appearance:none;}
 
 
 /**********************************
@@ -1558,6 +1563,7 @@ input[type="radio"] + label::before {
 	height:10px;
 	background:url(../img/radio_opt.png) no-repeat;
 	background-position:0px 0px;
+	background-size:10px;
 }
 
 input[type="radio"]:checked + label::before {
@@ -1573,6 +1579,7 @@ input[type="radio"]:checked + label::before {
 	height:10px;
 	background:url(../img/radio_opt.png) no-repeat;
 	background-position:0px -10px;
+	background-size:10px;
 }
 
 #foo:checked::before,
@@ -1653,6 +1660,18 @@ MEDIA QUERIES
 	.inside-img-exam-serie img{margin-left:auto;margin-right:auto;left:0;right:0;}
 	#event-form input[type="submit"], #newsletter-form button[type="submit"]{margin-top:18px;}
 	#event-form .checkbox{margin-bottom:0px;}
+	.titul-office h3{font-size:19px;line-height:20px;}
+	.titul-office p{font-size:12px;margin-top:5px;}
+	.opc-offices{width:138px;}
+	.select_cities{width:138px;}
+	.desplg_cities{width:138px;}
+	.computer{padding-left:5px;padding-right:5px;}
+	.tablet{padding-left:5px;padding-right:5px;}
+	.whiteboard{padding-left:5px;padding-right:5px;}
+	.on-line{padding-left:5px;padding-right:5px;}
+	.off-line{padding-left:5px;padding-right:5px;}
+	
+	.image-event{height:50px;}
 	
 }
 
@@ -1742,6 +1761,8 @@ MEDIA QUERIES
 	.content-exams{padding-top:40px;}
 	#migas{display:none;}
 	.cab-page{bottom:0;}
+	#header{height:214px;}
+	#content-home{margin-top:-170px;}
 	.content-exam-serie-c .top-product{height:275px !important;}
 	.inside-img-exam-serie-c{margin-top:-235px;}
 	.inside-img-exam-serie-c img{bottom:-110px;}
@@ -1777,9 +1798,14 @@ MEDIA QUERIES
 	
 	.link_contest{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.logo_cet{margin-top:0;}
+	.cab-page .container h1{font-size:50px;}
 	
-	
-
+	.image-event img{
+		max-width: 100%;
+		width: 150px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 	
 }
 
@@ -1794,7 +1820,7 @@ MEDIA QUERIES
 	.inside-img-product img{/*bottom:-198px;*/width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
 	.top-product{height:335px;}
 	.menu-sec-product ul li{text-align:center;}
-	.custom-select select{width:120%;}
+	/*.custom-select select{width:120%;}*/
 	.inside-img-exam-serie img{bottom:-150px;}
 	
 	.img-catalogues{width:100% !important;float:left;}
@@ -1812,14 +1838,27 @@ MEDIA QUERIES
 	
 	.inside-img-exam-serie-c img{position:relative;bottom:0px;margin-bottom:-30px;margin-top:25px;right:0px;}
 	.inside-img-exam-serie-c{height:auto;text-align:center;margin-top:0px;}
+	
+	/******** 2-10-2014 ********/
+	/*#content-home{margin-top:-208px;}*/
+	#submenus-mob-prodct ul li a{height:35px;line-height:35px;font-size:14px !important;}
+	.block-cat-digital{padding-top:18px;}
+	.cont-product{padding:60px 18px 0;}
+	.cont-component{padding:60px 18px 0;}
+	.cont-recurso-p{padding: 60px 18px 150px;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
-	#submenus-mob-prodct ul li a{font-size:24px;}
+	#submenus-mob-prodct ul li a{font-size:22px;}
+	.titul-office h3{font-size:17px;line-height:20px;}
+	.titul-office p{font-size:11px;margin-top:0px;}
+	.opc-offices{width:118px;}
+	.select_cities{width:118px;}
+	.desplg_cities{width:118px;}
 }
 
 @media (max-width: 480px) {
-	#header{height:216px;}
+	#header{height:214px;}
 	/*.cab-page{bottom:0;}
 	#migas {display:none;}*/
 	/*.graficas-corpus img{height:auto;max-width:100%;}	*/
@@ -1844,7 +1883,7 @@ MEDIA QUERIES
 	#submenus-mob-prodct{top:166px;}
 	/*.top-product{height:295px;}*/
 	
-	#submenus-mob-prodct ul li a{font-size:20px;}
+	#submenus-mob-prodct ul li a{font-size:18px;}
 	.img-slider-corpus img{margin:0 auto;}
 	
 	.block-product{padding-top:0px !important;}
@@ -1875,8 +1914,8 @@ MEDIA QUERIES
 	
 	.inside-img-product img{margin-bottom:-50px;}
 	
-	#content-home{margin-top:-172px;}
-	#slider{height:468px;}
+	#slider{height:416px;}
+	.colum-slider{padding-left:0px;padding-right:0;}
 	.cont_gall{height:468px;}
 	#cont-slider{
 		top:auto;
@@ -1893,7 +1932,76 @@ MEDIA QUERIES
 	.custom-search:before {font-size:35px;}
 	.custom-flag:before {font-size:35px;}
 	.custom-close:before {font-size:35px;}
+	.mobile-menus{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
+	.desplegable-sub{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
+	.inside_graf_ess p{left:auto;right:30px;}
+	#submenus-mob-prodct{top:191px;}
+	#top-header ul li .desplegable-sub{top:42px;}
 	
+	/******* 2-10-2014  *******/
+	#content-home{margin-top:-172px;}
+	#top-header > .container{padding-left:0px;padding-right:0px;}
+	
+	#destacado_sup .thumbnails h2{font-size:26px;line-height:30px;}
+	#destacado_sup .thumbnails p{font-size:16px;line-height:18px;}
+	
+	.cat_mid h2{font-size:18px;}
+	.cat_mid p{font-size: 16px;line-height: 16px;margin-top: 4px}
+	
+	.thumbnail-anim h2{font-size:26px;line-height:30px;}
+	.thumbnail-anim p{font-size:16px;line-height:18px;}
+	
+	.rrss_link ul li a{height:60px;width:60px;line-height:60px;font-size:30px;border-radius:30px;}
+	.rrss_link{margin-bottom:40px;}
+	.contact_link a{font-size:16px;height:50px;line-height:50px;border-radius:25px;}
+	#row_rrss{padding-bottom:22px;}
+	#top_footer h3{font-size:16px;margin-bottom:10px;}
+	#top_footer ul li a{font-size:16px;line-height:24px;}
+	#top_footer ul li{margin-bottom:8px;line-height:24px;}
+	.copy_foot{font-size:14px;}
+	
+	.cab-page .container h1{left:20px;}
+	.small-h1{font-size:30px;line-height:30px;}
+	
+	#submenus-mob-prodct > a{padding-left:5px;font-size:16px;}
+	#submenus-mob-prodct > a::before{width:30px;height: 50px;line-height: 48px;}
+	
+	.list-menu-mob ul li ul li a{font-size: 14px;height: 35px !important;line-height: 35px !important;}
+	
+	.menu-sec-product ul li a{font-size:22px;line-height:32px;}
+	table.default tr td p{font-size:12px;line-height:14px;}
+	.center-teacher h2{font-size:22px;}	
+	.centre-d-c .checkbox p{font-size:16px;margin-top:-26px;}
+	.teacher-p .checkbox p{font-size:16px;margin-top:-26px;}
+	
+	.logo_cet{width:160px;}
+	.block-h-exam img{width:250px;}
+	.block-h-exam h3{font-size:24px;}
+	.block-h-exam p{line-height:20px;}
+	.block-h-exam a{font-size:16px;}
+	
+	.cat_mid{margin-bottom:9px;}
+	.colum-mini-cat{margin-bottom:9px;}
+	.titul-office{margin-bottom:5px;}
+	
+	.inside_graf_ess p{font-family:'latoregular', Helvetica, sans-serif !important;}
+	.colum-cefs h3{font-size:20px;}
+	.bottom-corpus > a{height:auto;padding-top:5px;padding-bottom:5px;line-height:16px;padding-top: 5px;padding-bottom: 5px;border-radius: 18px;margin-top: -8px}
+	.graficas-corpus-inside{padding-left:18px;padding-right:18px;}
+	.image-event{margin-bottom:20px;margin-top:20px;}
+	
+	.cont-product{padding:60px 18px 0;}
+	.cont-component{padding:60px 18px 0;}
+	.cont-recurso-p{padding: 60px 18px 150px;}
+	.list-home-exams div.block-h-exam{height:auto !important;}
+	.cab-page .container h1{font-size:40px;}
+	.opc_levels a{font-size:15px;}
+	
+	
+}
+
+@media (max-width: 400px){
+	.inside_graf_ess p{left:auto;right:20px;font-size:14px;}
 }
 
 
@@ -1907,6 +2015,8 @@ MEDIA QUERIES
 	.content-course-sup .inside-img-product img {bottom: -158px;width: 240px !important;}
 	.inside-img-generico img{bottom:40px;width:142px;}
 	.inside-img-generico img{bottom:0px;}
+	.inside_graf_ess img{width:75px;}
+	.inside_graf_ess p{font-size:13px;}
 }
 
 
@@ -1932,4 +2042,10 @@ MEDIA QUERIES
 	
 	.inside-recurso{height:auto !important;}
 	#submenus-mob-prodct ul li a{font-size:18px;}
+	/*.cab-page .container h1{font-size:40px;top:74px;}Preguntar*/
+	.poster-frame a{width:55px;height:55px;line-height:55px;margin-top:-28px;margin-top:-28px;}
+	.poster-frame a span:before{font-size:30px;top:9px;}
+	.inside_graf_ess img{left:10px;}
+	.inside_graf_ess p{right:10px;}
+	.graficas-corpus img{display: block;height: 90px;margin: 0 auto;margin-left: -9px;max-width:auto;}
 }

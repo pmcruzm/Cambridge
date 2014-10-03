@@ -67,6 +67,20 @@ jQuery(window).load(function(){
 		});
 	}
 	
+	//Igualar todos los bloques de exámenes home
+	if (jQuery('.list-home-exams').is(":visible") ) {	 
+		//Listado cursos
+		var heights = jQuery('.list-home-exams div.block-h-exam').map(function ()
+		{
+			return jQuery(this).outerHeight();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros 
+		maxHeight = Math.max.apply(null, heights);
+		jQuery('.list-home-exams .block-h-exam').each(function() {	 
+			jQuery(this).css('height',maxHeight);	
+		});
+	}
+	
 });
 
 jQuery(document).ready(function(){
@@ -92,8 +106,8 @@ jQuery(document).ready(function(){
 		//Pintamos la flecha up por defecto
 		var image_up=up_svg('#bfb9b9');
 		var encoded = window.btoa(image_up);
-		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-		
+		//jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		jQuery('.opc_levels a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		//Pintamos la flecha down
 		//Obtenemos el color
 		var color;
@@ -105,8 +119,8 @@ jQuery(document).ready(function(){
 		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
-		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-		
+		//jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		jQuery('.opc_levels a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 	}
 	
 	//Flechas custom componentes.html
@@ -138,18 +152,17 @@ jQuery(document).ready(function(){
 			var salida="";
 			if(texto.indexOf('(@)')){
 				salida = texto.replace('(@)','<span class="candado">k</span>');
-				/*for(var i=0;i<texto.length;i++){
-					if(texto[i]=='%'){
-						salida=salida+'<span class="candado">k</span>';
-					}else{
-						salida=salida+texto[i];
-					}
-				}*/
 			}else{
 				salida=texto;	
 			}
 			jQuery(this).html(salida);
 		});
+	}
+	
+	//Ajustar título de cabecera
+	if (jQuery('.cab-page .container h1').is(":visible") ) {	
+		var altura_h1=jQuery('.cab-page .container h1').height();
+		jQuery('.cab-page .container h1').css('margin-top', -(altura_h1/2));
 	}
 	
 	//Reiniciar Scroll a 0
@@ -162,9 +175,17 @@ jQuery(document).ready(function(){
 	});
 	jQuery(window).scroll(control_scroll);
 	
+	//Obtenemos altura y anchura del navegador
+	var h_win=window.innerHeight;
+	var w_win=window.innerWidth;
+		
 	//Obtenemos ancho clase container y ajustamos flecha up
 	w_container=jQuery('.container').width();
-	jQuery('.up-window').css({marginLeft:(w_container-50)});
+	if(w_win<481){
+		jQuery('.up-window').css({marginLeft:(w_container-60)});
+	}else{
+		jQuery('.up-window').css({marginLeft:(w_container-50)});
+	}
 	
 	//Menú principal y submenús
 	jQuery(document).on("mouseenter",".main-menu > li,.other-menu > li,.mobile-tab > li", function(e) {	
@@ -191,7 +212,7 @@ jQuery(document).ready(function(){
 	});
 	
 	//Menú multilanguage eventos táctiles
-	jQuery(document).on('touchstart',".other-menu li > a", function(e) {	
+	jQuery(document).on('touchstart',".other-menu > li > a", function(e) {	
 		e.preventDefault();
 		if(!jQuery(this).parent().hasClass('active')){
 			jQuery('.other-menu li').removeClass('active');
@@ -277,43 +298,47 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		var tipo = jQuery(this).parent().index();
 		var enlace=jQuery(this).attr('href');
-		if(enlace=='#'){
-			
-			var submenus=jQuery(this).parent().find('ul');
-			if (jQuery(submenus).is(":visible") ) {
-				jQuery(submenus).stop().clearQueue().slideToggle(600);
-				jQuery(this).parent().removeClass('active');
-			} else { 
-				//jQuery(this).parent().addClass('active');
-				//Buscamos el cuadro que esté abierto y lo cerramos 
-				var cerrar=jQuery('.list-menu-mob ul li.active');
-				//jQuery('.list-menu-mob ul li ul').hide();
-				jQuery(submenus).css({display:'none'}).slideDown(600,function(){jQuery(this).parent().addClass('active');});
-				jQuery(cerrar).find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');});
-				//Cambiamos banners según contenido 
-				switch (tipo){
-					case 0:
-						jQuery('.banner-nosotros').show();
-						jQuery('.banner-catalogo').hide();
-						jQuery('.banner-teacher').hide();
-					break;
-					case 1:
-						jQuery('.banner-nosotros').hide();
-						jQuery('.banner-catalogo').show();
-						jQuery('.banner-teacher').hide();
-					break;
-					case 2:
-						jQuery('.banner-nosotros').hide();
-						jQuery('.banner-catalogo').hide();
-						jQuery('.banner-teacher').show();
-					break;
-				}
-			}
+		if(jQuery(this).hasClass('open')){
+			top.location.href=enlace;	
 		}else{
-			top.location.href=enlace;
+			if(jQuery(this).parent().find('ul').length > 0) {
+				var submenus=jQuery(this).parent().find('ul');
+				jQuery(this).addClass('open');
+				if (jQuery(submenus).is(":visible") ) {
+					jQuery(submenus).stop().clearQueue().slideToggle(600);
+					jQuery(this).parent().removeClass('active');
+				} else { 
+					//jQuery(this).parent().addClass('active');
+					//Buscamos el cuadro que esté abierto y lo cerramos 
+					var cerrar=jQuery('.list-menu-mob ul li.active');
+					//jQuery('.list-menu-mob ul li ul').hide();
+					jQuery(submenus).css({display:'none'}).slideDown(600,function(){jQuery(this).parent().addClass('active');});
+					jQuery(cerrar).find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');});
+					jQuery(cerrar).find('a').removeClass('open');
+					//Cambiamos banners según contenido 
+					switch (tipo){
+						case 0:
+							jQuery('.banner-nosotros').show();
+							jQuery('.banner-catalogo').hide();
+							jQuery('.banner-teacher').hide();
+						break;
+						case 1:
+							jQuery('.banner-nosotros').hide();
+							jQuery('.banner-catalogo').show();
+							jQuery('.banner-teacher').hide();
+						break;
+						case 2:
+							jQuery('.banner-nosotros').hide();
+							jQuery('.banner-catalogo').hide();
+							jQuery('.banner-teacher').show();
+						break;
+					}
+				}
+			}else{
+				top.location.href=enlace;
+			}
 		}
 	});
-	
 	
 	//Menú Offices Contact
 	jQuery(document).on('click',".opc-offices a", function(e) {	
@@ -990,7 +1015,8 @@ jQuery(document).ready(function(){
 		//jQuery('.opc_levels a span.indicador').remove();
 		var image_up=up_svg('#bfb9b9');
 		var encoded = window.btoa(image_up);
-		jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		//jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		jQuery('.opc_levels a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery(this).addClass('active');
 		var color;
 		if(jQuery('#custom-color').length>0){
@@ -1001,7 +1027,8 @@ jQuery(document).ready(function(){
 		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
-		jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		//jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+		jQuery('.opc_levels a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		//jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
 		//Cerramos un bloque y mostramos el siguiente 
 		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
@@ -1031,7 +1058,11 @@ jQuery(document).ready(function(){
 		
 		//Obtenemos ancho clase container y ajustamos flecha up
 		w_container=jQuery('.container').width();
-		jQuery('.up-window').css({marginLeft:(w_container-50)});
+		if(w_win<481){
+			jQuery('.up-window').css({marginLeft:(w_container-60)});
+		}else{
+			jQuery('.up-window').css({marginLeft:(w_container-50)});
+		}
 		
 		//Fix version mobile slider home
 		if ( jQuery("#slider").is(":visible") ) {
@@ -1041,6 +1072,12 @@ jQuery(document).ready(function(){
 			var aux=total_slider*width_slider;
 			jQuery(".scroll-slider").css('width',(total_slider*width_slider));
 			jQuery(".inside-slider").css('width',(width_slider));
+		}
+		
+		//Ajustar título de cabecera
+		if (jQuery('.cab-page .container h1').is(":visible") ) {	
+			var altura_h1=jQuery('.cab-page .container h1').height();
+			jQuery('.cab-page .container h1').css('margin-top', -(altura_h1/2));
 		}
 		
 	});
