@@ -45,10 +45,10 @@ PROPIEDADES CABECERA
 .mobile-tab li.active a{background:#ffffff;text-decoration:none;}
 
 .other-menu{}
-.other-menu li a{padding-left:9px !important;padding-right:9px !important;margin-top:-1px;}
+.other-menu li a{padding-left:9px !important;padding-right:9px !important;}
 .other-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
 
-#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:43px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
+#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
 #top-header ul li .desplegable-sub .container{padding-left:27px;}
 #top-header ul li .desplegable-sub.active{display:block;}
 .desplegable-sub ul{float:inherit !important;}
@@ -599,7 +599,7 @@ PROPIEDADES CUERPO NOSOTROS
 PROPIEDADES CUERPO TEAM
 ******************************/
 
-.cab-team{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);height:235px;width:100%;}
+.cab-team{background-repeat:no-repeat;background-position:center center;height:235px;width:100%;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 
 .cont-team{padding:24px 18px 150px;}
 .cont-team >div {padding-left:18px;padding-right:18px;}
@@ -628,8 +628,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 #course-menu{display:table-cell;vertical-align:middle;}
 .menu-sec-product ul{margin:0;padding:0;}
 .menu-sec-product ul li{list-style:none;}
-.menu-sec-product ul li a{color:#ffffff;font-size:22px;line-height:28px;}
-.menu-sec-product ul li a:hover{opacity:0.8; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.menu-sec-product ul li a{color:rgba(255,255,255,1);font-size:21px;line-height:28px;}
+.menu-sec-product ul li a:hover{color:rgba(255,255,255,0.8);}
 .menu-sec-product ul li.active a{font-family:'latobold', Helvetica, sans-serif;}
 .menu-product{margin-top:-18px !important;}
 
@@ -684,7 +684,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .component-product h3{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-bottom:5px;}
 .component-product ul{padding: 0px;margin-left:-21px;}
 .component-product ul li{list-style:none;padding-left:40px;}
-.component-product ul li:hover{opacity:0.9;-webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.component-product ul li:hover{opacity:0.9;}
 .component-product ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-28px;width: 30px;font-size:29px;height:30px;line-height:30px;}
 .component-product ul li a{font-family:'latoregular', Helvetica, sans-serif;margin-top:-29px;display:block;font-size:16px;}
 .block-ver-mas{text-align:center;padding-top:23px;}
@@ -698,16 +698,24 @@ PROPIEDADES CUERPO HOME PRODUCT
 .digital-product h2{font-size:32px;}
 .digital-product ul{padding: 0px;margin-left:-18px;margin-top:24px;}
 .digital-product ul li{list-style:none;padding-left:40px;}
-.digital-product ul li:hover{opacity:0.9;-webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.digital-product ul li:hover{opacity:0.9;}
 .digital-product ul li:before{content: "\62";font-family:'icomoon', Helvetica, sans-serif;display: inline-block;margin-left:-28px;width: 30px;font-size:29px;height:30px;line-height:30px;}
 .digital-product ul li a{font-family:'latoregular', Helvetica, sans-serif;margin-top:-29px;display:block;font-size:16px;}
 .digital-product ul li a:hover{color:inherit;}
 
-.esample-product{padding-top:36px;padding-bottom:100px;background:#ffffff;}
+.esample-product{padding-top:36px;padding-bottom:100px;}
 .inside-component{padding-left:18px;padding-right:18px;}
 .esample-product h2{font-size:32px;}
 .esample-product p{color:#373340;font-size:16px;margin-top:24px;}
 .esample{padding-left:30px !important;padding-right:30px !important;}
+
+
+.recurso-prog-product{padding-top:36px;padding-bottom:100px;background:#ffffff;}
+.inside-component{padding-left:18px;padding-right:18px;}
+.recurso-prog-product h2{font-size:31px;word-wrap: break-word;}
+.recurso-prog-product p{color:#373340;font-size:16px;margin-top:24px;padding-right:15px;margin-bottom:24px;}
+.recurso-prog-product a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+/*.esample{padding-left:30px !important;padding-right:30px !important;}*/
 
 .content-product{padding-bottom:90px;}
 
@@ -1476,6 +1484,8 @@ PROPIEDADES CUSTOM THEMES
 .select-comp h3 a.active{color:#47b6c7 !important;}
 .links a{background-color:#47b6c7 !important;}
 .opc_levels a.active{color:#47b6c7 !important;}
+.esample-product.theme-color h2{color:#20718c !important;}
+.recurso-prog-product.theme-color h2{color:#20718c !important;}
 
 
 /******************************
@@ -1877,6 +1887,7 @@ MEDIA QUERIES
 	
 	.block-ver-mas img {display:none;}
 	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
+	.recurso-prog-product a{display:block;width:220px;margin:0 auto;margin-top:18px;}
 	
 	.block-ver-mas{text-align:center;}
 	.menu-sec-product { padding-top: 40px;}
