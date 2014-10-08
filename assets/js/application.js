@@ -169,8 +169,40 @@ jQuery(document).ready(function(){
 	jQuery('body').scrollTo( "0px", 0,function(){
 		//Pillar anclas de la url si las hay 
 		var hash = window.location.hash.substring(1);
-		if(hash!=""){
-			jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo'});
+		if(hash!=""){//
+			if(jQuery('.cont-component').is(":visible") ) {
+				//buscamos si es de alumno o de profesor 
+				if(jQuery('.block-alum').find('#'+hash).length>0){
+					//Si es alumno 
+					jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo',offset: -50});
+				}else{
+				//Si es profesor
+				//Pintamos la flecha up por defecto
+				var image_up=up_svg_large('#bfb9b9');
+				var encoded = window.btoa(image_up);
+				jQuery('.alumno').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+				jQuery('.profesor').addClass('active');
+				//Pintamos la flecha down
+				var color;
+				if(jQuery('#custom-color').length>0){
+					color=jQuery('#custom-color').attr('data-color');
+					if(color==""){color='#47b6c7';}
+				}else{
+					color='#47b6c7';
+				}
+				var image_down=down_svg_large(color);
+				var encoded = window.btoa(image_down);
+				jQuery('.profesor').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
+				jQuery('.alumno').removeClass('active');
+					jQuery('.block-alum').stop().clearQueue().fadeOut(400,function(){
+						jQuery('.block-prof').stop().clearQueue().fadeIn(400,function(){
+							jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo',offset: -50});	
+						});
+					});
+				}
+			}else{
+				jQuery('body').stop().clearQueue().scrollTo(jQuery('#'+hash),800,{axis:'y',easing:'easeInOutExpo'});
+			}
 		}
 	});
 	jQuery(window).scroll(control_scroll);

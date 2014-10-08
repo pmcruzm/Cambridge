@@ -714,7 +714,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .inside-component{padding-left:18px;padding-right:18px;}
 .recurso-prog-product h2{font-size:31px;word-wrap: break-word;}
 .recurso-prog-product p{color:#373340;font-size:16px;margin-top:24px;padding-right:15px;margin-bottom:24px;}
-.recurso-prog-product a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
+.recurso-prog-product a{display:inline-block;color:#ffffff !important;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
 /*.esample{padding-left:30px !important;padding-right:30px !important;}*/
 
 .content-product{padding-bottom:90px;}
@@ -740,8 +740,8 @@ PROPIEDADES CUERPO COMPONENT PRODUCT
 .inside-box-compt{background:#ffffff;padding:18px;position:relative;padding-bottom:30px;}
 .inside-box-compt h4{font-size:16px;font-family:'latobold', Helvetica, sans-serif;margin-top:0;}
 .inside-box-compt p{color:#373340;font-size:16px;line-height:21px;}
-.inside-box-compt+a{display:block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
-.inside-box-compt+a:hover{text-decoration:none;color:#ffffff;}
+.inside-box-compt+a{display:block;color:#ffffff !important;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;width:130px;margin-left:18px;position:relative;margin-top:-13px}
+.inside-box-compt+a:hover{text-decoration:none;color:#ffffff !important;}
 .cont-component .inside-box-compt img{box-shadow:0 11px 11px #ddd;margin-left:30px;position:relative;width:157px;}
 
 /************************************
