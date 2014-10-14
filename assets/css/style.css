@@ -38,7 +38,7 @@ PROPIEDADES CABECERA
 #top-header ul.main-menu li:nth-child(4).active a{background:none;text-decoration:none;color:#d1fffe;}
 #top-header ul.main-menu li:nth-child(5).active a{background:none;text-decoration:none;color:#d1fffe;}
 
-.main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;}
+.main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;}
 
 .mobile-tab{display:none;}
 .mobile-tab li a{padding-left:9px !important;padding-right:9px !important;}
@@ -75,6 +75,7 @@ PROPIEDADES CABECERA
 .select-lang .desplegable-sub ul li a:hover{background:#6cd9d7 !important;text-decoration:none !important;}
 .select-lang .desplegable-sub ul li.active-lang a{background:#6cd9d7 !important;cursor:default;}
 .box-lang{text-align:right;position:relative;overflow:hidden;}
+.txt-lang-ico{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;position:relative;padding-left:3px;top:-4px;}
 
 
 
@@ -1658,7 +1659,9 @@ MEDIA QUERIES
 	.mini-cards{}
 	.cat_mid{height:110px;}
 	.block_cards{position:relative;margin-top:-340px;}
-	#top-header ul li a{padding-left:9px;padding-right:9px;}
+	#top-header ul li a{padding-left:7px;padding-right:7px;}
+	.main-menu > li > a{font-size:14px;}
+	.txt-lang-ico{font-size:14px;top:-5px;}
 	.reduce-input .form-group{padding-right:5px;padding-left:5px;}
 	.content-digital .inside-box-compt img{margin-left:0px;position:relative;width:200px;}
 	.inside-img-product img{bottom:-80px;}
@@ -1684,6 +1687,9 @@ MEDIA QUERIES
 	.off-line{padding-left:5px;padding-right:5px;}
 	
 	.image-event{height:50px;}
+	.other-menu li a{
+	padding-left: 7px !important;
+    padding-right: 7px !important;}
 	
 }
 
@@ -1818,6 +1824,8 @@ MEDIA QUERIES
 		padding-top: 20px;
 		padding-bottom: 20px;
 	}
+	
+	.txt-lang-ico{display:none;}
 	
 }
 
