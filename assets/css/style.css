@@ -94,7 +94,7 @@ PROPIEDADES CABECERA
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
 .cab-page .container{position:relative;height:170px;overflow:hidden;}
-.cab-page .container h1{position:absolute; z-index: 907;color:#7be6e4;font-size:70px;left:44px;margin:0;top:50%;}
+.cab-page .container h1{position:absolute; z-index: 907;color:#9efff8;font-size:70px;left:44px;margin:0;top:50%;}
 
 /*Cuadros cabecera*/
 .primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;/*left: 184px;*/left:18.96%;top: 102px;/*width: 250px;*/width:25.77%;height: 66px;z-index: 906;}
