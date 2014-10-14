@@ -75,7 +75,7 @@ PROPIEDADES CABECERA
 .select-lang .desplegable-sub ul li a:hover{background:#6cd9d7 !important;text-decoration:none !important;}
 .select-lang .desplegable-sub ul li.active-lang a{background:#6cd9d7 !important;cursor:default;}
 .box-lang{text-align:right;position:relative;overflow:hidden;}
-.txt-lang-ico{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;position:relative;padding-left:3px;top:-4px;}
+.txt-lang-ico{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;position:relative;padding-left:3px;top:-4px;-webkit-font-smoothing:initial;-moz-osx-font-smoothing:initial}
 
 
 
