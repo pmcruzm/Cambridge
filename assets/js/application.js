@@ -119,7 +119,6 @@ jQuery(document).ready(function(){
 		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
-		//jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery('.opc_levels a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 	}
 	
@@ -340,10 +339,8 @@ jQuery(document).ready(function(){
 					jQuery(submenus).stop().clearQueue().slideToggle(600);
 					jQuery(this).parent().removeClass('active');
 				} else { 
-					//jQuery(this).parent().addClass('active');
 					//Buscamos el cuadro que esté abierto y lo cerramos 
 					var cerrar=jQuery('.list-menu-mob ul li.active');
-					//jQuery('.list-menu-mob ul li ul').hide();
 					jQuery(submenus).css({display:'none'}).slideDown(600,function(){jQuery(this).parent().addClass('active');});
 					jQuery(cerrar).find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');});
 					jQuery(cerrar).find('a').removeClass('open');
@@ -418,29 +415,9 @@ jQuery(document).ready(function(){
 					  	  autoHover: true,
 						  pause: 5000,
 						  onSlideNext: function(slideElement, oldIndex, newIndex){
-							  //alert('OnSlidenext-'+touch_gall); 
 							  if(device=='yes' && (touch_gall!=1)){
 									if(newIndex!=(pag_slider+1)){
 										pag_slider=parseInt(newIndex+1);
-										/*if(pag_slider==1){
-											//slider.goToSlide(pag_slider-1);
-											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											//jQuery('.arrow-prev').css({visibility:'hidden'});
-											//jQuery('.arrow-next').css({visibility:'visible'});
-										}else{
-											//Comprobamos si es la última
-											if(total_slider==pag_slider){
-												//slider.goToSlide(pag_slider-1);
-												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-												//jQuery('.arrow-prev').css({visibility:'visible'});
-												//jQuery('.arrow-next').css({visibility:'hidden'});
-											}else{
-												//slider.goToSlide(pag_slider-1);
-												jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-												//jQuery('.arrow-prev').css({visibility:'visible'});
-												//jQuery('.arrow-next').css({visibility:'visible'});
-											}
-										}*/
 										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 										//pintamos el bullet correspondiente
 										jQuery('#nav-slider ul li a').removeClass('active');
@@ -460,31 +437,9 @@ jQuery(document).ready(function(){
 							  touch_gall=0; 	
 						  },
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
-							 //alert('onSlidePrev-'+touch_gall); 
 							 if(device=='yes' && (touch_gall!=1)){
 								if(pag_slider!=(newIndex)){
 									pag_slider=parseInt(newIndex+1);
-									
-									/*if(pag_slider==1){
-										//slider.goToSlide(pag_slider-1);
-										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-										//jQuery('.arrow-prev').css({visibility:'hidden'});
-										//jQuery('.arrow-next').css({visibility:'visible'});
-									}else{
-										//Comprobamos si es la última
-										if(total_slider==pag_slider){
-											//slider.goToSlide(pag_slider-1);
-											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											//jQuery('.arrow-prev').css({visibility:'visible'});
-											//jQuery('.arrow-next').css({visibility:'hidden'});
-										}else{
-											//slider.goToSlide(pag_slider-1);
-											jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-											//jQuery('.arrow-prev').css({visibility:'visible'});
-											//jQuery('.arrow-next').css({visibility:'visible'});
-										}
-									}*/
-									
 									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 									//pintamos el bullet correspondiente
 									jQuery('#nav-slider ul li a').removeClass('active');
@@ -513,26 +468,12 @@ jQuery(document).ready(function(){
 		touch_gall=1;
 		slider.goToNextSlide();
 		var current = slider.getCurrentSlide();
-		/*if(total_slider==pag_slider+1){
-			pag_slider=pag_slider+1; 
-			//Movemos contenidos
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-			//Deshabilitamos siguiente
-			//jQuery('.arrow-next').css({visibility:'hidden'});
-		}else{
-			pag_slider=pag_slider+1;
-			//Movemos contenidos
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-			//pintamos el bullet correspondiente
-		}*/
 		pag_slider=parseInt(current+1);
 		//Movemos contenidos
 		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 		//pintamos el bullet correspondiente
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-		//Habilitamos anterior
-		//jQuery('.arrow-prev').css({visibility:'visible'});	
 	});	
 		
 	//Retroceder a la siguiente pantalla del slider 
@@ -541,23 +482,11 @@ jQuery(document).ready(function(){
 			touch_gall=1;
 			slider.goToPrevSlide();
 			var current = slider.getCurrentSlide();
-			/*if(pag_slider-1==1){
-				pag_slider=pag_slider-1;
-				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-				//Deshabilitamos siguiente
-				//jQuery('.arrow-prev').css({visibility:'hidden'});			
-			}else{
-				pag_slider=pag_slider-1;
-				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-				//pintamos el bullet correspondiente
-			}*/
 			pag_slider=parseInt(current+1);
 			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-			//Habilitamos siguiente
-			//jQuery('.arrow-next').css({visibility:'visible'});
 	});
 	
 	//Cuando pulsas sobre uno de los bullets del slider de la home
@@ -570,26 +499,6 @@ jQuery(document).ready(function(){
 				jQuery(this).addClass('active');
 				pag=parseInt(pag);
 				touch_gall=1;
-				//Comprobamos si es la primera página
-				/*if(pag==1){
-					slider.goToSlide(pag-1);
-					jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-					//jQuery('.arrow-prev').css({visibility:'hidden'});
-					//jQuery('.arrow-next').css({visibility:'visible'});
-				}else{
-					//Comprobamos si es la última
-					if(total_slider==pag){
-						slider.goToSlide(pag-1);
-						jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-						//jQuery('.arrow-prev').css({visibility:'visible'});
-						//jQuery('.arrow-next').css({visibility:'hidden'});
-					}else{
-						slider.goToSlide(pag-1);
-						jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
-						//jQuery('.arrow-prev').css({visibility:'visible'});
-						//jQuery('.arrow-next').css({visibility:'visible'});
-					}
-				}*/
 				slider.goToSlide(pag-1);
 				jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag),400,{axis:'x',easing:'easeInOutExpo'});
 				pag_slider=pag;
@@ -600,36 +509,6 @@ jQuery(document).ready(function(){
 	if ( jQuery(".video-youtube").is(":visible") ) {
 		jQuery(".video-youtube").fitVids();
 	}
-	
-	//Menú sidebar lateral
-	/*jQuery(document).on("click",".block-submenus>ul>li>a", function(e) {
-		e.preventDefault();
-		var actual=jQuery(this);
-		var enlace =jQuery(this).attr('href');
-		if(!jQuery(this).parent().hasClass('active')) {
-			//Comprobamos que tiene ul a continuación
-			if (jQuery(this).parent().find('ul').length > 0) {
-				//Comprobamos si el que está activo tienen ul
-				if (jQuery('.block-submenus>ul>li.active').find('ul').length > 0) {
-					var cerrar=jQuery('.block-submenus>ul>li.active>ul');
-					jQuery(actual).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
-					//Cerramos bloque abierto
-					jQuery(cerrar).parent().addClass('type-light').find('ul').stop().clearQueue().slideToggle(600,function(){jQuery(cerrar).removeClass('active');jQuery(cerrar).parent().removeClass('active').removeClass('type-light');});
-				}else{
-					jQuery('.block-submenus>ul>li').removeClass('active');	
-					jQuery(this).parent().addClass('active').find('ul').css({display:'none'}).slideDown(600);
-				}
-			}else{
-				top.location.href=enlace;	
-			}
-		}else{
-			//Si está activo el enlace y no tiene ul
-			if (jQuery(this).parent().find('ul').length == 0) {
-				top.location.href=enlace;	
-			}
-		}
-		top.location.href=enlace;
-	});*/
 	
 	//Cambiar Alumno-Profesor componente producto
 	jQuery(document).on("click",".select-comp a", function(e) {
@@ -933,7 +812,6 @@ jQuery(document).ready(function(){
 		}).get(),
 		//Obtenemos tamaño max de los cuadros 
 		maxHeight = Math.max.apply(null, heights);
-		//console.log(maxHeight);
 		//Recorremos todos los cuadros 
 		 jQuery('.box-recursos div.inside-recurso').each(function() {
 		 	var altura=jQuery(this).height();
@@ -1044,10 +922,8 @@ jQuery(document).ready(function(){
 		block_open++;
 		//Eliminamos active 
 		jQuery('.opc_levels a').removeClass('active');
-		//jQuery('.opc_levels a span.indicador').remove();
 		var image_up=up_svg('#bfb9b9');
 		var encoded = window.btoa(image_up);
-		//jQuery('.opc_levels a span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery('.opc_levels a').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery(this).addClass('active');
 		var color;
@@ -1059,9 +935,7 @@ jQuery(document).ready(function(){
 		}
 		var image_down=down_svg(color);
 		var encoded = window.btoa(image_down);
-		//jQuery('.opc_levels a.active span').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		jQuery('.opc_levels a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
-		//jQuery(this).find('span').prepend('<span class="indicador">Level </span>');
 		//Cerramos un bloque y mostramos el siguiente 
 		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
 			//Eliminamos el height residual 
@@ -1190,7 +1064,6 @@ function control_scroll(e){
 			jQuery('.up-window').stop().clearQueue().fadeIn(400);
 			if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(document).height() - h_foot + 20) {
 			var despl=jQuery(window).scrollTop() + jQuery(window).height() - (jQuery(document).height() - h_foot)
-			//console.log(despl);
 				jQuery('.up-window').css({bottom:(20+despl)});
 		   }else{
 				jQuery('.up-window').css({bottom:20});
@@ -1198,7 +1071,6 @@ function control_scroll(e){
 		}else{
 			if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(document).height() - h_foot) {
 			var despl=jQuery(window).scrollTop() + jQuery(window).height() - (jQuery(document).height() - h_foot)
-			//console.log(despl);
 				jQuery('.up-window').css({bottom:(20+despl)});
 		   }else{
 				jQuery('.up-window').css({bottom:20});
@@ -1433,13 +1305,11 @@ function down_svg(color){
 
 //Funcion para pintar svg up
 function up_svg_large(color){
-	//return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1524.223 0 3674.363 74.41" enable-background="new -1524.223 0 3674.363 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2150.139,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1524.223,74.41 -1524.223,57.874 231.498,57.874 297.64,0 363.782,57.874 2150.139,57.874"/></g></g></svg>';
 	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1568.974 0 3733.228 74.41" enable-background="new -1568.974 0 3733.228 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="2164.254,74.41 355.514,74.41 297.64,24.803 239.766,74.41 -1568.974,74.41 -1568.974,57.874 231.498,57.874 297.64,0 363.782,57.874 2164.254,57.874"/></g></g></svg>'
 }
 
 //Funcion para pintar svg up
 function down_svg_large(color){
-	//return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="0 0 595.28 74.41" enable-background="new 0 0 595.28 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1524.224,0.001 270.401,0.001 328.275,49.608 386.149,0.001 2150.139,0.001 2150.139,16.538 394.418,16.538 328.275,74.411 262.134,16.538 -1524.224,16.537"/></g></g></svg>';
 	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1544.88 0 3685.039 74.41" enable-background="new -1544.88 0 3685.039 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1544.88,0 239.765,0 297.639,49.607 355.513,0 2140.159,0 2140.159,16.536 363.782,16.536 297.639,74.41 231.498,16.536 -1544.88,16.536"/></g></g></svg>';
 }
 
