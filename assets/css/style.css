@@ -63,7 +63,7 @@ PROPIEDADES CABECERA
 .select-lang .desplegable-sub ul li a:hover{background:#6cd9d7 !important;text-decoration:none !important;}
 .select-lang .desplegable-sub ul li.active-lang a{background:#6cd9d7 !important;cursor:default;}
 .box-lang{text-align:right;position:relative;overflow:hidden;}
-.txt-lang-ico{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;position:relative;padding-left:3px;top:-5px;-webkit-font-smoothing:initial;-moz-osx-font-smoothing:initial}
+.txt-lang-ico{font-family:'latoregular', Helvetica, sans-serif !important;font-size:13px;position:relative;padding-left:3px;top:-5px;-webkit-font-smoothing:initial;-moz-osx-font-smoothing:initial}
 
 
 
@@ -1027,18 +1027,18 @@ PROPIEDADES CUERPO CONTACT
 
 .content-contact{padding-bottom:90px;}
 
-.head-office{height:160px;margin-top:18px;}
-.head-office [class*="col-"]{height:160px;}
-.sales-office{height:160px;margin-top:9px;}
-.sales-office [class*="col-"]{height:160px;}
+.head-office{height:200px;margin-top:18px;}
+.head-office [class*="col-"]{height:200px;}
+.sales-office{height:200px;margin-top:9px;}
+.sales-office [class*="col-"]{height:200px;}
 .cover-office{background:#ffffff;padding:6px;margin-left:9px;margin-right:9px;}
 
-.titul-office{background:#fff673;display:table; height:147px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:100%;}
+.titul-office{background:#fff673;display:table; height:187px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;width:100%;}
 .titul-office > div{display:table-cell;vertical-align:middle;width:100%;height:100%;text-align:center;}
 .titul-office h3{margin:0;color:#20718c;font-size:22px;}
 .titul-office p{font-size:14px;color:#20718c;font-family:'latoregular', Helvetica, sans-serif;line-height:14px;width:90%;margin:0 auto;margin-top:10px;}
 
-.info-office{display:table; height:147px;}
+.info-office{display:table; height:187px;}
 .info-office > div{display:table-cell;vertical-align:middle;width:100%;height:100%;padding-left:18px;}
 .info-office p{margin-bottom:0;color:#373340;font-size:16px;margin-top:3px;}
 .info-office p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
@@ -1048,7 +1048,7 @@ PROPIEDADES CUERPO CONTACT
 .info-office [id*="office_"].active{display:block;}
 
 
-.form-contact{margi}
+.form-contact{}
 #contact-form{padding-right:18px;}
 #contact-form > div{position:relative;}
 #contact-form h3{color:#373340;font-size:16px;font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;margin-bottom:18px;}
@@ -1068,18 +1068,24 @@ PROPIEDADES CUERPO CONTACT
 #contact-form  .checkbox p{margin-top:-25px;font-size:14px;}
 #contact-form .checkbox a{color:#ea575b;}
 
-.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:148px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;background-size:18px;}
+.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:178px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;background-size:18px;}
 .select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
 .select_cities:focus{text-decoration:none;color:#ffffff;}
 .opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
-.desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:148px;display:none;}
+.desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:178px;display:none;}
 .desplg_cities ul{margin:0;padding:0;}
 .desplg_cities ul li{list-style:none;color:#bbb5bb !important;height:36px;line-height:36px;cursor:pointer;}
-.opc-offices{position:absolute;width:148px;margin-left:auto;margin-right:auto;left:0;right:0;}
+.opc-offices{position:absolute;width:178px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
 
 #contact-form  .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;background-size:28px;background-size:28px;}
 #contact-form  .custom-select.error{border:1px solid #ea575b;}
+
+.desplg_cities select{border:none;background:#ffffff;}
+.desplg_cities select option{color:#bbb5bb !important;padding-left:10px;padding-right:10px;word-wrap: break-word;font-size:14px;width:178px; word-break:break-word;padding-top:7px;padding-bottom:7px;}
+.desplg_cities select option:focus{background:red;color:#ffffff;}
+.info-city-office{display:none;}
+.info-city-office:first-child{display:block;}
 
 
 /**************************************
@@ -1587,7 +1593,7 @@ MEDIA QUERIES
 	.block_cards{position:relative;margin-top:-340px;}
 	#top-header ul li a{padding-left:7px;padding-right:7px;}
 	.main-menu > li > a{font-size:14px;}
-	.txt-lang-ico{font-size:14px;top:-5px;}
+	.txt-lang-ico{font-size:12px;top:-6px;}
 	.reduce-input .form-group{padding-right:5px;padding-left:5px;}
 	.content-digital .inside-box-compt img{margin-left:0px;position:relative;width:200px;}
 	.inside-img-product img{bottom:-80px;}
@@ -1603,9 +1609,9 @@ MEDIA QUERIES
 	#event-form .checkbox{margin-bottom:0px;}
 	.titul-office h3{font-size:19px;line-height:20px;}
 	.titul-office p{font-size:12px;margin-top:5px;}
-	.opc-offices{width:138px;}
-	.select_cities{width:138px;}
-	.desplg_cities{width:138px;}
+	.opc-offices{width:148px;}
+	.select_cities{width:148px;}
+	.desplg_cities{width:148px;}
 	.computer{padding-left:5px;padding-right:5px;}
 	.tablet{padding-left:5px;padding-right:5px;}
 	.whiteboard{padding-left:5px;padding-right:5px;}
@@ -1748,9 +1754,9 @@ MEDIA QUERIES
 @media (max-width: 640px) {
 	.select-lang .desplegable-sub p{display:block;text-align:center;margin-right:0;}
 	.select-lang .desplegable-sub ul{float:inherit !important;display:block;text-align:center;width:100%;}
-	.select_cities{width:130px;}
-	.desplg_cities{width:130px;}
-	.opc-offices{width:130px;}
+	.select_cities{width:170px;}
+	.desplg_cities{width:170px;}
+	.opc-offices{width:170px;}
 	
 	.inside-img-product{height:auto;}
 	.inside-img-product img{width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
@@ -1786,9 +1792,9 @@ MEDIA QUERIES
 	#submenus-mob-prodct ul li a{font-size:22px;}
 	.titul-office h3{font-size:17px;line-height:20px;}
 	.titul-office p{font-size:11px;margin-top:0px;}
-	.opc-offices{width:118px;}
-	.select_cities{width:118px;}
-	.desplg_cities{width:118px;}
+	.opc-offices{width:148px;}
+	.select_cities{width:148px;}
+	.desplg_cities{width:148px;}
 }
 
 @media (max-width: 480px) {

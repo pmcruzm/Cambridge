@@ -101,6 +101,18 @@ jQuery(document).ready(function(){
 		jQuery('.block-cookies').show();
 	}
 	
+	//Cargar título del cuadro de contacto
+	if (jQuery('.info-office').is(":visible") ) {
+		var name_prov=jQuery('.opc-offices a span').html();
+		var language=jQuery('html').attr('lang');
+		//Añadimos título y mostramos el cuadro actual
+		if(language=="es"){
+			jQuery('.info-city-office:first').prepend( "<h4 class='titul_office'>Oficina para "+name_prov+":</h4>");
+		}else{
+			jQuery('.info-city-office:first').prepend( "<h4 class='titul_office'>Office for "+name_prov+":</h4>" );
+		}
+	}
+	
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
 		//Pintamos la flecha up por defecto
@@ -382,17 +394,37 @@ jQuery(document).ready(function(){
 	});
 	
 	//Cuando se pulsa sobre una ciudad de sales office
-	jQuery(document).on("click",".desplg_cities li", function(e) {	
+	jQuery(document).on("change",".desplg_cities select", function(e) {	
 		e.preventDefault();
-		var ciudad=jQuery(this).html();
-		var indice=jQuery(this).index();
-		jQuery('.opc-offices a span').html(ciudad);
-		jQuery('.info-city-office').removeClass('active');
-		jQuery('#office_'+indice).addClass('active');
-		jQuery('.opc-offices').find('.desplg_cities').stop().clearQueue().slideToggle(400,function(){
-			jQuery('.opc-offices').removeClass('active');
-		});
 		
+		var text_prov=jQuery(".desplg_cities select option:selected").text();
+		var opc_prov=jQuery(this).val();
+		
+		//Reemplazamos en el botón y cerramos desplegable
+		jQuery('.opc-offices').removeClass('active');
+		jQuery('.desplg_cities').stop().clearQueue().slideToggle(400);
+		jQuery('.opc-offices a span').html(capitaliseFirstLetter(text_prov));
+		
+		//Recorremos todos los cuadros hasta encontrar
+		//una coincidencia.
+		jQuery('.info-city-office').each(function() {
+			var list_pro=jQuery(this).attr('data-provinces');
+			var array_prov=list_pro.split("|");
+			var language=jQuery('html').attr('lang');
+			if(array_prov.indexOf(opc_prov)!=-1){
+				//Cerramos todos los cuadros 
+				jQuery('.info-city-office').hide();
+				jQuery( ".titul_office" ).remove();
+				//Añadimos título y mostramos el cuadro actual
+				if(language=="es"){
+					jQuery(this).prepend( "<h4 class='titul_office'>Oficina para "+capitaliseFirstLetter(text_prov)+":</h4>");
+				}else{
+					jQuery(this).prepend( "<h4 class='titul_office'>Office for "+capitaliseFirstLetter(text_prov)+":</h4>" );
+				}
+				jQuery(this).show();
+				return false;
+			}
+		});
 	});
 	
 	
@@ -1311,6 +1343,12 @@ function up_svg_large(color){
 //Funcion para pintar svg up
 function down_svg_large(color){
 	return '<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="872px" height="9px" viewBox="-1544.88 0 3685.039 74.41" enable-background="new -1544.88 0 3685.039 74.41" xml:space="preserve"><g><g><polygon fill="'+color+'" points="-1544.88,0 239.765,0 297.639,49.607 355.513,0 2140.159,0 2140.159,16.536 363.782,16.536 297.639,74.41 231.498,16.536 -1544.88,16.536"/></g></g></svg>';
+}
+
+//Convertir nombres provincias
+function capitaliseFirstLetter(string)
+{
+    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
 
 
