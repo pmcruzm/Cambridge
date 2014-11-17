@@ -35,16 +35,18 @@ PROPIEDADES CABECERA
 .other-menu{}
 .other-menu li a{padding-left:9px !important;padding-right:9px !important;}
 .other-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
+.other-menu li.active-right a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
 
 #top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
 #top-header ul li .desplegable-sub .container{padding-left:27px;}
 #top-header ul li .desplegable-sub.active{display:block;}
+#top-header ul li .desplegable-sub.active-right{display:block;}
 .desplegable-sub ul{float:inherit !important;}
 .desplegable-sub ul li{display:block !important;}
 .desplegable-sub ul li a{height:auto !important;line-height:18px !important;padding-left:0 !important;padding-right:0 !important;margin-left:0px !important;margin-bottom:9px;color:#20718c !important;}
 .desplegable-sub ul li a:hover{text-decoration:none !important;color:#47b6c7 !important;}
 .desplegable-sub .banner-cat{display:block;height:100%;width:100%;}
-.desplegable-sub .banner-cat a{height:auto !important;line-height:auto !important;padding-left:0px !important;padding-right:0px !important;display:block !important;margin-left:0px !important;}
+.desplegable-sub .banner-cat a{height:auto !important;line-height:normal !important;padding-left:0px !important;padding-right:0px !important;display:block !important;margin-left:0px !important;}
 .desplegable-sub img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;max-width:100%;display: block;height: auto;}
 
 .navbar-toggle .icon-bar {background-color: #22738e;}
@@ -77,7 +79,7 @@ PROPIEDADES CABECERA
 .mobile-menus img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;}
 .list-menu-mob ul li ul{display:none;margin-left:18px !important;}
 .mobile-menus .banner-cat{display:block;height:100%;width:100%;}
-.mobile-menus .banner-cat a{height:auto !important;line-height:auto !important;padding-left:0px !important;padding-right:0px !important;display:block !important;margin-left:0px !important;}
+.mobile-menus .banner-cat a{height:auto !important;line-height:normal !important;padding-left:0px !important;padding-right:0px !important;display:block !important;margin-left:0px !important;}
 .mobile-menus .banner-cat a img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius:8px;max-width:100%;display: block;height: auto;}
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
@@ -161,7 +163,7 @@ PROPIEDADES CUERPO SEARCH
 ******************************/
 
 #migas{background:#ffffff;position:absolute;bottom:0;width:100%;height:36px;}
-#migas .breadcrumb:before{content:'j';display:inline-block;width:19px;height:36px;margin-right:18px;float:left;line-height:36px;font-family:'icomoon',Helvetica,sans-serif;color:#c6c6c6;font-size:26px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;text-transform: none;-webkit-font-smoothing:antialiased;}
+#migas .breadcrumb li:first-child a:before{content:'j';display:inline-block;width:19px;height:36px;margin-right:18px;float:left;line-height:36px;font-family:'icomoon',Helvetica,sans-serif;color:#c6c6c6;font-size:26px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;text-transform: none;-webkit-font-smoothing:antialiased;}
 #migas .breadcrumb{background:none;margin-bottom:0;height:36px;padding-bottom:0;padding-top:0;}
 #migas .breadcrumb > li + li:before{content: "r";font-family:'icomoon', Helvetica, sans-serif;font-size:11px;color:#fff673;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height:36px;text-transform: none;-webkit-font-smoothing:antialiased;}
 #migas .breadcrumb > li{height:36px;line-height:36px;}
@@ -188,7 +190,7 @@ PROPIEDADES CUERPO SEARCH
 #formulario-search-pag .radio span{cursor:pointer;}
 
 #search_words{background:#ffffff;height:54px;}
-#search_words h2{margin:0;height:54;line-height:54px;font-size:20px;color:#bdb7bd;}
+#search_words h2{margin:0;height:54px;line-height:54px;font-size:20px;color:#bdb7bd;}
 #search_words h2 span{color:#20718c;margin-left:18px;}
 
 #search_list{padding-top:18px;}
@@ -1068,21 +1070,21 @@ PROPIEDADES CUERPO CONTACT
 #contact-form  .checkbox p{margin-top:-25px;font-size:14px;}
 #contact-form .checkbox a{color:#ea575b;}
 
-.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:178px;background:#47b6c7 url(../img/arrow_down_c.png) 90% 50% no-repeat;margin:0 auto;margin-top:8px;background-size:18px;}
-.select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
+.select_cities{color:#ffffff;height:36px;line-height:36px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;display:block;width:220px;background:#47b6c7 url(../img/arrow_down_c.png) 96% 50% no-repeat;margin:0 auto;margin-top:8px;background-size:18px;}
+.select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 96% 50% no-repeat;background-size:18px;}
 .select_cities:focus{text-decoration:none;color:#ffffff;}
-.opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 90% 50% no-repeat;background-size:18px;}
+.opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 96% 50% no-repeat;background-size:18px;}
 .desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:178px;display:none;}
 .desplg_cities ul{margin:0;padding:0;}
 .desplg_cities ul li{list-style:none;color:#bbb5bb !important;height:36px;line-height:36px;cursor:pointer;}
-.opc-offices{position:absolute;width:178px;margin-left:auto;margin-right:auto;left:0;right:0;}
+.opc-offices{position:absolute;width:220px;margin-left:auto;margin-right:auto;left:0;right:0;}
 .sales-office h3{margin-top:-36px;}
 
 #contact-form  .custom-select{background: #47b6c7 url(../img/arrow_down_select.png) right center no-repeat;border: 1px solid #47b6c7;background-size:28px;background-size:28px;}
 #contact-form  .custom-select.error{border:1px solid #ea575b;}
 
-.desplg_cities select{border:none;background:#ffffff;}
-.desplg_cities select option{color:#bbb5bb !important;padding-left:10px;padding-right:10px;word-wrap: break-word;font-size:14px;width:178px; word-break:break-word;padding-top:7px;padding-bottom:7px;}
+.desplg_cities select{border:none;background:#ffffff;width:220px;text-transform:uppercase;}
+.desplg_cities select option{color:#bbb5bb !important;word-wrap:break-word;font-size:14px;word-break:break-word;padding-top:7px;padding-bottom:7px;}
 .desplg_cities select option:focus{background:red;color:#ffffff;}
 .info-city-office{display:none;}
 .info-city-office:first-child{display:block;}
@@ -1327,7 +1329,18 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH TEACHER
 .more-cont-camb-en-teach a{color:#988b56;font-family:'latoregular', Helvetica, sans-serif;}
 .more-cont-camb-en-teach a:hover{color:#988b56;}
 
-
+/*****************************
+PROPIEDADES SITEMAP
+******************************/
+#sitemap_cont{padding-top:60px;padding-bottom:250px;}
+.colum-sitemap{margin-bottom:35px;}
+.colum-sitemap h2{color:#6cd9d7;font-size:22px;}
+.colum-sitemap h3{color:#6cd9d7;font-size:22px;}
+.colum-sitemap ul{margin:0;padding:0;}
+.colum-sitemap ul li{list-style:none;margin-bottom:6px;}
+.colum-sitemap ul li a{color:#373340;font-size:16px;line-height:16px;}
+.colum-sitemap .box-sitemap{margin-top:45px;}
+	
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -1359,9 +1372,9 @@ PROPIEDADES FOOTER
 .logo_foot{float:left;}
 .copy_foot{float:right;color:#ffffff;font-size:12px;}
 .copy_foot a{color:#ffffff;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
-.copy_foot a:hover{color:#acebf7;}
+.copy_foot a:hover{color:#acebf7;text-decoration:none;}
 .copy_foot a:before{content: "/";padding: 0 5px;color:#ffffff !important;}
-.copy_foot a:hover{color:#fffffff !important;text-decoration:none;}
+/*.copy_foot a:hover{color:#fffffff !important;text-decoration:none;}*/
 
 /***********************
 PROPIEDADES UP-WINDOW
@@ -1609,9 +1622,11 @@ MEDIA QUERIES
 	#event-form .checkbox{margin-bottom:0px;}
 	.titul-office h3{font-size:19px;line-height:20px;}
 	.titul-office p{font-size:12px;margin-top:5px;}
-	.opc-offices{width:148px;}
-	.select_cities{width:148px;}
-	.desplg_cities{width:148px;}
+	.opc-offices{width:168px;}
+	.select_cities{width:168px;font-size:12px;}
+	.desplg_cities{width:168px;}
+	.desplg_cities select{width:168px;}
+	.desplg_cities select option{font-size:12px;}
 	.computer{padding-left:5px;padding-right:5px;}
 	.tablet{padding-left:5px;padding-right:5px;}
 	.whiteboard{padding-left:5px;padding-right:5px;}
@@ -1713,7 +1728,7 @@ MEDIA QUERIES
 	.inside-img-exam-serie-c{margin-top:-235px;}
 	.inside-img-exam-serie-c img{bottom:-110px;}
 	
-	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:auto;display:block;width:420px;}
+	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:none;display:block;width:420px;}
 	
 	.img-catalogues{width:50% !important;float:left;}
 	.cont-catalogues{width:50% !important;float:left;}
@@ -1754,9 +1769,14 @@ MEDIA QUERIES
 @media (max-width: 640px) {
 	.select-lang .desplegable-sub p{display:block;text-align:center;margin-right:0;}
 	.select-lang .desplegable-sub ul{float:inherit !important;display:block;text-align:center;width:100%;}
-	.select_cities{width:170px;}
+	/*.select_cities{width:170px;}
 	.desplg_cities{width:170px;}
-	.opc-offices{width:170px;}
+	.opc-offices{width:170px;}*/
+	.opc-offices{width:168px;}
+	.select_cities{width:168px;font-size:12px;}
+	.desplg_cities{width:168px;}
+	.desplg_cities select{width:168px;}
+	.desplg_cities select option{font-size:12px;}
 	
 	.inside-img-product{height:auto;}
 	.inside-img-product img{width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
@@ -1790,11 +1810,11 @@ MEDIA QUERIES
 
 @media (min-width: 481px) and (max-width: 639px) {
 	#submenus-mob-prodct ul li a{font-size:22px;}
-	.titul-office h3{font-size:17px;line-height:20px;}
+	/*.titul-office h3{font-size:17px;line-height:20px;}
 	.titul-office p{font-size:11px;margin-top:0px;}
 	.opc-offices{width:148px;}
 	.select_cities{width:148px;}
-	.desplg_cities{width:148px;}
+	.desplg_cities{width:148px;}*/
 }
 
 @media (max-width: 480px) {
@@ -1926,6 +1946,11 @@ MEDIA QUERIES
 	.cab-page .container h1{font-size:40px;}
 	.opc_levels a{font-size:15px;}
 	
+	.opc-offices{width:198px;}
+	.select_cities{width:198px;font-size:14px;}
+	.desplg_cities{width:198px;}
+	.desplg_cities select{width:198px;}
+	.desplg_cities select option{font-size:14px;}
 	
 }
 
@@ -1976,5 +2001,5 @@ MEDIA QUERIES
 	.poster-frame a span:before{font-size:30px;top:9px;}
 	.inside_graf_ess img{left:10px;}
 	.inside_graf_ess p{right:10px;}
-	.graficas-corpus img{display: block;height: 90px;margin: 0 auto;margin-left: -9px;max-width:auto;}
+	.graficas-corpus img{display: block;height: 90px;margin: 0 auto;margin-left: -9px;max-width:none;}
 }

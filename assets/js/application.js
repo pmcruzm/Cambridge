@@ -102,7 +102,7 @@ jQuery(document).ready(function(){
 	}
 	
 	//Cargar título del cuadro de contacto
-	if (jQuery('.info-office').is(":visible") ) {
+	/*if (jQuery('.info-office').is(":visible") ) {
 		var name_prov=jQuery('.opc-offices a span').html();
 		var language=jQuery('html').attr('lang');
 		//Añadimos título y mostramos el cuadro actual
@@ -111,7 +111,7 @@ jQuery(document).ready(function(){
 		}else{
 			jQuery('.info-city-office:first').prepend( "<h4 class='titul_office'>Office for "+name_prov+":</h4>" );
 		}
-	}
+	}*/
 	
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
@@ -235,6 +235,8 @@ jQuery(document).ready(function(){
 		jQuery('.main-menu li').removeClass('active');
 		jQuery('.other-menu li').removeClass('active');
 		jQuery('.desplegable-sub').removeClass('active');
+		jQuery('.other-menu li').removeClass('active-right');
+		jQuery('.desplegable-sub').removeClass('active-right');
 		jQuery( this ).addClass('active');
 		jQuery( this ).find('.desplegable-sub').addClass('active');
 	}).on("mouseleave",".main-menu > li,.other-menu > li,.mobile-tab > li", function(e) {
@@ -252,6 +254,12 @@ jQuery(document).ready(function(){
 	}).on("mouseleave",".select-lang", function(e) {
 		jQuery( this ).removeClass('active');
 		jQuery( this ).find('.desplegable-sub').removeClass('active');
+	});
+	
+	//Evitar fallo en el botón derecho del ratón	
+	jQuery(document).on("mousedown",".other-menu .desplegable-sub", function(e) {	
+		jQuery( this ).addClass('active-right');
+		jQuery( this ).parent().addClass('active-right');
 	});
 	
 	//Menú multilanguage eventos táctiles
@@ -403,24 +411,25 @@ jQuery(document).ready(function(){
 		//Reemplazamos en el botón y cerramos desplegable
 		jQuery('.opc-offices').removeClass('active');
 		jQuery('.desplg_cities').stop().clearQueue().slideToggle(400);
-		jQuery('.opc-offices a span').html(capitaliseFirstLetter(text_prov));
+		jQuery('.opc-offices a span').html(text_prov);
+		//jQuery('.opc-offices a span').html(capitaliseFirstLetter(text_prov));
 		
 		//Recorremos todos los cuadros hasta encontrar
 		//una coincidencia.
 		jQuery('.info-city-office').each(function() {
 			var list_pro=jQuery(this).attr('data-provinces');
 			var array_prov=list_pro.split("|");
-			var language=jQuery('html').attr('lang');
+			//var language=jQuery('html').attr('lang');
 			if(array_prov.indexOf(opc_prov)!=-1){
 				//Cerramos todos los cuadros 
 				jQuery('.info-city-office').hide();
-				jQuery( ".titul_office" ).remove();
+				//jQuery( ".titul_office" ).remove();
 				//Añadimos título y mostramos el cuadro actual
-				if(language=="es"){
+				/*if(language=="es"){
 					jQuery(this).prepend( "<h4 class='titul_office'>Oficina para "+capitaliseFirstLetter(text_prov)+":</h4>");
 				}else{
 					jQuery(this).prepend( "<h4 class='titul_office'>Office for "+capitaliseFirstLetter(text_prov)+":</h4>" );
-				}
+				}*/
 				jQuery(this).show();
 				return false;
 			}
@@ -1050,6 +1059,19 @@ jQuery(document).ready(function(){
 	//Previene link de idioma actual 
 	jQuery(document).on("click",".active-lang a", function(e) {
 		e.preventDefault();	
+	});
+	
+	//Previene link de idioma actual 
+	jQuery( ".resource-module table a" ).on( "click", function(e) {
+		e.preventDefault();	
+	//comprueba que la url es externa y por lo tanto ha de abrirse en ventana nueva:
+		if( jQuery(this).attr('href').indexOf("http") === 0 ) {
+			//Link externo
+			window.open(jQuery(this).attr('href'), "_blank");
+		}else{
+			//Link interno 
+			 window.open(jQuery(this).attr('href'),"_self");
+		}
 	});
 	
 	//Enlaces laterales
