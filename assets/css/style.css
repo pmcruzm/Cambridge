@@ -1340,6 +1340,17 @@ PROPIEDADES SITEMAP
 .colum-sitemap ul li{list-style:none;margin-bottom:6px;}
 .colum-sitemap ul li a{color:#373340;font-size:16px;line-height:16px;}
 .colum-sitemap .box-sitemap{margin-top:45px;}
+
+/*****************************
+PROPIEDADES SITEMAP 2
+******************************/
+#sitemap_cont{padding-top:60px;padding-bottom:250px;}
+.fila-links{margin-bottom:45px;}
+.ori-sitemap h2{margin-top:0px;}
+.ori-sitemap h2 a{color:#6cd9d7;font-size:22px;}
+.rest-sitemap ul{margin:0;padding:0;}
+.rest-sitemap ul li{list-style:none;margin-bottom:10px;}
+.rest-sitemap ul li a{color:#373340;font-size:16px;line-height:16px;}
 	
 /*****************************
 PROPIEDADES FOOTER
@@ -1951,6 +1962,8 @@ MEDIA QUERIES
 	.desplg_cities{width:198px;}
 	.desplg_cities select{width:198px;}
 	.desplg_cities select option{font-size:14px;}
+	
+	.fila-links{text-align:center;}
 	
 }
 
