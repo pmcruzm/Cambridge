@@ -181,7 +181,7 @@ jQuery(document).ready(function(){
 		//Pillar anclas de la url si las hay 
 		var hash = window.location.hash.substring(1);
 		if(hash!=""){//
-			if(jQuery('.cont-component').is(":visible") ) {
+			if(jQuery('.select-comp').is(":visible") ) {
 				//buscamos si es de alumno o de profesor 
 				if(jQuery('.block-alum').find('#'+hash).length>0){
 					//Si es alumno 
