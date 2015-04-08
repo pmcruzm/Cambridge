@@ -37,7 +37,7 @@ PROPIEDADES CABECERA
 .other-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
 .other-menu li.active-right a{background:#ffffff;text-decoration:none;color:#47b6c7 !important;}
 
-#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
+#top-header ul li .desplegable-sub{position:absolute;background:#ffffff;z-index:99;top:44px;left:0;width:100%;padding:20px 0px;display:none;min-height:209px;}
 #top-header ul li .desplegable-sub .container{padding-left:27px;}
 #top-header ul li .desplegable-sub.active{display:block;}
 #top-header ul li .desplegable-sub.active-right{display:block;}
@@ -69,7 +69,7 @@ PROPIEDADES CABECERA
 
 
 
-.mobile-menus{position:absolute;background:#ffffff;z-index:9999;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
+.mobile-menus{position:absolute;background:#ffffff;z-index:99;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
 .mobile-menus .container{padding-left:27px;}
 .menu-mob .mobile-menus.active{display:block;}
 .mobile-menus ul{float:inherit !important;}
@@ -84,18 +84,18 @@ PROPIEDADES CABECERA
 
 .cab-page{position:absolute;bottom:36px;width:100%;height:170px;}
 .cab-page .container{position:relative;height:170px;overflow:hidden;}
-.cab-page .container h1{position:absolute; z-index: 907;color:#9efff8;font-size:70px;left:44px;margin:0;top:50%;}
+.cab-page .container h1{position:absolute; z-index: 97;color:#9efff8;font-size:70px;left:44px;margin:0;top:50%;}
 
 /*Cuadros cabecera*/
-.primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left:18.96%;top: 102px;width:25.77%;height: 66px;z-index: 906;}
+.primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left:18.96%;top: 102px;width:25.77%;height: 66px;z-index: 96;}
 	
-.segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 2.37%;top: 46px;width:73.60%;height: 135px;z-index: 905;}
+.segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 2.37%;top: 46px;width:73.60%;height: 135px;z-index: 95;}
 	
-.tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;left: 1.64%;top: 142px;width:86.28%;height: 49px;z-index: 904;}
+.tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;left: 1.64%;top: 142px;width:86.28%;height: 49px;z-index: 94;}
 	
-.cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 27.93%;top: 82px;width:71.85%;height: 112px;z-index: 903;}
+.cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 27.93%;top: 82px;width:71.85%;height: 112px;z-index: 93;}
 	
-.quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;width:37.93%;height: 115px;z-index: 902;}
+.quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;width:37.93%;height: 115px;z-index: 92;}
 
 /*****************************
 PROPIEDADES CUERPO HOME
@@ -106,7 +106,7 @@ PROPIEDADES CUERPO HOME
 #slider .bx-wrapper .bx-viewport{background:none !important;}
 .cont_gall{width:100%;height:324px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 .cont_gall a{display:table;height:100%;width:100%;}
-#cont-slider{position:absolute;background:rgba(0,38,62,0.9);top:0;left:0;width:218px;height:312px;z-index:9998;top:6px; left:6px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+#cont-slider{position:absolute;background:rgba(0,38,62,0.9);top:0;left:0;width:218px;height:312px;z-index:50;top:6px; left:6px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 #body-slider{overflow:hidden;height:265px;padding-top:18px;}
 .scroll-slider{height:265px;}
 .inside-slider{height:265px;width:218px;float:left;padding-left:18px;padding-right:18px;}
@@ -236,7 +236,7 @@ PROPIEDADES CUERPO CATALOGO
 /********************************
 PROPIEDADES MENÚ LATERAL PRODUCTOS
 *********************************/
-#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:950;width:100%;background:#ffffff;}
+#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:95;width:100%;background:#ffffff;}
 #submenus-mob-prodct > a{display:inline-block;height:50px;line-height:50px;padding-left:20px;color:#47b6c7;font-size:25px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
 #submenus-mob-prodct.active > a{color:#bbb5bb !important;}
 #submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:35px;height:60px;line-height:57px;vertical-align:middle;}
@@ -322,7 +322,7 @@ PROPIEDADES TEACHER DEVELOPMENT
 *********************************/
 .teacher-dev{padding-bottom:150px;}
 
-.link-teacher{position:relative;z-index:100;margin-bottom:-18px;}
+.link-teacher{position:relative;z-index:99;margin-bottom:-18px;}
 .link-teacher ul{background:#ffffff;padding:18px;margin:0;margin-top:18px;}
 .link-teacher ul li{list-style:none;margin-bottom:9px;}
 .link-teacher ul li a{color:#bbb5bb;font-size:18px;line-height:21px;}
@@ -572,7 +572,7 @@ PROPIEDADES CUERPO NOSOTROS
 .cont-nosotros p{font-size:16px;color:#373340;line-height:21px;}
 .cont-nosotros p a{font-family:'latoregular', Helvetica, sans-serif;color:#47b6c7;}
 .video-youtube{margin-top:36px;margin-bottom:36px;text-align:center;position:relative;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
-.poster-frame{position:absolute;width:100%;height:100%;z-index:99998;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.poster-frame{position:absolute;width:100%;height:100%;z-index:99;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .poster-frame a{display:block;height:75px;width:75px;position:absolute;-webkit-border-radius:100px;-moz-border-radius:100px;border-radius:100px;background:#ffffff;line-height:75px;text-align:center;position:absolute;top:50%;left:50%;margin-left:-38px;margin-top:-38px;}
 .poster-frame a span:before{content: "\70";font-family:'icomoon', Helvetica, sans-serif;font-size:40px;color:#6cd9d7;margin-right:-8px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;-webkit-font-smoothing:antialiased;position:relative;top:13px;}
 #player{display:none;}
@@ -858,7 +858,7 @@ PROPIEDADES HOME EXAMS
 .filter-exams{position:absolute;top:32px;right:18px;padding-top:0px !important;}
 .filter-exams p{color:#6cd9d7 !important;font-size:14px !important;text-align:right;}
 .filter-exams p>span{background:url(../img/arrow_down.png) center right no-repeat;display:blocK;padding-right:41px;cursor:pointer;}
-.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99999;position:relative;margin-top:9px;display:none;box-shadow: 0px 10px 20px 0px rgb( 0, 0, 0 );}
+.opc-filter{background:#ffffff;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;padding:18px;z-index:99;position:relative;margin-top:9px;display:none;box-shadow: 0px 10px 20px 0px rgb( 0, 0, 0 );}
 .opc-filter .radio{margin-bottom:0 !important;margin-top:0 !important;margin-left:-18px;}
 .opc-filter div {margin-left:-10px;}
 .opc-filter div span{color:#bbb5bb;cursor:pointer;}
@@ -1078,7 +1078,7 @@ PROPIEDADES CUERPO CONTACT
 .select_cities:hover{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 96% 50% no-repeat;background-size:18px;}
 .select_cities:focus{text-decoration:none;color:#ffffff;}
 .opc-offices.active .select_cities{text-decoration:none;color:#ffffff;background:#20718c url(../img/arrow_down_c.png) 96% 50% no-repeat;background-size:18px;}
-.desplg_cities{position:relative;background:#ffffff;z-index:100;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:178px;display:none;}
+.desplg_cities{position:relative;background:#ffffff;z-index:99;margin-top:5px;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;width:178px;display:none;}
 .desplg_cities ul{margin:0;padding:0;}
 .desplg_cities ul li{list-style:none;color:#bbb5bb !important;height:36px;line-height:36px;cursor:pointer;}
 .opc-offices{position:absolute;width:220px;margin-left:auto;margin-right:auto;left:0;right:0;}
@@ -1394,13 +1394,13 @@ PROPIEDADES FOOTER
 /***********************
 PROPIEDADES UP-WINDOW
 ************************/
-.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99999;margin-left:920px;}
+.up-window{text-indent:-99999px;background-image:url(../svg/up.svg);background-repeat:no-repeat;background-position:center center;width:50px;height:42px;display:none;position:fixed;bottom:20px;z-index:99;margin-left:920px;}
 
 /*****************************
 PROPIEDADES COOKIES
 ******************************/
 
-.block-cookies{background:rgba(255,245,104,0.95);position:fixed;bottom:0;width:100%;padding-top:20px;padding-bottom:20px;z-index:9999;display:none;}
+.block-cookies{background:rgba(255,245,104,0.95);position:fixed;bottom:0;width:100%;padding-top:20px;padding-bottom:20px;z-index:99;display:none;}
 .block-cookies .container{position:relative;}
 .block-cookies h2{color:#ea575b;width:80%;margin:0 auto;text-align:center;margin-bottom:20px;}
 .block-cookies p{color:#ea575b;width:70%;margin:0 auto;text-align:center;}
@@ -1487,7 +1487,7 @@ PROPIEDADES ESPECIALES
 .overflow-hidden{overflow:hidden;}
 ul.bxslider {margin: 0;padding: 0;}
 .bx-wrapper .bx-viewport{-moz-box-shadow: 0;-webkit-box-shadow: 0;box-shadow: 0 0 0 0;border: 0;left: 0;background: #fff;}
-.bx-wrapper .bx-controls-direction a{z-index:9997 !important;}
+.bx-wrapper .bx-controls-direction a{z-index:99 !important;}
 .bx-controls{display:none !important;}
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
 .vcenter-1{display:table-cell!important;vertical-align:top;float: none;height:100%;}
@@ -1497,7 +1497,7 @@ ul.bxslider {margin: 0;padding: 0;}
 .clear{clear:both;}
 .form-control:focus{-webkit-box-shadow:none;box-shadow:none;}
 .top-margin{margin-top:18px;}
-.marcador{position:fixed;top:0;left:0;color:red;z-index:99999;}
+.marcador{position:fixed;top:0;left:0;color:red;z-index:99;}
 .type-light{font-family:'latolight', Helvetica, sans-serif !important;}
 .type-regular{font-family:'latoregular', Helvetica, sans-serif !important;}
 a:hover,a:focus {color:inherit;text-decoration:none;}
@@ -1693,8 +1693,8 @@ MEDIA QUERIES
 	.reduce-input h6{text-align:left;}
 	
 	.content-digital .inside-box-compt img{margin:0 auto;display:block;}
-	.menu-sec-product{z-index:200;}
-	.block-img-product{z-index:100;position:relative;}
+	.menu-sec-product{z-index:99;}
+	.block-img-product{z-index:99;position:relative;}
 	.menu-product{margin-top:52px !important;}
 	.cont-component{padding:18px 18px 0;}
 	.inside-img-product{margin-top:-235px;}
