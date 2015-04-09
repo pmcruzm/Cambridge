@@ -1,6 +1,6 @@
 /*
-Proyecto: Cambridge University  
-Autor: Pedro de la Cruz  
+Proyecto: Cambridge University
+Autor: Pedro de la Cruz
 Fecha: 5/8/2014
 */
 
@@ -88,13 +88,13 @@ PROPIEDADES CABECERA
 
 /*Cuadros cabecera*/
 .primero {background-image: -moz-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 88deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left:18.96%;top: 102px;width:25.77%;height: 66px;z-index: 96;}
-	
+
 .segundo {background-image: -moz-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 50deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 2.37%;top: 46px;width:73.60%;height: 135px;z-index: 95;}
-	
+
 .tercero {background-image: -moz-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 121deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);position: absolute;left: 1.64%;top: 142px;width:86.28%;height: 49px;z-index: 94;}
-	
+
 .cuarto {background-image: -moz-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -webkit-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);background-image: -ms-linear-gradient( 129deg, rgb(82,196,205) 0%, rgb(89,191,203) 100%);opacity: 0.8;position: absolute;left: 27.93%;top: 82px;width:71.85%;height: 112px;z-index: 93;}
-	
+
 .quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;width:37.93%;height: 115px;z-index: 92;}
 
 /*****************************
@@ -272,7 +272,7 @@ PROPIEDADES CUERPO CATEGORIA
 .block-submenus>ul>li.active ul li.active{list-style:none;}
 .block-submenus>ul>li.active ul li.active a{color:#47b6c7;}
 .block-submenus>ul>li.active ul li.active:before{color:#47b6c7}
-  
+
 .titul-catalogos{font-size:32px;color:#20718c;margin-top:32px;max-width:70%;}
 .supplementary{margin-top:54px !important;}
 .block-product{text-align:center;margin-bottom:24px;}
@@ -358,7 +358,7 @@ PROPIEDADES CAMBRIDGE LABS
 .inside-titul h2{display:block;background:url(../img/logo_labs_cab.png) top left no-repeat;width:170px;height:69px;text-indent:-99999px;margin:0 auto 22px;background-size:170px 69px;}
 .inside-titul p{color:#ffffff;font-size:24px;}
 
-.secc-labs ul{margin-top:-18px !important;}
+.secc-labs > ul{margin-top:-18px !important;}
 .top-intro-labs{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
 .camb-labs .intro-p p{color:#373340;font-size:20px;padding-left:18px;padding-right:18px;line-height:24px;margin-top:32px;}
 .titul-round{background:#ffffff;display:block;height:36px;line-height:36px;color:#639ec8;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;font-size:20px;width:300px;margin:42px auto;text-align:center;cursor:pointer;}
@@ -463,7 +463,7 @@ PROPIEDADES CAMBRIDGE LABS
 #register-form input[type="checkbox"] + label::before {background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px 0px;}
 #register-form input[type="checkbox"]:checked + label::before{background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px -20px;}
 #register-form input[type="checkbox"].error + label::before{background:url(../img/check_state_labs.png) no-repeat;background-size:20px;background-position:0px -40px;}
-	
+
 /*****************************
 PROPIEDADES CUERPO EVENTS
 ******************************/
@@ -807,15 +807,15 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 
 #block_unit{margin-top:100px;}
 #block_unit h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;padding-left:18px;padding-right:18px;}
-#block_unit p{color:#373340;font-size:16px;line-height:21px;padding-left:18px;padding-right:18px;margin-bottom:18px;}	
+#block_unit p{color:#373340;font-size:16px;line-height:21px;padding-left:18px;padding-right:18px;margin-bottom:18px;}
 
 #block_clil{margin-top:100px;}
 #block_clil h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
-#block_clil p{color:#373340;font-size:16px;line-height:21px;margin-bottom:18px;}	
+#block_clil p{color:#373340;font-size:16px;line-height:21px;margin-bottom:18px;}
 
 #block_yle{margin-top:100px;}
 #block_yle h3{color:#373340;font-size:16px;margin:0;font-family:'latobold', Helvetica, sans-serif;margin-bottom:9px;}
-#block_yle p{color:#373340;font-size:16px;line-height:21px;}	
+#block_yle p{color:#373340;font-size:16px;line-height:21px;}
 #block_yle h4{color:#373340;font-size:16px;font-family:'latobold', Helvetica, sans-serif;text-align:center;}
 .block-starters{margin-top:32px;margin-bottom:32px;}
 .block-movers{margin-bottom:32px;}
@@ -830,7 +830,7 @@ PROPIEDADES CUERPO RECURSOS PRODUCT
 .pill-w-table tr td p a{font-family:'latoregular', Helvetica, sans-serif;}
 .pill-w-table tr td p strong{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 .resource-module{margin-top:100px;}
-.pill-w-table p{color:#373340;} 
+.pill-w-table p{color:#373340;}
 
 .resource-module .theme-color h4 {color:#373340 !important;}
 .candado{display:inline-block;font-family: 'icomoon',Helvetica,sans-serif;vertical-align:middle;color:#bbb5bb;font-size:35px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;text-transform: none;-webkit-font-smoothing:antialiased;}
@@ -1170,7 +1170,7 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH
 .cont-camb-en h2{color:#20718c;font-size:32px;margin-top:0px;margin-bottom:20px;}
 .cont-camb-en p{color:#373340;font-size:16px;line-height:21px;margin-bottom:42px;}
 .cont-camb-en h3{font-size:20px;color:#373340;line-height:28px;margin-top:0;}
-.cont-camb-en p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}	
+.cont-camb-en p a{color:#47b6c7;font-family:'latoregular', Helvetica, sans-serif;}
 
 .block_cards_eng{margin-top:32px;}
 .block_cards_eng .thumbnails{min-height:360px;background:#ffffff;}
@@ -1334,17 +1334,55 @@ PROPIEDADES CUERPO CAMBRIDGE ENGLISH TEACHER
 .more-cont-camb-en-teach a:hover{color:#988b56;}
 
 /*********************************************
+PROPIEDADES SUBMENU EN NOSOTROS
+********************************************/
+.side-menu{}
+.side-menu>ul>li.active{margin-bottom:6px;}
+.side-menu>ul>li>a:hover{text-decoration:none;color:#9f999f;}
+.side-menu>ul>li.active>a{}
+.side-menu>ul>li.type-light>a{font-family:'latolight', Helvetica, sans-serif !important;}
+.side-menu>ul>li ul{display:none;}
+.side-menu>ul>li.active ul{margin:0;padding:10px 18px 10px 12px;display:block;background:#f8f7f7;margin-top:6px;}
+.side-menu>ul>li.active ul li{list-style:none;padding-left:18px;line-height:18px;color:#bbb5bb;margin-bottom: 0;}
+.side-menu>ul>li.active ul li:before{content: "b";display: inline-block;font-family: "icomoon",Helvetica,sans-serif;font-size: 29px;height:30px;line-height:30px;margin-left:-28px;width:20px;}
+.side-menu>ul>li.active ul li p{margin-top:-26px;margin-bottom:1px;font-size:14px !important;}
+.side-menu>ul>li.active ul li a{font-family:'latoregular', Helvetica, sans-serif;color:#bbb5bb; font-size:14px !important;}
+.side-menu>ul>li.active ul li a:hover{text-decoration:none;color:#9f999f;}
+.side-menu>ul>li.active ul li.active{list-style:none;}
+.side-menu>ul>li.active ul li.active a{color:#47b6c7;}
+.side-menu>ul>li.active ul li.active:before{color:#47b6c7}
+
+
+
+/*********************************************
 PROPIEDADES CUERPO CAMBRIDGE MONITOR
 ********************************************/
+.content-cambridge-monitor { margin-bottom:75px;}
 .content-cambridge-monitor h2 {color:#fbde44; font-weight: bold;}
-.container-infografias {padding: 15px; background-color: white; margin-bottom:75px;}
+.container-infografias {padding: 15px; background-color: white;}
 .container-infografias h3 {font-size:32px; font-weight: bold; color:#fbde44; padding: 0 0 20px 10px;}
 .container-infografias .thumbnails {min-height:375px;}
-.container-infografias .thumbnails h4 {font-size:20px; color:#88d0aa;}
+.container-infografias .thumbnails h4 {font-size:20px; color:#75e0d8;}
 .container-infografias .thumbnails .thumbnail-img {width: 200px;}
 .container-infografias .thumbnails .thumbnail-img .overflow-hidden a {position: relative; display: block;}
 .container-infografias .thumbnails .thumbnail-img .overflow-hidden a .hover-overlay {display:none; position: absolute; width:100%; height:100%; background: url('../img/monitor-infografia-bg.png') no-repeat center center, rgba(255,228,86,.5);}
 .container-infografias .thumbnails .thumbnail-img .overflow-hidden a:hover .hover-overlay {display: block;}
+
+.content-cambridge-monitor .show-more {display: none;}
+.content-cambridge-monitor .show-more a{
+  color: #257189;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  width: 120px;
+  background: #fff673;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  position: relative;
+  margin: -13px auto 0;
+}
 
 /*****************************
 PROPIEDADES SITEMAP
@@ -1368,7 +1406,7 @@ PROPIEDADES SITEMAP 2
 .rest-sitemap ul{margin:0;padding:0;}
 .rest-sitemap ul li{list-style:none;margin-bottom:10px;}
 .rest-sitemap ul li a{color:#373340;font-size:16px;line-height:16px;}
-	
+
 /*****************************
 PROPIEDADES FOOTER
 ******************************/
@@ -1418,9 +1456,9 @@ PROPIEDADES LIGHTBOX/BOXER
 #boxer .boxer-container .boxer-content {background: none;}
 #boxer .boxer-position {display:none;}
 #boxer .boxer-content .boxer-caption {color: white;}
-#boxer .boxer-content .boxer-caption .title {font-size:21px; color: #88d0aa; margin-bottom: 0.4em;}
-#boxer .boxer-content .boxer-caption .share {font-size: 16px; color:#88d0aa; text-align: center;}
-#boxer .boxer-content .boxer-caption .share a {display: inline-block; width: 36px; height:36px; border-radius: 20px; font-size: 21px; color:#88d0aa; background-color: white; text-align: center; line-height: 36px; margin: 0 8px;}
+#boxer .boxer-content .boxer-caption .title {font-size: 21px; color: #7bc093; margin-bottom: 0;}
+#boxer .boxer-content .boxer-caption .share {font-size: 16px; color: #7bc093; text-align: center; padding-top: 5px; float:right; }
+#boxer .boxer-content .boxer-caption .share a {display: inline-block; width: 36px; height:36px; border-radius: 20px; font-size: 21px; color:#88d0aa; background-color: white; text-align: center; line-height: 36px; margin: 0 0 0 8px;}
 
 /*****************************
 PROPIEDADES COOKIES
@@ -1432,7 +1470,7 @@ PROPIEDADES COOKIES
 .block-cookies p{color:#ea575b;width:70%;margin:0 auto;text-align:center;}
 .block-cookies p a{color:#ea575b;text-decoration:none;font-family:'latobold', Helvetica, sans-serif;}
 .close_c{position:absolute;right:0;top:0;display:inline-block;color:#ea575b;}
-.close_c:before{content: "c";font-family:'icomoon', Helvetica, sans-serif;-moz-osx-font-smoothing: grayscale;font-style: normal;font-weight: normal;line-height: 1;position: relative;font-size:28px;}	
+.close_c:before{content: "c";font-family:'icomoon', Helvetica, sans-serif;-moz-osx-font-smoothing: grayscale;font-style: normal;font-weight: normal;line-height: 1;position: relative;font-size:28px;}
 .close_c:hover{color:#ea575b;}
 .btn-accept{background:#ea575b;color:#ffffff;height:30px;display:block;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;width:140px;margin:0 auto;line-height:30px;text-align:center;margin-top:20px;}
 .btn-accept:hover{color:#ffffff;}
@@ -1479,7 +1517,7 @@ PROPIEDADES CUSTOM THEMES
 
 
 /******************************
-ICONOS FUENTE 
+ICONOS FUENTE
 *******************************/
 .custom-search:before {
     content:'s';
@@ -1508,8 +1546,8 @@ ICONOS FUENTE
 /*****************************
 PROPIEDADES ESPECIALES
 ******************************/
-*{outline: none !important;} 
-*:focus{outline: none !important;} 
+*{outline: none !important;}
+*:focus{outline: none !important;}
 .overflow-hidden{overflow:hidden;}
 ul.bxslider {margin: 0;padding: 0;}
 .bx-wrapper .bx-viewport{-moz-box-shadow: 0;-webkit-box-shadow: 0;box-shadow: 0 0 0 0;border: 0;left: 0;background: #fff;}
@@ -1673,12 +1711,12 @@ MEDIA QUERIES
 	.whiteboard{padding-left:5px;padding-right:5px;}
 	.on-line{padding-left:5px;padding-right:5px;}
 	.off-line{padding-left:5px;padding-right:5px;}
-	
+
 	.image-event{height:50px;}
 	.other-menu li a{
 	padding-left: 7px !important;
     padding-right: 7px !important;}
-	
+
 }
 
 
@@ -1706,8 +1744,8 @@ MEDIA QUERIES
 	.titul-search p{text-align:center;}
 	.form-despl-search {padding-right: 9px;padding-top:0px;}
 	#top-header ul li .desplegable-sub .container{padding-left:9px;}
-	
-	.colum-dest{float:left !important;}	
+
+	.colum-dest{float:left !important;}
 	.block_cards{margin-top:0px;}
 	.colum-mini-cat{position:relative;margin-top:-340px;}
 	.cat_mid a{padding-left:10px;padding-right:10px;}
@@ -1717,7 +1755,7 @@ MEDIA QUERIES
 	.reduce-input .form-group{padding-left:0;padding-right:0;}
 
 	.reduce-input h6{text-align:left;}
-	
+
 	.content-digital .inside-box-compt img{margin:0 auto;display:block;}
 	.menu-sec-product{z-index:99;}
 	.block-img-product{z-index:99;position:relative;}
@@ -1728,38 +1766,38 @@ MEDIA QUERIES
 	.top-product{height:305px;}
 	.menu-sec-product{padding-top:60px;}
 	.menu-sec-product ul li a{font-size:18px;line-height:24px;}
-	
+
 	.cont-component .inside-box-compt img{margin:0 auto;display:block;margin-bottom:18px;}
 	.inside-box-compt + a{margin:-13px auto 0;}
-	
+
 	.top-corpus{padding-left:9px;}
 	.bottom-corpus{padding-left:9px;padding-right:9px;}
 	.graficas-corpus img{}
-	
+
 	.row-height .colum-cefs{float:none;display:block;vertical-align: top;height:100%;}
 	.row-height .colum-cefs:first-child{margin-bottom:32px;}
 	#contact-form .checkbox{margin-top:18px;}
-	
+
 	.prop-recursos{text-align:center;}
 	#contact-form .errores{margin-bottom:32px;}
 	#newsletter-form .errores{margin-bottom:32px;}
 	#register-form .errores{margin-bottom:32px;}
-	
+
 	.pill-cat{margin:0 auto;margin-top:18px;}
 	.block-cat-digital>div>p{width:100%;}
-	
+
 	.book_2,.book_3,.book_4{display:none;}
 	.book_2 h6{display:block;}
 	.book_3 h6{display:block;}
 	.book_4 h6{display:block;}
 	.btn-mobile-course-book{display:block;}
-	
+
 	#submenus-mob-prodct{display:block;}
 	.block-submenus{display:none;}
 	#migas .breadcrumb{display:none;}
-	
+
 	.btn-buy{margin:0 auto;margin-top:18px;margin-bottom:32px;}
-	
+
 	.content-exams{padding-top:40px;}
 	#migas{display:none;}
 	.cab-page{bottom:0;}
@@ -1768,12 +1806,12 @@ MEDIA QUERIES
 	.content-exam-serie-c .top-product{height:275px !important;}
 	.inside-img-exam-serie-c{margin-top:-235px;}
 	.inside-img-exam-serie-c img{bottom:-110px;}
-	
+
 	.inside-img-exam-serie img{bottom:-120px;left:0;right:0;margin-right:auto;margin-left:auto;max-width:none;display:block;width:420px;}
-	
+
 	.img-catalogues{width:50% !important;float:left;}
 	.cont-catalogues{width:50% !important;float:left;}
-	
+
 	.cab-home-exams [class*="col-"]{padding:0;}
 	.menu-sec-course ul li a{font-size:18px;line-height:24px;}
 	.content-course-sup .inside-img-product img {bottom: -217px;display: block;left: auto;max-width: none;right: 0;width: 400px !important;}
@@ -1784,27 +1822,27 @@ MEDIA QUERIES
 	.body-app .info-app{padding-right:0;}
 	.list-available a{margin-right:10px !important;margin-left:10px !important;}
 	.slider-app{left:0;}
-	
+
 	.block-act .descrip-act:first-child{border-top:2px solid #f8f7f7;}
 	.block-act{padding-left:0;}
 	.block-calen{padding-bottom:25px;}
 	.info-event{text-align:center;}
-	
+
 	.single-events{margin-top:40px;}
 	.img-event-s{margin-top:0;}
 	.single-events {padding-left: 9px;}
-	
+
 	.image-event{height:auto;}
-	
+
 	.inside-img-generico img{bottom:-10px;}
-	
+
 	.link_contest{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.logo_cet{margin-top:0;}
 	.cab-page .container h1{font-size:50px;}
-	
+
 	.image-event img{max-width: 100%;width: 150px;padding-top: 20px;padding-bottom: 20px;}
 	.txt-lang-ico{display:none;}
-	
+
 }
 
 @media (max-width: 640px) {
@@ -1818,16 +1856,16 @@ MEDIA QUERIES
 	.desplg_cities{width:168px;}
 	.desplg_cities select{width:168px;}
 	.desplg_cities select option{font-size:12px;}
-	
+
 	.inside-img-product{height:auto;}
 	.inside-img-product img{width:460px;left:0;right:0;margin-left:auto;margin-right:auto;}
 	.top-product{height:335px;}
 	.menu-sec-product ul li{text-align:center;}
 	.inside-img-exam-serie img{bottom:-150px;}
-	
+
 	.img-catalogues{width:100% !important;float:left;}
 	.cont-catalogues{width:100% !important;float:left;}
-	
+
 	.menu-sec-course ul li{text-align:center;}
 	.content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px !important;}
 	.inside-img-generico img{bottom:-40px;margin-left:auto;margin-right:auto;left:0;right:0;}
@@ -1837,10 +1875,10 @@ MEDIA QUERIES
 	.inside-img-generico{height:auto;text-align:center;}
 	.inside-img-generico img{position:relative;bottom:0px;margin-bottom:-50px;margin-top:25px;}
 	.menu-sec-product{height:auto;}
-	
+
 	.inside-img-exam-serie-c img{position:relative;bottom:0px;margin-bottom:-30px;margin-top:25px;right:0px;}
 	.inside-img-exam-serie-c{height:auto;text-align:center;margin-top:0px;}
-	
+
 	/******** 2-10-2014 ********/
 	#submenus-mob-prodct ul li a{height:35px;line-height:35px;font-size:14px !important;}
 	.block-cat-digital{padding-top:18px;}
@@ -1870,31 +1908,31 @@ MEDIA QUERIES
 	.sales-office [class*="col-"]{height:auto;}
 	.head-office{height:auto;}
 	.sales-office{height:auto;}
-	
+
 	.inside-img-product img{width:360px;}
-	
+
 	.block-ver-mas img {display:none;}
 	.block-ver-mas a{display:block;width:220px;margin:0 auto;margin-top:18px;}
 	.recurso-prog-product a{display:block;width:220px;margin:0 auto;margin-top:18px;}
-	
+
 	.block-ver-mas{text-align:center;}
 	.menu-sec-product { padding-top: 40px;}
 	#submenus-mob-prodct{top:166px;}
-	
+
 	#submenus-mob-prodct ul li a{font-size:18px;}
 	.img-slider-corpus img{margin:0 auto;}
-	
+
 	.block-product{padding-top:0px !important;}
-	
+
 	.inside-img-exam-serie-c img{left:0;right:0;margin-left:auto;margin-right:auto;}
 	.inside-img-exam-serie img{bottom:-100px;width:370px;}
-	
+
 	.content-course-sup .inside-img-product img {bottom: -198px;width: 290px !important;}
 	.menu-sec-course{padding-top:62px;}
-	
+
 	#event-form input[type="submit"], #newsletter-form button[type="submit"]{margin-top:18px;}
 	#event-form .checkbox{margin-bottom:18px;}
-	
+
 	.list-menu-mob{padding-top:10px;padding-bottom:10px;}
 	.mobile-menus{padding-top:0;}
 	.mobile-menus .container{padding-left:9px;}
@@ -1904,13 +1942,13 @@ MEDIA QUERIES
 	.list-menu-mob ul li ul{margin-left:0px !important;}
 	.list-menu-mob ul li ul li a{background:#f8f7f7 !important;-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;color:#20718c;font-size:17px;font-family:'latoregular', Helvetica, sans-serif;height:40px !important;line-height:40px !important;}
 	.list-menu-mob ul li ul li{margin-bottom:1px;}
-	
+
 	.inside-img-generico img{bottom:0px;width:162px;}
 	.block-compatible{width:100%;margin-right:0%;margin-bottom:18px;}
 	.block-available{width:100%;}
-	
+
 	.inside-img-product img{margin-bottom:-50px;}
-	
+
 	#slider{height:416px;}
 	.colum-slider{padding-left:0px;padding-right:0;}
 	.cont_gall{height:468px;}
@@ -1927,22 +1965,22 @@ MEDIA QUERIES
 	.inside_graf_ess p{left:auto;right:30px;}
 	#submenus-mob-prodct{top:191px;}
 	#top-header ul li .desplegable-sub{top:42px;}
-	
+
 	/******* 2-10-2014  *******/
 	#content-home{margin-top:-172px;}
 	#top-header > .container{padding-left:0px;padding-right:0px;}
-	
+
 	#destacado_sup .thumbnails h4{font-size:26px;line-height:30px;}
 	#destacado_sup .thumbnails p{font-size:16px;line-height:18px;}
-	
+
 	.cat_mid h4{font-size:18px;}
 	.cat_mid p{font-size: 16px;line-height: 16px;margin-top: 4px}
-	
+
 	.thumbnail-anim h2{font-size:26px;line-height:30px;}
 	.thumbnail-anim h3{font-size:26px;line-height:30px;}
 	.thumbnail-anim h4{font-size:26px;line-height:30px;}
 	.thumbnail-anim p{font-size:16px;line-height:18px;}
-	
+
 	.rrss_link ul li a{height:60px;width:60px;line-height:60px;font-size:30px;border-radius:30px;}
 	.rrss_link{margin-bottom:40px;}
 	.contact_link a{font-size:16px;height:50px;line-height:50px;border-radius:25px;}
@@ -1951,52 +1989,52 @@ MEDIA QUERIES
 	#top_footer ul li a{font-size:16px;line-height:24px;}
 	#top_footer ul li{margin-bottom:8px;line-height:24px;}
 	.copy_foot{font-size:14px;}
-	
+
 	.cab-page .container h1{left:20px;}
 	.small-h1{font-size:30px;line-height:30px;}
-	
+
 	#submenus-mob-prodct > a{padding-left:5px;font-size:16px;}
 	#submenus-mob-prodct > a::before{width:30px;height: 50px;line-height: 48px;}
-	
+
 	.list-menu-mob ul li ul li a{font-size: 14px;height: 35px !important;line-height: 35px !important;}
-	
+
 	.menu-sec-product ul li a{font-size:22px;line-height:32px;}
 	table.default tr td p{font-size:12px;line-height:14px;}
-	.center-teacher h2{font-size:22px;}	
+	.center-teacher h2{font-size:22px;}
 	.centre-d-c .checkbox p{font-size:16px;margin-top:-26px;}
 	.teacher-p .checkbox p{font-size:16px;margin-top:-26px;}
-	
+
 	.logo_cet{width:160px;}
 	.block-h-exam img{width:250px;}
 	.block-h-exam h3{font-size:24px;}
 	.block-h-exam p{line-height:20px;}
 	.block-h-exam a{font-size:16px;}
-	
+
 	.cat_mid{margin-bottom:9px;}
 	.colum-mini-cat{margin-bottom:9px;}
 	.titul-office{margin-bottom:5px;}
-	
+
 	.inside_graf_ess p{font-family:'latoregular', Helvetica, sans-serif !important;}
 	.colum-cefs h3{font-size:20px;}
 	.bottom-corpus > a{height:auto;padding-top:5px;padding-bottom:5px;line-height:16px;padding-top: 5px;padding-bottom: 5px;border-radius: 18px;margin-top: -8px}
 	.graficas-corpus-inside{padding-left:18px;padding-right:18px;}
 	.image-event{margin-bottom:20px;margin-top:20px;}
-	
+
 	.cont-product{padding:60px 18px 0;}
 	.cont-component{padding:60px 18px 0;}
 	.cont-recurso-p{padding: 60px 18px 150px;}
 	.list-home-exams div.block-h-exam{height:auto !important;}
 	.cab-page .container h1{font-size:40px;}
 	.opc_levels a{font-size:15px;}
-	
+
 	.opc-offices{width:198px;}
 	.select_cities{width:198px;font-size:14px;}
 	.desplg_cities{width:198px;}
 	.desplg_cities select{width:198px;}
 	.desplg_cities select option{font-size:14px;}
-	
+
 	.fila-links{text-align:center;}
-	
+
 }
 
 @media (max-width: 400px){
@@ -2031,14 +2069,14 @@ MEDIA QUERIES
 	#formulario-search-pag .radio div{display:block;}
 	#formulario-search .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
 	#formulario-search-pag .radio{padding-left:0;margin-left:-18px;margin-top:18px;}
-	
+
 	#formulario-search input[type=submit],#formulario-search button[type=submit]{top:65px;}
 	#formulario-search-pag input[type=submit],#formulario-search-pag button[type=submit]{top:65px;}
-	
+
 	.img-catalogues img{max-width:70%;display:block;margin:0 auto;margin-top:-173px;}
 	.content-catalogues .cab-nosotros{height:282px;}
 	.pill-cat{width:75%;}
-	
+
 	.inside-recurso{height:auto !important;}
 	#submenus-mob-prodct ul li a{font-size:18px;}
 	/*.cab-page .container h1{font-size:40px;top:74px;}Preguntar*/
