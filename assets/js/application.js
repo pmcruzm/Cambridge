@@ -1090,15 +1090,18 @@ jQuery(document).ready(function(){
             var link  = $target.attr("data-share-link");
             var title = $item.find(".caption h4").text();
             var desc  = $item.find(".caption p").text();
-            //http://twitter.com/share?text=An%20Awesome%20Link&url=http://www.google.com
-            var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía: ')+'&url='+link;
-            //http://www.facebook.com/sharer.php?u=http://www.google.com
+            var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía:')+'&url='+link;
             var link_fb = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent(link);
-            var share_block = 'Compartir <a href="'+link_tw+'" class="fa fa-twitter"></a> <a href="'+link_fb+'" class="fa fa-facebook"></a>';
+            var share_block = 'Compartir <a href="'+link_tw+'" class="fa fa-twitter link-share"></a> <a href="'+link_fb+'" class="fa fa-facebook link-share"></a>';
             return '<div class="title">'+title+'</div><div class="caption">' + desc.trim() + '</div><div class="share">'+share_block+"</div>";
         }
     });
 
+	jQuery(document).on("click","a.link-share", function(e) {
+		e.preventDefault();
+		var popup = window.open(jQuery(this).attr('href'),'share','width=600,height=350');
+		popup.focus();
+	});
 
 
 });
