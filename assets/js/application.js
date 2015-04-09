@@ -1110,6 +1110,10 @@ jQuery(document).ready(function(){
 		jQuery( this ).parents('li').css({color:'#bbb5bb'});
 	});
 
+	jQuery("img.lazy").lazyload({
+		effect : "fadeIn"
+	});
+
 	if( jQuery(".container-infografias").size() > 0 )
 	{
 		//click en compartir abre popup
@@ -1146,7 +1150,7 @@ jQuery(document).ready(function(){
 					}
 
 					//disparamos el evento scroll para acualizar el "up-window"
-					control_scroll(null);
+					jQuery(window).trigger("scroll");
 				});
 
 			}
