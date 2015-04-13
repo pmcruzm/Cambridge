@@ -1089,7 +1089,7 @@ jQuery(document).ready(function(){
             var $item = $target.closest(".thumbnails");
             var link  = $target.attr("data-share-link");
             var title = $item.find(".caption h4").text().trim();
-            var desc  = $item.find(".caption p").text().trim();
+            var desc  = $item.find(".caption div").text().trim();
             var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía:')+'&url='+link;
             var link_fb = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent(link);
             var share_block = 'Compartir <a href="'+link_tw+'" class="fa fa-twitter link-share"></a> <a href="'+link_fb+'" class="fa fa-facebook link-share"></a>';
