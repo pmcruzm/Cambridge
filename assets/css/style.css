@@ -329,6 +329,8 @@ PROPIEDADES TEACHER DEVELOPMENT
 .link-teacher ul li a:hover{color:#9f999f;}
 .link-teacher ul li.active a{font-family:'latoregular', Helvetica, sans-serif;color:#9f999f;}
 
+.link-teacher ul ul {display: none;}
+
 .intro-teacher{padding-left:18px;margin-bottom:18px;}
 .intro-teacher p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
 .intro-teacher p:last-child{color:#373340;font-size:16px;}
@@ -1369,7 +1371,7 @@ PROPIEDADES CUERPO CAMBRIDGE MONITOR
 .container-infografias .thumbnails .thumbnail-img .overflow-hidden a:hover .hover-overlay {display: block;}
 
 .content-cambridge-monitor .show-more {display: none;}
-.content-cambridge-monitor .show-more a{
+.content-cambridge-monitor .show-more a {
   color: #257189;
   height: 26px;
   line-height: 26px;
@@ -1382,6 +1384,25 @@ PROPIEDADES CUERPO CAMBRIDGE MONITOR
   border-radius: 13px;
   position: relative;
   margin: -13px auto 0;
+}
+
+.container-infografia-detalle {padding:10px 10px 50px; background-color: #FFF;}
+.container-infografia-detalle h4 {font-size:30px; font-weight: bold; color:#8cd9a3; margin:10px;}
+.container-infografia-detalle .summary {font-size:16px; margin:10px;}
+
+.content-cambridge-monitor .show-more-detalle a {
+  color: #FFF;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  width: 120px;
+  background: #89cea1;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  position: relative;
+  margin: -13px 0 0 30px;
 }
 
 /*****************************
