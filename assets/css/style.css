@@ -1764,6 +1764,12 @@ MEDIA QUERIES
 	.other-menu li a{
 	padding-left: 7px !important;
     padding-right: 7px !important;}
+	
+	.row_seo_home{position: absolute;top: -592px;}
+	.block_cards{margin-top:-361px;}
+	#destacado_sup{position:relative;margin-top:250px;}
+	.row_seo_home_up{padding-right:18px;}
+	.colum-mini-cat{margin-top:-20px;}
 
 }
 
@@ -1890,6 +1896,13 @@ MEDIA QUERIES
 
 	.image-event img{max-width: 100%;width: 150px;padding-top: 20px;padding-bottom: 20px;}
 	.txt-lang-ico{display:none;}
+	
+	.row_seo_home{position: absolute;top:-565px;height:230px;}
+	.block_cards{}
+	#destacado_sup{position:relative;margin-top:240px;margin-bottom:-20px;}
+	.row_seo_home_up{padding-right:18px;}
+	.right-box-seo{display:none;}
+	.colum-mini-cat{margin-top:-340px;}
 
 }
 
@@ -2082,6 +2095,10 @@ MEDIA QUERIES
 	.desplg_cities select option{font-size:14px;}
 
 	.fila-links{text-align:center;}
+	
+	.row_seo_home{position: relative;top:auto;height:auto;padding-right:0px;}
+	#destacado_sup{margin-top:0px;}
+	#destacado_sup{margin-bottom:18px;}
 
 }
 
