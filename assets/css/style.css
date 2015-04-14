@@ -97,6 +97,16 @@ PROPIEDADES CABECERA
 
 .quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;width:37.93%;height: 115px;z-index: 92;}
 
+/**** Propiedades SEO Home ********/
+.row_seo_home_up{padding-left:9px;padding-right:9px;margin-bottom:18px;}
+.row_seo_home{background:#ffffff;padding:25px;padding-right:0;}
+.row_seo_home h1{color:#6ad7d3;font-size:24px;margin-top:0px;}
+.row_seo_home p{color:#2e313d;font-size:16px;}
+.row_seo_home p a{color:#2e313d;text-decoration:underline;}
+.right-box-seo{text-align:center;}
+.right-box-seo img{max-width:100%;}
+.left-box-seo{}
+
 /*****************************
 PROPIEDADES CUERPO HOME
 ******************************/
@@ -236,7 +246,7 @@ PROPIEDADES CUERPO CATALOGO
 /********************************
 PROPIEDADES MENÚ LATERAL PRODUCTOS
 *********************************/
-#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:95;width:100%;background:#ffffff;}
+#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:96;width:100%;background:#ffffff;}
 #submenus-mob-prodct > a{display:inline-block;height:50px;line-height:50px;padding-left:20px;color:#47b6c7;font-size:25px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
 #submenus-mob-prodct.active > a{color:#bbb5bb !important;}
 #submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:35px;height:60px;line-height:57px;vertical-align:middle;}
