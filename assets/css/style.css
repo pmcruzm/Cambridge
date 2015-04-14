@@ -99,7 +99,7 @@ PROPIEDADES CABECERA
 
 /**** Propiedades SEO Home ********/
 .row_seo_home_up{padding-left:9px;padding-right:9px;margin-bottom:18px;}
-.row_seo_home{background:#ffffff;padding:25px;padding-right:0;}
+.row_seo_home{background:#ffffff;padding:25px;padding-right:0;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .row_seo_home h1{color:#6ad7d3;font-size:24px;margin-top:0px;}
 .row_seo_home p{color:#2e313d;font-size:16px;}
 .row_seo_home p a{color:#2e313d;text-decoration:underline;}
