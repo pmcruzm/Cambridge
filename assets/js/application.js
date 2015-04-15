@@ -1094,7 +1094,7 @@ jQuery(document).ready(function(){
             var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía:')+'&url='+link;
             var link_fb = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent(link);
             var share_block = share_label + ' <a href="'+link_tw+'" class="fa fa-twitter link-share"></a> <a href="'+link_fb+'" class="fa fa-facebook link-share"></a>';
-            return '<div class="share">' + share_block + '</div><div class="title">' + title + '</div><div class="caption">' + desc + '</div>';
+            return '<div class="title">' + title + '</div><div class="caption">' + desc + '</div><div class="share">' + share_block + '</div>';
         }
     });
 
