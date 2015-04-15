@@ -1511,7 +1511,7 @@ PROPIEDADES LIGHTBOX/BOXER
 #boxer .boxer-control.previous:before {margin-left:9px; border-right-color: #FFF;}
 #boxer .boxer-position {display:none;}
 #boxer .boxer-content .boxer-caption {color: white; position: relative;}
-#boxer .boxer-content .boxer-caption .title {font-size: 21px; color: #7bc093; margin-bottom: 0;}
+#boxer .boxer-content .boxer-caption .title {font-size: 21px; color: #7bc093; margin-bottom: 0; line-height: 1.2em;}
 #boxer .boxer-content .boxer-caption .title,
 #boxer .boxer-content .boxer-caption .caption {margin-right: 170px;}
 #boxer .boxer-content .boxer-caption .share {font-size: 16px; color: #7bc093; text-align: right; padding-top: 5px; width: 175px; position: absolute; top: 0; right: 0;}
@@ -1726,7 +1726,7 @@ input[type="checkbox"]:checked + label::before {
 MEDIA QUERIES
 ******************************/
 @media (min-width: 1200px) {
-.container {width: 986px;}
+    .container {width: 986px;}
 }
 
 @media (min-width: 992px) {
@@ -1736,9 +1736,6 @@ MEDIA QUERIES
 @media (max-width: 991px) {
     .container-infografias .monitor-separator {display: none;}
     .container-infografias .monitor-separator-sm {display: block;}
-    #boxer.mobile .boxer-content .boxer-caption .title,
-    #boxer.mobile .boxer-content .boxer-caption .caption {margin-right: 0;}
-    #boxer.mobile .boxer-content .boxer-caption .share {position: static; text-align: left;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1920,6 +1917,9 @@ MEDIA QUERIES
     .right-box-seo{display:none;}
     .colum-mini-cat{margin-top:-340px;}
 
+    #boxer.mobile .boxer-content .boxer-caption .title,
+    #boxer.mobile .boxer-content .boxer-caption .caption {margin-right: 0;}
+    #boxer.mobile .boxer-content .boxer-caption .share {position: static; text-align: left;}
 }
 
 @media (max-width: 640px) {
@@ -2115,7 +2115,6 @@ MEDIA QUERIES
     .row_seo_home{position: relative;top:auto;height:auto;padding-right:0px;}
     #destacado_sup{margin-top:0px;}
     #destacado_sup{margin-bottom:18px;}
-
 }
 
 @media (max-width: 400px){
