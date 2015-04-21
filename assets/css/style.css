@@ -1740,6 +1740,8 @@ MEDIA QUERIES
 	.thumbnail-anim p{font-size:16px;}
 	.cat_mid p{font-size:16px;line-height:16px;}
 	.cat_mid h4{font-size:18px;line-height:21px;}
+	.row_seo_home h1 {font-size: 28px;}
+	.row_seo_home p {font-size: 18px;}
 }
 
 @media (min-width: 992px) {
