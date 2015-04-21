@@ -1,9 +1,9 @@
-/* 
- * Boxer v3.3.0 - 2014-11-25 
- * A jQuery plugin for displaying images, videos or content in a modal overlay. Part of the Formstone Library. 
- * http://formstone.it/boxer/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+/*
+ * Boxer v3.3.0 - 2014-11-25
+ * A jQuery plugin for displaying images, videos or content in a modal overlay. Part of the Formstone Library.
+ * http://formstone.it/boxer/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
  */
 
 ;(function ($, window) {
@@ -643,7 +643,7 @@
 				data.metaHeight = data.$meta.outerHeight(true);
 
 				// Content match viewport
-				data.contentHeight = data.viewportHeight - data.paddingVertical;
+				data.contentHeight = data.viewportHeight + 20;
 				data.contentWidth  = data.viewportWidth  - data.paddingHorizontal;
 
 				fitImage();

@@ -1517,6 +1517,13 @@ PROPIEDADES LIGHTBOX/BOXER
 #boxer .boxer-content .boxer-caption .share {font-size: 16px; color: #7bc093; text-align: right; padding-top: 5px; width: 175px; position: absolute; top: 0; right: 0;}
 #boxer .boxer-content .boxer-caption .share a {display: inline-block; width: 36px; height:36px; border-radius: 20px; font-size: 21px; color:#88d0aa; background-color: white; text-align: center; line-height: 36px; margin: 0 0 0 8px; transition: all 0.2s ease-in-out;}
 #boxer .boxer-content .boxer-caption .share a:hover {opacity: 0.8;}
+
+#boxer.mobile {padding: 0 0 0;}
+#boxer.mobile .boxer-meta {padding: 0 65px 5px;}
+#boxer.mobile .boxer-content .boxer-caption .title,
+#boxer.mobile .boxer-content .boxer-caption .caption {display: none;}
+#boxer.mobile .boxer-content .boxer-caption .share {position: static; text-align: center; margin: 0 auto;}
+
 /*****************************
 PROPIEDADES COOKIES
 ******************************/
@@ -2111,10 +2118,6 @@ MEDIA QUERIES
     .row_seo_home{position: relative;top:auto;height:auto;padding-right:0px;}
     #destacado_sup{margin-top:0px;}
     #destacado_sup{margin-bottom:18px;}
-
-    #boxer.mobile .boxer-content .boxer-caption .title,
-    #boxer.mobile .boxer-content .boxer-caption .caption {margin-right: 0;}
-    #boxer.mobile .boxer-content .boxer-caption .share {position: static; text-align: left;}
 }
 
 @media (max-width: 400px){
