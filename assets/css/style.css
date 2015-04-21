@@ -1369,6 +1369,9 @@ PROPIEDADES SUBMENU EN NOSOTROS
 /*********************************************
 PROPIEDADES CUERPO CAMBRIDGE MONITOR
 ********************************************/
+.cab-monitor{position:relative;display:table;text-align:center;}
+.cab-monitor h2{font-family:'latolight', Helvetica, sans-serif;color:#fbfe4b;font-size:36px;display:table-cell;vertical-align:middle;line-height:32px;}
+
 .content-cambridge-monitor .cab-nosotros {background-position: center center;}
 .content-cambridge-monitor { margin-bottom:75px;}
 
