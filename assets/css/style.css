@@ -104,7 +104,7 @@ PROPIEDADES CABECERA
 .row_seo_home p{color:#2e313d;font-size:16px;}
 .row_seo_home p a{color:#2e313d;text-decoration:underline;}
 .right-box-seo{text-align:center;}
-.right-box-seo img{max-width:100%;}
+.right-box-seo img{max-width:100%;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .left-box-seo{}
 
 /*****************************
