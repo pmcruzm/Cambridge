@@ -1742,6 +1742,7 @@ MEDIA QUERIES
 	.cat_mid h4{font-size:18px;line-height:21px;}
 	.row_seo_home h1 {font-size: 28px;}
 	.row_seo_home p {font-size: 18px;}
+	.block_cards .thumbnails{min-height:425px !important;}
 }
 
 @media (min-width: 992px) {
