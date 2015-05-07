@@ -1926,7 +1926,7 @@ MEDIA QUERIES
     .image-event img{max-width: 100%;width: 150px;padding-top: 20px;padding-bottom: 20px;}
     .txt-lang-ico{display:none;}
 
-    .row_seo_home{position: absolute;top:-565px;height:230px;}
+    .row_seo_home{position: absolute;top:-565px;height:230px;padding-right:18px;}
     .block_cards{}
     #destacado_sup{position:relative;margin-top:240px;margin-bottom:-20px;}
     .row_seo_home_up{padding-right:18px;}
@@ -2124,7 +2124,10 @@ MEDIA QUERIES
 
     .fila-links{text-align:center;}
 
-    .row_seo_home{position: relative;top:auto;height:auto;padding-right:0px;}
+}
+
+@media (max-width: 479px){
+ 	.row_seo_home{position: relative;top:auto;height:auto;}
     #destacado_sup{margin-top:0px;}
     #destacado_sup{margin-bottom:18px;}
 }
