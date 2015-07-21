@@ -1110,21 +1110,23 @@ jQuery(document).ready(function(){
 	});
 
 
-	//lightbox-boxer de infografías en Cambridge Monitor
-    jQuery(".container-infografias .thumbnail-img a").boxer({
-        fixed: true,
-        formatter: function ($target) {
-            var $item = $target.closest(".thumbnails");
-            var link  = $target.attr("data-share-link");
-            var share_label  = $target.attr("data-share-label");
-            var title = $item.find(".caption h4").text().trim();
-            var desc  = $item.find(".caption div").text().trim();
-            var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía:')+'&url='+link;
-            var link_fb = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent(link);
-            var share_block = share_label + ' <a href="'+link_tw+'" class="fa fa-twitter link-share"></a> <a href="'+link_fb+'" class="fa fa-facebook link-share"></a>';
-            return '<div class="title">' + title + '</div><div class="caption">' + desc + '</div><div class="share">' + share_block + '</div>';
-        }
-    });
+	if (jQuery('.container-infografias').is(":visible") ) {
+		//lightbox-boxer de infografías en Cambridge Monitor
+		jQuery(".container-infografias .thumbnail-img a").boxer({
+			fixed: true,
+			formatter: function ($target) {
+				var $item = $target.closest(".thumbnails");
+				var link  = $target.attr("data-share-link");
+				var share_label  = $target.attr("data-share-label");
+				var title = $item.find(".caption h4").text().trim();
+				var desc  = $item.find(".caption div").text().trim();
+				var link_tw = 'https://www.twitter.com/share?text='+encodeURIComponent('Cambridge infografía:')+'&url='+link;
+				var link_fb = 'https://www.facebook.com/sharer.php?u='+encodeURIComponent(link);
+				var share_block = share_label + ' <a href="'+link_tw+'" class="fa fa-twitter link-share"></a> <a href="'+link_fb+'" class="fa fa-facebook link-share"></a>';
+				return '<div class="title">' + title + '</div><div class="caption">' + desc + '</div><div class="share">' + share_block + '</div>';
+			}
+		});
+	}
 
 	if (jQuery('.side-menu').is(":visible") ) {
 		 jQuery('.side-menu>ul>li>ul>li').each(function() {
