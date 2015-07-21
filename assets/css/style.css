@@ -2131,6 +2131,7 @@ MEDIA QUERIES
  	.row_seo_home{position: relative;top:auto;height:auto;}
     #destacado_sup{margin-top:0px;}
     #destacado_sup{margin-bottom:18px;}
+	.block_cards div.thumbnails{height:auto !important;}
 }
 
 @media (max-width: 400px){
@@ -2181,4 +2182,5 @@ MEDIA QUERIES
     .inside_graf_ess img{left:10px;}
     .inside_graf_ess p{right:10px;}
     .graficas-corpus img{display: block;height: 90px;margin: 0 auto;margin-left: -9px;max-width:none;}
+	.rrss_link ul li a{margin-left:16px;}
 }
