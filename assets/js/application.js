@@ -1009,6 +1009,13 @@ jQuery(document).ready(function(){
 		event.preventDefault();
 		jQuery('.block-cookies').fadeOut(600);
 	});
+	
+	//Enlaces examenes  
+	jQuery(document).on('click','.block_enl_subexams a',function(event){
+		event.preventDefault();
+		var direc=jQuery(this).attr('href');
+		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
+	});
 
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {

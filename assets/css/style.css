@@ -921,6 +921,38 @@ PROPIEDADES CUERPO SERIE EXAMS CURSO
 .inside-img-exam-serie-c{height:235px;position:relative;text-align:right;width:100%;}
 .inside-img-exam-serie-c img{max-width:100%;bottom:-50px;position:absolute;right:25px;vertical-align:bottom;width:182px;box-shadow:0 10px 20px rgba(0,0,0,0.2);}
 
+/************************
+PROPIEDADES EXAMS SINGLE
+*************************/
+.img_single_exam{max-width:100%;margin-bottom:60px;}
+.single-exam{padding-bottom:150px;}
+.single-exam h2{margin-bottom:40px;line-height:41px;}
+
+.block_enl_subexams{overflow:hidden;margin-top:40px;margin-bottom:40px;}
+.box_enl_exam{background:#710d2b;display:block;box-sizing:border-box;padding:20px;float:left;width:33%;margin-right:2px;opacity:1; -webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.box_enl_exam:hover{opacity:0.8;}
+.box_enl_exam img{width:48px;height:48px;}
+.box_enl_exam h3{font-size:14px;color:#ffffff;}
+.box_enl_exam h4{font-size:20px;color:#ffffff;}
+
+.key-features.single-exam-b h3{color:#373340;}
+.key-features.single-exam-b p{color:#373340;font-size:16px;}
+
+.exam-component{background:none !important;}
+.exam-component .row-exam-component{border-top:5px #ffffff solid;border-bottom:5px #ffffff solid;padding-top:10px;padding-bottom:40px;}
+.exam-component .row-exam-component h2{color:#373340 !important;font-size:20px !important;font-family:'latoregular', Helvetica, sans-serif !important;}
+
+.info_single_exam p{color:#373340;font-size:16px;line-height:22px;margin-bottom:20px;}
+.info_single_exam h3{margin-top:40px;}
+.info_single_exam h4{font-size:20px;color:#373340;line-height:32px;margin-bottom:20px;}
+.info_single_exam ul{margin:0;padding:0;list-style:none;margin-bottom:20px;}
+.info_single_exam ul li{color:#373340;font-size:16px;line-height:22px;}
+
+.table_cont_exams .pill-w-table tr td p{text-align:left;}
+.table_cont_exams table tr td{vertical-align:top !important;padding:8px;}
+.table_cont_exams table tr td p.title-table{font-family:'latoregular', Helvetica, sans-serif !important;}
+.table_cont_exams table tr td p.title-table span{font-size:11px;top:-4px;display:inline-block;position:relative;line-height:14px;}
+
 /*****************************
 PROPIEDADES CUERPO NEWSLETTER
 ******************************/
@@ -1560,8 +1592,8 @@ table.default tr td p strong{font-family:'latoregular', Helvetica, sans-serif;fo
 PROPIEDADES CUSTOM THEMES
 *******************************/
 
-.theme-color {color:#47b6c7 !important;}
-.theme-color-bg { background-color:#47b6c7 !important; }
+.theme-color {color:#710d2b !important;}
+.theme-color-bg { background-color:#710d2b !important; }
 .authors.theme-color:before{color:#47b6c7 !important;}
 .nlevel.theme-color:before{color:#47b6c7 !important;}
 .level.theme-color:before{color:#47b6c7 !important;}
@@ -1582,6 +1614,12 @@ PROPIEDADES CUSTOM THEMES
 .opc_levels a.active{color:#47b6c7 !important;}
 .esample-product.theme-color h2{color:#20718c !important;}
 .recurso-prog-product.theme-color h2{color:#20718c !important;}
+
+.top-product.theme-color{background:#710d2b !important;}
+.single-exam-block.theme-color h2{color:#710d2b !important;}
+.single-exam .key-features.theme-color ul li:before{color:#710d2b !important;}
+.single-exam .key-features.theme-color h2{color:#710d2b !important;}
+.exam-component ul li.theme-color::before {color: #710d2b !important;}
 
 
 /******************************
@@ -1933,6 +1971,8 @@ MEDIA QUERIES
     .row_seo_home_up{padding-right:18px;}
     .right-box-seo{display:none;}
     .colum-mini-cat{margin-top:-340px;}
+	
+	.box_enl_exam{width:100%;margin-right:0;margin-bottom:10px;}
 }
 
 @media (max-width: 640px) {
@@ -2124,6 +2164,8 @@ MEDIA QUERIES
     .desplg_cities select option{font-size:14px;}
 
     .fila-links{text-align:center;}
+	
+	.table_cont_exams .pill-w-table tr td p{font-size:13px !important;}
 
 }
 
@@ -2151,6 +2193,11 @@ MEDIA QUERIES
     .inside-img-generico img{bottom:0px;}
     .inside_graf_ess img{width:75px;}
     .inside_graf_ess p{font-size:13px;}
+	.table_cont_exams .pill-w-table tr td p{font-size:11px !important;}
+}
+
+@media (max-width: 370px){
+	.table_cont_exams .pill-w-table tr td p{font-size:10px !important;line-height:12px !important;}
 }
 
 
