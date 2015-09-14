@@ -80,7 +80,7 @@ jQuery(window).load(function(){
 			jQuery(this).css('height',maxHeight);
 		});
 	}
-	
+
 	//Igualar todos los bloques cards de la home
 	if (jQuery('.block_cards').is(":visible") ) {
 		//Listado cursos
@@ -1009,8 +1009,8 @@ jQuery(document).ready(function(){
 		event.preventDefault();
 		jQuery('.block-cookies').fadeOut(600);
 	});
-	
-	//Enlaces examenes  
+
+	//Enlaces examenes
 	jQuery(document).on('click','.block_enl_subexams a',function(event){
 		event.preventDefault();
 		var direc=jQuery(this).attr('href');
@@ -1047,7 +1047,7 @@ jQuery(document).ready(function(){
 			var altura_h1=jQuery('.cab-page .container h1').height();
 			jQuery('.cab-page .container h1').css('margin-top', -(altura_h1/2));
 		}
-		
+
 		//Igualar todos los bloques cards de la home
 		if (jQuery('.block_cards').is(":visible") ) {
 			//Listado cursos
@@ -1148,9 +1148,11 @@ jQuery(document).ready(function(){
 		jQuery( this ).parents('li').css({color:'#bbb5bb'});
 	});
 
-	jQuery("img.lazy").lazyload({
-		effect : "fadeIn"
-	});
+	if( jQuery().pluginName ){
+		jQuery("img.lazy").lazyload({
+			effect : "fadeIn"
+		});
+	}
 
 	if( jQuery(".container-infografias").size() > 0 )
 	{
