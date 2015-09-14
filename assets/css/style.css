@@ -929,7 +929,9 @@ PROPIEDADES EXAMS SINGLE
 .single-exam h2{margin-bottom:40px;line-height:41px;}
 
 .block_enl_subexams{overflow:hidden;margin-top:40px;margin-bottom:40px;}
-.box_enl_exam{background:#710d2b;display:block;box-sizing:border-box;padding:20px;float:left;width:33%;margin-right:2px;opacity:1; -webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.block_enl_subexams.cols-3 .box_enl_exam{width:33%;}
+.block_enl_subexams.cols-2 .box_enl_exam{width:50%;}
+.box_enl_exam{background:#710d2b;display:block;box-sizing:border-box;padding:20px;float:left;margin-right:2px;opacity:1; -webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;margin-bottom:5px;}
 .box_enl_exam:hover{opacity:0.8;}
 .box_enl_exam img{width:48px;height:48px;}
 .box_enl_exam h3{font-size:14px;color:#ffffff;}
@@ -1972,7 +1974,9 @@ MEDIA QUERIES
     .right-box-seo{display:none;}
     .colum-mini-cat{margin-top:-340px;}
 	
-	.box_enl_exam{width:100%;margin-right:0;margin-bottom:10px;}
+	.block_enl_subexams.cols-3 .box_enl_exam{width:100%;}
+	.block_enl_subexams.cols-2 .box_enl_exam{width:100%;}
+	.box_enl_exam{margin-right:0;margin-bottom:10px;}
 }
 
 @media (max-width: 640px) {
