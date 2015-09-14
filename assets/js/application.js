@@ -70,7 +70,7 @@ jQuery(window).load(function(){
 	//Igualar todos los bloques de exámenes home
 	if (jQuery('.list-home-exams').is(":visible") ) {
 		//Listado cursos
-		var heights = jQuery('.list-home-exams div.block-h-exam').map(function ()
+		var heights = jQuery('.list-home-exams a.block-h-exam').map(function ()
 		{
 			return jQuery(this).outerHeight();
 		}).get(),
