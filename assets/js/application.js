@@ -1014,7 +1014,7 @@ jQuery(document).ready(function(){
 	jQuery(document).on('click','.block_enl_subexams a',function(event){
 		event.preventDefault();
 		var direc=jQuery(this).attr('href');
-		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
+		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc).find('.info_single_exam h2'),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
 	});
 
 	//Evento para capturar el resize de la ventana

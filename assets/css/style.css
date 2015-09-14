@@ -924,7 +924,7 @@ PROPIEDADES CUERPO SERIE EXAMS CURSO
 /************************
 PROPIEDADES EXAMS SINGLE
 *************************/
-.img_single_exam{max-width:100%;margin-bottom:60px;}
+.img_single_exam{max-width:100%;margin-bottom:50px;margin-top:-30px;}
 .single-exam{padding-bottom:150px;}
 .single-exam h2{margin-bottom:40px;line-height:41px;}
 
@@ -2015,6 +2015,8 @@ MEDIA QUERIES
     .cont-product{padding:60px 18px 0;}
     .cont-component{padding:60px 18px 0;}
     .cont-recurso-p{padding: 60px 18px 150px;}
+	
+	.img_single_exam{margin-top:0;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
