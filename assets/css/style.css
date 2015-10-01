@@ -949,8 +949,8 @@ PROPIEDADES EXAMS SINGLE
 .info_single_exam p{color:#373340;font-size:16px;line-height:22px;margin-bottom:20px;}
 .info_single_exam h3{margin-top:40px;}
 .info_single_exam h4{font-size:20px;color:#373340;line-height:32px;margin-bottom:20px;}
-.info_single_exam ul{margin:0;padding:0;list-style:none;margin-bottom:20px;}
-.info_single_exam ul li{color:#373340;font-size:16px;line-height:22px;}
+.info_single_exam ul{margin:0;padding:0;list-style:none;margin-bottom:20px;margin-left:30px;}
+.info_single_exam ul li{color:#373340;font-size:16px;line-height:22px;list-style:disc;}
 
 .table_cont_exams .pill-w-table tr td p{text-align:left;}
 .table_cont_exams table tr td{vertical-align:top !important;padding:8px;}
