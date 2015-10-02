@@ -946,7 +946,7 @@ PROPIEDADES EXAMS SINGLE
 
 .exam-component{background:none !important;}
 .exam-component .row-exam-component{border-top:5px #ffffff solid;border-bottom:5px #ffffff solid;padding-top:10px;padding-bottom:40px;}
-.exam-component .row-exam-component h2{color:#373340 !important;font-size:20px !important;font-family:'latoregular', Helvetica, sans-serif !important;}
+.exam-component .row-exam-component h2{color:#373340 !important;font-size:20px !important;font-family:'latoregular', Helvetica, sans-serif !important;margin-bottom:10px !important;}
 
 .info_single_exam p{color:#373340;font-size:16px;line-height:22px;margin-bottom:20px;}
 .info_single_exam h3{margin-top:40px;}
@@ -1626,6 +1626,7 @@ PROPIEDADES CUSTOM THEMES
 .single-exam .key-features.theme-color ul li:before{color:#710d2b !important;}
 .single-exam .key-features.theme-color h2{color:#710d2b !important;}
 .exam-component ul li.theme-color::before {color: #710d2b !important;}
+.single-exam-block.theme-color a{color:#710d2b !important;}
 
 
 /******************************
