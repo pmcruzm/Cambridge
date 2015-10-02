@@ -941,6 +941,8 @@ PROPIEDADES EXAMS SINGLE
 
 .key-features.single-exam-b h3{color:#373340;}
 .key-features.single-exam-b p{color:#373340;font-size:16px;}
+.key-features.single-exam-b ul{margin-left:0px !important;list-style:none !important;}
+.key-features.single-exam-b ul li{list-style:none !important;}
 
 .exam-component{background:none !important;}
 .exam-component .row-exam-component{border-top:5px #ffffff solid;border-bottom:5px #ffffff solid;padding-top:10px;padding-bottom:40px;}
