@@ -1148,7 +1148,7 @@ jQuery(document).ready(function(){
 		jQuery( this ).parents('li').css({color:'#bbb5bb'});
 	});
 
-	if( jQuery().pluginName ){
+	if( jQuery().lazyload ){
 		jQuery("img.lazy").lazyload({
 			effect : "fadeIn"
 		});
