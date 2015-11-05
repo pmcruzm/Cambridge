@@ -2009,6 +2009,7 @@ MEDIA QUERIES
     .content-course-sup .inside-img-product img {bottom: -248px;left: 0;margin-left: auto;margin-right: auto;right: 0; width: 370px !important;}
     .inside-img-generico img{bottom:-40px;margin-left:auto;margin-right:auto;left:0;right:0;}
     .top-product{height:auto;}
+	.top-product.exam-single-top{height:335px;}
     .inside-img-product{margin-top:0px;}
     .inside-img-product img{position:relative;bottom:0px;margin-bottom:-70px;}
     .inside-img-generico{height:auto;text-align:center;}
