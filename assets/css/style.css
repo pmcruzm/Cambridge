@@ -927,6 +927,7 @@ PROPIEDADES EXAMS SINGLE
 .img_single_exam{max-width:100%;margin-bottom:50px;margin-top:-30px;}
 .single-exam{padding-bottom:150px;}
 .single-exam h2{margin-bottom:40px;line-height:41px;}
+.single-exam .cont-product{padding-top:35px;}
 
 .block_enl_subexams{overflow:hidden;margin-top:40px;margin-bottom:40px;}
 .block_enl_subexams.cols-1 .box_enl_exam{width:100%;}
