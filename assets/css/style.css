@@ -1044,6 +1044,36 @@ PROPIEDADES CUERPO CORPUS
 
 .slider-corpus{-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
 
+/*************************
+PROPIEDADES CUERPO JOURNEY
+**************************/
+
+.top-journey h2{font-size:32px;color:#355d81;font-family:'latoregular', Helvetica, sans-serif;padding-left:20px;padding-right:20px;padding-top:36px;margin-bottom:30px;}
+.box-mini-journey{padding:20px;}
+.box-mini-journey h3{font-size:32px;color:#355d81;font-family:'latoregular', Helvetica, sans-serif;}
+.box-mini-journey .cont_img_journey{min-height:274px;}
+.box-mini-journey img{max-width:100%;}
+.box-mini-journey p{color:#373340;font-size:18px;line-height:26px;margin-bottom:15px;}
+.img_objetivo img{display:block;max-width:312px;width:100%;margin:0 auto;}
+.img_lleva img{display:block;max-width:311px;width:100%;margin:0 auto;}
+.journey-grafica{background:#f08959 !important;padding-top:20px !important;}
+.journey-grafica h3{color:#fff200;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;padding-bottom:30px;}
+.cont_img_mini{height:107px;}
+.cont_img_mini img{max-width:100%;height:auto !important;}
+.cont_img_mini.img_1 img{display:inline-block;max-width:148px;width:100%;margin:0 auto;}
+.cont_img_mini.img_2 img{display:inline-block;max-width:82px;width:100%;margin:0 auto;}
+.cont_img_mini.img_3 img{display:inline-block;max-width:131px;width:100%;margin:0 auto;}
+.journey-grafica p{text-align:center;font-size:16px;color:#373340;padding-left:5px;padding-right:5px;padding-top:20px;}
+.bottom-journey{padding-bottom:100px;padding-top:30px;}
+.pdf-element img{display:inline-block;max-width:144px;width:100%;margin:0 auto;margin-top:32px;}
+.bottom-journey h3{color:#355d81;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;}
+.bottom-journey p{color:#373340; font-size:20px;line-height:26px;}
+.enl-languages{margin-top:60px;text-align:center;}
+.enl-languages a{display:inline-block;width:175px;background:#355d81;color:#ffffff;height:30px;border-radius:15px;line-height:30px;margin-left:20px;}
+.enl-languages a:hover{color:#ffffff;}
+.enl-languages a:first-child{margin-left:0;}
+
+
 /**************************************
 PROPIEDADES CUERPO ENGLISH FOR SCHOOL
 **************************************/
@@ -1799,6 +1829,9 @@ MEDIA QUERIES
 @media (max-width: 991px) {
     .container-infografias .monitor-separator {display: none;}
     .container-infografias .monitor-separator-sm {display: block;}
+	.box-mini-journey .cont_img_journey{min-height:204px;}
+	.box-mini-journey h3{font-size:30px;}
+	.enl-languages a{width:165px;margin-left:15px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1983,6 +2016,10 @@ MEDIA QUERIES
 	.block_enl_subexams.cols-3 .box_enl_exam{width:100%;}
 	.block_enl_subexams.cols-2 .box_enl_exam{width:100%;}
 	.box_enl_exam{margin-right:0;margin-bottom:10px;}
+	
+	.pdf-element{text-align:center;}
+	.bottom-journey h3{padding-left:20px;padding-right:20px;}
+	.bottom-journey p{padding-left:20px;padding-right:20px;}
 }
 
 @media (max-width: 640px) {
@@ -2028,6 +2065,7 @@ MEDIA QUERIES
     .cont-recurso-p{padding: 60px 18px 150px;}
 
 	.img_single_exam{margin-top:0;}
+	.enl-languages a {margin-left: 10px;width: 140px;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -2187,6 +2225,8 @@ MEDIA QUERIES
     #destacado_sup{margin-top:0px;}
     #destacado_sup{margin-bottom:18px;}
 	.block_cards div.thumbnails{height:auto !important;}
+	.enl-languages a{width:90%;display:block;margin-left:0;margin:0 auto;margin-bottom:20px;}
+	.enl-languages a:first-child{margin-left:0;margin:0 auto;margin-bottom:20px;}
 }
 
 @media (max-width: 400px){
