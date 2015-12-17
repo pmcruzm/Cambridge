@@ -2227,6 +2227,9 @@ MEDIA QUERIES
 	.block_cards div.thumbnails{height:auto !important;}
 	.enl-languages a{width:90%;display:block;margin-left:0;margin:0 auto;margin-bottom:20px;}
 	.enl-languages a:first-child{margin-left:0;margin:0 auto;margin-bottom:20px;}
+	.cont_img_mini{height:auto;padding-top:30px;padding-bottom:30px;}
+	.journey-grafica p{padding-top:0;}
+	
 }
 
 @media (max-width: 400px){
