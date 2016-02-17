@@ -26,7 +26,7 @@ PROPIEDADES CABECERA
 #top-header ul.main-menu li:nth-child(4).active a{background:none;text-decoration:none;color:#d1fffe;}
 #top-header ul.main-menu li:nth-child(5).active a{background:none;text-decoration:none;color:#d1fffe;}
 
-.main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;font-size:15px;}
+.main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;font-size:14px;}
 
 .mobile-tab{display:none;}
 .mobile-tab li a{padding-left:9px !important;padding-right:9px !important;}
@@ -1719,6 +1719,7 @@ select, select:focus{outline:none !important;}
 input[type=text]{-webkit-appearance:none;}
 input[type=email]{-webkit-appearance:none;}
 textarea{-webkit-appearance:none;}
+iframe[name='google_conversion_frame'] { height: 0 !important;width: 0 !important;line-height: 0 !important;font-size: 0 !important;margin-top: -13px;float: left;}
 
 
 /**********************************
@@ -1822,6 +1823,10 @@ MEDIA QUERIES
 	.block_cards .thumbnails{min-height:425px !important;}
 }
 
+@media (max-width: 1200px) {
+	#top-header ul li a{padding-left:10px;padding-right:10px;}
+}
+
 @media (min-width: 992px) {
     .container {width: 986px;}
 }
@@ -1832,6 +1837,10 @@ MEDIA QUERIES
 	.box-mini-journey .cont_img_journey{min-height:204px;}
 	.box-mini-journey h3{font-size:30px;}
 	.enl-languages a{width:165px;margin-left:15px;}
+	.main-menu{display:none;}
+    .mobile-tab{display:block;}
+	#content-home{margin-top:-170px;}
+	#header{height: 214px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1901,8 +1910,6 @@ MEDIA QUERIES
     .contact_link a{width:216px;}
     .block_cards{position:relative;margin-top:-340px;}
     #top-header ul li a{padding-left:9px;padding-right:9px;}
-    .main-menu{display:none;}
-    .mobile-tab{display:block;}
     .titul-search{padding-top:0px;}
     .titul-search p{text-align:center;}
     .form-despl-search {padding-right: 9px;padding-top:0px;}
