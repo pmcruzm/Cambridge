@@ -25,6 +25,7 @@ PROPIEDADES CABECERA
 #top-header ul.main-menu li.active a{background:#ffffff;text-decoration:none;color:#47b6c7;}
 #top-header ul.main-menu li:nth-child(4).active a{background:none;text-decoration:none;color:#d1fffe;}
 #top-header ul.main-menu li:nth-child(5).active a{background:none;text-decoration:none;color:#d1fffe;}
+#top-header ul.main-menu li:nth-child(6).active a{background:none;text-decoration:none;color:#d1fffe;}
 
 .main-menu>li>a{font-family:'latoregular', Helvetica, sans-serif !important;font-size:14px;}
 
