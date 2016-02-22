@@ -114,6 +114,14 @@ jQuery(document).ready(function(){
 	}else{
 		jQuery('.block-cookies').show();
 	}
+	
+	
+	//Añadimos clase a los menús que no tienen hijos
+	jQuery('#top-header ul.main-menu li').each(function() {
+		if(jQuery(this).find('.desplegable-sub').length ==0){
+			jQuery(this).addClass('no-submenu');	
+		}			
+	});
 
 	//Cargar título del cuadro de contacto
 	/*if (jQuery('.info-office').is(":visible") ) {
