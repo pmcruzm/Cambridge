@@ -795,7 +795,7 @@ PROPIEDADES CUERPO DIGITAL PRODUCT
 .off-line{overflow:hidden;padding-left:10px;padding-right:10px;}
 .off-line p{line-height:30px;color:#bbb5bb;text-align:left;font-family:'latoregular', Helvetica, sans-serif;height:30px;font-size:12px;margin:0;}
 
-.icon-offline:before{content:'o';display:inline-block;width:30px;height:16px;margin:0 auto;float:right;font-family: 'icomoon',Helvetica,sans-serif;font-size:33px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;position:relative;top:-1px;-webkit-font-smoothing:antialiased;}
+.icon-offline:before{content:'z';display:inline-block;width:30px;height:16px;margin:0 auto;float:right;font-family: 'icomoon',Helvetica,sans-serif;font-size:33px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;position:relative;top:-1px;-webkit-font-smoothing:antialiased;}
 .icon-online:before{content:'z';display:inline-block;width:30px;height:16px;margin:0 auto;float:right;font-family: 'icomoon',Helvetica,sans-serif;font-size:33px;-moz-osx-font-smoothing: grayscale;font-style: normal;font-variant: normal;font-weight: normal;line-height: 1;text-transform: none;position:relative;top:-1px;-webkit-font-smoothing:antialiased;}
 
 /************************************
