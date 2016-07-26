@@ -1813,6 +1813,11 @@ input[type="checkbox"]:checked + label::before {
 MEDIA QUERIES
 ******************************/
 @media (min-width: 1200px) {
+	#top-header .container{width: 100% !important;}
+	#top_footer .container{width: 100% !important;}
+	#inf_footer .container{width: 100% !important;}
+	#row_rrss .container{width: 100% !important;}
+	#header .logo{left:-18px;position:relative;}
 	.container {width: 1200px !important;}
 	.thumbnail-anim p{font-size:16px;}
 	.cat_mid p{font-size:16px;line-height:16px;}
