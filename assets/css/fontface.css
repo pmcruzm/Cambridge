@@ -31,7 +31,6 @@ FUENTES CAMBRIDGE UNIVERSITY
 
 
 
-
 @font-face {
     font-family: 'latolight';
     src: url('../fonts/lato-light-webfont.eot');
@@ -68,4 +67,27 @@ FUENTES CAMBRIDGE UNIVERSITY
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'latobold_italic';
+    src: url('../fonts/lato-bolditalic-webfont.eot');
+    src: url('../fonts/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/lato-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/lato-bolditalic-webfont.svg#latobold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?mx7xpv');
+	src:url('../fonts/icomoon.eot?#iefixmx7xpv') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?mx7xpv') format('woff'),
+		url('../fonts/icomoon.ttf?mx7xpv') format('truetype'),
+		url('../fonts/icomoon.svg?mx7xpv#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }

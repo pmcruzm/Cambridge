@@ -20,7 +20,7 @@
 .col-sx-3,
 .col-sx-4,
 .col-sx-5,
-.colsx-6,
+.col-sx-6,
 .col-sx-7,
 .col-sx-8,
 .col-sx-9,
@@ -32,7 +32,7 @@
   padding-left: 9px;
   padding-right: 9px; }  
 
-@media (max-width: 480px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .col-ms-1,
   .col-ms-2,
   .col-ms-3,
@@ -180,11 +180,11 @@
 
   .col-ms-offset-11 {
     margin-left: 91.66667%; } }
-@media (min-width: 480px) and (max-width: 768px) {
+@media (min-width: 480px) and (max-width: 767px) {
   .container {
     max-width: 748px; } }
 	
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 479px) {
   .col-sx-1,
   .col-sx-2,
   .col-sx-3,

@@ -28,8 +28,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
@@ -42,14 +42,14 @@
             	<a href="#" title="" class="logo">Cambridge University Press</a>
                 	<!--Search & Languages-->
                     <ul class="other-menu">
-                        <li><a href="#" class="glyphicon glyphicon-search"></a>
+                        <li><a href="#" class="glyphicon custom-search"></a>
                         	 <div class="desplegable-sub">
                                     <div class="container">
                                         <div class="row">
-                                             <div class="col-xs-3 col-sm-3 col-md-3 titul-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 titul-search">
                                                 <p>Search</p>
                                              </div>
-                                             <div class="col-xs-8 col-xs-offset-1 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
+                                             <div class="col-sx-12 col-ms-12 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
                                              	<form role="form" id="formulario-search">
                                                     <div class="form-group">
                                                         <label for="campo_busqueda">Campo Búsqueda</label>
@@ -57,10 +57,10 @@
                                                     </div>
                                                     <div class="radio">
                                                         
-                                                        <input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label>Catalog
-                                                        <input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label> Events
-                                                        <input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label> About us
-                                                        <input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label> Everywhere
+                                                        <div><input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label><span>Catalog</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label><span>Events</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label><span>About us</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label><span>Everywhere</span></div>
                                                         
                                                      </div>
                                                   <input type="submit" class="btn" value="Search">
@@ -70,32 +70,41 @@
                                     </div>
                               </div>
                         </li>
-                        <li class="select-lang"><a href="#" class="glyphicon glyphicon-flag"></a>
-                        	<div class="desplegable-lang">
-                            	<ul>
-                                	<li><a href="#" title="" class="active">EN</a></li>
-                                    <li><a href="#" title="">ES</a></li>
-                                </ul>
+                        <li class="select-lang"><a href="#" class="glyphicon custom-flag"></a>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                                    <div class="row">
+                                    	<div class="col-sx-12 col-ms-12 col-md-7 col-md-offset-5 box-lang"><!--col-sx-6 col-ms-6 col-sm-7 col-sm-offset-5 -->
+                                            <p>Choose language</p>
+                                            <ul>
+                                                <li class="active-lang"><a href="#" title="">English</a></li>
+                                                <li><a href="#" title="">Español</a></li>
+                                            </ul>
+                                        </div>
+                                	</div>
+                                </div>    
                             </div>
                         </li>
-                    </ul> 
+                    </ul>  
                     <!--Mobile-->
                     <ul class="mobile-tab">
-                    	<li class="menu-mob"><a href="#" class="fa fa-bars"></a>
+                    	<li class="menu-mob"><a href="#" class="glyphicon custom-menu"></a>
                         <!--Implementación de menús-->
                         	<div class="mobile-menus">
                             	<div class="container">
                                 	<div class="row">
-                                    	<div class="col-xs-4 list-menu-mob">
+                                    	<!--<div class="col-sx-12 col-xs-4 list-menu-mob">-->
+                                        <div class="col-sx-12 col-ms-4 col-sm-4 list-menu-mob">
                                          	<ul>
-                                            	<li><a href="#" title="">Nosotros  <span class="caret"></span></a>
+                                            	<li><a href="#" title="" rel="Nosotros">Nosotros  <span class="caret"></span></a>
                                                 	<ul>
+                                                    	<li><a title="" href="nosotros.html">Quienes somos</a></li>
                                                         <li><a title="" href="#">Cambridge Corpus</a></li>
-                                                        <li><a title="" href="#">Team</a></li>
+                                                        <li><a title="" href="team.html">Team</a></li>
                                                         <li><a title="" href="#">Contact</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="#" title="">Catálogo  <span class="caret"></span></a>
+                                                <li><a href="#" title="" rel="Catalogo">Catálogo  <span class="caret"></span></a>
                                                 	<ul>
                                                         <li><a title="" href="#">Infantil</a></li>
                                                         <li><a title="" href="#">Primaria</a></li>
@@ -104,44 +113,89 @@
                                                         <li><a title="" href="#">Adultos</a></li>
                                                         <li><a title="" href="#">Digital</a></li>
                                                     </ul>
+                                                    <ul>
+                                                        <li><a href="#" title="">Exámenes</a></li>
+                                                        <li><a href="#" title="">Profesional English</a></li>
+                                                        <li><a href="#" title="">Gramática, vocabulario y pronunciación</a></li>
+                                                        <li><a href="#" title="">Books for teachers</a></li>
+                                                    </ul>
                                                 </li>
-                                                <li><a title="" href="#">Teacher Development  <span class="caret"></span></a>
+                                                <li><a title="" href="#" rel="Teacher">Teacher Development  <span class="caret"></span></a>
                                                 	<ul>
-                                                        <li><a title="" href="#">Teacher Development</a></li>
-                                                        <li><a title="" href="#">Cambridge LABS</a></li>
+                                                        <li><a title="" href="teacher.html">Teacher Development</a></li>
+                                                        <li><a title="" href="labs.html">Cambridge LABS</a></li>
                                                         <li><a title="" href="#">Cambridge English for Schools</a></li>
                                                         <li><a title="" href="#">English for Spanish Speakers</a></li>
                                                         <li><a title="" href="#">Events</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a title="" href="#">Recursos</a></li>
-                                                <li><a title="" href="#">Exámenes</a></li>
+                                                <li><a title="" href="teacher.html">Recursos</a></li>
+                                                <li><a title="" href="exams.html">Exámenes</a></li>
                                             </ul>
                                          </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
-                                         </div>
-                                         <div class="col-xs-4">
-                                         	<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
-                                         </div>
+
+                                         	<div class="col-sx-12 col-ms-8 col-sm-8">
+                                            	<div class="row">
+                                                	<div class="block-banners">
+                                                    	<!--Banners Nosotros-->
+                                                    	<div class="banner-nosotros" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                         </div>
+                                                        <!--Banners Catálogo-->
+                                                    	<div class="banner-catalogo">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                         <!--Banners Teacher-->
+                                                    	<div class="banner-teacher" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                    </div>     
+                                                 </div>
+                                             </div>
                                     </div>	
                                 </div>
                             </div>
                         </li>
-                    </ul>   
+                    </ul>  
                     <!--Menú principal-->
                     <ul class="main-menu">
                     	<li><a href="#">Nosotros</a>
                         	<div class="desplegable-sub">
                             	<div class="container">
-                            		<div class="row">
-                 						 <div class="col-md-2">
+                                	<div class="row">
+                 						 <div class="col-sm-3 col-md-3">
                                          	<ul>
-                                            	<li><a href="#" title="">Quienes somos</a></li>
-                                                <li><a href="#" title="">Infografía Corpus</a></li>
+                                            	<li><a href="nosotros.html" title="">Quienes Somos</a></li>
+                                            	<li><a href="#" title="">Cambridge Corpus</a></li>
+                                                <li><a href="team.html" title="">Team</a></li>
+                                                <li><a href="#" title="">Contact</a></li>
                                             </ul>
                                          </div>
-                                    </div>     
+                                         <div class="col-sm-3 col-md-3">
+                                         	<!--Espacio vacio para más menús-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                    </div>  
                                 </div>
                             </div>
                         </li>
@@ -180,22 +234,33 @@
                         <li><a href="#" title="">Teacher Development</a>
                                 <div class="desplegable-sub">
                                     <div class="container">
-                                        <div class="row">
-                                             <div class="col-md-2">
+                                    	<div class="row">
+                                             <div class="col-sm-3 col-md-3">
                                                 <ul>
-                                                    <li><a href="#" title="">Teacher Development</a></li>
-                                                    <li><a href="#" title="">Cambridge LABS</a></li>
+                                                    <li><a href="teacher.html" title="">Teacher Development</a></li>
+                                                    <li><a href="labs.html" title="">Cambridge LABS</a></li>
                                                     <li><a href="#" title="">Cambridge English for Schools</a></li>
-                                                    <li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                <ul>
+                                                	<li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                     <li><a href="#" title="">Cambridge English Teacher</a></li>
                                                     <li><a href="#" title="">Events</a></li>
                                                 </ul>
                                              </div>
-                                        </div>     
+                                             <div class="col-sm-3  col-md-3 ">
+                                                    <!--Espacio vacio para 1 banner-->
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                    <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                             </div>
+                                        </div> 
                                     </div>
                                 </div>
                         </li>
-                        <li><a href="#" title="">Recursos</a></li>
-                        <li><a href="#" title="">Exámenes</a></li>
+                        <li><a href="recursos.html" title="">Recursos</a></li>
+                        <li><a href="exams.html" title="">Exámenes</a></li>
                     </ul>
                 </div>
              </div>   
@@ -223,11 +288,25 @@
         <!--Fin cabecera-->
         <!--Contenido-->
         <div id="content" class="content-exam-serie">
+        	<!--Menú lateral versión mobile-->
+            <div id="submenus-mob-prodct">
+                <a href="#" title="">Infantil</a>
+                <ul>
+                   <li><a href="#" title="">Quick Minds</a></li>
+                   <li class="active"><a href="#" title="">Kid’s Box for Spanish Speakers 2nd Edition</a></li>
+                   <li><a href="#" title="">Super Minds</a></li>
+                   <li><a href="#" title="">The English Ladder</a></li>
+                   <li><a href="#" title="">Primary Colours</a></li>
+                   <li><a href="#" title="">Playway to English 2nd Edition</a></li>
+                   <li><a href="#" title="">The Thinking Lab: Science</a></li>
+                   <li><a href="#" title="">Primary i-Dictionary</a></li>
+                </ul>   	
+            </div>
         	<div class="top-product" style="background-image:url(assets/upload/bg_exam_s.png);">
             	<div class="container">
                 	<a href="#" title="Subir" class="up-window">Subir</a>
                 	<div class="row">
-                        <div class="col-md-9 col-md-offset-3 block-img-exam">
+                        <div class="col-sm-9 col-sm-offset-3 col-md-9 col-md-offset-3 block-img-exam">
                         	<div class="inside-img-exam-serie">
                         		<img src="assets/upload/portada_exam_s.png" alt="">
                             </div>
@@ -237,7 +316,7 @@
             </div>
             <div class="container">
             	<div class="row">
-   					<div class="col-md-3">
+   					<div class="col-sx-12 col-ms-12 col-sm-3 col-md-3">
                     	<!--Menú lateral-->
                         <div class="block-submenus menu-product">
                             <ul>
@@ -352,43 +431,42 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-9 cont-product">
+                    <div class="col-sx-12 col-ms-12 col-sm-9 col-md-9 cont-product">
                     	<p class="intro-product">This six-level course gives children a confident start to learning English, and makes lessons a joy for teachers. Perfect for general use, it also fully covers the Cambridge English: Young Learners (YLE) tests syllabus, preparing students better than ever for success at Starters, Movers and Flyers.</p>
                         <div class="row clasf-product">
-                        	<div class="col-md-6">
-                            	<p class="product-aut"><span>Autores</span><br/>Caroline Nixon, Michael Tomlinson</p>
-                                <br class="clear"/>
-                                <p class="product-nlevel"><span>Nº de Niveles</span><br/>6</p>
-                                <br class="clear"/>
-                                <p class="product-level"><span>Level</span><br/>A1-A2 (Complete Beginner to Elementary)</p>
-                                <br class="clear"/>
+                        	<div class="col-sx-12 col-ms-6 col-sm-6 col-md-6">
+                            	<div class="authors theme-color" ><p><span class="theme-color">Autores</span><br/>Caroline Nixon, Michael Tomlinson</p></div>
+                                <div class="nlevel theme-color"><p><span class="theme-color">Nº de Niveles</span><br/>6</p></div>
+                                <div class="level theme-color"><p><span class="theme-color">Level</span><br/>A1-A2 (Complete Beginner to Elementary)</p></div>
                             </div>
-                            <div class="col-md-5 col-md-offset-1">
-                                <p class="product-informed"><span>Informed by the Cambridge English Corpus</span><br/><a href="#" title="">Learn More</a></p>
-                                <br class="clear"/>
+                            <div class="col-sx-12 col-ms-6 col-sm-5 col-sm-offset-1 col-md-5 col-md-offset-1">
+                            	<div class="product-ess theme-color"><p><span class="theme-color">English for Spanish Speakers</span><br/><a href="#" title="" class="theme-color">Learn More</a></p></div>
+                                <div class="product-informed"><p><span class="theme-color">Informed by the Cambridge English Corpus</span><br/><a href="#" title="" class="theme-color">Learn More</a></p></div>
                             </div>
-                        </div> 
-                        
-                        <div class="key-features">
-                        	<h2>Key Features</h2>
-                            <ul>
-                                <li><p>The new <strong>'My Home Booklet'</strong> revises vocabulary and grammar and helps self-assess basic competences development at home with parents.</p></li>
-                                <li><p><strong>Phonics</strong> sections help improve pronunciation, spelling and reading skills, while the 'Say it with me' sections focus on common pronunciation problems for Spanish speakers.</p></li>
-                                <li><p>An <strong>improved focus on grammar</strong>, with Grammar boxes and a Grammar reference in the Pupil's Book, plus a Grammar practice in the Activity Book.</p></li>
-                                <li><p>New resources to <strong>exploit stories</strong> in the classroom: character masks, story summaries, and playscripts.</p></li>
-                                <li><p><strong>Exam-type tests</strong> in levels 2, 4 and 6 help to assess the children's progress, and familiarise them with the format of the Cambridge English: Young Learners exam. </p></li>
-                            </ul>
-                        </div> 
-                        
+                        </div>
+                        <div class="key-features theme-color">
+                            <div class="row">
+                                <div class="ezxmltext-field">
+                                	<a id="eztoc1_1" name="eztoc1_1"></a><h2>Key Features</h2>
+                                    	<ul>
+                                        	<li>New language is presented through amusing stories and practised with fantastic songs and activities.</li>
+                                            <li>Key language is continuously revised and recycled, helping to build children's confidence.</li>
+                                            <li>A focus on communicative activities ensures that children use the language they have learned in a fun, 'no-pressure' context.</li>
+                                            <li>An extensive range of supplementary materials provides the teacher with all the extra activities they need.</li>
+                                        </ul>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="video-youtube">
                         	<iframe width="670" height="375" src="//www.youtube.com/embed/EoHs690qJYI" frameborder="0" allowfullscreen></iframe>
                         </div>
                         
                         <div class="list-official">
-                        	<h2>Official preparation for</h2>
+                        	<h2 class="theme-color">Official preparation for</h2>
                             
-                            <div class="row vrow">
-                                <div class="col-md-4 vcenter">
+                            <div class="row listado-courses">
+                                <div class="col-sx-12 col-ms-6 col-xs-6 col-sm-6 col-md-4">
                                     <div class="block-product">
                                         <img src="assets/upload/exam_b_3.png" alt="">
                                         <div class="caption-product">
@@ -396,37 +474,33 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 vcenter">
+                                <div class="col-sx-12 col-ms-6 col-xs-6 col-sm-6 col-md-4">
                                     <div class="block-product">
-                                        <img src="assets/upload/exam_b_2.png" alt="">
+                                        <img src="assets/upload/exam_b_3.png" alt="">
                                         <div class="caption-product">
                                             <h3><a href="#" title="">Preliminary for Schools</a></h3>
                                         </div>
                                     </div>	
                                 </div>	
-                                <div class="col-md-4 vcenter">
+                                <div class="col-sx-12 col-ms-6 col-xs-6 col-sm-6 col-md-4">
                                     <div class="block-product">
                                         <img src="assets/upload/exam_b_3.png" alt="">
                                         <div class="caption-product">
                                             <h3><a href="#" title="">First for Schools</a></h3>
                                         </div>
                                     </div>
-                                </div>	
-                            </div>
-                        
-                            <div class="row vrow">
-                                <div class="col-md-4 vcenter">
+                                </div>
+                                <div class="col-sx-12 col-ms-6 col-xs-6 col-sm-6 col-md-4">
                                     <div class="block-product">
                                         <img src="assets/upload/exam_b_3.png" alt="">
                                         <div class="caption-product">
                                             <h3><a href="#" title="">First</a></h3>
                                         </div>
                                     </div>
-                                </div>
+                                </div>	
+                                
                             </div>
-                            
-                        </div>
-                        
+                         </div>
                     </div>
                 </div>	
             </div>
@@ -454,14 +528,14 @@
                      	<div class="col-xs-12 col-sm-5 col-md-4">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>NOSOTROS</h3>
+                                    <h5>NOSOTROS</h5>
                                     <ul>
                                         <li><a href="#">Quienes somos</a></li>
                                         <li><a href="#">Infografía Corpus</a></li>
                                     </ul>
                                 </div>	
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>CATÁLOGO</h3>
+                                    <h5>CATÁLOGO</h5>
                                     <ul>
                                         <li><a href="#">Infantil</a></li>
                                         <li><a href="#">Primaria</a></li>
@@ -479,7 +553,7 @@
                         <div class="col-xs-12 col-sm-5 col-md-4 colum-2-link">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>TEACHER DEVELOPMENT</h3>
+                                    <h5>TEACHER DEVELOPMENT</h5>
                                     <ul>
                                         <li><a href="#">Teachers Development</a></li>
                                         <li><a href="#">Cambridge Labs</a></li>
@@ -489,7 +563,7 @@
                                     </ul>
                                 </div>	
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>EXÁMENES</h3>
+                                    <h5>EXÁMENES</h5>
                                     <ul>
                                         <li><a href="#">Cambridge Exams</a></li>
                                     </ul>
@@ -499,14 +573,14 @@
                        <div class="col-xs-12 col-sm-2 col-md-4 colum-3-link">
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>RECURSOS</h3>
+                                    <h5>RECURSOS</h5>
                                     <ul>
                                         <li><a href="#">The Primary Box</a></li>
                                         <li><a href="#">The Secondary Box</a></li>
                                     </ul>
                                 </div>
                                 <div class="col-xs-12 col-sm-12 col-md-6">
-                                    <h3>APPS</h3>
+                                    <h5>APPS</h5>
                                     <ul>
                                         <li><a href="#">English Monstruo</a></li>
                                         <li><a href="#">English Monstruo</a></li>
@@ -528,11 +602,22 @@
                 </div>
             </div>
         </div><!--Fin footer-->
+   <!--Bloque Cookies-->
+        <div class="block-cookies">
+        	<div class="container">
+                <h2>Política de Cookies</h2>
+                <p>Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a href="#" title="Política de Cookies">Política de Cookies.</a></p>
+                <a href="#" class="btn-accept">Ok</a>
+                <a href="#" title="" class="close_c"></a>
+            </div>
+        </div>	
+        <!--Fin Cookies-->
     </div><!--Fin wrapper-->    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="assets/js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/js/jquery.bxslider.min.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
     <script src="assets/js/jquery.easing.1.3.js"></script>
     <script src="assets/js/jquery.scrollTo.js"></script>
     <script src="assets/js/jquery.fitvids.js"></script>
