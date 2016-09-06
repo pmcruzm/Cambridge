@@ -82,15 +82,15 @@ jQuery(window).load(function(){
 	}
 
 	//Igualar todos los bloques cards de la home
-	if (jQuery('.block_cards').is(":visible") ) {
+	if (jQuery('.bottom-box').is(":visible") ) {
 		//Listado cursos
-		var heights = jQuery('.block_cards div.thumbnails').map(function ()
+		var heights = jQuery('.bottom-box div.thumbnails').map(function ()
 		{
 			return jQuery(this).outerHeight();
 		}).get(),
 		//Obtenemos tamaño max de los cuadros
 		maxHeight = Math.max.apply(null, heights);
-		jQuery('.block_cards div.thumbnails').each(function() {
+		jQuery('.bottom-box div.thumbnails').each(function() {
 			jQuery(this).css('height',maxHeight);
 		});
 	}
@@ -471,11 +471,13 @@ jQuery(document).ready(function(){
 
 		//Galería de la Home
 		var slider=jQuery('.bxslider').bxSlider({
-						  pager: false,
+						  pager: true,
+						  mode:'fade',
 						  infiniteLoop: true,
 						  useCSS: false,
 						  auto: true,
 					  	  autoHover: true,
+						  controls: false,
 						  pause: 5000,
 						  onSlideNext: function(slideElement, oldIndex, newIndex){
 							  if(device=='yes' && (touch_gall!=1)){
@@ -1057,15 +1059,16 @@ jQuery(document).ready(function(){
 		}
 
 		//Igualar todos los bloques cards de la home
-		if (jQuery('.block_cards').is(":visible") ) {
+		if (jQuery('.bottom-box').is(":visible") ) {
+			jQuery('.bottom-box div.thumbnails').removeAttr('style');
 			//Listado cursos
-			var heights = jQuery('.block_cards div.thumbnails').map(function ()
+			var heights = jQuery('.bottom-box div.thumbnails').map(function ()
 			{
 				return jQuery(this).outerHeight();
 			}).get(),
 			//Obtenemos tamaño max de los cuadros
 			maxHeight = Math.max.apply(null, heights);
-			jQuery('.block_cards div.thumbnails').each(function() {
+			jQuery('.bottom-box div.thumbnails').each(function() {
 				jQuery(this).css('height',maxHeight);
 			});
 		}

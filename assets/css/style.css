@@ -14,10 +14,10 @@ a,a:focus,a:hover,a:active {outline: none;}
 PROPIEDADES CABECERA
 ******************************/
 
-#header{height:252px;position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+#header{/*min-height:252px;*/position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 #header .logo{margin:0;padding:0;display:block;background:#00213c url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
 .header-home  h1{margin:0;text-indent:-99999px;}
-#top-header{height:44px;}
+#top-header{height:44px;position:absolute;top:0;width:100%;}
 #top-header ul{float:right;margin:0;padding:0;}
 #top-header ul li{list-style:none;display:inline-block;}
 #top-header ul li a{height:44px;line-height:44px;padding-left:18px;padding-right:18px;color:#20718c;display:inline-block;margin-left:-4px;}
@@ -106,16 +106,24 @@ PROPIEDADES CABECERA
 .right-box-seo img{max-width:100%;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;margin-top:-11px;margin-bottom:-11px;}
 .left-box-seo{}
 
+.header-home .bx-wrapper{margin-bottom:0;}
+.header-home .bx-pager{display:inline-block;right:20px;bottom:0;top:50%;width:auto;margin-top:-50px;}
+.header-home .bx-pager .bx-pager-item{display:block;margin-bottom:7px;}
+
+.header-home .bx-wrapper .bx-pager.bx-default-pager a{background-image:url(../img/sprite-slider.png);background-position:0px -10px;background-repeat:no-repeat;background-color:transparent;}
+.header-home .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px 0px;}
+
 /*****************************
 PROPIEDADES CUERPO HOME
 ******************************/
-#content-home{margin-top:-162px;}
+#content-home{margin-top:0px;}
 
-#slider{height:324px;margin-bottom:18px;overflow:hidden;position:relative;}
+#slider{/*height:324px;margin-bottom:18px;*/overflow:hidden;position:relative;}
 #slider .bx-wrapper .bx-viewport{background:none !important;}
-.cont_gall{width:100%;height:324px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
-.cont_gall a{display:table;height:100%;width:100%;}
+.cont_gall{width:100%;/*height:324px;*/background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);text-align:center;}
+.cont_gall a{display:block;height:100%;width:100%;}
 #cont-slider{position:absolute;background:rgba(0,38,62,0.9);top:0;left:0;width:218px;height:312px;z-index:50;top:6px; left:6px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+.cont_gall img{margin:0 auto;}
 #body-slider{overflow:hidden;height:265px;padding-top:18px;}
 .scroll-slider{height:265px;}
 .inside-slider{height:265px;width:218px;float:left;padding-left:18px;padding-right:18px;}
@@ -156,7 +164,7 @@ PROPIEDADES CUERPO HOME
 .block_cards{padding-bottom:36px;}
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
-.thumbnail-style:hover { box-shadow: 0 0 8px #ddd; -webkit-transition: box-shadow 0.2s ease-in-out;-moz-transition: box-shadow 0.2s ease-in-out;-o-transition: box-shadow 0.2s ease-in-out;transition: box-shadow 0.2s ease-in-out;}
+/*.thumbnail-style:hover { box-shadow: 0 0 8px #ddd; -webkit-transition: box-shadow 0.2s ease-in-out;-moz-transition: box-shadow 0.2s ease-in-out;-o-transition: box-shadow 0.2s ease-in-out;transition: box-shadow 0.2s ease-in-out;}*/
 .thumbnail-anim img {position: relative;}
 .thumbnail-anim:hover img {}
 .thumbnail-anim h2{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
@@ -169,7 +177,31 @@ PROPIEDADES CUERPO HOME
 .thumbnail-anim p{padding:18px;}
 .thumbnail-anim p a{font-family:'latoregular', Helvetica, sans-serif;color:#000000;}
 .thumbnail-anim p a:hover{}
-.border-img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+/*.border-img{-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}*/
+
+.cover-box-h-left{background:#ffffff;position:relative;margin-bottom:50px;top:-20px;}
+.block-3-content{}
+.block-3-content:first-child{border:none;}
+.block-3-content>div{padding-top:30px;}
+.block-3-content.bottom-box>div{border-top:2px solid #f7f7f7;}
+.top-box{box-sizing:border-box;padding-left:30px;padding-right:30px;}
+.bottom-box{box-sizing:border-box;padding-left:30px;padding-right:30px;}
+
+
+.outside-box-h-right{position:relative;top:-20px;}
+.inside-box-h-right{background:#0f81a2;padding:30px;box-sizing:border-box;}
+.inside-box-h-right h1{margin-top:0;font-size:33px;color:#7be6e4;font-family:'latolight', Helvetica, sans-serif;margin-bottom:30px;}
+.inside-box-h-right p{color:#ffffff;font-size:16px;margin-bottom:30px;}
+.inside-box-h-right p strong{font-family:'latobold', Helvetica, sans-serif !important;}
+.inside-box-h-right p a{font-family:'latobold', Helvetica, sans-serif !important;color:#ffffff;}
+.inside-box-h-right .btn-box-h-right{display:block;text-align:center;max-width:253px;margin:0 auto;font-size:15px;color:#7be6e4;height:35px;line-height:33px;border:#7be6e4 1px solid;border-radius:30px;margin-bottom:15px;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
+.inside-box-h-right .btn-box-h-right:hover{background:#fff568;border:#fff568 1px solid;color:#0f81a2;}
+
+.box-home-mobile{display:none;}
+.box-home-mobile .outside-box-h-right{top:0px;}
+
+.top-box .thumbnail-anim h3,.top-box .thumbnail-anim p{padding-left:0px;padding-right:0;}
+.bottom-box .thumbnail-anim h3,.bottom-box .thumbnail-anim p{padding-left:0px;padding-right:0;}
 
 /*****************************
 PROPIEDADES CUERPO SEARCH
@@ -1532,13 +1564,13 @@ PROPIEDADES FOOTER
 #row_rrss{background:#fff568;height:63px;overflow:hidden;}
 #row_rrss .container{height:63px;position:relative;}
 
-.contact_link{position:absolute;left:0;top:50%;margin-top:-16px;height:36px;}
+.contact_link{position:absolute;left:40px;top:50%;margin-top:-16px;height:36px;}
 .contact_link div{display:inline;margin-right:18px;}
 .contact_link div:last-child{margin-right:0;}
 .contact_link a{background:#ffe63c;display:inline-block;color:#ea575b;width:230px;-webkit-border-radius: 18px;-moz-border-radius: 18px;border-radius: 18px;height:36px;line-height:36px;text-align:center;text-decoration:none;font-size:15px;font-family:'latobold', Helvetica, sans-serif;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 .contact_link a:hover{color:#ea575b;background:#ffd53d;}
 
-.rrss_link{position:absolute;right:0;top:50%;margin-top:-16px;height:36px;}
+.rrss_link{position:absolute;right:40px;top:50%;margin-top:-16px;height:36px;}
 .rrss_link ul{margin:0;padding:0;}
 .rrss_link ul li{list-style:none;display:inline-block;}
 .rrss_link ul li a{line-height:36px;display:inline-block;margin-left:18px;color:#ea575b;background:#ffe63c;height:36px;width:36px;text-align:center;-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;font-size:18px;-webkit-transition: all 0.2s ease-in-out;-moz-transition: all 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
@@ -1695,7 +1727,7 @@ PROPIEDADES ESPECIALES
 ul.bxslider {margin: 0;padding: 0;}
 .bx-wrapper .bx-viewport{-moz-box-shadow: 0;-webkit-box-shadow: 0;box-shadow: 0 0 0 0;border: 0;left: 0;background: #fff;}
 .bx-wrapper .bx-controls-direction a{z-index:99 !important;}
-.bx-controls{display:none !important;}
+/*.bx-controls{display:none !important;}*/
 .vcenter {display:table-cell!important;vertical-align:bottom;float: none;height:100%;}
 .vcenter-1{display:table-cell!important;vertical-align:top;float: none;height:100%;}
 .vrow{margin-bottom:32px;display:table-row !important;height:100%;}
@@ -1719,7 +1751,13 @@ input[type=text]{-webkit-appearance:none;}
 input[type=email]{-webkit-appearance:none;}
 textarea{-webkit-appearance:none;}
 iframe[name='google_conversion_frame'] { height: 0 !important;width: 0 !important;line-height: 0 !important;font-size: 0 !important;margin-top: -13px;float: left;}
+.slide-mobile{display:none;}
 
+#top-header .container{width: 100% !important;max-width:100%;}
+#top_footer .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
+#inf_footer .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
+#row_rrss .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
+#header .logo{left:-9px;position:relative;}
 
 /**********************************
 PROPIEDADES DE CUSTOM RADIO | CHECKBOX BUTTON
@@ -1817,7 +1855,7 @@ MEDIA QUERIES
 	#top_footer .container{width: 100% !important;}
 	#inf_footer .container{width: 100% !important;}
 	#row_rrss .container{width: 100% !important;}
-	#header .logo{left:-18px;position:relative;}
+	#header .logo{left:-9px;position:relative;}
 	.container {width: 1200px !important;}
 	.thumbnail-anim p{font-size:16px;}
 	.cat_mid p{font-size:16px;line-height:16px;}
@@ -1848,8 +1886,18 @@ MEDIA QUERIES
 	.enl-languages a{width:165px;margin-left:15px;}
 	.main-menu{display:none;}
     .mobile-tab{display:block;}
-	#content-home{margin-top:-170px;}
+	/*#content-home{margin-top:-170px;}*/
 	#header{height: 214px;}
+	.header-home{height:auto !important;}
+	.box-h-right{display:none;}
+	.box-home-mobile{display:block;}
+	
+	.contact_link{left:20px;}
+	.rrss_link{right:20px;}
+	#top_footer .container{padding-left:20px;padding-right:20px;}
+	#inf_footer .container{padding-left:20px;padding-right:20px;}
+	#row_rrss .container{padding-left:20px;padding-right:20px;}
+	.rrss_link ul li a{margin-left:9px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1857,7 +1905,7 @@ MEDIA QUERIES
     .cat_mid a{padding-left:20px;padding-right:20px;}
     .mini-cards{}
     .cat_mid{height:110px;}
-    .block_cards{position:relative;margin-top:-340px;}
+    /*.block_cards{position:relative;margin-top:-340px;}*/
     #top-header ul li a{padding-left:7px;padding-right:7px;}
     .main-menu > li > a{font-size:14px;}
     .txt-lang-ico{font-size:12px;top:-6px;}
@@ -1893,7 +1941,7 @@ MEDIA QUERIES
     padding-right: 7px !important;}
 
     .row_seo_home{position: absolute;top: -592px;}
-    .block_cards{margin-top:-361px;}
+    /*.block_cards{margin-top:-361px;}*/
     #destacado_sup{position:relative;margin-top:250px;}
     .row_seo_home_up{padding-right:18px;}
     .colum-mini-cat{margin-top:-20px;}
@@ -1905,9 +1953,9 @@ MEDIA QUERIES
     #destacado_sup{height:auto;}
     #row_rrss{height:auto;padding-top:18px;padding-bottom:18px;}
     #row_rrss .container {height:auto;position: relative;}
-    .contact_link{width:100%;position:inherit;top:auto;margin-top:0;text-align:center;}
+    .contact_link{width:100%;position:inherit;top:auto;margin-top:0;text-align:center;left:auto;}
     .contact_link div:last-child{margin-top:18px;}
-    .rrss_link{width:100%;position:inherit;top:auto;margin-top:18px;text-align:center;}
+    .rrss_link{width:100%;position:inherit;top:auto;margin-top:18px;text-align:center;right:auto;}
     .logo_foot{float:inherit;text-align:center;}
     .copy_foot{float:inherit;text-align:center;}
     #top_footer{text-align:center;padding-top:18px;}
@@ -1917,7 +1965,7 @@ MEDIA QUERIES
     .copy_foot a:before{;content: "";padding: 0px;}
     .rrss_link{margin-top:9px;margin-bottom:21px;}
     .contact_link a{width:216px;}
-    .block_cards{position:relative;margin-top:-340px;}
+    /*.block_cards{position:relative;margin-top:-340px;}*/
     #top-header ul li a{padding-left:9px;padding-right:9px;}
     .titul-search{padding-top:0px;}
     .titul-search p{text-align:center;}
@@ -1980,8 +2028,9 @@ MEDIA QUERIES
     .content-exams{padding-top:40px;}
     #migas{display:none;}
     .cab-page{bottom:0;}
-    #header{height:214px;}
-    #content-home{margin-top:-170px;}
+   #header{height:214px;}
+   .header-home{height:auto !important;}
+    /* #content-home{margin-top:-170px;}*/
     .content-exam-serie-c .top-product{height:275px !important;}
     .inside-img-exam-serie-c{margin-top:-235px;}
     .inside-img-exam-serie-c img{bottom:-110px;}
@@ -2036,6 +2085,16 @@ MEDIA QUERIES
 	.pdf-element{text-align:center;}
 	.bottom-journey h3{padding-left:20px;padding-right:20px;}
 	.bottom-journey p{padding-left:20px;padding-right:20px;}
+	
+	.slide-desktop{display:none;}
+	.slide-mobile{display:block;}
+	
+	.block-3-content.bottom-box>div{border-top:none;}
+	.block-3-content.bottom-box>div .caption p{display:none;}
+	
+	.block-3-content>div{padding-top:15px;}
+	.top-box{box-sizing:border-box;padding-left:15px;padding-right:15px;}
+	.bottom-box{box-sizing:border-box;padding-left:15px;padding-right:15px;}
 }
 
 @media (max-width: 640px) {
@@ -2095,6 +2154,7 @@ MEDIA QUERIES
 
 @media (max-width: 480px) {
     #header{height:214px;}
+	.header-home{height:auto !important;}
     .bottom-corpus{position:relative;}
     .bottom-corpus > a{font-size:12px;width:auto;padding-left:18px;padding-right:18px;}
     .bottom-corpus{text-align:center;}
@@ -2146,9 +2206,9 @@ MEDIA QUERIES
 
     .inside-img-product img{margin-bottom:-50px;}
 
-    #slider{height:416px;}
+    /*#slider{height:416px;}*/
     .colum-slider{padding-left:0px;padding-right:0;}
-    .cont_gall{height:468px;}
+    /*.cont_gall{height:468px;}*/
     #cont-slider{top:auto;bottom:9px;left:9px;right:9px;width:auto;height:195px;}
     #body-slider{height:145px;}
     .scroll-slider{height:145px;}
@@ -2164,7 +2224,7 @@ MEDIA QUERIES
     #top-header ul li .desplegable-sub{top:42px;}
 
     /******* 2-10-2014  *******/
-    #content-home{margin-top:-172px;}
+    /*#content-home{margin-top:-172px;}*/
     #top-header > .container{padding-left:0px;padding-right:0px;}
 
     #destacado_sup .thumbnails h4{font-size:26px;line-height:30px;}
@@ -2233,6 +2293,8 @@ MEDIA QUERIES
     .fila-links{text-align:center;}
 
 	.table_cont_exams .pill-w-table tr td p{font-size:13px !important;}
+	
+	.bottom-box .thumbnail-anim h3{font-size:18px;line-height:26px;}
 
 }
 
@@ -2245,6 +2307,9 @@ MEDIA QUERIES
 	.enl-languages a:first-child{margin-left:0;margin:0 auto;margin-bottom:20px;}
 	.cont_img_mini{height:auto;padding-top:30px;padding-bottom:30px;}
 	.journey-grafica p{padding-top:0;}
+	#top_footer .container{padding-left:10px;padding-right:10px;}
+	#inf_footer .container{padding-left:10px;padding-right:10px;}
+	#row_rrss .container{padding-left:10px;padding-right:10px;}
 
 }
 
