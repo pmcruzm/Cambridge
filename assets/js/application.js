@@ -482,9 +482,17 @@ jQuery(document).ready(function(){
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
 							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
+							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:80},400); 
 						  },
 						  onSlideAfter: function(slideElement, oldIndex, newIndex){
-							//jQuery(slideElement).addClass('old-slide');  
+						  },
+						  onSlideNext: function(slideElement, oldIndex, newIndex){
+							alert('Next');
+							jQuery(slideElement).find('img').animate({top:40},800);  
+						  },
+						  onSlidePrev: function(slideElement, oldIndex, newIndex){
+							  alert('prev');
+							jQuery(slideElement).find('img').animate({top:40},800);
 						  },
 						});
 
