@@ -479,6 +479,7 @@ jQuery(document).ready(function(){
 					  	  autoHover: true,
 						  controls: false,
 						  pause: 5000,
+						  speed:600,
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
 							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
