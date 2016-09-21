@@ -479,49 +479,12 @@ jQuery(document).ready(function(){
 					  	  autoHover: true,
 						  controls: false,
 						  pause: 5000,
-						  onSlideNext: function(slideElement, oldIndex, newIndex){
-							  if(device=='yes' && (touch_gall!=1)){
-									if(newIndex!=(pag_slider+1)){
-										pag_slider=parseInt(newIndex+1);
-										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-										//pintamos el bullet correspondiente
-										jQuery('#nav-slider ul li a').removeClass('active');
-										jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-									}
-
-							  }else{
-							  	//Versión escritorio
-								if(newIndex!=(pag_slider+1)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-							  }
-							  touch_gall=0;
+						  adaptiveHeight:true,
+						  onSlideBefore: function(slideElement, oldIndex, newIndex){
+							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
 						  },
-						  onSlidePrev: function(slideElement, oldIndex, newIndex){
-							 if(device=='yes' && (touch_gall!=1)){
-								if(pag_slider!=(newIndex)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-							}else{
-							//Version escritorio
-								if(pag_slider!=(newIndex)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-
-							}
-							touch_gall=0;
+						  onSlideAfter: function(slideElement, oldIndex, newIndex){
+							//jQuery(slideElement).addClass('old-slide');  
 						  },
 						});
 
