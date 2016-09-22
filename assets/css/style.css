@@ -2100,6 +2100,8 @@ MEDIA QUERIES
 	.block-3-content>div{padding-top:15px;}
 	.top-box{box-sizing:border-box;padding-left:15px;padding-right:15px;}
 	.bottom-box{box-sizing:border-box;padding-left:15px;padding-right:15px;}
+	
+	.header-home .bx-pager{display:none;}
 }
 
 @media (max-width: 640px) {
