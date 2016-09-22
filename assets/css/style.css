@@ -166,7 +166,8 @@ PROPIEDADES CUERPO HOME
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
 .thumbnail-style img {-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;-ms-transform: scale(1, 1);-webkit-transform: scalescale(1, 1); transform: scalescale(1, 1);}
-.thumbnail-style:hover img {-ms-transform: scale(1.2, 1.2);-webkit-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2);}
+.thumbnail-style:hover img {-ms-transform: scale(1.05, 1.05);-webkit-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05);}
+.thumbnail-style:hover h3 a{color:#0f81a2;}
 .thumbnail-anim img {position: relative;}
 .thumbnail-anim:hover img {}
 .thumbnail-anim h2{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
@@ -280,7 +281,7 @@ PROPIEDADES CUERPO CATALOGO
 /********************************
 PROPIEDADES MENÚ LATERAL PRODUCTOS
 *********************************/
-#submenus-mob-prodct{display:none;position:absolute;top:194px;z-index:96;width:100%;background:#ffffff;}
+#submenus-mob-prodct{display:none;position:absolute;top:202px;z-index:96;width:100%;background:#ffffff;}
 #submenus-mob-prodct > a{display:inline-block;height:50px;line-height:50px;padding-left:20px;color:#47b6c7;font-size:25px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
 #submenus-mob-prodct.active > a{color:#bbb5bb !important;}
 #submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:35px;height:60px;line-height:57px;vertical-align:middle;}
@@ -2177,7 +2178,7 @@ MEDIA QUERIES
 
     .block-ver-mas{text-align:center;}
     .menu-sec-product { padding-top: 40px;}
-    #submenus-mob-prodct{top:166px;}
+    #submenus-mob-prodct{top:202px;}
 
     #submenus-mob-prodct ul li a{font-size:18px;}
     .img-slider-corpus img{margin:0 auto;}
@@ -2223,7 +2224,7 @@ MEDIA QUERIES
     .mobile-menus{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
     .desplegable-sub{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
     .inside_graf_ess p{left:auto;right:30px;}
-    #submenus-mob-prodct{top:191px;}
+    #submenus-mob-prodct{top:202px;}
     #top-header ul li .desplegable-sub{top:42px;}
 
     /******* 2-10-2014  *******/
