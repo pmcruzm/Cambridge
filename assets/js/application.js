@@ -487,13 +487,9 @@ jQuery(document).ready(function(){
 						  },
 						  onSlideAfter: function(slideElement, oldIndex, newIndex){
 						  },
-						  onSlideNext: function(slideElement, oldIndex, newIndex){
-							alert('Next');
-							jQuery(slideElement).find('img').animate({top:40},800);  
+						  onSlideNext: function(slideElement, oldIndex, newIndex){ 
 						  },
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
-							  alert('prev');
-							jQuery(slideElement).find('img').animate({top:40},800);
 						  },
 						});
 
