@@ -14,7 +14,7 @@ a,a:focus,a:hover,a:active {outline: none;}
 PROPIEDADES CABECERA
 ******************************/
 
-#header{/*min-height:252px;*/position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
+#header{min-height:252px;position:relative;background:#4d9ab4 url(../img/gradient.png) top center no-repeat;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 #header .logo{margin:0;padding:0;display:block;background:#00213c url(../svg/logo_ficha.svg) top left no-repeat;height:44px;width:148px;font-size:0;float:left;font-size:0;margin:0;background-size:148px 44px;}
 .header-home  h1{margin:0;text-indent:-99999px;}
 #top-header{height:44px;position:absolute;top:0;width:100%;}
@@ -165,7 +165,8 @@ PROPIEDADES CUERPO HOME
 .block_cards{padding-bottom:36px;}
 .block_cards .thumbnails{min-height:405px;background:#ffffff;}
 .thumbnail-style {padding:7px;margin-bottom:18px;}
-/*.thumbnail-style:hover { box-shadow: 0 0 8px #ddd; -webkit-transition: box-shadow 0.2s ease-in-out;-moz-transition: box-shadow 0.2s ease-in-out;-o-transition: box-shadow 0.2s ease-in-out;transition: box-shadow 0.2s ease-in-out;}*/
+.thumbnail-style img {-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;-ms-transform: scale(1, 1);-webkit-transform: scalescale(1, 1); transform: scalescale(1, 1);}
+.thumbnail-style:hover img {-ms-transform: scale(1.2, 1.2);-webkit-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2);}
 .thumbnail-anim img {position: relative;}
 .thumbnail-anim:hover img {}
 .thumbnail-anim h2{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
