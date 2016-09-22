@@ -125,6 +125,7 @@ PROPIEDADES CUERPO HOME
 #cont-slider{position:absolute;background:rgba(0,38,62,0.9);top:0;left:0;width:218px;height:312px;z-index:50;top:6px; left:6px;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .cont_gall img{margin:0 auto;position:relative;}
 .cont_gall .slide-desktop img{max-height:440px;}
+.cont_gall .slide-mobile img{max-height:512px;}
 #body-slider{overflow:hidden;height:265px;padding-top:18px;}
 .scroll-slider{height:265px;}
 .inside-slider{height:265px;width:218px;float:left;padding-left:18px;padding-right:18px;}
