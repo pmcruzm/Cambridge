@@ -479,7 +479,7 @@ jQuery(document).ready(function(){
 					  	  autoHover: true,
 						  controls: false,
 						  pause: 5000,
-						  speed:80,
+						  speed:800,
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
 							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
@@ -503,7 +503,7 @@ jQuery(document).ready(function(){
 		var current = slider.getCurrentSlide();
 		pag_slider=parseInt(current+1);
 		//Movemos contenidos
-		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutCirc'});
+		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeOutBounce'});
 		//pintamos el bullet correspondiente
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
