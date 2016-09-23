@@ -110,8 +110,10 @@ PROPIEDADES CABECERA
 .header-home .bx-pager{display:inline-block;right:20px;bottom:0;top:50%;width:auto;margin-top:-50px;}
 .header-home .bx-pager .bx-pager-item{display:block;margin-bottom:7px;}
 
-.header-home .bx-wrapper .bx-pager.bx-default-pager a{background-image:url(../img/sprite-slider.png);background-position:0px -10px;background-repeat:no-repeat;background-color:transparent;}
-.header-home .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px 0px;}
+.header-home .bx-wrapper .bx-pager.bx-default-pager a{background-image:url(../img/opc_gall.png);background-position:0px -10px;background-repeat:no-repeat;background-color:transparent;background-size:10px;}
+.header-home .bx-wrapper .bx-pager.bx-default-pager a{background-position:0px 0px;}
+
+.header-home .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px -10px;}
 
 /*****************************
 PROPIEDADES CUERPO HOME
