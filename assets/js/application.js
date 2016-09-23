@@ -503,7 +503,7 @@ jQuery(document).ready(function(){
 		var current = slider.getCurrentSlide();
 		pag_slider=parseInt(current+1);
 		//Movemos contenidos
-		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutCirc'});
 		//pintamos el bullet correspondiente
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
@@ -516,7 +516,7 @@ jQuery(document).ready(function(){
 			slider.goToPrevSlide();
 			var current = slider.getCurrentSlide();
 			pag_slider=parseInt(current+1);
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutQuint'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
