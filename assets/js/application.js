@@ -482,8 +482,8 @@ jQuery(document).ready(function(){
 						  speed:800,
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
-							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
-							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:40},400); 
+							  jQuery(slideElement).find('img').css('top','-10px').animate({top:0},800,'easeOutBounce'); 
+							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:10},400); 
 						  },
 						  onSlideAfter: function(slideElement, oldIndex, newIndex){
 						  },
