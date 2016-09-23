@@ -516,7 +516,7 @@ jQuery(document).ready(function(){
 			slider.goToPrevSlide();
 			var current = slider.getCurrentSlide();
 			pag_slider=parseInt(current+1);
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'def'});
+			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInBounce'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
