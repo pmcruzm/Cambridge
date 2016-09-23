@@ -479,11 +479,11 @@ jQuery(document).ready(function(){
 					  	  autoHover: true,
 						  controls: false,
 						  pause: 5000,
-						  speed:600,
+						  speed:800,
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
-							  jQuery(slideElement).find('img').css('top','-80px').animate({top:0},800); 
-							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:80},400); 
+							  jQuery(slideElement).find('img').css('top','-40px').animate({top:0},800); 
+							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:40},400); 
 						  },
 						  onSlideAfter: function(slideElement, oldIndex, newIndex){
 						  },
@@ -516,7 +516,7 @@ jQuery(document).ready(function(){
 			slider.goToPrevSlide();
 			var current = slider.getCurrentSlide();
 			pag_slider=parseInt(current+1);
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutQuint'});
+			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'def'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
