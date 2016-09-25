@@ -1896,8 +1896,11 @@ MEDIA QUERIES
 	/*#content-home{margin-top:-170px;}*/
 	#header{height: 214px;}
 	.header-home{height:auto !important;}
-	.box-h-right{display:none;}
+	/*.box-h-right{display:none;}*/
+	.cover-box-h-left{margin-bottom:0;}
 	.box-home-mobile{display:block;}
+	.outside-box-h-right{}
+	.box-h-right{margin-bottom:50px;}
 	
 	.contact_link{left:20px;}
 	.rrss_link{right:20px;}
