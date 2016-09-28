@@ -2096,9 +2096,6 @@ MEDIA QUERIES
 	.bottom-journey h3{padding-left:20px;padding-right:20px;}
 	.bottom-journey p{padding-left:20px;padding-right:20px;}
 	
-	.slide-desktop{display:none;}
-	.slide-mobile{display:block;}
-	
 	.block-3-content.bottom-box>div{border-top:none;}
 	.block-3-content.bottom-box>div .caption p{display:none;}
 	
@@ -2328,6 +2325,9 @@ MEDIA QUERIES
 @media (max-width: 400px){
     .inside_graf_ess p{left:auto;right:20px;font-size:14px;}
 	.rrss_link ul li a{height:45px;width:45px;line-height:45px;font-size:20px;border-radius:30px;}
+	
+	.slide-desktop{display:none;}
+	.slide-mobile{display:block;}
 }
 
 
