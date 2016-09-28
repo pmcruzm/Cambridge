@@ -2344,9 +2344,9 @@ MEDIA QUERIES
 	#inf_footer .container{padding-left:10px;padding-right:10px;}
 	#row_rrss .container{padding-left:10px;padding-right:10px;}
 	
-	.cont_gall .slide-desktop{height:210px;}
+	.cont_gall .slide-desktop{height:230px;}
 	.cont_gall .slide-mobile{height:512px;}
-	.header-home{min-height:210px !important;}
+	.header-home{min-height:230px !important;}
 
 }
 
