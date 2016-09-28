@@ -2118,6 +2118,9 @@ MEDIA QUERIES
 	.header-home .bx-pager{display:none;}
 	
 	.bottom-box >div:last-child{display:none;}
+	
+	.cover-box-h-left{top:-10px;}
+	.outside-box-h-right{top:-10px;}
 }
 
 @media (max-width: 640px) {
