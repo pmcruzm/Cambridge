@@ -172,13 +172,13 @@ PROPIEDADES CUERPO HOME
 .thumbnail-style {padding:7px;margin-bottom:18px;}
 .thumbnail-style img {-webkit-transition: all 0.2s linear;-moz-transition: all 0.2s linear;-o-transition: all 0.2s linear;transition: all 0.2s linear;-ms-transform: scale(1, 1);-webkit-transform: scalescale(1, 1); transform: scalescale(1, 1);}
 .thumbnail-style:hover img {-ms-transform: scale(1.05, 1.05);-webkit-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05);}
-.thumbnail-style:hover h3 a{color:#0f81a2;}
+.thumbnail-style:hover h3 a{color:#6cd9d7;}
 .thumbnail-anim img {position: relative;}
 .thumbnail-anim:hover img {}
 .thumbnail-anim h2{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
 .thumbnail-anim h2 a{color:#6cd9d7;}
 .thumbnail-anim h3{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
-.thumbnail-anim h3 a{color:#6cd9d7;}
+.thumbnail-anim h3 a{color:#0f81a2;}
 .thumbnail-anim h4{font-size:22px;color:#6cd9d7;margin-top:18px;margin-bottom:0;padding-left:18px;padding-right:18px;line-height:30px;}
 .thumbnail-anim h4 a{color:#6cd9d7;}
 #content-home .thumbnail-anim h2 a{color:#59bdcc;}
@@ -2340,6 +2340,9 @@ MEDIA QUERIES
 	#top_footer .container{padding-left:10px;padding-right:10px;}
 	#inf_footer .container{padding-left:10px;padding-right:10px;}
 	#row_rrss .container{padding-left:10px;padding-right:10px;}
+	
+	.cont_gall .slide-desktop{height:210px;}
+	.cont_gall .slide-mobile{height:512px;}
 
 }
 
