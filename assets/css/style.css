@@ -1911,6 +1911,9 @@ MEDIA QUERIES
 	#inf_footer .container{padding-left:20px;padding-right:20px;}
 	#row_rrss .container{padding-left:20px;padding-right:20px;}
 	.rrss_link ul li a{margin-left:9px;}
+	
+	.cont_gall .slide-desktop{height:400px;}
+	.cont_gall .slide-mobile{height:512px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2107,6 +2110,8 @@ MEDIA QUERIES
 	.bottom-box{box-sizing:border-box;padding-left:15px;padding-right:15px;}
 	
 	.header-home .bx-pager{display:none;}
+	
+	.bottom-box >div:last-child{display:none;}
 }
 
 @media (max-width: 640px) {
@@ -2153,6 +2158,9 @@ MEDIA QUERIES
 
 	.img_single_exam{margin-top:0;}
 	.enl-languages a {margin-left: 10px;width: 140px;}
+	
+	.cont_gall .slide-desktop{height:300px;}
+	.cont_gall .slide-mobile{height:512px;}
 	
 }
 
@@ -2308,6 +2316,9 @@ MEDIA QUERIES
 	.table_cont_exams .pill-w-table tr td p{font-size:13px !important;}
 	
 	.bottom-box .thumbnail-anim h3{font-size:18px;line-height:26px;}
+	
+	.cont_gall .slide-desktop{height:250px;}
+	.cont_gall .slide-mobile{height:512px;}
 
 }
 
