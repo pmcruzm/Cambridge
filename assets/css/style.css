@@ -2150,6 +2150,9 @@ MEDIA QUERIES
 
 	.img_single_exam{margin-top:0;}
 	.enl-languages a {margin-left: 10px;width: 140px;}
+	
+	.slide-desktop{display:none;}
+	.slide-mobile{display:block;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -2325,9 +2328,6 @@ MEDIA QUERIES
 @media (max-width: 400px){
     .inside_graf_ess p{left:auto;right:20px;font-size:14px;}
 	.rrss_link ul li a{height:45px;width:45px;line-height:45px;font-size:20px;border-radius:30px;}
-	
-	.slide-desktop{display:none;}
-	.slide-mobile{display:block;}
 }
 
 
