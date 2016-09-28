@@ -1961,7 +1961,13 @@ MEDIA QUERIES
     #destacado_sup{position:relative;margin-top:250px;}
     .row_seo_home_up{padding-right:18px;}
     .colum-mini-cat{margin-top:-20px;}
+	
 
+}
+
+@media (max-width: 768px) {
+	.cont_gall .slide-desktop{height:300px;}
+	.cont_gall .slide-mobile{height:512px;}
 }
 
 
