@@ -2343,6 +2343,7 @@ MEDIA QUERIES
 	
 	.cont_gall .slide-desktop{height:210px;}
 	.cont_gall .slide-mobile{height:512px;}
+	.header-home{min-height:210px !important;}
 
 }
 
