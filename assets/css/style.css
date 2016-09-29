@@ -2121,6 +2121,9 @@ MEDIA QUERIES
 	
 	.cover-box-h-left{top:-10px;}
 	.outside-box-h-right{top:-10px;}
+	
+	.bottom-box .thumbnail-style{padding:0;}
+	.bottom-box{padding-left:17px;padding-right:17px;}
 }
 
 @media (max-width: 640px) {
