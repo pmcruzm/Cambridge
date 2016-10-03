@@ -1763,7 +1763,7 @@ textarea{-webkit-appearance:none;}
 iframe[name='google_conversion_frame'] { height: 0 !important;width: 0 !important;line-height: 0 !important;font-size: 0 !important;margin-top: -13px;float: left;}
 .slide-mobile{display:none;}
 
-#top-header .container{width: 100% !important;max-width:100%;}
+#top-header > div.container{width: 100% !important;max-width:100%;}
 #top_footer .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
 #inf_footer .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
 #row_rrss .container{width: 100% !important;max-width:100%;box-sizing:border-box;padding-left:40px;padding-right:40px;}
