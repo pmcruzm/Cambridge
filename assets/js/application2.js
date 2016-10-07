@@ -82,7 +82,7 @@ jQuery(window).load(function(){
 	}
 
 	//Igualar todos los bloques cards de la home
-	if (jQuery('.bottom-box').is(":visible") ) {
+	/*if (jQuery('.bottom-box').is(":visible") ) {
 		//Listado cursos
 		var heights = jQuery('.bottom-box div.thumbnails').map(function ()
 		{
@@ -93,7 +93,7 @@ jQuery(window).load(function(){
 		jQuery('.bottom-box div.thumbnails').each(function() {
 			jQuery(this).css('height',maxHeight);
 		});
-	}
+	}*/
 
 });
 
@@ -1028,7 +1028,7 @@ jQuery(document).ready(function(){
 		}
 
 		//Igualar todos los bloques cards de la home
-		if (jQuery('.bottom-box').is(":visible") ) {
+		/*if (jQuery('.bottom-box').is(":visible") ) {
 			jQuery('.bottom-box div.thumbnails').removeAttr('style');
 			//Listado cursos
 			var heights = jQuery('.bottom-box div.thumbnails').map(function ()
@@ -1040,7 +1040,7 @@ jQuery(document).ready(function(){
 			jQuery('.bottom-box div.thumbnails').each(function() {
 				jQuery(this).css('height',maxHeight);
 			});
-		}
+		}*/
 
 	});
 

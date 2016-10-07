@@ -70,7 +70,7 @@ PROPIEDADES CABECERA
 
 
 
-.mobile-menus{position:absolute;background:#ffffff;z-index:99;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
+.mobile-menus{position:absolute;background:#ffffff;z-index:102;top:44px;left:0;width:100%;padding:27px 0px;display:none;min-height:208px;}
 .mobile-menus .container{padding-left:27px;}
 .menu-mob .mobile-menus.active{display:block;}
 .mobile-menus ul{float:inherit !important;}
@@ -288,7 +288,7 @@ PROPIEDADES CUERPO CATALOGO
 /********************************
 PROPIEDADES MENÚ LATERAL PRODUCTOS
 *********************************/
-#submenus-mob-prodct{display:none;position:absolute;top:202px;z-index:96;width:100%;background:#ffffff;}
+#submenus-mob-prodct{display:none;position:absolute;top:232px;z-index:100;width:100%;background:#ffffff;}
 #submenus-mob-prodct > a{display:inline-block;height:50px;line-height:50px;padding-left:20px;color:#47b6c7;font-size:25px;font-family:'latoregular', Helvetica, sans-serif;text-decoration:none !important;}
 #submenus-mob-prodct.active > a{color:#bbb5bb !important;}
 #submenus-mob-prodct > a:before{content: "\64";font-family:'icomoon', Helvetica, sans-serif;font-size:28px;display:inline-block;width:35px;height:60px;line-height:57px;vertical-align:middle;}
@@ -2209,7 +2209,7 @@ MEDIA QUERIES
 
     .block-ver-mas{text-align:center;}
     .menu-sec-product { padding-top: 40px;}
-    #submenus-mob-prodct{top:202px;}
+    #submenus-mob-prodct{top:232px;}
 
     #submenus-mob-prodct ul li a{font-size:18px;}
     .img-slider-corpus img{margin:0 auto;}
@@ -2255,7 +2255,7 @@ MEDIA QUERIES
     .mobile-menus{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
     .desplegable-sub{box-shadow:0px 200px 135px rgba(0, 0, 0, 0.3); top:42px;}
     .inside_graf_ess p{left:auto;right:30px;}
-    #submenus-mob-prodct{top:202px;}
+    #submenus-mob-prodct{top:232px;}
     #top-header ul li .desplegable-sub{top:42px;}
 
     /******* 2-10-2014  *******/
