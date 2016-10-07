@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta content="" name="keywords">
+	<meta property="og:title" content=""/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+    <title>Cambridge University | Home</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap_ms.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/jquery.bxslider.css" rel="stylesheet">
+    <link href="assets/css/fontface.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Font Awesome styles-->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.min.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+	@media (min-width: 1200px) {
+		.container {width: 1200px !important;}
+		.thumbnail-anim p{font-size:16px;}
+		.cat_mid p{font-size:16px;line-height:16px;}
+		.cat_mid h4{font-size:18px;line-height:21px;}
+	}
+	
+	@media (min-width: 992px) {
+		.container {width: 986px;}
+	}
+	</style>
+  </head>
+  <body>
+  	<div id="wrapper">
+        <!--Cabecera-->
+  		 <div id="header" class="header-home">
+         	<!--Slider Home-->
+            <div id="slider">
+               <ul class="bxslider">
+                 <!-- <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"><img src="assets/img/DESKTOP_catalogs_2016.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"><img src="assets/img/MOBILE_greenman.png"/></div>
+                        </a>
+                    </div>
+                  </li>
+                  <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"><img src="assets/img/DESKTOP_curiosipics.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"><img src="assets/img/MOBILE_curiosipics.png"/></div>
+                        </a>
+                    </div>
+                  </li>-->
+                  <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"></span><img src="assets/img/DESKTOP_greenman.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"></span><img src="assets/img/MOBILE_greenman.png"/></div>
+                        </a>
+                    </div>
+                  </li>
+                  <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"></span><img src="assets/img/DESKTOP_out_and_about.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"></span><img src="assets/img/MOBILE_out_and_about.png"/></div>
+                        </a>
+                    </div>
+                  </li>
+                  <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"></span><img src="assets/img/DESKTOP_the_cambridge_teacher.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"></span><img src="assets/img/MOBILE_the_cambridge_teacher.png"/></div>
+                        </a>
+                    </div>
+                  </li>
+                  <li>
+                  	<div class="cont_gall">
+                    	<a href="" title="">
+                  			<div class="slide-desktop"><span class="helper_bottom"></span><img src="assets/img/DESKTOP_smart_planet.png"/></div>
+                            <div class="slide-mobile"><span class="helper_bottom"></span><img src="assets/img/MOBILE_smart_planet.png"/></div>
+                        </a>
+                    </div>
+                  </li>
+               </ul>
+            </div>
+         	<!--Menú principal-->
+            <div id="top-header">
+            	<div class="container">
+            	<h1><a href="#" title="" class="logo">Cambridge University Press</a></h1>
+                    <!--Search & Languages-->
+                    <ul class="other-menu">
+                        <li><a href="#" class="glyphicon custom-search"></a>
+                        	 <div class="desplegable-sub">
+                                    <div class="container">
+                                        <div class="row">
+                                             <div class="col-sx-12 col-ms-12 col-sm-3 col-md-3 titul-search">
+                                                <p>Search</p>
+                                             </div>
+                                             <div class="col-sx-12 col-ms-12 col-sm-8 col-sm-offset-1 col-md-8 col-md-offset-1 form-despl-search">
+                                             	<form role="form" id="formulario-search">
+                                                    <div class="form-group">
+                                                        <label for="campo_busqueda">Campo Búsqueda</label>
+                                                        <input type="text" class="form-control" id="campo_busqueda" value="Ej. exams, sample">
+                                                    </div>
+                                                    <div class="radio">
+                                                        
+                                                        <div><input type="radio" name="select_search" id="radiosearch1" value="Catalog"><label for="radiosearch1" class="radio-inline"></label><span>Catalog</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch2" value="Events"><label for="radiosearch2" class="radio-inline"></label><span>Events</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch3" value="About_us"><label for="radiosearch3" class="radio-inline"></label><span>About us</span></div>
+                                                        <div><input type="radio" name="select_search" id="radiosearch4" value="Everywhere"><label for="radiosearch4" class="radio-inline"></label><span>Everywhere</span></div>
+                                                        
+                                                     </div>
+                                                  <input type="submit" class="btn" value="Search">
+                                                </form> 
+                                             </div>
+                                        </div>     
+                                    </div>
+                              </div>
+                        </li>
+                        <li class="select-lang"><a href="#" class="glyphicon custom-flag"><span class="txt-lang-ico">Language</span></a>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                                    <div class="row">
+                                    	<div class="col-sx-12 col-ms-12 col-md-7 col-md-offset-5 box-lang"><!--col-sx-6 col-ms-6 col-sm-7 col-sm-offset-5 -->
+                                            <p>Choose language</p>
+                                            <ul>
+                                                <li class="active-lang"><a href="#" title="">English</a></li>
+                                                <li><a href="#" title="">Español</a></li>
+                                            </ul>
+                                        </div>
+                                	</div>
+                                </div>    
+                            </div>
+                        </li>
+                    </ul>  
+                    <!--Mobile-->
+                    <ul class="mobile-tab">
+                    	<li class="menu-mob"><a href="#" class="glyphicon custom-menu"></a>
+                        <!--Implementación de menús-->
+                        	<div class="mobile-menus">
+                            	<div class="container">
+                                	<div class="row">
+                                    	<!--<div class="col-sx-12 col-xs-4 list-menu-mob">-->
+                                        <div class="col-sx-12 col-ms-4 col-sm-4 list-menu-mob">
+                                         	<ul>
+                                            	<li><a href="nosotros.html" title="" rel="Nosotros">Nosotros</a>
+                                                	<ul>
+                                                    	<li><a title="" href="nosotros.html">Quienes somos</a></li>
+                                                        <li><a title="" href="#">Cambridge Corpus</a></li>
+                                                        <li><a title="" href="team.html">Team</a></li>
+                                                        <li><a title="" href="#">Contact</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="#" title="" rel="Catalogo">Catálogo</a>
+                                                	<ul>
+                                                        <li><a title="" href="#">Infantil</a></li>
+                                                        <li><a title="" href="#">Primaria</a></li>
+                                                        <li><a title="" href="#">Secundaria</a></li>
+                                                        <li><a title="" href="#">Bachillerato</a></li>
+                                                        <li><a title="" href="#">Adultos</a></li>
+                                                        <li><a title="" href="#">Digital</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="#" title="">Exámenes</a></li>
+                                                        <li><a href="#" title="">Profesional English</a></li>
+                                                        <li><a href="#" title="">Gramática, vocabulario y pronunciación</a></li>
+                                                        <li><a href="#" title="">Books for teachers</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a title="" href="#" rel="Teacher">Teacher Development</a>
+                                                	<ul>
+                                                        <li><a title="" href="teacher.html">Teacher Development</a></li>
+                                                        <li><a title="" href="labs.html">Cambridge LABS</a></li>
+                                                        <li><a title="" href="#">Cambridge English for Schools</a></li>
+                                                        <li><a title="" href="#">English for Spanish Speakers</a></li>
+                                                        <li><a title="" href="#">Events</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a title="" href="teacher.html">Recursos</a></li>
+                                                <li><a title="" href="exams.html">Exámenes</a></li>
+                                            </ul>
+                                         </div>
+
+                                         	<div class="col-sx-12 col-ms-8 col-sm-8">
+                                            	<div class="row">
+                                                	<div class="block-banners">
+                                                    	<!--Banners Nosotros-->
+                                                    	<div class="banner-nosotros" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                         </div>
+                                                        <!--Banners Catálogo-->
+                                                    	<div class="banner-catalogo">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                         <!--Banners Teacher-->
+                                                    	<div class="banner-teacher" style="display:none;">
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <!--Espacio vacio para 1 banner-->
+                                                             </div>
+                                                             <div class="col-sx-6 col-ms-6 col-sm-6">
+                                                                <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                                             </div>
+                                                         </div>
+                                                    </div>     
+                                                 </div>
+                                             </div>
+                                    </div>	
+                                </div>
+                            </div>
+                        </li>
+                    </ul>  
+                    <!--Menú principal-->
+                    <ul class="main-menu">
+                    	<li><a href="#">Nosotros</a>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                                	<div class="row">
+                 						 <div class="col-sm-3 col-md-3">
+                                         	<ul>
+                                            	<li><a href="nosotros.html" title="">Quienes Somos</a></li>
+                                            	<li><a href="#" title="">Cambridge Corpus</a></li>
+                                                <li><a href="team.html" title="">Team</a></li>
+                                                <li><a href="#" title="">Contact</a></li>
+                                            </ul>
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         	<!--Espacio vacio para más menús-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<!--Espacio vacio para 1 banner-->
+                                         </div>
+                                    </div>  
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Catálogo</a>
+                        	<div class="desplegable-sub">
+                            	<div class="container">
+                            		<div class="row">
+                 						 <div class="col-sm-2 col-md-2">
+                                         	<ul>
+                                            	<li><a href="#" title="">Infantil</a></li>
+                                                <li><a href="#" title="">Primaria</a></li>
+                                                <li><a href="#" title="">Secundaria</a></li>
+                                                <li><a href="#" title="">Bachillerato</a></li>
+                                                <li><a href="#" title="">Adultos</a></li>
+                                                <li><a href="#" title="">Digital</a></li>
+                                            </ul>
+                                         </div>
+                                         <div class="col-sm-3 col-md-2">
+                                         	<ul>
+                                            	<li><a href="#" title="">Exámenes</a></li>
+                                                <li><a href="#" title="">Profesional English</a></li>
+                                                <li><a href="#" title="">Gramática, vocabulario y pronunciación</a></li>
+                                                <li><a href="#" title="">Books for teachers</a></li>
+                                            </ul>
+                                         </div>
+                                         <div class="col-sm-3 col-sm-offset-1 col-md-3 col-md-offset-2">
+                                         		<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat.png"></a></div>
+                                         </div>
+                                         <div class="col-sm-3 col-md-3">
+                                         		<div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_1.png"></a></div>
+                                         </div>
+                                    </div>     
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#" title="">Teacher Development</a>
+                                <div class="desplegable-sub">
+                                    <div class="container">
+                                    	<div class="row">
+                                             <div class="col-sm-3 col-md-3">
+                                                <ul>
+                                                    <li><a href="teacher.html" title="">Teacher Development</a></li>
+                                                    <li><a href="labs.html" title="">Cambridge LABS</a></li>
+                                                    <li><a href="#" title="">Cambridge English for Schools</a></li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                <ul>
+                                                	<li><a href="#" title="">English for Spanish Speakers</a></li>
+                                                     <li><a href="#" title="">Cambridge English Teacher</a></li>
+                                                    <li><a href="#" title="">Events</a></li>
+                                                </ul>
+                                             </div>
+                                             <div class="col-sm-3  col-md-3 ">
+                                                    <!--Espacio vacio para 1 banner-->
+                                             </div>
+                                             <div class="col-sm-3 col-md-3">
+                                                    <div class="banner-cat"><a href="#" title=""><img alt="" src="assets/upload/despl_cat_2.png"></a></div>
+                                             </div>
+                                        </div>   
+                                    </div>
+                                </div>
+                        </li>
+                        <li><a href="recursos.html" title="">Recursos</a></li>
+                        <li><a href="exams.html" title="">Exámenes</a></li>
+                    </ul>
+                 </div>
+             </div>
+         </div>
+        <!--Fin cabecera-->
+        <!--Contenido-->
+        <div id="content-home">
+            <div class="container">
+            <!--Inicio bloque sup-->
+            	<a href="#" title="Subir" class="up-window">Subir</a>
+                <div class="row">	
+                    
+                    <div class="col-sx-12 col-ms-12 col-xs-12 col-sm-12 col-md-9 box-h-left">
+                    	<div class="cover-box-h-left">
+                        	<div class="row block-3-content bottom-box">
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim">
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/catalogo/secundaria/cursos/citizen-z">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/citizenz_highlight_highlightblock/51210-1-esl-ES/citizenz_highlight_highlightblock_highlightblock.jpg" alt="citizenz_highlight_highlightblock" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/catalogo/secundaria/cursos/citizen-z" class="hover-effect"><span class="ezstring-field">Citizen Z</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Nuevo curso de Secundaria</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/nosotros/english-for-spanish-speakers">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/efss/27874-1-esl-ES/efss_highlightblock.jpg" alt="efss" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/nosotros/english-for-spanish-speakers" class="hover-effect"><span class="ezstring-field">English for Spanish Speakers</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Aquí puedes ver todos nuestros cursos&nbsp;<em>English for Spanish Speakers</em></p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/catalogo/digital">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/digital/27862-1-esl-ES/digital_highlightblock.jpg" alt="digital" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/catalogo/digital" class="hover-effect"><span class="ezstring-field">Cambridge Digital</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Desde material para pizarra interactiva hasta libros digitales, aquí encontrarás todos nuestros cursos con material digital</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/nosotros/cambridge-english-schools">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/peq_izda/27866-1-esl-ES/peq_izda_highlightblock.png" alt="peq_izda" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/nosotros/cambridge-english-schools" class="hover-effect"><span class="ezstring-field">Cambridge English For Schools</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Un programa único de acreditación para colegios en España.</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/formacion-de-profesores/cambridge-labs">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/labs/27870-1-esl-ES/labs_highlightblock.jpg" alt="labs" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/formacion-de-profesores/cambridge-labs" class="hover-effect"><span class="ezstring-field">Cambridge Labs</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Un espacio de ideas para la enseñanza de inglés, en el que <strong>tú eres el protagonista</strong>.</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/catalogo/examenes">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/exams_section_module/40335-1-esl-ES/exams_section_module_highlightblock.jpg" alt="exams_section_module" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/catalogo/examenes" class="hover-effect"><span class="ezstring-field">Preparación de exámenes</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Entre nuestro catálogo de recursos para aprender inglés encontrarás libros especializados en la preparación de los exámenes de Cambridge: First, Advanced, Proficiency…</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/catalogo/gramatica-vocabulario-y-pronunciacion">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/grammar_homemodule2/40363-1-esl-ES/grammar_homemodule_highlightblock.jpg" alt="Grammar_homemodule" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/catalogo/gramatica-vocabulario-y-pronunciacion" class="hover-effect"><span class="ezstring-field">Gramática, vocabulario y pronunciación</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Disponemos de todo tipo de recursos para mejorar tu nivel de inglés, tanto escrito como hablado.</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/formacion-de-profesores">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/formacionprofesores_module/40372-1-esl-ES/formacionprofesores_module_highlightblock.jpg" alt="formacionprofesores_module" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/formacion-de-profesores" class="hover-effect"><span class="ezstring-field">Todo para profesores</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Además de nuestro material didáctico de primer orden, ofrecemos jornadas de formación gratuitas para profesores para que puedas tener el soporte necesario en la enseñanza de inglés, y asistimos a los principales jornadas formativas ofrecidas en España por distintas asociaciones.</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                                <div class="col-sx-6 col-ms-6 col-xs-4 col-sm-4 col-md-4">
+        
+                                    <div class="thumbnails thumbnail-style thumbnail-anim" >
+                                        <div class="thumbnail-img">
+                                            <div class="overflow-hidden border-img">
+                                                <a href="/catalogo">
+                                                    <img src="http://www.cambridge.es/var/ezdemo_site/storage/images/media/images/modulos-home/bigmodule_catalogo/40386-1-esl-ES/bigmodule_catalogo_highlightblock.png" alt="bigmodule_catalogo" class="img-responsive"></a>
+                                            </div>
+                                        </div>
+                                        <div class="caption">
+                                            <h3><a href="/catalogo" class="hover-effect"><span class="ezstring-field">Inglés para todas las edades</span></a></h3>
+                                            <div class="ezxmltext-field"><p>Visita nuestro catálogo de libros de inglés y encuentra todo tipo de material y recursos didácticos para aprender inglés sea cual sea tu edad y tu nivel previo.</p></div>
+                                        </div>
+                                    </div>
+        
+                                </div>
+        
+                            
+                            </div>
+                    	</div>
+                    </div>   
+                    <div class="col-xs-12 col-sm-12 col-md-3 pull-right box-h-right">
+                    	<div class="outside-box-h-right">
+                        	<div class="inside-box-h-right">
+                                <h1>Libros de inglés y mucho más.</h1>
+                                <p>En Cambridge University Press somos especialistas en <a href="/nosotros/english-for-spanish-speakers">inglés para españoles</a>.</p>
+                                <p>Tenemos los mejores materiales de preparación a los <a href="/examenes-de-cambridge">exámenes de Cambridge</a>, pero si te quedas un rato en esta web descubrirás que somos mucho más que eso, y que ofrecemos más que libros de inglés: <a href="/catalogo/digital">materiales digitales</a>, <a href="/catalogo/apps">apps</a>, <a href="/concursos">concursos</a>, multitud de <a href="/recursos">recursos</a> para <a href="http://www.theprimarybox.org/">Primaria</a> y <a href="http://www.thesecondarybox.org/">Secundaria</a>...</p>
+                                <a href="#" class="btn-box-h-right">Explorar catálogo</a>
+                                <a href="#" class="btn-box-h-right">Productos digitales</a>
+                                <a href="#" class="btn-box-h-right">Explorar catálogo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!--Fin contenido-->
+        <div id="footer">
+            <div id="row_rrss">
+                <div class="container">
+                	<div class="rrss_link">	
+                        <ul>
+                          <li><a class="fa fa-twitter" href="https://twitter.com/CambridgeGen"><span class="hide">Twitter</span></a></li>
+                          <li><a class="fa fa-facebook" href="https://www.facebook.com/CambridgeGeneration"><span class="hide">Facebook</span></a></li>
+                          <li><a class="fa fa-youtube-play" href="https://www.youtube.com/user/CambridgeELTSpain"><span class="hide">Youtube</span></a></li>
+                          <li><a class="fa fa-google-plus" href="https://plus.google.com/115966571393658508630" rel="publisher"><span class="hide">Google+</span></a></li>
+                          <li><a class="fa fa-instagram" href="https://www.instagram.com/cambridgespain/" ><span class="hide">Instagram</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="contact_link">
+                        <div><a href="newsletter.html" title="">Newsletter</a></div>
+                        <div><a href="#" title="">Contact</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="top_footer">
+                <div class="container">
+                     <div class="row">
+                     	<div class="col-xs-12 col-sm-5 col-md-4">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>NOSOTROS</h5>
+                                    <ul>
+                                        <li><a href="#">Quienes somos</a></li>
+                                        <li><a href="#">Infografía Corpus</a></li>
+                                    </ul>
+                                </div>	
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>CATÁLOGO</h5>
+                                    <ul>
+                                        <li><a href="#">Infantil</a></li>
+                                        <li><a href="#">Primaria</a></li>
+                                        <li><a href="#">Secundaria</a></li>
+                                        <li><a href="#">Bachillerato</a></li>
+                                        <li><a href="#">Adultos</a></li>
+                                        <li><a href="#">Exámenes</a></li>
+                                        <li><a href="#">Profesional English</a></li>
+                                        <li><a href="#">Gramática, vocabulario y pronunciación</a></li>
+                                        <li><a href="#">Books for Teachers</a></li>
+                                    </ul>
+                                </div>	
+                        	</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 col-md-4 colum-2-link">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>TEACHER DEVELOPMENT</h5>
+                                    <ul>
+                                        <li><a href="#">Teachers Development</a></li>
+                                        <li><a href="#">Cambridge Labs</a></li>
+                                        <li><a href="#">Cambdridge English For Schools</a></li>
+                                        <li><a href="#">Cambridge English Teacher</a></li>
+                                        <li><a href="#">Eventos</a></li>
+                                    </ul>
+                                </div>	
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>EXÁMENES</h5>
+                                    <ul>
+                                        <li><a href="#">Cambridge Exams</a></li>
+                                    </ul>
+                                </div>
+                        	</div>	
+                        </div>
+                       <div class="col-xs-12 col-sm-2 col-md-4 colum-3-link">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>RECURSOS</h5>
+                                    <ul>
+                                        <li><a href="#">The Primary Box</a></li>
+                                        <li><a href="#">The Secondary Box</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-6">
+                                    <h5>APPS</h5>
+                                    <ul>
+                                        <li><a href="#">English Monstruo</a></li>
+                                        <li><a href="#">English Monstruo</a></li>
+                                        <li><a href="#">English Monstruo</a></li>
+                                        <li><a href="#">English Monstruo</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+            </div>
+            <div id="inf_footer">
+                <div class="container">
+                    <div>
+                        <p class="logo_foot"><img src="assets/svg/logo_escudo.svg" alt="Logo Cambridge University Press"></p>
+                        <p class="copy_foot">© Cambridge University Press2014 <span><a href="#" title="">Aviso Legal</a></span> <span><a href="#" title="">Contact</a></span></p>	
+                    </div>
+                </div>
+            </div>
+        </div><!--Fin footer-->
+        <!--Bloque Cookies-->
+        <div class="block-cookies">
+        	<div class="container">
+                <h2>Política de Cookies</h2>
+                <p>Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación. Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a href="#" title="Política de Cookies">Política de Cookies.</a></p>
+                <a href="#" class="btn-accept">Ok</a>
+                <a href="#" title="" class="close_c"></a>
+            </div>
+        </div>	
+        <!--Fin Cookies-->
+    </div><!--Fin wrapper-->    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/jquery.bxslider.min.js"></script>
+    <script src="assets/js/jquery.cookie.js"></script>
+    <script src="assets/js/jquery.easing.1.3.js"></script>
+    <script src="assets/js/jquery.scrollTo.js"></script>
+    <script src="assets/js/jquery.fitvids.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/application2.js"></script>
+  </body>
+</html>
