@@ -582,7 +582,7 @@ jQuery(document).ready(function(){
 				dataType: 'json',
 				data: data_blog,
 				success: function(data){
-							console.log(data);
+							//console.log(data);
 							//Limpiamos mapa y clasificación
 							for (var x = 0; x < data.posts.length; x++) {
 								jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><img src="'+data.posts[x].thumbnail_images.full.url+'"></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
