@@ -492,8 +492,49 @@ jQuery(document).ready(function(){
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
 						  },
 						});
+						
+		//Leemos los contenidos del Blog vía JSON
+			var data_blog='q='+ Math.random();
+			jQuery.ajax({
+				url: 'http://blog.cambridge.es/?json=get_recent_posts',
+				type: 'POST',
+				async: true,
+				dataType: 'json',
+				data: data_blog,
+				success: function(data){
+							console.log(data);
+							//Limpiamos mapa y clasificación
+							/*for (var x = 0; x < data.length; x++) {
+								//console.log(data[x].votos);
+								jQuery("#votaciones_"+data[x].id_ong).find('p').html(String(data[x].votos));		
+							}*/
+						}
+			});		
+						
+		//Galería destacdos blog
+		var slider_destc=jQuery('.bxslider-destacados').bxSlider({
+						  pager: true,
+						  infiniteLoop: true,
+						  useCSS: false,
+						  adaptiveHeight: true,
+						  auto: true,
+					  	  autoHover: true,
+						  controls: false,
+						  pause: 5000,
+						  speed:800,
+						  adaptiveHeight:true,
+						  onSlideBefore: function(slideElement, oldIndex, newIndex){
+						  },
+						  onSlideAfter: function(slideElement, oldIndex, newIndex){
+						  },
+						  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+						  },
+						  onSlidePrev: function(slideElement, oldIndex, newIndex){
+						  },
+						});				
 
 	}
+	
 
 	//Avanzar a la siguiente pantalla slider
 	jQuery(document).on("click",".arrow-next", function(e) {

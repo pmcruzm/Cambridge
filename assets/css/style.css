@@ -98,7 +98,7 @@ PROPIEDADES CABECERA
 
 .quinto {background-image: -moz-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -webkit-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);background-image: -ms-linear-gradient( 138deg, rgb(78,178,197) 0%, rgb(97,203,209) 100%);opacity: 0.8;position: absolute;left: 0;top: 83px;width:37.93%;height: 115px;z-index: 92;}
 
-/**** Propiedades SEO Home ********/
+
 .row_seo_home_up{padding-left:9px;padding-right:9px;margin-bottom:18px;}
 .row_seo_home{background:#ffffff;padding:18px;padding-right:0;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .row_seo_home h1{color:#6ad7d3;font-size:24px;margin-top:0px;}
@@ -116,6 +116,21 @@ PROPIEDADES CABECERA
 .header-home .bx-wrapper .bx-pager.bx-default-pager a{background-position:0px 0px;}
 
 .header-home .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px -10px;}
+
+/**** Destacados Blog Home ********/
+
+.box-d-blog h2{font-size:34px;color:#0f81a2;font-weight:normal;margin-bottom:20px;padding-left:30px;}
+.box-d-blog .bx-wrapper .bx-viewport{background:none;}
+.box-d-blog .bx-pager{background:#fefffb;padding-bottom:20px;}
+.box-destacado{padding-top:35px;}
+.single_featured{display:block;box-sizing:border-box;padding:15px;text-align:center;background:#fefffb;}
+.single_featured .box_featured_img{box-shadow:0 10px 20px rgba(0,0,0,0.2);margin:0 auto;margin-top:-35px;text-align:center;margin-bottom:20px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);width:85%;}
+.single_featured .box_featured_img img{max-width:100%;width:100%;}
+.single_featured h4{text-align:left;padding-left:30px;padding-right:20px;font-weight:normal;}
+.single_featured h4 a{color:#51b3c7;font-size:21px;font-family:'latolight', Helvetica, sans-serif;line-height:26px;}
+.single_featured p{font-size:12px;text-align:left;padding-left:30px;padding-right:20px;color:#333333;font-size:16px;}
+.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a{border-radius:0;background-image:url(../img/sprite_blog.png);background-position:0px -10px;background-repeat:none;background-color:transparent;}
+.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px 0px;}
 
 /*****************************
 PROPIEDADES CUERPO HOME
