@@ -120,7 +120,7 @@ PROPIEDADES CABECERA
 /**** Destacados Blog Home ********/
 
 .box-d-blog h2{font-size:34px;color:#0f81a2;font-weight:normal;margin-bottom:20px;padding-left:30px;}
-.box-d-blog .bx-wrapper .bx-viewport{background:none;}
+.box-d-blog .bx-wrapper .bx-viewport{background: rgb(248,247,247);background: -moz-linear-gradient(top, rgba(248,247,247,1) 0%, rgba(248,247,247,1) 50%, rgba(254,255,251,1) 51%, rgba(254,255,251,1) 100%);background: -webkit-linear-gradient(top, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);background: linear-gradient(to bottom, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f7', endColorstr='#fefffb',GradientType=0 );}
 .box-d-blog .bx-pager{background:#fefffb;padding-bottom:20px;}
 .box-destacado{padding-top:35px;}
 .single_featured{display:block;box-sizing:border-box;padding:15px;text-align:center;background:#fefffb;}
@@ -129,8 +129,8 @@ PROPIEDADES CABECERA
 .single_featured h4{text-align:left;padding-left:30px;padding-right:20px;font-weight:normal;}
 .single_featured h4 a{color:#51b3c7;font-size:21px;font-family:'latolight', Helvetica, sans-serif;line-height:26px;}
 .single_featured p{font-size:12px;text-align:left;padding-left:30px;padding-right:20px;color:#333333;font-size:16px;}
-.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a{border-radius:0;background-image:url(../img/sprite_blog.png);background-position:0px -10px;background-repeat:none;background-color:transparent;}
-.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px 0px;}
+.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a{border-radius:0;background-image:url(../img/opc_gall.png);background-position:0px 0px;background-repeat:none;background-color:transparent;background-size:10px;}
+.box-d-blog .bx-wrapper .bx-pager.bx-default-pager a.active{background-position:0px -10px;}
 
 /*****************************
 PROPIEDADES CUERPO HOME

@@ -113,7 +113,6 @@ jQuery(window).load(function(){
 								  controls: false,
 								  pause: 5000,
 								  speed:800,
-								  adaptiveHeight:true,
 								  onSlideBefore: function(slideElement, oldIndex, newIndex){
 								  },
 								  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -139,7 +138,6 @@ jQuery(window).load(function(){
 									  slideMargin: 0,
 									  pause: 5000,
 									  speed:800,
-									  adaptiveHeight:true,
 									  onSlideBefore: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -156,13 +154,12 @@ jQuery(window).load(function(){
 								  pager: true,
 								  infiniteLoop: true,
 								  useCSS: false,
-								  adaptiveHeight: true,
+								  adaptiveHeight: false,
 								  auto: true,
 								  autoHover: true,
 								  controls: false,
 								  pause: 5000,
 								  speed:800,
-								  adaptiveHeight:true,
 								  onSlideBefore: function(slideElement, oldIndex, newIndex){
 								  },
 								  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -585,7 +582,7 @@ jQuery(document).ready(function(){
 							//console.log(data);
 							//Limpiamos mapa y clasificación
 							for (var x = 0; x < data.posts.length; x++) {
-								jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><img src="'+data.posts[x].thumbnail_images.full.url+'"></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
+								jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
 								//console.log(data.posts[x].slug);
 								//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));		
 							}
