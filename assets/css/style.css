@@ -120,7 +120,9 @@ PROPIEDADES CABECERA
 /**** Destacados Blog Home ********/
 
 .box-d-blog h2{font-size:34px;color:#0f81a2;font-weight:normal;margin-bottom:20px;padding-left:30px;}
-.box-d-blog .bx-wrapper .bx-viewport{background: rgb(248,247,247);background: -moz-linear-gradient(top, rgba(248,247,247,1) 0%, rgba(248,247,247,1) 50%, rgba(254,255,251,1) 51%, rgba(254,255,251,1) 100%);background: -webkit-linear-gradient(top, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);background: linear-gradient(to bottom, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f7', endColorstr='#fefffb',GradientType=0 );}
+/*.box-d-blog .bx-wrapper .bx-viewport{background: rgb(248,247,247);background: -moz-linear-gradient(top, rgba(248,247,247,1) 0%, rgba(248,247,247,1) 50%, rgba(254,255,251,1) 51%, rgba(254,255,251,1) 100%);background: -webkit-linear-gradient(top, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);background: linear-gradient(to bottom, rgba(248,247,247,1) 0%,rgba(248,247,247,1) 50%,rgba(254,255,251,1) 51%,rgba(254,255,251,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f7f7', endColorstr='#fefffb',GradientType=0 );}*/
+.box-d-blog .bx-wrapper .bx-viewport{background:none;}
+.box-d-blog .bxslider-destacados{padding:0;}
 .box-d-blog .bx-pager{background:#fefffb;padding-bottom:20px;}
 .box-destacado{padding-top:35px;}
 .single_featured{display:block;box-sizing:border-box;padding:15px;text-align:center;background:#fefffb;}
