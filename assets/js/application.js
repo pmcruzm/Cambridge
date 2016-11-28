@@ -113,7 +113,6 @@ jQuery(window).load(function(){
 								  controls: false,
 								  pause: 5000,
 								  speed:800,
-								  mode: 'vertical',
 								  onSlideBefore: function(slideElement, oldIndex, newIndex){
 								  },
 								  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -139,7 +138,6 @@ jQuery(window).load(function(){
 									  slideMargin: 0,
 									  pause: 5000,
 									  speed:800,
-									  mode: 'vertical',
 									  onSlideBefore: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
@@ -162,8 +160,6 @@ jQuery(window).load(function(){
 								  controls: false,
 								  pause: 5000,
 								  speed:800,
-								  mode: 'vertical',
-  								  slideMargin: 5,
 								  onSlideBefore: function(slideElement, oldIndex, newIndex){
 								  },
 								  onSlideAfter: function(slideElement, oldIndex, newIndex){
