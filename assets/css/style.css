@@ -1130,6 +1130,13 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a:hover{color:#ffffff;background:#71ccd7;}
 .enl-languages a:first-child{margin-left:0;}
 
+/****** Galería Nueva *******/
+.cont_slider_journey{padding-top:40px;padding-bottom:80px;}
+.ug-videoskin-bottom-text .ug-thumb-wrapper{height:80px;width:150px;}
+.ug-thumb-desc{display:none;}
+.ug-videoskin-bottom-text .ug-thumb-title{overflow:inherit;height:auto;}
+.ug-videoskin-bottom-text .ug-thumb-inner{padding:0px;}
+
 
 /**************************************
 PROPIEDADES CUERPO ENGLISH FOR SCHOOL

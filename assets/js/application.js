@@ -98,30 +98,57 @@ jQuery(window).load(function(){
 	
 	//Cargamos la galería del Blog después de cargar los datos
 	if ( jQuery("#slider").is(":visible") ) {
-		//Obtenemos altura y anchura del navegador
-		var w_win=window.innerWidth;
-		if(w_win<992){
-			if(w_win<481){
-			//Galería destacdos blog
-			slider_destc=jQuery('.bxslider-destacados').bxSlider({
-								  pager: true,
-								  infiniteLoop: true,
-								  useCSS: false,
-								  adaptiveHeight: false,
-								  auto: true,
-								  autoHover: true,
-								  controls: false,
-								  pause: 5000,
-								  speed:800,
-								  onSlideBefore: function(slideElement, oldIndex, newIndex){
-								  },
-								  onSlideAfter: function(slideElement, oldIndex, newIndex){
-								  },
-								  onSlideNext: function(slideElement, oldIndex, newIndex){ 
-								  },
-								  onSlidePrev: function(slideElement, oldIndex, newIndex){
-								  },
-								});	
+		if ( jQuery(".box-d-blog").length>0) {	
+			//Obtenemos altura y anchura del navegador
+			var w_win=window.innerWidth;
+			if(w_win<992){
+				if(w_win<481){
+				//Galería destacdos blog
+				slider_destc=jQuery('.bxslider-destacados').bxSlider({
+									  pager: true,
+									  infiniteLoop: true,
+									  useCSS: false,
+									  adaptiveHeight: false,
+									  auto: true,
+									  autoHover: true,
+									  controls: false,
+									  pause: 5000,
+									  speed:800,
+									  onSlideBefore: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideAfter: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+									  },
+									  onSlidePrev: function(slideElement, oldIndex, newIndex){
+									  },
+									});	
+				}else{
+					//Galería destacdos blog
+					slider_destc=jQuery('.bxslider-destacados').bxSlider({
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  minSlides: 2,
+										  maxSlides: 2,
+										  slideWidth: 450,
+										  slideMargin: 0,
+										  pause: 5000,
+										  speed:800,
+										  onSlideBefore: function(slideElement, oldIndex, newIndex){
+										  },
+										  onSlideAfter: function(slideElement, oldIndex, newIndex){
+										  },
+										  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+										  },
+										  onSlidePrev: function(slideElement, oldIndex, newIndex){
+										  },
+										});	
+				}
 			}else{
 				//Galería destacdos blog
 				slider_destc=jQuery('.bxslider-destacados').bxSlider({
@@ -132,10 +159,6 @@ jQuery(window).load(function(){
 									  auto: true,
 									  autoHover: true,
 									  controls: false,
-									  minSlides: 2,
-									  maxSlides: 2,
-									  slideWidth: 450,
-									  slideMargin: 0,
 									  pause: 5000,
 									  speed:800,
 									  onSlideBefore: function(slideElement, oldIndex, newIndex){
@@ -148,27 +171,6 @@ jQuery(window).load(function(){
 									  },
 									});	
 			}
-		}else{
-			//Galería destacdos blog
-			slider_destc=jQuery('.bxslider-destacados').bxSlider({
-								  pager: true,
-								  infiniteLoop: true,
-								  useCSS: false,
-								  adaptiveHeight: false,
-								  auto: true,
-								  autoHover: true,
-								  controls: false,
-								  pause: 5000,
-								  speed:800,
-								  onSlideBefore: function(slideElement, oldIndex, newIndex){
-								  },
-								  onSlideAfter: function(slideElement, oldIndex, newIndex){
-								  },
-								  onSlideNext: function(slideElement, oldIndex, newIndex){ 
-								  },
-								  onSlidePrev: function(slideElement, oldIndex, newIndex){
-								  },
-								});	
 		}
 	}
 
@@ -534,6 +536,14 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
+	
+	//Cargamos el slider de video de Journey
+	if ( jQuery(".cont_slider_journey").is(":visible") ) {
+		jQuery("#gallery_journey").unitegallery({
+				theme_skin:"bottom-text",
+				height:500
+			});
+	}
 
 
 	//Comprobar que solo se carga en la home
@@ -570,24 +580,26 @@ jQuery(document).ready(function(){
 						  },
 						});
 						
-		//Leemos los contenidos del Blog vía JSON
-			var data_blog='q='+ Math.random();
-			jQuery.ajax({
-				url: 'http://blog.cambridge.es/?json=get_posts&page=0&callback=?',
-				type: 'POST',
-				async: true,
-				dataType: 'json',
-				data: data_blog,
-				success: function(data){
-							//console.log(data);
-							//Limpiamos mapa y clasificación
-							for (var x = 0; x < data.posts.length; x++) {
-								jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
-								//console.log(data.posts[x].slug);
-								//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));		
+			if ( jQuery(".box-d-blog").length>0) {				
+				//Leemos los contenidos del Blog vía JSON
+				var data_blog='q='+ Math.random();
+				jQuery.ajax({
+					url: 'http://blog.cambridge.es/?json=get_posts&page=0&callback=?',
+					type: 'POST',
+					async: true,
+					dataType: 'json',
+					data: data_blog,
+					success: function(data){
+								//console.log(data);
+								//Limpiamos mapa y clasificación
+								for (var x = 0; x < data.posts.length; x++) {
+									jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
+									//console.log(data.posts[x].slug);
+									//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));		
+								}
 							}
-						}
-			});					
+				});	
+			}
 
 	}
 	
@@ -1141,62 +1153,64 @@ jQuery(document).ready(function(){
 		
 		//Resize modulo Blog home
 		if ( jQuery("#slider").is(":visible") ) {
-		//Obtenemos altura y anchura del navegador
-		var w_win=window.innerWidth;
-		if(w_win<992){
-			if(w_win<481){
-			//Galería destacdos blog
-			slider_destc.reloadSlider({
-								  minSlides: 1,
-								  maxSlides: 1,
-								  pager: true,
-								  infiniteLoop: true,
-								  useCSS: false,
-								  adaptiveHeight: false,
-								  auto: true,
-								  autoHover: true,
-								  controls: false,
-								  pause: 5000,
-								  speed:800,
-								  adaptiveHeight:true
-								});	
-			}else{
-				//Galería destacdos blog
-				slider_destc.reloadSlider({
-									  minSlides: 2,
-									  maxSlides: 2,
-									  slideWidth: 450,
-									  slideMargin: 0,
-									  pager: true,
-									  infiniteLoop: true,
-									  useCSS: false,
-									  adaptiveHeight: false,
-									  auto: true,
-									  autoHover: true,
-									  controls: false,
-									  pause: 5000,
-									  speed:800,
-									  adaptiveHeight:true
-									});	
+			if ( jQuery(".box-d-blog").length>0) {	
+				//Obtenemos altura y anchura del navegador
+				var w_win=window.innerWidth;
+				if(w_win<992){
+					if(w_win<481){
+					//Galería destacdos blog
+					slider_destc.reloadSlider({
+										  minSlides: 1,
+										  maxSlides: 1,
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  pause: 5000,
+										  speed:800,
+										  adaptiveHeight:true
+										});	
+					}else{
+						//Galería destacdos blog
+						slider_destc.reloadSlider({
+											  minSlides: 2,
+											  maxSlides: 2,
+											  slideWidth: 450,
+											  slideMargin: 0,
+											  pager: true,
+											  infiniteLoop: true,
+											  useCSS: false,
+											  adaptiveHeight: false,
+											  auto: true,
+											  autoHover: true,
+											  controls: false,
+											  pause: 5000,
+											  speed:800,
+											  adaptiveHeight:true
+											});	
+					}
+				}else{
+					//Galería destacdos blog
+					slider_destc.reloadSlider({
+										  minSlides: 1,
+										  maxSlides: 1,
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  pause: 5000,
+										  speed:800,
+										  adaptiveHeight:true
+										});	
+				}
 			}
-		}else{
-			//Galería destacdos blog
-			slider_destc.reloadSlider({
-								  minSlides: 1,
-								  maxSlides: 1,
-								  pager: true,
-								  infiniteLoop: true,
-								  useCSS: false,
-								  adaptiveHeight: false,
-								  auto: true,
-								  autoHover: true,
-								  controls: false,
-								  pause: 5000,
-								  speed:800,
-								  adaptiveHeight:true
-								});	
 		}
-	}
 
 	});
 
