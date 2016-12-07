@@ -1171,7 +1171,6 @@ jQuery(document).ready(function(){
 										  controls: false,
 										  pause: 5000,
 										  speed:800,
-										  adaptiveHeight:true
 										});	
 					}else{
 						//Galería destacdos blog
@@ -1189,7 +1188,6 @@ jQuery(document).ready(function(){
 											  controls: false,
 											  pause: 5000,
 											  speed:800,
-											  adaptiveHeight:true
 											});	
 					}
 				}else{
@@ -1206,7 +1204,6 @@ jQuery(document).ready(function(){
 										  controls: false,
 										  pause: 5000,
 										  speed:800,
-										  adaptiveHeight:true
 										});	
 				}
 			}
