@@ -28,7 +28,7 @@ function UGTheme_video(){
 	
 	//global defaults
 	var g_defaults = {
-			gallery_width:880,
+			gallery_width:710,
 			slider_controls_always_on:true,
 			strippanel_enable_handle:false,
 			strippanel_enable_buttons: false,
