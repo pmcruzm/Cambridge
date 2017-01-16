@@ -1130,7 +1130,7 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a{display:inline-block;min-width:175px;padding:0 15px;background:#355d81;color:#ffffff;height:30px;border-radius:15px;line-height:30px;margin:0 10px; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 .enl-languages a:hover{color:#ffffff;background:#71ccd7;}
 .enl-languages a:first-child{margin-left:0;}
-.general-journey .resource-module + h3{font-family:'latoregular', Helvetica, sans-serif;}
+.general-journey .resource-module>h3{font-family:'latoregular', Helvetica, sans-serif;}
 
 /****** Galería Nueva *******/
 .general-journey{padding-bottom:100px;}
