@@ -1130,6 +1130,7 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a{display:inline-block;min-width:175px;padding:0 15px;background:#355d81;color:#ffffff;height:30px;border-radius:15px;line-height:30px;margin:0 10px; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 .enl-languages a:hover{color:#ffffff;background:#71ccd7;}
 .enl-languages a:first-child{margin-left:0;}
+.general-journey .resource-module + h3{font-family:'latoregular', Helvetica, sans-serif;}
 
 /****** Galería Nueva *******/
 .general-journey{padding-bottom:100px;}
@@ -1140,7 +1141,8 @@ PROPIEDADES CUERPO JOURNEY
 .ug-videoskin-bottom-text .ug-thumb-inner{padding:15px 15px 0;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper{background:none;}
 .cont_slider_journey h2{padding-left:0px;color:#c03a26;font-family:'latoregular', Helvetica, sans-serif;padding-top:30px;}
-.cont_slider_journey h2+p{width:75%;padding-bottom:40px;color:#373340;font-size:18px;}
+/*.cont_slider_journey h2 + p{width:75%;padding-bottom:40px;color:#373340;font-size:18px;}*/
+.cont_slider_journey h2 + div{width:75%;padding-bottom:40px;color:#373340;font-size:18px;}
 .ug-gallery-wrapper .ug-strip-panel{background:#ffffff !important;}
 .ug-videoskin-bottom-text .ug-thumb-title{color:#bcbcbc;font-size:14px;font-family:'latoregular', Helvetica, sans-serif;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper.ug-thumb-selected{background:#ffffff url(../img/line_journey.png) top left repeat-x;}
@@ -1150,6 +1152,7 @@ PROPIEDADES CUERPO JOURNEY
 .ug-videoskin-bottom-text .ug-thumb-wrapper.ug-thumb-over .ug-thumb-title{color:#c03a26;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper{border-bottom:none;border-right:1px solid #f8f7f7;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper:last-child{border-right:none;}
+
 
 
 /**************************************
@@ -1737,6 +1740,9 @@ PROPIEDADES CUSTOM THEMES
 .exam-component ul li.theme-color::before {color: #710d2b !important;}
 .single-exam-block.theme-color a{color:#710d2b !important;}
 
+.general-journey .theme-color-bg{background-color:#c03a26 !important}
+.general-journey .theme-color{color:#c03a26 !important}
+
 
 /******************************
 ICONOS FUENTE
@@ -2170,7 +2176,8 @@ MEDIA QUERIES
 	
 	.cont_slider_journey{padding-left:0;padding-top:30px;}
 	.cabecera-journey{background-color:#72ccd7 !important;background-image:url(../upload/bg_journey_mob.png) !important;background-position:center right;background-size:450px; }
-	.cont_slider_journey h2 + p{width:100%;}
+	/*.cont_slider_journey h2 + p{width:100%;}*/
+	.cont_slider_journey h2 + div{width:100%;}
 }
 
 @media (max-width: 640px) {
