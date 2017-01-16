@@ -1130,7 +1130,7 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a{display:inline-block;min-width:175px;padding:0 15px;background:#355d81;color:#ffffff;height:30px;border-radius:15px;line-height:30px;margin:0 10px; -webkit-transition: all 0.2s ease-in-out;-moz-transition: background 0.2s ease-in-out;-o-transition: all 0.2s ease-in-out;transition: all 0.2s ease-in-out;}
 .enl-languages a:hover{color:#ffffff;background:#71ccd7;}
 .enl-languages a:first-child{margin-left:0;}
-.general-journey .resource-module>h3{font-family:'latoregular', Helvetica, sans-serif;}
+.general-journey .resource-module>h3{font-family:'latoregular', Helvetica, sans-serif;margin-bottom:15px;}
 .general-journey .inside-recurso h3{line-height:21px;}
 
 /****** Galería Nueva *******/
@@ -1141,7 +1141,7 @@ PROPIEDADES CUERPO JOURNEY
 .ug-videoskin-bottom-text .ug-thumb-title{overflow:inherit;height:auto;}
 .ug-videoskin-bottom-text .ug-thumb-inner{padding:15px 15px 0;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper{background:none;}
-.cont_slider_journey h2{padding-left:0px;color:#c03a26;font-family:'latoregular', Helvetica, sans-serif;padding-top:30px;}
+.cont_slider_journey h2{padding-left:0px;color:#355d81;font-family:'latoregular', Helvetica, sans-serif;padding-top:30px;}
 /*.cont_slider_journey h2 + p{width:75%;padding-bottom:40px;color:#373340;font-size:18px;}*/
 .cont_slider_journey h2 + div{width:75%;padding-bottom:40px;color:#373340;font-size:18px;}
 .ug-gallery-wrapper .ug-strip-panel{background:#ffffff !important;}
