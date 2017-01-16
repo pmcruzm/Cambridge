@@ -1105,8 +1105,8 @@ PROPIEDADES CUERPO CORPUS
 PROPIEDADES CUERPO JOURNEY
 **************************/
 
-.top-journey h2{font-size:32px;color:#355d81;font-family:'latolight', Helvetica, sans-serif;padding-left:20px;padding-right:20px;padding-top:36px;margin-bottom:30px;}
-.general-journey h2{font-size:32px;color:#355d81;font-family:'latolight', Helvetica, sans-serif;padding-left:20px;padding-right:20px;padding-top:36px;margin-bottom:30px;}
+.top-journey h2{font-size:32px;color:#355d81;font-family:'latolight', Helvetica, sans-serif;padding-left:20px;padding-right:20px;padding-top:36px;margin-bottom:30px;line-height:40px;}
+.general-journey h2{font-size:32px;color:#355d81;font-family:'latolight', Helvetica, sans-serif;padding-left:20px;padding-right:20px;padding-top:36px;margin-bottom:30px;line-height:40px;}
 .box-mini-journey{padding:20px;}
 .box-mini-journey h3{font-size:32px;color:#355d81;font-family:'latolight', Helvetica, sans-serif;}
 .box-mini-journey .cont_img_journey{min-height:274px;}
@@ -1131,6 +1131,7 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a:hover{color:#ffffff;background:#71ccd7;}
 .enl-languages a:first-child{margin-left:0;}
 .general-journey .resource-module>h3{font-family:'latoregular', Helvetica, sans-serif;}
+.general-journey .inside-recurso h3{line-height:21px;}
 
 /****** Galería Nueva *******/
 .general-journey{padding-bottom:100px;}
