@@ -1131,7 +1131,8 @@ PROPIEDADES CUERPO JOURNEY
 .enl-languages a:first-child{margin-left:0;}
 
 /****** Galería Nueva *******/
-.cont_slider_journey{padding-bottom:80px;padding-left:20px;}
+.general-journey{padding-bottom:100px;}
+.cont_slider_journey{padding-left:20px;}
 .ug-videoskin-bottom-text .ug-thumb-wrapper{height:100px;width:150px;}
 .ug-thumb-desc{display:none;}
 .ug-videoskin-bottom-text .ug-thumb-title{overflow:inherit;height:auto;}
@@ -2230,6 +2231,7 @@ MEDIA QUERIES
 	.ug-videoskin-bottom-text .ug-thumb-title{font-size:13px;}
 	
 	.cabecera-journey{background-size:350px; }
+	.cabecera-journey{background-color:#72ccd7 !important;background-image:none !important;
 	
 }
 
