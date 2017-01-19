@@ -1274,6 +1274,9 @@ PROPIEDADES CUERPO CATALOGUE
 .pill-cat{display:block;color:#ffffff;background:#47b6c7;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;width:200px;height:30px;line-height:30px;font-size:13px;margin-top:18px;text-align:center;}
 .pill-cat:hover{text-decoration:none;color:#ffffff;}
 
+.pill-cat.isbn{box-sizing:border-box;border:2px #47b6c7 solid;background:#ffffff;color:#47b6c7;line-height:28px;}
+.pill-cat.isbn:hover{text-decoration:none;color:#47b6c7;}
+
 /**************************************
 PROPIEDADES CUERPO CATALOGUE DIGITAL
 **************************************/
