@@ -1279,7 +1279,7 @@ PROPIEDADES CUERPO CATALOGUE
 
 .list-enl-cat{padding-top:20px;}
 .list-enl-cat .btn-group{margin-bottom:20px;display:block !important;overflow:hidden;}
-.list-enl-cat .btn-group .btn-default{background:#47b6c7 !important;color:#ffffff !important;border-color:#f8f7f7 !important;width:50%;}
+.list-enl-cat .btn-group .btn-default{background:#47b6c7 !important;color:#ffffff !important;border-color:#f8f7f7 !important;width:50%;border-radius:25px;}
 
 /**************************************
 PROPIEDADES CUERPO CATALOGUE DIGITAL
