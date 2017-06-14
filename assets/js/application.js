@@ -67,6 +67,28 @@ jQuery(window).load(function(){
 			align_top_box(jQuery(this).find('div.block-product'));
 		});
 	}
+	
+	//Ajustar altura bloques recursos productos
+	if (jQuery('.box-recursos').is(":visible") ) {
+		jQuery('.box-recursos div.inside-recurso').removeAttr('style');
+		//Listado cursos
+		var heights = jQuery('.box-recursos div.inside-recurso').map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros
+		maxHeight = Math.max.apply(null, heights);
+		//Recorremos todos los cuadros
+		 jQuery('.box-recursos div.inside-recurso').each(function() {
+		 	var altura=jQuery(this).height();
+			jQuery(this).attr('rel',altura);
+			if(altura<maxHeight){
+				jQuery(this).css({height:maxHeight});
+			}else{
+				jQuery(this).css({height:maxHeight});
+			}
+		 });
+	}
 
 	//Igualar todos los bloques de exámenes home
 	if (jQuery('.list-home-exams').is(":visible") ) {
