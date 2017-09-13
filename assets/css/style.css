@@ -1596,6 +1596,7 @@ PROPIEDADES CUERPO CAMBRIDGE MONITOR
 /********************************
 PROPIEDADES BETTER LEARNING
 *********************************/
+.cab-better{background-repeat:no-repeat;background-position:center center;height:235px;width:100%;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);}
 .row-blank-better{background:#ffffff;padding-bottom:250px;padding-top:70px;}
 .cont-better h2{color:#e33841 !important;}
 .cont-better h3{margin-bottom:30px;}
