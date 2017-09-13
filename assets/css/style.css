@@ -1605,7 +1605,7 @@ PROPIEDADES BETTER LEARNING
 .row-blank-better h2{color:#e33841;font-size:32px;margin-bottom:24px;margin-top:24px;}
 .row-blank-better h3{color:#373340;font-size:20px;line-height:28px;}
 .txt-video{background:#e33841;box-sizing:border-box;padding:50px;}
-.txt-video p{color:#ffffff;text-align:center;font-size:32px;line-height:38px;}
+.txt-video p{color:#ffffff;text-align:center;font-size:32px;line-height:38px;margin-bottom:0 !important;}
 .box-video-better .video-youtube{margin-bottom:0 !important;}
 .box-video-bottom{padding:70px 50px;}
 .box-video-bottom h2{color:#ffffff;font-size:32px;font-family:'latoregular', Helvetica, sans-serif;margin-bottom:5px;}
@@ -2212,6 +2212,8 @@ MEDIA QUERIES
 	.cabecera-journey{background-color:#72ccd7 !important;background-image:url(../upload/bg_journey_mob.png) !important;background-position:center right;background-size:450px; }
 	/*.cont_slider_journey h2 + p{width:100%;}*/
 	.cont_slider_journey h2 + div{width:100%;}
+	
+	.row-blank-better{padding-right:18px;padding-left:18px;}
 }
 
 @media (max-width: 640px) {
@@ -2274,6 +2276,12 @@ MEDIA QUERIES
 
 	.cabecera-journey{background-size:350px; }
 	.cabecera-journey{background-color:#72ccd7 !important;background-image:none !important;}
+	
+	.box-video-bottom{padding:50px 30px;}
+	.txt-video{padding:30px;}
+	.txt-video p{font-size:26px;line-height:30px;}
+	.cont-better .video-youtube{padding-top:40px;}
+	.row-blank-better{padding-top:50px;}
 
 }
 
