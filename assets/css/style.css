@@ -2283,7 +2283,7 @@ MEDIA QUERIES
 	.txt-video p{font-size:26px;line-height:30px;}
 	.cont-better .video-youtube{padding-top:40px;}
 	.row-blank-better{padding-top:50px;}
-
+	.cab-better{background-position:65% 50%;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -2489,6 +2489,7 @@ MEDIA QUERIES
     .inside_graf_ess img{width:75px;}
     .inside_graf_ess p{font-size:13px;}
 	.table_cont_exams .pill-w-table tr td p{font-size:11px !important;}
+	.cab-better{background-position:60% 50%;}
 }
 
 @media (max-width: 370px){
