@@ -1404,6 +1404,7 @@ function control_scroll(e){
 				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
 
 				loadAnalytics();
+			}); 
 		}
   }
 
