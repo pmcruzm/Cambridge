@@ -35,6 +35,32 @@ if(ua.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i)){
 jQuery.noConflict();
 
 
+function loadAnalytics() {
+
+	//Añadimos GA
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-31155962-13', 'auto');
+	ga('send', 'pageview');
+
+
+	//Añadimos Facebook Pixel
+	!function(f,b,e,v,n,t,s)
+	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];
+	s.parentNode.insertBefore(t,s)}(window,document,'script',
+	'https://connect.facebook.net/en_US/fbevents.js');
+	fbq('init', '1648852078670494');
+	fbq('track', 'PageView');
+}
+
+
 jQuery(window).load(function(){
 
 	//Ajustar altura bloques categoria listado-courses
@@ -204,14 +230,8 @@ jQuery(document).ready(function(){
 	if(jQuery.cookie('cambridge') == 'acepta'){
 		//Ocultamos info cookies
 		jQuery('.block-cookies').hide();
-		//Añadimos GA
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		ga('create', 'UA-31155962-13', 'auto');
-		ga('send', 'pageview');
+		loadAnalytics()
 	}else{
 		jQuery('.block-cookies').show();
 	}
@@ -1058,14 +1078,8 @@ jQuery(document).ready(function(){
 		jQuery('.block-cookies').fadeOut(600,function(){
 			//Creamos la cookie de aceptación
 			jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
-			//Añadimos GA
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-31155962-13', 'auto');
-			ga('send', 'pageview');
+			loadAnalytics();
 		});
 	});
 
@@ -1388,15 +1402,8 @@ function control_scroll(e){
 			jQuery('.block-cookies').fadeOut(600,function(){
 				//Creamos la cookie de aceptación
 				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
-				//Añadimos GA
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-				ga('create', 'UA-31155962-13', 'auto');
-				ga('send', 'pageview');
-			});
+				loadAnalytics();
 		}
   }
 
@@ -1660,5 +1667,3 @@ function capitaliseFirstLetter(string)
 {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
-
-
