@@ -1140,6 +1140,17 @@ jQuery(document).ready(function(){
 		var direc=jQuery(this).attr('href');
 		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc).find('.info_single_exam h2'),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
 	});
+	
+	//Desplegar otros productos página nueva productos 
+	jQuery(document).on('click',".other_products", function(e) {
+		e.preventDefault();
+		jQuery(".float-colum-menu .hide-menu-float").slideToggle(400,function(){
+			/*jQuery('.block-submenus>ul>li>ul>li').each(function() {
+				var txt=jQuery(this).html();
+				jQuery(this).html('<p>'+txt+'</p>');
+			 });*/
+		});
+	});
 
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
