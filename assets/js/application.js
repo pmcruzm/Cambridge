@@ -1144,12 +1144,23 @@ jQuery(document).ready(function(){
 	//Desplegar otros productos página nueva productos 
 	jQuery(document).on('click',".other_products", function(e) {
 		e.preventDefault();
-		jQuery(".float-colum-menu .hide-menu-float").slideToggle(400,function(){
-			/*jQuery('.block-submenus>ul>li>ul>li').each(function() {
-				var txt=jQuery(this).html();
-				jQuery(this).html('<p>'+txt+'</p>');
-			 });*/
-		});
+		if(!jQuery(".float-colum-menu .hide-menu-float").hasClass('active')){
+			jQuery(".float-colum-menu .hide-menu-float").addClass('active');
+			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().hide().css({opacity:1}).slideToggle(400);
+		}else{
+			jQuery(".float-colum-menu .hide-menu-float").removeClass('active');
+			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().slideToggle(400);
+		}
+	});
+	
+	//Ir a la sección página nueva productos 
+	jQuery(document).on('click',".menu_float_left>li>a", function(e) {
+		e.preventDefault();
+		var enlace=jQuery(this).attr('href');
+		console.log(enlace);
+		jQuery('.menu_float_left a').parent('li').removeClass('active');
+		jQuery(this).parent('li').addClass('active');
+		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(enlace),600,{axis:'y',easing:'easeInOutExpo',offset: 0});
 	});
 
 	//Evento para capturar el resize de la ventana
@@ -1406,6 +1417,7 @@ function control_scroll(e){
   //Variable de scroll
   var scrollAmount = jQuery(window).scrollTop();
   var h_foot=jQuery('#footer').height();
+  var w_win=window.innerWidth;
 
   //Añadir Cookie si se hace scroll a +100px
   if(scrollAmount>100){
@@ -1440,6 +1452,19 @@ function control_scroll(e){
    }else{
    		jQuery('.up-window').stop().clearQueue().fadeOut(400);
    }
+   
+   //Página de producto nuevo 
+    if(scrollAmount>652){
+		if (jQuery('.new-product').is(":visible") ) {
+			if(w_win>767){
+				//console.log('aqui');
+				jQuery('.float-colum-menu').css({top:40,position:'fixed'});
+			}
+		}
+   }else{
+   		jQuery('.float-colum-menu').css({top:440,position:'absolute'});	
+   }
+   
    //jQuery('.marcador').html(scrollAmount);
 }
 
