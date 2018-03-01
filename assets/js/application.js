@@ -1152,16 +1152,6 @@ jQuery(document).ready(function(){
 			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().slideToggle(400);
 		}
 	});
-	
-	//Ir a la sección página nueva productos 
-	jQuery(document).on('click',".menu_float_left>li>a", function(e) {
-		e.preventDefault();
-		var enlace=jQuery(this).attr('href');
-		console.log(enlace);
-		jQuery('.menu_float_left a').parent('li').removeClass('active');
-		jQuery(this).parent('li').addClass('active');
-		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(enlace),600,{axis:'y',easing:'easeInOutExpo',offset: 0});
-	});
 
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
