@@ -815,9 +815,10 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .digital-product .block-ver-mas{text-align:left;}
 .new-product .digital-product{position:relative;overflow:hidden;}
 .new-product .digital-product:before{content:'';display:block;width:532px;height:431px;position:absolute;right:0;bottom:-93px;background:url(../upload/img-ipad.png) top left no-repeat;background-size:532px;}
+.new-product .component-product ul li.theme-color:before{color:#ffffff !important;}
 
-.menu_float_left li a{color:rgba(0,0,0,1);font-size:21px;line-height:28px;}
-.menu_float_left li a:hover{color:rgba(0,0,0,0.8);}
+.menu_float_left li a{color:#373340;font-size:21px;line-height:28px;}
+.menu_float_left li a:hover{opacity:0.8;}
 .menu_float_left li.active a{font-family:'latobold', Helvetica, sans-serif;}
 
 .other_products{color:rgba(0,0,0,1);font-size:16px;line-height:21px;display:inline-block;}
@@ -1836,22 +1837,22 @@ PROPIEDADES CUSTOM THEMES
 .new-product .product-specialism.theme-color:before{background-color:#00b0b2 !important;}
 .new-product .product-informed.theme-color:before{background-color:#00b0b2 !important;}
 .new-product .clasf-product .theme-color p span,.new-product .clasf-product .theme-color p a{color:#00b0b2 !important;}
-.new-product .key-features.theme-color ul li:before{color:#6cd9d7 !important;}
+.new-product .key-features.theme-color ul li:before{color:#00b0b2 !important;}
 .new-product .key-features.theme-color h2{color:#00b0b2 !important;}
-.new-product .english-f-spanish.theme-color ul li:before{color:#6cd9d7 !important;}
+.new-product .english-f-spanish.theme-color ul li:before{color:#00b0b2 !important;}
 .new-product .english-f-spanish ul li p a{color:#00b0b2 !important;}
 .new-product .english-f-spanish.theme-color h2{color:#00b0b2 !important;}
 .new-product .english-f-spanish a.more{background-color:#00b0b2 !important;}
 .new-product .english-f-spanish-box .sello-ess:after{color:#00b0b2 !important;}
 .new-product .component-product.theme-color-bg{background-color:#00b0b2 !important;}
 .new-product .btn-mas.theme-color-bg{background-color:#00b0b2 !important;}
-.new-product .component-product ul li.theme-color:before{color:#6cd9d7 !important;}
 .new-product .component-product .btn-mas{color:#00b0b2 !important;}
-.new-product .digital-product ul li.theme-color:before{color:#6cd9d7 !important;}
+.new-product .digital-product ul li.theme-color:before{color:#00b0b2 !important;}
 .new-product .digital-product.theme-color  h2{color:#00b0b2 !important;}
 .new-product .digital-product.theme-color ul li a{color:#00b0b2 !important;}
 .new-product .recurso-prog-product.theme-color h2{color:#00b0b2 !important;}
 .new-product .esample-product.theme-color h2{color:#00b0b2 !important;}
+.new-product .video-product.theme-color{color:#00b0b2 !important;}
 
 
 /******************************
