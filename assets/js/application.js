@@ -93,7 +93,7 @@ jQuery(window).load(function(){
 			align_top_box(jQuery(this).find('div.block-product'));
 		});
 	}
-	
+
 	//Ajustar altura bloques recursos productos
 	if (jQuery('.box-recursos').is(":visible") ) {
 		jQuery('.box-recursos div.inside-recurso').removeAttr('style');
@@ -143,10 +143,10 @@ jQuery(window).load(function(){
 			jQuery(this).css('height',maxHeight);
 		});
 	}
-	
+
 	//Cargamos la galería del Blog después de cargar los datos
 	if ( jQuery("#slider").is(":visible") ) {
-		if ( jQuery(".box-d-blog").length>0) {	
+		if ( jQuery(".box-d-blog").length>0) {
 			//Obtenemos altura y anchura del navegador
 			var w_win=window.innerWidth;
 			if(w_win<992){
@@ -166,11 +166,11 @@ jQuery(window).load(function(){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
 									  },
-									  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlidePrev: function(slideElement, oldIndex, newIndex){
 									  },
-									});	
+									});
 				}else{
 					//Galería destacdos blog
 					slider_destc=jQuery('.bxslider-destacados').bxSlider({
@@ -191,11 +191,11 @@ jQuery(window).load(function(){
 										  },
 										  onSlideAfter: function(slideElement, oldIndex, newIndex){
 										  },
-										  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+										  onSlideNext: function(slideElement, oldIndex, newIndex){
 										  },
 										  onSlidePrev: function(slideElement, oldIndex, newIndex){
 										  },
-										});	
+										});
 				}
 			}else{
 				//Galería destacdos blog
@@ -213,11 +213,11 @@ jQuery(window).load(function(){
 									  },
 									  onSlideAfter: function(slideElement, oldIndex, newIndex){
 									  },
-									  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
 									  },
 									  onSlidePrev: function(slideElement, oldIndex, newIndex){
 									  },
-									});	
+									});
 			}
 		}
 	}
@@ -235,13 +235,13 @@ jQuery(document).ready(function(){
 	}else{
 		jQuery('.block-cookies').show();
 	}
-	
-	
+
+
 	//Añadimos clase a los menús que no tienen hijos
 	jQuery('#top-header ul.main-menu li').each(function() {
 		if(jQuery(this).find('.desplegable-sub').length ==0){
-			jQuery(this).addClass('no-submenu');	
-		}			
+			jQuery(this).addClass('no-submenu');
+		}
 	});
 
 	//Cargar título del cuadro de contacto
@@ -578,7 +578,7 @@ jQuery(document).ready(function(){
 			}
 		});
 	});
-	
+
 	//Cargamos el slider de video de Journey
 	if ( jQuery(".cont_slider_journey").is(":visible") ) {
 		jQuery("#gallery_journey").unitegallery({
@@ -611,18 +611,18 @@ jQuery(document).ready(function(){
 						  speed:800,
 						  adaptiveHeight:true,
 						  onSlideBefore: function(slideElement, oldIndex, newIndex){
-							  jQuery(slideElement).find('img').css('top','-20px').animate({top:0},1400,'easeInOutQuad'); 
-							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:5},600, 'easeInQuad'); 
+							  jQuery(slideElement).find('img').css('top','-20px').animate({top:0},1400,'easeInOutQuad');
+							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:5},600, 'easeInQuad');
 						  },
 						  onSlideAfter: function(slideElement, oldIndex, newIndex){
 						  },
-						  onSlideNext: function(slideElement, oldIndex, newIndex){ 
+						  onSlideNext: function(slideElement, oldIndex, newIndex){
 						  },
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
 						  },
 						});
-						
-			if ( jQuery(".box-d-blog").length>0) {				
+
+			if ( jQuery(".box-d-blog").length>0) {
 				//Leemos los contenidos del Blog vía JSON
 				var data_blog='q='+ Math.random();
 				jQuery.ajax({
@@ -637,14 +637,14 @@ jQuery(document).ready(function(){
 								for (var x = 0; x < data.posts.length; x++) {
 									jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
 									//console.log(data.posts[x].slug);
-									//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));		
+									//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));
 								}
 							}
-				});	
+				});
 			}
 
 	}
-	
+
 
 	//Avanzar a la siguiente pantalla slider
 	jQuery(document).on("click",".arrow-next", function(e) {
@@ -1140,8 +1140,8 @@ jQuery(document).ready(function(){
 		var direc=jQuery(this).attr('href');
 		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc).find('.info_single_exam h2'),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
 	});
-	
-	//Desplegar otros productos página nueva productos 
+
+	//Desplegar otros productos página nueva productos
 	jQuery(document).on('click',".other_products", function(e) {
 		e.preventDefault();
 		if(!jQuery(".float-colum-menu .hide-menu-float").hasClass('active')){
@@ -1198,10 +1198,10 @@ jQuery(document).ready(function(){
 				jQuery(this).css('height',maxHeight);
 			});
 		}
-		
+
 		//Resize modulo Blog home
 		if ( jQuery("#slider").is(":visible") ) {
-			if ( jQuery(".box-d-blog").length>0) {	
+			if ( jQuery(".box-d-blog").length>0) {
 				//Obtenemos altura y anchura del navegador
 				var w_win=window.innerWidth;
 				if(w_win<992){
@@ -1219,7 +1219,7 @@ jQuery(document).ready(function(){
 										  controls: false,
 										  pause: 5000,
 										  speed:800,
-										});	
+										});
 					}else{
 						//Galería destacdos blog
 						slider_destc.reloadSlider({
@@ -1236,7 +1236,7 @@ jQuery(document).ready(function(){
 											  controls: false,
 											  pause: 5000,
 											  speed:800,
-											});	
+											});
 					}
 				}else{
 					//Galería destacdos blog
@@ -1252,7 +1252,7 @@ jQuery(document).ready(function(){
 										  controls: false,
 										  pause: 5000,
 										  speed:800,
-										});	
+										});
 				}
 			}
 		}
@@ -1417,7 +1417,7 @@ function control_scroll(e){
 				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
 
 				loadAnalytics();
-			}); 
+			});
 		}
   }
 
@@ -1442,8 +1442,8 @@ function control_scroll(e){
    }else{
    		jQuery('.up-window').stop().clearQueue().fadeOut(400);
    }
-   
-   //Página de producto nuevo 
+
+   //Página de producto nuevo
     if(scrollAmount>652){
 		if (jQuery('.new-product').is(":visible") ) {
 			if(w_win>767){
@@ -1452,9 +1452,9 @@ function control_scroll(e){
 			}
 		}
    }else{
-   		jQuery('.float-colum-menu').css({top:440,position:'absolute'});	
+   		jQuery('.float-colum-menu').css({top:440,position:'absolute'});
    }
-   
+
    //jQuery('.marcador').html(scrollAmount);
 }
 
@@ -1581,7 +1581,21 @@ function validate_form(id){
 				});
 			}
 
-			//Busca todos los campos requeridos de codigo postal
+			//Busca todos los campos requeridos checkbox-multiple
+			if(jQuery(id).find('.validation-rule-checkbox-multiple').length > 0){
+				var error_checkbox_multiple = 0;
+				jQuery(id).find('.validation-rule-checkbox-multiple').each(function() {
+					var me = jQuery(this);
+					if (me.find('input[type="checkbox"]:checked').length == 0) {
+						me.find('input[type="checkbox"]').addClass('error')
+						error_checkbox_multiple=1;
+					} else {
+						me.find('input[type="checkbox"]').removeClass('error')
+					}
+				});
+			}
+
+			//Busca todos los campos requeridos de select
 			if(jQuery(id).find('.validation-rule-select').length > 0){
 				var error_select=0;
 				jQuery(id).find('.validation-rule-select').each(function() {
@@ -1636,7 +1650,7 @@ function validate_form(id){
 
 
 			//Error general campos vacíos
-			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1){
+			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1 || error_checkbox_multiple==1){
 				var message=jQuery(id).attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
@@ -1662,7 +1676,7 @@ function validate_form(id){
 			}
 
 			//Salida
-			if(error_empty==1 || error_checkbox==1 || error_postcode==1 ||error_mail || error_select==1){
+			if(error_empty==1 || error_checkbox==1 || error_checkbox_multiple==1 || error_postcode==1 || error_mail==1 || error_select==1){
 				return 1;
 			}else{
 				return 0;
@@ -1692,5 +1706,14 @@ function down_svg_large(color){
 //Convertir nombres provincias
 function capitaliseFirstLetter(string)
 {
-    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+}
+
+function getUrlParam(name, url) {
+	if (! url ) url = location.href;
+	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+	var regexS = "[\\?&]"+name+"=([^&#]*)";
+	var regex = new RegExp( regexS );
+	var results = regex.exec( url );
+	return results == null ? null : results[1];
 }

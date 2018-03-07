@@ -1095,6 +1095,9 @@ PROPIEDADES CUERPO NEWSLETTER
 #newsletter-form .checkbox{padding-left:30px;margin-bottom:36px;margin-top:42px;}
 #newsletter-form .checkbox p{margin-top:-25px;}
 #newsletter-form .checkbox a{color:#ea575b;}
+#newsletter-form .checkbox-multiple {margin-top: 12px;}
+#newsletter-form .checkbox-multiple label {width: 50%; position: relative; left: 10px;}
+#newsletter-form .checkbox-multiple input[type="checkbox"] + label::before {position: relative; left: -5px; top: 4px;}
 #newsletter-form input[type=submit],#newsletter-form button[type=submit]{background:#47b6c7;width:120px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;color:#ffffff;padding-top:0;padding-bottom:0;height:26px;line-height:26px;margin-left:18px;border:none;}
 
 .block-news{background:#ffffff;padding:5px;margin-top:56px;}
@@ -2071,7 +2074,7 @@ MEDIA QUERIES
 
 	.cont_gall .slide-desktop{height:400px;}
 	.cont_gall .slide-mobile{height:512px;}
-	
+
 	.float-colum-menu{left:calc(50% - 369px);width:180px;}
 	.new-product .digital-product:before{background-size:372px;width:372px;height:294px;bottom:-60px;}
 }
@@ -2294,7 +2297,7 @@ MEDIA QUERIES
 	.cabecera-journey{background-color:#72ccd7 !important;background-image:url(../upload/bg_journey_mob.png) !important;background-position:center right;background-size:450px; }
 	/*.cont_slider_journey h2 + p{width:100%;}*/
 	.cont_slider_journey h2 + div{width:100%;}
-	
+
 	.row-blank-better{padding-right:18px;padding-left:18px;}
 }
 
@@ -2358,7 +2361,7 @@ MEDIA QUERIES
 
 	.cabecera-journey{background-size:350px; }
 	.cabecera-journey{background-color:#72ccd7 !important;background-image:none !important;}
-	
+
 	.box-video-bottom{padding:50px 30px;}
 	.txt-video{padding:30px;}
 	.txt-video p{font-size:26px;line-height:30px;}
