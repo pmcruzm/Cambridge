@@ -2390,7 +2390,6 @@ MEDIA QUERIES
 	.cab-better{background-position:65% 50%;}
 	
 	.new-product #submenus-mob-prodct ul li a{font-size:25px !important;height:50px !important;line-height:50px !important;}
-	.top-product-new{height:350px !important;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -2600,6 +2599,7 @@ MEDIA QUERIES
     .inside_graf_ess p{font-size:13px;}
 	.table_cont_exams .pill-w-table tr td p{font-size:11px !important;}
 	.cab-better{background-position:60% 50%;}
+	.top-product-new{height:370px !important;}
 }
 
 @media (max-width: 370px){
