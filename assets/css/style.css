@@ -783,11 +783,13 @@ PROPIEDADES CUERPO HOME PRODUCT
 /******* Nueva página de productos ******/
 .new-product{position:relative;}
 .new-product .menu-product{margin-top:10px !important;}
-.float-colum-menu{top:440px;position:absolute;left:calc(50% - 600px);width:290px;z-index:50;}
-.video-product{background:#ffffff;padding-bottom:150px;}
+.float-colum-menu{top:990px;position:absolute;left:calc(50% - 600px);width:290px;z-index:50;}
+.video-product{background:#ffffff;padding-bottom:150px;padding-top:40px;}
 .video-product .poster-frame{border-radius:0px !important;}
-.video-product .video-youtube{margin-top:-200px;box-shadow:0 10px 20px rgba(0,0,0,0.4);}
+.video-product .video-youtube{margin-top:-190px;box-shadow:0 10px 20px rgba(0,0,0,0.6);}
 .video-product{font-size:20px;color:#373340;}
+.video-product .poster-frame a{width:202px;height:202px;background:url(../img/player-new-product.png) top left no-repeat;background-size:202px;margin-left:-101px;margin-top:-101px;}
+.video-product .poster-frame a span:before{display:none;}
 .hide-menu-float{opacity:0;}
 .menu_float_left ul{list-style:none;padding:0;}
 .menu_float_left>li>a{ }
@@ -829,6 +831,13 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .product-ess.theme-color:before{color:#ffffff !important;}
 .new-product .product-specialism.theme-color:before{color:#ffffff !important;}
 .new-product .product-informed.theme-color:before{color:#ffffff !important;}
+
+.block-newsletter{margin-top:55px;}
+.box-newsletter:before{display:block;width:65px;height:65px;content:'';position:relative;top:-40px;position:absolute;left:0;right:0;margin:0 auto;background:url(../img/icon_newsletter.png) center center no-repeat;background-size:65px;}
+.box-newsletter{background:#ffffff;box-sizing:border-box;padding-top:50px;position:relative;}
+.box-newsletter p{color:#373340;font-size:18px;line-height:21px;width:70%;margin:0 auto;margin-bottom:-13px;}
+.box-newsletter a{display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;background:#00b0b2;position:relative;bottom:-13px;}
+.box-newsletter a:hover{color:#ffffff !important;opacity:0.8;}
 
 
 /************************************
@@ -1854,6 +1863,7 @@ PROPIEDADES CUSTOM THEMES
 .new-product .recurso-prog-product.theme-color h2{color:#00b0b2 !important;}
 .new-product .esample-product.theme-color h2{color:#00b0b2 !important;}
 .new-product .video-product.theme-color{color:#00b0b2 !important;}
+.new-product .box-newsletter a{background-color:#00b0b2 !important;}
 
 
 /******************************
@@ -2075,6 +2085,7 @@ MEDIA QUERIES
 
 	.float-colum-menu{left:calc(50% - 369px);width:180px;}
 	.new-product .digital-product:before{background-size:372px;width:372px;height:294px;bottom:-60px;}
+	.video-product .poster-frame a{width:101px;height:101px;background-size:101px;margin-left:-51px;margin-top:-51px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -2297,6 +2308,17 @@ MEDIA QUERIES
 	.cont_slider_journey h2 + div{width:100%;}
 
 	.row-blank-better{padding-right:18px;padding-left:18px;}
+	.float-colum-menu{display:none;}
+	.new-product .digital-product:before{display:none;}
+	
+	.new-product #submenus-mob-prodct{top:0 !important;}
+	.new-product #submenus-mob-prodct>a{color:#373340;}
+	.new-product #submenus-mob-prodct > a:before{color:#6cd9d7;}
+	.new-product #submenus-mob-prodct.active > a{color:#373340 !important;}
+	.new-product #submenus-mob-prodct > a.active:before{color:#bbb5bb !important;}
+	.new-product #submenus-mob-prodct ul li{}
+	.new-product #submenus-mob-prodct ul li a{display:inline-block;color:#373340;text-align:left;width:auto;background:none;font-family:'latolight', Helvetica, sans-serif;margin-left:45px;}
+	.cont-logo{padding-top:60px;}
 }
 
 @media (max-width: 640px) {
@@ -2366,6 +2388,9 @@ MEDIA QUERIES
 	.cont-better .video-youtube{padding-top:40px;}
 	.row-blank-better{padding-top:50px;}
 	.cab-better{background-position:65% 50%;}
+	
+	.new-product #submenus-mob-prodct ul li a{font-size:25px !important;height:50px !important;line-height:50px !important;}
+	.top-product-new{height:350px !important;}
 }
 
 @media (min-width: 481px) and (max-width: 639px) {
@@ -2525,6 +2550,8 @@ MEDIA QUERIES
 	.cont_gall .slide-mobile{height:512px;}
 
 	.cabecera-journey .menu-sec-product{padding-top:25px;}
+	
+	.new-product #submenus-mob-prodct ul li a{font-size:16px !important;height:25px !important;line-height:25px !important;margin-left:27px;}
 
 }
 
@@ -2544,6 +2571,7 @@ MEDIA QUERIES
 	.cont_gall .slide-desktop{height:230px;}
 	.cont_gall .slide-mobile{height:512px;}
 	.header-home{min-height:230px !important;}
+	.english-f-spanish-box .colum-li{-moz-column-count:1;-moz-column-gap:0px;-webkit-column-count:1;-webkit-column-gap:0px;column-count:1;column-gap:0px;}
 
 }
 

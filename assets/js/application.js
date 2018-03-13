@@ -93,6 +93,12 @@ jQuery(window).load(function(){
 			align_top_box(jQuery(this).find('div.block-product'));
 		});
 	}
+	
+	//Menú flotante ficha nueva de producto
+	if (jQuery('.new-product').is(":visible") ) {
+		var d_ficha=jQuery('.ficha-producto').offset().top;	
+		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+	}
 
 	//Ajustar altura bloques recursos productos
 	if (jQuery('.box-recursos').is(":visible") ) {
@@ -255,6 +261,12 @@ jQuery(document).ready(function(){
 			jQuery('.info-city-office:first').prepend( "<h4 class='titul_office'>Office for "+name_prov+":</h4>" );
 		}
 	}*/
+	
+	//Menú flotante ficha nueva de producto
+	if (jQuery('.new-product').is(":visible") ) {
+		var d_ficha=jQuery('.ficha-producto').offset().top;	
+		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+	}
 
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
@@ -1198,6 +1210,12 @@ jQuery(document).ready(function(){
 				jQuery(this).css('height',maxHeight);
 			});
 		}
+		
+		//Menú flotante ficha nueva de producto
+		if (jQuery('.new-product').is(":visible") ) {
+			var d_ficha=jQuery('.ficha-producto').offset().top;	
+			jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+		}
 
 		//Resize modulo Blog home
 		if ( jQuery("#slider").is(":visible") ) {
@@ -1444,15 +1462,17 @@ function control_scroll(e){
    }
 
    //Página de producto nuevo
-    if(scrollAmount>652){
+   var d_ficha=jQuery('.ficha-producto').offset().top;
+    if(scrollAmount>d_ficha){
 		if (jQuery('.new-product').is(":visible") ) {
 			if(w_win>767){
-				//console.log('aqui');
-				jQuery('.float-colum-menu').css({top:40,position:'fixed'});
+				jQuery('.float-colum-menu').css({top:30,position:'fixed'});
 			}
 		}
    }else{
-   		jQuery('.float-colum-menu').css({top:440,position:'absolute'});
+	   if(w_win>767){
+   		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220,position:'absolute'});
+	   }
    }
 
    //jQuery('.marcador').html(scrollAmount);
