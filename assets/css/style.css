@@ -2325,7 +2325,7 @@ MEDIA QUERIES
 	.new-product #submenus-mob-prodct > a.active:before{color:#bbb5bb !important;}
 	.new-product #submenus-mob-prodct ul li{}
 	.new-product #submenus-mob-prodct ul li a{display:inline-block;color:#373340;text-align:left;width:auto;background:none;font-family:'latolight', Helvetica, sans-serif;margin-left:45px;}
-	.cont-logo{padding-top:60px;}
+	.cont-logo{padding-top:70px;}
 }
 
 @media (max-width: 640px) {
