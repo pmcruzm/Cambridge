@@ -821,7 +821,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .digital-product:before{content:'';display:block;width:452px;height:360px;position:absolute;right:40px;bottom:0px;background:url(../img/img_digital-ipad.png) top left no-repeat;background-size:452px;}
 .new-product .component-product ul li.theme-color:before{color:#ffffff !important;}
 .new-product .clasf-product{margin-top:20px;}
-
+.new-product .digital-product ul li:before,.new-product .key-features ul li:before,.new-product .english-f-spanish ul li:before,.new-product .component-product ul li:before{opacity:0.5;}
 
 .menu_float_left li a{color:#373340;font-size:21px;line-height:28px;}
 .menu_float_left li a:hover{opacity:0.8;}
