@@ -16,6 +16,7 @@ var touch_gall=0;
 var send_form=0;
 var n_course_b=1;
 var slider_destc;
+var act_player=0;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
@@ -778,12 +779,17 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		jQuery( this ).parent().fadeOut(400,function(){
 		jQuery( this ).parent().find('#player').show();
+			if(act_player==0){
+			 act_player=1;
 			  player = new YT.Player('player', {
 				events: {
 						'onReady': onPlayerReady,
 						'onStateChange': onPlayerStateChange
 					  }
 			  });
+			}else{
+				player.playVideo();
+			}
 		});
 	});
 
@@ -1489,7 +1495,7 @@ function isNumber(n) {
 
 // autoplay video Youtube
 function onPlayerReady(event) {
-	if(device!='yes'){
+	if(device!='yes'){ 
         event.target.playVideo();
 	}
 }
@@ -1497,8 +1503,11 @@ function onPlayerReady(event) {
 // when video ends Youtube
 function onPlayerStateChange(event) {
    if(event.data === 0) {
-           //Cuando acaba el video
-    }
+	   event.target.seekTo(0); 
+	   event.target.stopVideo(); 
+	   jQuery('.poster-frame').fadeIn(400);
+       //event.target.playVideo();
+   }
 }
 
 //Marcar errores de formulario
