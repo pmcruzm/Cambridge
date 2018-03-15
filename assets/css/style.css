@@ -790,7 +790,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .video-product .poster-frame{border-radius:0px !important;}
 .video-product .video-youtube{margin-top:-190px;box-shadow:0 15px 60px rgba(0,0,0,0.5);margin-bottom:76px;}
 .video-product{font-size:20px;color:#373340;}
-.video-product .poster-frame a{width:110px;height:110px;background:#ffffff url(../svg/icon_play.svg) 55% center no-repeat;border-radius:100px;margin-left:-55px;margin-top:-55px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:55px;}
+.video-product .poster-frame a{width:110px;height:110px;background:#ffffff url(../svg/icon_play.svg) 55% center no-repeat;border-radius:100px;margin-left:-55px;margin-top:-55px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:34px;}
 .video-product .poster-frame a span:before{display:none;}
 .hide-menu-float{opacity:0;}
 .menu_float_left ul{list-style:none;padding:0;}
@@ -818,7 +818,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .digital-product{padding-bottom:140px;}
 .new-product .digital-product .block-ver-mas{text-align:left;}
 .new-product .digital-product{position:relative;overflow:hidden;}
-.new-product .digital-product:before{content:'';display:block;width:452px;height:360px;position:absolute;right:80px;bottom:0px;background:url(../img/img_digital-ipad.png) top left no-repeat;background-size:452px;}
+.new-product .digital-product:before{content:'';display:block;width:452px;height:360px;position:absolute;right:40px;bottom:0px;background:url(../img/img_digital-ipad.png) top left no-repeat;background-size:452px;}
 .new-product .component-product ul li.theme-color:before{color:#ffffff !important;}
 .new-product .clasf-product{margin-top:20px;}
 
@@ -2092,7 +2092,7 @@ MEDIA QUERIES
 	.float-colum-menu{left:calc(50% - 369px);width:180px;}
 	.new-product .digital-product:before{background-size:350px;width:350px;height:270px;right:20px;bottom:0;}
 	.video-product .poster-frame a{width:101px;height:101px;margin-left:-51px;margin-top:-51px;}
-	.video-product .poster-frame a{width:56px;height:56px;margin-left:-28px;margin-top:-28px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:28px;}
+	.video-product .poster-frame a{width:56px;height:56px;margin-left:-28px;margin-top:-28px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:24px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
