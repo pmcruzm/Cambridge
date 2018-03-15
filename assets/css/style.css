@@ -683,7 +683,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 *********************************/
 
 .top-product{background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);background-image:url(../img/bg_product.png);height:235px;}
-.top-product-new{height:400px !important;}
+.top-product-new{height:400px !important;position:relative;}
+.top-product-new:after {content:'';position:absolute;left:0px;top:0px;width:100%;height:100%;background: -moz-linear-gradient(top, rgba(0,0,0,0.5) 0%, rgba(255,255,255,0) 100%);background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(255,255,255,0) 100%);background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(255,255,255,0) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#00ffffff',GradientType=0 );}
 .menu-sec-product{padding-left:18px;display:table;height:217px;}
 #course-menu{display:table-cell;vertical-align:middle;}
 .menu-sec-product ul{margin:0;padding:0;}
@@ -786,16 +787,16 @@ PROPIEDADES CUERPO HOME PRODUCT
 .float-colum-menu{top:990px;position:absolute;left:calc(50% - 600px);width:290px;z-index:50;}
 .video-product{background:#ffffff;padding-bottom:150px;padding-top:40px;}
 .video-product .poster-frame{border-radius:0px !important;}
-.video-product .video-youtube{margin-top:-190px;box-shadow:0 10px 20px rgba(0,0,0,0.6);}
+.video-product .video-youtube{margin-top:-190px;box-shadow:0 15px 60px rgba(0,0,0,0.5);margin-bottom:76px;}
 .video-product{font-size:20px;color:#373340;}
-.video-product .poster-frame a{width:202px;height:202px;background:url(../img/player-new-product.png) top left no-repeat;background-size:202px;margin-left:-101px;margin-top:-101px;}
+.video-product .poster-frame a{width:110px;height:110px;background:#ffffff url(../svg/icon_play.svg) 55% center no-repeat;border-radius:100px;margin-left:-55px;margin-top:-55px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:55px;}
 .video-product .poster-frame a span:before{display:none;}
 .hide-menu-float{opacity:0;}
 .menu_float_left ul{list-style:none;padding:0;}
 .menu_float_left>li>a{ }
-.logo-product{text-align:center;}
+.logo-product{text-align:center;z-index:10;}
 .logo-product img{max-width:100%;}
-.cont-logo{width:100%;max-width:420px;margin:0 auto;max-height:200px;}
+.cont-logo{width:100%;max-width:420px;margin:0 auto;max-height:200px;box-sizing:border-box;padding-top:35px;}
 .img-product-new{margin-top:-100px;text-align:center;}
 .img-product-new img{max-width:100%;max-height: 330px;}
 .key-features-box{background:#ffffff;padding-bottom:50px;}
@@ -817,6 +818,8 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .digital-product{position:relative;overflow:hidden;}
 .new-product .digital-product:before{content:'';display:block;width:532px;height:431px;position:absolute;right:0;bottom:-93px;background:url(../upload/img-ipad.png) top left no-repeat;background-size:532px;}
 .new-product .component-product ul li.theme-color:before{color:#ffffff !important;}
+.new-product .clasf-product{margin-top:20px;}
+
 
 .menu_float_left li a{color:#373340;font-size:21px;line-height:28px;}
 .menu_float_left li a:hover{opacity:0.8;}
@@ -2086,7 +2089,8 @@ MEDIA QUERIES
 
 	.float-colum-menu{left:calc(50% - 369px);width:180px;}
 	.new-product .digital-product:before{background-size:372px;width:372px;height:294px;bottom:-60px;}
-	.video-product .poster-frame a{width:101px;height:101px;background-size:101px;margin-left:-51px;margin-top:-51px;}
+	.video-product .poster-frame a{width:101px;height:101px;margin-left:-51px;margin-top:-51px;}
+	.video-product .poster-frame a{width:56px;height:56px;margin-left:-28px;margin-top:-28px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:28px;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
