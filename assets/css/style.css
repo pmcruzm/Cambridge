@@ -838,12 +838,14 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .product-specialism.theme-color:before{color:#ffffff !important;}
 .new-product .product-informed.theme-color:before{color:#ffffff !important;}
 
-.block-newsletter{margin-top:55px;}
+.block-newsletter-box{background-color: #FFFFFF;}
 .box-newsletter:before{display:block;width:65px;height:65px;content:'';position:relative;top:-40px;position:absolute;left:0;right:0;margin:0 auto;background:url(../img/icon_newsletter.png) center center no-repeat;background-size:65px;}
-.box-newsletter{background:#ffffff;box-sizing:border-box;padding-top:50px;position:relative;}
+.box-newsletter{background:#f8f7f7;box-sizing:border-box;padding-top:50px;position:relative;margin: 90px 10px 70px 10px;}
 .box-newsletter p{color:#373340;font-size:18px;line-height:21px;width:70%;margin:0 auto;margin-bottom:-13px;}
 .box-newsletter a{display:block;color:#ffffff;width:156px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:13px;margin:26px auto 0;background:#00b0b2;position:relative;bottom:-13px;}
 .box-newsletter a:hover{color:#ffffff !important;opacity:0.8;}
+
+
 
 
 /************************************
@@ -2317,7 +2319,7 @@ MEDIA QUERIES
 	.row-blank-better{padding-right:18px;padding-left:18px;}
 	.float-colum-menu{display:none;}
 	.new-product .digital-product:before{display:none;}
-	
+
 	.new-product #submenus-mob-prodct{top:0 !important;}
 	.new-product #submenus-mob-prodct>a{color:#373340;}
 	.new-product #submenus-mob-prodct > a:before{color:#6cd9d7;}
@@ -2395,7 +2397,7 @@ MEDIA QUERIES
 	.cont-better .video-youtube{padding-top:40px;}
 	.row-blank-better{padding-top:50px;}
 	.cab-better{background-position:65% 50%;}
-	
+
 	.new-product #submenus-mob-prodct ul li a{font-size:25px !important;height:50px !important;line-height:50px !important;}
 }
 
@@ -2556,7 +2558,7 @@ MEDIA QUERIES
 	.cont_gall .slide-mobile{height:512px;}
 
 	.cabecera-journey .menu-sec-product{padding-top:25px;}
-	
+
 	.new-product #submenus-mob-prodct ul li a{font-size:16px !important;height:25px !important;line-height:25px !important;margin-left:27px;}
 
 }
