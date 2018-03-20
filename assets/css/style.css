@@ -781,6 +781,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .recurso-prog-product a:hover{opacity:0.8;}
 
 .exam_bottom{display:block;color:#ffffff !important;width:138px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:30px;line-height:30px;text-align:center;text-decoration:none;font-size:13px;margin:0 auto;background-color:#47b6c7;}
+.button_module{display:block;color:#ffffff !important;min-width:145px;padding:0 10px;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;height:30px;line-height:30px;text-align:center;text-decoration:none;font-size:13px;margin:0 auto;background-color:#47b6c7;}
 
 /******* Nueva página de productos ******/
 .new-product{position:relative;}
