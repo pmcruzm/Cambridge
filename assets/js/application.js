@@ -1829,17 +1829,14 @@ function getUrlParam(name, url) {
 
     function init() {
 
-        mapEl = $(mapElemQuery);
-
-        var defaultLocation= {lat:parseFloat('40.4169131'),lng:parseFloat('-3.703475')};
-
+        mapEl      = $(mapElemQuery);
         bounds     = new google.maps.LatLngBounds();
         infoWindow = new google.maps.InfoWindow({maxWidth: 200});
 
         map = new google.maps.Map(mapEl.get(0), {
-            center: defaultLocation,
-            zoom: 6,
-            styles: googleMapsStyle01
+            styles: googleMapsStyle01,
+            center: {lat:parseFloat('37.27926724418999'),lng:parseFloat('-4.365527739664799')},
+            zoom: 5
         });
 
         var centresList = mapEl.data('centres');
@@ -1878,7 +1875,7 @@ function getUrlParam(name, url) {
         if( markersList.length ) {
             var markers = Object.keys(markersList).map(function (key) { return markersList[key]; });
             markerCluster = new MarkerClusterer(map, markers, {gridSize:15, imagePath: mapEl.data('image-path')});
-            map.fitBounds(bounds);
+            //map.fitBounds(bounds);
         }
 
     }
@@ -1895,7 +1892,8 @@ function getUrlParam(name, url) {
     }
 
     window.partnersMap = {
-        init: init
+        init: init,
+        getMap: function(){return map;}
     };
 
 })(window, jQuery, '.partners-map');
