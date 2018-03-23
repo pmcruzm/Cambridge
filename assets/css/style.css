@@ -401,7 +401,6 @@ PROPIEDADES TEACHER DEVELOPMENT
 
 .intro-teacher{padding-left:18px;margin-bottom:18px;}
 .intro-teacher p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
-.intro-teacher p:last-child{color:#373340;font-size:16px;}
 
 .center-teacher{width:100%;height:305px;background-repeat:no-repeat;background-position:center center;background-size:cover;-ms-behavior: url(/backgroundsize.min.htc);display:table;position:relative;text-align:center;margin-bottom:36px;}
 .center-teacher .inside-center-teacher{display:block;height:305px;position:relative;}
@@ -1263,6 +1262,43 @@ div.link-pill p {margin:0 !important;}
 
 
 /**************************************
+PROPIEDADES CUERPO PARTNERS
+**************************************/
+
+.partners-main{padding-left:18px;margin-bottom:18px;}
+.partners-main .colum-cefs h3 {font-size: 20px;}
+.partners-main .contenido-cefs {padding-bottom: 20px;}
+.partners-main .colum-cefs div > p:last-child {margin-bottom: 0px;}
+.partners-main .colum-cefs li {margin-bottom: 20px;}
+.partners-main .colum-cefs ul li:before {position: relative; top: -2px;}
+
+.partners-body-intro p:first-child{margin-top:36px;color:#373340;font-size:20px;margin-bottom:32px;}
+
+.partners-map {height: 500px; width: 100%; border: 1px solid lightgrey; margin: 15px 0;}
+.partners-filters {margin: 15px 0; text-align: center;}
+.partners-filters select {display: inline-block; width: auto; margin: 3px 5px;}
+
+.partners-centres {background-color: white; padding: 15px; margin: 15px 0; border-radius: 5px; margin: 15px 0;}
+.partners-centres table {width: 100%;}
+.partners-centres tbody tr {height: 70px;}
+.partners-centres .centre-logo {width: 190px; vertical-align: middle; text-align: center;}
+.partners-centres .centre-logo img {max-width: 90px; max-height: 50px; display: block; margin: 0 auto;}
+.partners-centres .partner-type {width: 120px; vertical-align: middle; text-align: left;}
+.partners-centres .partner-type img {max-height: 47px; display: block;}
+
+.partners-centres-no-results {text-align: center; background-color: white; padding: 40px 15px; border-radius: 5px; margin: 15px 0;}
+
+@media (max-width: 991px) {
+   .partners-centres .centre-logo {width: auto; padding-right: 15px;}
+   .partners-centres .partner-type {width: 100px; padding-left: 15px;}
+}
+
+@media (max-width: 480px) {
+   .partners-centres .centre-logo {display: none;}
+}
+
+
+/**************************************
 PROPIEDADES CUERPO CONTACT
 **************************************/
 
@@ -1931,6 +1967,7 @@ strong,b{font-family:'latoregular', Helvetica, sans-serif;font-weight:normal;}
 input[type="submit"],button[type="submit"],input[type="submit"]:focus,button[type="submit"]:focus{outline:none !important;}
 .links a{display:inline-block;color:#ffffff;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius:15px;height:26px;line-height:26px;text-align:center;text-decoration:none;font-size:15px;font-size:13px;padding-left:35px;padding-right:35px;margin-top:18px;}
 .small-h1{font-size:45px;}
+.smaller{font-size: 90% !important;}
 select, select:focus{outline:none !important;}
 input[type=text]{-webkit-appearance:none;}
 input[type=email]{-webkit-appearance:none;}
