@@ -15,6 +15,8 @@ var w_container=0;
 var touch_gall=0;
 var send_form=0;
 var n_course_b=1;
+var slider_destc;
+var act_player=0;
 
 // Player Youtube Asíncrono
 var tag = document.createElement('script');
@@ -93,6 +95,34 @@ jQuery(window).load(function(){
 		});
 	}
 
+	//Menú flotante ficha nueva de producto
+	if (jQuery('.new-product').is(":visible") ) {
+		var d_ficha=jQuery('.ficha-producto').offset().top;
+		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+	}
+
+	//Ajustar altura bloques recursos productos
+	if (jQuery('.box-recursos').is(":visible") ) {
+		jQuery('.box-recursos div.inside-recurso').removeAttr('style');
+		//Listado cursos
+		var heights = jQuery('.box-recursos div.inside-recurso').map(function ()
+		{
+			return jQuery(this).height();
+		}).get(),
+		//Obtenemos tamaño max de los cuadros
+		maxHeight = Math.max.apply(null, heights);
+		//Recorremos todos los cuadros
+		 jQuery('.box-recursos div.inside-recurso').each(function() {
+		 	var altura=jQuery(this).height();
+			jQuery(this).attr('rel',altura);
+			if(altura<maxHeight){
+				jQuery(this).css({height:maxHeight});
+			}else{
+				jQuery(this).css({height:maxHeight});
+			}
+		 });
+	}
+
 	//Igualar todos los bloques de exámenes home
 	if (jQuery('.list-home-exams').is(":visible") ) {
 		//Listado cursos
@@ -108,17 +138,95 @@ jQuery(window).load(function(){
 	}
 
 	//Igualar todos los bloques cards de la home
-	if (jQuery('.block_cards').is(":visible") ) {
+	if (jQuery('.bottom-box').is(":visible") ) {
 		//Listado cursos
-		var heights = jQuery('.block_cards div.thumbnails').map(function ()
+		var heights = jQuery('.bottom-box div.thumbnails').map(function ()
 		{
 			return jQuery(this).outerHeight();
 		}).get(),
 		//Obtenemos tamaño max de los cuadros
 		maxHeight = Math.max.apply(null, heights);
-		jQuery('.block_cards div.thumbnails').each(function() {
+		jQuery('.bottom-box div.thumbnails').each(function() {
 			jQuery(this).css('height',maxHeight);
 		});
+	}
+
+	//Cargamos la galería del Blog después de cargar los datos
+	if ( jQuery("#slider").is(":visible") ) {
+		if ( jQuery(".box-d-blog").length>0) {
+			//Obtenemos altura y anchura del navegador
+			var w_win=window.innerWidth;
+			if(w_win<992){
+				if(w_win<481){
+				//Galería destacdos blog
+				slider_destc=jQuery('.bxslider-destacados').bxSlider({
+									  pager: true,
+									  infiniteLoop: true,
+									  useCSS: false,
+									  adaptiveHeight: false,
+									  auto: true,
+									  autoHover: true,
+									  controls: false,
+									  pause: 5000,
+									  speed:800,
+									  onSlideBefore: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideAfter: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlidePrev: function(slideElement, oldIndex, newIndex){
+									  },
+									});
+				}else{
+					//Galería destacdos blog
+					slider_destc=jQuery('.bxslider-destacados').bxSlider({
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  minSlides: 2,
+										  maxSlides: 2,
+										  slideWidth: 450,
+										  slideMargin: 0,
+										  pause: 5000,
+										  speed:800,
+										  onSlideBefore: function(slideElement, oldIndex, newIndex){
+										  },
+										  onSlideAfter: function(slideElement, oldIndex, newIndex){
+										  },
+										  onSlideNext: function(slideElement, oldIndex, newIndex){
+										  },
+										  onSlidePrev: function(slideElement, oldIndex, newIndex){
+										  },
+										});
+				}
+			}else{
+				//Galería destacdos blog
+				slider_destc=jQuery('.bxslider-destacados').bxSlider({
+									  pager: true,
+									  infiniteLoop: true,
+									  useCSS: false,
+									  adaptiveHeight: false,
+									  auto: true,
+									  autoHover: true,
+									  controls: false,
+									  pause: 5000,
+									  speed:800,
+									  onSlideBefore: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideAfter: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlideNext: function(slideElement, oldIndex, newIndex){
+									  },
+									  onSlidePrev: function(slideElement, oldIndex, newIndex){
+									  },
+									});
+			}
+		}
 	}
 
 });
@@ -134,13 +242,13 @@ jQuery(document).ready(function(){
 	}else{
 		jQuery('.block-cookies').show();
 	}
-	
-	
+
+
 	//Añadimos clase a los menús que no tienen hijos
 	jQuery('#top-header ul.main-menu li').each(function() {
 		if(jQuery(this).find('.desplegable-sub').length ==0){
-			jQuery(this).addClass('no-submenu');	
-		}			
+			jQuery(this).addClass('no-submenu');
+		}
 	});
 
 	//Cargar título del cuadro de contacto
@@ -154,6 +262,12 @@ jQuery(document).ready(function(){
 			jQuery('.info-city-office:first').prepend( "<h4 class='titul_office'>Office for "+name_prov+":</h4>" );
 		}
 	}*/
+
+	//Menú flotante ficha nueva de producto
+	if (jQuery('.new-product').is(":visible") ) {
+		var d_ficha=jQuery('.ficha-producto').offset().top;
+		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+	}
 
 	//Flechas custom curso_sup.html
 	if (jQuery('.opc_levels').is(":visible") ) {
@@ -478,6 +592,14 @@ jQuery(document).ready(function(){
 		});
 	});
 
+	//Cargamos el slider de video de Journey
+	if ( jQuery(".cont_slider_journey").is(":visible") ) {
+		jQuery("#gallery_journey").unitegallery({
+				theme_skin:"bottom-text",
+				height:500
+			});
+	}
+
 
 	//Comprobar que solo se carga en la home
 	if ( jQuery("#slider").is(":visible") ) {
@@ -491,59 +613,51 @@ jQuery(document).ready(function(){
 
 		//Galería de la Home
 		var slider=jQuery('.bxslider').bxSlider({
-						  pager: false,
+						  pager: true,
+						  mode:'fade',
 						  infiniteLoop: true,
 						  useCSS: false,
 						  auto: true,
 					  	  autoHover: true,
+						  controls: false,
 						  pause: 5000,
+						  speed:800,
+						  adaptiveHeight:true,
+						  onSlideBefore: function(slideElement, oldIndex, newIndex){
+							  jQuery(slideElement).find('img').css('top','-20px').animate({top:0},1400,'easeInOutQuad');
+							  jQuery('.bxslider').children().eq(oldIndex).find('img').animate({top:5},600, 'easeInQuad');
+						  },
+						  onSlideAfter: function(slideElement, oldIndex, newIndex){
+						  },
 						  onSlideNext: function(slideElement, oldIndex, newIndex){
-							  if(device=='yes' && (touch_gall!=1)){
-									if(newIndex!=(pag_slider+1)){
-										pag_slider=parseInt(newIndex+1);
-										jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-										//pintamos el bullet correspondiente
-										jQuery('#nav-slider ul li a').removeClass('active');
-										jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-									}
-
-							  }else{
-							  	//Versión escritorio
-								if(newIndex!=(pag_slider+1)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-							  }
-							  touch_gall=0;
 						  },
 						  onSlidePrev: function(slideElement, oldIndex, newIndex){
-							 if(device=='yes' && (touch_gall!=1)){
-								if(pag_slider!=(newIndex)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-							}else{
-							//Version escritorio
-								if(pag_slider!=(newIndex)){
-									pag_slider=parseInt(newIndex+1);
-									jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
-									//pintamos el bullet correspondiente
-									jQuery('#nav-slider ul li a').removeClass('active');
-									jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
-								}
-
-							}
-							touch_gall=0;
 						  },
 						});
 
+			if ( jQuery(".box-d-blog").length>0) {
+				//Leemos los contenidos del Blog vía JSON
+				var data_blog='q='+ Math.random();
+				jQuery.ajax({
+					url: 'http://blog.cambridge.es/?json=get_posts&page=0&callback=?',
+					type: 'POST',
+					async: true,
+					dataType: 'json',
+					data: data_blog,
+					success: function(data){
+								//console.log(data);
+								//Limpiamos mapa y clasificación
+								for (var x = 0; x < data.posts.length; x++) {
+									jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
+									//console.log(data.posts[x].slug);
+									//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));
+								}
+							}
+				});
+			}
+
 	}
+
 
 	//Avanzar a la siguiente pantalla slider
 	jQuery(document).on("click",".arrow-next", function(e) {
@@ -553,7 +667,7 @@ jQuery(document).ready(function(){
 		var current = slider.getCurrentSlide();
 		pag_slider=parseInt(current+1);
 		//Movemos contenidos
-		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+		jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeOutBounce'});
 		//pintamos el bullet correspondiente
 		jQuery('#nav-slider ul li a').removeClass('active');
 		jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
@@ -566,7 +680,7 @@ jQuery(document).ready(function(){
 			slider.goToPrevSlide();
 			var current = slider.getCurrentSlide();
 			pag_slider=parseInt(current+1);
-			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInOutExpo'});
+			jQuery('#body-slider').stop().clearQueue().scrollTo(jQuery('#slider_'+pag_slider),400,{axis:'x',easing:'easeInBounce'});
 			//pintamos el bullet correspondiente
 			jQuery('#nav-slider ul li a').removeClass('active');
 			jQuery('#nav-slider ul li a[rel='+pag_slider+']').addClass('active');
@@ -665,12 +779,17 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		jQuery( this ).parent().fadeOut(400,function(){
 		jQuery( this ).parent().find('#player').show();
+			if(act_player==0){
+			 act_player=1;
 			  player = new YT.Player('player', {
 				events: {
 						'onReady': onPlayerReady,
 						'onStateChange': onPlayerStateChange
 					  }
 			  });
+			}else{
+				player.playVideo();
+			}
 		});
 	});
 
@@ -681,6 +800,7 @@ jQuery(document).ready(function(){
 						  infiniteLoop: true,
 						  useCSS: false,
 						  adaptiveHeight:true,
+						  controls: false
 						  });
 	}
 
@@ -1039,6 +1159,18 @@ jQuery(document).ready(function(){
 		jQuery("html, body").stop().clearQueue().scrollTo(jQuery(direc).find('.info_single_exam h2'),600,{axis:'y',easing:'easeInOutExpo',offset: -50});
 	});
 
+	//Desplegar otros productos página nueva productos
+	jQuery(document).on('click',".other_products", function(e) {
+		e.preventDefault();
+		if(!jQuery(".float-colum-menu .hide-menu-float").hasClass('active')){
+			jQuery(".float-colum-menu .hide-menu-float").addClass('active');
+			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().hide().css({opacity:1}).slideToggle(400);
+		}else{
+			jQuery(".float-colum-menu .hide-menu-float").removeClass('active');
+			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().slideToggle(400);
+		}
+	});
+
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
 
@@ -1071,17 +1203,82 @@ jQuery(document).ready(function(){
 		}
 
 		//Igualar todos los bloques cards de la home
-		if (jQuery('.block_cards').is(":visible") ) {
+		if (jQuery('.bottom-box').is(":visible") ) {
+			jQuery('.bottom-box div.thumbnails').removeAttr('style');
 			//Listado cursos
-			var heights = jQuery('.block_cards div.thumbnails').map(function ()
+			var heights = jQuery('.bottom-box div.thumbnails').map(function ()
 			{
 				return jQuery(this).outerHeight();
 			}).get(),
 			//Obtenemos tamaño max de los cuadros
 			maxHeight = Math.max.apply(null, heights);
-			jQuery('.block_cards div.thumbnails').each(function() {
+			jQuery('.bottom-box div.thumbnails').each(function() {
 				jQuery(this).css('height',maxHeight);
 			});
+		}
+
+		//Menú flotante ficha nueva de producto
+		if (jQuery('.new-product').is(":visible") ) {
+			var d_ficha=jQuery('.ficha-producto').offset().top;
+			jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220});
+		}
+
+		//Resize modulo Blog home
+		if ( jQuery("#slider").is(":visible") ) {
+			if ( jQuery(".box-d-blog").length>0) {
+				//Obtenemos altura y anchura del navegador
+				var w_win=window.innerWidth;
+				if(w_win<992){
+					if(w_win<481){
+					//Galería destacdos blog
+					slider_destc.reloadSlider({
+										  minSlides: 1,
+										  maxSlides: 1,
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  pause: 5000,
+										  speed:800,
+										});
+					}else{
+						//Galería destacdos blog
+						slider_destc.reloadSlider({
+											  minSlides: 2,
+											  maxSlides: 2,
+											  slideWidth: 450,
+											  slideMargin: 0,
+											  pager: true,
+											  infiniteLoop: true,
+											  useCSS: false,
+											  adaptiveHeight: false,
+											  auto: true,
+											  autoHover: true,
+											  controls: false,
+											  pause: 5000,
+											  speed:800,
+											});
+					}
+				}else{
+					//Galería destacdos blog
+					slider_destc.reloadSlider({
+										  minSlides: 1,
+										  maxSlides: 1,
+										  pager: true,
+										  infiniteLoop: true,
+										  useCSS: false,
+										  adaptiveHeight: false,
+										  auto: true,
+										  autoHover: true,
+										  controls: false,
+										  pause: 5000,
+										  speed:800,
+										});
+				}
+			}
 		}
 
 	});
@@ -1234,6 +1431,7 @@ function control_scroll(e){
   //Variable de scroll
   var scrollAmount = jQuery(window).scrollTop();
   var h_foot=jQuery('#footer').height();
+  var w_win=window.innerWidth;
 
   //Añadir Cookie si se hace scroll a +100px
   if(scrollAmount>100){
@@ -1243,6 +1441,7 @@ function control_scroll(e){
 				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
 
 				loadAnalytics();
+			});
 		}
   }
 
@@ -1267,6 +1466,24 @@ function control_scroll(e){
    }else{
    		jQuery('.up-window').stop().clearQueue().fadeOut(400);
    }
+
+
+	if (jQuery('.new-product').is(":visible") ) {
+	   //Página de producto nuevo
+		var d_ficha=jQuery('.ficha-producto').offset().top;
+	    if(scrollAmount>d_ficha){
+			if (jQuery('.new-product').is(":visible") ) {
+				if(w_win>767){
+					jQuery('.float-colum-menu').css({top:30,position:'fixed'});
+				}
+			}
+	   }else{
+		   if(w_win>767){
+	   		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220,position:'absolute'});
+		   }
+	   }
+	}
+
    //jQuery('.marcador').html(scrollAmount);
 }
 
@@ -1289,8 +1506,11 @@ function onPlayerReady(event) {
 // when video ends Youtube
 function onPlayerStateChange(event) {
    if(event.data === 0) {
-           //Cuando acaba el video
-    }
+	   event.target.seekTo(0);
+	   event.target.stopVideo();
+	   jQuery('.poster-frame').fadeIn(400);
+       //event.target.playVideo();
+   }
 }
 
 //Marcar errores de formulario
@@ -1393,7 +1613,21 @@ function validate_form(id){
 				});
 			}
 
-			//Busca todos los campos requeridos de codigo postal
+			//Busca todos los campos requeridos checkbox-multiple
+			if(jQuery(id).find('.validation-rule-checkbox-multiple').length > 0){
+				var error_checkbox_multiple = 0;
+				jQuery(id).find('.validation-rule-checkbox-multiple').each(function() {
+					var me = jQuery(this);
+					if (me.find('input[type="checkbox"]:checked').length == 0) {
+						me.find('input[type="checkbox"]').addClass('error')
+						error_checkbox_multiple=1;
+					} else {
+						me.find('input[type="checkbox"]').removeClass('error')
+					}
+				});
+			}
+
+			//Busca todos los campos requeridos de select
 			if(jQuery(id).find('.validation-rule-select').length > 0){
 				var error_select=0;
 				jQuery(id).find('.validation-rule-select').each(function() {
@@ -1448,7 +1682,7 @@ function validate_form(id){
 
 
 			//Error general campos vacíos
-			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1){
+			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1 || error_checkbox_multiple==1){
 				var message=jQuery(id).attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
@@ -1474,7 +1708,7 @@ function validate_form(id){
 			}
 
 			//Salida
-			if(error_empty==1 || error_checkbox==1 || error_postcode==1 ||error_mail || error_select==1){
+			if(error_empty==1 || error_checkbox==1 || error_checkbox_multiple==1 || error_postcode==1 || error_mail==1 || error_select==1){
 				return 1;
 			}else{
 				return 0;
@@ -1504,5 +1738,241 @@ function down_svg_large(color){
 //Convertir nombres provincias
 function capitaliseFirstLetter(string)
 {
-    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+	return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
 }
+
+function getUrlParam(name, url) {
+	if (! url ) url = location.href;
+	name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+	var regexS = "[\\?&]"+name+"=([^&#]*)";
+	var regex = new RegExp( regexS );
+	var results = regex.exec( url );
+	return results == null ? null : results[1];
+}
+
+
+/*
+ *
+ * PARTNERS LIST
+ *
+ */
+
+(function(window, $, tableElemQuery){
+
+    var tableCont      = $(tableElemQuery);
+    var centres        = tableCont.find('table tbody tr');
+    var noResults      = $('.partners-centres-no-results');
+    var pickerProvince = $('.partner-picker-province');
+    var pickerType     = $('.partner-picker-type');
+
+
+    noResults.html( noResults.data('html') );
+
+
+    var filter = function(centreProvinceId, centreTypeId) {
+        //console.log("FILTER", centreProvinceId, centreTypeId)
+
+        var visibleCentresCount = 0;
+
+        centres.each(function(){
+
+            var item = $(this).first();
+            var itemVisible = true;
+
+            if( centreProvinceId && centreProvinceId != item.data('zip').toString().substr(0,2) ) {
+                itemVisible = false;
+            }
+
+            if( centreTypeId && centreTypeId != item.data('centre-type') ) {
+                itemVisible = false;
+            }
+
+            if( itemVisible ) {
+                item.removeClass('hide');
+                visibleCentresCount++;
+            } else {
+                item.addClass('hide');
+            }
+
+        });
+
+        tableCont.toggleClass('hide', visibleCentresCount == 0);
+        noResults.toggleClass('hide', visibleCentresCount != 0);
+
+        pickerProvince.children().first().prop('disabled',true).addClass('hide');
+        pickerType.prop('disabled',false).removeClass('disabled');
+    }
+
+    pickerProvince.add(pickerType).on('change', function(e){
+        filter( pickerProvince.val() , pickerType.val() )
+    });
+
+})(window, jQuery, '.partners-centres');
+
+
+
+
+/*
+ *
+ * PARTNERS MAPS
+ *
+ */
+
+(function(window, $, mapElemQuery){
+
+    var map;
+    var mapEl;
+    var markers;
+    var markerCluster;
+    var infoWindow;
+    var bounds;
+
+    function init() {
+
+        mapEl      = $(mapElemQuery);
+        bounds     = new google.maps.LatLngBounds();
+        infoWindow = new google.maps.InfoWindow({maxWidth: 200});
+
+        map = new google.maps.Map(mapEl.get(0), {
+            styles: googleMapsStyle01,
+            center: {lat:parseFloat('37.27926724418999'),lng:parseFloat('-4.365527739664799')},
+            zoom: 5
+        });
+
+        var centresList = mapEl.data('centres');
+        var markersList = [];
+
+        $.each(centresList, function(index, centre) {
+            var id = centre.id;
+
+            var position = {lat:parseFloat( centre.lat ),lng:parseFloat( centre.lng )}
+            var marker = new google.maps.Marker({
+                position: position,
+                title: centre.name
+            });
+
+            marker.addListener('click', function(event) {
+               infoWindow.setContent( getInfoWindowContent( centre ) );
+               infoWindow.open(map, this);
+            });
+
+            bounds.extend(position);
+
+            markersList[id] = marker;
+        });
+
+/*
+        centresList.on('click', 'a[data-bx-show-in-map]', function(e){
+            var id     = $(e.target).closest('tr[data-id]').data('id');
+            var marker = markersList[id]
+
+            map.setCenter( marker.getPosition() );
+            map.setZoom(16)
+
+            new google.maps.event.trigger(marker, 'click');
+        });
+*/
+        if( markersList.length ) {
+            var markers = Object.keys(markersList).map(function (key) { return markersList[key]; });
+            markerCluster = new MarkerClusterer(map, markers, {gridSize:15, imagePath: mapEl.data('image-path')});
+            //map.fitBounds(bounds);
+        }
+
+    }
+
+    function getInfoWindowContent(centre) {
+
+        var content = '<b>' + centre.name + '</b><br>' + centre.address + '<br>' + centre.city;
+
+        if( centre.url && centre.url != '' ) {
+            content+= '<br><a href="'+centre.url+'" target="_blank">Web</a>';
+        }
+
+        return content;
+    }
+
+    window.partnersMap = {
+        init: init,
+        getMap: function(){return map;}
+    };
+
+})(window, jQuery, '.partners-map');
+
+
+
+/*
+ * https://mapstyle.withgoogle.com
+ * https://snazzymaps.com/style/61/blue-essence
+ */
+
+var googleMapsStyle01 = [
+    {
+        "featureType": "landscape.natural",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "color": "#e0efef"
+            }
+        ]
+    },
+    {
+        "featureType": "poi",
+        "elementType": "geometry.fill",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "hue": "#1900ff"
+            },
+            {
+                "color": "#c0e8e8"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "lightness": 100
+            },
+            {
+                "visibility": "simplified"
+            }
+        ]
+    },
+    {
+        "featureType": "road",
+        "elementType": "labels",
+        "stylers": [
+            {
+                "visibility": "off"
+            }
+        ]
+    },
+    {
+        "featureType": "transit.line",
+        "elementType": "geometry",
+        "stylers": [
+            {
+                "visibility": "on"
+            },
+            {
+                "lightness": 700
+            }
+        ]
+    },
+    {
+        "featureType": "water",
+        "elementType": "all",
+        "stylers": [
+            {
+                "color": "#7dcdcd"
+            }
+        ]
+    }
+];
