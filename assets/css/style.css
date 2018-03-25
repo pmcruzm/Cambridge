@@ -802,8 +802,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .img-product-new img{max-width:100%;max-height: 330px;}
 .key-features-box{background:#ffffff;padding-bottom:50px;}
 .ficha-producto{padding-bottom:220px;}
-.img-key-featured{margin-top:-120px;margin-bottom:50px;}
-.img-key-featured img{max-width:100%;width: 100%;}
+.img-key-featured{margin-top:-120px;margin-bottom:50px;height: 335px;background-size: cover;background-position: center left;width: 100%;}
 .english-f-spanish-box{padding-top:60px;padding-bottom:70px;position:relative;overflow:hidden;}
 .english-f-spanish-box .container{position:relative;}
 .english-f-spanish-box .sello-ess{display:block;position:absolute;bottom:-125px;width:220px;height:220px;line-height:46px;right:0;}
