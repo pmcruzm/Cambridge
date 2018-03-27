@@ -1474,12 +1474,16 @@ function control_scroll(e){
 	    if(scrollAmount>d_ficha){
 			if (jQuery('.new-product').is(":visible") ) {
 				if(w_win>767){
-					jQuery('.float-colum-menu').css({top:30,position:'fixed'});
+					if(jQuery(window).scrollTop() + jQuery(window).height() > jQuery(document).height() - h_foot + 400) {
+						jQuery('.float-colum-menu').css({top:-300,position:'fixed'});
+					}else{
+						jQuery('.float-colum-menu').css({top:30,position:'fixed'});
+					}
 				}
 			}
 	   }else{
 		   if(w_win>767){
-	   		jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220,position:'absolute'});
+	   			jQuery('.float-colum-menu').css({top:Math.round(d_ficha)-220,position:'absolute'});
 		   }
 	   }
 	}
@@ -1882,7 +1886,7 @@ function getUrlParam(name, url) {
 
     function getInfoWindowContent(centre) {
 
-        var content = '<b>' + centre.name + '</b><br>' + centre.address + '<br>' + centre.city;
+        var content = '<b>' + centre.name + '</b><br>' + centre.address + '<br>' + centre.postal_code + ' ' + centre.city;
 
         if( centre.url && centre.url != '' ) {
             content+= '<br><a href="'+centre.url+'" target="_blank">Web</a>';
