@@ -855,8 +855,6 @@ jQuery(document).ready(function(){
 	jQuery(document).on("submit","#contact-form", function(event) {
 		if(send_form==0){
 			send_reg=1;
-			//Limpiamos errores si no es la primera vez
-			jQuery(".errores").html("");
 
 			//Llamamos a la función de validar (id formulario y contenedor errores)
 			var result=validate_form('#contact-form');
@@ -871,8 +869,6 @@ jQuery(document).ready(function(){
 	jQuery(document).on("submit","#register-form", function(event) {
 		if(send_form==0){
 			send_reg=1;
-			//Limpiamos errores si no es la primera vez
-			jQuery(".errores").html("");
 
 			//Llamamos a la función de validar (id formulario y contenedor errores)
 			var result=validate_form('#register-form');
@@ -888,8 +884,6 @@ jQuery(document).ready(function(){
 	jQuery(document).on("submit","#event-form", function(event) {
 		if(send_form==0){
 			send_reg=1;
-			//Limpiamos errores si no es la primera vez
-			jQuery(".errores").html("");
 
 			//Llamamos a la función de validar (id formulario y contenedor errores)
 			var result=validate_form('#event-form');
@@ -939,8 +933,6 @@ jQuery(document).ready(function(){
 	jQuery(document).on("submit","#newsletter-form", function(event) {
 		if(send_form==0){
 			send_reg=1;
-			//Limpiamos errores si no es la primera vez
-			jQuery(".errores").html("");
 
 			//Llamamos a la función de validar (id formulario y contenedor errores)
 			var result=validate_form('#newsletter-form');
@@ -1566,10 +1558,18 @@ function align_top_box(id){
 
 //Funcion para validar genéricamnete un formulario
 function validate_form(id){
+
+	var form = jQuery(id);
+
+	form.find(".errores").html("");
+
+	var hasErrors = false;
+	var errorsArr = [];
+
 		//Busca todos los campos requeridos de texto
-			if(jQuery(id).find('.validation-rule-empty').length > 0){
+			if(form.find('.validation-rule-empty').length > 0){
 				var error_empty=0;
-				jQuery(id).find('.validation-rule-empty').each(function() {
+				form.find('.validation-rule-empty').each(function() {
 					var res_campo=jQuery(this).val();
 					if(res_campo==""){
 						error_empty=1;
@@ -1580,9 +1580,9 @@ function validate_form(id){
 			}
 
 			//Busca todos los campos requeridos de mail
-			if(jQuery(id).find('.validation-rule-mail').length > 0){
+			if(form.find('.validation-rule-mail').length > 0){
 				var error_mail=0;
-				jQuery(id).find('.validation-rule-mail').each(function() {
+				form.find('.validation-rule-mail').each(function() {
 					var res_campo=jQuery(this).val();
 					if((res_campo=="") || (res_campo!="" && validateEmail(res_campo)==false) ){
 						error_mail=1;
@@ -1593,9 +1593,9 @@ function validate_form(id){
 			}
 
 			//Busca todos los campos requeridos de codigo postal
-			if(jQuery(id).find('.validation-rule-postcode').length > 0){
+			if(form.find('.validation-rule-postcode').length > 0){
 				var error_postcode=0;
-				jQuery(id).find('.validation-rule-postcode').each(function() {
+				form.find('.validation-rule-postcode').each(function() {
 					var res_campo=jQuery(this).val();
 					if((res_campo=="") || (res_campo!="" && isNumber(res_campo)==false) ){
 						error_postcode=1;
@@ -1606,9 +1606,9 @@ function validate_form(id){
 			}
 
 			//Busca todos los campos requeridos checkbox
-			if(jQuery(id).find('.validation-rule-checkbox').length > 0){
+			if(form.find('.validation-rule-checkbox').length > 0){
 				var error_checkbox=0;
-				jQuery(id).find('.validation-rule-checkbox').each(function() {
+				form.find('.validation-rule-checkbox').each(function() {
 					if(!jQuery(this).prop("checked")){
 						error_checkbox=1;
 						jQuery(this).addClass('error');
@@ -1618,9 +1618,9 @@ function validate_form(id){
 			}
 
 			//Busca todos los campos requeridos checkbox-multiple
-			if(jQuery(id).find('.validation-rule-checkbox-multiple').length > 0){
+			if(form.find('.validation-rule-checkbox-multiple').length > 0){
 				var error_checkbox_multiple = 0;
-				jQuery(id).find('.validation-rule-checkbox-multiple').each(function() {
+				form.find('.validation-rule-checkbox-multiple').each(function() {
 					var me = jQuery(this);
 					if (me.find('input[type="checkbox"]:checked').length == 0) {
 						me.find('input[type="checkbox"]').addClass('error')
@@ -1632,87 +1632,93 @@ function validate_form(id){
 			}
 
 			//Busca todos los campos requeridos de select
-			if(jQuery(id).find('.validation-rule-select').length > 0){
-				var error_select=0;
-				jQuery(id).find('.validation-rule-select').each(function() {
-					var res_campo=jQuery(this).val();
-					if((res_campo=="")){
-						error_select=1;
-						jQuery(this).parents('.custom-select').addClass('error');
-					}
+			form.find('.validation-rule-select').each(function() {
+				var res_campo=jQuery(this).val();
+				if((res_campo=="")){
 
-				});
-			}
+					hasErrors = true;
+
+					jQuery(this).parents('.custom-select').addClass('error');
+
+					var error = jQuery(this).data('error-msg');
+
+					if( error && error != '' ) {
+						errorsArr.push(error)
+					}
+				}
+
+			});
 
 			//Validación checkboxes "Course Offered" en "Centre Details"
 			if (jQuery('.centre-d-c').is(":visible") ) {
 				var error_checkbox_centre=1;
-				jQuery(id).find('.centre-d-c input[type=checkbox]').each(function() {
+				form.find('.centre-d-c input[type=checkbox]').each(function() {
 					if(jQuery(this).prop("checked")){
 						error_checkbox_centre=0;
 					}
 
 				});
 				if(error_checkbox_centre==1){
-					jQuery(id).find('.centre-d-c h4').addClass('error');
+					form.find('.centre-d-c h4').addClass('error');
 				}
 			}
 
 			//Validación checkboxes "Course Offered" en "Centre Details"
 			if (jQuery('.teacher-p').is(":visible") ) {
 				var error_checkbox_teacher=1;
-				jQuery(id).find('.teacher-p input[type=checkbox]').each(function() {
+				form.find('.teacher-p input[type=checkbox]').each(function() {
 					if(jQuery(this).prop("checked")){
 						error_checkbox_teacher=0;
 					}
 
 				});
 				if(error_checkbox_teacher==1){
-					jQuery(id).find('.teacher-p h5').addClass('error');
+					form.find('.teacher-p h5').addClass('error');
 				}
 			}
 
 			//Validación campos en "Course Book"
 			if (jQuery('.course-book').is(":visible") ) {
 				var error_course_book=0;
-					var res_campo=jQuery(id).find('#coursebook_1').val();
+					var res_campo=form.find('#coursebook_1').val();
 					if((res_campo=="")){
 						error_course_book=1;
 					}
 					if(error_course_book==1){
-						jQuery(id).find('.course-book h5').addClass('error');
+						form.find('.course-book h5').addClass('error');
 					}
 			}
 
 
 			//Error general campos vacíos
 			if(error_empty==1 || error_checkbox_centre==1 || error_checkbox_teacher==1 || error_course_book==1 || error_checkbox_multiple==1){
-				var message=jQuery(id).attr('data-error-msg');
+				var message=form.attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 
 			if(error_checkbox==1){
-				var message=jQuery(id).find('.validation-rule-checkbox').attr('data-error-msg');
+				var message=form.find('.validation-rule-checkbox').attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 
 			if(error_postcode==1){
-				var message=jQuery(id).find('.validation-rule-postcode').attr('data-error-msg');
+				var message=form.find('.validation-rule-postcode').attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 
 			if(error_mail==1){
-				var message=jQuery(id).find('.validation-rule-mail').attr('data-error-msg');
+				var message=form.find('.validation-rule-mail').attr('data-error-msg');
 				jQuery('.errores').append('<p>'+message+'</p>');
 			}
 
-			if(error_select==1){
-				var message=jQuery(id).find('.validation-rule-select').attr('data-error-msg');
-				jQuery('.errores').append('<p>'+message+'</p>');
+			if(errorsArr.length){
+				for(var i = 0; i < errorsArr.length; i++) {
+					jQuery('.errores').append('<p>'+errorsArr[i]+'</p>');
+				}
 			}
 
 			//Salida
-			if(error_empty==1 || error_checkbox==1 || error_checkbox_multiple==1 || error_postcode==1 || error_mail==1 || error_select==1){
+			if(hasErrors || error_empty==1 || error_checkbox==1 || error_checkbox_multiple==1 || error_postcode==1 || error_mail==1){
 				return 1;
 			}else{
 				return 0;
