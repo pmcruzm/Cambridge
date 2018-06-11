@@ -817,7 +817,7 @@ PROPIEDADES CUERPO HOME PRODUCT
 .new-product .digital-product{padding-bottom:140px;}
 .new-product .digital-product .block-ver-mas{text-align:left;}
 .new-product .digital-product{position:relative;overflow:hidden;}
-.new-product .digital-product:before{content:'';display:block;width:452px;height:360px;position:absolute;right:40px;bottom:0px;background:url(../img/img_digital-ipad.png) top left no-repeat;background-size:452px;}
+.new-product .digital-product:before{content:'';display:block;width:342px;height:270px;position:absolute;right:40px;bottom:0px;background:url(../img/img_digital-ipad.png) top left no-repeat;background-size:342px;}
 .new-product .component-product ul li.theme-color:before{color:#ffffff !important;}
 .new-product .clasf-product{margin-top:20px;}
 .new-product .digital-product ul li:before,.new-product .key-features ul li:before,.new-product .english-f-spanish ul li:before,.new-product .component-product ul li:before{opacity:0.5;}
@@ -2094,7 +2094,7 @@ MEDIA QUERIES
 	#top-header ul li a{padding-left:8px;padding-right:8px;}
 	.other-menu li a{padding-left:5px !important;padding-right:5px !important;}
 	.float-colum-menu{left:calc(50% - 493px);width:230px;}
-	.new-product .digital-product:before{background-size:400px;width:400px;height:310px;right:20px;bottom:0;}
+	.new-product .digital-product:before{background-size:342px;width:342px;height:270px;right:20px;bottom:0;}
 }
 
 @media (min-width: 992px) {
@@ -2129,7 +2129,7 @@ MEDIA QUERIES
 	.cont_gall .slide-mobile{height:512px;}
 
 	.float-colum-menu{left:calc(50% - 369px);width:180px;}
-	.new-product .digital-product:before{background-size:350px;width:350px;height:270px;right:20px;bottom:0;}
+	.new-product .digital-product:before{background-size:260px;width:260px;height:200px;right:20px;bottom:0;}
 	.video-product .poster-frame a{width:101px;height:101px;margin-left:-51px;margin-top:-51px;}
 	.video-product .poster-frame a{width:56px;height:56px;margin-left:-28px;margin-top:-28px;box-shadow:0 15px 60px rgba(0,0,0,0.5);background-size:24px;}
 }
