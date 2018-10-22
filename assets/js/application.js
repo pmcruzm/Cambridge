@@ -1425,17 +1425,6 @@ function control_scroll(e){
   var h_foot=jQuery('#footer').height();
   var w_win=window.innerWidth;
 
-  //Añadir Cookie si se hace scroll a +100px
-  if(scrollAmount>100){
- 		if(jQuery.cookie('cambridge') != 'acepta'){
-			jQuery('.block-cookies').fadeOut(600,function(){
-				//Creamos la cookie de aceptación
-				jQuery.cookie('cambridge', 'acepta', { expires: 365 * 10 ,path: '/' });
-
-				loadAnalytics();
-			});
-		}
-  }
 
   //Aparece flecha top
   if(scrollAmount>500){
