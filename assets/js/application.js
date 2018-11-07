@@ -639,7 +639,7 @@ jQuery(document).ready(function(){
 				//Leemos los contenidos del Blog vía JSON
 				var data_blog='q='+ Math.random();
 				jQuery.ajax({
-					url: 'http://blog.cambridge.es/?json=get_posts&page=0&callback=?',
+					url: 'https://blog.cambridge.es/?json=get_posts&page=0&callback=?',
 					type: 'POST',
 					async: true,
 					dataType: 'json',

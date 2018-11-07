@@ -2364,7 +2364,7 @@ MEDIA QUERIES
 	.new-product #submenus-mob-prodct > a.active:before{color:#bbb5bb !important;}
 	.new-product #submenus-mob-prodct ul li{}
 	.new-product #submenus-mob-prodct ul li a{display:inline-block;color:#373340;text-align:left;width:auto;background:none;font-family:'latolight', Helvetica, sans-serif;margin-left:45px;}
-	
+
 	.cont-logo{padding-top:50px;}
 }
 
@@ -2557,7 +2557,7 @@ MEDIA QUERIES
     .centre-d-c .checkbox p{font-size:16px;margin-top:-26px;}
     .teacher-p .checkbox p{font-size:16px;margin-top:-26px;}
 
-    .logo_cet{width:160px;}
+    .logo_cet{width:200px;}
     .block-h-exam img{width:250px;}
     .block-h-exam h3{font-size:24px;}
     .block-h-exam p{line-height:20px;}
