@@ -131,6 +131,8 @@ a,a:focus,a:hover,a:active {outline: none;}
 .ml-45 {margin-left: 45px;}
 .ml-50 {margin-left: 50px;}
 
+.embed-inline-left {float: left; padding-right: 20px; padding-bottom: 20px;}
+.embed-inline-right {float: right; padding-left: 20px; padding-bottom: 20px;}
 
 /*****************************
 PROPIEDADES CABECERA
@@ -720,7 +722,7 @@ PROPIEDADES CUERPO SINGLE EVENTS
 .single-events h2 + p{font-size:20px;color:#373340;line-height:28px;}
 
 .img-event-s{background:#ffffff;text-align:center;height:240px;margin-bottom:25px;margin-top:15px;}
-.img-event-s img{max-width:100%;width:130px;}
+.img-event-s img{max-width:100%;width:200px;}
 
 .info-event-sing{border:2px solid #c6c6c6;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;padding:20px;text-align:center;}
 .info-event-sing .calendario + p{color:#47b6c7;font-size:24px;font-family:'latoregular', Helvetica, sans-serif;width:60%;margin:0 auto;line-height:28px;}
