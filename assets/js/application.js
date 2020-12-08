@@ -38,17 +38,15 @@ jQuery.noConflict();
 
 function loadAnalytics() {
 
-	//Añadimos GA
-	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	ga('create', 'UA-31155962-13', 'auto');
-	ga('send', 'pageview');
+	//GTM
+	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-5F9T9CL');
 
 
-	//Añadimos Facebook Pixel
+	//Facebook Pixel
 	!function(f,b,e,v,n,t,s)
 	{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 	n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -1126,17 +1124,21 @@ jQuery(document).ready(function(){
 		var encoded = window.btoa(image_down);
 		jQuery('.opc_levels a.active').css('background-image', 'url(data:image/svg+xml;base64,'+encoded+')');
 		//Cerramos un bloque y mostramos el siguiente
-		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(800,function(){
+		jQuery('.level_'+block_open).stop().clearQueue().fadeOut(200,function(){
 			//Eliminamos el height residual
 			jQuery('.level_'+opcion).find('div.block-product').each(function() {
 				jQuery(this).removeAttr('style');
 			});
 			jQuery('.level_'+opcion).css('opacity',0).show();
 			align_top_box(jQuery('.level_'+opcion).find('div.block-product'));
-			jQuery('.level_'+opcion).animate({opacity: 1},800);
+			jQuery('.level_'+opcion).animate({opacity: 1},200);
 		});
 
 	});
+
+	if (jQuery('.opc_levels').is(":visible") && getUrlParam('tab')) {
+		jQuery('.opc_levels').find('a[href="#'+getUrlParam('tab')+'"]').trigger('click');
+	}
 
 	//Cerrar cuadro info cookies
 	jQuery(document).on('click','.close_c',function(event){
@@ -1162,6 +1164,29 @@ jQuery(document).ready(function(){
 			jQuery(".float-colum-menu .hide-menu-float").stop().clearQueue().slideToggle(400);
 		}
 	});
+
+	// Desplegable selector de nivel en cursos
+	if( jQuery('#course-additional-materials-selector').length ) {
+
+		var customColor = jQuery('#custom-color').data('color');
+
+		if( customColor ) {
+			var shadeColor = window.shadeColor(customColor, -20);
+			jQuery('#course-additional-materials-selector').css({
+				backgroundColor: shadeColor,
+				borderColor: shadeColor
+			}).parent().css({
+				backgroundColor: shadeColor,
+				borderColor: shadeColor
+			});
+		}
+
+		jQuery(document).on('change','#course-additional-materials-selector',function(event){
+			if( jQuery(this).val() ) {
+				window.location = jQuery(this).val()
+			}
+		});
+	}
 
 	//Evento para capturar el resize de la ventana
 	jQuery( window ).resize(function() {
@@ -1481,6 +1506,28 @@ function isNumber(n) {
   return !isNaN(parseFloat(n)) && isFinite(n);
 }
 
+
+function shadeColor(color, percent) {
+
+    var R = parseInt(color.substring(1,3),16);
+    var G = parseInt(color.substring(3,5),16);
+    var B = parseInt(color.substring(5,7),16);
+
+    R = parseInt(R * (100 + percent) / 100);
+    G = parseInt(G * (100 + percent) / 100);
+    B = parseInt(B * (100 + percent) / 100);
+
+    R = (R<255)?R:255;
+    G = (G<255)?G:255;
+    B = (B<255)?B:255;
+
+    var RR = ((R.toString(16).length==1)?"0"+R.toString(16):R.toString(16));
+    var GG = ((G.toString(16).length==1)?"0"+G.toString(16):G.toString(16));
+    var BB = ((B.toString(16).length==1)?"0"+B.toString(16):B.toString(16));
+
+    return "#"+RR+GG+BB;
+}
+
 // autoplay video Youtube
 function onPlayerReady(event) {
 	if(device!='yes'){
@@ -1564,7 +1611,6 @@ function validate_form(id){
 						error_empty=1;
 						jQuery(this).addClass('error').val('');
 					}
-
 				});
 			}
 
@@ -1577,7 +1623,6 @@ function validate_form(id){
 						error_mail=1;
 						jQuery(this).addClass('error').val('');
 					}
-
 				});
 			}
 
@@ -1585,12 +1630,18 @@ function validate_form(id){
 			if(form.find('.validation-rule-postcode').length > 0){
 				var error_postcode=0;
 				form.find('.validation-rule-postcode').each(function() {
-					var res_campo=jQuery(this).val();
-					if((res_campo=="") || (res_campo!="" && isNumber(res_campo)==false) ){
+					var f = jQuery(this);
+					if( f.val().length != f.attr('maxlength') ){
 						error_postcode=1;
 						jQuery(this).addClass('error').val('');
 					}
-
+					// Si existe selector de provincia pero el código no coincide
+					// con los dos primeros dígitos del código postal:
+					var prov_select = form.find('select[name$="[province]"]').first();
+					if( prov_select.length && prov_select.val() != f.val().substr(0, 2) ){
+						error_postcode=1;
+						jQuery(this).addClass('error').val('');
+					}
 				});
 			}
 
@@ -1602,7 +1653,6 @@ function validate_form(id){
 						error_checkbox=1;
 						jQuery(this).addClass('error');
 					}
-
 				});
 			}
 
@@ -1635,7 +1685,6 @@ function validate_form(id){
 						errorsArr.push(error)
 					}
 				}
-
 			});
 
 			//Validación checkboxes "Course Offered" en "Centre Details"
