@@ -662,17 +662,18 @@ jQuery(document).ready(function(){
 			if ( jQuery(".box-d-blog").length>0) {
 				//Leemos los contenidos del Blog vía JSON
 				var data_blog='q='+ Math.random();
+				var max_show=5;
 				jQuery.ajax({
-					//url: 'https://blog.cambridge.es/?json=get_posts&page=0&callback=?',
-					url: 'https://blog.cambridge.es/?json=get_category_posts&category_id=121&page=0&callback=?',
+					url: 'https://blog.cambridge.es/?json=get_posts&page=0&callback=?',
+					//url: 'https://blog.cambridge.es/?json=get_category_posts&category_id=121&page=0&callback=?',
 					type: 'POST',
 					async: true,
 					dataType: 'json',
 					data: data_blog,
 					success: function(data){
 								//console.log(data);
-								//Limpiamos mapa y clasificación
-								for (var x = 0; x < data.posts.length; x++) {
+								//for (var x = 0; x < data.posts.length; x++) {
+								for (var x = 0; x < max_show; x++) {
 									jQuery('<li><div class="box-destacado"><div class="single_featured"><div class="box_featured_img"><a href="'+data.posts[x].url+'"><img src="'+data.posts[x].thumbnail_images.full.url+'"></a></div><h4><a href="'+data.posts[x].url+'">'+data.posts[x].title+'</a></h4>'+data.posts[x].excerpt+'</div></div></li>').appendTo( ".bxslider-destacados" );
 									//console.log(data.posts[x].slug);
 									//jQuery("#votaciones_"+data.posts[x].id_ong).find('p').html(String(data[x].votos));
